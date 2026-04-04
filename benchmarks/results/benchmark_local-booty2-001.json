@@ -1,0 +1,97 @@
+{
+  "avg_broad_quality": 0.9488333333333333,
+  "avg_derived_quality": 0.866,
+  "avg_specialist_quality": 0.0,
+  "benchmark_id": "local-booty2-001",
+  "corpus_size": 1,
+  "created_at": "2026-03-24T15:43:35.743892Z",
+  "failure_reasons": {},
+  "previous_benchmark_id": null,
+  "publish_rate_broad": 1.2,
+  "publish_rate_derived": 0.42857142857142855,
+  "publish_rate_specialist": 0.0,
+  "quality_delta": null,
+  "results": [
+    {
+      "avg_broad_quality": 0.9488333333333333,
+      "avg_derived_quality": 0.866,
+      "avg_specialist_quality": 0.0,
+      "difficulty": "mixed",
+      "error_message": null,
+      "pipeline_mode": "local_specialist",
+      "published_broad_stems": [
+        "bass",
+        "drums",
+        "guitar",
+        "instrumental",
+        "other",
+        "vocals"
+      ],
+      "published_derived_stems": [
+        "fx",
+        "hats_cymbals",
+        "percussion"
+      ],
+      "published_midi": [
+        "bass",
+        "chords_guide",
+        "melody"
+      ],
+      "published_specialist_substems": [],
+      "rejected_derived": [
+        "keys_synth",
+        "kick",
+        "pads_strings",
+        "snare_clap"
+      ],
+      "rejected_extended": [
+        "piano"
+      ],
+      "rejected_specialist": [],
+      "remote_adapter_status": "not_requested",
+      "song_name": "booty2-final-master",
+      "success": true,
+      "total_duration_seconds": 1044.6474509239197
+    }
+  ],
+  "stem_family_metrics": {
+    "bass": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "drums": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "fx": {
+      "avg_quality": 0.896,
+      "count": 1
+    },
+    "guitar": {
+      "avg_quality": 0.693,
+      "count": 1
+    },
+    "hats_cymbals": {
+      "avg_quality": 0.856,
+      "count": 1
+    },
+    "instrumental": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "other": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "percussion": {
+      "avg_quality": 0.846,
+      "count": 1
+    },
+    "vocals": {
+      "avg_quality": 1.0,
+      "count": 1
+    }
+  },
+  "success_rate": 1.0,
+  "total_duration_seconds": 1044.649388551712
+}

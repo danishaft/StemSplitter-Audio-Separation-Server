@@ -3,6 +3,12 @@
 flask
 flask_cors
 flask_talisman
+librosa==0.11.0
+audio2midi[librosa_pitch_detector]==0.3.0
+pytest
+requests>=2.31.0  # MVSEP API client
+# Optional richer section analysis:
+# msaf==0.1.80
 
 # Other requirement dependencies
 demucs
@@ -24,4 +30,3 @@ torchaudio>=0.8
 tqdm
 treetable
 soundfile>=0.10.3;sys_platform=="win32"
-

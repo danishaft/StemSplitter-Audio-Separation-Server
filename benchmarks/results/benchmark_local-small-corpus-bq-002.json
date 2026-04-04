@@ -1,0 +1,142 @@
+{
+  "avg_broad_quality": 1.0,
+  "avg_derived_quality": 0.8622142857142856,
+  "avg_specialist_quality": 0.0,
+  "benchmark_id": "local-small-corpus-bq-002",
+  "corpus_size": 2,
+  "created_at": "2026-03-29T22:38:59.638327Z",
+  "failure_reasons": {},
+  "previous_benchmark_id": null,
+  "publish_rate_broad": 1.0,
+  "publish_rate_derived": 1.0,
+  "publish_rate_specialist": 0.0,
+  "quality_delta": null,
+  "results": [
+    {
+      "avg_broad_quality": 1.0,
+      "avg_derived_quality": 0.8765714285714286,
+      "avg_specialist_quality": 0.0,
+      "difficulty": "easy",
+      "error_message": null,
+      "pipeline_mode": "local_specialist",
+      "published_broad_stems": [
+        "bass",
+        "drums",
+        "instrumental",
+        "other",
+        "vocals"
+      ],
+      "published_derived_stems": [
+        "fx",
+        "hats_cymbals",
+        "keys_synth",
+        "kick",
+        "pads_strings",
+        "percussion",
+        "snare_clap"
+      ],
+      "published_midi": [
+        "bass",
+        "chords_guide",
+        "melody"
+      ],
+      "published_specialist_substems": [],
+      "rejected_derived": [],
+      "rejected_extended": [],
+      "rejected_specialist": [],
+      "remote_adapter_status": "not_requested",
+      "song_name": "babyslakh-Track00011",
+      "success": true,
+      "total_duration_seconds": 1718.672090768814
+    },
+    {
+      "avg_broad_quality": 1.0,
+      "avg_derived_quality": 0.8478571428571428,
+      "avg_specialist_quality": 0.0,
+      "difficulty": "mixed",
+      "error_message": null,
+      "pipeline_mode": "local_specialist",
+      "published_broad_stems": [
+        "bass",
+        "drums",
+        "instrumental",
+        "other",
+        "vocals"
+      ],
+      "published_derived_stems": [
+        "fx",
+        "hats_cymbals",
+        "keys_synth",
+        "kick",
+        "pads_strings",
+        "percussion",
+        "snare_clap"
+      ],
+      "published_midi": [
+        "bass",
+        "chords_guide",
+        "melody"
+      ],
+      "published_specialist_substems": [],
+      "rejected_derived": [],
+      "rejected_extended": [],
+      "rejected_specialist": [],
+      "remote_adapter_status": "not_requested",
+      "song_name": "booty2-final-master",
+      "success": true,
+      "total_duration_seconds": 931.5391142368317
+    }
+  ],
+  "stem_family_metrics": {
+    "bass": {
+      "avg_quality": 1.0,
+      "count": 2
+    },
+    "drums": {
+      "avg_quality": 1.0,
+      "count": 2
+    },
+    "fx": {
+      "avg_quality": 0.937,
+      "count": 2
+    },
+    "hats_cymbals": {
+      "avg_quality": 0.9735,
+      "count": 2
+    },
+    "instrumental": {
+      "avg_quality": 1.0,
+      "count": 2
+    },
+    "keys_synth": {
+      "avg_quality": 0.7464999999999999,
+      "count": 2
+    },
+    "kick": {
+      "avg_quality": 0.6745000000000001,
+      "count": 2
+    },
+    "other": {
+      "avg_quality": 1.0,
+      "count": 2
+    },
+    "pads_strings": {
+      "avg_quality": 0.8465,
+      "count": 2
+    },
+    "percussion": {
+      "avg_quality": 0.959,
+      "count": 2
+    },
+    "snare_clap": {
+      "avg_quality": 0.8985,
+      "count": 2
+    },
+    "vocals": {
+      "avg_quality": 1.0,
+      "count": 2
+    }
+  },
+  "success_rate": 1.0,
+  "total_duration_seconds": 2650.2136056423187
+}

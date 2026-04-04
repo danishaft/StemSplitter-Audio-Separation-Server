@@ -1,2 +1,7 @@
 cert.pem
 key.pem
+__pycache__/
+*.pyc
+jobs/
+uploads/
+separated/

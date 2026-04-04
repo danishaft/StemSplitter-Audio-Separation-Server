@@ -1,5 +1,5 @@
-# Python 3.8 image
-FROM python:3.8-slim
+# Python 3.12 image
+FROM python:3.12-slim
 
 # working directory inside the container
 WORKDIR /app
@@ -21,9 +21,8 @@ RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
 # Copying the application code into the container
-COPY audio_api.py audio_processing.py ./
-COPY cert.pem .
-COPY key.pem .
+COPY audio_api.py audio_processing.py index.html ./
+COPY splitter ./splitter
 
 # Setting the Flask app environment variable
 ENV FLASK_APP=audio_api.py
