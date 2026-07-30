@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import subprocess
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -9,7 +10,7 @@ import soundfile as sf
 
 ROOT = Path(__file__).resolve().parent.parent
 RUNNER = ROOT / "tools" / "local_specialist_runner.py"
-PYTHON = ROOT.parent / "venv" / "bin" / "python"
+PYTHON = Path(sys.executable)
 
 
 def _write_fixture(path: Path) -> None:
