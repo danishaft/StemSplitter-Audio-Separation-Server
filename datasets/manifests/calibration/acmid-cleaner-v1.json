@@ -1,0 +1,2701 @@
+{
+  "benchmark_id": "acmid-cleaner-v1",
+  "candidate_count": 191,
+  "candidates": [
+    {
+      "id": "cd0518acf5116824bfce",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 154.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Angela_Thomas_Wade|Milk_Cow_Blues",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Angela_Thomas_Wade|Milk_Cow_Blues/Gtr/AG/06_AcGtr.flac",
+        "source_sha256": "53c25a441cf93631d75b3b2a4f61ec7c4b87d4cdf0589bc78efdf40a10cbe5c0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/cd0518acf5116824bfce.flac"
+    },
+    {
+      "id": "151f10b4f9252c5d702d",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 58.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Wolf's_Head_&_Vixen_Morris_Band|Lament",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Wolf's_Head_&_Vixen_Morris_Band|Lament/Gtr/AG/08_AcGuitar2.flac",
+        "source_sha256": "aa7366139a7a2de8b5cb795e13de0fb280ae75ec7131b5fbeddf579d2b110c9f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/151f10b4f9252c5d702d.flac"
+    },
+    {
+      "id": "9c9c91c6c440f7f22647",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 26.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Catfolkin|Sant_Jordi_v2.0",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Catfolkin|Sant_Jordi_v2.0/Gtr/AG/15_AcousticGtr2.flac",
+        "source_sha256": "f82b531d80f5ec1897e0511be78cfa045e818dc627b166d13b298ec80c32c364"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/9c9c91c6c440f7f22647.flac"
+    },
+    {
+      "id": "348f5863d2753064176d",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 10.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Bolz_&_Knecht|Summertime",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Bolz_&_Knecht|Summertime/Gtr/AG/04_AcousticGtrCloseMics.flac",
+        "source_sha256": "6c51d53eb761d2dc396174db1807c688c066a53e10d8dfb5c50fdfbaed5ebaef"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/348f5863d2753064176d.flac"
+    },
+    {
+      "id": "4fe38c31a5cf8157efea",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 172.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Jesse_Joy|Nearly_There",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jesse_Joy|Nearly_There/Gtr/AG/05_AcousticGtrMic1.flac",
+        "source_sha256": "c87cdf987a43bd10dde3323155a2ab0fa54465af07b78d55150ceb655626f6c8"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/4fe38c31a5cf8157efea.flac"
+    },
+    {
+      "id": "a1d678b0ec4a8ff5dce2",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 96.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Swing_Bazar|Fleche_D'Or",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Swing_Bazar|Fleche_D'Or/Gtr/AG/06_AcousticGtr.flac",
+        "source_sha256": "feb16546bd02dfb7f447fb48a05d51a954f5de7ad1b9557589850f5b5359c2a1"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/a1d678b0ec4a8ff5dce2.flac"
+    },
+    {
+      "id": "a3b493eaa358ee63860f",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 320.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Marc_Ellason|Treadmills",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Marc_Ellason|Treadmills/Gtr/AG/09_AcousticGtr1.flac",
+        "source_sha256": "aa855bdcd6ce97560e77355479d5e0a5c66f7e30f7bc4d29dc2a16b57d4b6aa2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/a3b493eaa358ee63860f.flac"
+    },
+    {
+      "id": "695c301f57683b477c5a",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 32.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Glen_McPhee|A_Sailor_Once_More",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Glen_McPhee|A_Sailor_Once_More/Gtr/AG/07_AcousticGtr.flac",
+        "source_sha256": "96b07b00d0e5ed612d67e6531292dd103eb7cf3150c0ac9ac8a78e0889c9dfe1"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/695c301f57683b477c5a.flac"
+    },
+    {
+      "id": "bdfa667be570cadd7ffb",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 156.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Jesse_Joy|Release",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jesse_Joy|Release/Gtr/AG/06_AcousticGtr1Mic1.flac",
+        "source_sha256": "b27a7a9c7975c3371f57b66a3341f8e4d0d70e3a2cd3c9fe0e1200bb35ac4ba9"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/bdfa667be570cadd7ffb.flac"
+    },
+    {
+      "id": "8d65613f7dfe51fcd263",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 68.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ben_Carrigan|We'll_Talk_About_It_All_Tonight",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ben_Carrigan|We'll_Talk_About_It_All_Tonight/Gtr/AG/20_AcousticGtr2.flac",
+        "source_sha256": "823499fc32b6042ac9e5f64ab0661c0cb986d0ef58b13fb5ff1047711ee079f1"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/8d65613f7dfe51fcd263.flac"
+    },
+    {
+      "id": "8253125b267fad0ad507",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 90.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "JAKUB_BYZIA|SODA_ENVY",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/JAKUB_BYZIA|SODA_ENVY/Gtr/AG/36_AcousticGtr1.flac",
+        "source_sha256": "4bc27ebb20a592956b31b157ddd7bba066ae7aa534636548de930dbf3177cfa0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/8253125b267fad0ad507.flac"
+    },
+    {
+      "id": "ad80fe3ad4970330e817",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 152.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Raft_Monk|Tiring",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Raft_Monk|Tiring/Gtr/AG/22_AcousticGtrDT.flac",
+        "source_sha256": "59b2949bde544111fc20afcbc50fa80e355db16db46dc7c722d7669c7180a324"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/ad80fe3ad4970330e817.flac"
+    },
+    {
+      "id": "1b4e698be7eed3ab1b04",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 104.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Domestic_Research_Partners|NEW!_'Old_Empty_Nest",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Domestic_Research_Partners|NEW!_'Old_Empty_Nest/Gtr/AG/15_SteelGtr.flac",
+        "source_sha256": "051dfd775e604dead518a5a5f9d7604548571b4496075b087b7d0f48485ea6f9"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/1b4e698be7eed3ab1b04.flac"
+    },
+    {
+      "id": "8ce821c3f3b05628cbac",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 204.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Chad_Hollister_Band|Eyes",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Chad_Hollister_Band|Eyes/Gtr/AG/Acoustic Guitar-DI.flac",
+        "source_sha256": "b8d1549006599b2d1dab8b3b2add58572ef366d6029675dec9861bddd7d2176f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/8ce821c3f3b05628cbac.flac"
+    },
+    {
+      "id": "9b59b3f7772893fd8ebd",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 192.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Rovers_Ahead|It's_In_These_Times",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Rovers_Ahead|It's_In_These_Times/Gtr/AG/12_BanjoMic1.flac",
+        "source_sha256": "b35187be66a3659b82d54ad34426305c2c19d0f5061c8e310436c8f8c8fa974d"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/9b59b3f7772893fd8ebd.flac"
+    },
+    {
+      "id": "51a933f1171440d7923f",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 156.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Tall_Heights|Spirit_Cold",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Tall_Heights|Spirit_Cold/Gtr/AG/Acoustic Guitar-M60.flac",
+        "source_sha256": "27ab8b81ac91b67c55553df352f2d40c3605ba1078200b0e0440d3eeb37db79a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/positive/51a933f1171440d7923f.flac"
+    },
+    {
+      "id": "992a5bbfee7fed6f9a68",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 146.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Anna_Blanton|Waves",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Anna_Blanton|Waves/Orch/STR/09_Violin1.flac",
+        "source_sha256": "663feb5218e384c7beb94edf33898194f90d3b8dcf9c1c0eeb5128cb537d3b32"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/992a5bbfee7fed6f9a68.flac"
+    },
+    {
+      "id": "dd9caf613e8740390183",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 130.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Jokers,_Jacks_&_Kings|Sea_Of_Leaves",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jokers,_Jacks_&_Kings|Sea_Of_Leaves/Gtr/EG/17_ElecGtr4Mic1.flac",
+        "source_sha256": "f66646585c0b4850091b1e52a83410fa12791ab4657003dde36f9b28ba37294c"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/dd9caf613e8740390183.flac"
+    },
+    {
+      "id": "8639941768fab7768c6e",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 86.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Banned_From_The_Zoo|Encore",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Banned_From_The_Zoo|Encore/Gtr/EG/13_ElecGtr.flac",
+        "source_sha256": "1953a9541e620321ca1c83c2babf3176c0cf9690b94fed6071384c5072ffd1ea"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/8639941768fab7768c6e.flac"
+    },
+    {
+      "id": "1de44cb6be38eff4288e",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 172.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Andrew_Cole|Dead_Roses",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Andrew_Cole|Dead_Roses/Gtr/EG/E GUITAR-CU29-CHANDLER TG CHANNEL.flac",
+        "source_sha256": "4681c379a29bb8edf0a9362675100f47cf989fdbce833367e5df94d4751b2633"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/1de44cb6be38eff4288e.flac"
+    },
+    {
+      "id": "0c3938e6bd0976bf23f8",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 42.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Zwiepack|Air",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Zwiepack|Air/Orch/WW/05_SaxMic2_PeerArray.flac",
+        "source_sha256": "1483f3e189dc0db09a42543cbee851a7328100082cf76526d8f3b54ce0a3697b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/0c3938e6bd0976bf23f8.flac"
+    },
+    {
+      "id": "6fd5651769cfbf62d519",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 124.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Plywood_Cowboy|Last_Night's_Gig",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Plywood_Cowboy|Last_Night's_Gig/Orch/STR/Fiddle-M60.flac",
+        "source_sha256": "824053bc24ba532044b34ea18d177ce251156fd7e4007e705ea46de5594c2a49"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/6fd5651769cfbf62d519.flac"
+    },
+    {
+      "id": "cb32486f4b3e20a24719",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 184.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Daimon_B|Pain_Remains",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Daimon_B|Pain_Remains/Gtr/EG/15_ElecGtr2.flac",
+        "source_sha256": "a5381b3af1d649b103c9040632a6633e4a006cf9ae245105ef7b18a5e793860f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/cb32486f4b3e20a24719.flac"
+    },
+    {
+      "id": "50e03315b6540e7c922d",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 210.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Balkun_Brothers|So_Hi._So_Lo.",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Balkun_Brothers|So_Hi._So_Lo./Gtr/EG/ELE Guitar-Shelf Mic-AR51.flac",
+        "source_sha256": "4fc0a94a04830a0ef05f129eb214620e6e0a211a2fc605ce550f8adba1bb655e"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/50e03315b6540e7c922d.flac"
+    },
+    {
+      "id": "cd5c9886d9a0af728f61",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 112.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Silence_Is_Near|The_Forthcoming_Turn",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Silence_Is_Near|The_Forthcoming_Turn/Orch/STR/35_ViolasB.flac",
+        "source_sha256": "41791483c2926c1e266802f24ca64852966166b49c746313dce6829083fd3e61"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/cd5c9886d9a0af728f61.flac"
+    },
+    {
+      "id": "20f4d8c8b1e2df225a59",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 68.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Kangoro|King_Rascal",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Kangoro|King_Rascal/Orch/WW/29_FluteLoop.flac",
+        "source_sha256": "624f2985aec2a76bf5d15da5d65a3cc9d4042e8b6c9528bd45ff1f6c56b6d79a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/20f4d8c8b1e2df225a59.flac"
+    },
+    {
+      "id": "ea42350cb489ea575935",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 106.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mikaela_Davis_&_Southern_Star|Home_In_The_Country",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mikaela_Davis_&_Southern_Star|Home_In_The_Country/Gtr/EG/GTR 2 TF29.flac",
+        "source_sha256": "4b38faf5e5738467218deb62462980dfb4842bdd319d03fdb1f361e4794994e0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/ea42350cb489ea575935.flac"
+    },
+    {
+      "id": "dde9528898c21f440547",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 68.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Juanita_Dientes_Verdes|Dios_Salve_El_R&R_-_Cielo_Sin_Santos",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Juanita_Dientes_Verdes|Dios_Salve_El_R&R_-_Cielo_Sin_Santos/Gtr/EG/08_ElecGtr2.flac",
+        "source_sha256": "36862a748c51d8c2191342503ed4e6ae464e19c89e07c333bfa82f7dde90f16f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/dde9528898c21f440547.flac"
+    },
+    {
+      "id": "ab2eed4c161e4a0d8c65",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 38.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mistrusted|Polemic",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mistrusted|Polemic/Gtr/EG/11_ElecGtr3.flac",
+        "source_sha256": "ffd1c3891b623adeb8c708ab5f86b0560529fc4b4b56efc78ed338e8706c2001"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/ab2eed4c161e4a0d8c65.flac"
+    },
+    {
+      "id": "135c0c2da144908cc3e8",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 54.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Studio_ROM|Islets",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Studio_ROM|Islets/Orch/STR/12_Strings1.flac",
+        "source_sha256": "3f453ac9230da438124a22308550ba8a4e71393040374c460f87bf537397a4eb"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/135c0c2da144908cc3e8.flac"
+    },
+    {
+      "id": "fd434186b213354726b0",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 208.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Boogiesnakes|It's_My_Right",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Boogiesnakes|It's_My_Right/Gtr/EG/13_Gtr1Mic2.flac",
+        "source_sha256": "42f937abedc5713a940f26c8369ca472a0ffbe58cb2effd77da10b28399eadc2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/fd434186b213354726b0.flac"
+    },
+    {
+      "id": "64fa3b8dc9f4968f7d34",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 96.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Hollow_Ground|Ill_Fate",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Hollow_Ground|Ill_Fate/Gtr/EG/18_ElecGtr3a_Amp.flac",
+        "source_sha256": "522c3c1f4172416e302425e3b95d45dd626db3025fb12287bcc662472684cf1a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/64fa3b8dc9f4968f7d34.flac"
+    },
+    {
+      "id": "74f234ae3e018a949e49",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 16.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Man_About_A_Dog|Maggie_May",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Man_About_A_Dog|Maggie_May/Gtr/EG/08_Gtr1.flac",
+        "source_sha256": "f5f3feef88ff90fef5c44542f743d5404fc7e3a8201419d8bb24dc823b5755b5"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/74f234ae3e018a949e49.flac"
+    },
+    {
+      "id": "724d317adfed03e181f0",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 202.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "E_J_Rios|Echo_(feat._Analise_Rios)",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/E_J_Rios|Echo_(feat._Analise_Rios)/Orch/STR/40_Cellos1.flac",
+        "source_sha256": "1f6e57d6df8ad11f257d1549c0e1273edeb24e98157fbbbd7085ad2a324322df"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/724d317adfed03e181f0.flac"
+    },
+    {
+      "id": "a90c4af5ec0c94a1ec35",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 44.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Candlebox|Happy_Pills",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Candlebox|Happy_Pills/Gtr/EG/ELE GTR1 Dis-M80.flac",
+        "source_sha256": "de66259b79aba874651127b5d923d5f342a6de5b46d989e877b3432f974dac00"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/a90c4af5ec0c94a1ec35.flac"
+    },
+    {
+      "id": "c5fa904c41f995fe9a4c",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 38.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Finlay|Same_Kind_Of_Life",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Finlay|Same_Kind_Of_Life/Gtr/EG/11_ElecGtr3.flac",
+        "source_sha256": "ffd1c3891b623adeb8c708ab5f86b0560529fc4b4b56efc78ed338e8706c2001"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/c5fa904c41f995fe9a4c.flac"
+    },
+    {
+      "id": "521c03df5130830c98a5",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 184.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Blues_Bastards|Lights_Out!",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Blues_Bastards|Lights_Out!/Gtr/EG/15_ElecGtr2.flac",
+        "source_sha256": "a5381b3af1d649b103c9040632a6633e4a006cf9ae245105ef7b18a5e793860f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/521c03df5130830c98a5.flac"
+    },
+    {
+      "id": "fc173443df059f223387",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 16.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Rod_Alexander|Tears_In_The_Rain",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Rod_Alexander|Tears_In_The_Rain/Gtr/EG/10_ElecGtr1.flac",
+        "source_sha256": "62a6f1b7ea1a9b5a17fe18b38b80ecd12880f38df3a29707a31b76e95cb2f319"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/fc173443df059f223387.flac"
+    },
+    {
+      "id": "2197d0bb13a6b8e16de4",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 170.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Girls_Under_Glass|We_Feel_Alright",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Girls_Under_Glass|We_Feel_Alright/Gtr/EG/11_ElecGtr1.flac",
+        "source_sha256": "b80a682c830a5c28b969b227281b1cc1e8c9c84f1ef0711c107594285c139774"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/2197d0bb13a6b8e16de4.flac"
+    },
+    {
+      "id": "2c4df816789a911a9c09",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 2.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "SkalyVan|All_To_End",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/SkalyVan|All_To_End/Gtr/EG/12_ElecGtr1DI.flac",
+        "source_sha256": "dba88e02685f29effa27f5e1acda720e33776a0297051fa8670be3ab4ef65907"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/2c4df816789a911a9c09.flac"
+    },
+    {
+      "id": "3204221391f8de7281ca",
+      "instrument": "acoustic_guitar",
+      "metadata": {
+        "benchmark_family": "acoustic_guitar",
+        "clip_offset_seconds": 134.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Studio_ROM|NEW!_'Pia_Mater",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Studio_ROM|NEW!_'Pia_Mater/Gtr/EG/14_ElecGtr.flac",
+        "source_sha256": "44cdd7cd57c8dbb4059f6107aa566ba4e5f54b904034b6b34ab7bbed3ed2ccb2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/acoustic_guitar/negative/3204221391f8de7281ca.flac"
+    },
+    {
+      "id": "62e67bd4d988d754fcd8",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 186.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Adam_Buckley|Drag_me_Down",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Adam_Buckley|Drag_me_Down/Gtr/EG/26_ElecGtr2.flac",
+        "source_sha256": "f7c79ec58db85528c9ab96a2eb06838b289cc9140eb3caea5377243fa2eea1a6"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/62e67bd4d988d754fcd8.flac"
+    },
+    {
+      "id": "5f4fe34240c033446df5",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 34.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Spektakulatius|Our_Love_Is_Here_To_Stay",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Spektakulatius|Our_Love_Is_Here_To_Stay/Gtr/EG/08_ElecGtr.flac",
+        "source_sha256": "9bac2292db9b3b5255c78c9a0688864e51752e28ee324306a342b29ab4dd9d99"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/5f4fe34240c033446df5.flac"
+    },
+    {
+      "id": "315601ae9c4d70263ddd",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 120.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Secretariat|Over_The_Top",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Secretariat|Over_The_Top/Gtr/EG/05_ElecGtr1.flac",
+        "source_sha256": "842b7fd7bbe9586f768337ad430dc92fe3332727ee7f198bb7fa8341f1643dd4"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/315601ae9c4d70263ddd.flac"
+    },
+    {
+      "id": "fc1309076691c7e9ab21",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 50.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Szymon_Skiba|Some_Trashy_Thrash,_I_Guess",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Szymon_Skiba|Some_Trashy_Thrash,_I_Guess/Gtr/EG/10_ElecGtrDI2.flac",
+        "source_sha256": "04df63e84b36cfac2ab238f5924cc429e865a6801963ba6218ffcca5eaaffd97"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/fc1309076691c7e9ab21.flac"
+    },
+    {
+      "id": "cca22912fe702c815a12",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 52.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "The_Butterfly_Effect|Fairytale",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Butterfly_Effect|Fairytale/Gtr/EG/08_ElecGtr1.flac",
+        "source_sha256": "3dfe9d3e85898335d2014fd21f5651e58512fb8a4940614834ce40921c78392b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/cca22912fe702c815a12.flac"
+    },
+    {
+      "id": "1d4fe3b1ea8244c1742e",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 150.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Moosmusic|Big_Dummy_Shake",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Moosmusic|Big_Dummy_Shake/Gtr/EG/27_ElecGtr6.flac",
+        "source_sha256": "e61e7ed380025b881a505b011613de3b45d9e2d01282444d4dd2fdf064aac72a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/1d4fe3b1ea8244c1742e.flac"
+    },
+    {
+      "id": "c3185a182cc1f9fd4444",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 146.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "The_Brew|What_I_Want",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Brew|What_I_Want/Gtr/EG/GUITAR - AK-47mkII - BAE 1073.flac",
+        "source_sha256": "7c95de331ca0eba6a1eca161f7c1b38b77ea811e4d786dd7c1f7a08d9646ee72"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/c3185a182cc1f9fd4444.flac"
+    },
+    {
+      "id": "5fe62eb28a4af7e57179",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 52.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Actions|One_Minute_Smile",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Actions|One_Minute_Smile/Gtr/EG/08_ElecGtr1.flac",
+        "source_sha256": "3dfe9d3e85898335d2014fd21f5651e58512fb8a4940614834ce40921c78392b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/5fe62eb28a4af7e57179.flac"
+    },
+    {
+      "id": "b8715cf0b2c19609f8ce",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 2.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "How_To_Kill_A_Conversation|Showmonster",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/How_To_Kill_A_Conversation|Showmonster/Gtr/EG/09_Gtr1b.flac",
+        "source_sha256": "e0fb6effed3b51de52c1627c1d2a1dd7b1e08a0408cc0250223c5e3ec9b70937"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/b8715cf0b2c19609f8ce.flac"
+    },
+    {
+      "id": "739a02194fd8ffc45f17",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 120.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Starnes_&_Shah|Prodigal",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Starnes_&_Shah|Prodigal/Gtr/EG/05_ElecGtr1.flac",
+        "source_sha256": "842b7fd7bbe9586f768337ad430dc92fe3332727ee7f198bb7fa8341f1643dd4"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/739a02194fd8ffc45f17.flac"
+    },
+    {
+      "id": "167ad0f6760651ad9907",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 224.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "V.M.GY|The_Crown",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/V.M.GY|The_Crown/Gtr/EG/17_ElecGtr1.flac",
+        "source_sha256": "4be74e049b555f1b74e29b48f1a0a597ba5f1381cad12b4db6f85d5e3bd6eaa7"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/167ad0f6760651ad9907.flac"
+    },
+    {
+      "id": "543108e0f651222e34c2",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 96.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Hurray_For_The_Riff_Raff|Living_In_The_City",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Hurray_For_The_Riff_Raff|Living_In_The_City/Gtr/EG/ELE Guitar2-Con-M60.flac",
+        "source_sha256": "e8a1bc334550d4e79220a4780a545a4ffa7e375821c245a10422ca85e5201841"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/543108e0f651222e34c2.flac"
+    },
+    {
+      "id": "54834283eb2a444eb792",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 24.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Sepulchral_Infestation|NEW!_'Goregasmic_Grotesqueries",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Sepulchral_Infestation|NEW!_'Goregasmic_Grotesqueries/Gtr/EG/21_ElecGtr1DTAmp1.flac",
+        "source_sha256": "6968d570c32b2f37ca3e3901a1adfcb5767ea347c0519fe22062fd6bfa67533b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/54834283eb2a444eb792.flac"
+    },
+    {
+      "id": "624eff124792b95a3e80",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 0.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Al_James|Schoolboy_Fascination",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Al_James|Schoolboy_Fascination/Gtr/EG/28_ElecGtr3MIDI.flac",
+        "source_sha256": "8cf8b0f535bfa020036bf35d8aad23d9d76e278269392d811a483f6e6aea8fee"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/624eff124792b95a3e80.flac"
+    },
+    {
+      "id": "52abd554daecea942806",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 254.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Swatkins_&_Moorea_Masa|Until_I_Get_Back",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Swatkins_&_Moorea_Masa|Until_I_Get_Back/Gtr/EG/GTR DI TDP-1.flac",
+        "source_sha256": "e364d941fa1d93e558ca027fd98702e260496227a479bb29b50c1da01c1e13b4"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/52abd554daecea942806.flac"
+    },
+    {
+      "id": "50b511a9128258f410d4",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 22.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "The_Mountaineering_Club|Mallory",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Mountaineering_Club|Mallory/Gtr/EG/22_ElecGtr03b.flac",
+        "source_sha256": "3fe36f06e108fb489ac7a062aad950e531d8affe994a336a936d571ccc0bb00a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/50b511a9128258f410d4.flac"
+    },
+    {
+      "id": "65f8bf9d735ae6bb9c0c",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 98.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Strobe|Nostalgic",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Strobe|Nostalgic/Gtr/EG/07_ElecGtr.flac",
+        "source_sha256": "fc3a17090256ea89c584f293e857f09d20990a28b948c8e300923fa96a2d5718"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/65f8bf9d735ae6bb9c0c.flac"
+    },
+    {
+      "id": "3ba3291d40cc80211fe9",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 106.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Dunning_Kruger|EnDance",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Dunning_Kruger|EnDance/Gtr/EG/09_Gtr1.flac",
+        "source_sha256": "25eeda9067e33d7271fe0eebcccb271cb81ce25a3352c53a7381e3a13e4e95a0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/3ba3291d40cc80211fe9.flac"
+    },
+    {
+      "id": "28e5ab23347b4e1d4e6e",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 16.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Egda_Carolyn|Saudade_Do_Teu_Beijo",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Egda_Carolyn|Saudade_Do_Teu_Beijo/Gtr/EG/10_ElecGtr1.flac",
+        "source_sha256": "62a6f1b7ea1a9b5a17fe18b38b80ecd12880f38df3a29707a31b76e95cb2f319"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/28e5ab23347b4e1d4e6e.flac"
+    },
+    {
+      "id": "60b357551da8c3a4f065",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 8.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Peter_White|Crazy_Girl",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Peter_White|Crazy_Girl/Gtr/EG/11_ElecGtr2DI.flac",
+        "source_sha256": "08ae944bde8964e8fb5cec0054fd97a1406f101c72bccf829abda8a8cda1e684"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/60b357551da8c3a4f065.flac"
+    },
+    {
+      "id": "86e992cf7fbdc9efe4cd",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 114.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Fergessen|Back_From_The_Start",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Fergessen|Back_From_The_Start/Gtr/EG/15-130624_1040.flac",
+        "source_sha256": "37885eb00cd727d648b5cae470f94b6dcc87f82db9b2b1dca808abc910c549f8"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/86e992cf7fbdc9efe4cd.flac"
+    },
+    {
+      "id": "1fd52d3531eba5c6d7d1",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 134.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Studio_ROM|NEW!_'Pia_Mater",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Studio_ROM|NEW!_'Pia_Mater/Gtr/EG/14_ElecGtr.flac",
+        "source_sha256": "44cdd7cd57c8dbb4059f6107aa566ba4e5f54b904034b6b34ab7bbed3ed2ccb2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/1fd52d3531eba5c6d7d1.flac"
+    },
+    {
+      "id": "66c7e1fb03da93408d1f",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 200.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Bruks|Kak_Tvoi_Dela,_Vova?",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Bruks|Kak_Tvoi_Dela,_Vova?/Gtr/EG/12_ElecGtr1.flac",
+        "source_sha256": "873a56f3b8feda9e17014954b8d18b925074163548a47e84e1b2e46c0a889328"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/66c7e1fb03da93408d1f.flac"
+    },
+    {
+      "id": "bf44d56d6ae873738d24",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 212.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "MekaPhil|Core_(Eternal_Waltz)",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/MekaPhil|Core_(Eternal_Waltz)/Gtr/EG/15_ElecGtr1DI.flac",
+        "source_sha256": "7b40ee0c962a9d42ae45996bcab7cbcf1bc72eaffe99c36222437bbd1db3bea3"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/bf44d56d6ae873738d24.flac"
+    },
+    {
+      "id": "5efe2da164ced06fc6b7",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 112.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Fytakyte|Disconnected",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Fytakyte|Disconnected/Gtr/EG/26_ElecGtr2DT.flac",
+        "source_sha256": "03e54c7bf960760ddd1ad2b427b5c1b8e87d3f3e3eea0a808cb76afa648abc70"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/positive/5efe2da164ced06fc6b7.flac"
+    },
+    {
+      "id": "d06bff98e651e4d92459",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 156.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Jesse_Joy|Release",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jesse_Joy|Release/Gtr/AG/06_AcousticGtr1Mic1.flac",
+        "source_sha256": "b27a7a9c7975c3371f57b66a3341f8e4d0d70e3a2cd3c9fe0e1200bb35ac4ba9"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/d06bff98e651e4d92459.flac"
+    },
+    {
+      "id": "20d81fd30a5747fac2e8",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 150.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Spektakulatius|Wayfaring_Stranger",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Spektakulatius|Wayfaring_Stranger/Orch/WW/08_Saxophone_LiveRoom.flac",
+        "source_sha256": "a6c5be3fd86bf9e29784d956f442158e34051fad219a7e40aa07be07dd8541c0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/20d81fd30a5747fac2e8.flac"
+    },
+    {
+      "id": "f1f7ad4a545f6b914ff0",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 68.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Kangoro|King_Rascal",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Kangoro|King_Rascal/Orch/WW/29_FluteLoop.flac",
+        "source_sha256": "624f2985aec2a76bf5d15da5d65a3cc9d4042e8b6c9528bd45ff1f6c56b6d79a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/f1f7ad4a545f6b914ff0.flac"
+    },
+    {
+      "id": "20311095624e1b0389df",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 216.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Paul_Smith_&_8_Days_A_Week_Studio|NEW!_'The_Weight",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Paul_Smith_&_8_Days_A_Week_Studio|NEW!_'The_Weight/Orch/STR/Violin.flac",
+        "source_sha256": "061958c8d45a6a84dcd0519c26f88b61cb2663687c3f0f9f77e846b941a2439a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/20311095624e1b0389df.flac"
+    },
+    {
+      "id": "90c7a3289b0dd87fb6d8",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 158.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Maurizio_Pagnutti_Sextet|All_The_Gin_Is_Gone",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Maurizio_Pagnutti_Sextet|All_The_Gin_Is_Gone/Orch/BR/15_Trombone.flac",
+        "source_sha256": "736790c490769b8819e6bfff440effc41b70fe9c5dbc3f1c22f0e4596cbd9cc5"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/90c7a3289b0dd87fb6d8.flac"
+    },
+    {
+      "id": "73bf0d804ffbfda67957",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 42.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Zwiepack|Air",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Zwiepack|Air/Orch/WW/05_SaxMic2_PeerArray.flac",
+        "source_sha256": "1483f3e189dc0db09a42543cbee851a7328100082cf76526d8f3b54ce0a3697b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/73bf0d804ffbfda67957.flac"
+    },
+    {
+      "id": "5672a1eda5f8ce5dd72b",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 156.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Zwiepack|Summertime",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Zwiepack|Summertime/Orch/WW/08_SaxMic1.flac",
+        "source_sha256": "2cd3162faca2bda77faf55e1993c23ca61277fa35bf3bc9f64404bd66badf1ff"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/5672a1eda5f8ce5dd72b.flac"
+    },
+    {
+      "id": "c884cf37dba6abcee657",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 214.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "West_End_Blend|Must_Be_Voodoo",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/West_End_Blend|Must_Be_Voodoo/Orch/BR/Horns-Trumpet-Ela M 260.flac",
+        "source_sha256": "95a758d576cacef73cd2ed2e9a2b59ae4234b97d883866a0d53edc239764b363"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/c884cf37dba6abcee657.flac"
+    },
+    {
+      "id": "d54e309446c7a8ca4c9a",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 36.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mike_Skalandunas|Sun_Drenched",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mike_Skalandunas|Sun_Drenched/Orch/BR/19_FrenchHorn2.flac",
+        "source_sha256": "e4059a7a2ef5757ed01c1a8b26154eb9a5d49af215750fb1f8417745955503ae"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/d54e309446c7a8ca4c9a.flac"
+    },
+    {
+      "id": "540e80bc05dd8b7562c8",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 104.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "James_May|If_You_Say",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/James_May|If_You_Say/Orch/WW/14_Clarinet1.flac",
+        "source_sha256": "3cd4fdadec85d570a6cd9038288f20b676d2d7b36307903eb16c1aa5253693b2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/540e80bc05dd8b7562c8.flac"
+    },
+    {
+      "id": "87ecfd0e3b290058dfe2",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 268.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Ian_Dearden_(with_Vicki_Swann_&_Jonny_Dyer)|Song_For_John",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ian_Dearden_(with_Vicki_Swann_&_Jonny_Dyer)|Song_For_John/Orch/STR/11_Cello1.flac",
+        "source_sha256": "8b3bc5041149f0f4e6a7c819d5cc2464756c3661cc56b431dc3c8ecc442a991b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/87ecfd0e3b290058dfe2.flac"
+    },
+    {
+      "id": "ab1683fe34e6717fa909",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 16.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Simon_Lyn|Copper",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Simon_Lyn|Copper/Orch/STR/07_ArcoRhythm2.flac",
+        "source_sha256": "c947af22c91342e2154fab37623d2a31e63529847d6f6beaa63e113987b25bf7"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/ab1683fe34e6717fa909.flac"
+    },
+    {
+      "id": "e98d29b75f15567e1c87",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 152.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Eduard_Semenov|River_Of_The_White_Gloom",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Eduard_Semenov|River_Of_The_White_Gloom/Orch/BR/09_Trumpet.flac",
+        "source_sha256": "7ba9d36ecb2fad19f89ad944d974be42e7510c8df906741af5bb9e4f6f8ecad4"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/e98d29b75f15567e1c87.flac"
+    },
+    {
+      "id": "41c5ab1a7e57f22dd70f",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 58.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Wolf's_Head_&_Vixen_Morris_Band|Lament",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Wolf's_Head_&_Vixen_Morris_Band|Lament/Gtr/AG/08_AcGuitar2.flac",
+        "source_sha256": "aa7366139a7a2de8b5cb795e13de0fb280ae75ec7131b5fbeddf579d2b110c9f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/41c5ab1a7e57f22dd70f.flac"
+    },
+    {
+      "id": "9772880da2e0240563cd",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 172.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Jesse_Joy|Nearly_There",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jesse_Joy|Nearly_There/Gtr/AG/05_AcousticGtrMic1.flac",
+        "source_sha256": "c87cdf987a43bd10dde3323155a2ab0fa54465af07b78d55150ceb655626f6c8"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/9772880da2e0240563cd.flac"
+    },
+    {
+      "id": "615cfbf59a1f2a8e5d4c",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 192.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "ChrisB|Future_Soil",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/ChrisB|Future_Soil/Orch/STR/05_Strings3.flac",
+        "source_sha256": "eef1abf66e84dbc15d1b122fc0fc57c099c52626357b9d3d06374bee809e75bc"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/615cfbf59a1f2a8e5d4c.flac"
+    },
+    {
+      "id": "c40c90372a9131de0785",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 164.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Sambasevam_Shanmugam|Kaathaadi",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Sambasevam_Shanmugam|Kaathaadi/Orch/STR/27_Viola01.flac",
+        "source_sha256": "b485dd4f46d070a1fb6535fddae49865b9366d3179ad237dd28719de22353f42"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/c40c90372a9131de0785.flac"
+    },
+    {
+      "id": "6219c825c72328b945b3",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 32.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Keystone_Angel|Afterglow",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Keystone_Angel|Afterglow/Orch/STR/16_Strings.flac",
+        "source_sha256": "3b6df4e8c926aa3cccb3378e6b97e456c246572cf046aa39a4e8206d5409d407"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/6219c825c72328b945b3.flac"
+    },
+    {
+      "id": "28056c244fd7d1a7425c",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 160.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Jeffrey_Hayat|Alex_The_Adventurer",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jeffrey_Hayat|Alex_The_Adventurer/Orch/BR/25_Horns.flac",
+        "source_sha256": "c05e3aeba5330071d13bd9e9f638f5a9f01ab74cdf993c8a9951b21278c3f5c9"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/28056c244fd7d1a7425c.flac"
+    },
+    {
+      "id": "678b69463318e99f6cb8",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 94.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "James_Fabio|Machines_On_Treadmills",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/James_Fabio|Machines_On_Treadmills/Orch/STR/13_Strings.flac",
+        "source_sha256": "57aa62bddad24cbca53accb2c6782a48ab0d251bd0688ec55245a1d55e6d10ce"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/678b69463318e99f6cb8.flac"
+    },
+    {
+      "id": "ea5d90648bd8a392c0fe",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 182.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Rubblebucket|Carousel_Ride",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Rubblebucket|Carousel_Ride/Orch/BR/Horns-Trumpet-M81.flac",
+        "source_sha256": "fd758a2eb58710dbdba5742c568690f842d19627a1dd90c70aeafd12e2102781"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/ea5d90648bd8a392c0fe.flac"
+    },
+    {
+      "id": "5c9196ba98cf5bf1221b",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 82.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "BaumXmedia|Koishii_(feat._N.I.A.)",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/BaumXmedia|Koishii_(feat._N.I.A.)/Orch/STR/22_Strings4.flac",
+        "source_sha256": "883f17f8f7239006f17452e21c374f74000fdb1fd828ceb9fbcce29cff3f997d"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/5c9196ba98cf5bf1221b.flac"
+    },
+    {
+      "id": "cf46a588d659b59b3949",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 8.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mipso|Wallpaper_Baby",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mipso|Wallpaper_Baby/Orch/STR/Violin TDP-1.flac",
+        "source_sha256": "0bf401f4bb1e7984c5539beb0dccbb2c10cb17350da9c4858293369e9938c051"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/cf46a588d659b59b3949.flac"
+    },
+    {
+      "id": "fb1059bb9cc2fe15150a",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 66.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Trybes|Running_Out",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Trybes|Running_Out/Orch/WW/20_Clarinets.flac",
+        "source_sha256": "d77d15860303f14419b207e0ef003d8afd20cba8babd142a76dc25ad0e02d2c2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/fb1059bb9cc2fe15150a.flac"
+    },
+    {
+      "id": "c061b144957caaf0f324",
+      "instrument": "electric_guitar",
+      "metadata": {
+        "benchmark_family": "electric_guitar",
+        "clip_offset_seconds": 8.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "M.E.R.C._Music|Knockout",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/M.E.R.C._Music|Knockout/Orch/BR/31_Horns.flac",
+        "source_sha256": "1b419723783294226c3453f5792838ee315756060a19c298b23f30c4b2ee00fb"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/electric_guitar/negative/c061b144957caaf0f324.flac"
+    },
+    {
+      "id": "aa36a87d09f3130c1a1b",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 142.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ajay_Nagarkoti_&_Vibhu_Dixit|Ae_Mere_Humsafar",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ajay_Nagarkoti_&_Vibhu_Dixit|Ae_Mere_Humsafar/Orch/STR/15_Strings1.flac",
+        "source_sha256": "abb0fb48ca62a21f1e976317adae7ac9d8cfc68776e58d2a879bbec6e6a6f99d"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/aa36a87d09f3130c1a1b.flac"
+    },
+    {
+      "id": "6e57d6c0ea55d1bb11e0",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 128.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ricardo_Santiago|Dream_No._12",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ricardo_Santiago|Dream_No._12/Orch/STR/11_Strings.flac",
+        "source_sha256": "f7311464033ed95b2930293afbe799ef77cfe2d797837eb6400aa025821c90b2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/6e57d6c0ea55d1bb11e0.flac"
+    },
+    {
+      "id": "ae400b08c38cfc065b7e",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 116.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Remember_December|C_U_Next_Time",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Remember_December|C_U_Next_Time/Orch/STR/19_Strings.flac",
+        "source_sha256": "d3e84397d42dfcf7c7d62e042df8c71bc5126e28d5a06df3bef6853d2699ce18"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/ae400b08c38cfc065b7e.flac"
+    },
+    {
+      "id": "0f3d9c037520b93cc6ab",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 166.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Triviul|Alright?",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Triviul|Alright?/Orch/STR/08_Strings.flac",
+        "source_sha256": "ca95a59c92643af4a15aab5d4e067cd92bfcd70ee1b0ba3beb21b9ec1433640e"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/0f3d9c037520b93cc6ab.flac"
+    },
+    {
+      "id": "785e30c8909ca5f301d8",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 34.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Mike_Skalandunas|Sun_Drenched",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mike_Skalandunas|Sun_Drenched/Orch/STR/13_Violins1.flac",
+        "source_sha256": "06e14ee81c3bee368e090bd559f8a41a0398036f022035d3a0d42867abb66e56"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/785e30c8909ca5f301d8.flac"
+    },
+    {
+      "id": "cb588aea6d07e6e998d4",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 116.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "simplemachine|Unbroken_(I_Remember_Everything)",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/simplemachine|Unbroken_(I_Remember_Everything)/Orch/STR/25_Harp.flac",
+        "source_sha256": "d534688304a2c8f4ec0b454bfe11d897a77f324dcb62ff13cfda2a79549434dc"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/cb588aea6d07e6e998d4.flac"
+    },
+    {
+      "id": "13249a75790406d39d3b",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 46.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Al_James|Schoolboy_Fascination",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Al_James|Schoolboy_Fascination/Orch/STR/34_StringsPizz.flac",
+        "source_sha256": "590d0e3a991fc3ca58992cbe5f71f6c7ef3fd14731e81b0a22604ccf97cfa8e3"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/13249a75790406d39d3b.flac"
+    },
+    {
+      "id": "55393bfdf0b804e8eeb9",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 116.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "APZX|Transcention",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/APZX|Transcention/Orch/STR/18_Strings.flac",
+        "source_sha256": "09279c08a256bcdf991a712843e6549cd4f5cd078c0e34f7d5fb89f5e496f583"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/55393bfdf0b804e8eeb9.flac"
+    },
+    {
+      "id": "48de64b7ef1da192eb74",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 84.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Raft_Monk|Tiring",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Raft_Monk|Tiring/Orch/STR/27_Strings.flac",
+        "source_sha256": "d55b8440497cea59ed55a915924e9b2d6a9762ff39efb3ed648ce33466ff424d"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/48de64b7ef1da192eb74.flac"
+    },
+    {
+      "id": "34fe48bc1e063a8ee18f",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 116.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "David_Tyo|Oh,_Life",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/David_Tyo|Oh,_Life/Orch/STR/18_Strings.flac",
+        "source_sha256": "09279c08a256bcdf991a712843e6549cd4f5cd078c0e34f7d5fb89f5e496f583"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/34fe48bc1e063a8ee18f.flac"
+    },
+    {
+      "id": "7440cad1d73538e1ef34",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 158.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "cryonicPAX|Another_Way",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/cryonicPAX|Another_Way/Orch/STR/22_Strings1.flac",
+        "source_sha256": "eb0aeda0cb85cc0de396256dcdab621db50b3f69d9123f37f8b806313aa2eade"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/7440cad1d73538e1ef34.flac"
+    },
+    {
+      "id": "4ee6a8dd3743fdc26295",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 122.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Wess_Meets_West|Direct_Experience",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Wess_Meets_West|Direct_Experience/Orch/STR/63_Violin1.flac",
+        "source_sha256": "31031352c49f4fb0d74d4dc3ed08890b1e3bee9d0d234f9c938a89a103b78e78"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/4ee6a8dd3743fdc26295.flac"
+    },
+    {
+      "id": "6d8969120b079e3c69bc",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 148.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ben_Carrigan|We'll_Talk_About_It_All_Tonight",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ben_Carrigan|We'll_Talk_About_It_All_Tonight/Orch/STR/33_ViolinSamples.flac",
+        "source_sha256": "588ef44c09f4c676077665e5e0873ff4ccbe153328d36694c67bc47642b46300"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/6d8969120b079e3c69bc.flac"
+    },
+    {
+      "id": "2db4a292ff102c28ff68",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 98.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Georgia_Wonder|Siren",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Georgia_Wonder|Siren/Orch/STR/20_Strings.flac",
+        "source_sha256": "0b9933905fd153a26477048ba9d7efe3abf290586ec31d70d4eabd917813ad13"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/2db4a292ff102c28ff68.flac"
+    },
+    {
+      "id": "ea4fcbbf507386118253",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 8.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "M.E.R.C._Music|Knockout",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/M.E.R.C._Music|Knockout/Orch/STR/32_Violin.flac",
+        "source_sha256": "e4c2144f43c7cfcb686e9c28a8c6d8a86a8d8c6a5b45683376738780f91323ac"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/ea4fcbbf507386118253.flac"
+    },
+    {
+      "id": "7f79fa7671b9bbc14db1",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 130.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Enda_Reilly|Cur_An_Long_Ag_Seol",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Enda_Reilly|Cur_An_Long_Ag_Seol/Orch/STR/09_Fiddle1.flac",
+        "source_sha256": "aba02d29d61fc1d19d4b61a051c9f85ad45ccb8e32baacf7a6ead92cecbc7fab"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/7f79fa7671b9bbc14db1.flac"
+    },
+    {
+      "id": "bd36b982bf3ad0cac750",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 102.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Peppermark|Another_Feeling",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Peppermark|Another_Feeling/Orch/STR/49_Viola.flac",
+        "source_sha256": "3ce99808a59253b59b787884fedd1cd2eba4b3337ae33de013bef8b94bfe6ca8"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/bd36b982bf3ad0cac750.flac"
+    },
+    {
+      "id": "5c91cfb9ca9f2457f7d3",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 622.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ethan_Winer|Cello_Concerto_in_A_Minor",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ethan_Winer|Cello_Concerto_in_A_Minor/Orch/STR/02_Violins1.flac",
+        "source_sha256": "58792c04486a9d80d8b5438415700429afbecf5328dd35a379ecd11446e38473"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/5c91cfb9ca9f2457f7d3.flac"
+    },
+    {
+      "id": "95f17a315e200577fb23",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 168.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "MekaPhil|Timeless_(Part_1)",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/MekaPhil|Timeless_(Part_1)/Orch/STR/21_Strings2.flac",
+        "source_sha256": "1db24dcb4b345b21d551c424c612dd30f789f9dc96e33fcb75ac8ef74d2b0b13"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/95f17a315e200577fb23.flac"
+    },
+    {
+      "id": "bba7af1a3e8cd9bf2162",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 84.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Swing_Bazar|Fleche_D'Or",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Swing_Bazar|Fleche_D'Or/Orch/STR/08_Violin.flac",
+        "source_sha256": "110e178cf4e3c33a6dc18cdf6a94f5a4e02686a60172886d25729cb2a0c8a72a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/bba7af1a3e8cd9bf2162.flac"
+    },
+    {
+      "id": "444e46ad043e7009e6eb",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 86.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Whitten_And._Williams|How_To_Make_A_Mirror",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Whitten_And._Williams|How_To_Make_A_Mirror/Orch/STR/05_Strings.flac",
+        "source_sha256": "677467932d1c5ff2401c70a89bcdd3eed1943c4f03594eef264bc37c7110ea13"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/444e46ad043e7009e6eb.flac"
+    },
+    {
+      "id": "1fdceffec0c5799589ef",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 50.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Nahum_Strickland|Steampunk_Siege",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Nahum_Strickland|Steampunk_Siege/Orch/STR/17_Cellos.flac",
+        "source_sha256": "1c081bbe908725de1b41f9b74f581a03e7f8e8051256d1a1bcb3df108c79907a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/1fdceffec0c5799589ef.flac"
+    },
+    {
+      "id": "8c8233be38298d33f55e",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 90.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Catfolkin|Odi_A_La_Barretina",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Catfolkin|Odi_A_La_Barretina/Orch/STR/29_Violin.flac",
+        "source_sha256": "44a6e083cdcaa83ac6b53a9eb694f02d203773591846baf23f821b1e63feeb6e"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/8c8233be38298d33f55e.flac"
+    },
+    {
+      "id": "4a180d67047684adc771",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 166.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Fytakyte|Too_Much",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Fytakyte|Too_Much/Orch/STR/37_Cello.flac",
+        "source_sha256": "898665c4f39d68c45d96019224bebb047d2f9cdc11775a31b711b790a173b11b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/4a180d67047684adc771.flac"
+    },
+    {
+      "id": "9120ac7c051a4d290208",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 240.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Peppermark|Interlude",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Peppermark|Interlude/Orch/STR/52_Violas.flac",
+        "source_sha256": "6233e18f81a4af8d258401b90e5259afa9c2a0990559de7d3ce1a65d2e7f0a37"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/positive/9120ac7c051a4d290208.flac"
+    },
+    {
+      "id": "d01b24f1d4ac02fa125d",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 224.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Ghostly_Beard|Upper_Hand",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ghostly_Beard|Upper_Hand/Gtr/EG/17_ElecGtr1.flac",
+        "source_sha256": "4be74e049b555f1b74e29b48f1a0a597ba5f1381cad12b4db6f85d5e3bd6eaa7"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/d01b24f1d4ac02fa125d.flac"
+    },
+    {
+      "id": "caef1c8821a7dbe22513",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 66.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "V.M.GY|Fountain_Of_Eternal_Life",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/V.M.GY|Fountain_Of_Eternal_Life/Gtr/EG/19_ElecGtr4.flac",
+        "source_sha256": "5b99e60baa3e7e8fa89fc8cbe4435fd13f89f390423e676447d763b32cc8c4d8"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/caef1c8821a7dbe22513.flac"
+    },
+    {
+      "id": "223de841bc3ad9dad423",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 290.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Perpetual_Escape|Roots_Of_Mankind",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Perpetual_Escape|Roots_Of_Mankind/Gtr/EG/29_ElecGtr03Mic4.flac",
+        "source_sha256": "8b5d69be41964d3c6f907d974805fd8c59887d8dc2fabe65ef1e662a1e794dfe"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/223de841bc3ad9dad423.flac"
+    },
+    {
+      "id": "ef0c92d717e2940b9ef7",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 200.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "The_Doppler_Shift|Atrophy",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Doppler_Shift|Atrophy/Gtr/EG/12_ElecGtr1.flac",
+        "source_sha256": "873a56f3b8feda9e17014954b8d18b925074163548a47e84e1b2e46c0a889328"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/ef0c92d717e2940b9ef7.flac"
+    },
+    {
+      "id": "8c7a3babd318e950009e",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 98.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Perpetual_Escape|Sin_Six",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Perpetual_Escape|Sin_Six/Gtr/EG/28_ElecGtr02Mic4.flac",
+        "source_sha256": "1027914b6b373c9c878ee672fd37d564c22b43a75672acc03565c264af77b872"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/8c7a3babd318e950009e.flac"
+    },
+    {
+      "id": "3870d5068f49c7fdb744",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 24.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Signe_Jakobsen|What_Have_You_Done_To_Me",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Signe_Jakobsen|What_Have_You_Done_To_Me/Gtr/EG/11_ElecGtr01.flac",
+        "source_sha256": "979d002f47815494a42519959d39c6804544eb3b494cbf3b5d580cbcb744a2d0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/3870d5068f49c7fdb744.flac"
+    },
+    {
+      "id": "69e7e7cecd9e6189a65e",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 34.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Candlebox|Surrendering",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Candlebox|Surrendering/Gtr/EG/ELE Guitar1 Clean-M80.flac",
+        "source_sha256": "77fed4b980f22db38bbfb42b62575f7909f78958f3aeddba598ba1f648949101"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/69e7e7cecd9e6189a65e.flac"
+    },
+    {
+      "id": "4b696ced3499fbf44d09",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 70.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mykey_Massacre|Don't_Please_Stay",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mykey_Massacre|Don't_Please_Stay/Gtr/EG/19_ElecGtr5DT.flac",
+        "source_sha256": "0052f8a01cab10fd2462699597f226daa41ade04bcf58391e0f73bccd477d6eb"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/4b696ced3499fbf44d09.flac"
+    },
+    {
+      "id": "74fd6bb917dc40de90a0",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 162.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "V.M.GY|Bloodshed",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/V.M.GY|Bloodshed/Gtr/EG/22_ElecGtr2.flac",
+        "source_sha256": "dda69ea125801b2df4875881175fbaf298fe707f2e6ee4cee2785aac325a1a7b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/74fd6bb917dc40de90a0.flac"
+    },
+    {
+      "id": "bbf29f374df46250815d",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 200.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Jet_B|To_The_Wolves",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jet_B|To_The_Wolves/Gtr/EG/12_ElecGtr1.flac",
+        "source_sha256": "873a56f3b8feda9e17014954b8d18b925074163548a47e84e1b2e46c0a889328"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/bbf29f374df46250815d.flac"
+    },
+    {
+      "id": "d44f7be47862447e2f28",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 214.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Ripe|Little_Lighter",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ripe|Little_Lighter/Orch/BR/Horns-Bone-Ela M 260.flac",
+        "source_sha256": "868126ce8dc765814e39a878d33aa0021cf54de1ebe14278a769192c1f3c666b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/d44f7be47862447e2f28.flac"
+    },
+    {
+      "id": "a264653d00ac434465c1",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 132.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "North_To_Alaska|All_The_Same",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/North_To_Alaska|All_The_Same/Gtr/EG/18_ElecGtr12.flac",
+        "source_sha256": "ddb904ffa49ef4fe91ec4cba7e59090f82d243e48abfc6cfdc28404ba1a63ec3"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/a264653d00ac434465c1.flac"
+    },
+    {
+      "id": "eb020b9f3470d4e55421",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 36.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Ruby_Roads|Rat_Race",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ruby_Roads|Rat_Race/Gtr/EG/17_ElecGtr2.flac",
+        "source_sha256": "959256b80bb88ed42d6cc18575e935f31bd6610a172bd64929572b2f70902e8b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/eb020b9f3470d4e55421.flac"
+    },
+    {
+      "id": "0bae89a4f2b60721614d",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 38.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mistrusted|Polemic",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mistrusted|Polemic/Gtr/EG/11_ElecGtr3.flac",
+        "source_sha256": "ffd1c3891b623adeb8c708ab5f86b0560529fc4b4b56efc78ed338e8706c2001"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/0bae89a4f2b60721614d.flac"
+    },
+    {
+      "id": "f77c94f0ec3c43124ae4",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 54.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Big_Mean_Sound_Machine|Contraband",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Big_Mean_Sound_Machine|Contraband/Gtr/EG/E GUITAR 1_M81_API1608.flac",
+        "source_sha256": "e9d988e21e378d865527c69e46e36363f3546510bc4fce8a0e69356c2aee9d34"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/f77c94f0ec3c43124ae4.flac"
+    },
+    {
+      "id": "f887a8017427fc101151",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 56.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Daimon_B|Toxic",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Daimon_B|Toxic/Gtr/EG/19_ElecGtr.flac",
+        "source_sha256": "d558d1de59f659729c59134d6cb6410b694f553b243999b1f04c238c1401d888"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/f887a8017427fc101151.flac"
+    },
+    {
+      "id": "8a088163afa70065f23a",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 170.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Titanium|Haunted_Age",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Titanium|Haunted_Age/Gtr/EG/11_ElecGtr1.flac",
+        "source_sha256": "b80a682c830a5c28b969b227281b1cc1e8c9c84f1ef0711c107594285c139774"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/8a088163afa70065f23a.flac"
+    },
+    {
+      "id": "ffdda8cce687e7bcd99c",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 36.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Redwood|Smoker_And_The_Stoner",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Redwood|Smoker_And_The_Stoner/Gtr/EG/17_ElecGtr2.flac",
+        "source_sha256": "959256b80bb88ed42d6cc18575e935f31bd6610a172bd64929572b2f70902e8b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/ffdda8cce687e7bcd99c.flac"
+    },
+    {
+      "id": "8729fe2833152cc0e447",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 320.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Marc_Ellason|Treadmills",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Marc_Ellason|Treadmills/Gtr/AG/09_AcousticGtr1.flac",
+        "source_sha256": "aa855bdcd6ce97560e77355479d5e0a5c66f7e30f7bc4d29dc2a16b57d4b6aa2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/8729fe2833152cc0e447.flac"
+    },
+    {
+      "id": "6efd927d89ceb088c52f",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 272.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Lead_Inc|Way_Of_Life",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Lead_Inc|Way_Of_Life/Gtr/EG/17_ElecGtr2Mic2.flac",
+        "source_sha256": "56b55998f56675f38f60504248f65c8786b2b4c0c83dac312ac0518a7ab9a8f0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/6efd927d89ceb088c52f.flac"
+    },
+    {
+      "id": "f713d709265169145d05",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 36.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Louis_Cressy_Band|Good_Time",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Louis_Cressy_Band|Good_Time/Gtr/EG/17_ElecGtr2.flac",
+        "source_sha256": "959256b80bb88ed42d6cc18575e935f31bd6610a172bd64929572b2f70902e8b"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/f713d709265169145d05.flac"
+    },
+    {
+      "id": "485ebd3cdc2f3241a0a8",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 200.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Magician's_Nephew|Get_Out_Of_Bed",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Magician's_Nephew|Get_Out_Of_Bed/Gtr/EG/12_ElecGtr1.flac",
+        "source_sha256": "873a56f3b8feda9e17014954b8d18b925074163548a47e84e1b2e46c0a889328"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/485ebd3cdc2f3241a0a8.flac"
+    },
+    {
+      "id": "6be071b4ce0f8c6ea6ac",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 32.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Mykey_Massacre|Open_Fire",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mykey_Massacre|Open_Fire/Gtr/EG/15_ElecGtr2DT.flac",
+        "source_sha256": "205d431ea95815176a5f93f7360f9edcb9e402ebdde4711482e30481ff652968"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/6be071b4ce0f8c6ea6ac.flac"
+    },
+    {
+      "id": "942334f9d26e469386a5",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 258.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Lead_Inc|The_Inner_Circle",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Lead_Inc|The_Inner_Circle/Gtr/EG/26_ElecGtr1Mic4.flac",
+        "source_sha256": "be49365d05607012db6dda7feefd3a2f3d22fbd575d0103b5ff89e95a09c9d07"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/942334f9d26e469386a5.flac"
+    },
+    {
+      "id": "01f7c346427c8f4e18f8",
+      "instrument": "strings",
+      "metadata": {
+        "benchmark_family": "strings",
+        "clip_offset_seconds": 10.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Young_Griffo|Facade",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Young_Griffo|Facade/Gtr/EG/13_ElecGtr1c_OrangeMD421.flac",
+        "source_sha256": "07db8be5f4585b982113a44a9d5f14a04aa6104864620a27103bd837eb19e7cc"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/strings/negative/01f7c346427c8f4e18f8.flac"
+    },
+    {
+      "id": "8b33204e666ec3acb314",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 52.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Eddie_Garrido|Una_Semana_Sin_Ti",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Eddie_Garrido|Una_Semana_Sin_Ti/Orch/BR/09_FrenchHorns.flac",
+        "source_sha256": "eddc1022394918377b3d93cacc10c377d86ca2ef0f9883c0ea8d5a81ff2d29ea"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/8b33204e666ec3acb314.flac"
+    },
+    {
+      "id": "6ddbb4097857fa54394d",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 218.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ghost_Note|Ja_Make_Ya_Dance",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ghost_Note|Ja_Make_Ya_Dance/Orch/WW/Horns-Sax_Flute-M81.flac",
+        "source_sha256": "fc67ecd27edd29ad67b1e0c37f2d62eba5936473158a7d2c151b9cd0b15ba811"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/6ddbb4097857fa54394d.flac"
+    },
+    {
+      "id": "8818a9f2087c87abc82d",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 114.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Ted_Behrman|Convertible",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ted_Behrman|Convertible/Orch/WW/23_Saxophone.flac",
+        "source_sha256": "de4ee8f7db32cb3dda6f9e43586f6f35b3459b7b4a2d00255a3ee4149260e08c"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/8818a9f2087c87abc82d.flac"
+    },
+    {
+      "id": "2940e4de5742c95a5f54",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 142.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Random_Somebody|Crazy_For_Me",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Random_Somebody|Crazy_For_Me/Orch/BR/17_Trumpet3.flac",
+        "source_sha256": "b352d1a4bae19f3ab2f73bec5afdc9a3d586fae614b4493ea08f704b06b474dc"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/2940e4de5742c95a5f54.flac"
+    },
+    {
+      "id": "eb29673c933481b8b87e",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 182.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Banned_From_The_Zoo|Turn_On_Me",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Banned_From_The_Zoo|Turn_On_Me/Orch/WW/15_Flute.flac",
+        "source_sha256": "36f60f20c8a5d3bc8775e3a9db2b927d70bbfe886eef3f1c8bbc8c8a38df5d75"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/eb29673c933481b8b87e.flac"
+    },
+    {
+      "id": "9c87e4dfb5e5f3451677",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 214.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "West_End_Blend|Must_Be_Voodoo",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/West_End_Blend|Must_Be_Voodoo/Orch/BR/Horns-Trumpet-Ela M 260.flac",
+        "source_sha256": "95a758d576cacef73cd2ed2e9a2b59ae4234b97d883866a0d53edc239764b363"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/9c87e4dfb5e5f3451677.flac"
+    },
+    {
+      "id": "86f75f11354e97104c26",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 104.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "James_May|If_You_Say",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/James_May|If_You_Say/Orch/WW/14_Clarinet1.flac",
+        "source_sha256": "3cd4fdadec85d570a6cd9038288f20b676d2d7b36307903eb16c1aa5253693b2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/86f75f11354e97104c26.flac"
+    },
+    {
+      "id": "da1aef470af3931bca68",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 108.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Funky_Dawgs_Brass_Band|Place_2_Be",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Funky_Dawgs_Brass_Band|Place_2_Be/Orch/WW/Horns-Sax 1-AK47.flac",
+        "source_sha256": "f002d5ce6198b0210efb4feb3531683721913601b7c3380067810c93e7796bc5"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/da1aef470af3931bca68.flac"
+    },
+    {
+      "id": "471804702928149e2b61",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 0.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Slimy_Soul_Suckers|The_Cross_Roads",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Slimy_Soul_Suckers|The_Cross_Roads/Orch/BR/25_Brass.flac",
+        "source_sha256": "18a0dc1206455c655d53a88b7138ba1345fb5aa58aa59fb866065d03092de498"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/471804702928149e2b61.flac"
+    },
+    {
+      "id": "1e907dfa5f7c18f6119d",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 138.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "ShortWave_RadioBand|SomeDay",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/ShortWave_RadioBand|SomeDay/Orch/BR/28_Flugelhorns.flac",
+        "source_sha256": "ac1723d83dde5696c5d30edb58c58d63e7ac2a22ec11b9fd15d86f8610668f22"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/1e907dfa5f7c18f6119d.flac"
+    },
+    {
+      "id": "31fbb546508c55a88c01",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 12.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "V.M.GY|The_Crown",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/V.M.GY|The_Crown/Orch/BR/29_Brass.flac",
+        "source_sha256": "225ea2915184c117475d5e58068da163c3ab6652bba86479ccd4a99d59a6ad24"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/31fbb546508c55a88c01.flac"
+    },
+    {
+      "id": "5936ba463368bd2f6688",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 22.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Xarxa|Cors_Desbocats",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Xarxa|Cors_Desbocats/Orch/WW/33_Sax1.flac",
+        "source_sha256": "b98901c4c6cd7415fb2d8143c291b6f082883cd979f8185610a6a3af3aa8f960"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/5936ba463368bd2f6688.flac"
+    },
+    {
+      "id": "6f40d45862555257c7a3",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 214.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "simplemachine|Ones_And_Zeros",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/simplemachine|Ones_And_Zeros/Orch/WW/42_Saxophone.flac",
+        "source_sha256": "a804eb13e039b2d5f1667f4dc51bfedba23c93a204ab7cae97b0d31ece1a606c"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/6f40d45862555257c7a3.flac"
+    },
+    {
+      "id": "a8c44dfcaaf92e00c07a",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 208.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Digital_Humans|Electrvm",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Digital_Humans|Electrvm/Orch/BR/17_Brass.flac",
+        "source_sha256": "b4c4dccdd07370b04f9a177ec66cd17be81bf639a26b9d4c6136fd72dbbfd364"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/a8c44dfcaaf92e00c07a.flac"
+    },
+    {
+      "id": "58a689f8e11740b0b956",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 140.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Studio_ROM|Islets",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Studio_ROM|Islets/Orch/BR/14_Horns.flac",
+        "source_sha256": "d42ce479f13f64c47103787a8a8238f8448f1bac9db0bf6f727c978fdd08bdab"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/58a689f8e11740b0b956.flac"
+    },
+    {
+      "id": "a0a0a79b8655753e8a50",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 0.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Domestic_Research_Partners|NEW!_'Old_Empty_Nest",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Domestic_Research_Partners|NEW!_'Old_Empty_Nest/Orch/BR/25_Brass.flac",
+        "source_sha256": "18a0dc1206455c655d53a88b7138ba1345fb5aa58aa59fb866065d03092de498"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/a0a0a79b8655753e8a50.flac"
+    },
+    {
+      "id": "a68e52774255377eb7a2",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 48.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Keystone_Angel|Afterglow",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Keystone_Angel|Afterglow/Orch/WW/14_Flute.flac",
+        "source_sha256": "3dcf00ba2af6b2d7e7abbc8f9db6c9538b99177912376ba38dd97163d2ce7ddd"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/a68e52774255377eb7a2.flac"
+    },
+    {
+      "id": "431d19ee9975082d1e4f",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 346.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Big_Mean_Sound_Machine|Contraband",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Big_Mean_Sound_Machine|Contraband/Orch/BR/TRUMPET_M81_API1608.flac",
+        "source_sha256": "b086cd8a13154e7c8016fb12d2c4576cea71d1dd388886e15d5b160420207582"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/431d19ee9975082d1e4f.flac"
+    },
+    {
+      "id": "b1e79f6d34d5ccc43472",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 158.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Maurizio_Pagnutti_Sextet|Bess",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Maurizio_Pagnutti_Sextet|Bess/Orch/BR/15_Trombone.flac",
+        "source_sha256": "736790c490769b8819e6bfff440effc41b70fe9c5dbc3f1c22f0e4596cbd9cc5"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/b1e79f6d34d5ccc43472.flac"
+    },
+    {
+      "id": "8824ab540e2295aceee4",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 74.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "James_May|Don't_Let_Go",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/James_May|Don't_Let_Go/Orch/WW/12_Flute2.flac",
+        "source_sha256": "e3952c35a63f68e41f4686e2f922e8f983fb13804017e71b8d39a9cec2e9306a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/8824ab540e2295aceee4.flac"
+    },
+    {
+      "id": "bc16d6df8296047aa64c",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 114.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Tommy_Marcinek|My_Childhood_Sweetheart",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Tommy_Marcinek|My_Childhood_Sweetheart/Orch/WW/15_Sax.flac",
+        "source_sha256": "0311bf822fa5396b855be328a98f93701245e54e322a655536373f3c7e4ef7c5"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/bc16d6df8296047aa64c.flac"
+    },
+    {
+      "id": "49ac3f7251f089c8a8c2",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 456.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Six_Fox_Whiskey|Hope_And_The_Sea",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Six_Fox_Whiskey|Hope_And_The_Sea/Orch/WW/Horns-Sax-Proto2019.flac",
+        "source_sha256": "fd907fbe49e2cad0935a5ee09c538e99b6087eb403973ec428743b546964e64e"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/49ac3f7251f089c8a8c2.flac"
+    },
+    {
+      "id": "9242308b3a433db6fcdd",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 208.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Spektakulatius|Our_Love_Is_Here_To_Stay",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Spektakulatius|Our_Love_Is_Here_To_Stay/Orch/WW/09_Sax.flac",
+        "source_sha256": "2109ba8d177bed1f0600cbbf8dc73681a367b4cd76ea1fb9c989e8bb528f7faf"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/9242308b3a433db6fcdd.flac"
+    },
+    {
+      "id": "89f7a13df0bc90782353",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 156.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Alejo_Granados|Rumba_Chonta",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Alejo_Granados|Rumba_Chonta/Orch/WW/20_Saxophone6.flac",
+        "source_sha256": "1b1ff78007ce96a5214ae2f6b537b878d2d2771a13374d293c6765663d379df0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/89f7a13df0bc90782353.flac"
+    },
+    {
+      "id": "ed78b8cf5696c98aae84",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 160.0,
+        "clip_seconds": 45.0,
+        "label": "positive",
+        "song_id": "Pepelpovetru|Tochka",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Pepelpovetru|Tochka/Orch/BR/25_Horns.flac",
+        "source_sha256": "c05e3aeba5330071d13bd9e9f638f5a9f01ab74cdf993c8a9951b21278c3f5c9"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/positive/ed78b8cf5696c98aae84.flac"
+    },
+    {
+      "id": "25e41571adce0b5fd4b1",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 16.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "One_Time_Weekend|One_Time_Weekend",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/One_Time_Weekend|One_Time_Weekend/Gtr/EG/ELE Guitar 1-M81.flac",
+        "source_sha256": "280a4a9c0835afa0c49409adbb9b78ec91a560b9042388269cc5cc5d1cbe4fe6"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/25e41571adce0b5fd4b1.flac"
+    },
+    {
+      "id": "238b6db4c3b41121dcf1",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 242.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Chris_Durban|Celebrate",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Chris_Durban|Celebrate/Gtr/EG/20_ElecGtr3bAmp.flac",
+        "source_sha256": "b7cce0e6e3fa11eccff92d597a4dcdb030936aa2f0d8a5ffd72ee549ad81c823"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/238b6db4c3b41121dcf1.flac"
+    },
+    {
+      "id": "8b53189b8dd0b80ea269",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 68.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Juanita_Dientes_Verdes|Dios_Salve_El_R&R_-_Cielo_Sin_Santos",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Juanita_Dientes_Verdes|Dios_Salve_El_R&R_-_Cielo_Sin_Santos/Gtr/EG/08_ElecGtr2.flac",
+        "source_sha256": "36862a748c51d8c2191342503ed4e6ae464e19c89e07c333bfa82f7dde90f16f"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/8b53189b8dd0b80ea269.flac"
+    },
+    {
+      "id": "b2b95743434f1f841cae",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 32.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Drumtracks|Ghost_Bitch",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Drumtracks|Ghost_Bitch/Orch/STR/16_Strings.flac",
+        "source_sha256": "3b6df4e8c926aa3cccb3378e6b97e456c246572cf046aa39a4e8206d5409d407"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/b2b95743434f1f841cae.flac"
+    },
+    {
+      "id": "1fd5ab69db69c3ad7581",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 140.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "The_Penniless_Wild|Seat_Back",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Penniless_Wild|Seat_Back/Gtr/EG/ELE Guitar 1-M80.flac",
+        "source_sha256": "48995b671529ea092d1fd498a53aecb41bb2211dd76c8573fd6da8986867255a"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/1fd5ab69db69c3ad7581.flac"
+    },
+    {
+      "id": "16bbd18b0189eff3944e",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 130.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Leaf|Summerghost",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Leaf|Summerghost/Gtr/EG/08_ElecGtr3.flac",
+        "source_sha256": "7f6634ef13eb325942a41c0c723b8e63d17aa4426adbf416ec39bf4452b64b31"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/16bbd18b0189eff3944e.flac"
+    },
+    {
+      "id": "be34248dcc6abb6c0313",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 148.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Nicki_Bluhm_&_The_Gramblers|Go_Go_Go",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Nicki_Bluhm_&_The_Gramblers|Go_Go_Go/Gtr/EG/NBATG - Electric Guitar - M81.flac",
+        "source_sha256": "48fff2518ce1c51b129efab389050d5cd4154867a9dc5941929460dd2515d64d"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/be34248dcc6abb6c0313.flac"
+    },
+    {
+      "id": "45bc594363c61964c758",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 96.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Juanita_Dientes_Verdes|Donde_No_Llega_La_Luz",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Juanita_Dientes_Verdes|Donde_No_Llega_La_Luz/Gtr/EG/09_ElecGtr1b.flac",
+        "source_sha256": "77a73c15025001191802ec2ab4eed1bbe5779ac9be1f18e4674e54121a59f1a0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/45bc594363c61964c758.flac"
+    },
+    {
+      "id": "7cba1c1224821312babc",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 128.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Malenky_Slovos|Matterplay",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Malenky_Slovos|Matterplay/Gtr/EG/22_ElecGtr02.flac",
+        "source_sha256": "94528a01ef29a1252eaedc841c65b8f0447f5ea7c306e41e4987265b5e34e5a4"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/7cba1c1224821312babc.flac"
+    },
+    {
+      "id": "e8a4d577734790b2af78",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 156.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "James_May|Hold_On_You",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/James_May|Hold_On_You/Gtr/EG/08_SlideGtr.flac",
+        "source_sha256": "be57addad4c8afb06611b3fc2ff3032ad10891720f99617c762d3e7b85d813f3"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/e8a4d577734790b2af78.flac"
+    },
+    {
+      "id": "f552224c48e1253a8160",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 186.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "In_This_Place|1125",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/In_This_Place|1125/Gtr/EG/32_ElecGtr2.flac",
+        "source_sha256": "6973c39ed0b340419591ae1ed810e5e6e9505d08372501c47a90c715065cfc55"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/f552224c48e1253a8160.flac"
+    },
+    {
+      "id": "2a404e157f9aab52f852",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 1424.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Alan_Evans_Trio|I'm_Coming_Home",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Alan_Evans_Trio|I'm_Coming_Home/Gtr/EG/GUITAR - CU-29.flac",
+        "source_sha256": "ae7be7f45eb6fa52065bd3a85e29fc7deabe52ae7027ff01ecf4ac75d11fbfa2"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/2a404e157f9aab52f852.flac"
+    },
+    {
+      "id": "b31e1c32ac4a810580fd",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 10.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Motor_Tapes|Shore",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Motor_Tapes|Shore/Gtr/EG/18_ElecGtr01.flac",
+        "source_sha256": "dc9a0f8974485f8b0e00565f2a390a27e50fbd18bea410153d9392e3a0db13f9"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/b31e1c32ac4a810580fd.flac"
+    },
+    {
+      "id": "52f3467a475976b5ac5f",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 146.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "The_Brew|What_I_Want",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Brew|What_I_Want/Gtr/EG/GUITAR - AK-47mkII - BAE 1073.flac",
+        "source_sha256": "7c95de331ca0eba6a1eca161f7c1b38b77ea811e4d786dd7c1f7a08d9646ee72"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/52f3467a475976b5ac5f.flac"
+    },
+    {
+      "id": "6f10321b6ddf9224e6c3",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 132.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Fergessen|Nos_Palpitants",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Fergessen|Nos_Palpitants/Gtr/EG/18_ElecGtr1b_Room.flac",
+        "source_sha256": "e7031e8d88f29467e07588b64b377339204bc3050ea15160e4c5475c3bdf3901"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/6f10321b6ddf9224e6c3.flac"
+    },
+    {
+      "id": "7dc063ae98c732fb94fe",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 96.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Woodfire|Haunted_House",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Woodfire|Haunted_House/Gtr/EG/09_ElecGtr1b.flac",
+        "source_sha256": "77a73c15025001191802ec2ab4eed1bbe5779ac9be1f18e4674e54121a59f1a0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/7dc063ae98c732fb94fe.flac"
+    },
+    {
+      "id": "c9966266d114cc4b0540",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 170.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "cryonicPAX|Melancholy",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/cryonicPAX|Melancholy/Gtr/EG/11_ElecGtr1.flac",
+        "source_sha256": "b80a682c830a5c28b969b227281b1cc1e8c9c84f1ef0711c107594285c139774"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/c9966266d114cc4b0540.flac"
+    },
+    {
+      "id": "d4773203bef43c1df28f",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 162.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "The_Ferryboat_Men|The_Winds_Of_Gypsy_Moor",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Ferryboat_Men|The_Winds_Of_Gypsy_Moor/Gtr/EG/23_ElecGtr4DT.flac",
+        "source_sha256": "c35f0c19934b262b108360f003ba7224ffe7c82213bf2ebb57f54a8b9fed72de"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/d4773203bef43c1df28f.flac"
+    },
+    {
+      "id": "9610f38f1f493c004546",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 150.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Dunning_Kruger|Japan_Song",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Dunning_Kruger|Japan_Song/Gtr/EG/13_Gtr5Amp.flac",
+        "source_sha256": "1ed6e4f07600752580c3dc865bb6c398078afa64c198371950828b012855a430"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/9610f38f1f493c004546.flac"
+    },
+    {
+      "id": "f6ff6263c57144542c0a",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 12.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Leaf|Wicked",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Leaf|Wicked/Gtr/EG/11_ElecGtr02.flac",
+        "source_sha256": "c83de461f2f4d2b0b90985993cc73ecd97d10457307c4b2970153c766bfeefb8"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/f6ff6263c57144542c0a.flac"
+    },
+    {
+      "id": "b887e4375d916e02366c",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 116.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Zeno|Signs",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Zeno|Signs/Gtr/EG/28_ElecGtr4.flac",
+        "source_sha256": "388905d5ab0b0e6e31b32f1e2290e5e5a203c650f2afcee92372eaa1e6f7a317"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/b887e4375d916e02366c.flac"
+    },
+    {
+      "id": "d029c04bd3baec43657e",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 176.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Allen_Stone|Naturally",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Allen_Stone|Naturally/Gtr/EG/Ele Guitar-Amp-M80.flac",
+        "source_sha256": "59cd4c47fd0c8f7771e51a18ee2c79e900e4bba207e3c91ada4a075379e68cf0"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/d029c04bd3baec43657e.flac"
+    },
+    {
+      "id": "bb908fe4ef3f13336a8b",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 224.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Hazael|Amor_Que_Lucha",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Hazael|Amor_Que_Lucha/Gtr/EG/17_ElecGtr1.flac",
+        "source_sha256": "4be74e049b555f1b74e29b48f1a0a597ba5f1381cad12b4db6f85d5e3bd6eaa7"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/bb908fe4ef3f13336a8b.flac"
+    },
+    {
+      "id": "d999253900fae76ba74f",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 232.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Sonnet_&_Alcohol|Back_To_The_Nineties",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Sonnet_&_Alcohol|Back_To_The_Nineties/Gtr/EG/09_ElecGtr1DI.flac",
+        "source_sha256": "03340dcb2eef4b296451dc9277b6a1e66b1890a8f10e1cb1a6e87e4d4c03e1ea"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/d999253900fae76ba74f.flac"
+    },
+    {
+      "id": "f24ac81207abfb1498ff",
+      "instrument": "wind",
+      "metadata": {
+        "benchmark_family": "wind_brass",
+        "clip_offset_seconds": 38.0,
+        "clip_seconds": 45.0,
+        "label": "negative",
+        "song_id": "Finlay|Same_Kind_Of_Life",
+        "source_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Finlay|Same_Kind_Of_Life/Gtr/EG/11_ElecGtr3.flac",
+        "source_sha256": "ffd1c3891b623adeb8c708ab5f86b0560529fc4b4b56efc78ed338e8706c2001"
+      },
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/datasets/calibration/acmid-cleaner-v1/wind_brass/negative/f24ac81207abfb1498ff.flac"
+    }
+  ],
+  "clip_seconds": 45.0,
+  "counts": {
+    "acoustic_guitar:negative": 25,
+    "acoustic_guitar:positive": 16,
+    "electric_guitar:negative": 25,
+    "electric_guitar:positive": 25,
+    "strings:negative": 25,
+    "strings:positive": 25,
+    "wind_brass:negative": 25,
+    "wind_brass:positive": 25
+  },
+  "failures": [],
+  "schema_version": "1.0",
+  "source_id": "rawstems",
+  "split_policy": "song_disjoint_within_each_family",
+  "targets": {
+    "minimum_chunks_per_label": 200,
+    "minimum_precision": 0.99,
+    "minimum_recall": 0.5
+  },
+  "threshold_policy": "official_fixed_0.995"
+}

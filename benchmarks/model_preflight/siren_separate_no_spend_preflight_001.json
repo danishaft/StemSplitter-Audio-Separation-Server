@@ -1,0 +1,46 @@
+{
+  "preflight_id": "siren_separate_no_spend_preflight_001",
+  "checked_at": "2026-07-12T14:15:29+01:00",
+  "candidate": "SIREN-SEPARATE",
+  "repo": {
+    "url": "https://huggingface.co/hilarl/siren-separate",
+    "local_path": "external_repos/siren-separate",
+    "web_page_public": true,
+    "license_info": "Apache-2.0",
+    "access_gate": "Hugging Face requires accepting conditions and sharing contact information before files can be downloaded",
+    "access_request_submitted_with_peruz": true,
+    "access_request_status": "awaiting_author_review",
+    "clone_attempted": true,
+    "clone_passed": false,
+    "clone_failure": "fatal: could not read Username for 'https://huggingface.co': No such device or address"
+  },
+  "target_fit": {
+    "claimed_stems": ["vocals", "drums", "bass", "other", "guitar", "piano", "synth", "strings"],
+    "required_stems": ["strings", "synth", "piano", "guitar"],
+    "passes": true
+  },
+  "weights": {
+    "declared_checkpoint_size_mb": 616,
+    "downloaded": false,
+    "license_verified": true,
+    "checksums_verified": false,
+    "passes": false
+  },
+  "runner": {
+    "entrypoint": null,
+    "help_passed": false,
+    "passes": false
+  },
+  "spend_gate": {
+    "modal_gpu_allowed": false,
+    "paid_api_allowed": false,
+    "long_external_queue_allowed": false,
+    "next_allowed_action": "wait for Hugging Face author approval, then download siren_separate.pt and verify checksum; if approval stalls, replace this candidate with a fully ungated public query-based separator",
+    "passes": false
+  },
+  "decision": {
+    "technical_preflight": "blocked",
+    "commercial_preflight": "blocked",
+    "reason": "SIREN-SEPARATE cannot be counted as an available local model yet. The model card is public and lists Apache-2.0. Access was requested through Peruz on July 12, 2026, but the request is awaiting author review and the checkpoint cannot be downloaded yet."
+  }
+}

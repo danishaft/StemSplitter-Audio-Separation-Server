@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-07-25",
+  "error_type": "GatedRepoError",
+  "model_id": "hilarl/siren-separate",
+  "model_revision": "3dc6968b475d7b1be0a93defade1405f745f4dc7",
+  "reason": "The Hugging Face account represented by the stemsplitter-huggingface Modal secret is still awaiting author review.",
+  "status": "blocked"
+}

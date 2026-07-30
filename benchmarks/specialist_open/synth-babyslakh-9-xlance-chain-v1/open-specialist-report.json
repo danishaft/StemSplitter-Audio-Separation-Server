@@ -1,0 +1,106 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-28T22:28:00.959419+00:00",
+  "job_id": "synth-babyslakh-9-xlance-chain-v1",
+  "outputs": {
+    "strings": {
+      "channels": 2,
+      "duration_seconds": 90.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 38.3161,
+      "model_id": "oulianov/BS-Roformer-BowedStrings-Duality",
+      "model_output": "strings",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/synth-babyslakh-9-xlance-chain-v1/open_specialists/strings.wav",
+        "provider": "s3",
+        "size_bytes": 23814044
+      },
+      "sample_rate": 44100
+    },
+    "synth": {
+      "channels": 2,
+      "duration_seconds": 90.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 3.0305,
+      "model_id": "oulianov/bsroformer-lead-synth",
+      "model_output": "synth lead",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/synth-babyslakh-9-xlance-chain-v1/open_specialists/synth.wav",
+        "provider": "s3",
+        "size_bytes": 23814044
+      },
+      "sample_rate": 44100
+    },
+    "synth_xlance_released_chain": {
+      "channels": 2,
+      "duration_seconds": 90.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 10.7573,
+      "model_id": "chenxie95/xlance-msr-ckpt",
+      "model_output": "synth",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/synth-babyslakh-9-xlance-chain-v1/open_specialists/synth_xlance_released_chain.wav",
+        "provider": "s3",
+        "size_bytes": 23814044
+      },
+      "sample_rate": 44100,
+      "stage_inference_seconds": {
+        "synth_xlance_v1": 0.0,
+        "synth_xlance_v2": 10.7572
+      },
+      "stages": [
+        "synth_xlance_v1",
+        "synth_xlance_v2"
+      ]
+    },
+    "synth_xlance_v1": {
+      "channels": 2,
+      "duration_seconds": 90.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 10.7285,
+      "model_id": "noblebarkrr/mvsepless_resources",
+      "model_output": "synth",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/synth-babyslakh-9-xlance-chain-v1/open_specialists/synth_xlance_v1.wav",
+        "provider": "s3",
+        "size_bytes": 23814044
+      },
+      "sample_rate": 44100
+    },
+    "synth_xlance_v2": {
+      "channels": 2,
+      "duration_seconds": 90.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 10.7489,
+      "model_id": "noblebarkrr/mvsepless_resources",
+      "model_output": "synth",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/synth-babyslakh-9-xlance-chain-v1/open_specialists/synth_xlance_v2.wav",
+        "provider": "s3",
+        "size_bytes": 23814044
+      },
+      "sample_rate": 44100
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/synth-babyslakh-9-xlance-chain-v1/analysis/open-specialist-report.json",
+    "provider": "s3",
+    "size_bytes": 3110
+  },
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "started_at": "2026-07-28T22:26:15.273509+00:00",
+  "status": "completed"
+}

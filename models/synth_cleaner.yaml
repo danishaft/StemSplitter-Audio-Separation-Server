@@ -1,0 +1,134 @@
+schema_version: 1
+status: score_only_calibration_required
+source:
+  repository: https://essentia.upf.edu/models/
+  model_license: CC BY-NC-SA 4.0
+runtime:
+  essentia_tensorflow_version: 2.1b6.dev1110
+  sample_rate: 16000
+  prediction_hz: 1.008
+  embedding_output: "PartitionedCall:1"
+  classifier_input: "model/Placeholder"
+  classifier_output: "model/Sigmoid"
+models:
+  embedding:
+    filename: discogs-effnet-bs64-1.pb
+    url: https://essentia.upf.edu/models/feature-extractors/discogs-effnet/discogs-effnet-bs64-1.pb
+    sha256: 3ed9af50d5367c0b9c795b294b00e7599e4943244f4cbd376869f3bfc87721b1
+  classifier:
+    filename: mtg_jamendo_instrument-discogs-effnet-1.pb
+    url: https://essentia.upf.edu/models/classification-heads/mtg_jamendo_instrument/mtg_jamendo_instrument-discogs-effnet-1.pb
+    sha256: 2e8c3003c722e098da371b6a1f7ad0ce62fac0dcfc09c7c7997d430941196c2a
+    metadata_url: https://essentia.upf.edu/models/classification-heads/mtg_jamendo_instrument/mtg_jamendo_instrument-discogs-effnet-1.json
+    dataset: MTG Jamendo instrument subset
+    dataset_tracks: 25135
+    test_pr_auc: 0.2
+    test_roc_auc: 0.78
+classes:
+  - accordion
+  - acousticbassguitar
+  - acousticguitar
+  - bass
+  - beat
+  - bell
+  - bongo
+  - brass
+  - cello
+  - clarinet
+  - classicalguitar
+  - computer
+  - doublebass
+  - drummachine
+  - drums
+  - electricguitar
+  - electricpiano
+  - flute
+  - guitar
+  - harmonica
+  - harp
+  - horn
+  - keyboard
+  - oboe
+  - orchestra
+  - organ
+  - pad
+  - percussion
+  - piano
+  - pipeorgan
+  - rhodes
+  - sampler
+  - saxophone
+  - strings
+  - synthesizer
+  - trombone
+  - trumpet
+  - viola
+  - violin
+  - voice
+scoring:
+  positive_classes:
+    - synthesizer
+    - pad
+    - sampler
+    - computer
+  confuser_classes:
+    - accordion
+    - acousticbassguitar
+    - acousticguitar
+    - bass
+    - beat
+    - bell
+    - bongo
+    - brass
+    - cello
+    - clarinet
+    - classicalguitar
+    - doublebass
+    - drummachine
+    - drums
+    - electricguitar
+    - electricpiano
+    - flute
+    - guitar
+    - harmonica
+    - harp
+    - horn
+    - keyboard
+    - oboe
+    - orchestra
+    - organ
+    - percussion
+    - piano
+    - pipeorgan
+    - rhodes
+    - saxophone
+    - strings
+    - trombone
+    - trumpet
+    - viola
+    - violin
+    - voice
+  positive_reducer: max
+  confuser_reducer: max
+  margin: positive_minus_confuser
+decision:
+  mode: calibration_required
+  calibration_manifest: datasets/manifests/calibration/synth-cleaner-v1.json
+  required_positive_examples: 200
+  required_target_absent_examples: 200
+  required_confuser_examples: 200
+  targets:
+    accept_precision: 0.99
+    minimum_accept_recall: 0.5
+    positive_retention_after_rejection: 0.99
+  automatic_accept_threshold: null
+  automatic_reject_threshold: null
+  minimum_margin: null
+qualification:
+  release_eligible: false
+  required_proofs:
+    - official_models_load
+    - class_order_matches_metadata
+    - calibration_manifest_is_composition_disjoint
+    - thresholds_meet_predeclared_precision_and_recall
+    - uncertain_windows_are_sent_to_human_review

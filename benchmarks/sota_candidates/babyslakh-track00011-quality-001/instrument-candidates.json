@@ -1,0 +1,46 @@
+{
+  "dataset": "babyslakh",
+  "errors": [],
+  "missing_references": [],
+  "scores": {
+    "guitar": [
+      {
+        "correlation": 0.8626583421950081,
+        "error_loudness_db": -5.535486508579819,
+        "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/runs/htdemucs_6s/htdemucs_6s/mix/guitar.wav",
+        "sdr": 5.5354868554595775,
+        "si_sdr": 4.63742165774833,
+        "source": "htdemucs_6s"
+      }
+    ],
+    "piano": [
+      {
+        "correlation": 0.12097632769333659,
+        "error_loudness_db": -0.043257820357904965,
+        "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/broad_stems/piano.wav",
+        "sdr": 0.043258409580974655,
+        "si_sdr": -18.2819621810147,
+        "source": "htdemucs_6s"
+      }
+    ]
+  },
+  "song_name": "Track00011",
+  "winners": {
+    "guitar": {
+      "correlation": 0.8626583421950081,
+      "error_loudness_db": -5.535486508579819,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/runs/htdemucs_6s/htdemucs_6s/mix/guitar.wav",
+      "sdr": 5.5354868554595775,
+      "si_sdr": 4.63742165774833,
+      "source": "htdemucs_6s"
+    },
+    "piano": {
+      "correlation": 0.12097632769333659,
+      "error_loudness_db": -0.043257820357904965,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/broad_stems/piano.wav",
+      "sdr": 0.043258409580974655,
+      "si_sdr": -18.2819621810147,
+      "source": "htdemucs_6s"
+    }
+  }
+}

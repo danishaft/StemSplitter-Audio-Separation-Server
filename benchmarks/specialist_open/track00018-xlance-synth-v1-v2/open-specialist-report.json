@@ -1,0 +1,82 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-28T20:58:30.873190+00:00",
+  "job_id": "track00018-xlance-synth-v1-v2",
+  "outputs": {
+    "strings": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 4.6128,
+      "model_id": "oulianov/BS-Roformer-BowedStrings-Duality",
+      "model_output": "strings",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/track00018-xlance-synth-v1-v2/open_specialists/strings.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "synth": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 0.375,
+      "model_id": "oulianov/bsroformer-lead-synth",
+      "model_output": "synth lead",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/track00018-xlance-synth-v1-v2/open_specialists/synth.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "synth_xlance_v1": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 1.3442,
+      "model_id": "noblebarkrr/mvsepless_resources",
+      "model_output": "synth",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/track00018-xlance-synth-v1-v2/open_specialists/synth_xlance_v1.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "synth_xlance_v2": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 1.3402,
+      "model_id": "noblebarkrr/mvsepless_resources",
+      "model_output": "synth",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/track00018-xlance-synth-v1-v2/open_specialists/synth_xlance_v2.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/track00018-xlance-synth-v1-v2/analysis/open-specialist-report.json",
+    "provider": "s3",
+    "size_bytes": 2350
+  },
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "started_at": "2026-07-28T20:58:22.306490+00:00",
+  "status": "completed"
+}

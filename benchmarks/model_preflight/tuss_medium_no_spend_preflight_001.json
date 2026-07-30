@@ -1,0 +1,112 @@
+{
+  "preflight_id": "tuss_medium_no_spend_preflight_001",
+  "checked_at": "2026-07-12T16:25:05+01:00",
+  "candidate": "MERL TUSS medium 2-4 source",
+  "repo": {
+    "url": "https://github.com/merlresearch/unified-source-separation",
+    "local_path": "external_repos/unified-source-separation",
+    "commit": "f7711c1120e00669d905a4fef9c8494a0f8c9662",
+    "release": "v1.0.0",
+    "license_info": "AGPL-3.0-or-later",
+    "license_file_found": true
+  },
+  "target_fit": {
+    "required_stems": ["speech_or_dialog", "music", "sfx_or_effects"],
+    "repo_prompts": ["speech", "sfx", "sfxbg", "drums", "bass", "vocals", "other", "musicbg"],
+    "recommended_prompts": ["speech", "sfxbg", "musicbg"],
+    "normalized_stems": {
+      "speech": "speech_dialog",
+      "sfxbg": "sfx",
+      "musicbg": "music"
+    },
+    "passes": true
+  },
+  "weights": {
+    "source": "Git LFS object in upstream repository",
+    "local_path": "external_repos/unified-source-separation/pretrained_models/tuss.medium.2-4src/checkpoints/model.pth",
+    "size_bytes": 44864630,
+    "sha256": "112174a8c894b008cfd676052e8a3d60c876bc2ba063c77a3a4700a257655eec",
+    "downloaded": true,
+    "checksums_verified": true,
+    "cpu_load_check": {
+      "passed": true,
+      "object_type": "OrderedDict",
+      "state_dict_entries": 909
+    },
+    "model_load_check": {
+      "passed": true,
+      "parameters": 11132352,
+      "missing_keys": 0,
+      "unexpected_keys": 0
+    },
+    "passes": true
+  },
+  "runner": {
+    "entrypoint": "separate.py",
+    "help_passed": true,
+    "help_failure": null,
+    "uses_cuda_unconditionally": true,
+    "uses_torchaudio_io": true,
+    "writes_outputs_as": "wav/<prompt>_<index>.wav",
+    "local_compatibility_needed": [
+      "Add device selection so local CPU smoke and Modal GPU smoke use the same runner contract.",
+      "Normalize output names from speech/sfxbg/musicbg to speech_dialog/music/sfx.",
+      "Avoid requiring matplotlib output during production runner execution."
+    ],
+    "passes": true
+  },
+  "dependencies": {
+    "local_import_check": {
+      "torch": "ok",
+      "torchaudio": "ok",
+      "pytorch_lightning": "ok",
+      "pyyaml": "ok",
+      "soundfile": "ok",
+      "fast_bss_eval": "ok",
+      "rotary_embedding_torch": "ok",
+      "librosa": "ok",
+      "matplotlib": "ok",
+      "pandas": "ok",
+      "webrtcvad": "ok"
+    },
+    "passes": true
+  },
+  "spend_gate": {
+    "modal_gpu_allowed": true,
+    "paid_api_allowed": false,
+    "long_external_queue_allowed": false,
+    "next_allowed_action": "do not spend more on TUSS for production SFX unless a new prompt, checkpoint, or ensemble hypothesis is defined first",
+    "passes": false
+  },
+  "quality_benchmark": {
+    "benchmark_id": "tuss_vs_mvsep_dnr_v3_booty2_20s_001",
+    "report": "benchmarks/external_stems/tuss_vs_mvsep_dnr_v3_booty2_20s_001.json",
+    "modal_smoke_report": "jobs/tuss_worker_smoke/tuss_booty2_2s_t4_001/tuss_worker_smoke_report.json",
+    "comparator": "MVSep DnR v3 booty2 20s",
+    "passes_file_smoke": true,
+    "production_sfx_passed": false,
+    "scores": {
+      "music": {
+        "correlation_to_comparator": 0.9579,
+        "sdr_to_comparator": 10.6334,
+        "rms_db_vs_comparator": -0.941
+      },
+      "sfx": {
+        "correlation_to_comparator": 0.5867,
+        "sdr_to_comparator": -8.8516,
+        "rms_db_vs_comparator": 10.634
+      },
+      "speech_dialog": {
+        "correlation_to_comparator": 0.8799,
+        "sdr_to_comparator": 2.2455,
+        "rms_db_vs_comparator": 3.405
+      }
+    }
+  },
+  "decision": {
+    "technical_preflight": "downloaded_checkpoint_load_passed_runner_help_passed_modal_smoke_passed_comparator_sfx_rejected",
+    "commercial_preflight": "agpl_open_source_obligations",
+    "quality_decision": "production_sfx_rejected",
+    "reason": "TUSS directly supports CASS-style speech, sfxbg, and musicbg prompts, has a verified medium checkpoint, loads locally, and passes an isolated Modal T4 smoke. The 20-second MVSep DnR v3 comparator benchmark rejected it for production SFX: music is strong, speech_dialog is usable evidence, but sfx has low comparator agreement and a large loudness mismatch. It is AGPL-3.0-or-later, so it must stay isolated as an external open-source runner unless the product accepts AGPL obligations."
+  }
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Splitter V2</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2b;
+      --border: #25324a;
+      --text: #e6edf7;
+      --muted: #93a1bc;
+      --accent: #3dd9eb;
+      --accent-dim: rgba(61, 217, 235, 0.12);
+      --green: #36c38a;
+      --red: #ff6b6b;
+      --yellow: #ffd166;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: linear-gradient(180deg, #08111c 0%, #0b1020 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .hero, .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      line-height: 1.1;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin: 0;
+      max-width: 760px;
+      line-height: 1.7;
+    }
+
+    .panel {
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+    }
+
+    .dropzone {
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      padding: 30px 24px;
+      background: rgba(255,255,255,0.01);
+    }
+
+    .dropzone input {
+      display: block;
+      width: 100%;
+      margin-top: 14px;
+      color: var(--muted);
+    }
+
+    .controls label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    select, button {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #0e1525;
+      color: var(--text);
+      padding: 12px 14px;
+      font: inherit;
+    }
+
+    button {
+      background: linear-gradient(180deg, #16bfd0 0%, #0e98a7 100%);
+      color: #041217;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: rgba(255,255,255,0.02);
+      font-size: 12px;
+    }
+
+    .pill strong { color: var(--text); }
+    .running { color: var(--yellow); }
+    .completed { color: var(--green); }
+    .error { color: var(--red); }
+
+    .group {
+      margin-top: 22px;
+    }
+
+    .group h2 {
+      font-size: 14px;
+      margin: 0 0 12px;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      background: rgba(255,255,255,0.015);
+    }
+
+    .card-title {
+      font-size: 12px;
+      margin: 0 0 8px;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .card-meta {
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .card audio {
+      display: block;
+      width: 100%;
+      margin: 4px 0 12px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #0a0f1b;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">GPU 8-Stem Pipeline</div>
+      <h1>Stem Splitter V2</h1>
+      <p class="sub">
+        Evaluate eight GPU-generated stems. Bass and drums passed the initial gate; guitar, piano, vocals, instrumental, kick, and snare are not release-qualified yet.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="grid">
+        <div class="dropzone">
+          <strong>Choose audio</strong>
+          <p class="sub">MP3, WAV, FLAC, OGG, or M4A. Outputs are listening candidates, not eight benchmark-qualified production stems.</p>
+          <input id="file" type="file" accept=".mp3,.wav,.flac,.ogg,.m4a">
+        </div>
+
+        <div class="controls">
+          <label for="profile">Separation mode</label>
+          <select id="profile">
+            <option value="quality_gpu_experimental" selected>8-stem evaluation (not release-qualified)</option>
+          </select>
+          <button id="submit">Start job</button>
+        </div>
+      </div>
+
+      <div class="status-row" id="status-row">
+        <div class="pill"><strong>Status</strong> <span id="status">idle</span></div>
+        <div class="pill"><strong>Stage</strong> <span id="stage">waiting</span></div>
+        <div class="pill"><strong>Job</strong> <span id="job-id">none</span></div>
+        <div class="pill" hidden><strong>Remote</strong> <span id="remote-status">not_requested</span></div>
+        <div class="pill" hidden><strong>Remote Reason</strong> <span id="remote-reason">n/a</span></div>
+        <div class="pill" hidden><strong>GPU</strong> <span id="gpu-status">n/a</span></div>
+        <div class="pill"><strong>Total</strong> <span id="timing-total">n/a</span></div>
+        <div class="pill" hidden><strong>Cache</strong> <span id="cache-status">n/a</span></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="group">
+        <h2>Your stems</h2>
+        <div id="artifacts"></div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const fileInput = document.getElementById('file');
+    const profileSelect = document.getElementById('profile');
+    const submitButton = document.getElementById('submit');
+    const statusEl = document.getElementById('status');
+    const stageEl = document.getElementById('stage');
+    const jobIdEl = document.getElementById('job-id');
+    const remoteStatusEl = document.getElementById('remote-status');
+    const remoteReasonEl = document.getElementById('remote-reason');
+    const gpuStatusEl = document.getElementById('gpu-status');
+    const timingTotalEl = document.getElementById('timing-total');
+    const cacheStatusEl = document.getElementById('cache-status');
+    const artifactsEl = document.getElementById('artifacts');
+    let pollTimer = null;
+
+    function setStatus(status, stage) {
+      statusEl.textContent = status || 'unknown';
+      stageEl.textContent = stage || 'n/a';
+      statusEl.className = status;
+    }
+
+    function setRemoteStatus(status, reason) {
+      remoteStatusEl.textContent = status || 'not_requested';
+      remoteReasonEl.textContent = reason || 'n/a';
+    }
+
+    function formatSeconds(value) {
+      if (value === undefined || value === null || Number.isNaN(Number(value))) return 'n/a';
+      const seconds = Number(value);
+      if (seconds < 60) return `${seconds.toFixed(1)}s`;
+      const minutes = Math.floor(seconds / 60);
+      const remainder = Math.round(seconds % 60);
+      return `${minutes}m ${remainder}s`;
+    }
+
+    function setGpuTiming(payload) {
+      gpuStatusEl.textContent = payload.gpu_worker_status || 'n/a';
+      const timings = payload.timings || {};
+      timingTotalEl.textContent = formatSeconds(timings.local_total_seconds || timings.local_elapsed_seconds);
+      const modelRuns = timings.model_runs || [];
+      if (!modelRuns.length) {
+        cacheStatusEl.textContent = 'n/a';
+        return;
+      }
+      const hits = modelRuns.filter((run) => run.cache_hit === true).length;
+      cacheStatusEl.textContent = `${hits}/${modelRuns.length} hits`;
+    }
+
+    function renderGroup(title, data) {
+      const keys = Object.keys(data || {});
+      if (!keys.length) return '';
+      const cards = keys.map((key) => {
+        const value = data[key];
+        const href = typeof value === 'string' ? value : value.path;
+        let isAudio = false;
+        if (typeof href === 'string') {
+          try {
+            isAudio = new URL(href, window.location.href).pathname.toLowerCase().endsWith('.wav');
+          } catch (_) {
+            isAudio = href.split('?', 1)[0].toLowerCase().endsWith('.wav');
+          }
+        }
+        return `
+          <div class="card">
+            <div class="card-title">${key.replace(/_/g, ' ')}</div>
+            ${isAudio ? `<audio controls preload="none" src="${href}"></audio>` : ''}
+            ${href ? `<a href="${href}" target="_blank" rel="noreferrer">Open file</a>` : '<div class="card-meta">No file</div>'}
+          </div>
+        `;
+      }).join('');
+      return `<div class="group"><h2>${title}</h2><div class="cards">${cards}</div></div>`;
+    }
+
+    function renderArtifacts(artifacts) {
+      if (!artifacts || !Object.keys(artifacts).length) {
+        artifactsEl.innerHTML = '<pre>No artifacts yet.</pre>';
+        return;
+      }
+      artifactsEl.innerHTML = [
+        renderGroup('Eight separated stems', artifacts.main_stems),
+        renderGroup('Download all', artifacts.bundles),
+      ].join('');
+    }
+
+    async function pollJob(jobId) {
+      const res = await fetch(`/jobs/${jobId}`);
+      if (!res.ok) {
+        setStatus('error', 'status lookup failed');
+        return;
+      }
+
+      const payload = await res.json();
+      setStatus(payload.status, payload.stage);
+      jobIdEl.textContent = jobId;
+      setRemoteStatus(payload.remote_adapter_status, payload.remote_adapter_reason);
+      setGpuTiming(payload);
+
+      if (payload.status === 'completed') {
+        clearInterval(pollTimer);
+        submitButton.disabled = false;
+        renderArtifacts(payload.artifacts || {});
+      } else if (payload.status === 'error') {
+        clearInterval(pollTimer);
+        submitButton.disabled = false;
+        setStatus('error', payload.error || 'Job failed');
+      }
+    }
+
+    async function readJson(response) {
+      return response.json().catch(() => ({}));
+    }
+
+    async function submitLegacyUpload(file, profile) {
+      setStatus('running', 'uploading through local fallback');
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('profile', profile);
+      const response = await fetch('/jobs', { method: 'POST', body: formData });
+      return { response, payload: await readJson(response) };
+    }
+
+    async function submitDirectUpload(file, profile) {
+      setStatus('running', 'requesting direct upload');
+      const contentType = file.type || 'application/octet-stream';
+      const grantResponse = await fetch('/uploads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filename: file.name, content_type: contentType }),
+      });
+      const grant = await readJson(grantResponse);
+
+      if (!grantResponse.ok) {
+        if (grantResponse.status === 503 && grant.error === 'direct_upload_unavailable') {
+          return submitLegacyUpload(file, profile);
+        }
+        throw new Error(grant.message || grant.error || 'Could not prepare direct upload.');
+      }
+      if (grant.max_bytes && file.size > grant.max_bytes) {
+        throw new Error(`File exceeds the ${Math.round(grant.max_bytes / 1024 / 1024)} MB upload limit.`);
+      }
+
+      setStatus('running', 'uploading directly to storage');
+      const uploadResponse = await fetch(grant.url, {
+        method: grant.method || 'PUT',
+        headers: grant.headers || { 'Content-Type': contentType },
+        body: file,
+      });
+      if (!uploadResponse.ok) {
+        throw new Error(`Direct storage upload failed (${uploadResponse.status}).`);
+      }
+
+      setStatus('running', 'queueing GPU job');
+      const response = await fetch('/jobs', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          profile,
+          input: {
+            filename: grant.filename || file.name,
+            object: grant.object,
+          },
+        }),
+      });
+      return { response, payload: await readJson(response) };
+    }
+
+    submitButton.addEventListener('click', async () => {
+      const file = fileInput.files[0];
+      if (!file) {
+        alert('Choose a file first.');
+        return;
+      }
+
+      submitButton.disabled = true;
+      setStatus('running', 'upload');
+      setRemoteStatus('not_requested', null);
+      setGpuTiming({});
+      renderArtifacts({});
+
+      let response;
+      let payload;
+      try {
+        ({ response, payload } = await submitDirectUpload(file, profileSelect.value));
+      } catch (error) {
+        submitButton.disabled = false;
+        setStatus('error', 'upload');
+        alert(error instanceof Error ? error.message : 'Upload failed.');
+        return;
+      }
+
+      if (!response.ok) {
+        submitButton.disabled = false;
+        setStatus('error', 'submit');
+        alert(payload.message || payload.error || 'Job submission failed.');
+        return;
+      }
+
+      const jobId = payload.job_id;
+      jobIdEl.textContent = jobId;
+      window.history.replaceState({}, '', `?job=${encodeURIComponent(jobId)}`);
+      clearInterval(pollTimer);
+      pollTimer = setInterval(() => pollJob(jobId), 2000);
+      await pollJob(jobId);
+    });
+
+    const resumedJobId = new URLSearchParams(window.location.search).get('job');
+    if (resumedJobId) {
+      submitButton.disabled = true;
+      jobIdEl.textContent = resumedJobId;
+      pollJob(resumedJobId);
+    }
+  </script>
+</body>
+</html>

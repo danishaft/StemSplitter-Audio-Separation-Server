@@ -101,12 +101,13 @@ class TestMVSEPIntegration:
 
         # Check key models are available
         expected_models = [
-            "BS-Roformer-V2",
             "DrumSep",
             "MVSep-Piano",
-            "MVSep-Lead-Guitar",
-            "MVSep-Keys",
-            "MVSep-Plucked-Strings",
+            "MVSep-Acoustic-Guitar",
+            "MVSep-Electric-Guitar",
+            "MVSep-Bowed-Strings",
+            "MVSep-Synth",
+            "MVSep-Wind",
         ]
 
         for model in expected_models:

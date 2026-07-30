@@ -1,0 +1,315 @@
+{
+  "candidates": {
+    "synth": {
+      "aggregate": {
+        "correlation": 0.3050775270387572,
+        "error_loudness_db": -0.11875342142176089,
+        "sdr": 0.11875366529326467,
+        "si_sdr": -9.887522331396777
+      },
+      "mean_segment_si_sdr": -13.925749993511898,
+      "median_segment_si_sdr": -7.5339110620924865,
+      "per_segment": [
+        {
+          "correlation": 0.3872742909028654,
+          "error_loudness_db": -0.702430328912821,
+          "sdr": 0.7024304839719233,
+          "si_sdr": -7.5339110620924865,
+          "track_id": "Track00002"
+        },
+        {
+          "correlation": 0.4718628660917583,
+          "error_loudness_db": 1.1926408295081932,
+          "sdr": -1.1926402577288084,
+          "si_sdr": -5.429824502754111,
+          "track_id": "Track00004"
+        },
+        {
+          "correlation": 0.019347628744743935,
+          "error_loudness_db": 0.6190361131070189,
+          "sdr": -0.6190360249278863,
+          "si_sdr": -34.26581909256106,
+          "track_id": "Track00008"
+        },
+        {
+          "correlation": 0.44722243036412546,
+          "error_loudness_db": -0.6395636905282264,
+          "sdr": 0.639563577654395,
+          "si_sdr": -6.02038542327654,
+          "track_id": "Track00010"
+        },
+        {
+          "correlation": 0.112357330639891,
+          "error_loudness_db": 0.407206145092916,
+          "sdr": -0.40720660913272777,
+          "si_sdr": -18.932796664534777,
+          "track_id": "Track00013"
+        },
+        {
+          "correlation": 0.4444606192661816,
+          "error_loudness_db": -0.8611187639864755,
+          "sdr": 0.8611186231636981,
+          "si_sdr": -6.087539823545372,
+          "track_id": "Track00017"
+        },
+        {
+          "correlation": 0.5941766550868878,
+          "error_loudness_db": -1.767528347931788,
+          "sdr": 1.767528393869151,
+          "si_sdr": -2.630423020493807,
+          "track_id": "Track00018"
+        },
+        {
+          "correlation": 0.014974009091976027,
+          "error_loudness_db": 0.3532063339870112,
+          "sdr": -0.3532064636818131,
+          "si_sdr": -36.49226426168291,
+          "track_id": "Track00019"
+        },
+        {
+          "correlation": 0.3721288991647178,
+          "error_loudness_db": 0.2022994140892132,
+          "sdr": -0.20229933635640646,
+          "si_sdr": -7.938786090666021,
+          "track_id": "Track00020"
+        }
+      ]
+    },
+    "synth_xlance_released_chain": {
+      "aggregate": {
+        "correlation": 0.6429873215869749,
+        "error_loudness_db": -0.7070754024965703,
+        "sdr": 0.7070757453619726,
+        "si_sdr": -1.519130322092117
+      },
+      "mean_segment_si_sdr": -2.7303463800754537,
+      "median_segment_si_sdr": 0.39108513982329396,
+      "per_segment": [
+        {
+          "correlation": 0.8509269722964585,
+          "error_loudness_db": -4.7949856698164215,
+          "sdr": 4.794985488465454,
+          "si_sdr": 4.189962235764054,
+          "track_id": "Track00002"
+        },
+        {
+          "correlation": 0.6142800312852167,
+          "error_loudness_db": 2.0636148903009452,
+          "sdr": -2.0636146592167233,
+          "si_sdr": -2.175182019890817,
+          "track_id": "Track00004"
+        },
+        {
+          "correlation": 0.7228398643411911,
+          "error_loudness_db": -1.1048487917310417,
+          "sdr": 1.104848899701484,
+          "si_sdr": 0.39108513982329396,
+          "track_id": "Track00008"
+        },
+        {
+          "correlation": 0.9482461735232571,
+          "error_loudness_db": -9.913207425377395,
+          "sdr": 9.9132077194067,
+          "si_sdr": 9.502559004298588,
+          "track_id": "Track00010"
+        },
+        {
+          "correlation": 0.03791427406293191,
+          "error_loudness_db": 0.8708387473726185,
+          "sdr": -0.8708389907842627,
+          "si_sdr": -28.41769765830881,
+          "track_id": "Track00013"
+        },
+        {
+          "correlation": 0.7760114411948801,
+          "error_loudness_db": -2.1804927894577846,
+          "sdr": 2.180492822786884,
+          "si_sdr": 1.8006465411112724,
+          "track_id": "Track00017"
+        },
+        {
+          "correlation": 0.7689133060565168,
+          "error_loudness_db": -2.0216765808971275,
+          "sdr": 2.021677117670103,
+          "si_sdr": 1.6027326473863803,
+          "track_id": "Track00018"
+        },
+        {
+          "correlation": 0.35094997546171164,
+          "error_loudness_db": 0.7547715830471637,
+          "sdr": -0.7547719103021182,
+          "si_sdr": -8.524270056698446,
+          "track_id": "Track00019"
+        },
+        {
+          "correlation": 0.5803345819317995,
+          "error_loudness_db": 2.3126975021991933,
+          "sdr": -2.312697654265965,
+          "si_sdr": -2.9429532541646024,
+          "track_id": "Track00020"
+        }
+      ]
+    },
+    "synth_xlance_v1": {
+      "aggregate": {
+        "correlation": 0.6046096752165491,
+        "error_loudness_db": 0.14147928597089482,
+        "sdr": -0.1414792203414107,
+        "si_sdr": -2.3944525909987564
+      },
+      "mean_segment_si_sdr": -3.5612120358064905,
+      "median_segment_si_sdr": -1.5793091804525952,
+      "per_segment": [
+        {
+          "correlation": 0.7861661176471522,
+          "error_loudness_db": -2.52903907570242,
+          "sdr": 2.529039196374041,
+          "si_sdr": 2.090302772604713,
+          "track_id": "Track00002"
+        },
+        {
+          "correlation": 0.6134180594154908,
+          "error_loudness_db": 2.064242684879984,
+          "sdr": -2.0642426970551857,
+          "si_sdr": -2.1947536015957563,
+          "track_id": "Track00004"
+        },
+        {
+          "correlation": 0.654900472719539,
+          "error_loudness_db": 0.4234851039644514,
+          "sdr": -0.42348479694192664,
+          "si_sdr": -1.2436563658677864,
+          "track_id": "Track00008"
+        },
+        {
+          "correlation": 0.9501377580636146,
+          "error_loudness_db": -10.080555257786422,
+          "sdr": 10.08055524133617,
+          "si_sdr": 9.677360615176003,
+          "track_id": "Track00010"
+        },
+        {
+          "correlation": 0.038045070002388215,
+          "error_loudness_db": 0.8735372905643206,
+          "sdr": -0.8735378920968573,
+          "si_sdr": -28.387741598450766,
+          "track_id": "Track00013"
+        },
+        {
+          "correlation": 0.7765918207018334,
+          "error_loudness_db": -2.183878763729784,
+          "sdr": 2.183879289586136,
+          "si_sdr": 1.8169889668797856,
+          "track_id": "Track00017"
+        },
+        {
+          "correlation": 0.6403721125046052,
+          "error_loudness_db": 1.2951151412869621,
+          "sdr": -1.295115031963003,
+          "si_sdr": -1.5793091804525952,
+          "track_id": "Track00018"
+        },
+        {
+          "correlation": 0.34872614395345025,
+          "error_loudness_db": 0.8256086432541057,
+          "sdr": -0.8256084316375423,
+          "si_sdr": -8.587184055645366,
+          "track_id": "Track00019"
+        },
+        {
+          "correlation": 0.5493495878546067,
+          "error_loudness_db": 3.0581157998768638,
+          "sdr": -3.0581158604938223,
+          "si_sdr": -3.6429158749066506,
+          "track_id": "Track00020"
+        }
+      ]
+    },
+    "synth_xlance_v2": {
+      "aggregate": {
+        "correlation": 0.5977999831805121,
+        "error_loudness_db": 1.6748896740399513,
+        "sdr": -1.674889281487194,
+        "si_sdr": -2.5485269970506934
+      },
+      "mean_segment_si_sdr": -1.710240441557404,
+      "median_segment_si_sdr": -2.395856980228632,
+      "per_segment": [
+        {
+          "correlation": 0.6045476530245082,
+          "error_loudness_db": 2.1868625825999675,
+          "sdr": -2.186862383873936,
+          "si_sdr": -2.395856980228632,
+          "track_id": "Track00002"
+        },
+        {
+          "correlation": 0.5607772961978825,
+          "error_loudness_db": 3.3306863930762507,
+          "sdr": -3.3306861333042126,
+          "si_sdr": -3.384448753914457,
+          "track_id": "Track00004"
+        },
+        {
+          "correlation": 0.6123155089118145,
+          "error_loudness_db": 1.999511898345365,
+          "sdr": -1.9995120328285303,
+          "si_sdr": -2.2197794032197153,
+          "track_id": "Track00008"
+        },
+        {
+          "correlation": 0.9180382397447894,
+          "error_loudness_db": -7.992333424671841,
+          "sdr": 7.99233394323824,
+          "si_sdr": 7.292530047709236,
+          "track_id": "Track00010"
+        },
+        {
+          "correlation": 0.5574774507610327,
+          "error_loudness_db": 0.8733438753791173,
+          "sdr": -0.8733442557001676,
+          "si_sdr": -3.459025623496832,
+          "track_id": "Track00013"
+        },
+        {
+          "correlation": 0.6796532164911545,
+          "error_loudness_db": 0.34662093952948747,
+          "sdr": -0.3466206214837637,
+          "si_sdr": -0.6626524057705845,
+          "track_id": "Track00017"
+        },
+        {
+          "correlation": 0.7386238644514189,
+          "error_loudness_db": -1.3136865054678144,
+          "sdr": 1.3136871200195612,
+          "si_sdr": 0.7937510151830395,
+          "track_id": "Track00018"
+        },
+        {
+          "correlation": 0.5202130334909352,
+          "error_loudness_db": 2.409679677107159,
+          "sdr": -2.4096797098761416,
+          "si_sdr": -4.305904399890067,
+          "track_id": "Track00019"
+        },
+        {
+          "correlation": 0.4058602408894216,
+          "error_loudness_db": 6.606761251350991,
+          "sdr": -6.606761501700155,
+          "si_sdr": -7.050777470388625,
+          "track_id": "Track00020"
+        }
+      ]
+    }
+  },
+  "gate_id": "synth-babyslakh-9-v1",
+  "qualification_scope": "independent_nine_track_positive_source_gate",
+  "schema_version": "1.0",
+  "segment_count": 9,
+  "segment_win_counts": {
+    "synth": 0,
+    "synth_xlance_released_chain": 5,
+    "synth_xlance_v1": 2,
+    "synth_xlance_v2": 2
+  },
+  "winner_by_median_segment_si_sdr": "synth_xlance_released_chain"
+}

@@ -1,0 +1,19 @@
+{
+  "file_count": 1,
+  "files": [
+    {
+      "checksum": "48a5135adfd090515ff0af7dc5c3c32f",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/15205644/files/EG-IPT.zip/content",
+      "path": "EG-IPT.zip",
+      "size_bytes": 23757983313
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "eg_ipt",
+  "source_url": "https://zenodo.org/records/15205644",
+  "source_version": "zenodo-15205644",
+  "total_size_bytes": 23757983313
+}

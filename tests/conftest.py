@@ -18,9 +18,9 @@ def job_dirs(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> Path:
 
     import splitter.config as config
     import splitter.jobs as jobs
-    import audio_api
+    import splitter.api.services as api_services
 
     monkeypatch.setattr(config, "JOBS_DIR", jobs_dir)
     monkeypatch.setattr(jobs, "JOBS_DIR", jobs_dir)
-    monkeypatch.setattr(audio_api, "JOBS_DIR", jobs_dir)
+    monkeypatch.setattr(api_services, "JOBS_DIR", jobs_dir)
     return jobs_dir

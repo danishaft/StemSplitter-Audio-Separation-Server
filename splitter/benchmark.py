@@ -15,7 +15,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-from .config import PUBLISH_THRESHOLDS
+from .config import PUBLISH_THRESHOLDS, QUALITY_8_SPECIALIST_STEMS
 from .jobs import create_job, get_job_status, get_manifest, run_job
 from .util import ensure_dir
 
@@ -76,6 +76,8 @@ class BenchmarkReport:
     benchmark_id: str
     created_at: str
     corpus_size: int
+    evidence_level: str = "internal_heuristic_not_ground_truth"
+    release_claim_eligible: bool = False
     total_duration_seconds: float = 0.0
     
     # Per-difficulty breakdown
@@ -252,7 +254,7 @@ class BenchmarkRunner:
         # Publish rates
         total_possible_broad = len(successful) * len(CORE_BROAD_BENCHMARK_STEMS)
         total_possible_derived = len(successful) * 7  # 7 derived stems
-        total_possible_specialist = len(successful) * 12
+        total_possible_specialist = len(successful) * len(QUALITY_8_SPECIALIST_STEMS)
         actual_published_broad = sum(
             len([stem for stem in r.published_broad_stems if stem in CORE_BROAD_BENCHMARK_STEMS])
             for r in successful
@@ -304,6 +306,8 @@ class BenchmarkRunner:
             "benchmark_id": report.benchmark_id,
             "created_at": report.created_at,
             "corpus_size": report.corpus_size,
+            "evidence_level": report.evidence_level,
+            "release_claim_eligible": report.release_claim_eligible,
             "total_duration_seconds": report.total_duration_seconds,
             "success_rate": report.success_rate,
             "avg_broad_quality": report.avg_broad_quality,
@@ -352,6 +356,11 @@ class BenchmarkRunner:
                 [
                     f"# Benchmark {report.benchmark_id}",
                     "",
+                    "This report uses internal heuristic scores for regression checks.",
+                    "It is not a ground-truth quality benchmark or a commercial claim.",
+                    "",
+                    f"- Evidence level: {report.evidence_level}",
+                    f"- Release claim eligible: {report.release_claim_eligible}",
                     f"- Corpus size: {report.corpus_size}",
                     f"- Success rate: {report.success_rate:.3f}",
                     f"- Avg broad quality: {report.avg_broad_quality:.3f}",

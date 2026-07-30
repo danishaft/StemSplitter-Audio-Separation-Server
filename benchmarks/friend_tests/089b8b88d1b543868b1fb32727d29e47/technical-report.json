@@ -1,0 +1,266 @@
+{
+  "bundles": {
+    "stems": {
+      "missing": [],
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/package/stems.zip",
+      "technical_pass": true,
+      "unexpected": [],
+      "wav_members": [
+        "broad_stems/bass.wav",
+        "broad_stems/drums.wav",
+        "broad_stems/guitar.wav",
+        "broad_stems/instrumental.wav",
+        "broad_stems/piano.wav",
+        "broad_stems/vocals.wav",
+        "specialist_substems/kick.wav",
+        "specialist_substems/snare.wav"
+      ]
+    },
+    "wav_plus_midi": {
+      "missing": [],
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/package/wav_plus_midi.zip",
+      "technical_pass": true,
+      "unexpected": [],
+      "wav_members": [
+        "broad_stems/bass.wav",
+        "broad_stems/drums.wav",
+        "broad_stems/guitar.wav",
+        "broad_stems/instrumental.wav",
+        "broad_stems/piano.wav",
+        "broad_stems/vocals.wav",
+        "specialist_substems/kick.wav",
+        "specialist_substems/snare.wav"
+      ]
+    }
+  },
+  "contract_checks": {
+    "contract_complete": true,
+    "exact_stem_set": true,
+    "no_missing_stems": true
+  },
+  "job_id": "089b8b88d1b543868b1fb32727d29e47",
+  "limitations": [
+    "This song has no isolated ground-truth stems, so SDR, SIR, and SAR cannot be measured.",
+    "Passing technical checks does not prove that bleed, warble, or missing musical content is acceptable."
+  ],
+  "perceptual_quality_verdict": "pending_producer_review",
+  "profile": "quality_gpu_experimental",
+  "reconstruction": {
+    "available": true,
+    "error_peak_dbfs": -12.687,
+    "error_rms_dbfs": -31.665,
+    "interpretation": "Consistency check only; this does not measure stem isolation quality.",
+    "minimum_snr_db": 15.0,
+    "parts": [
+      "vocals",
+      "drums",
+      "bass",
+      "other"
+    ],
+    "snr_db": 18.769,
+    "technical_pass": true
+  },
+  "schema_version": 1,
+  "source": {
+    "channels": 2,
+    "duration_seconds": 102.426122,
+    "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/input/booty2-final-master.wav",
+    "sample_rate": 44100,
+    "subtype": "PCM_24"
+  },
+  "stems": {
+    "bass": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/broad_stems/bass.wav",
+      "peak_dbfs": -0.916,
+      "rms_dbfs": -18.066,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 0.22111,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    },
+    "drums": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/broad_stems/drums.wav",
+      "peak_dbfs": -0.916,
+      "rms_dbfs": -20.187,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 0.006582,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    },
+    "guitar": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/broad_stems/guitar.wav",
+      "peak_dbfs": -30.636,
+      "rms_dbfs": -67.51,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 0.958549,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    },
+    "instrumental": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAV",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/broad_stems/instrumental.wav",
+      "peak_dbfs": -0.434,
+      "rms_dbfs": -14.367,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 0.000347,
+      "subtype": "PCM_16",
+      "technical_pass": true
+    },
+    "kick": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/specialist_substems/kick.wav",
+      "peak_dbfs": -1.119,
+      "rms_dbfs": -17.439,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 0.000412,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    },
+    "piano": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/broad_stems/piano.wav",
+      "peak_dbfs": -90.309,
+      "rms_dbfs": -144.553,
+      "sample_rate": 44100,
+      "signal_presence": "absent_or_below_detection_floor",
+      "silent_frame_ratio": 0.999992,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    },
+    "snare": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/specialist_substems/snare.wav",
+      "peak_dbfs": -0.916,
+      "rms_dbfs": -18.851,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 5.7e-05,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    },
+    "vocals": {
+      "channels": 2,
+      "checks": {
+        "channels_match": true,
+        "duration_matches": true,
+        "finite": true,
+        "has_audio_frames": true,
+        "no_clipped_samples": true,
+        "sample_rate_matches": true
+      },
+      "clipped_samples": 0,
+      "duration_delta_seconds": 0.0,
+      "duration_seconds": 102.426122,
+      "format": "WAVEX",
+      "frames": 4516992,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/089b8b88d1b543868b1fb32727d29e47/broad_stems/vocals.wav",
+      "peak_dbfs": -2.508,
+      "rms_dbfs": -21.682,
+      "sample_rate": 44100,
+      "signal_presence": "present",
+      "silent_frame_ratio": 0.09464,
+      "subtype": "PCM_24",
+      "technical_pass": true
+    }
+  },
+  "technical_verdict": "pass"
+}

@@ -1,0 +1,367 @@
+{
+  "count_per_family": 30,
+  "families": {
+    "synth": {
+      "accepted": [
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/0e5825422a958163d03250e6d30e7935aae86fb80cd0c20eee4333c5adbbbec7",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Hold_Me",
+          "mixture_sha256": "0428d15f3d23ea9e8a52191a57840f1afe996573fc796f28b54f1ce1b0595326",
+          "recipe_id": "0e5825422a958163d03250e6d30e7935aae86fb80cd0c20eee4333c5adbbbec7",
+          "target_audio_sha256": "5afb6ae45dff0bb2c22f3ff0c8ce65f0ff3ccfeb6de849fd605b2f67ecdf3bfe",
+          "target_rms_dbfs": -34.886,
+          "target_sha256": "5f50c363a37936bfc151beae20f4eb2ccfe89561eb4b7db17dd93ab57465f8b6"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/0b3527463a3fccd8ec3044611ab6c6a18d40302e4bbf67ebf9bef4be25cf3645",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Never_Let_You_Go",
+          "mixture_sha256": "33c5e87bfe72606c80258e7e8c914146d6af94d1af6998e3b91bf2ffc4874aa4",
+          "recipe_id": "0b3527463a3fccd8ec3044611ab6c6a18d40302e4bbf67ebf9bef4be25cf3645",
+          "target_audio_sha256": "9212d021f92c6f2e2c2cf0941afe685c8ab44c656c5458129cfe60a2ccaea9a5",
+          "target_rms_dbfs": -30.437,
+          "target_sha256": "1a3f9c9449fd8de3b585b1cd43b1610817240333e0690d9b317c6800a62f835f"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/048e5cb79e456529774bd1f855d9d738511bb62ac178acc8521ee8a1cb34dffb",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Your_Star",
+          "mixture_sha256": "bbe4f35218ea1cd894e9a19ea89e5979a8ea0e9c1902f739f2ceb17261915341",
+          "recipe_id": "048e5cb79e456529774bd1f855d9d738511bb62ac178acc8521ee8a1cb34dffb",
+          "target_audio_sha256": "a0b6a7bae8e0dea22143f437aa07edd3702522a309eb8dd07e405fc632e5a45e",
+          "target_rms_dbfs": -26.508,
+          "target_sha256": "add49378df97d826c7fe05c222dd39b047fce48e2cbc25bf44f26efc56d9fceb"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/08773224d823ebf9b5681b33adca0711ab97b22fa463fb1dceb97523df57e4cf",
+          "composition_id": "rawstems:Egda_Carolyn|Saudade_Do_Teu_Beijo",
+          "mixture_sha256": "b7a37169ec764032eacd7b77597f76c6a1c698ea1d2e9fc012e60ffee0e5b896",
+          "recipe_id": "08773224d823ebf9b5681b33adca0711ab97b22fa463fb1dceb97523df57e4cf",
+          "target_audio_sha256": "3aa088c26d64d3d6458a8446843284001af0deee94aa342c5523ea849e0f2f44",
+          "target_rms_dbfs": -22.103,
+          "target_sha256": "f6b7d288ae389d72a300b1a28159ca3ee8d0b0991de830c3532dde1d967babb0"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/49fd6828f05e8c888e5ba27af00995540ae8438559b31643d59715753da0bd8d",
+          "composition_id": "rawstems:Imp_Act|Another_Life",
+          "mixture_sha256": "a1ddd08aec3111b9fde8e463144fdb3992c8d1703de045572e0d5230feb9da32",
+          "recipe_id": "49fd6828f05e8c888e5ba27af00995540ae8438559b31643d59715753da0bd8d",
+          "target_audio_sha256": "586a870b11c6116239120a9db6cd43e20c87a30a43be14520bd50f3af7dad689",
+          "target_rms_dbfs": -31.271,
+          "target_sha256": "9a988f2e4015d8471f85a068fb6fafce8da88326c89f7e74bfe67cbc3e5f532c"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/2b3b3baa875c5d806bcfdf1c6f04584c65ff2a75ddc46b2a5ea7de22f99142f5",
+          "composition_id": "rawstems:Imp_Act|Back_In_Time",
+          "mixture_sha256": "98c88b9c0e5a96ab5cc743cf83f70b38168621fdf3e3c8b8cb917ff822f2530b",
+          "recipe_id": "2b3b3baa875c5d806bcfdf1c6f04584c65ff2a75ddc46b2a5ea7de22f99142f5",
+          "target_audio_sha256": "e656f68a5fa0254391c448ff9663014f3b65842f42ce6249b963eeee4dd60e01",
+          "target_rms_dbfs": -28.072,
+          "target_sha256": "1f8a03b3c59c76f0b10a52d3070e1fccf96851122d30dad117ffc007c5e27313"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/020b91c28be8e3cfa7c99cfe2f0fcdb0ee77ce116d53433634ccccf81dc7ff85",
+          "composition_id": "rawstems:Studio_ROM|Islets",
+          "mixture_sha256": "84850bef27c2f7ebbd17c21b9287c651c280d1fac315b8019e767ae2c37ce8ff",
+          "recipe_id": "020b91c28be8e3cfa7c99cfe2f0fcdb0ee77ce116d53433634ccccf81dc7ff85",
+          "target_audio_sha256": "207ec11e850e87cc06d1a6be8812e8b4d792b240625da3d0a53a84fe6a63a883",
+          "target_rms_dbfs": -42.352,
+          "target_sha256": "ab4a65d964eb6a129bfaf59f3d04de3ae7e4700498e8b5626c94678cae1a739d"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/03979a3cd18965a1c17f53cf63d94ef75ae5af62f6630c43d6a3ab15758bdce8",
+          "composition_id": "rawstems:Studio_ROM|NEW!_'Pia_Mater",
+          "mixture_sha256": "d27e6518ecc67cb093090a43cd2e2dc1a5d865971a3be0a7d5264754e5c91735",
+          "recipe_id": "03979a3cd18965a1c17f53cf63d94ef75ae5af62f6630c43d6a3ab15758bdce8",
+          "target_audio_sha256": "de3a808d1c9324b669deb9a9fe329561354d091c73cf05958dd553e82d025694",
+          "target_rms_dbfs": -32.845,
+          "target_sha256": "7cecbcd712dfc9293fb2047f755ca717b62c75e6e34773f28d0c3006a3a03198"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/027fe48c083ec7b9922321fb730f73755b9e85893d8d6180818c9abb66619447",
+          "composition_id": "rawstems:Ben_Flowers|Ecstasy",
+          "mixture_sha256": "d653bbf414e30e0c22748489ee2c726306592d80e45c353411c309d90825f644",
+          "recipe_id": "027fe48c083ec7b9922321fb730f73755b9e85893d8d6180818c9abb66619447",
+          "target_audio_sha256": "f3ed17becc35dd8ec02c948dfde82a80e217f1becd74389554b7fe823531874c",
+          "target_rms_dbfs": -31.52,
+          "target_sha256": "cddebbe3d5e91e5168cde574cf605880d1d6e2fa19a166253614f8bfa735bfee"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/118d4fd6769304056ca697a187bbe8f9181bbc7a67e4d54bfbd1eb67266e66a6",
+          "composition_id": "rawstems:Ben_Flowers|NEW!_'The_Calling",
+          "mixture_sha256": "34813871194d6ec4419f1c965c4768f781b7a1604f6567eb308be05dc3dbd9f9",
+          "recipe_id": "118d4fd6769304056ca697a187bbe8f9181bbc7a67e4d54bfbd1eb67266e66a6",
+          "target_audio_sha256": "d732a66fb635746235a8463acd82581e3feb3c45e3cb2a284315258ab6af904b",
+          "target_rms_dbfs": -21.421,
+          "target_sha256": "8423d7d696fc38c1e47812733fa96e7b79ecd62726a4dc01c10581a170538133"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/07fa09f7235db6073057d956a82fb88ed587ce2e41b381f2e719b55c992a71d4",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Your_Star",
+          "mixture_sha256": "b84343a9b1072d73002370cd8b1fdbf1fd3f8e42baf9c1d3ce02cb58a62abbf5",
+          "recipe_id": "07fa09f7235db6073057d956a82fb88ed587ce2e41b381f2e719b55c992a71d4",
+          "target_audio_sha256": "3cfe1240e1db8729de8586a46fa248606322dd7166a884ebdf0b3e1479fa54fe",
+          "target_rms_dbfs": -49.067,
+          "target_sha256": "a2bfdbfd4605b04727b2938403c538fc31622ca61983fc99199691ef3a4bbada"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/1424b0e4ba9af3e6979e5b32957ec39fc5d0dfb7810c5c4a380c9eb21cf7dceb",
+          "composition_id": "rawstems:Egda_Carolyn|Saudade_Do_Teu_Beijo",
+          "mixture_sha256": "252d3b1f927093ebf10a18dff0470b1d6571eed28d4a56d0d32069cd8cc40f48",
+          "recipe_id": "1424b0e4ba9af3e6979e5b32957ec39fc5d0dfb7810c5c4a380c9eb21cf7dceb",
+          "target_audio_sha256": "3aa088c26d64d3d6458a8446843284001af0deee94aa342c5523ea849e0f2f44",
+          "target_rms_dbfs": -20.543,
+          "target_sha256": "6228feac085b727b8b7fece5bc9c84a9d7df0aace9015290298f0b963cfbf0b8"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/54fa7db5042f9fc8bfbabae5f40d7cfac2f3c71cd1dc2bed754616304feaca50",
+          "composition_id": "rawstems:Imp_Act|Another_Life",
+          "mixture_sha256": "cc4f8df05738fb1d11f5936181d28ab5718307e2607eb1c35bfd1c42b27b2806",
+          "recipe_id": "54fa7db5042f9fc8bfbabae5f40d7cfac2f3c71cd1dc2bed754616304feaca50",
+          "target_audio_sha256": "586a870b11c6116239120a9db6cd43e20c87a30a43be14520bd50f3af7dad689",
+          "target_rms_dbfs": -29.791,
+          "target_sha256": "033218f647fe3348be4aef9d6d164e8016b6ba4967be70f1b57c5bb4d556d24b"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/79540b6fb01e1591cbea9267647ede2d00d06904ca90807845ae044d6e08ed08",
+          "composition_id": "rawstems:Imp_Act|Back_In_Time",
+          "mixture_sha256": "d162034d2f0f5176609fc92c83adfce1116e4c25b95b77db2f5dac262f91f076",
+          "recipe_id": "79540b6fb01e1591cbea9267647ede2d00d06904ca90807845ae044d6e08ed08",
+          "target_audio_sha256": "e656f68a5fa0254391c448ff9663014f3b65842f42ce6249b963eeee4dd60e01",
+          "target_rms_dbfs": -22.626,
+          "target_sha256": "fcff2094bd9a237daf8e2fbe97c437a41519267ed0e587fd60210616f01f6a24"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/040789b506c7d8d70bbee154fdcba881c5c7393407262b412b94094a244e620b",
+          "composition_id": "rawstems:Studio_ROM|NEW!_'Pia_Mater",
+          "mixture_sha256": "fdafd88b8181f5be268d34156e7f273e83a87c1611a81ab3c50a00237df4f658",
+          "recipe_id": "040789b506c7d8d70bbee154fdcba881c5c7393407262b412b94094a244e620b",
+          "target_audio_sha256": "cca06c00e99a510e22754415fc171b6c24c90564abbd23f20f9dc6c9760f9450",
+          "target_rms_dbfs": -46.069,
+          "target_sha256": "76860fbd54ea70f96f83ac8ab14321d97f90d0e4b06d85debd549beed6daae74"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/0c3a8bdba60b50c5ecd94862485b70ab174cedda56a2c2302538700fd2f71e3e",
+          "composition_id": "rawstems:Ben_Flowers|Ecstasy",
+          "mixture_sha256": "90fd7c5d580d865a734ac2c29d3635d19bc2a215744a51263a6cab3bad621ae3",
+          "recipe_id": "0c3a8bdba60b50c5ecd94862485b70ab174cedda56a2c2302538700fd2f71e3e",
+          "target_audio_sha256": "f3ed17becc35dd8ec02c948dfde82a80e217f1becd74389554b7fe823531874c",
+          "target_rms_dbfs": -29.737,
+          "target_sha256": "6077d5c9e75fc45522edc1cc23681399e2f5f12097b286800d68aea0f4a1679f"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/35bc63e71acc7f8ccc0b4014e92a055d98b0ee40e4e484fc0dfb9e24a3a72e74",
+          "composition_id": "rawstems:Ben_Flowers|NEW!_'The_Calling",
+          "mixture_sha256": "a7bee254b43a5c846f69f540422294958e306bcfcfe826d788e74db1df17621d",
+          "recipe_id": "35bc63e71acc7f8ccc0b4014e92a055d98b0ee40e4e484fc0dfb9e24a3a72e74",
+          "target_audio_sha256": "d732a66fb635746235a8463acd82581e3feb3c45e3cb2a284315258ab6af904b",
+          "target_rms_dbfs": -21.264,
+          "target_sha256": "acb6cb0f8ce8fb7c3862504a8fc6ac1ae3413f12c9377d8a7e690a5c2890a13c"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/141a13a0672ee10b67497f74d9c417dd8d559571ec4dcb1570ae9c448841bb9d",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Hold_Me",
+          "mixture_sha256": "c2ed2ef6ae39349ce44162ebc36f578b9328afd474f955b52b375c331a57b8b1",
+          "recipe_id": "141a13a0672ee10b67497f74d9c417dd8d559571ec4dcb1570ae9c448841bb9d",
+          "target_audio_sha256": "dc62e60945cd47a1b7e494b613db25132ce7189eb88e7bc9cfa748f4fe31db34",
+          "target_rms_dbfs": -26.745,
+          "target_sha256": "5104acd43bdab6d855fe9e407eb491699a4c9c0217831fe060b0fda0cd383685"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/152351128651662448cea18a3e69fc1e92d5827b6b168e8894ac9d833c54a765",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Never_Let_You_Go",
+          "mixture_sha256": "36f46c92845ee198c9dc3bcf19346d6c37bbaec06d7387f09331c5e8fc7b15d1",
+          "recipe_id": "152351128651662448cea18a3e69fc1e92d5827b6b168e8894ac9d833c54a765",
+          "target_audio_sha256": "c46e43f927c747db1384214a4c1269df67d00d3f7e91d941005dcb23c3259998",
+          "target_rms_dbfs": -25.739,
+          "target_sha256": "a464badd66a87f2dfddd6a9cf32943cbbf30d4ec2df965a15d31d65088918d5f"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/2fa8299ccb374174270a47bd79f44156513f1bbf12ef484aef606d9e5435488f",
+          "composition_id": "rawstems:Egda_Carolyn|Saudade_Do_Teu_Beijo",
+          "mixture_sha256": "d963648c63490ae50e1f1f78c4017feef0cbdc33df5995979674301f1ae8f83b",
+          "recipe_id": "2fa8299ccb374174270a47bd79f44156513f1bbf12ef484aef606d9e5435488f",
+          "target_audio_sha256": "3aa088c26d64d3d6458a8446843284001af0deee94aa342c5523ea849e0f2f44",
+          "target_rms_dbfs": -21.281,
+          "target_sha256": "1d8517878e823f76945c95f46aada41d7d686ce38ff3c4eee76bccd6bbacb971"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/7281c800ac99a0a39f8a6c0979f267439068f30edf13495ed0fc37557027eaa0",
+          "composition_id": "rawstems:Imp_Act|Another_Life",
+          "mixture_sha256": "32d0fbba892aaec1fddac2324cd89adb85862ebdd992bf2f405b9f5e026e8757",
+          "recipe_id": "7281c800ac99a0a39f8a6c0979f267439068f30edf13495ed0fc37557027eaa0",
+          "target_audio_sha256": "586a870b11c6116239120a9db6cd43e20c87a30a43be14520bd50f3af7dad689",
+          "target_rms_dbfs": -30.412,
+          "target_sha256": "da5b4cc80def2bdc566a1634f1eae03cb6c1ba1f079abc06f3781a963d2e0cdf"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/19008d5ce2f0a39f38929d9deb425c05fa242afe6de0e84c7997585d2f6b8b20",
+          "composition_id": "rawstems:Ben_Flowers|Ecstasy",
+          "mixture_sha256": "cee4d745bcff23a33519867e6080c06f85c174061b6b68011a45e2c2287eb5c1",
+          "recipe_id": "19008d5ce2f0a39f38929d9deb425c05fa242afe6de0e84c7997585d2f6b8b20",
+          "target_audio_sha256": "f3ed17becc35dd8ec02c948dfde82a80e217f1becd74389554b7fe823531874c",
+          "target_rms_dbfs": -42.054,
+          "target_sha256": "1158655afc8ec119e150034080e295587f81f3cc71f7a21a0611a822b808cad7"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/51b8886246e0dc235d1614e9120f1f62610c320bafb3ca97af98506fa5ec3363",
+          "composition_id": "rawstems:Ben_Flowers|NEW!_'The_Calling",
+          "mixture_sha256": "d1bddc5048087f4bd2630983b797b4db3a94305b9a09c63e64af32de1d88f3ba",
+          "recipe_id": "51b8886246e0dc235d1614e9120f1f62610c320bafb3ca97af98506fa5ec3363",
+          "target_audio_sha256": "d732a66fb635746235a8463acd82581e3feb3c45e3cb2a284315258ab6af904b",
+          "target_rms_dbfs": -21.189,
+          "target_sha256": "f3c6a69397d476e7822d100c3969743da84e8d04ceaf99687a60dcd22437ffe6"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/191df3b55b39da254bdd50a29cbeddda703f3b63f684ae3c4f8daf057b156731",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Never_Let_You_Go",
+          "mixture_sha256": "83afe043765b860510823a66fb800c15b37a8d06dcff5d90a6f4411b1b21fdb9",
+          "recipe_id": "191df3b55b39da254bdd50a29cbeddda703f3b63f684ae3c4f8daf057b156731",
+          "target_audio_sha256": "d1aaf96533b6304ce72e8d26db5eb269bd4fc6a0d43fba40cbe999d46809d137",
+          "target_rms_dbfs": -38.16,
+          "target_sha256": "d194bf6015899febf68a226fd56c4374b99c52090fbb10387c0ebd99748131b4"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/0966746ea8f6026962e8998f7ce09d9f9816ae018b287a13f443b224b26b3cff",
+          "composition_id": "rawstems:Brian_C_Cai_Fei_Hong|Your_Star",
+          "mixture_sha256": "bcc1e9fa64832c6fa617013a0758a44f0c7d7d18d63a7c248ed16aafcc7c274f",
+          "recipe_id": "0966746ea8f6026962e8998f7ce09d9f9816ae018b287a13f443b224b26b3cff",
+          "target_audio_sha256": "a0b6a7bae8e0dea22143f437aa07edd3702522a309eb8dd07e405fc632e5a45e",
+          "target_rms_dbfs": -27.195,
+          "target_sha256": "e3ca2f095813b944a28217c8cebb30140bb18d14b5d1478fc36c823eebc44dd3"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/3c0ff79b1e87f7637779d46dbcc2c93e848d075a40f485431ea0619e4b6d25db",
+          "composition_id": "rawstems:Egda_Carolyn|Saudade_Do_Teu_Beijo",
+          "mixture_sha256": "42ba4bc9d2cdd52fc2dc09e0b52455783fdb666166f37726f0f59c29778416b7",
+          "recipe_id": "3c0ff79b1e87f7637779d46dbcc2c93e848d075a40f485431ea0619e4b6d25db",
+          "target_audio_sha256": "3aa088c26d64d3d6458a8446843284001af0deee94aa342c5523ea849e0f2f44",
+          "target_rms_dbfs": -22.156,
+          "target_sha256": "b63ff72da197d85d5392bc25827bca6edfab9b6b9b0faf5683e6000ba6007051"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/fd188f2aac7f3c2fe77bc9cdaeee05ab71413f1cc9e047abe1da662b99b08a31",
+          "composition_id": "rawstems:Imp_Act|Another_Life",
+          "mixture_sha256": "80016d3e63c68ffee2295f240c47814f0c3452facd8b0d66d304ee866cc37966",
+          "recipe_id": "fd188f2aac7f3c2fe77bc9cdaeee05ab71413f1cc9e047abe1da662b99b08a31",
+          "target_audio_sha256": "586a870b11c6116239120a9db6cd43e20c87a30a43be14520bd50f3af7dad689",
+          "target_rms_dbfs": -35.59,
+          "target_sha256": "56a857e19836cd7d4e7c4e24d0f48f798623c6498344729c66a76f135d1e9627"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/bc7150295f6f52298e952dbfdd9442d2712a1a5eefce50ca6e75e657268fc822",
+          "composition_id": "rawstems:Imp_Act|Back_In_Time",
+          "mixture_sha256": "f1c4b55d7875b493c378bc69cd801cd202f7dcefccff91275a33178c2c605c42",
+          "recipe_id": "bc7150295f6f52298e952dbfdd9442d2712a1a5eefce50ca6e75e657268fc822",
+          "target_audio_sha256": "e656f68a5fa0254391c448ff9663014f3b65842f42ce6249b963eeee4dd60e01",
+          "target_rms_dbfs": -31.197,
+          "target_sha256": "f9de427a1a8e1562d824b2bcca84daf5046df98cb0fe92c5d2a11114aae7626b"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/0b41075bba87d529e4ac7b7c480f361f8620b6758410713b6aac50b842cad548",
+          "composition_id": "rawstems:Studio_ROM|Islets",
+          "mixture_sha256": "7dfca1dd9e36dff0e69fe3110de136a18beee7e26148fa88f1a39d31411aecf4",
+          "recipe_id": "0b41075bba87d529e4ac7b7c480f361f8620b6758410713b6aac50b842cad548",
+          "target_audio_sha256": "207ec11e850e87cc06d1a6be8812e8b4d792b240625da3d0a53a84fe6a63a883",
+          "target_rms_dbfs": -31.173,
+          "target_sha256": "837dad10e10288ffa29f595527147acaabb0b92a1491e8dda683ed999926ed1b"
+        },
+        {
+          "artifact_root": "/__modal/volumes/vo-1D1g9BNKi4shcnR0cPt9FJ/validation_renders/specialists-synth-validation-30-v1/artifacts/synth/263fa82826a4581ddab6cee2983e2fffb21909beda4340a3fb2848f01861922b",
+          "composition_id": "rawstems:Ben_Flowers|Ecstasy",
+          "mixture_sha256": "ce2198d3657ec3f481b4f2d9ca99d2cc289c005b75012fe699c8bb318b4f7ad9",
+          "recipe_id": "263fa82826a4581ddab6cee2983e2fffb21909beda4340a3fb2848f01861922b",
+          "target_audio_sha256": "9f1c12cd966a268c652574744dc019597f5ce60c72cb9ace9c6cd19e092d2290",
+          "target_rms_dbfs": -34.099,
+          "target_sha256": "49e5681137327a216a84a9ea1da9632e772f9cced9370c33abebe2c5dc10b5fe"
+        }
+      ],
+      "composition_count": 10,
+      "count": 30,
+      "manifest": "training/manifests/research_all/specialist-recipes-v1/synth.jsonl",
+      "manifest_sha256": "5257ba71847103e5ae1700d75df75e3a9dfd03a42ab8c20b721111f134aaa03a",
+      "new_render_count": 42,
+      "rejected_before_completion": [
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "018a49e408e01d0e8592c885fa7cfe5bf54ac992918611647816189686e96105",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "077d9c4b70dc4b46b74b48b0310a0988fa06670825845cba0033b9ecebba7b72",
+          "target_rms_dbfs": -100.115
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "0569503b08dbba185e33a80279adff45f8c692ffa8c5ee0bb4d61cd5b5d566b5",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "12bf71bc15f377c88045e1ae5cb507b7db872cae001f655f4c370829d52eb721",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "0edbe462b11136fa4e69ea371d9ed9a90b4b811a8029a82fa4f681217608d532",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "047b66faa5a69d0cd2a49d23589d24fcbc558a52ccf5f28ff013b2b10cb0bd40",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "1489e2326eec5ff218fc2076a07d52f7d8416ac3afc3991ff8d263311c507370",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "086e87e03ce7a247f7664713886bf97fac1b0652ccc63e9bd64e2ace73535221",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "864e8c06b9852e25a419ab9901ab87026b0251112da7450c1a5cea5d969d7ebd",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "06f4f9f86d95d4b18c04dc3217c7b182953f53d21d99d73428e725714e59dc86",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "06dd50f0cb7ea1d77a7a7c67b50ad5fe65772b1ef71e9c9faf214d4bc5aceca3",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "1d70b730e080911c8afcf2ac9ca69a896572255327609fa39b70a07d91b81035",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "1afab25a944a646ba3a41a409fb8232a5eec664406dd86aa92e459531e8d5a74",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "0952a53507745f6341eb183b5c538480f9fd36db30ced4b8936fc2584ef27bd1",
+          "target_rms_dbfs": -240.0
+        },
+        {
+          "reason": "target_below_rms_gate",
+          "recipe_id": "30d8e3748f86bff60f86d91a5d79a11b43a3c96e4543a301888079fc9a22166e",
+          "target_rms_dbfs": -52.983
+        }
+      ],
+      "reused_render_count": 3
+    }
+  },
+  "min_target_rms_dbfs": -50.0,
+  "profile": "research_all",
+  "schema_version": "1.0",
+  "set_id": "specialists-synth-validation-30-v1",
+  "split": "validation"
+}

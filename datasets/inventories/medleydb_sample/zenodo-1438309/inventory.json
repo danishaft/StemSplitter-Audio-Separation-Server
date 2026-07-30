@@ -1,0 +1,20 @@
+{
+  "file_count": 1,
+  "files": [
+    {
+      "checksum": "dbb5b4ff5122233915d04cab4486ead1",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/1438309/files/MedleyDB_Sample.tar.gz/content",
+      "path": "MedleyDB_Sample.tar.gz",
+      "provider_revision": null,
+      "size_bytes": 415502011
+    }
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "rights_status": "noncommercial_research",
+  "schema_version": "1.0",
+  "source_id": "medleydb_sample",
+  "source_url": "https://zenodo.org/records/1438309",
+  "source_version": "zenodo-1438309",
+  "total_size_bytes": 415502011
+}

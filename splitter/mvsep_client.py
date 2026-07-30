@@ -1,89 +1,74 @@
-"""MVSEP API Client for specialist model separation.
+"""Small, opt-in client for the hosted MVSep separation API.
 
-MVSEP (Music & Voice Separation) hosts 100+ community-trained models
-for professional-grade stem separation. This client provides a simple
-interface to chain specialist models for 16-stem separation.
-
-See: https://mvsep.com/en
+This adapter is intentionally separate from the local and Modal runners.  It
+uses the documented MVSep API contract and never runs unless the caller has
+explicitly selected the experimental profile and configured an API token.
 """
 from __future__ import annotations
 
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
+from urllib.parse import urljoin
 
 import requests
 
 from .util import ensure_dir
 
 
+class MVSEPError(RuntimeError):
+    """A structured MVSep adapter failure."""
+
+
 class MVSEPClient:
-    """Client for MVSEP.com API.
-    
-    Usage:
-        client = MVSEPClient()
-        stems = client.separate(
-            input_path=Path("track.wav"),
-            model="BS-Roformer-V2",
-            output_dir=Path("output/"),
-        )
-    """
-    
-    # MVSEP API endpoints
-    BASE_URL = "https://mvsep.com/api/separate"
-    STATUS_URL = "https://mvsep.com/api/status"
-    
-    # Available specialist models
-    MODELS = {
-        # Vocal models
-        "BS-Roformer-V2": "Lead/Backing vocal separation",
-        "BS-Roformer-ViperX-1296": "6-stem: vocals, bass, drums, guitar, piano, other",
-        "UVR-BVE-Net": "Backing vocal extraction",
-        "UVR-De-Reverb-Echo": "Vocal reverb/delay isolation",
-        "Kim_Vocal_2": "High-quality vocal separation",
-        
-        # Drum models
-        "DrumSep": "Individual drums: kick, snare, hats, cymbals, toms",
-        "MVSep-Drums": "5-stem drum separation",
-        
-        # Instrument models
-        "MVSep-Piano": "Piano isolation",
-        "MVSep-Lead-Guitar": "Electric guitar isolation",
-        "MVSep-Acoustic-Guitar": "Acoustic guitar isolation",
-        "MVSep-Keys": "Keys/synth isolation",
-        "MVSep-Plucked-Strings": "Strings, violin, cello",
-        "MVSep-Brass": "Trumpet, saxophone, brass",
-        "MVSep-Woodwind": "Flute, clarinet, woodwinds",
-        
-        # Utility models
-        "Denoise-MDX23C": "Noise/crowd removal",
-        "SCNet_Vanilla": "Fast instrumental separation",
+    """Client for MVSep's documented separation API."""
+
+    # Use one explicit regional host so create, polling, and downloads stay
+    # on the same region. MVSep recommends de2 for callers outside Europe and
+    # North Asia; deployments can override this with MVSEP_API_BASE_URL.
+    DEFAULT_BASE_URL = "https://de2.mvsep.com/api"
+
+    # These are the documented separation type IDs and option defaults for
+    # the specialist families currently being evaluated.
+    MODELS: dict[str, dict[str, object]] = {
+        "MVSep-Piano": {"sep_type": 29, "add_opt1": "5"},
+        "MVSep-Guitar": {"sep_type": 31, "add_opt1": "7"},
+        "MVSep-Acoustic-Guitar": {"sep_type": 66, "add_opt2": "0"},
+        "MVSep-Electric-Guitar": {"sep_type": 81, "add_opt2": "0"},
+        "MVSep-Bowed-Strings": {"sep_type": 52, "add_opt1": "1", "add_opt2": "0"},
+        "MVSep-Wind": {"sep_type": 54, "add_opt1": "3", "add_opt2": "0", "add_opt3": "0"},
+        "MVSep-Synth": {"sep_type": 88, "add_opt1": "0"},
+        "DrumSep": {"sep_type": 37, "add_opt1": "7", "add_opt2": "0"},
     }
-    
+
+    # Backward-compatible names are retained only as aliases for callers that
+    # used the old experimental module; the job pipeline uses the names above.
+    MODEL_ALIASES = {
+        "MVSep-Lead-Guitar": "MVSep-Guitar",
+        "MVSep-Plucked-Strings": "MVSep-Bowed-Strings",
+        "MVSep-Keys": "MVSep-Synth",
+    }
+
     def __init__(
         self,
         api_key: Optional[str] = None,
+        *,
+        base_url: str | None = None,
         timeout: int = 300,
         max_retries: int = 3,
         retry_delay: int = 5,
-    ):
-        """Initialize MVSEP client.
-        
-        Args:
-            api_key: Optional API key for Pro tier
-            timeout: Request timeout in seconds
-            max_retries: Maximum retry attempts on failure
-            retry_delay: Delay between retries in seconds
-        """
+        poll_interval: int = 5,
+        max_polls: int = 720,
+    ) -> None:
         self.api_key = api_key
+        self.base_url = (base_url or self.DEFAULT_BASE_URL).rstrip("/")
         self.timeout = timeout
         self.max_retries = max_retries
         self.retry_delay = retry_delay
+        self.poll_interval = poll_interval
+        self.max_polls = max_polls
         self.session = requests.Session()
-        
-        if api_key:
-            self.session.headers["Authorization"] = f"Bearer {api_key}"
-    
+
     def separate(
         self,
         input_path: Path,
@@ -91,299 +76,231 @@ class MVSEPClient:
         output_dir: Path,
         output_format: str = "wav",
     ) -> Dict[str, Path]:
-        """Separate audio using MVSEP specialist model.
-        
-        Args:
-            input_path: Path to input audio file
-            model: MVSEP model name (e.g., "BS-Roformer-V2", "DrumSep")
-            output_dir: Directory to save output stems
-            output_format: Output format (mp3, wav, flac)
-        
-        Returns:
-            Dict mapping stem names to output file paths
-        
-        Raises:
-            ValueError: If model is not available
-            requests.RequestException: If API call fails
-        """
-        if model not in self.MODELS:
-            raise ValueError(
-                f"Unknown model: {model}. "
-                f"Available models: {list(self.MODELS.keys())}"
-            )
-        
+        """Run one MVSep model and download its output files."""
+        model_name = self.MODEL_ALIASES.get(model, model)
+        model_config = self.MODELS.get(model_name)
+        if model_config is None:
+            raise MVSEPError(f"mvsep_unknown_model:{model}")
+        if not self.api_key:
+            raise MVSEPError("mvsep_api_key_missing")
+        if not input_path.exists():
+            raise MVSEPError("mvsep_input_missing")
+
         ensure_dir(output_dir)
-        
-        # Upload and process
         for attempt in range(self.max_retries):
             try:
-                return self._separate_with_retry(
+                return self._separate_once(
                     input_path=input_path,
-                    model=model,
                     output_dir=output_dir,
+                    model_name=model_name,
+                    model_config=model_config,
                     output_format=output_format,
                 )
-            except requests.RequestException as e:
-                if attempt == self.max_retries - 1:
+            except (MVSEPError, requests.RequestException):
+                if attempt >= self.max_retries - 1:
                     raise
                 time.sleep(self.retry_delay * (attempt + 1))
-        
-        raise RuntimeError(f"Failed after {self.max_retries} attempts")
-    
-    def _separate_with_retry(
+        raise MVSEPError("mvsep_retry_exhausted")
+
+    def _separate_once(
         self,
+        *,
         input_path: Path,
-        model: str,
         output_dir: Path,
+        model_name: str,
+        model_config: dict[str, object],
         output_format: str,
     ) -> Dict[str, Path]:
-        """Execute separation with status polling."""
-        
-        # Step 1: Upload file and start processing
-        with open(input_path, "rb") as f:
-            upload_response = self._upload_file(f, model, output_format)
-        
-        job_id = upload_response.get("job_id")
-        if not job_id:
-            raise RuntimeError("No job_id in upload response")
-        
-        # Step 2: Poll for completion
-        result = self._poll_job_status(job_id)
-        
-        # Step 3: Download stems
-        stems = {}
-        for stem_name, stem_url in result.get("stems", {}).items():
-            stem_path = self._download_stem(stem_url, output_dir, stem_name)
-            stems[stem_name] = stem_path
-        
-        return stems
-    
-    def _upload_file(
-        self,
-        file_obj,
-        model: str,
-        output_format: str,
-    ) -> Dict[str, Any]:
-        """Upload file and start processing."""
-        response = self.session.post(
-            self.BASE_URL,
-            files={"audio": file_obj},
-            data={
-                "model": model,
-                "format": output_format,
-            },
-            timeout=self.timeout,
-        )
+        response_format = {"wav": 1, "flac": 2, "mp3": 0}.get(output_format.lower())
+        if response_format is None:
+            raise MVSEPError(f"mvsep_output_format_unsupported:{output_format}")
+
+        fields = {
+            "api_token": self.api_key,
+            "sep_type": str(model_config["sep_type"]),
+            "output_format": str(response_format),
+            "is_demo": "0",
+        }
+        for option_name in ("add_opt1", "add_opt2", "add_opt3"):
+            if option_name in model_config:
+                fields[option_name] = str(model_config[option_name])
+
+        with input_path.open("rb") as audio_file:
+            response = self.session.post(
+                f"{self.base_url}/separation/create",
+                files={"audiofile": (input_path.name, audio_file)},
+                data=fields,
+                timeout=self.timeout,
+            )
         response.raise_for_status()
-        return response.json()
-    
-    def _poll_job_status(self, job_id: str) -> Dict[str, Any]:
-        """Poll job status until complete."""
-        max_polls = 60  # Max 5 minutes (5s * 60)
-        poll_interval = 5  # seconds
-        
-        for i in range(max_polls):
+        created = self._json(response)
+        if not created.get("success"):
+            raise MVSEPError(f"mvsep_create_failed:{self._message(created)}")
+
+        data = created.get("data")
+        if not isinstance(data, dict) or not data.get("hash"):
+            raise MVSEPError("mvsep_create_missing_hash")
+
+        result = self._poll_result(str(data["hash"]))
+        files = self._extract_files(result)
+        if not files:
+            raise MVSEPError(f"mvsep_result_missing_files:{model_name}")
+
+        downloaded: Dict[str, Path] = {}
+        for stem_name, stem_url in files.items():
+            downloaded[stem_name] = self._download_stem(stem_url, output_dir, stem_name)
+        return downloaded
+
+    def _poll_result(self, job_hash: str) -> dict[str, Any]:
+        for _ in range(self.max_polls):
             response = self.session.get(
-                f"{self.STATUS_URL}/{job_id}",
-                timeout=30,
+                f"{self.base_url}/separation/get",
+                params={"hash": job_hash},
+                timeout=min(self.timeout, 60),
             )
             response.raise_for_status()
-            status = response.json()
-            
-            if status.get("status") == "completed":
-                return status
-            elif status.get("status") == "failed":
-                raise RuntimeError(f"Job failed: {status.get('error', 'Unknown error')}")
-            
-            time.sleep(poll_interval)
-        
-        raise RuntimeError(f"Job timed out after {max_polls * poll_interval}s")
-    
-    def _download_stem(
-        self,
-        stem_url: str,
-        output_dir: Path,
-        stem_name: str,
-    ) -> Path:
-        """Download individual stem file."""
-        response = self.session.get(stem_url, timeout=60)
+            payload = self._json(response)
+            status = self._status(payload)
+            if status in {"done", "completed", "complete"}:
+                return payload
+            if status in {"failed", "error", "not_found", "cancelled"}:
+                raise MVSEPError(f"mvsep_job_{status}:{self._message(payload)}")
+            time.sleep(self.poll_interval)
+        raise MVSEPError("mvsep_job_timeout")
+
+    @staticmethod
+    def _json(response: requests.Response) -> dict[str, Any]:
+        try:
+            payload = response.json()
+        except ValueError as exc:
+            raise MVSEPError("mvsep_invalid_json") from exc
+        if not isinstance(payload, dict):
+            raise MVSEPError("mvsep_response_not_object")
+        return payload
+
+    @staticmethod
+    def _status(payload: dict[str, Any]) -> str:
+        data = payload.get("data")
+        if isinstance(data, dict) and data.get("files"):
+            return "done"
+        if isinstance(data, dict) and data.get("status") is not None:
+            return str(data["status"]).strip().lower()
+        return str(payload.get("status", "processing")).strip().lower()
+
+    @staticmethod
+    def _message(payload: dict[str, Any]) -> str:
+        data = payload.get("data")
+        if isinstance(data, dict):
+            for key in ("message", "error"):
+                if data.get(key):
+                    return str(data[key])
+        for key in ("message", "error"):
+            if payload.get(key):
+                return str(payload[key])
+        return "unknown"
+
+    @classmethod
+    def _extract_files(cls, payload: dict[str, Any]) -> dict[str, str]:
+        data = payload.get("data")
+        if not isinstance(data, dict):
+            return {}
+        raw_files = data.get("files")
+        if isinstance(raw_files, dict):
+            extracted: dict[str, str] = {}
+            for name, value in raw_files.items():
+                if isinstance(value, str) and value:
+                    extracted[str(name)] = value
+                elif isinstance(value, dict):
+                    url = cls._file_url(value)
+                    if isinstance(url, str) and url:
+                        extracted[str(name)] = url
+            return extracted
+        if not isinstance(raw_files, list):
+            return {}
+
+        extracted: dict[str, str] = {}
+        for item in raw_files:
+            if isinstance(item, str) and item:
+                extracted[Path(item.split("?", 1)[0]).stem] = item
+                continue
+            if not isinstance(item, dict):
+                continue
+            name = item.get("name") or item.get("filename") or item.get("stem") or item.get("type")
+            url = cls._file_url(item)
+            if not name and isinstance(url, str):
+                name = Path(url.split("?", 1)[0]).stem
+            if name and isinstance(url, str) and url:
+                extracted[str(name)] = url
+        return extracted
+
+    @staticmethod
+    def _file_url(value: dict[str, Any]) -> str | None:
+        for key in ("url", "link", "download_url", "download", "file", "path", "href"):
+            candidate = value.get(key)
+            if isinstance(candidate, str) and candidate:
+                return candidate
+        return None
+
+    def _download_stem(self, stem_url: str, output_dir: Path, stem_name: str) -> Path:
+        download_url = urljoin(f"{self.base_url}/", stem_url)
+        response = self.session.get(download_url, timeout=60)
         response.raise_for_status()
-        
-        # Determine file extension from content type or URL
-        ext = ".wav"  # Default
-        if "flac" in stem_url.lower():
-            ext = ".flac"
-        elif "mp3" in stem_url.lower():
-            ext = ".mp3"
-        
-        stem_path = output_dir / f"{stem_name}{ext}"
-        stem_path.write_bytes(response.content)
-        
-        return stem_path
-    
+        safe_name = Path(stem_name).name.replace("/", "_")
+        suffix = Path(download_url.split("?", 1)[0]).suffix.lower() or ".wav"
+        if suffix not in {".wav", ".flac", ".mp3", ".m4a"}:
+            suffix = ".wav"
+        target = output_dir / f"{safe_name}{suffix}"
+        target.write_bytes(response.content)
+        return target
+
     def get_available_models(self) -> Dict[str, str]:
-        """Get list of available models."""
-        return self.MODELS.copy()
-    
+        models = {
+            name: f"sep_type={config['sep_type']}"
+            for name, config in self.MODELS.items()
+        }
+        for alias, target in self.MODEL_ALIASES.items():
+            models[alias] = models[target]
+        return models
+
     def check_status(self) -> Dict[str, Any]:
-        """Check API service status."""
-        response = self.session.get(self.STATUS_URL, timeout=30)
+        response = self.session.get(
+            f"{self.base_url}/app/user",
+            params={"api_token": self.api_key},
+            timeout=30,
+        )
         response.raise_for_status()
-        return response.json()
+        return self._json(response)
 
 
 class MVSEPModelChain:
-    """Helper for chaining multiple MVSEP models.
-    
-    Usage:
-        chain = MVSEPModelChain()
-        stems = chain.run_16_stem("track.wav", output_dir)
-    """
-    
+    """Compatibility helper for callers that still use the old chain API."""
+
     def __init__(self, client: Optional[MVSEPClient] = None):
         self.client = client or MVSEPClient()
-    
-    def run_vocal_branch(
-        self,
-        vocals_path: Path,
-        output_dir: Path,
-    ) -> Dict[str, Path]:
-        """Extract vocal sub-stems (lead, backing, reverb)."""
-        vocal_dir = ensure_dir(output_dir / "vocals")
-        stems = {}
-        
-        # Lead + Backing (BS-Roformer-V2)
+
+    def run_vocal_branch(self, vocals_path: Path, output_dir: Path) -> Dict[str, Path]:
+        """Compatibility no-op; vocal specialists are not qualified here."""
+        return {}
+
+    def run_drum_branch(self, drums_path: Path, output_dir: Path) -> Dict[str, Path]:
+        """Run the documented DrumSep model when explicitly requested."""
         try:
-            vocal_stems = self.client.separate(
-                vocals_path,
-                model="BS-Roformer-V2",
-                output_dir=vocal_dir,
-            )
-            stems.update(vocal_stems)
-        except Exception as e:
-            print(f"BS-Roformer failed: {e}")
-        
-        # Vocal Reverb (UVR-De-Reverb-Echo)
-        try:
-            reverb_stems = self.client.separate(
-                vocals_path,
-                model="UVR-De-Reverb-Echo",
-                output_dir=vocal_dir,
-            )
-            stems.update(reverb_stems)
-        except Exception as e:
-            print(f"De-Reverb failed: {e}")
-        
+            return self.client.separate(drums_path, "DrumSep", output_dir / "drums")
+        except (MVSEPError, requests.RequestException):
+            return {}
+
+    def run_instrument_branch(self, other_path: Path, output_dir: Path) -> Dict[str, Path]:
+        stems: Dict[str, Path] = {}
+        for model in (
+            "MVSep-Piano",
+            "MVSep-Acoustic-Guitar",
+            "MVSep-Electric-Guitar",
+            "MVSep-Synth",
+            "MVSep-Bowed-Strings",
+            "MVSep-Wind",
+        ):
+            try:
+                stems.update(self.client.separate(other_path, model, output_dir / model))
+            except (MVSEPError, requests.RequestException):
+                continue
         return stems
-    
-    def run_drum_branch(
-        self,
-        drums_path: Path,
-        output_dir: Path,
-    ) -> Dict[str, Path]:
-        """Extract drum sub-stems (kick, snare, hats, cymbals, toms)."""
-        drum_dir = ensure_dir(output_dir / "drums")
-        
-        return self.client.separate(
-            drums_path,
-            model="DrumSep",
-            output_dir=drum_dir,
-        )
-    
-    def run_instrument_branch(
-        self,
-        other_path: Path,
-        output_dir: Path,
-    ) -> Dict[str, Path]:
-        """Extract instrument sub-stems (piano, guitar, keys, strings)."""
-        instrument_dir = ensure_dir(output_dir / "instruments")
-        stems = {}
-        
-        # Piano
-        try:
-            piano_stems = self.client.separate(
-                other_path,
-                model="MVSep-Piano",
-                output_dir=instrument_dir,
-            )
-            stems.update(piano_stems)
-        except Exception as e:
-            print(f"MVSep-Piano failed: {e}")
-        
-        # Guitar
-        try:
-            guitar_stems = self.client.separate(
-                other_path,
-                model="MVSep-Lead-Guitar",
-                output_dir=instrument_dir,
-            )
-            stems.update(guitar_stems)
-        except Exception as e:
-            print(f"MVSep-Guitar failed: {e}")
-        
-        # Keys
-        try:
-            keys_stems = self.client.separate(
-                other_path,
-                model="MVSep-Keys",
-                output_dir=instrument_dir,
-            )
-            stems.update(keys_stems)
-        except Exception as e:
-            print(f"MVSep-Keys failed: {e}")
-        
-        # Strings
-        try:
-            strings_stems = self.client.separate(
-                other_path,
-                model="MVSep-Plucked-Strings",
-                output_dir=instrument_dir,
-            )
-            stems.update(strings_stems)
-        except Exception as e:
-            print(f"MVSep-Strings failed: {e}")
-        
-        return stems
-    
-    def run_16_stem(
-        self,
-        input_path: Path,
-        output_dir: Path,
-    ) -> Dict[str, Path]:
-        """Run full 16-stem separation pipeline.
-        
-        This chains Demucs (core 4) + MVSEP specialist models.
-        Note: Requires Demucs to be installed separately for Stage 1.
-        """
-        from .separation import build_broad_stems
-        
-        # Stage 1: Core 4 stems (Demucs)
-        broad_dir = ensure_dir(output_dir / "broad")
-        broad_outputs, _, _, _ = build_broad_stems(
-            input_path=input_path,
-            job_root=output_dir,
-            profile="quality",
-            models=["mdx_extra", "htdemucs_ft"],
-        )
-        
-        all_stems = {}
-        
-        # Stage 2A: Vocal sub-stems
-        if "vocals" in broad_outputs:
-            vocals_path = Path(broad_outputs["vocals"]["path"])
-            vocal_substems = self.run_vocal_branch(vocals_path, output_dir)
-            all_stems.update(vocal_substems)
-        
-        # Stage 2B: Drum sub-stems
-        if "drums" in broad_outputs:
-            drums_path = Path(broad_outputs["drums"]["path"])
-            drum_substems = self.run_drum_branch(drums_path, output_dir)
-            all_stems.update(drum_substems)
-        
-        # Stage 2C: Instrument sub-stems
-        if "other" in broad_outputs:
-            other_path = Path(broad_outputs["other"]["path"])
-            instrument_substems = self.run_instrument_branch(other_path, output_dir)
-            all_stems.update(instrument_substems)
-        
-        return all_stems

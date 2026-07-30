@@ -1,0 +1,20 @@
+{
+  "checkpoint_sha256": "37f1691fb067e2575f1ad1cfbfe44b7b3da18e52f33fcb2b0937b72952f11ba1",
+  "device_memory_bytes": 85094825984,
+  "device_name": "NVIDIA A100-SXM4-80GB",
+  "model_dtype": "torch.float32",
+  "model_id": "nielsr/audiosep-demo",
+  "model_parameter_count": 238599582,
+  "model_revision": "9188caa202a0d31845367e4dad8bb5549eddb4ba",
+  "runtime_revision": "944583f18b84589dc965de3ad77525c945334252",
+  "separation_parameter_count": 39034949,
+  "status": "ready",
+  "target_prompts": {
+    "acoustic_guitar": "acoustic guitar",
+    "electric_guitar": "electric guitar",
+    "piano": "piano",
+    "strings": "string instruments",
+    "synth": "synthesizer",
+    "wind": "alto saxophone"
+  }
+}

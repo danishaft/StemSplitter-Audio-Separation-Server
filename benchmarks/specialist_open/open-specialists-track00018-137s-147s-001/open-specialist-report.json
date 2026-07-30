@@ -1,0 +1,50 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-25T01:08:19.660739+00:00",
+  "job_id": "open-specialists-track00018-137s-147s-001",
+  "outputs": {
+    "strings": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 4.7265,
+      "model_id": "oulianov/BS-Roformer-BowedStrings-Duality",
+      "model_output": "strings",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/open-specialists-track00018-137s-147s-001/open_specialists/strings.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "synth": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "inference_seconds": 0.3752,
+      "model_id": "oulianov/bsroformer-lead-synth",
+      "model_output": "synth lead",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/open-specialists-track00018-137s-147s-001/open_specialists/synth.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/open-specialists-track00018-137s-147s-001/analysis/open-specialist-report.json",
+    "provider": "s3",
+    "size_bytes": 1353
+  },
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "started_at": "2026-07-25T01:08:13.296981+00:00",
+  "status": "completed"
+}

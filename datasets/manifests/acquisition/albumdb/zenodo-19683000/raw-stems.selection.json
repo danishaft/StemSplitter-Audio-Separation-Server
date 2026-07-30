@@ -1,0 +1,1657 @@
+{
+  "compressed_size_bytes": 3647202705,
+  "entries": [
+    {
+      "compressed_size_bytes": 14978876,
+      "crc32": "6aead58d",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/bass.wav",
+      "uncompressed_size_bytes": 49517856
+    },
+    {
+      "compressed_size_bytes": 17902867,
+      "crc32": "7593a3f5",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/cello.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 17335284,
+      "crc32": "80873e14",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/guitar_acoustic_l.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 8756429,
+      "crc32": "6c02b40d",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/guitar_acoustic_outro.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 17099263,
+      "crc32": "d77d91d2",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/guitar_acoustic_r.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 9271642,
+      "crc32": "ee6657e9",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/guitar_acoustic_solo.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 9054268,
+      "crc32": "aadb9b9a",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/guitar_electric_l.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 9091101,
+      "crc32": "40560e60",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/guitar_electric_r.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 19725252,
+      "crc32": "4d2412a3",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/viola.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 16766318,
+      "crc32": "9dc8909a",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/violin_1.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 17252299,
+      "crc32": "3e0ce2e9",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/violin_2.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 17204213,
+      "crc32": "01e45dc6",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/vox_lead.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 9528619,
+      "crc32": "59097478",
+      "path": "stems_raw/10 It Ain't Easy (To Mend A Heart)/vox_outro.wav",
+      "uncompressed_size_bytes": 28340070
+    },
+    {
+      "compressed_size_bytes": 13185318,
+      "crc32": "83f9a71d",
+      "path": "stems_raw/01 Extraordinary/bass.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 9635679,
+      "crc32": "838f51ed",
+      "path": "stems_raw/01 Extraordinary/bass_lo.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 9776485,
+      "crc32": "7918e18a",
+      "path": "stems_raw/01 Extraordinary/drums_kick.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 18943673,
+      "crc32": "b3685b1d",
+      "path": "stems_raw/01 Extraordinary/drums_overheads.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 9339202,
+      "crc32": "e2081d0b",
+      "path": "stems_raw/01 Extraordinary/drums_snare.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 11525436,
+      "crc32": "9495df87",
+      "path": "stems_raw/01 Extraordinary/drums_snare_2.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 7311979,
+      "crc32": "ca315d17",
+      "path": "stems_raw/01 Extraordinary/drums_toms.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 9766720,
+      "crc32": "103286ee",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_lead.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 9854823,
+      "crc32": "7cd60369",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_2.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 8238852,
+      "crc32": "e59cd9b5",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_3.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 9496410,
+      "crc32": "7ae430d7",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_c.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 10411456,
+      "crc32": "a58a2d2b",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_l.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 10188278,
+      "crc32": "ff6ebd74",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_l_2.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 10175639,
+      "crc32": "3fecc11f",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_r.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 10414341,
+      "crc32": "a2696145",
+      "path": "stems_raw/01 Extraordinary/guitar_electric_rhythm_r_2.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 9926245,
+      "crc32": "1fc2130a",
+      "path": "stems_raw/01 Extraordinary/keys_synth_hi.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 10365958,
+      "crc32": "eb5326b7",
+      "path": "stems_raw/01 Extraordinary/keys_synth_lo.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 10712642,
+      "crc32": "8d0f34b4",
+      "path": "stems_raw/01 Extraordinary/keys_synth_solo_3.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 12284070,
+      "crc32": "ab2f1c83",
+      "path": "stems_raw/01 Extraordinary/keys_synth_solo_hi.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 13219892,
+      "crc32": "6709db3c",
+      "path": "stems_raw/01 Extraordinary/keys_synth_solo_lo.wav",
+      "uncompressed_size_bytes": 27313862
+    },
+    {
+      "compressed_size_bytes": 8362094,
+      "crc32": "45315d44",
+      "path": "stems_raw/01 Extraordinary/vox_backing_chorus_l.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 8358548,
+      "crc32": "f3ccb70f",
+      "path": "stems_raw/01 Extraordinary/vox_backing_chorus_r.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 8336451,
+      "crc32": "d0e148f2",
+      "path": "stems_raw/01 Extraordinary/vox_backing_verse.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 11880464,
+      "crc32": "4dc7724a",
+      "path": "stems_raw/01 Extraordinary/vox_lead.wav",
+      "uncompressed_size_bytes": 17237894
+    },
+    {
+      "compressed_size_bytes": 20359685,
+      "crc32": "c347d321",
+      "path": "stems_raw/02 No More Mr Nice Guy/bass.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 9971036,
+      "crc32": "b204aeba",
+      "path": "stems_raw/02 No More Mr Nice Guy/bass_melody.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 19302328,
+      "crc32": "230156b7",
+      "path": "stems_raw/02 No More Mr Nice Guy/bass_synth.wav",
+      "uncompressed_size_bytes": 45357064
+    },
+    {
+      "compressed_size_bytes": 13180357,
+      "crc32": "fd6f970e",
+      "path": "stems_raw/02 No More Mr Nice Guy/drums_kick.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 33381232,
+      "crc32": "47d1aa3d",
+      "path": "stems_raw/02 No More Mr Nice Guy/drums_overheads.wav",
+      "uncompressed_size_bytes": 45357064
+    },
+    {
+      "compressed_size_bytes": 14634648,
+      "crc32": "7c550c78",
+      "path": "stems_raw/02 No More Mr Nice Guy/drums_snare.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 15740491,
+      "crc32": "2ba00c7d",
+      "path": "stems_raw/02 No More Mr Nice Guy/drums_snare2.wav",
+      "uncompressed_size_bytes": 45357064
+    },
+    {
+      "compressed_size_bytes": 7558658,
+      "crc32": "0e114582",
+      "path": "stems_raw/02 No More Mr Nice Guy/drums_toms.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 9801320,
+      "crc32": "ffa656c9",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_acoustic.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 11661734,
+      "crc32": "db082e3e",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_smooth_l.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 11604264,
+      "crc32": "d115e40a",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_smooth_r.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 11482172,
+      "crc32": "4f7c63a3",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_solo_harmony.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 13578070,
+      "crc32": "59806f9f",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_solo_l.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 8852407,
+      "crc32": "cb7ecab3",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_solo_oct.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 11895311,
+      "crc32": "5c797cd2",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_solo_r.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 18496802,
+      "crc32": "22e1daf0",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_strum.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 8036585,
+      "crc32": "8bc05529",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_wah_l.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 8068625,
+      "crc32": "344a648e",
+      "path": "stems_raw/02 No More Mr Nice Guy/guitar_electric_wah_r.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 13192798,
+      "crc32": "b1a8bf0e",
+      "path": "stems_raw/02 No More Mr Nice Guy/keys_synth_l.wav",
+      "uncompressed_size_bytes": 45357064
+    },
+    {
+      "compressed_size_bytes": 12971683,
+      "crc32": "ef1706b6",
+      "path": "stems_raw/02 No More Mr Nice Guy/keys_synth_r.wav",
+      "uncompressed_size_bytes": 45357064
+    },
+    {
+      "compressed_size_bytes": 14060053,
+      "crc32": "556821f4",
+      "path": "stems_raw/02 No More Mr Nice Guy/perc_claps.wav",
+      "uncompressed_size_bytes": 45357064
+    },
+    {
+      "compressed_size_bytes": 8384007,
+      "crc32": "60c13f5d",
+      "path": "stems_raw/02 No More Mr Nice Guy/vox_back_c.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 10437118,
+      "crc32": "0c7a3aa9",
+      "path": "stems_raw/02 No More Mr Nice Guy/vox_back_l.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 10485778,
+      "crc32": "45918199",
+      "path": "stems_raw/02 No More Mr Nice Guy/vox_back_r.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 16622350,
+      "crc32": "fa2d6f57",
+      "path": "stems_raw/02 No More Mr Nice Guy/vox_lead.wav",
+      "uncompressed_size_bytes": 26259804
+    },
+    {
+      "compressed_size_bytes": 21128844,
+      "crc32": "77368c3d",
+      "path": "stems_raw/03 Karma/bass.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 8556676,
+      "crc32": "3d984d14",
+      "path": "stems_raw/03 Karma/drums_cymbal.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 7754247,
+      "crc32": "20b7e8bb",
+      "path": "stems_raw/03 Karma/drums_cymbal_reverse.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 14679459,
+      "crc32": "a1cf2fea",
+      "path": "stems_raw/03 Karma/drums_kick.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 27496261,
+      "crc32": "d5aad892",
+      "path": "stems_raw/03 Karma/drums_overheads.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 10424056,
+      "crc32": "315421de",
+      "path": "stems_raw/03 Karma/drums_snare.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 9537366,
+      "crc32": "dcc77bce",
+      "path": "stems_raw/03 Karma/drums_snare_2.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 18868848,
+      "crc32": "ad0a40b5",
+      "path": "stems_raw/03 Karma/drums_snare_rim.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 8286351,
+      "crc32": "2a1b7bda",
+      "path": "stems_raw/03 Karma/guitar_acoustic_lead_harmony.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 12072541,
+      "crc32": "f38715f0",
+      "path": "stems_raw/03 Karma/guitar_acoustic_lead_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 12139774,
+      "crc32": "5f4c6e2e",
+      "path": "stems_raw/03 Karma/guitar_acoustic_lead_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 20724379,
+      "crc32": "a11aa110",
+      "path": "stems_raw/03 Karma/guitar_acoustic_main.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 13811862,
+      "crc32": "81d7bdda",
+      "path": "stems_raw/03 Karma/guitar_electric_lead_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 13865780,
+      "crc32": "47f28ad9",
+      "path": "stems_raw/03 Karma/guitar_electric_lead_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 12876510,
+      "crc32": "5a385018",
+      "path": "stems_raw/03 Karma/guitar_electric_rhythm_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 12876044,
+      "crc32": "617c2da0",
+      "path": "stems_raw/03 Karma/guitar_electric_rhythm_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 16817195,
+      "crc32": "3c762bcd",
+      "path": "stems_raw/03 Karma/keys_piano.wav",
+      "uncompressed_size_bytes": 42210952
+    },
+    {
+      "compressed_size_bytes": 15884475,
+      "crc32": "cf902597",
+      "path": "stems_raw/03 Karma/perc_shaker.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 10547356,
+      "crc32": "55754811",
+      "path": "stems_raw/03 Karma/perc_tapping.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 11030328,
+      "crc32": "3e7b3a57",
+      "path": "stems_raw/03 Karma/vox_backing_hi_2_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 11077940,
+      "crc32": "58f7010d",
+      "path": "stems_raw/03 Karma/vox_backing_hi_2_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 14339220,
+      "crc32": "60b7099a",
+      "path": "stems_raw/03 Karma/vox_backing_hi_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 14214504,
+      "crc32": "e3e3e4d9",
+      "path": "stems_raw/03 Karma/vox_backing_hi_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 14634193,
+      "crc32": "5234f6ea",
+      "path": "stems_raw/03 Karma/vox_backing_low_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 14681152,
+      "crc32": "8d0ab798",
+      "path": "stems_raw/03 Karma/vox_backing_low_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 9714705,
+      "crc32": "55937827",
+      "path": "stems_raw/03 Karma/vox_backing_outro_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 9689523,
+      "crc32": "8046764a",
+      "path": "stems_raw/03 Karma/vox_backing_outro_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 16426403,
+      "crc32": "33cc40b1",
+      "path": "stems_raw/03 Karma/vox_lead.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 11510670,
+      "crc32": "2ec26549",
+      "path": "stems_raw/03 Karma/vox_lead_double_l.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 11540395,
+      "crc32": "06aa5b4f",
+      "path": "stems_raw/03 Karma/vox_lead_double_r.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 8362905,
+      "crc32": "0cb1b5cd",
+      "path": "stems_raw/03 Karma/vox_lead_outro.wav",
+      "uncompressed_size_bytes": 24686530
+    },
+    {
+      "compressed_size_bytes": 27108862,
+      "crc32": "4b36369d",
+      "path": "stems_raw/04 Magistrates/bass.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 22829944,
+      "crc32": "c6de4a6d",
+      "path": "stems_raw/04 Magistrates/drums_kick.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 34235559,
+      "crc32": "19a26457",
+      "path": "stems_raw/04 Magistrates/drums_overheads.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 16431019,
+      "crc32": "80ee70b4",
+      "path": "stems_raw/04 Magistrates/drums_snare.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 18435249,
+      "crc32": "2c4aaa4a",
+      "path": "stems_raw/04 Magistrates/drums_snare_2.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 11454913,
+      "crc32": "f4eba741",
+      "path": "stems_raw/04 Magistrates/drums_toms.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 23164691,
+      "crc32": "0807c9c8",
+      "path": "stems_raw/04 Magistrates/guitar_acoustic.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 10823586,
+      "crc32": "2a7aa540",
+      "path": "stems_raw/04 Magistrates/guitar_electric_background.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9468158,
+      "crc32": "3159ce26",
+      "path": "stems_raw/04 Magistrates/guitar_electric_intro.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 11114107,
+      "crc32": "715eece2",
+      "path": "stems_raw/04 Magistrates/guitar_electric_octaves.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 8741460,
+      "crc32": "dca95855",
+      "path": "stems_raw/04 Magistrates/guitar_electric_octaves_2.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 12924932,
+      "crc32": "740297ca",
+      "path": "stems_raw/04 Magistrates/guitar_electric_rhythm_2_l.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 14104717,
+      "crc32": "1d5a685a",
+      "path": "stems_raw/04 Magistrates/guitar_electric_rhythm_2_r.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 22786630,
+      "crc32": "b4c468e9",
+      "path": "stems_raw/04 Magistrates/guitar_electric_rhythm_l.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 22309442,
+      "crc32": "7dc79e43",
+      "path": "stems_raw/04 Magistrates/guitar_electric_rhythm_r.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 11463476,
+      "crc32": "5c3b087a",
+      "path": "stems_raw/04 Magistrates/guitar_electric_solo.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9340319,
+      "crc32": "e2d6594b",
+      "path": "stems_raw/04 Magistrates/guitar_electric_solo_harmony.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 18906024,
+      "crc32": "97e82b1a",
+      "path": "stems_raw/04 Magistrates/keys_piano.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 9892747,
+      "crc32": "f01f0b60",
+      "path": "stems_raw/04 Magistrates/perc_clap_1.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9870289,
+      "crc32": "394e3083",
+      "path": "stems_raw/04 Magistrates/perc_clap_2.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9797758,
+      "crc32": "07a96088",
+      "path": "stems_raw/04 Magistrates/perc_clap_3.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 10047796,
+      "crc32": "7ccdc447",
+      "path": "stems_raw/04 Magistrates/perc_clap_4.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9858744,
+      "crc32": "64618add",
+      "path": "stems_raw/04 Magistrates/perc_clap_5.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9847587,
+      "crc32": "399d818a",
+      "path": "stems_raw/04 Magistrates/perc_clap_6.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 17300809,
+      "crc32": "e93cb223",
+      "path": "stems_raw/04 Magistrates/perc_clap_sample.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 21254241,
+      "crc32": "b73d46e7",
+      "path": "stems_raw/04 Magistrates/ukelele.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 14844836,
+      "crc32": "1aa41a76",
+      "path": "stems_raw/04 Magistrates/vox_backing_c.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 8291968,
+      "crc32": "dc772427",
+      "path": "stems_raw/04 Magistrates/vox_backing_hi.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 19151549,
+      "crc32": "ced315d1",
+      "path": "stems_raw/04 Magistrates/vox_backing_l.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9887826,
+      "crc32": "d8c2ba0d",
+      "path": "stems_raw/04 Magistrates/vox_backing_lo_l.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 9940885,
+      "crc32": "fefd8112",
+      "path": "stems_raw/04 Magistrates/vox_backing_lo_r.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 14857530,
+      "crc32": "7de603a0",
+      "path": "stems_raw/04 Magistrates/vox_backing_outro.wav",
+      "uncompressed_size_bytes": 56850132
+    },
+    {
+      "compressed_size_bytes": 19174988,
+      "crc32": "06da49bf",
+      "path": "stems_raw/04 Magistrates/vox_backing_r.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 8933088,
+      "crc32": "64b758cf",
+      "path": "stems_raw/04 Magistrates/vox_backing_response.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 24903206,
+      "crc32": "5a456870",
+      "path": "stems_raw/04 Magistrates/vox_lead.wav",
+      "uncompressed_size_bytes": 32006464
+    },
+    {
+      "compressed_size_bytes": 18624503,
+      "crc32": "53d31d1e",
+      "path": "stems_raw/05 Diva/bass.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 7625805,
+      "crc32": "a7fa5778",
+      "path": "stems_raw/05 Diva/drums_intro.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 12189677,
+      "crc32": "c4b67ef0",
+      "path": "stems_raw/05 Diva/drums_kick.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 30094157,
+      "crc32": "dccac028",
+      "path": "stems_raw/05 Diva/drums_overheads.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 11437716,
+      "crc32": "a45bf85f",
+      "path": "stems_raw/05 Diva/drums_snare_1.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 14602149,
+      "crc32": "40da4492",
+      "path": "stems_raw/05 Diva/drums_snare_2.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 7235064,
+      "crc32": "ccaeff6d",
+      "path": "stems_raw/05 Diva/drums_toms.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9384521,
+      "crc32": "26f12bb6",
+      "path": "stems_raw/05 Diva/guitar_electric_heavy_l.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9365655,
+      "crc32": "972a0c15",
+      "path": "stems_raw/05 Diva/guitar_electric_heavy_r.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 7393109,
+      "crc32": "86791681",
+      "path": "stems_raw/05 Diva/guitar_electric_intro.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 18267775,
+      "crc32": "a068446f",
+      "path": "stems_raw/05 Diva/guitar_electric_rhythm_l.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 18366928,
+      "crc32": "cd527a2c",
+      "path": "stems_raw/05 Diva/guitar_electric_rhythm_r.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9526986,
+      "crc32": "2b4f3aef",
+      "path": "stems_raw/05 Diva/guitar_electric_solo.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 8419639,
+      "crc32": "239eaa07",
+      "path": "stems_raw/05 Diva/guitar_electric_solo_harmony.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 8002777,
+      "crc32": "de3e1bdc",
+      "path": "stems_raw/05 Diva/guitar_electric_solo_intro.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 10869727,
+      "crc32": "cd73d573",
+      "path": "stems_raw/05 Diva/guitar_electric_strummed.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 8980297,
+      "crc32": "c36b0c61",
+      "path": "stems_raw/05 Diva/guitar_electric_verse2.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 35228205,
+      "crc32": "7c393dad",
+      "path": "stems_raw/05 Diva/keys_synth_1.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 16929435,
+      "crc32": "3275d8e7",
+      "path": "stems_raw/05 Diva/keys_synth_2.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 9693604,
+      "crc32": "dae297d7",
+      "path": "stems_raw/05 Diva/perc_clap_1.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9661128,
+      "crc32": "3fc6ad19",
+      "path": "stems_raw/05 Diva/perc_clap_2.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9666309,
+      "crc32": "139a47fc",
+      "path": "stems_raw/05 Diva/perc_clap_3.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9521553,
+      "crc32": "ab282e11",
+      "path": "stems_raw/05 Diva/perc_clap_4.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9549351,
+      "crc32": "af7cf3fd",
+      "path": "stems_raw/05 Diva/perc_clap_5.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 15229523,
+      "crc32": "0f113135",
+      "path": "stems_raw/05 Diva/perc_glockenspiel.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 11342727,
+      "crc32": "648c97d6",
+      "path": "stems_raw/05 Diva/perc_tambourine.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 19860596,
+      "crc32": "bcfba4bd",
+      "path": "stems_raw/05 Diva/perc_triangle.wav",
+      "uncompressed_size_bytes": 41339192
+    },
+    {
+      "compressed_size_bytes": 12522816,
+      "crc32": "8ffe56e1",
+      "path": "stems_raw/05 Diva/vox_backing_c.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 10713679,
+      "crc32": "b75953d4",
+      "path": "stems_raw/05 Diva/vox_backing_hi.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 12541515,
+      "crc32": "a6ec18b1",
+      "path": "stems_raw/05 Diva/vox_backing_l.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 9107916,
+      "crc32": "d288dbe2",
+      "path": "stems_raw/05 Diva/vox_backing_mid.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 12536456,
+      "crc32": "281374ef",
+      "path": "stems_raw/05 Diva/vox_backing_r.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 17225664,
+      "crc32": "8d8e42c8",
+      "path": "stems_raw/05 Diva/vox_lead.wav",
+      "uncompressed_size_bytes": 24250642
+    },
+    {
+      "compressed_size_bytes": 16598939,
+      "crc32": "673c2cc2",
+      "path": "stems_raw/06 Let The Light In/bass.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 14004338,
+      "crc32": "346d1b78",
+      "path": "stems_raw/06 Let The Light In/drums_kick.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 24221547,
+      "crc32": "69aa850a",
+      "path": "stems_raw/06 Let The Light In/drums_overheads.wav",
+      "uncompressed_size_bytes": 39776332
+    },
+    {
+      "compressed_size_bytes": 11000333,
+      "crc32": "0ea7e28f",
+      "path": "stems_raw/06 Let The Light In/drums_ride.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 10342748,
+      "crc32": "bd8fd3d8",
+      "path": "stems_raw/06 Let The Light In/drums_rim.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 9849456,
+      "crc32": "6125e109",
+      "path": "stems_raw/06 Let The Light In/drums_snare.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 12472691,
+      "crc32": "2db153fb",
+      "path": "stems_raw/06 Let The Light In/drums_snare_2.wav",
+      "uncompressed_size_bytes": 39776332
+    },
+    {
+      "compressed_size_bytes": 10025789,
+      "crc32": "7f2ac2db",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_intro.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 17853821,
+      "crc32": "b774d2a6",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_rhythm_l.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 18075849,
+      "crc32": "29bc3326",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_rhythm_r.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 9431671,
+      "crc32": "134445f6",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_solo_c.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 8703225,
+      "crc32": "b552efa1",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_solo_harmony.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 9457073,
+      "crc32": "05c432f6",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_solo_l.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 9434699,
+      "crc32": "98abe37b",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_solo_r.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 13246590,
+      "crc32": "2c61a83e",
+      "path": "stems_raw/06 Let The Light In/guitar_electric_strummed.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 18800498,
+      "crc32": "b49661dc",
+      "path": "stems_raw/06 Let The Light In/keys_synth_l.wav",
+      "uncompressed_size_bytes": 39776332
+    },
+    {
+      "compressed_size_bytes": 9540704,
+      "crc32": "56f7946a",
+      "path": "stems_raw/06 Let The Light In/keys_synth_outro.wav",
+      "uncompressed_size_bytes": 39776332
+    },
+    {
+      "compressed_size_bytes": 15156237,
+      "crc32": "af3e61e1",
+      "path": "stems_raw/06 Let The Light In/keys_synth_r.wav",
+      "uncompressed_size_bytes": 39776332
+    },
+    {
+      "compressed_size_bytes": 8285849,
+      "crc32": "646f0717",
+      "path": "stems_raw/06 Let The Light In/perc_clave.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 8381508,
+      "crc32": "4c53a69c",
+      "path": "stems_raw/06 Let The Light In/perc_clicks_1.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 8403760,
+      "crc32": "b26cae04",
+      "path": "stems_raw/06 Let The Light In/perc_clicks_2.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 11608960,
+      "crc32": "e1a78072",
+      "path": "stems_raw/06 Let The Light In/perc_shaker.wav",
+      "uncompressed_size_bytes": 39776332
+    },
+    {
+      "compressed_size_bytes": 14989578,
+      "crc32": "13b5ef19",
+      "path": "stems_raw/06 Let The Light In/perc_tambourine.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 8304174,
+      "crc32": "046bfc5b",
+      "path": "stems_raw/06 Let The Light In/vox_backing_c.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 9210712,
+      "crc32": "093aa5a4",
+      "path": "stems_raw/06 Let The Light In/vox_backing_hi.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 11650095,
+      "crc32": "93202c55",
+      "path": "stems_raw/06 Let The Light In/vox_backing_l.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 11647143,
+      "crc32": "79470761",
+      "path": "stems_raw/06 Let The Light In/vox_backing_r.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 8000269,
+      "crc32": "cdf6e0f4",
+      "path": "stems_raw/06 Let The Light In/vox_backing_solo.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 16697791,
+      "crc32": "c521ac34",
+      "path": "stems_raw/06 Let The Light In/vox_lead.wav",
+      "uncompressed_size_bytes": 23469264
+    },
+    {
+      "compressed_size_bytes": 18007498,
+      "crc32": "a0618553",
+      "path": "stems_raw/07 Take On The Seas/bass.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 11512746,
+      "crc32": "d29cc6d5",
+      "path": "stems_raw/07 Take On The Seas/drums_cymbal.wav",
+      "uncompressed_size_bytes": 39323768
+    },
+    {
+      "compressed_size_bytes": 12987634,
+      "crc32": "25763506",
+      "path": "stems_raw/07 Take On The Seas/drums_kick.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 22053026,
+      "crc32": "fc940011",
+      "path": "stems_raw/07 Take On The Seas/drums_overheads.wav",
+      "uncompressed_size_bytes": 39323768
+    },
+    {
+      "compressed_size_bytes": 8674773,
+      "crc32": "f8f5c163",
+      "path": "stems_raw/07 Take On The Seas/drums_snare.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 8700092,
+      "crc32": "8ef6fc54",
+      "path": "stems_raw/07 Take On The Seas/drums_snare_2.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 19424745,
+      "crc32": "7614f670",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_main.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 8922744,
+      "crc32": "fe28e233",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_solo_hi.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 9735021,
+      "crc32": "6a21b5da",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_solo_l.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 9062051,
+      "crc32": "9176431c",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_solo_lo.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 9713510,
+      "crc32": "6c971fd8",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_solo_r.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 13814765,
+      "crc32": "d7509dd6",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_strummed_l.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 12645525,
+      "crc32": "47d8bd71",
+      "path": "stems_raw/07 Take On The Seas/guitar_acoustic_strummed_r.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 14001841,
+      "crc32": "365748de",
+      "path": "stems_raw/07 Take On The Seas/guitar_electric_main.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 8414716,
+      "crc32": "ecf1d3bf",
+      "path": "stems_raw/07 Take On The Seas/guitar_electric_solo_harmony.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 9073010,
+      "crc32": "7bde8265",
+      "path": "stems_raw/07 Take On The Seas/guitar_electric_solo_l.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 9035498,
+      "crc32": "491be04a",
+      "path": "stems_raw/07 Take On The Seas/guitar_electric_solo_r.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 10616096,
+      "crc32": "cee910b9",
+      "path": "stems_raw/07 Take On The Seas/guitar_electric_strummed_l.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 11762183,
+      "crc32": "52cdad85",
+      "path": "stems_raw/07 Take On The Seas/guitar_electric_strummed_r.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 35285867,
+      "crc32": "c918b22a",
+      "path": "stems_raw/07 Take On The Seas/keys_synth_1.wav",
+      "uncompressed_size_bytes": 39323768
+    },
+    {
+      "compressed_size_bytes": 26222884,
+      "crc32": "35d12138",
+      "path": "stems_raw/07 Take On The Seas/keys_synth_2.wav",
+      "uncompressed_size_bytes": 39323768
+    },
+    {
+      "compressed_size_bytes": 32697332,
+      "crc32": "13e71f51",
+      "path": "stems_raw/07 Take On The Seas/keys_synth_3.wav",
+      "uncompressed_size_bytes": 39323768
+    },
+    {
+      "compressed_size_bytes": 11864228,
+      "crc32": "df8226dc",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_c.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 10242640,
+      "crc32": "28bc9005",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_c_hi.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 9127699,
+      "crc32": "edc875f3",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_c_hi_2.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 11891336,
+      "crc32": "7a6c6441",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_l.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 10085814,
+      "crc32": "b47a19c1",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_l_2.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 11918378,
+      "crc32": "f8a12a41",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_r.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 10283832,
+      "crc32": "13ddd3e1",
+      "path": "stems_raw/07 Take On The Seas/vox_backing_r_2.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 17679981,
+      "crc32": "2da99937",
+      "path": "stems_raw/07 Take On The Seas/vox_lead.wav",
+      "uncompressed_size_bytes": 23242948
+    },
+    {
+      "compressed_size_bytes": 17393773,
+      "crc32": "ef1e8983",
+      "path": "stems_raw/08 An Evening To Myself/bass.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 9519906,
+      "crc32": "b6f056b9",
+      "path": "stems_raw/08 An Evening To Myself/bass_lo.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 17153841,
+      "crc32": "a593e08b",
+      "path": "stems_raw/08 An Evening To Myself/drums_kick.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 10220479,
+      "crc32": "7aaa77ad",
+      "path": "stems_raw/08 An Evening To Myself/drums_outro_kick_rim.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 11012984,
+      "crc32": "7cc2a16f",
+      "path": "stems_raw/08 An Evening To Myself/drums_outro_kit.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 10189683,
+      "crc32": "b2f04c9e",
+      "path": "stems_raw/08 An Evening To Myself/drums_outro_overheads.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 26340218,
+      "crc32": "8fbbe696",
+      "path": "stems_raw/08 An Evening To Myself/drums_overheads.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 10848556,
+      "crc32": "98153e69",
+      "path": "stems_raw/08 An Evening To Myself/drums_snare_1.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 14887799,
+      "crc32": "d315cf27",
+      "path": "stems_raw/08 An Evening To Myself/drums_snare_2.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 7695086,
+      "crc32": "ced499e6",
+      "path": "stems_raw/08 An Evening To Myself/drums_toms.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 9642382,
+      "crc32": "e70fd2ba",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_heavy_l.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 9636462,
+      "crc32": "a5b8d54d",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_heavy_r.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 7734807,
+      "crc32": "6b5f1b13",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_intro.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 7465767,
+      "crc32": "47e3efa0",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_intro_lo.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 14545170,
+      "crc32": "f573bd7b",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_l.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 9895274,
+      "crc32": "af4e51aa",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_lead.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 8840360,
+      "crc32": "253e9b7c",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_outro_lead.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 9048465,
+      "crc32": "12c2d96c",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_outro_rhythm.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 14575995,
+      "crc32": "162ada2d",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_r.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 12845548,
+      "crc32": "bf257997",
+      "path": "stems_raw/08 An Evening To Myself/guitar_electric_rhythm.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 15730108,
+      "crc32": "f656119b",
+      "path": "stems_raw/08 An Evening To Myself/keys_organ.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 12068544,
+      "crc32": "8cf47422",
+      "path": "stems_raw/08 An Evening To Myself/keys_organ_outro.wav",
+      "uncompressed_size_bytes": 38509096
+    },
+    {
+      "compressed_size_bytes": 14124892,
+      "crc32": "28910d89",
+      "path": "stems_raw/08 An Evening To Myself/vox_lead.wav",
+      "uncompressed_size_bytes": 22837392
+    },
+    {
+      "compressed_size_bytes": 24732870,
+      "crc32": "05fa4d73",
+      "path": "stems_raw/09 Great British Summer/bass.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 28960595,
+      "crc32": "82656f7d",
+      "path": "stems_raw/09 Great British Summer/drums_kick.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 37147833,
+      "crc32": "79d3d221",
+      "path": "stems_raw/09 Great British Summer/drums_overheads.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 14290742,
+      "crc32": "0cd823aa",
+      "path": "stems_raw/09 Great British Summer/drums_snare.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 19323013,
+      "crc32": "a0cfa64f",
+      "path": "stems_raw/09 Great British Summer/drums_snare_2.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 7583299,
+      "crc32": "08ef75fb",
+      "path": "stems_raw/09 Great British Summer/drums_toms.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 24261999,
+      "crc32": "de85c233",
+      "path": "stems_raw/09 Great British Summer/guitar_acoustic_l.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 23996981,
+      "crc32": "5c66e1d9",
+      "path": "stems_raw/09 Great British Summer/guitar_acoustic_r.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 9651806,
+      "crc32": "6ae6c561",
+      "path": "stems_raw/09 Great British Summer/guitar_acoustic_solo.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 8983544,
+      "crc32": "69f1b7b5",
+      "path": "stems_raw/09 Great British Summer/guitar_electric_intro.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 18554417,
+      "crc32": "668017ea",
+      "path": "stems_raw/09 Great British Summer/guitar_electric_rhythm.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 9576263,
+      "crc32": "6e0e30a6",
+      "path": "stems_raw/09 Great British Summer/guitar_electric_verse2.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 28671880,
+      "crc32": "92831488",
+      "path": "stems_raw/09 Great British Summer/keys_synth_1.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 8962641,
+      "crc32": "8199c06a",
+      "path": "stems_raw/09 Great British Summer/keys_synth_2.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 9959944,
+      "crc32": "48118476",
+      "path": "stems_raw/09 Great British Summer/keys_synth_3.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 17033294,
+      "crc32": "2cca8f69",
+      "path": "stems_raw/09 Great British Summer/keys_synth_4.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 8560952,
+      "crc32": "b90c5042",
+      "path": "stems_raw/09 Great British Summer/perc_clap_1.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 8529092,
+      "crc32": "15c6ab06",
+      "path": "stems_raw/09 Great British Summer/perc_clap_2.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 8557318,
+      "crc32": "b639ca50",
+      "path": "stems_raw/09 Great British Summer/perc_clap_3.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 8555414,
+      "crc32": "d8150904",
+      "path": "stems_raw/09 Great British Summer/perc_clap_4.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 8555718,
+      "crc32": "cd06ddc9",
+      "path": "stems_raw/09 Great British Summer/perc_clap_5.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 8568394,
+      "crc32": "bd62d2aa",
+      "path": "stems_raw/09 Great British Summer/perc_clap_6.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 16827139,
+      "crc32": "b5eac69a",
+      "path": "stems_raw/09 Great British Summer/perc_tambourine.wav",
+      "uncompressed_size_bytes": 50318208
+    },
+    {
+      "compressed_size_bytes": 11231766,
+      "crc32": "101fdd9d",
+      "path": "stems_raw/09 Great British Summer/vox_backing_c.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 11939563,
+      "crc32": "b5c6c0d8",
+      "path": "stems_raw/09 Great British Summer/vox_backing_l.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 12346641,
+      "crc32": "fd81c3f1",
+      "path": "stems_raw/09 Great British Summer/vox_backing_lo_l.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 12298162,
+      "crc32": "95faa743",
+      "path": "stems_raw/09 Great British Summer/vox_backing_lo_r.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 11867132,
+      "crc32": "6a95aad0",
+      "path": "stems_raw/09 Great British Summer/vox_backing_r.wav",
+      "uncompressed_size_bytes": 28740530
+    },
+    {
+      "compressed_size_bytes": 25182225,
+      "crc32": "08da9e77",
+      "path": "stems_raw/09 Great British Summer/vox_lead.wav",
+      "uncompressed_size_bytes": 50318208
+    }
+  ],
+  "entry_count": 272,
+  "extracted_count": 272,
+  "include_components": [],
+  "local_path": "datasets/staging/albumdb/zenodo-19683000/selections/raw-stems",
+  "local_retained": true,
+  "provider_checksum": "d38a9539f4a88559f4d7ef61c9b856d1",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "stems_raw.zip",
+  "provider_size_bytes": 3647271471,
+  "release_use": "allowed_with_attribution",
+  "remote_inventory": "datasets/inventories/albumdb/zenodo-19683000/stems_raw.zip.entries.json.gz",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "selection_name": "raw-stems",
+  "source_id": "albumdb",
+  "source_version": "zenodo-19683000",
+  "suffixes": [
+    ".wav"
+  ],
+  "uncompressed_size_bytes": 8068283366
+}

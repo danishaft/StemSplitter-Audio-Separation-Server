@@ -1,0 +1,54 @@
+{
+  "file_count": 6,
+  "files": [
+    {
+      "checksum": "f1b3d1195d94bd2aa1c42c559a0e3abd",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/19683001/files/example_usage_automatic_mixing.zip/content",
+      "path": "example_usage_automatic_mixing.zip",
+      "size_bytes": 44655222
+    },
+    {
+      "checksum": "d9498bfaba5388b450133537df42b34d",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/19683001/files/masters_7.1.4.zip/content",
+      "path": "masters_7.1.4.zip",
+      "size_bytes": 1750668978
+    },
+    {
+      "checksum": "06ff09dfe1d03788c71071b419eb0366",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/19683001/files/masters_stereo.zip/content",
+      "path": "masters_stereo.zip",
+      "size_bytes": 339528043
+    },
+    {
+      "checksum": "a6ddc38004047879622542f41ab691ed",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/19683001/files/stems_mixed.zip/content",
+      "path": "stems_mixed.zip",
+      "size_bytes": 4959457891
+    },
+    {
+      "checksum": "5857b6d38a69cad42131a96416e25bcc",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/19683001/files/stems_mixed_dry.zip/content",
+      "path": "stems_mixed_dry.zip",
+      "size_bytes": 4596886118
+    },
+    {
+      "checksum": "d38a9539f4a88559f4d7ef61c9b856d1",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/19683001/files/stems_raw.zip/content",
+      "path": "stems_raw.zip",
+      "size_bytes": 3647271471
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "albumdb",
+  "source_url": "https://doi.org/10.5281/zenodo.19683000",
+  "source_version": "zenodo-19683000",
+  "total_size_bytes": 15338467723
+}

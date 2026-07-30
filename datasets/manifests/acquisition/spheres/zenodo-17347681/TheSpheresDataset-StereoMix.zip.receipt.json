@@ -1,0 +1,17 @@
+{
+  "local_path": "datasets/staging/spheres/zenodo-17347681/TheSpheresDataset-StereoMix.zip",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "43a5f317d33645ea1446bbefbc931482",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "TheSpheresDataset-StereoMix.zip",
+  "provider_revision": null,
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "e5854d7d8466b37a60221f789ec82f2c0139c0d8b0871ee2220dafd0c8da084f",
+  "size_bytes": 2796218501,
+  "source_id": "spheres",
+  "source_version": "zenodo-17347681"
+}

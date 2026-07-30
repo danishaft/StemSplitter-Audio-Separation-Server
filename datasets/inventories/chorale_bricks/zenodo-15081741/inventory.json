@@ -1,0 +1,26 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "76c791de833814dba192bedea2aba5b6",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/15081741/files/01_AudioAndAnnotations.zip/content",
+      "path": "01_AudioAndAnnotations.zip",
+      "size_bytes": 1157900370
+    },
+    {
+      "checksum": "9bda6a8bbf113c9277a75ca7f0a4f02f",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/15081741/files/02_ConductingVideos.zip/content",
+      "path": "02_ConductingVideos.zip",
+      "size_bytes": 126227561
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "chorale_bricks",
+  "source_url": "https://doi.org/10.5281/zenodo.15081741",
+  "source_version": "zenodo-15081741",
+  "total_size_bytes": 1284127931
+}

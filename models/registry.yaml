@@ -1,0 +1,7 @@
+schema_version: 1.0
+status: runtime_registry
+created: "2026-07-10"
+include: selected_specialist_models.yaml
+note: >
+  Runtime source of truth for the six checkpoints used by the executable
+  eleven-stem product-evaluation route.

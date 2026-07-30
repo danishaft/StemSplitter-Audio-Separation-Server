@@ -1,0 +1,40 @@
+{
+  "file_count": 4,
+  "files": [
+    {
+      "checksum": "ef0c8a0fb18c097eee6457d91fe49306",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/17347681/files/TheSpheresDataset-ClapsAndSweeps.zip/content",
+      "path": "TheSpheresDataset-ClapsAndSweeps.zip",
+      "size_bytes": 18555104037
+    },
+    {
+      "checksum": "49917a61914c5a6e34262c263bb7b134",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/17347681/files/TheSpheresDataset-Multichannel.zip/content",
+      "path": "TheSpheresDataset-Multichannel.zip",
+      "size_bytes": 25251710813
+    },
+    {
+      "checksum": "5d61f86a50fea7dcacb5485efdf0de61",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/17347681/files/TheSpheresDataset-RIRs.zip/content",
+      "path": "TheSpheresDataset-RIRs.zip",
+      "size_bytes": 23747209
+    },
+    {
+      "checksum": "43a5f317d33645ea1446bbefbc931482",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/17347681/files/TheSpheresDataset-StereoMix.zip/content",
+      "path": "TheSpheresDataset-StereoMix.zip",
+      "size_bytes": 2796218501
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "spheres",
+  "source_url": "https://zenodo.org/records/17347681",
+  "source_version": "zenodo-17347681",
+  "total_size_bytes": 46626780560
+}

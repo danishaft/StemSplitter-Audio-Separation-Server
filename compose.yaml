@@ -1,0 +1,106 @@
+name: stemsplitter
+
+x-app-environment: &app-environment
+  APP_ENV: development
+  DATABASE_URL: postgresql://stemsplitter:stemsplitter@postgres:5432/stemsplitter
+  JOB_STORE_BACKEND: postgres
+  REDIS_URL: redis://redis:6379/0
+  JOB_DISPATCH_BACKEND: rq
+  JOB_QUEUE_NAME: stemsplitter
+  AUTH_MODE: disabled
+  CORS_ALLOWED_ORIGINS: http://localhost:5000,http://localhost:5173
+
+x-app-service: &app-service
+  build:
+    context: .
+  env_file:
+    - path: .env.local
+      required: false
+  environment: *app-environment
+  restart: unless-stopped
+  volumes:
+    - jobs-data:/app/jobs
+    - uploads-data:/app/uploads
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: stemsplitter
+      POSTGRES_PASSWORD: stemsplitter
+      POSTGRES_USER: stemsplitter
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stemsplitter -d stemsplitter"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    ports:
+      - "127.0.0.1:5432:5432"
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:8-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    ports:
+      - "127.0.0.1:6379:6379"
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+
+  migrate:
+    <<: *app-service
+    build:
+      context: .
+      target: migrate
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    <<: *app-service
+    build:
+      context: .
+      target: api
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+
+  queue-worker:
+    <<: *app-service
+    build:
+      context: .
+      target: queue-worker
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+
+  maintenance-worker:
+    <<: *app-service
+    build:
+      context: .
+      target: maintenance-worker
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+
+volumes:
+  jobs-data:
+  postgres-data:
+  redis-data:
+  uploads-data:

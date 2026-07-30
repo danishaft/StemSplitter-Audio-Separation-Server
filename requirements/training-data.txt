@@ -1,0 +1,8 @@
+boto3>=1.35.0
+huggingface-hub>=1.0.0
+kagglehub>=1.0.0
+numpy>=1.26.0
+PyYAML>=6.0.0
+requests>=2.31.0
+scipy>=1.11.0
+soundfile>=0.12.0

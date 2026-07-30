@@ -1,0 +1,140 @@
+{
+  "clip_seconds": 10.0,
+  "dataset": "BabySlakh 16k",
+  "gate_id": "synth-babyslakh-9-v1",
+  "mixture": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/specialist_open/synth-babyslakh-9-v1/mix.wav",
+  "reference": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/specialist_open/synth-babyslakh-9-v1/reference_synth.wav",
+  "sample_rate": 16000,
+  "schema_version": "1.0",
+  "segment_count": 9,
+  "segments": [
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 0.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S02",
+        "S03"
+      ],
+      "source_start_seconds": 163.0,
+      "track_id": "Track00002"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 10.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S00"
+      ],
+      "source_start_seconds": 55.0,
+      "track_id": "Track00004"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 20.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S06"
+      ],
+      "source_start_seconds": 236.0,
+      "track_id": "Track00008"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 30.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S03",
+        "S04"
+      ],
+      "source_start_seconds": 115.0,
+      "track_id": "Track00010"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 40.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S06"
+      ],
+      "source_start_seconds": 90.0,
+      "track_id": "Track00013"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 50.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S01"
+      ],
+      "source_start_seconds": 29.0,
+      "track_id": "Track00017"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 60.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S00",
+        "S01",
+        "S10"
+      ],
+      "source_start_seconds": 224.0,
+      "track_id": "Track00018"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 70.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S13",
+        "S14"
+      ],
+      "source_start_seconds": 132.0,
+      "track_id": "Track00019"
+    },
+    {
+      "duration_seconds": 10.0,
+      "gate_start_seconds": 80.0,
+      "source_classes": [
+        "Synth Lead",
+        "Synth Pad"
+      ],
+      "source_ids": [
+        "S02"
+      ],
+      "source_start_seconds": 328.0,
+      "track_id": "Track00020"
+    }
+  ],
+  "selection": "maximum_target_energy_with_one_second_hop",
+  "target_classes": [
+    "Synth Lead",
+    "Synth Pad"
+  ],
+  "total_duration_seconds": 90.0
+}

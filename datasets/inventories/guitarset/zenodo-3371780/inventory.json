@@ -1,0 +1,52 @@
+{
+  "file_count": 5,
+  "files": [
+    {
+      "checksum": "b39b78e63d3446f2e54ddb7a54df9b10",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3371780/files/annotation.zip/content",
+      "path": "annotation.zip",
+      "provider_revision": null,
+      "size_bytes": 39132574
+    },
+    {
+      "checksum": "c31d97279464c9a67e640cb9061fb0c6",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3371780/files/audio_hex-pickup_debleeded.zip/content",
+      "path": "audio_hex-pickup_debleeded.zip",
+      "provider_revision": null,
+      "size_bytes": 3607349578
+    },
+    {
+      "checksum": "f9911bf217cb40e9e68edf3726ef86cc",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3371780/files/audio_hex-pickup_original.zip/content",
+      "path": "audio_hex-pickup_original.zip",
+      "provider_revision": null,
+      "size_bytes": 3210735945
+    },
+    {
+      "checksum": "275966d6610ac34999b58426beb119c3",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3371780/files/audio_mono-mic.zip/content",
+      "path": "audio_mono-mic.zip",
+      "provider_revision": null,
+      "size_bytes": 656927981
+    },
+    {
+      "checksum": "aecce79f425a44e2055e46f680e10f6a",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3371780/files/audio_mono-pickup_mix.zip/content",
+      "path": "audio_mono-pickup_mix.zip",
+      "provider_revision": null,
+      "size_bytes": 683145360
+    }
+  ],
+  "license": "Academic research dataset terms",
+  "rights_status": "noncommercial_research",
+  "schema_version": "1.0",
+  "source_id": "guitarset",
+  "source_url": "https://zenodo.org/records/3371780",
+  "source_version": "zenodo-3371780",
+  "total_size_bytes": 8197291438
+}

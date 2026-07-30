@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "specialist-recovery-v1",
+  "validation_set_id": "specialists-validation-30-v1",
+  "decisions": {
+    "electric_guitar": {
+      "run_id": "electric-recovery-head1000-20260728",
+      "checkpoint_sha256": "dd2bc41efced7d09e371ee11f970bb305ade0fae9f7958346d6f6b8206d6ab85",
+      "decision": "rejected",
+      "reason": "SDR and fullness regressed; SDR improved on only 4 of 30 examples.",
+      "delta": {
+        "sdr": -0.2453499212861061,
+        "bleedless": 0.04247164726257324,
+        "fullness": -1.4187122344970717
+      }
+    },
+    "strings": {
+      "run_id": "strings-recovery-head1000-20260728",
+      "checkpoint_sha256": "ce7bfdf8495386eb0dfd7082ffdf9a9a6205b21aa1f0ab827d33bf74e2782a7b",
+      "decision": "research_candidate",
+      "reason": "Small positive SDR and fullness deltas without a material aggregate bleed regression; improvement is too small for production qualification.",
+      "delta": {
+        "sdr": 0.04392264063159601,
+        "bleedless": -0.013072458902996686,
+        "fullness": 0.240744845072431
+      }
+    },
+    "wind_brass": {
+      "run_id": "wind-recovery-full800-v2-20260728",
+      "checkpoint_sha256": "f6d2c351bd81b38eccb86a2220ae5ac1fcb7c642e74f8fb84c321ba40b1a9c5f",
+      "decision": "experimental_fullness_candidate",
+      "reason": "SDR and fullness improved, but bleedlessness regressed materially and improved on only 8 of 30 examples.",
+      "delta": {
+        "sdr": 0.10479992456142406,
+        "bleedless": -2.760130794843038,
+        "fullness": 7.41652086575826
+      }
+    }
+  },
+  "production_promotions": [],
+  "next_training_family": "synth"
+}

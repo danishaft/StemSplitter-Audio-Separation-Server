@@ -1,0 +1,69 @@
+{
+  "comparator": "mvsep_dnr_v3",
+  "source": "MVSep web UI via Peruz",
+  "status": "done",
+  "submitted_at": "2026-07-11T23:50:45+01:00",
+  "last_checked_at": "2026-07-12T01:49:51+01:00",
+  "result_url": "https://mvsep.com/result/20260711225045-41acf5e12a-booty2-master-v1-20s.wav",
+  "input_file": "tmp/bakeoff/booty2-master-v1-20s.wav",
+  "input_hash": "20260711225045-41acf5e12a-booty2-master-v1-20s.wav",
+  "input_duration_seconds": 20,
+  "model": {
+    "name": "MVSep DnR v3 (speech, music, effects)",
+    "sep_type": "56",
+    "add_opt1": "2",
+    "add_opt2": "0",
+    "add_opt3": "0"
+  },
+  "output_type": {
+    "value": "0",
+    "label": "mp3 (320 kbps)",
+    "reason": "Free MVSep web UI session was not logged in; WAV output is registered-only."
+  },
+  "last_queue_text": "complete",
+  "downloaded_outputs": {
+    "speech_dialog": {
+      "mp3": "speech_dialog.mp3",
+      "wav": "speech_dialog.wav"
+    },
+    "music": {
+      "mp3": "music.mp3",
+      "wav": "music.wav"
+    },
+    "sfx": {
+      "mp3": "sfx.mp3",
+      "wav": "sfx.wav"
+    }
+  },
+  "benchmark": {
+    "id": "cocktail_fork_vs_mvsep_dnr_v3_booty2_20s_001",
+    "json": "../../../external_stems/cocktail_fork_vs_mvsep_dnr_v3_booty2_20s_001.json",
+    "markdown": "../../../external_stems/cocktail_fork_vs_mvsep_dnr_v3_booty2_20s_001.md",
+    "sanity_pass": true,
+    "evidence_level": "comparator_similarity",
+    "comparator_scores": {
+      "music": {
+        "correlation_to_comparator": 0.9698,
+        "sdr_to_comparator": 11.8411
+      },
+      "speech_dialog": {
+        "correlation_to_comparator": 0.8362,
+        "sdr_to_comparator": 5.1649
+      },
+      "sfx": {
+        "correlation_to_comparator": 0.2026,
+        "sdr_to_comparator": -2.5874
+      }
+    }
+  },
+  "expected_outputs": [
+    "speech_dialog",
+    "music",
+    "sfx"
+  ],
+  "notes": [
+    "Upload was completed through Peruz/CDP by setting #audiofile directly and letting MVSep's native upload handler post to /jobs/handle_file.",
+    "The initial synthetic change-event retry failed with XHR status 0; the clean CDP-only retry succeeded.",
+    "Comparator scoring is complete. Cocktail Fork aligns strongly with MVSep on music, moderately on speech/dialog, and poorly on SFX for this sample."
+  ]
+}

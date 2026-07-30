@@ -1,0 +1,33 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-24T20:31:55.280959+00:00",
+  "job_id": "sam-audio-piano-babyslakh-10s-001",
+  "model_id": "facebook/sam-audio-large",
+  "outputs": {
+    "piano": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "latency_seconds": 3.0642,
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/sam-audio-piano-babyslakh-10s-001/sam_specialists/piano.wav",
+        "provider": "s3",
+        "size_bytes": 960078
+      },
+      "prompt": "piano",
+      "sample_rate": 48000
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/sam-audio-piano-babyslakh-10s-001/analysis/sam-audio-report.json",
+    "provider": "s3",
+    "size_bytes": 758
+  },
+  "schema_version": 1,
+  "source_revision": "bb4c6999d2677c7402360e426afc01ddfad6dce0",
+  "started_at": "2026-07-24T20:31:51.806225+00:00",
+  "status": "completed"
+}

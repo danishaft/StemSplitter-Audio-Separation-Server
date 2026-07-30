@@ -1,0 +1,17 @@
+{
+  "local_path": "datasets/staging/guitarset/zenodo-3371780/audio_mono-mic.zip",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "275966d6610ac34999b58426beb119c3",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "audio_mono-mic.zip",
+  "provider_revision": null,
+  "release_use": "permission_required",
+  "remote_readback_verified": false,
+  "rights_status": "noncommercial_research",
+  "schema_version": "1.0",
+  "sha256": "237cdc58353d25c3c9683f4565a0f1cf2db30a9051abca545a919f8f1296dc28",
+  "size_bytes": 656927981,
+  "source_id": "guitarset",
+  "source_version": "zenodo-3371780"
+}

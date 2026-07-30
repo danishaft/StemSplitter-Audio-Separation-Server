@@ -1,0 +1,16 @@
+{
+  "local_path": "datasets/staging/guitar_techs/zenodo-14963133/P3_music.zip",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "071ba80aecf00f4a31fbd167b3f22198",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "P3_music.zip",
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "033489e22600751fb5a1633e7d856b901c6782e0486fa02135e830780d9dbfe2",
+  "size_bytes": 129505089,
+  "source_id": "guitar_techs",
+  "source_version": "zenodo-14963133"
+}

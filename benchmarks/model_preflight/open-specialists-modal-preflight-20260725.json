@@ -1,0 +1,22 @@
+{
+  "device_memory_bytes": 23659151360,
+  "device_name": "NVIDIA L4",
+  "models": {
+    "strings": {
+      "checkpoint_sha256": "282fabc28fb106edcc5e5e8383ea36559602fe53d0c406c736e08f58d66710fc",
+      "model_id": "oulianov/BS-Roformer-BowedStrings-Duality",
+      "model_revision": "77e1cc62d1deef965496d9d0a060f77d1464a319",
+      "output_key": "strings",
+      "parameter_count": 75770900
+    },
+    "synth": {
+      "checkpoint_sha256": "c1e5565cb92939794e7db741969eac225a2fff45b0e17694f9a9ff1d8dc45c65",
+      "model_id": "oulianov/bsroformer-lead-synth",
+      "model_revision": "ae2a351854d1fcf7787d8fd7b2fd2ecc0920239e",
+      "output_key": "synth lead",
+      "parameter_count": 42630092
+    }
+  },
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "status": "ready"
+}

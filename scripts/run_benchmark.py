@@ -81,6 +81,8 @@ def main() -> int:
     current_report = args.output_dir.expanduser().resolve() / f"benchmark_{benchmark_id}.json"
     print(f"benchmark_id={report.benchmark_id}")
     print(f"report_json={current_report}")
+    print(f"evidence_level={report.evidence_level}")
+    print(f"release_claim_eligible={str(report.release_claim_eligible).lower()}")
     print(f"success_rate={report.success_rate:.3f}")
     print(f"avg_broad_quality={report.avg_broad_quality:.3f}")
     print(f"avg_derived_quality={report.avg_derived_quality:.3f}")

@@ -114,7 +114,7 @@ def build_broad_stems(
             if name in six_results and name not in candidate_map:
                 candidate_map[name] = six_results[name]
                 candidate_models[name] = "htdemucs_6s"
-        if profile in {"quality", "quality_mvsep_experimental"}:
+        if profile in {"quality", "quality_mvsep_experimental", "quality_gpu_experimental"}:
             for name in ("piano", "guitar"):
                 path = six_results.get(name)
                 if not path:

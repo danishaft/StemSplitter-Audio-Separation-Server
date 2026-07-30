@@ -1,0 +1,54 @@
+schema_version: 1
+status: research_only_rejected_for_product_stems
+profile: audiosep_specialist_qualification
+model:
+  model_id: nielsr/audiosep-demo
+  source_revision: 9188caa202a0d31845367e4dad8bb5549eddb4ba
+  checkpoint: pytorch_model.bin
+  checkpoint_sha256: 37f1691fb067e2575f1ad1cfbfe44b7b3da18e52f33fcb2b0937b72952f11ba1
+  checkpoint_bytes: 957134817
+  checkpoint_license: Apache-2.0
+  architecture: AudioSep ResUNet30 with CLAP text conditioning
+  state_entries: 837
+runtime:
+  source: https://github.com/Audio-AGI/AudioSep
+  source_revision: 944583f18b84589dc965de3ad77525c945334252
+  source_license: MIT
+  sample_rate: 32000
+  channels: 1
+tokenizer:
+  model_id: FacebookAI/roberta-base
+  source_revision: e2da8e2f811d1448a5b465c236feacd80ffbac7b
+target_stems:
+  piano: piano
+  acoustic_guitar: acoustic guitar
+  electric_guitar: electric guitar
+  synth: synthesizer
+  strings: string instruments
+  wind: alto saxophone
+published_benchmark:
+  dataset: MUSIC
+  si_sdr_db: 9.425
+  sdr_improvement_db: 10.508
+  scope: Aggregate language-queried benchmark, not per-product-stem evidence.
+qualification:
+  status: failed_single_segment_smoke
+  release_eligible: false
+  measured_on: BabySlakh Track00011 seconds 30-40
+  inference_seconds: 20.145
+  positive_source_si_sdr_db:
+    piano: -4.9287
+    acoustic_guitar: -0.4055
+    electric_guitar: -17.4134
+    wind: -9.0739
+  absent_source_leakage_dbfs:
+    strings: -25.5603
+    synth: -24.3905
+  release_blockers:
+    - all_four_present_source_candidates_failed_smoke_quality
+    - strings_and_synth_have_no_positive_source_evidence
+    - absent_source_outputs_contain_substantial_leakage
+  release_rule: >
+    Do not wire AudioSep into the public router. Reconsider only if a different
+    checkpoint or materially better conditioning method first passes the same
+    deterministic smoke segment, then the full release corpus.

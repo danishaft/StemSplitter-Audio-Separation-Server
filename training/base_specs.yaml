@@ -1,0 +1,124 @@
+schema_version: "1.0"
+trainer:
+  repository: https://github.com/ZFTurbo/Music-Source-Separation-Training
+  revision: 83d495dfc81b2ede9bc62f4209619f8bdfd14995
+
+recipe_budget:
+  train_cumulative:
+    25: 2000
+    50: 4000
+    100: 8000
+  validation: 1024
+  test: 1024
+
+training_schedule:
+  num_steps_per_epoch: 1000
+  stages:
+    25:
+      cumulative_epochs: 4
+    50:
+      cumulative_epochs: 8
+    100:
+      cumulative_epochs: 12
+
+trainer_defaults:
+  batch_size: 2
+  gradient_accumulation_steps: 4
+  grad_clip: 1
+  lr: 0.000005
+  patience: 2
+  reduce_factor: 0.9
+  q: 0.95
+  coarse_loss_clip: true
+  ema_momentum: 0.999
+  other_fix: false
+
+bases:
+  electric_guitar:
+    input_contract: full_mixture
+    checkpoint_path: .cache/audio-separator-models/BS-Roformer-SW.ckpt
+    checkpoint_sha256: 24e7d35ee9c64415673d3fd33e06a67cac2c103c5df6267ba1576459c775916e
+    config_path: .cache/audio-separator-models/BS-Roformer-SW.yaml
+    config_sha256: b558996f1e25eb48798bd6502505a5de94c4f966d6edfb1a0420f06cc40b501a
+    source_instruments: [bass, drums, other, vocals, guitar, piano]
+    source_head_index: 4
+    source_head_name: guitar
+    initialization_strategy: inherited_matching_head
+    output_instruments: [electric_guitar]
+    training_instruments: [electric_guitar, other]
+    output_checkpoint: electric_guitar_bsroformer_base.ckpt
+    output_config: electric_guitar_bsroformer.yaml
+    license_status: unknown
+    allowed_profile: research_all
+    training_sources:
+      research_all:
+        [albumdb, chorale_bricks, cocochorales, eg_ipt, guitar_techs,
+         medleydb_sample, quartset, rawstems, spheres, tinysol, urmp]
+      release_eligible: [albumdb, eg_ipt, guitar_techs]
+
+  synth:
+    input_contract: full_mixture
+    checkpoint_path: .cache/hf-open-candidates/noblebarkrr__mvsepless_resources/bs_roformer/bs_syn2_xlancer.ckpt
+    checkpoint_sha256: c1f692422fd1d235b358751e8f9d712b15cc11c84c5e93356cb726c91a1f7ab0
+    config_path: models/bsroformer_synth_xlance_candidate.yaml
+    config_sha256: a2aa03d73045c5a9958507d002b60db8f8a8597ee54426c1805bf1a35b82248f
+    source_instruments: [synth, other]
+    source_head_index:
+    source_head_name:
+    initialization_strategy: inherited_matching_head
+    output_instruments: [synth]
+    training_instruments: [synth, other]
+    output_checkpoint: synth_bsroformer_base.ckpt
+    output_config: synth_bsroformer.yaml
+    license_status: unknown
+    allowed_profile: research_all
+    training_sources:
+      research_all:
+        [freesound_loop_dataset, medleydb_sample, nsynth, rawstems]
+      release_eligible: [nsynth]
+
+  strings:
+    input_contract: full_mixture
+    checkpoint_path: .cache/hf-open-candidates/oulianov__BS-Roformer-BowedStrings-Duality/gilliaan_bowedstrings_bs_v1.ckpt
+    checkpoint_sha256: 282fabc28fb106edcc5e5e8383ea36559602fe53d0c406c736e08f58d66710fc
+    config_path: models/bsroformer_bowedstrings_candidate.yaml
+    config_sha256: abd85b92f52a8a46d894eef35fa651f239a21851d637ec0a7bcf86a3596537ca
+    source_instruments: [strings, other]
+    source_head_index: 0
+    source_head_name: strings
+    initialization_strategy: inherited_matching_head
+    output_instruments: [strings]
+    training_instruments: [strings, other]
+    output_checkpoint: strings_bsroformer_base.ckpt
+    output_config: strings_bsroformer.yaml
+    license_status: unknown
+    allowed_profile: research_all
+    training_sources:
+      research_all:
+        [albumdb, chorale_bricks, cocochorales, eg_ipt, guitar_techs,
+         medleydb_sample, quartset, rawstems, spheres, tinysol, urmp]
+      release_eligible:
+        [albumdb, chorale_bricks, cocochorales, spheres, tinysol, urmp]
+
+  wind_brass:
+    input_contract: full_mixture
+    checkpoint_path: .cache/hf-open-candidates/oulianov__BS-Roformer-BowedStrings-Duality/gilliaan_bowedstrings_bs_v1.ckpt
+    checkpoint_sha256: 282fabc28fb106edcc5e5e8383ea36559602fe53d0c406c736e08f58d66710fc
+    config_path: models/bsroformer_bowedstrings_candidate.yaml
+    config_sha256: abd85b92f52a8a46d894eef35fa651f239a21851d637ec0a7bcf86a3596537ca
+    source_instruments: [strings, other]
+    source_head_index: 0
+    source_head_name: strings
+    initialization_strategy: cloned_nearest_harmonic_head
+    output_instruments: [wind_brass]
+    training_instruments: [wind_brass, other]
+    output_checkpoint: wind_brass_bsroformer_base.ckpt
+    output_config: wind_brass_bsroformer.yaml
+    license_status: unknown
+    allowed_profile: research_all
+    training_sources:
+      research_all:
+        [albumdb, chorale_bricks, cocochorales, eg_ipt, guitar_techs,
+         medleydb_sample, quartset, rawstems, spheres, tinysol, urmp]
+      release_eligible:
+        [albumdb, chorale_bricks, cocochorales, spheres, tinysol, urmp]

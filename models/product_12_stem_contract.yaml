@@ -1,0 +1,90 @@
+schema_version: 1
+name: hierarchical_12_stems
+release_status: evaluation
+production_release_eligible: false
+target_order:
+  - vocals
+  - instrumental
+  - drums
+  - bass
+  - kick
+  - snare
+  - piano
+  - acoustic_guitar
+  - electric_guitar
+  - synth
+  - strings
+  - wind
+hierarchy:
+  song: [vocals, instrumental]
+  instrumental:
+    - drums
+    - bass
+    - piano
+    - acoustic_guitar
+    - electric_guitar
+    - synth
+    - strings
+    - wind
+  drums: [kick, snare]
+stems:
+  vocals:
+    parent: song
+    delivery_model: melband_kim_vocals
+    availability: model_supported
+    release_state: externally_verified_internal_release_pending
+  instrumental:
+    parent: song
+    delivery_model: melband_kim_vocals
+    availability: model_supported
+    release_state: externally_verified_internal_release_pending
+  drums:
+    parent: instrumental
+    delivery_model: bs_roformer_sw
+    availability: model_supported
+    release_state: externally_verified_internal_release_pending
+  bass:
+    parent: instrumental
+    delivery_model: bs_roformer_sw
+    availability: model_supported
+    release_state: externally_verified_internal_release_pending
+  kick:
+    parent: drums
+    delivery_model: mdx23c_drumsep_jarredou_aufr33
+    availability: model_supported
+    release_state: externally_verified_internal_release_pending
+  snare:
+    parent: drums
+    delivery_model: mdx23c_drumsep_jarredou_aufr33
+    availability: model_supported
+    release_state: externally_verified_internal_release_pending
+  piano:
+    parent: instrumental
+    delivery_model: bs_roformer_sw
+    availability: model_supported
+    release_state: externally_verified_internal_domain_review_pending
+  acoustic_guitar:
+    parent: instrumental
+    delivery_model: bs_roformer_sw
+    availability: model_supported
+    release_state: externally_top_ranked_internal_domain_review_pending
+  electric_guitar:
+    parent: instrumental
+    delivery_model: bs_roformer_sw_electric_guitar_head
+    availability: model_supported
+    release_state: internal_product_evaluation
+  synth:
+    parent: instrumental
+    delivery_model: xlance_bs_roformer_synth_v2
+    availability: model_supported
+    release_state: internal_product_evaluation
+  strings:
+    parent: instrumental
+    delivery_model: oulianov_bs_roformer_bowed_strings
+    availability: model_supported
+    release_state: internal_product_evaluation
+  wind:
+    parent: instrumental
+    delivery_model: unassigned
+    availability: no_qualified_model
+    release_state: candidate_search_required

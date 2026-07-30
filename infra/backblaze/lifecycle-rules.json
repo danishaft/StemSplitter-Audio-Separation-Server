@@ -1,0 +1,12 @@
+[
+  {
+    "fileNamePrefix": "stemsplitter/users/",
+    "daysFromUploadingToHiding": 7,
+    "daysFromHidingToDeleting": 1
+  },
+  {
+    "fileNamePrefix": "stemsplitter/jobs/",
+    "daysFromUploadingToHiding": 30,
+    "daysFromHidingToDeleting": 1
+  }
+]

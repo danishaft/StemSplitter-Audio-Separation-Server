@@ -2,8 +2,10 @@ from __future__ import annotations
 
 from pathlib import Path
 import shutil
+import zipfile
 
 import numpy as np
+import pytest
 import soundfile as sf
 from pretty_midi_fix import Instrument, Note, PrettyMIDI
 
@@ -551,3 +553,247 @@ def test_quality_mvsep_experimental_publishes_specialist_substems_separately(
     assert manifest["pipeline_mode"] == "local_plus_mvsep_experimental"
     assert manifest["bundle_exports"]["stems"].endswith("package/stems.zip")
     assert (job_root / "specialist_substems" / "lead_vocals.wav").exists()
+
+
+def test_quality_gpu_experimental_applies_product11_contract_to_worker_outputs(
+    job_dirs: Path,
+    monkeypatch,
+) -> None:
+    status = jobs.create_job("fixture.wav", b"gpu-fixture", profile="quality_gpu_experimental")
+    job_id = str(status["job_id"])
+    job_root = job_dirs / job_id
+
+    class FakeClient:
+        def submit(self, input_path: Path, *, profile: str, local_job_id: str) -> dict[str, object]:
+            assert profile == "quality_gpu_experimental"
+            assert local_job_id == job_id
+            return {"job_id": "worker-fixture", "status": "completed", "missing_features": [], "models_used": ["fake-model"]}
+
+    def fake_from_config():
+        return FakeClient()
+
+    def fake_copy_worker_artifacts(
+        client,
+        worker_payload,
+        local_job_root: Path,
+        *,
+        seen: set[str],
+        artifact_allowlist: dict[str, set[str] | None] | None = None,
+    ):
+        broad_dir = local_job_root / "broad_stems"
+        specialist_dir = local_job_root / "specialist_substems"
+        broad_dir.mkdir(parents=True, exist_ok=True)
+        specialist_dir.mkdir(parents=True, exist_ok=True)
+
+        broad = {}
+        for stem_name, frequency in {
+            "vocals": 440.0,
+            "drums": 110.0,
+            "bass": 55.0,
+            "other": 330.0,
+            "fixture_piano_bs_roformer": 660.0,
+            "fixture_guitar_bs_roformer": 880.0,
+        }.items():
+            path = _write_audio(broad_dir / f"{stem_name}.wav", frequency)
+            broad[stem_name] = {
+                "path": str(path.resolve()),
+                "source_model": "fake-worker",
+                "publish_status": "published",
+                "publish_reason": "test",
+                "quality_score": None,
+                "warnings": [],
+                "metrics": {},
+            }
+
+        specialist = {}
+        for stem_name, frequency in {
+            "backing_vocals_bve": 390.0,
+            "electric_guitar": 520.0,
+            "kick": 80.0,
+            "snare": 220.0,
+            "strings": 740.0,
+            "synth": 1040.0,
+            "hi_hats": 7000.0,
+            "ride": 9000.0,
+            "sfx": 1200.0,
+        }.items():
+            path = _write_audio(specialist_dir / f"{stem_name}.wav", frequency)
+            specialist[stem_name] = {
+                "path": str(path.resolve()),
+                "source_model": "fake-worker",
+                "publish_status": "published",
+                "publish_reason": "test",
+                "quality_score": None,
+                "warnings": [],
+                "metrics": {},
+            }
+
+        return {
+            "broad_stems": broad,
+            "derived_stems": {},
+            "specialist_substems": specialist,
+            "analysis": {},
+            "midi": {},
+        }
+
+    monkeypatch.setattr(jobs.GPUWorkerClient, "from_config", staticmethod(fake_from_config))
+    monkeypatch.setattr(jobs, "copy_worker_artifacts", fake_copy_worker_artifacts)
+
+    jobs.run_job(job_id)
+
+    manifest = jobs.get_manifest(job_id)
+    assert manifest is not None
+    assert manifest["stem_contract"]["status"] == "complete"
+    assert set(manifest["published_main_stems"]) == {
+        "vocals",
+        "instrumental",
+        "drums",
+        "bass",
+        "acoustic_guitar",
+        "electric_guitar",
+        "piano",
+        "kick",
+        "snare",
+        "strings",
+        "synth",
+    }
+    assert manifest["stem_contract"]["name"] == "product_11_stems"
+    assert set(manifest["published_specialist_substems"]) == {
+        "electric_guitar",
+        "kick",
+        "snare",
+        "strings",
+        "synth",
+    }
+    assert manifest["rejected_candidates"]["gpu_worker_artifacts"]["specialist_substems:sfx"]["publish_reason"] == "excluded_from_product_11_contract"
+    assert manifest["rejected_candidates"]["gpu_worker_artifacts"]["specialist_substems:backing_vocals_bve"]["publish_reason"] == "excluded_from_product_11_contract"
+    zip_path = Path(str(manifest["bundle_exports"]["stems"]))
+    with zipfile.ZipFile(zip_path) as archive:
+        names = set(archive.namelist())
+    assert "specialist_substems/sfx.wav" not in names
+    assert "specialist_substems/backing_vocals.wav" not in names
+    assert "specialist_substems/kick.wav" in names
+    assert "broad_stems/instrumental.wav" in names
+
+
+def test_quality_gpu_object_transport_skips_local_artifact_copy_and_packaging(
+    job_dirs: Path,
+    monkeypatch,
+) -> None:
+    status = jobs.create_job("fixture.wav", b"gpu-object-fixture", profile="quality_gpu_experimental")
+    job_id = str(status["job_id"])
+    status["input_object"] = {
+        "provider": "s3",
+        "bucket": "private-audio",
+        "key": f"stemsplitter/inputs/{job_id}/fixture.wav",
+        "etag": "fixture-etag",
+    }
+    Path(str(status["input_path"])).unlink()
+    jobs.dump_json(job_dirs / job_id / "status.json", status)
+
+    def ref(group: str, name: str) -> dict[str, object]:
+        return {
+            "provider": "s3",
+            "bucket": "private-audio",
+            "key": f"stemsplitter/jobs/{job_id}/{group}/{name}.wav",
+            "content_type": "audio/wav",
+            "size_bytes": 1024,
+        }
+
+    broad = {name: ref("broad_stems", name) for name in ["vocals", "instrumental", "drums", "bass", "guitar", "piano"]}
+    specialist = {name: ref("specialist_substems", name) for name in ["kick", "snare"]}
+
+    completed_payload = {
+        "job_id": "worker-object-fixture",
+        "status": "completed",
+        "artifact_transport": "object_storage",
+        "object_artifacts": {
+            "broad_stems": broad,
+            "specialist_substems": specialist,
+        },
+        "object_bundle": {
+            "provider": "s3",
+            "bucket": "private-audio",
+            "key": f"stemsplitter/jobs/{job_id}/package/worker_artifacts.zip",
+        },
+        "artifact_sources": {
+            "broad_stems": {name: "broad-model" for name in broad},
+            "specialist_substems": {name: "drum-model" for name in specialist},
+        },
+        "stem_contract": {
+            "name": "quality_8_stems",
+            "status": "complete",
+            "published_stems": [*broad, *specialist],
+            "missing_stems": [],
+        },
+        "rejected_candidates": {},
+        "missing_features": [],
+        "models_used": ["broad-model", "drum-model"],
+    }
+
+    class FakeClient:
+        def submit_object(
+            self,
+            input_reference: dict[str, object],
+            *,
+            input_name: str,
+            profile: str,
+            local_job_id: str,
+        ) -> dict[str, object]:
+            return {"job_id": "worker-object-fixture", "status": "running"}
+
+        def download_artifact(self, artifact_url: str, target_path: Path) -> Path:
+            raise AssertionError("object-reference jobs must not download progressive artifacts")
+
+    def fake_wait(client, worker_job_id: str, *, on_update):
+        on_update(
+            {
+                "job_id": worker_job_id,
+                "status": "running",
+                "artifacts": {"broad_stems": {"vocals": "/artifacts/volume/vocals.wav"}},
+            }
+        )
+        on_update(completed_payload)
+        return completed_payload
+
+    monkeypatch.setattr(jobs.GPUWorkerClient, "from_config", staticmethod(lambda: FakeClient()))
+    monkeypatch.setattr(jobs, "wait_for_worker_job", fake_wait)
+
+    jobs.run_job(job_id)
+
+    manifest = jobs.get_manifest(job_id)
+    assert manifest is not None
+    assert manifest["stem_contract"]["status"] == "complete"
+    assert manifest["published_main_stems"]["vocals"]["storage_ref"] == broad["vocals"]
+    assert manifest["bundle_exports"]["stems"]["storage_ref"]["key"].endswith("worker_artifacts.zip")
+    assert manifest["timings"]["artifact_sync_skipped"] is True
+    assert manifest["timings"]["artifact_sync_deferred"] is True
+    assert manifest["timings"]["package_skipped"] is True
+    assert not (job_dirs / job_id / "package" / "stems.zip").exists()
+
+
+def test_quality_gpu_experimental_does_not_fallback_to_local_demucs(
+    job_dirs: Path,
+    monkeypatch,
+) -> None:
+    status = jobs.create_job("fixture.wav", b"gpu-unavailable", profile="quality_gpu_experimental")
+    job_id = str(status["job_id"])
+
+    monkeypatch.setattr(jobs.GPUWorkerClient, "from_config", staticmethod(lambda: None))
+
+    def fail_if_local_demucs_runs(*args, **kwargs):
+        raise AssertionError("quality_gpu_experimental must not silently run local Demucs")
+
+    monkeypatch.setattr(jobs, "build_broad_stems", fail_if_local_demucs_runs)
+
+    with pytest.raises(jobs.GPUWorkerError, match="gpu_worker_failed"):
+        jobs.run_job(job_id)
+
+    status_payload = jobs.get_job_status(job_id)
+    assert status_payload is not None
+    assert status_payload["status"] == "error"
+    assert status_payload["stage"] == "failed"
+    assert status_payload["error"] == "gpu_worker_failed"
+    assert status_payload["gpu_worker_status"] == "skipped"
+    assert status_payload["gpu_worker_reason"] == "gpu_worker_url_missing"
+    assert jobs.get_manifest(job_id) is None

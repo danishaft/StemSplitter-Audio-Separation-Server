@@ -1,0 +1,4 @@
+zone_id             = "replace-with-cloudflare-zone-id"
+app_hostname        = "splitter.example.com"
+requests_per_minute = 120
+mutations_per_minute = 20

@@ -1,0 +1,15 @@
+{
+  "base_url": "http://127.0.0.1:5050",
+  "concurrency": 20,
+  "created_at": "2026-07-18T21:13:39.860944+00:00",
+  "elapsed_seconds": 1.1773,
+  "mean_ms": 79.4151,
+  "p50_ms": 73.7102,
+  "p95_ms": 154.3662,
+  "p99_ms": 193.862,
+  "request_count": 200,
+  "requests_per_second": 169.8764,
+  "statuses": {
+    "200": 200
+  }
+}

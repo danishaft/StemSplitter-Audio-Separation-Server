@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-25T23:37:20.081576+00:00",
+  "status": "passed",
+  "evidence_class": "sdk_definition_import_only",
+  "hatchet_source_commit": "41b056313b43",
+  "hatchet_version": "v0.98.7",
+  "sdk_distribution": "1.37.0",
+  "expected_sdk_version": "1.37.0",
+  "task_name": "stem-separation-proof",
+  "stable_attempt_id": "job_static:attempt:1",
+  "proves": [
+    "the pinned SDK imports the task definition",
+    "the task decorator accepts the selected options",
+    "the Pydantic input maps to the stable product attempt identifier",
+    "the selected Context APIs are properties in SDK 1.37.0"
+  ],
+  "does_not_prove": [
+    "server scheduling",
+    "server idempotency enforcement",
+    "priority ordering",
+    "concurrency enforcement",
+    "cancellation propagation",
+    "worker crash recovery"
+  ]
+}

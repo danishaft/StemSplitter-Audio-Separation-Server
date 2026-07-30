@@ -1,0 +1,129 @@
+schema_version: 1
+status: research_only_candidates_under_qualification
+profile: open_specialist_qualification
+runtime:
+  source: https://github.com/ZFTurbo/Music-Source-Separation-Training
+  source_revision: 83d495dfc81b2ede9bc62f4209619f8bdfd14995
+  source_license: MIT
+  architecture: bs_roformer
+  sample_rate: 44100
+  channels: 2
+models:
+  electric_guitar:
+    model_id: jarredou/BS-ROFO-SW-Fixed
+    source_revision: product-head-export-8e58c1c7
+    checkpoint: electric_guitar/electric_guitar_bsroformer_base.ckpt
+    checkpoint_sha256: 8e58c1c73e652b206ddaec3548b97de56608864dd3b35895231d65a4f776c922
+    architecture_config: electric_guitar_bsroformer.yaml
+    output_key: electric_guitar
+    parameter_count: 51049484
+    checkpoint_license: unknown
+  strings:
+    model_id: oulianov/BS-Roformer-BowedStrings-Duality
+    source_revision: 77e1cc62d1deef965496d9d0a060f77d1464a319
+    checkpoint: strings/gilliaan_bowedstrings_bs_v1.ckpt
+    checkpoint_sha256: 282fabc28fb106edcc5e5e8383ea36559602fe53d0c406c736e08f58d66710fc
+    architecture_config: bsroformer_bowedstrings_candidate.yaml
+    output_key: strings
+    parameter_count: 75770900
+    checkpoint_license: unknown
+  synth:
+    model_id: oulianov/bsroformer-lead-synth
+    source_revision: ae2a351854d1fcf7787d8fd7b2fd2ecc0920239e
+    checkpoint: synth/model_bs_roformer_ep_1_sdr_4.9869_fixed.ckpt
+    checkpoint_sha256: c1e5565cb92939794e7db741969eac225a2fff45b0e17694f9a9ff1d8dc45c65
+    architecture_config: bsroformer_synth_lead_candidate.yaml
+    output_key: synth lead
+    parameter_count: 42630092
+    checkpoint_license: unknown
+    config_normalization:
+      removed_field: model.sage_attention
+      reason: unsupported_non_parameter_runtime_hint
+  synth_xlance_v1:
+    model_id: noblebarkrr/mvsepless_resources
+    upstream_model_id: chenxie95/xlance-msr-ckpt
+    upstream_checkpoint: syn_mss.pth
+    upstream_license: MIT
+    source_revision: cf01b871f6c324c11c828b18ad05658656e9ae7f
+    checkpoint: synth_xlance_v1/bs_roformer/bs_syn_xlancer.ckpt
+    checkpoint_sha256: e747867f1d0696760e4f5e83f259c1a022af20214a7f66fbef0d4f5df81a21bd
+    architecture_config: bsroformer_synth_xlance_candidate.yaml
+    output_key: synth
+    parameter_count: 51049484
+    checkpoint_license: unknown
+  synth_xlance_v2:
+    model_id: noblebarkrr/mvsepless_resources
+    upstream_model_id: chenxie95/xlance-msr-ckpt
+    upstream_checkpoint: syn_mss1.pth
+    upstream_license: MIT
+    source_revision: cf01b871f6c324c11c828b18ad05658656e9ae7f
+    checkpoint: synth_xlance_v2/bs_roformer/bs_syn2_xlancer.ckpt
+    checkpoint_sha256: c1f692422fd1d235b358751e8f9d712b15cc11c84c5e93356cb726c91a1f7ab0
+    architecture_config: bsroformer_synth_xlance_candidate.yaml
+    output_key: synth
+    parameter_count: 51049484
+    checkpoint_license: unknown
+pipelines:
+  synth_xlance_released_chain:
+    model_id: chenxie95/xlance-msr-ckpt
+    source_revision: c275b1f
+    source_license: MIT
+    stages:
+      - synth_xlance_v1
+      - synth_xlance_v2
+    output_key: synth
+    selection_status: rejected_by_nine_track_quality_gate
+qualification:
+  status: xlance_released_chain_reproduced_but_fails_release_threshold
+  release_eligible: false
+  fixture: benchmarks/specialist_open/synth-babyslakh-9-v1
+  result: benchmarks/specialist_open/synth-parent-route-xlance-v1/qualification.json
+  evaluated_routes:
+    full_mixture:
+      result: benchmarks/specialist_open/synth-babyslakh-9-xlance-chain-v1/qualification.json
+      aggregate_si_sdr_db: -1.5191
+      median_segment_si_sdr_db: 0.3911
+      segment_win_count: 5
+      worst_segment_si_sdr_db: -28.4177
+    bs_roformer_other_parent:
+      result: benchmarks/specialist_open/synth-parent-route-xlance-v1/qualification.json
+      aggregate_si_sdr_db: -1.4828
+      median_segment_si_sdr_db: 0.4535
+      segment_win_count: 3
+      worst_segment_si_sdr_db: -16.2193
+  positive_source_si_sdr_db:
+    synth: -8.7194
+    synth_xlance_v1: -2.1672
+    synth_xlance_v2: -1.4898
+    synth_xlance_released_chain: -1.4828
+  median_segment_si_sdr_db:
+    synth: -6.1533
+    synth_xlance_v1: -0.3146
+    synth_xlance_v2: 0.3065
+    synth_xlance_released_chain: 0.4535
+  segment_win_counts:
+    synth: 0
+    synth_xlance_v1: 2
+    synth_xlance_v2: 4
+    synth_xlance_released_chain: 3
+  inference_seconds:
+    bs_roformer_parent: 60.393
+    synth: 3.1082
+    synth_xlance_v1: 10.9161
+    synth_xlance_v2: 10.977
+    synth_xlance_released_chain_cached_v1: 11.1794
+  release_blockers:
+    - released_chain_has_negative_aggregate_si_sdr_on_both_routes
+    - released_chain_has_catastrophic_negative_tail_segments
+  release_rule: >
+    These checkpoints may run only in the explicitly non-production product
+    evaluation route. The X-LANCE chain remains rejected for production release
+    because it fails aggregate and tail-quality requirements on the immutable
+    nine-track gate.
+product_evaluation:
+  enabled_targets: [electric_guitar, strings, synth_xlance_v2]
+  output_aliases:
+    electric_guitar: electric_guitar
+    strings: strings
+    synth_xlance_v2: synth
+  production_release_eligible: false

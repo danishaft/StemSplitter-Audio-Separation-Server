@@ -1,0 +1,23 @@
+{
+  "local_path": "datasets/staging/quartset/zenodo-15708701/quartset-metadata.csv",
+  "local_retained": true,
+  "object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "text/csv",
+    "key": "stemsplitter/training-data/raw/quartset/zenodo-15708701/quartset-metadata.csv",
+    "provider": "s3",
+    "size_bytes": 75572
+  },
+  "provider_checksum": "9b6fb4d6181a969130f8cb6b6d8c7cd1",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "quartset-metadata.csv",
+  "provider_revision": null,
+  "release_use": "permission_required",
+  "remote_readback_verified": false,
+  "rights_status": "permission_pending",
+  "schema_version": "1.0",
+  "sha256": "ed216d53e940793ed6a70d8b10f448a01edf14f51cf70652a7419f1071f0cf9d",
+  "size_bytes": 75572,
+  "source_id": "quartset",
+  "source_version": "zenodo-15708701"
+}

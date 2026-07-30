@@ -1,0 +1,107 @@
+{
+  "audio_files": [
+    "exports/specialists-20260728/wind_brass/base/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/base/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/base/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/base/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/references/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/reference_mixture.flac",
+    "exports/specialists-20260728/wind_brass/references/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/reference_wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/references/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/reference_mixture.flac",
+    "exports/specialists-20260728/wind_brass/references/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/reference_wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/references/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/reference_mixture.flac",
+    "exports/specialists-20260728/wind_brass/references/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/reference_wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/references/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/reference_mixture.flac",
+    "exports/specialists-20260728/wind_brass/references/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/reference_wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/trained_ema_1000/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/trained_ema_1000/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/trained_ema_1000/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/wind_brass.flac",
+    "exports/specialists-20260728/wind_brass/trained_ema_1000/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/wind_brass.flac"
+  ],
+  "base_checkpoint_sha256": "415bf0e2f5c62c4c8ede9aec5913792ab666c4ae2b710e2f11355ced338e6f6e",
+  "base_id": "wind_brass",
+  "dataset_id": "complete-source-pools",
+  "elapsed_seconds": 38.001,
+  "example_count": 4,
+  "run_id": "specialists-20260728",
+  "schema_version": "1.0",
+  "scores": {
+    "aggregate": {
+      "base": {
+        "bleedless": 5.154695987701416,
+        "fullness": 28.216453075408936,
+        "sdr": -8.023143112659454
+      },
+      "trained_ema_1000": {
+        "bleedless": 5.1249130964279175,
+        "fullness": 29.378225564956665,
+        "sdr": -8.137101247906685
+      }
+    },
+    "delta_trained_ema_minus_base": {
+      "bleedless": -0.029782891273498535,
+      "fullness": 1.1617724895477295,
+      "sdr": -0.11395813524723053
+    },
+    "per_example": {
+      "0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95": {
+        "base": {
+          "bleedless": 4.1270575523376465,
+          "fullness": 30.407615661621094,
+          "k_sdr": 29.246582252695994,
+          "sdr": -8.563850402832031
+        },
+        "trained_ema_1000": {
+          "bleedless": 4.136849403381348,
+          "fullness": 33.92410659790039,
+          "k_sdr": 29.147554297223714,
+          "sdr": -8.571184158325195
+        }
+      },
+      "003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48": {
+        "base": {
+          "bleedless": 4.18748664855957,
+          "fullness": 10.017244338989258,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -21.292259216308594
+        },
+        "trained_ema_1000": {
+          "bleedless": 4.166306018829346,
+          "fullness": 10.392207145690918,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -21.292072296142578
+        }
+      },
+      "00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0": {
+        "base": {
+          "bleedless": 7.007785320281982,
+          "fullness": 53.49933624267578,
+          "k_sdr": 74.42165856811492,
+          "sdr": -1.3613207340240479
+        },
+        "trained_ema_1000": {
+          "bleedless": 6.861449241638184,
+          "fullness": 54.52640151977539,
+          "k_sdr": 72.72284189410502,
+          "sdr": -1.8471689224243164
+        }
+      },
+      "0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037": {
+        "base": {
+          "bleedless": 5.296454429626465,
+          "fullness": 18.94161605834961,
+          "k_sdr": 76.03798710404149,
+          "sdr": -0.8751420974731445
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.335047721862793,
+          "fullness": 18.67018699645996,
+          "k_sdr": 76.15832455260859,
+          "sdr": -0.8379796147346497
+        }
+      }
+    }
+  },
+  "trained_checkpoint_sha256": "5dc0d09c657f17d6ddd121cfc152d927b396e54b140ca8f2d8553f786edab77e",
+  "trained_weight_source": "ema_model_state_dict",
+  "wandb_url": "https://wandb.ai/daniel-ejeh-auralith/stemsplitter-specialists/runs/o0kj99gn"
+}

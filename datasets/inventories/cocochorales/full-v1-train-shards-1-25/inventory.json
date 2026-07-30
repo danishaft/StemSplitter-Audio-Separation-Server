@@ -1,0 +1,28 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "999ba8284b0646a6c7f3ef357e15fd59",
+      "checksum_algorithm": "md5",
+      "download_url": "https://storage.googleapis.com/download/storage/v1/b/magentadata/o/datasets%2Fcocochorales%2Fcocochorales_full_v1_zipped%2Fmain_dataset%2Ftrain%2F1.tar.bz2?alt=media&generation=1662148138537381",
+      "path": "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/1.tar.bz2",
+      "provider_revision": "1662148138537381",
+      "size_bytes": 5114972715
+    },
+    {
+      "checksum": "e540dc37fcb47f75995544df3720af3f",
+      "checksum_algorithm": "md5",
+      "download_url": "https://storage.googleapis.com/download/storage/v1/b/magentadata/o/datasets%2Fcocochorales%2Fcocochorales_full_v1_zipped%2Fmain_dataset%2Ftrain%2F25.tar.bz2?alt=media&generation=1662149122716054",
+      "path": "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/25.tar.bz2",
+      "provider_revision": "1662149122716054",
+      "size_bytes": 5077557598
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "cocochorales",
+  "source_url": "https://magenta.tensorflow.org/datasets/cocochorales",
+  "source_version": "full-v1-train-shards-1-25",
+  "total_size_bytes": 10192530313
+}

@@ -1,0 +1,595 @@
+{
+  "audio_files": [
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/base/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/reference_mixture.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/references/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/reference_wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/wind_brass.flac",
+    "exports/wind-harmonic-ema1000-expanded-gate-v1/wind_brass/trained_ema_1000/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/wind_brass.flac"
+  ],
+  "base_checkpoint_sha256": "921b3e75c465dff98c2f9518ccf26a5ec64e165f970253de8388c39a47461433",
+  "base_id": "wind_brass",
+  "comparison_checkpoint_sha256": "c8d3a608914d6e461d1f0488eb631f24f5c42e73ae2d4277a4c15fc978f56b25",
+  "comparison_variant": "trained_ema_1000",
+  "comparison_weight_source": "ema_model_state_dict",
+  "dataset_id": "complete-source-pools",
+  "elapsed_seconds": 65.24,
+  "evaluation_id": "wind-harmonic-ema1000-expanded-gate-v1",
+  "example_count": 30,
+  "run_id": "wind-harmonic-full-20260728",
+  "schema_version": "1.0",
+  "scores": {
+    "aggregate": {
+      "base": {
+        "bleedless": 12.274182399113974,
+        "fullness": 9.672072752316792,
+        "sdr": -0.6744936093877186
+      },
+      "trained_ema_1000": {
+        "bleedless": 10.517735473314922,
+        "fullness": 15.703569142023722,
+        "sdr": -0.5751135624867554
+      }
+    },
+    "delta_comparison_minus_base": {
+      "bleedless": -1.756446925799052,
+      "fullness": 6.0314963897069305,
+      "sdr": 0.09938004690096325
+    },
+    "delta_distribution": {
+      "bleedless": {
+        "example_count": 30,
+        "improved_examples": 11,
+        "median": -0.4041280746459961
+      },
+      "fullness": {
+        "example_count": 30,
+        "improved_examples": 26,
+        "median": 2.3594720363616943
+      },
+      "sdr": {
+        "example_count": 30,
+        "improved_examples": 20,
+        "median": 0.15748119354248047
+      }
+    },
+    "per_example": {
+      "0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95": {
+        "base": {
+          "bleedless": 22.44937515258789,
+          "fullness": 3.56415057182312,
+          "k_sdr": 78.83675752096977,
+          "sdr": 0.02541179768741131
+        },
+        "trained_ema_1000": {
+          "bleedless": 18.04084587097168,
+          "fullness": 4.878265380859375,
+          "k_sdr": 79.03923094528406,
+          "sdr": 0.09358619153499603
+        }
+      },
+      "003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48": {
+        "base": {
+          "bleedless": 11.28052043914795,
+          "fullness": 21.895620346069336,
+          "k_sdr": 79.61771404417888,
+          "sdr": 0.2906976342201233
+        },
+        "trained_ema_1000": {
+          "bleedless": 11.619039535522461,
+          "fullness": 22.609695434570312,
+          "k_sdr": 80.34631252487605,
+          "sdr": 0.5439502596855164
+        }
+      },
+      "00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0": {
+        "base": {
+          "bleedless": 9.699963569641113,
+          "fullness": 5.273719310760498,
+          "k_sdr": 78.63518882688555,
+          "sdr": -0.04204180836677551
+        },
+        "trained_ema_1000": {
+          "bleedless": 7.656099796295166,
+          "fullness": 4.7382073402404785,
+          "k_sdr": 68.25350756629953,
+          "sdr": -3.0115771293640137
+        }
+      },
+      "0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037": {
+        "base": {
+          "bleedless": 5.4623284339904785,
+          "fullness": 9.453805923461914,
+          "k_sdr": 67.56907742901164,
+          "sdr": -3.17631459236145
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.6012349128723145,
+          "fullness": 12.917552947998047,
+          "k_sdr": 70.49500573952905,
+          "sdr": -2.447391986846924
+        }
+      },
+      "01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4": {
+        "base": {
+          "bleedless": 5.01673698425293,
+          "fullness": 7.038496494293213,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -13.76308822631836
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.124589443206787,
+          "fullness": 9.565215110778809,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -13.546514511108398
+        }
+      },
+      "0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142": {
+        "base": {
+          "bleedless": 16.486083984375,
+          "fullness": 11.135224342346191,
+          "k_sdr": 85.47232618384442,
+          "sdr": 2.4937167167663574
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.89312219619751,
+          "fullness": 26.824846267700195,
+          "k_sdr": 46.79586548203935,
+          "sdr": -6.8433451652526855
+        }
+      },
+      "04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3": {
+        "base": {
+          "bleedless": 7.7451558113098145,
+          "fullness": 4.002691745758057,
+          "k_sdr": 78.6785544275774,
+          "sdr": -0.027564730495214462
+        },
+        "trained_ema_1000": {
+          "bleedless": 10.661860466003418,
+          "fullness": 19.069482803344727,
+          "k_sdr": 74.61515072044102,
+          "sdr": -1.3043725490570068
+        }
+      },
+      "049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b": {
+        "base": {
+          "bleedless": 7.518344402313232,
+          "fullness": 16.034465789794922,
+          "k_sdr": 81.08107487358203,
+          "sdr": 0.8050985336303711
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.02709436416626,
+          "fullness": 11.792856216430664,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -11.872458457946777
+        }
+      },
+      "0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d": {
+        "base": {
+          "bleedless": 5.9669013023376465,
+          "fullness": 5.0258355140686035,
+          "k_sdr": 49.34937925673742,
+          "sdr": -6.5073041915893555
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.618300914764404,
+          "fullness": 7.883030891418457,
+          "k_sdr": 49.80021428791694,
+          "sdr": -6.445213317871094
+        }
+      },
+      "0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4": {
+        "base": {
+          "bleedless": 16.042617797851562,
+          "fullness": 6.028554916381836,
+          "k_sdr": 78.84564664933836,
+          "sdr": 0.02839602530002594
+        },
+        "trained_ema_1000": {
+          "bleedless": 14.061361312866211,
+          "fullness": 7.244416236877441,
+          "k_sdr": 79.00222541890851,
+          "sdr": 0.08109473437070847
+        }
+      },
+      "05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586": {
+        "base": {
+          "bleedless": 19.221433639526367,
+          "fullness": 6.8441009521484375,
+          "k_sdr": 79.1420431647253,
+          "sdr": 0.12836508452892303
+        },
+        "trained_ema_1000": {
+          "bleedless": 15.422683715820312,
+          "fullness": 9.03632640838623,
+          "k_sdr": 79.98831121989241,
+          "sdr": 0.41881099343299866
+        }
+      },
+      "05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c": {
+        "base": {
+          "bleedless": 6.835273742675781,
+          "fullness": 4.513822555541992,
+          "k_sdr": 78.94707599913377,
+          "sdr": 0.06250478327274323
+        },
+        "trained_ema_1000": {
+          "bleedless": 12.424777030944824,
+          "fullness": 15.279637336730957,
+          "k_sdr": 88.49801754688221,
+          "sdr": 3.7957799434661865
+        }
+      },
+      "076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0": {
+        "base": {
+          "bleedless": 29.1893367767334,
+          "fullness": 2.3385748863220215,
+          "k_sdr": 78.76024373124663,
+          "sdr": -0.0002417816867819056
+        },
+        "trained_ema_1000": {
+          "bleedless": 21.362178802490234,
+          "fullness": 2.8983116149902344,
+          "k_sdr": 78.76715343672394,
+          "sdr": 0.0020724537316709757
+        }
+      },
+      "089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6": {
+        "base": {
+          "bleedless": 20.48396873474121,
+          "fullness": 10.558591842651367,
+          "k_sdr": 91.76104513930149,
+          "sdr": 5.3411359786987305
+        },
+        "trained_ema_1000": {
+          "bleedless": 19.9500675201416,
+          "fullness": 11.512340545654297,
+          "k_sdr": 94.06024987152732,
+          "sdr": 6.525998592376709
+        }
+      },
+      "09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d": {
+        "base": {
+          "bleedless": 17.73583984375,
+          "fullness": 2.399259090423584,
+          "k_sdr": 78.77839796013625,
+          "sdr": 0.005839570425450802
+        },
+        "trained_ema_1000": {
+          "bleedless": 6.143990993499756,
+          "fullness": 5.037160396575928,
+          "k_sdr": 8.797450462594556,
+          "sdr": -9.692861557006836
+        }
+      },
+      "09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7": {
+        "base": {
+          "bleedless": 6.071497917175293,
+          "fullness": 16.477022171020508,
+          "k_sdr": 77.43697605175659,
+          "sdr": -0.4345830976963043
+        },
+        "trained_ema_1000": {
+          "bleedless": 3.927429676055908,
+          "fullness": 18.307220458984375,
+          "k_sdr": 59.79291631177383,
+          "sdr": -4.825618267059326
+        }
+      },
+      "0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1": {
+        "base": {
+          "bleedless": 4.490344047546387,
+          "fullness": 10.106709480285645,
+          "k_sdr": 51.716505351073074,
+          "sdr": -6.171573638916016
+        },
+        "trained_ema_1000": {
+          "bleedless": 4.5001959800720215,
+          "fullness": 10.184056282043457,
+          "k_sdr": 52.64418431887763,
+          "sdr": -6.033258438110352
+        }
+      },
+      "0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409": {
+        "base": {
+          "bleedless": 13.139457702636719,
+          "fullness": 6.229521751403809,
+          "k_sdr": 80.77377505863184,
+          "sdr": 0.6951673030853271
+        },
+        "trained_ema_1000": {
+          "bleedless": 12.679801940917969,
+          "fullness": 25.09978485107422,
+          "k_sdr": 100.0,
+          "sdr": 12.862874031066895
+        }
+      },
+      "0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e": {
+        "base": {
+          "bleedless": 4.6421709060668945,
+          "fullness": 7.386044979095459,
+          "k_sdr": 72.83289020621808,
+          "sdr": -1.8164514303207397
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.648596286773682,
+          "fullness": 27.066282272338867,
+          "k_sdr": 81.96567956082964,
+          "sdr": 1.127353310585022
+        }
+      },
+      "14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c": {
+        "base": {
+          "bleedless": 4.052428722381592,
+          "fullness": 12.708416938781738,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -15.488394737243652
+        },
+        "trained_ema_1000": {
+          "bleedless": 3.858588933944702,
+          "fullness": 20.911405563354492,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -16.34884262084961
+        }
+      },
+      "14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535": {
+        "base": {
+          "bleedless": 14.966869354248047,
+          "fullness": 13.603538513183594,
+          "k_sdr": 89.57270092547935,
+          "sdr": 4.28788948059082
+        },
+        "trained_ema_1000": {
+          "bleedless": 9.562631607055664,
+          "fullness": 21.07697296142578,
+          "k_sdr": 100.0,
+          "sdr": 11.899879455566406
+        }
+      },
+      "1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e": {
+        "base": {
+          "bleedless": 6.836259365081787,
+          "fullness": 9.261801719665527,
+          "k_sdr": 53.15967252478737,
+          "sdr": -5.954694747924805
+        },
+        "trained_ema_1000": {
+          "bleedless": 6.650464057922363,
+          "fullness": 20.715219497680664,
+          "k_sdr": 58.641795686767615,
+          "sdr": -5.0382585525512695
+        }
+      },
+      "19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc": {
+        "base": {
+          "bleedless": 10.498348236083984,
+          "fullness": 3.4662082195281982,
+          "k_sdr": 78.75388275794026,
+          "sdr": -0.0023718024604022503
+        },
+        "trained_ema_1000": {
+          "bleedless": 12.371160507202148,
+          "fullness": 5.625457286834717,
+          "k_sdr": 80.38091912729308,
+          "sdr": 0.556119441986084
+        }
+      },
+      "1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06": {
+        "base": {
+          "bleedless": 12.323307991027832,
+          "fullness": 15.362225532531738,
+          "k_sdr": 94.72105912298981,
+          "sdr": 6.882165908813477
+        },
+        "trained_ema_1000": {
+          "bleedless": 11.643428802490234,
+          "fullness": 14.011040687561035,
+          "k_sdr": 71.59207722900047,
+          "sdr": -2.1569056510925293
+        }
+      },
+      "1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59": {
+        "base": {
+          "bleedless": 20.04355239868164,
+          "fullness": 35.090110778808594,
+          "k_sdr": 100.0,
+          "sdr": 12.686095237731934
+        },
+        "trained_ema_1000": {
+          "bleedless": 23.34233283996582,
+          "fullness": 73.60928344726562,
+          "k_sdr": 100.0,
+          "sdr": 30.724132537841797
+        }
+      },
+      "1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a": {
+        "base": {
+          "bleedless": 9.618181228637695,
+          "fullness": 6.567842483520508,
+          "k_sdr": 58.16971189519378,
+          "sdr": -5.1233320236206055
+        },
+        "trained_ema_1000": {
+          "bleedless": 9.760025024414062,
+          "fullness": 6.2307000160217285,
+          "k_sdr": 59.14248029268998,
+          "sdr": -4.946684837341309
+        }
+      },
+      "1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09": {
+        "base": {
+          "bleedless": 21.40207862854004,
+          "fullness": 19.093135833740234,
+          "k_sdr": 100.0,
+          "sdr": 15.013998031616211
+        },
+        "trained_ema_1000": {
+          "bleedless": 13.3347749710083,
+          "fullness": 23.867801666259766,
+          "k_sdr": 100.0,
+          "sdr": 14.933826446533203
+        }
+      },
+      "284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b": {
+        "base": {
+          "bleedless": 25.548585891723633,
+          "fullness": 2.6437504291534424,
+          "k_sdr": 78.77789492713012,
+          "sdr": 0.005671017803251743
+        },
+        "trained_ema_1000": {
+          "bleedless": 20.149017333984375,
+          "fullness": 4.738868236541748,
+          "k_sdr": 79.53521879334332,
+          "sdr": 0.2623756527900696
+        }
+      },
+      "4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd": {
+        "base": {
+          "bleedless": 9.320173263549805,
+          "fullness": 10.505865097045898,
+          "k_sdr": 79.42208168763722,
+          "sdr": 0.2236493080854416
+        },
+        "trained_ema_1000": {
+          "bleedless": 9.364760398864746,
+          "fullness": 22.472848892211914,
+          "k_sdr": 89.79146149729986,
+          "sdr": 4.390049934387207
+        }
+      },
+      "4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31": {
+        "base": {
+          "bleedless": 4.138335704803467,
+          "fullness": 5.553074359893799,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -10.702653884887695
+        },
+        "trained_ema_1000": {
+          "bleedless": 4.131608963012695,
+          "fullness": 5.902787208557129,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -10.9580078125
+        }
+      }
+    }
+  },
+  "validation_set_id": "specialists-validation-30-v1",
+  "wandb_url": "https://wandb.ai/daniel-ejeh-auralith/stemsplitter-specialists/runs/vc90vnub"
+}

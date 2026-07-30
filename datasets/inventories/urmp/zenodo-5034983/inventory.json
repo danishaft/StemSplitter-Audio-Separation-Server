@@ -1,0 +1,28 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "8452b1a734fad6f3c10bd19940bc09b4",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/5034983/files/Dataset.tar.gz/content",
+      "path": "Dataset.tar.gz",
+      "provider_revision": null,
+      "size_bytes": 12097672571
+    },
+    {
+      "checksum": "6b29bc5744a7b013f79f3baf57b4913a",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/5034983/files/README_for_Dataset.tar.pdf/content",
+      "path": "README_for_Dataset.tar.pdf",
+      "provider_revision": null,
+      "size_bytes": 168924
+    }
+  ],
+  "license": "CC0 1.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "urmp",
+  "source_url": "https://zenodo.org/records/5034983",
+  "source_version": "zenodo-5034983",
+  "total_size_bytes": 12097841495
+}

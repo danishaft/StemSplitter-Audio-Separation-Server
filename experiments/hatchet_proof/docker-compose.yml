@@ -1,0 +1,44 @@
+name: stem-splitter-hatchet-proof
+
+services:
+  postgres:
+    image: postgres:15.6
+    command: postgres -c max_connections=200
+    environment:
+      POSTGRES_DB: hatchet
+      POSTGRES_PASSWORD: hatchet
+      POSTGRES_USER: hatchet
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d hatchet -U hatchet"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+    volumes:
+      - hatchet-proof-postgres:/var/lib/postgresql/data
+
+  hatchet:
+    image: ghcr.io/hatchet-dev/hatchet/hatchet-lite-dev:v0.98.7
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://hatchet:hatchet@postgres:5432/hatchet?sslmode=disable
+      SERVER_AUTH_COOKIE_DOMAIN: localhost
+      SERVER_AUTH_COOKIE_INSECURE: "true"
+      SERVER_AUTH_SET_EMAIL_VERIFIED: "true"
+      SERVER_GRPC_BIND_ADDRESS: 0.0.0.0
+      SERVER_GRPC_BROADCAST_ADDRESS: localhost:7077
+      SERVER_GRPC_INSECURE: "true"
+      SERVER_GRPC_PORT: "7077"
+      SERVER_INTERNAL_CLIENT_INTERNAL_GRPC_BROADCAST_ADDRESS: localhost:7077
+      SERVER_MSGQUEUE_KIND: postgres
+      SERVER_URL: http://localhost:8888
+    ports:
+      - "7077:7077"
+      - "8888:8888"
+    volumes:
+      - hatchet-proof-config:/config
+
+volumes:
+  hatchet-proof-config:
+  hatchet-proof-postgres:

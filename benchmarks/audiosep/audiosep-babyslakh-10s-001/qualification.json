@@ -1,0 +1,51 @@
+{
+  "absent_stems": {
+    "strings": {
+      "evaluation": "not_evaluable_no_reference_source",
+      "rms_dbfs": -25.560281404531256,
+      "sample_rate": 32000
+    },
+    "synth": {
+      "evaluation": "not_evaluable_no_reference_source",
+      "rms_dbfs": -24.390465479847002,
+      "sample_rate": 32000
+    }
+  },
+  "dataset": "BabySlakh Track00011",
+  "evaluated_stems": {
+    "acoustic_guitar": {
+      "correlation": 0.6904154287011502,
+      "error_loudness_db": -2.7574496851766805,
+      "sdr": 2.7574501177170516,
+      "si_sdr": -0.40551780674218596
+    },
+    "electric_guitar": {
+      "correlation": 0.1334832228524983,
+      "error_loudness_db": 5.247983500203555,
+      "sdr": -5.247983412190392,
+      "si_sdr": -17.413387044567838
+    },
+    "piano": {
+      "correlation": 0.49321754149748415,
+      "error_loudness_db": 3.077718090228277,
+      "sdr": -3.077718291241424,
+      "si_sdr": -4.92867629027918
+    },
+    "wind": {
+      "correlation": 0.3318699066657685,
+      "error_loudness_db": 3.8295624093989193,
+      "sdr": -3.82956192750455,
+      "si_sdr": -9.073870931549635
+    }
+  },
+  "inference_seconds": 20.145,
+  "model_id": "nielsr/audiosep-demo",
+  "model_revision": "9188caa202a0d31845367e4dad8bb5549eddb4ba",
+  "qualification_scope": "single_segment_smoke_qualification_not_release_benchmark",
+  "runtime_revision": "944583f18b84589dc965de3ad77525c945334252",
+  "schema_version": 1,
+  "segment_seconds": [
+    30,
+    40
+  ]
+}

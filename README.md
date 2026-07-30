@@ -1,232 +1,183 @@
-# Stem Splitter Audio Separation Server
+# StemSplitter
 
-This project is a local, CPU-first package builder for music separation. It
-starts with broad stems, then adds higher-value production artifacts such as
-tempo-locked WAV exports, MIDI guide files, section analysis, and downloadable
-bundles. The server keeps the original `/separate` endpoint for compatibility,
-but the main workflow is now job-based.
+StemSplitter is an asynchronous music source-separation platform. A FastAPI
+control plane owns jobs, authentication, queueing, and artifacts; remote GPU
+workers run model inference; and a React client handles uploads, progress, audio
+playback, and downloads.
 
-## What the server produces
+The current eleven-stem route is an **evaluation profile**, not a
+production-quality claim. The platform architecture is usable, but individual
+stem families still require benchmark and listening qualification.
 
-Each completed job writes a working session package under `jobs/<job_id>/`.
-The package focuses on reliable outputs first, then publishes extra artifacts
-only when the pipeline has enough confidence to make them useful.
+## Current contract
 
-- Guaranteed broad stems in `quality` mode:
-  - `vocals`
-  - `drums`
-  - `bass`
-  - `other`
-  - `instrumental`
-- Extended broad stems when confidence passes the threshold:
-  - `piano`
-  - `guitar`
-- Derived stems when confidence passes the threshold:
-  - `kick`
-  - `snare_clap`
-  - `hats_cymbals`
-  - `percussion`
-  - `keys_synth`
-  - `pads_strings`
-  - `fx`
-- Experimental specialist sub-stems when the optional MVSEP adapter is
-  configured and the outputs pass the threshold:
-  - `lead_vocals`
-  - `backing_vocals`
-  - `vocal_reverb`
-  - `kick`
-  - `snare`
-  - `hi_hats`
-  - `cymbals`
-  - `toms`
-  - `piano`
-  - `guitar`
-  - `keys_synth`
-  - `strings`
-- Tempo-locked WAV exports
-- MIDI guide files:
-  - `melody.mid`
-  - `bass.mid`
-  - `chords_guide.mid`
-- Analysis exports:
-  - `tempo_key.json`
-  - `sections.json`
-  - `manifest.json`
-- Bundle downloads:
-  - `stems.zip`
-  - `midi.zip`
-  - `wav_plus_midi.zip`
+The public evaluation profile is `quality_gpu_experimental`. It requests these
+outputs:
 
-## Profiles
+- `vocals`
+- `instrumental`
+- `drums`
+- `bass`
+- `kick`
+- `snare`
+- `piano`
+- `acoustic_guitar`
+- `electric_guitar`
+- `synth`
+- `strings`
 
-The server exposes three runtime profiles so you can choose speed, local depth,
-or the experimental remote specialist path.
+`wind` remains disabled. A file's existence doesn't prove separation quality.
+The API exposes missing features, rejected candidates, model provenance, and
+worker timings in every completed manifest.
 
-- `quality` runs a multi-model pipeline and publishes the full package when
-  artifacts pass confidence checks. This profile stays fully local.
-- `preview` keeps the run lighter and returns only the broad-stem layer.
-- `quality_mvsep_experimental` keeps the local broad/derived pipeline, then
-  optionally adds scored MVSEP specialist sub-stems when `MVSEP_API_KEY` is
-  configured. If MVSEP is unavailable, the job still completes locally and the
-  manifest records the skip reason.
+## Architecture
 
-The `quality` and `quality_mvsep_experimental` profiles now also prefer a local
-specialist runner for derived stems. By default they use the bundled
-`tools/local_specialist_runner.py`; `LOCAL_SPECIALIST_RUNNER` can override that
-path. If no runner is available, the job falls back to the heuristic derived
-path and records the fallback in the manifest.
+The production-shaped path keeps control-plane work off the GPU and audio bytes
+out of PostgreSQL and Redis.
 
-## Quality scoring and rejected candidates
+```text
+React + Cloudflare Worker/WAF
+  -> private presigned upload
+  -> Azure Container Apps FastAPI API
+  -> PostgreSQL job authority
+  -> transactional dispatch outbox
+  -> Redis/RQ durable dispatch
+  -> Modal GPU worker
+  -> private B2/S3 artifacts
+  -> signed playback and download URLs
+```
 
-The server scores every non-core artifact before it publishes the file. That
-includes extended stems, derived stems, specialist sub-stems, and MIDI guide
-files.
+The maintenance worker reconciles orphaned jobs and deletes expired artifacts.
+Development can use JSON state and a single-process thread dispatcher, but
+production configuration rejects those fallbacks.
 
-- Core broad stems always publish when the model produces them:
-  - `vocals`
-  - `drums`
-  - `bass`
-  - `other`
-  - `instrumental`
-- Extended stems publish only when they reach the extended threshold.
-- Derived stems publish only when they reach the derived threshold.
-- Specialist sub-stems publish only when they reach the specialist threshold.
-- MIDI files publish only when they pass both the MIDI score threshold and the
-  MIDI sanity checks.
+Read the
+[`production architecture`](docs/architecture/PRODUCTION_ARCHITECTURE.md) and
+[`repository structure`](docs/architecture/REPOSITORY_STRUCTURE.md) for the
+complete component boundaries.
 
-When a non-core artifact fails the gate, the server does not expose a download
-link for it. Instead, it records the candidate in `rejected_candidates` inside
-`analysis/manifest.json` with:
+## Repository
 
-- `quality_score`
-- `publish_status`
-- `publish_reason`
-- `warnings`
-- `metrics`
+The main directories have explicit ownership:
 
-This behavior lets you see what the pipeline attempted without polluting the
-download surface with weak stems.
+| Path | Responsibility |
+| --- | --- |
+| `splitter/api/` | FastAPI transport, schemas, middleware, and routes |
+| `splitter/application/` | Application use cases and dispatch coordination |
+| `splitter/infrastructure/` | PostgreSQL, Redis/RQ, and object storage |
+| `splitter/observability/` | Structured logs and request correlation |
+| `workers/` | Modal and specialist GPU worker applications |
+| `frontend/` | React and TypeScript web client |
+| `models/` | Model registry and qualification configuration |
+| `benchmarks/` | Quality, latency, cost, and reliability evidence |
+| `training/` | Training recipes and manifests |
+| `datasets/` | Dataset inventories, licenses, and staging metadata |
+| `docs/` | Architecture, operations, research, roadmaps, and history |
 
-The manifest also records:
+Research assets don't define product release status. Runtime code reads
+machine-readable contracts from `models/`.
 
-- `pipeline_mode`
-- `candidate_winners`
-- `remote_adapter_status`
-- `remote_adapter_reason`
+## Local development
 
-Those fields make it clear whether a job used local specialists, fell back to
-heuristics, or layered in the experimental MVSEP branch.
+Install Python 3.12, Node.js 22, FFmpeg, and libsndfile. Then install the API and
+web dependencies:
 
-## Requirements
+```bash
+python -m venv .venvs/api
+.venvs/api/bin/python -m pip install -e '.[dev]'
+npm --prefix frontend ci
+```
 
-You need a local Python environment with CPU PyTorch support and Demucs
-installed in the shared project virtual environment. The current setup targets
-Ubuntu 24.04 and Python 3.12.
+Start the single-machine development server:
 
-- Python 3.12 or newer
-- `ffmpeg`
-- `libsndfile`
-- The shared virtual environment at
-  `/home/ayodele/Desktop/marlon-music/venv`
+```bash
+VENV_DIR="$PWD/.venvs/api" ./start.sh
+```
 
-## Run the server locally
+This path uses one API process because an in-memory dispatcher cannot safely
+coordinate multiple processes.
 
-Use the bundled startup script to launch the Flask app with the shared virtual
-environment.
+## Production-shaped local stack
 
-1. Change into the repository root.
-2. Run `./start.sh`.
-3. Open `http://localhost:5000` if the browser does not open automatically.
+Docker Compose starts PostgreSQL, Redis, migrations, the API, an RQ worker, and
+the maintenance worker:
 
-The UI lets you upload a song, choose a profile, poll job status, and download
-artifacts as they become available.
+```bash
+make compose-up
+```
 
-## API overview
+See the
+[`local stack runbook`](docs/operations/LOCAL_STACK.md) for configuration and
+verification.
 
-The API now centers on jobs. Each job stores its own inputs, outputs, status,
-and manifest on disk.
+## Configuration
 
-### `POST /jobs`
+Copy `.env.production.example` into a secret-managed environment and replace
+every placeholder. Production startup requires:
 
-Create a new job by uploading one audio file and an optional `profile` form
-field. The server returns `202 Accepted` with the queued job metadata.
+- PostgreSQL for authoritative job state and execution leases.
+- Redis/RQ for durable dispatch and retries.
+- Private S3-compatible storage, such as Backblaze B2.
+- JWT verification through a managed identity provider.
+- Cloudflare origin verification, trusted hosts, and shared rate limits.
+- An explicit CORS allowlist.
+- A configured GPU worker URL and API key.
+- Azure Monitor, generic OpenTelemetry, or Sentry telemetry.
 
-### `GET /jobs/<job_id>`
+Multipart API uploads are disabled by default in production. Clients first
+request `POST /uploads`, upload directly to private storage, and then create a
+job using the returned object reference.
 
-Fetch the current job status. Once the job completes, this response includes
-artifact URLs grouped by type.
+## API
 
-### `GET /jobs/<job_id>/manifest`
+The primary routes are:
 
-Fetch the canonical manifest for a completed job. The manifest records model
-choices, published stems, derived outputs, analysis data, bundle exports, and
-missing features. It also records rejected candidates and the reasons they were
-not published.
+| Route | Purpose |
+| --- | --- |
+| `POST /uploads` | Create a principal-scoped private upload grant |
+| `POST /jobs` | Create an upload, object, or Audius-backed job |
+| `GET /jobs/{job_id}` | Read status, timings, and signed artifacts |
+| `GET /jobs/{job_id}/events` | Poll ordered durable job events |
+| `POST /jobs/{job_id}/cancel` | Request local and remote cancellation |
+| `POST /jobs/{job_id}/resume` | Resume a recoverable remote job |
+| `DELETE /jobs/{job_id}` | Delete a terminal job and its artifacts |
+| `GET /capabilities` | Read profiles, contracts, inputs, and warnings |
+| `GET /health/live` | Check process liveness |
+| `GET /health/ready` | Check PostgreSQL, Redis, and object storage |
+| `GET /metrics` | Export Prometheus metrics |
 
-### `GET /artifacts/<job_id>/<relative_path>`
+The OpenAPI document generates the TypeScript client in `frontend/src/api/`.
 
-Download one generated file from the job directory.
+## Verification
 
-### `POST /separate`
+Run backend and frontend checks through the canonical command surface:
 
-Use the legacy compatibility endpoint if you need the older flat broad-stem
-response. This route runs the lighter `preview` profile synchronously.
+```bash
+make test
+make frontend
+```
 
-## Job directory layout
+Regenerate the API contract after schema or route changes:
 
-Each job uses the same on-disk structure so artifacts are easy to inspect or
-script against.
+```bash
+make openapi
+```
 
-- `input/`
-- `broad_stems/`
-- `derived_stems/`
-- `tempo_locked_wavs/`
-- `midi/`
-- `analysis/`
-- `package/`
+CI runs the backend suite, frontend build, API container build, Bicep and
+Terraform validation, Worker dry-run, CodeQL, dependency review, and Trivy.
 
-The `analysis/` directory includes the quality-scored manifest, `tempo_key`,
-the lightweight `sections.json` export for `quality` jobs, and any structured
-remote-adapter status for the experimental profile.
+## Known limits
 
-## Run tests
+The architecture and model quality have separate release gates.
 
-The Phase 2 test suite covers the scoring layer, section analysis, job
-orchestration, and the HTTP contract without forcing large model downloads.
+- The eleven-stem profile remains evaluation-only.
+- `synth` currently has known bleed on the Channel evaluation run.
+- Silent specialist outputs can represent instrument absence or model failure;
+  presence detection and quality qualification remain future ML work.
+- The complete 30-song ground-truth quality benchmark is unfinished.
+- Local JSON and thread adapters are development-only.
+- Production infrastructure is defined but still requires account credentials,
+  provider deployment, recovery drills, load evidence, and operating history.
 
-1. Activate the shared virtual environment.
-2. Change into the repository root.
-3. Run `pytest -q`.
-
-The tests use synthetic fixtures and monkeypatched separation steps so you can
-verify the pipeline behavior quickly on CPU.
-
-## Docker
-
-The repository still includes a Dockerfile for local packaging. The image uses
-Python 3.12, installs audio dependencies, and launches `audio_api.py`.
-
-1. Build the image with `docker build -t stem-splitter-local .`
-2. Run the container with `docker run -p 5000:5000 stem-splitter-local`
-
-The container ships the same job-based API and static UI as the local script.
-
-## Limits and design choices
-
-This pipeline does not claim to recover Suno's hidden original session. It
-builds a practical local working package instead.
-
-- Broad stems are prioritized over brittle ultra-fine splits.
-- Extended and derived stems are confidence-gated.
-- MIDI files are guide-quality for rebuilding and arrangement, not guaranteed
-  note-perfect transcriptions.
-- Specialist sub-stems are optional and experimental, not part of the default
-  local product contract.
-
-## Next steps
-
-If you want to push the local stack further, the next sensible upgrades are:
-
-- Add stronger recursive specialist splitters for drum and music-family stems.
-- Add a benchmark harness for real-song evaluation.
-- Add richer section labeling and candidate-quality diagnostics.
+Research decisions and executed work are preserved in
+[`docs/history/STEM_SPLITTER_ENGINEERING_LOG.md`](docs/history/STEM_SPLITTER_ENGINEERING_LOG.md).

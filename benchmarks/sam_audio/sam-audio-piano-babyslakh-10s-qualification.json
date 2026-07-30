@@ -1,0 +1,80 @@
+{
+  "qualification_id": "sam-audio-piano-babyslakh-10s-qualification",
+  "checked_at": "2026-07-24T21:43:12+01:00",
+  "release_claim_eligible": false,
+  "candidate": {
+    "model_id": "facebook/sam-audio-large",
+    "source_revision": "bb4c6999d2677c7402360e426afc01ddfad6dce0",
+    "parameter_count": 8248143210,
+    "device": "NVIDIA A100-SXM4-80GB"
+  },
+  "fixture": {
+    "dataset": "BabySlakh",
+    "track": "Track00011",
+    "stem": "piano",
+    "excerpt_start_seconds": 30.0,
+    "excerpt_duration_seconds": 10.0,
+    "input_sha256": "920d680e53c86d45288cd66be0563f1cf1a4f8a2816276fb39ae2f0f6e2154fd",
+    "input_path": "benchmarks/gpu_bakeoff/parallel-profile-diagnostic-10s-v1/inputs/babyslakh-track00011.wav"
+  },
+  "runs": [
+    {
+      "id": "sam-audio-piano-babyslakh-10s-001",
+      "predict_spans": false,
+      "reranking_candidates": 1,
+      "inference_seconds": 3.0642,
+      "si_sdr_db": -30.5678,
+      "sdr_db": -7.2520,
+      "correlation": 0.0296
+    },
+    {
+      "id": "sam-audio-piano-babyslakh-10s-quality-001",
+      "predict_spans": true,
+      "reranking_candidates": 8,
+      "inference_seconds": 17.2536,
+      "si_sdr_db": -22.0783,
+      "sdr_db": -7.0771,
+      "correlation": 0.0785
+    },
+    {
+      "id": "sam-audio-piano-babyslakh-10s-official-001",
+      "predict_spans": false,
+      "reranking_candidates": 8,
+      "inference_seconds": 18.9744,
+      "remote_elapsed_seconds": 21.1742,
+      "si_sdr_db": -5.3319,
+      "sdr_db": -4.4344,
+      "correlation": 0.4760,
+      "output_format": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "encoding": "PCM_24"
+      }
+    }
+  ],
+  "same_fixture_existing_pipeline": {
+    "report": "benchmarks/gpu_bakeoff/parallel-profile-diagnostic-10s-v1/report.json",
+    "piano_si_sdr_db": 2.9887,
+    "piano_sdr_db": 3.2232,
+    "piano_correlation": 0.8158
+  },
+  "scope": {
+    "measured_stems": [
+      "piano"
+    ],
+    "unmeasured_stems": [
+      "acoustic_guitar",
+      "electric_guitar",
+      "synth",
+      "strings",
+      "wind"
+    ]
+  },
+  "decision": {
+    "piano": "rejected",
+    "shared_six_stem_candidate": "rejected",
+    "production_router_eligible": false,
+    "reason": "The best SAM Audio configuration remained 8.32 dB below the existing pipeline in SI-SDR on the identical ground-truth excerpt. Meta's published Instrument Pro score is a learned subjective Judge metric, not an SDR benchmark, and its MUSDB evaluator covers bass, drums, and vocals rather than these six pending specialist stems.",
+    "next_action": "Stop SAM qualification spend and select stem-specific candidates with published or reproducible ground-truth evidence."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "file_count": 3,
+  "files": [
+    {
+      "checksum": "c260a1203a82c1dda80ec1de75e5e23f",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3967852/files/FSL10K.zip/content",
+      "path": "FSL10K.zip",
+      "size_bytes": 8841802341
+    },
+    {
+      "checksum": "4cb99bab3d1c7659edc02253b175f042",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3967852/files/README.md/content",
+      "path": "README.md",
+      "size_bytes": 2798
+    },
+    {
+      "checksum": "3920ee437802cf047a990b2968fa066c",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3967852/files/annotations.zip/content",
+      "path": "annotations.zip",
+      "size_bytes": 1564890
+    }
+  ],
+  "license": "Per-file Creative Commons license",
+  "rights_status": "per_item_review",
+  "schema_version": "1.0",
+  "source_id": "freesound_loop_dataset",
+  "source_url": "https://zenodo.org/records/3967852",
+  "source_version": "zenodo-3967852",
+  "total_size_bytes": 8843370029
+}

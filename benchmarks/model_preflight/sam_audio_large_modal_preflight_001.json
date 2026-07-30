@@ -1,0 +1,59 @@
+{
+  "preflight_id": "sam_audio_large_modal_preflight_001",
+  "checked_at": "2026-07-24T21:21:23+01:00",
+  "candidate": "Meta SAM Audio Large",
+  "model": {
+    "model_id": "facebook/sam-audio-large",
+    "source": "https://github.com/facebookresearch/sam-audio",
+    "source_revision": "bb4c6999d2677c7402360e426afc01ddfad6dce0",
+    "access": "gated_huggingface",
+    "access_status": "approved",
+    "parameter_count": 8248143210,
+    "processor_sample_rate": 48000
+  },
+  "runtime": {
+    "provider": "modal",
+    "app": "stemsplitter-sam-audio-specialists",
+    "worker_class": "SAMAudioSpecialist",
+    "device_name": "NVIDIA A100-SXM4-80GB",
+    "device_memory_bytes": 85094825984,
+    "dependencies": {
+      "huggingface_hub": "0.35.3",
+      "torch": "2.10.0",
+      "torchaudio": "2.10.0",
+      "torchcodec": "0.10.0",
+      "torchvision": "0.25.0",
+      "transformers": "4.57.3"
+    },
+    "preflight_status": "ready",
+    "deployment_stopped_after_preflight": true
+  },
+  "target_stems": [
+    "piano",
+    "acoustic_guitar",
+    "electric_guitar",
+    "synth",
+    "strings",
+    "wind"
+  ],
+  "gates": {
+    "huggingface_access_passed": true,
+    "dependency_imports_passed": true,
+    "checkpoint_download_passed": true,
+    "checkpoint_load_passed": true,
+    "gpu_runtime_passed": true,
+    "separation_smoke_passed": false,
+    "ground_truth_metrics_passed": false,
+    "blind_listening_passed": false,
+    "stereo_phase_review_passed": false,
+    "latency_gate_passed": false,
+    "cost_gate_passed": false
+  },
+  "decision": {
+    "technical_preflight": "passed",
+    "quality_decision": "not_yet_qualified",
+    "production_router_eligible": false,
+    "next_allowed_action": "Run one short ground-truth separation qualification before a six-stem candidate run.",
+    "reason": "Access, dependencies, GPU allocation, checkpoint download, and model loading are proven. No separated audio was generated in this preflight, so it does not establish stem quality, latency, cost, or production readiness."
+  }
+}

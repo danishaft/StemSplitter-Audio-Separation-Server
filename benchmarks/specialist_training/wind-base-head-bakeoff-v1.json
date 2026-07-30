@@ -1,0 +1,595 @@
+{
+  "audio_files": [
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/base/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/harmonic_head_base/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd/reference_wind_brass.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/reference_mixture.flac",
+    "exports/wind-base-head-bakeoff-v1/wind_brass/references/4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31/reference_wind_brass.flac"
+  ],
+  "base_checkpoint_sha256": "415bf0e2f5c62c4c8ede9aec5913792ab666c4ae2b710e2f11355ced338e6f6e",
+  "base_id": "wind_brass",
+  "comparison_checkpoint_sha256": "921b3e75c465dff98c2f9518ccf26a5ec64e165f970253de8388c39a47461433",
+  "comparison_variant": "harmonic_head_base",
+  "comparison_weight_source": "model_state_dict",
+  "dataset_id": "complete-source-pools",
+  "elapsed_seconds": 88.248,
+  "evaluation_id": "wind-base-head-bakeoff-v1",
+  "example_count": 30,
+  "run_id": "specialists-20260728",
+  "schema_version": "1.0",
+  "scores": {
+    "aggregate": {
+      "base": {
+        "bleedless": 6.047811206181844,
+        "fullness": 26.086651357014976,
+        "sdr": -7.9556993325551355
+      },
+      "harmonic_head_base": {
+        "bleedless": 12.274182399113974,
+        "fullness": 9.672072752316792,
+        "sdr": -0.6744936093877186
+      }
+    },
+    "delta_comparison_minus_base": {
+      "bleedless": 6.226371192932129,
+      "fullness": -16.414578604698185,
+      "sdr": 7.2812057231674165
+    },
+    "delta_distribution": {
+      "bleedless": {
+        "example_count": 30,
+        "improved_examples": 23,
+        "median": 5.525973796844482
+      },
+      "fullness": {
+        "example_count": 30,
+        "improved_examples": 5,
+        "median": -10.089331150054932
+      },
+      "sdr": {
+        "example_count": 30,
+        "improved_examples": 23,
+        "median": 8.353696725331247
+      }
+    },
+    "per_example": {
+      "0028a35f36972f1396c9bf98610917f2852466b4592da114bc931508ecd23a95": {
+        "base": {
+          "bleedless": 4.1270575523376465,
+          "fullness": 30.407615661621094,
+          "k_sdr": 29.246582252695994,
+          "sdr": -8.563850402832031
+        },
+        "harmonic_head_base": {
+          "bleedless": 22.44937515258789,
+          "fullness": 3.56415057182312,
+          "k_sdr": 78.83675752096977,
+          "sdr": 0.02541179768741131
+        }
+      },
+      "003814bdb8fedd117119b932f2042ef29b087a180d84b9424ce51f4b992e8a48": {
+        "base": {
+          "bleedless": 4.18748664855957,
+          "fullness": 10.017244338989258,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -21.292259216308594
+        },
+        "harmonic_head_base": {
+          "bleedless": 11.28052043914795,
+          "fullness": 21.895620346069336,
+          "k_sdr": 79.61771404417888,
+          "sdr": 0.2906976342201233
+        }
+      },
+      "00e37218cd1ebfaf6b6ed5e11d62b0c65fb7d8294801d3425ff63452d4d120a0": {
+        "base": {
+          "bleedless": 7.007785320281982,
+          "fullness": 53.49933624267578,
+          "k_sdr": 74.42165856811492,
+          "sdr": -1.3613207340240479
+        },
+        "harmonic_head_base": {
+          "bleedless": 9.699963569641113,
+          "fullness": 5.273719310760498,
+          "k_sdr": 78.63518882688555,
+          "sdr": -0.04204180836677551
+        }
+      },
+      "0130adb5acbe70921b4421bb060e4b69ecabd931da0c114c05a906a6a7eae037": {
+        "base": {
+          "bleedless": 5.296454429626465,
+          "fullness": 18.94161605834961,
+          "k_sdr": 76.03798710404149,
+          "sdr": -0.8751420974731445
+        },
+        "harmonic_head_base": {
+          "bleedless": 5.4623284339904785,
+          "fullness": 9.453805923461914,
+          "k_sdr": 67.56907742901164,
+          "sdr": -3.17631459236145
+        }
+      },
+      "01ffbff3633d599c0b710eb7a1d4802b013d053face186a64199b7f052a18ee4": {
+        "base": {
+          "bleedless": 7.677680015563965,
+          "fullness": 19.802305221557617,
+          "k_sdr": 65.50536088401347,
+          "sdr": -3.65275502204895
+        },
+        "harmonic_head_base": {
+          "bleedless": 5.01673698425293,
+          "fullness": 7.038496494293213,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -13.76308822631836
+        }
+      },
+      "0206fd6601da4b1cc4f7a4d1251b316d91847463ade1cc264b9dea50a50f2142": {
+        "base": {
+          "bleedless": 4.481316089630127,
+          "fullness": 14.769506454467773,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -10.340118408203125
+        },
+        "harmonic_head_base": {
+          "bleedless": 16.486083984375,
+          "fullness": 11.135224342346191,
+          "k_sdr": 85.47232618384442,
+          "sdr": 2.4937167167663574
+        }
+      },
+      "04707627ee0b66e629018e57321e35672cc3d541bfebb6f08ddc5143c96094a3": {
+        "base": {
+          "bleedless": 8.532231330871582,
+          "fullness": 48.50766372680664,
+          "k_sdr": 71.95963747728459,
+          "sdr": -2.05739164352417
+        },
+        "harmonic_head_base": {
+          "bleedless": 7.7451558113098145,
+          "fullness": 4.002691745758057,
+          "k_sdr": 78.6785544275774,
+          "sdr": -0.027564730495214462
+        }
+      },
+      "049309e4c51b35b8ec6e2ec2274a346c70bec2dce00bf92331ec950a6537384b": {
+        "base": {
+          "bleedless": 2.9532785415649414,
+          "fullness": 18.301651000976562,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -19.322341918945312
+        },
+        "harmonic_head_base": {
+          "bleedless": 7.518344402313232,
+          "fullness": 16.034465789794922,
+          "k_sdr": 81.08107487358203,
+          "sdr": 0.8050985336303711
+        }
+      },
+      "0516ee36d957eb755a063d83af87c642540e9843ebe5832a25ef035be8905d2d": {
+        "base": {
+          "bleedless": 7.49265193939209,
+          "fullness": 52.51124954223633,
+          "k_sdr": 88.55917516942716,
+          "sdr": 3.823354721069336
+        },
+        "harmonic_head_base": {
+          "bleedless": 5.9669013023376465,
+          "fullness": 5.0258355140686035,
+          "k_sdr": 49.34937925673742,
+          "sdr": -6.5073041915893555
+        }
+      },
+      "0529f1bb34355edb5f1cb9a36265ffad0d380cfc9402d57b9af7590944f947a4": {
+        "base": {
+          "bleedless": 8.0570707321167,
+          "fullness": 25.283340454101562,
+          "k_sdr": 58.922632621380075,
+          "sdr": -4.987066268920898
+        },
+        "harmonic_head_base": {
+          "bleedless": 16.042617797851562,
+          "fullness": 6.028554916381836,
+          "k_sdr": 78.84564664933836,
+          "sdr": 0.02839602530002594
+        }
+      },
+      "05a29797a7524a4e7a4a714621453391d4daea1530edc8795cf4f9bc2cdbf586": {
+        "base": {
+          "bleedless": 6.7277936935424805,
+          "fullness": 16.812606811523438,
+          "k_sdr": 24.53830336150732,
+          "sdr": -8.889184951782227
+        },
+        "harmonic_head_base": {
+          "bleedless": 19.221433639526367,
+          "fullness": 6.8441009521484375,
+          "k_sdr": 79.1420431647253,
+          "sdr": 0.12836508452892303
+        }
+      },
+      "05b1f1b60159507e8e4893e0dfa0fef292a2d8eebb21e19e8bd3f62114e6355c": {
+        "base": {
+          "bleedless": 7.245866298675537,
+          "fullness": 41.22842788696289,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -17.690662384033203
+        },
+        "harmonic_head_base": {
+          "bleedless": 6.835273742675781,
+          "fullness": 4.513822555541992,
+          "k_sdr": 78.94707599913377,
+          "sdr": 0.06250478327274323
+        }
+      },
+      "076da84e8ede063fee7788df89427bb959c6d361610cc4b8433ddb58e0ee27b0": {
+        "base": {
+          "bleedless": 6.177245140075684,
+          "fullness": 40.796852111816406,
+          "k_sdr": 15.04388103808262,
+          "sdr": -9.419068336486816
+        },
+        "harmonic_head_base": {
+          "bleedless": 29.1893367767334,
+          "fullness": 2.3385748863220215,
+          "k_sdr": 78.76024373124663,
+          "sdr": -0.0002417816867819056
+        }
+      },
+      "089c649beee033bb29c33657b3826b0c309c6841c5051343cde4e96862276ae6": {
+        "base": {
+          "bleedless": 4.1914238929748535,
+          "fullness": 12.326286315917969,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -12.482047080993652
+        },
+        "harmonic_head_base": {
+          "bleedless": 20.48396873474121,
+          "fullness": 10.558591842651367,
+          "k_sdr": 91.76104513930149,
+          "sdr": 5.3411359786987305
+        }
+      },
+      "09400a7027e9d35c8a5ff79a2a511a27ab66d434b49fe74270f4c2f65a1b394d": {
+        "base": {
+          "bleedless": 6.7587995529174805,
+          "fullness": 39.72960662841797,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -15.547414779663086
+        },
+        "harmonic_head_base": {
+          "bleedless": 17.73583984375,
+          "fullness": 2.399259090423584,
+          "k_sdr": 78.77839796013625,
+          "sdr": 0.005839570425450802
+        }
+      },
+      "09e400e466a282c0126b7ab4924f6f883a7ae202b79d9f87679c6920072daeb7": {
+        "base": {
+          "bleedless": 3.6055166721343994,
+          "fullness": 21.178977966308594,
+          "k_sdr": 29.396384215087085,
+          "sdr": -8.552714347839355
+        },
+        "harmonic_head_base": {
+          "bleedless": 6.071497917175293,
+          "fullness": 16.477022171020508,
+          "k_sdr": 77.43697605175659,
+          "sdr": -0.4345830976963043
+        }
+      },
+      "0b6a1a7ffb8b11514a92694d3fb264bd4c97ece49854ddd99e9217c61169d6d1": {
+        "base": {
+          "bleedless": 9.622844696044922,
+          "fullness": 20.316865921020508,
+          "k_sdr": 95.98203915824027,
+          "sdr": 7.582025051116943
+        },
+        "harmonic_head_base": {
+          "bleedless": 4.490344047546387,
+          "fullness": 10.106709480285645,
+          "k_sdr": 51.716505351073074,
+          "sdr": -6.171573638916016
+        }
+      },
+      "0cea84921e2733ee67ec40e6a283843fe68dc0f4f12a50b351bfca904bd17409": {
+        "base": {
+          "bleedless": 6.038252830505371,
+          "fullness": 34.732173919677734,
+          "k_sdr": 82.60718873202276,
+          "sdr": 1.366539478302002
+        },
+        "harmonic_head_base": {
+          "bleedless": 13.139457702636719,
+          "fullness": 6.229521751403809,
+          "k_sdr": 80.77377505863184,
+          "sdr": 0.6951673030853271
+        }
+      },
+      "0dabe3af019223ff5897b5cf7097845e29cc3b3216e9481bf7e321ff6feb3d9e": {
+        "base": {
+          "bleedless": 13.407368659973145,
+          "fullness": 45.6981086730957,
+          "k_sdr": 100.0,
+          "sdr": 14.465941429138184
+        },
+        "harmonic_head_base": {
+          "bleedless": 4.6421709060668945,
+          "fullness": 7.386044979095459,
+          "k_sdr": 72.83289020621808,
+          "sdr": -1.8164514303207397
+        }
+      },
+      "14b6b96f99b059f8960f825019b1a45843f6321d359b26ebf58b146a1757b09c": {
+        "base": {
+          "bleedless": 2.707064628601074,
+          "fullness": 12.575647354125977,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -24.41775894165039
+        },
+        "harmonic_head_base": {
+          "bleedless": 4.052428722381592,
+          "fullness": 12.708416938781738,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -15.488394737243652
+        }
+      },
+      "14ea0863be75a585be34ef9377ff435047829ac20f86b55f9f74be18b6674535": {
+        "base": {
+          "bleedless": 3.1007180213928223,
+          "fullness": 17.285558700561523,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -19.028120040893555
+        },
+        "harmonic_head_base": {
+          "bleedless": 14.966869354248047,
+          "fullness": 13.603538513183594,
+          "k_sdr": 89.57270092547935,
+          "sdr": 4.28788948059082
+        }
+      },
+      "1628514841a7e2da287308aae6c460fea79858f2f909e2debb2e6175eaf8c82e": {
+        "base": {
+          "bleedless": 5.201009750366211,
+          "fullness": 10.29610538482666,
+          "k_sdr": 49.3469249277178,
+          "sdr": -6.5076398849487305
+        },
+        "harmonic_head_base": {
+          "bleedless": 6.836259365081787,
+          "fullness": 9.261801719665527,
+          "k_sdr": 53.15967252478737,
+          "sdr": -5.954694747924805
+        }
+      },
+      "19b36d9950540089e71fe6fcbafcc666f314a6b0b887c2d9093f963a17f6abcc": {
+        "base": {
+          "bleedless": 4.0114665031433105,
+          "fullness": 36.23613739013672,
+          "k_sdr": 7.0319001780997255,
+          "sdr": -9.761268615722656
+        },
+        "harmonic_head_base": {
+          "bleedless": 10.498348236083984,
+          "fullness": 3.4662082195281982,
+          "k_sdr": 78.75388275794026,
+          "sdr": -0.0023718024604022503
+        }
+      },
+      "1a9b46d6468bcdc0bf7eb570ea8151f3678c4d47b19fa21b051df55a32a62b06": {
+        "base": {
+          "bleedless": 2.8595640659332275,
+          "fullness": 11.929830551147461,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -20.84137725830078
+        },
+        "harmonic_head_base": {
+          "bleedless": 12.323307991027832,
+          "fullness": 15.362225532531738,
+          "k_sdr": 94.72105912298981,
+          "sdr": 6.882165908813477
+        }
+      },
+      "1ae9bd1a2286cfefa9b5957f6f6acc9b5721891213ad14a0d45d4bd682ad3a59": {
+        "base": {
+          "bleedless": 6.520436763763428,
+          "fullness": 7.088967323303223,
+          "k_sdr": 83.10582787874286,
+          "sdr": 1.5557104349136353
+        },
+        "harmonic_head_base": {
+          "bleedless": 20.04355239868164,
+          "fullness": 35.090110778808594,
+          "k_sdr": 100.0,
+          "sdr": 12.686095237731934
+        }
+      },
+      "1bb4544d63b2bc836dd133d2a30b6f3330c7105c6de33e28c3678b445300c87a": {
+        "base": {
+          "bleedless": 7.8117899894714355,
+          "fullness": 33.41861343383789,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -12.978757858276367
+        },
+        "harmonic_head_base": {
+          "bleedless": 9.618181228637695,
+          "fullness": 6.567842483520508,
+          "k_sdr": 58.16971189519378,
+          "sdr": -5.1233320236206055
+        }
+      },
+      "1f9857c8d671ed0c049c48ed1529580bb7b93b89eeaa2522eddaf998fe1a0a09": {
+        "base": {
+          "bleedless": 4.164071083068848,
+          "fullness": 8.249634742736816,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -17.788414001464844
+        },
+        "harmonic_head_base": {
+          "bleedless": 21.40207862854004,
+          "fullness": 19.093135833740234,
+          "k_sdr": 100.0,
+          "sdr": 15.013998031616211
+        }
+      },
+      "284fea9a36ded7c0d3a7d47369f018297fc81f38b18bf87731772041924ca17b": {
+        "base": {
+          "bleedless": 7.848306179046631,
+          "fullness": 46.11767578125,
+          "k_sdr": 43.73249108486832,
+          "sdr": -7.213487148284912
+        },
+        "harmonic_head_base": {
+          "bleedless": 25.548585891723633,
+          "fullness": 2.6437504291534424,
+          "k_sdr": 78.77789492713012,
+          "sdr": 0.005671017803251743
+        }
+      },
+      "4c5efc39327342e5d99a792eadb61a5a414d29ad568854d78fe37aa665bf13dd": {
+        "base": {
+          "bleedless": 5.72080659866333,
+          "fullness": 20.135082244873047,
+          "k_sdr": 74.51990679832545,
+          "sdr": -1.3324464559555054
+        },
+        "harmonic_head_base": {
+          "bleedless": 9.320173263549805,
+          "fullness": 10.505865097045898,
+          "k_sdr": 79.42208168763722,
+          "sdr": 0.2236493080854416
+        }
+      },
+      "4f877ea4b2642e23870783e4d95303031218a9ac12ae149ec61023240c33cd31": {
+        "base": {
+          "bleedless": 7.9009785652160645,
+          "fullness": 14.404852867126465,
+          "k_sdr": 70.05210432119632,
+          "sdr": -2.561943292617798
+        },
+        "harmonic_head_base": {
+          "bleedless": 4.138335704803467,
+          "fullness": 5.553074359893799,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -10.702653884887695
+        }
+      }
+    }
+  },
+  "validation_set_id": "specialists-validation-30-v1",
+  "wandb_url": "https://wandb.ai/daniel-ejeh-auralith/stemsplitter-specialists/runs/e1u4nm4w"
+}

@@ -1,0 +1,96 @@
+{
+  "benchmark_id": "tuss_vs_mvsep_dnr_v3_booty2_20s_001",
+  "comparator_dirs": [
+    "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/comparators/mvsep_dnr_v3/booty2-master-v1-20s"
+  ],
+  "comparator_scores": {
+    "booty2-master-v1-20s": {
+      "music": {
+        "comparator_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/comparators/mvsep_dnr_v3/booty2-master-v1-20s/music.wav",
+        "correlation_to_comparator": 0.9579,
+        "rms_db_vs_comparator": -0.941,
+        "sdr_to_comparator": 10.6334
+      },
+      "sfx": {
+        "comparator_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/comparators/mvsep_dnr_v3/booty2-master-v1-20s/sfx.wav",
+        "correlation_to_comparator": 0.5867,
+        "rms_db_vs_comparator": 10.634,
+        "sdr_to_comparator": -8.8516
+      },
+      "speech_dialog": {
+        "comparator_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/comparators/mvsep_dnr_v3/booty2-master-v1-20s/speech_dialog.wav",
+        "correlation_to_comparator": 0.8799,
+        "rms_db_vs_comparator": 3.405,
+        "sdr_to_comparator": 2.2455
+      }
+    }
+  },
+  "created_at": "2026-07-12T15:41:16Z",
+  "evidence_level": "comparator_similarity",
+  "input": {
+    "channels": 2,
+    "duration_seconds": 20.0,
+    "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/tuss_quality_benchmark/tuss_booty2_20s_t4_001/input/tuss-smoke-input.wav",
+    "sample_rate": 48000,
+    "sha256": "a21721c228dc52a9be571e77a25f76691c1c3c6b6bf41b0734255114d81cab4f"
+  },
+  "missing_stems": [],
+  "pairwise_correlations": {
+    "music__sfx": 0.3102,
+    "music__speech_dialog": 0.1537,
+    "sfx__speech_dialog": 0.126
+  },
+  "prediction_dir": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/tuss_quality_benchmark/tuss_booty2_20s_t4_001/specialist_substems",
+  "quality_claim": "not_quality_benchmark_without_ground_truth",
+  "reconstruction": {
+    "residual_rms_db_vs_input": -16.346,
+    "stem_sum_rms_db_vs_input": 0.556,
+    "stem_sum_sdr_to_input": 17.1482
+  },
+  "reference_dir": null,
+  "reference_scores": {},
+  "sanity_pass": true,
+  "stem_metrics": {
+    "music": {
+      "active_ratio": 0.9557,
+      "channels": 2,
+      "clipped_sample_ratio": 0.0,
+      "duration_seconds": 20.0,
+      "finite": true,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/tuss_quality_benchmark/tuss_booty2_20s_t4_001/specialist_substems/music.wav",
+      "peak": 0.907928,
+      "rms": 0.19744721,
+      "rms_db_vs_mixture": -2.755,
+      "sample_rate": 48000,
+      "sha256": "39c6ac3193f7e60c544f1c08b2dcaf5de9a2b385d940853ccc95ea11eac11bba"
+    },
+    "sfx": {
+      "active_ratio": 0.8684,
+      "channels": 2,
+      "clipped_sample_ratio": 0.0,
+      "duration_seconds": 20.0,
+      "finite": true,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/tuss_quality_benchmark/tuss_booty2_20s_t4_001/specialist_substems/sfx.wav",
+      "peak": 0.264801,
+      "rms": 0.01159657,
+      "rms_db_vs_mixture": -27.378,
+      "sample_rate": 48000,
+      "sha256": "7eb4453330b822aad4fa62c39ef14e767c106c39e35c8e178bef184fb51d666d"
+    },
+    "speech_dialog": {
+      "active_ratio": 0.723,
+      "channels": 2,
+      "clipped_sample_ratio": 0.0,
+      "duration_seconds": 20.0,
+      "finite": true,
+      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/tuss_quality_benchmark/tuss_booty2_20s_t4_001/specialist_substems/speech_dialog.wav",
+      "peak": 0.93866,
+      "rms": 0.17863379,
+      "rms_db_vs_mixture": -3.625,
+      "sample_rate": 48000,
+      "sha256": "f289d1d164b52372cf9d01f26ac3ae7477dc4aaf93eb3c87134299b572656f6c"
+    }
+  },
+  "system_name": "tuss_medium",
+  "warnings": []
+}

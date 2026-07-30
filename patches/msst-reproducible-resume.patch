@@ -1,0 +1,203 @@
+diff --git a/train.py b/train.py
+index 5cae924..bb8f9d9 100644
+--- a/train.py
++++ b/train.py
+@@ -296,6 +296,7 @@ def train_model(args: Union[argparse.Namespace, None], rank=None, world_size=Non
+     from utils.dataset import prepare_data
+     from utils.model_utils import load_start_checkpoint
+     from utils.model_utils import get_lora
++    from utils.model_utils import restore_reproducibility_state
+     from utils.losses import choice_loss
+     from torch.cuda.amp.grad_scaler import GradScaler
+     from utils.model_utils import get_optimizer, log_model_info
+@@ -375,7 +376,12 @@ def train_model(args: Union[argparse.Namespace, None], rank=None, world_size=Non
+     if args.start_check_point and "optimizer_state_dict" in checkpoint and args.load_optimizer:
+         optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+
+-    if args.start_check_point and "scheduler_state_dict" in checkpoint and args.load_scheduler:
++    if (
++        args.start_check_point
++        and checkpoint.get("scheduler_state_dict") is not None
++        and scheduler is not None
++        and args.load_scheduler
++    ):
+         scheduler.load_state_dict(checkpoint["scheduler_state_dict"])
+
+     # load num epoch
+@@ -401,6 +407,12 @@ def train_model(args: Union[argparse.Namespace, None], rank=None, world_size=Non
+
+     multi_loss = choice_loss(args, config)
+     scaler = GradScaler()
++    if args.start_check_point and args.load_epoch:
++        if use_amp and checkpoint.get("scaler_state_dict") is not None:
++            scaler.load_state_dict(checkpoint["scaler_state_dict"])
++        if ema_model is not None and checkpoint.get("ema_model_state_dict"):
++            ema_model.load_state_dict(checkpoint["ema_model_state_dict"])
++        restore_reproducibility_state(checkpoint)
+
+     if args.set_per_process_memory_fraction:
+         torch.cuda.set_per_process_memory_fraction(1.0)
+@@ -447,14 +459,18 @@ def train_model(args: Union[argparse.Namespace, None], rank=None, world_size=Non
+
+         model_to_valid = ema_model if ema_model is not None else model
+
+-        if should_print:
+-            save_last_weights(args, model, device_ids, optimizer, epoch, all_time_all_metrics, best_metric, scheduler)
+         if ddp:
+-            metrics_avg, all_metrics = valid_multi_gpu(model, args, config, args.device_ids, verbose=False)
++            metrics_avg, all_metrics = valid_multi_gpu(
++                model_to_valid,
++                args,
++                config,
++                args.device_ids,
++                verbose=False,
++            )
+             if rank == 0:
+                 all_time_all_metrics[f"epoch_{epoch}"] = all_metrics
+                 best_metric = compute_epoch_metrics(
+-                    model=model,
++                    model=model_to_valid,
+                     args=args,
+                     config=config,
+                     device=device,
+@@ -471,7 +487,7 @@ def train_model(args: Union[argparse.Namespace, None], rank=None, world_size=Non
+                 )
+         else:
+             best_metric = compute_epoch_metrics(
+-                model=model,
++                model=model_to_valid,
+                 args=args,
+                 config=config,
+                 device=device,
+@@ -483,6 +499,21 @@ def train_model(args: Union[argparse.Namespace, None], rank=None, world_size=Non
+                 all_time_all_metrics=all_time_all_metrics,
+                 all_losses=all_losses,
+             )
++        if should_print:
++            save_last_weights(
++                args,
++                model,
++                device_ids,
++                optimizer,
++                epoch,
++                all_time_all_metrics,
++                all_losses,
++                best_metric,
++                scheduler,
++                scaler=scaler,
++                ema_model=ema_model,
++                global_step=(epoch + 1) * len(train_loader),
++            )
+
+
+ if __name__ == "__main__":
+diff --git a/utils/model_utils.py b/utils/model_utils.py
+index aaa9a5a..bd40946 100644
+--- a/utils/model_utils.py
++++ b/utils/model_utils.py
+@@ -4,6 +4,7 @@ __author__ = 'Roman Solovyev (ZFTurbo): https://github.com/ZFTurbo/'
+ import argparse
+ import json
+ import os
++import random
+ from datetime import datetime
+ import numpy as np
+ import torch
+@@ -810,7 +811,10 @@ def save_weights(
+         all_losses,
+         best_metric: float,
+         args,
+-        scheduler: Optional[torch.optim.lr_scheduler.ReduceLROnPlateau] = None
++        scheduler: Optional[torch.optim.lr_scheduler.ReduceLROnPlateau] = None,
++        scaler: Optional[Any] = None,
++        ema_model: Optional[nn.Module] = None,
++        global_step: Optional[int] = None,
+ ) -> None:
+     """
+     Save a training checkpoint containing model weights, optimizer/scheduler states, and metadata.
+@@ -844,8 +848,19 @@ def save_weights(
+         "scheduler_state_dict": scheduler.state_dict() if scheduler else None,
+         "best_metric": best_metric,
+         "all_metrics": all_time_all_metrics,
+-        "all_losses": all_losses
++        "all_losses": all_losses,
++        "global_step": global_step,
++        "python_rng_state": random.getstate(),
++        "numpy_rng_state": np.random.get_state(),
++        "torch_rng_state": torch.get_rng_state(),
++        "cuda_rng_state_all": (
++            torch.cuda.get_rng_state_all() if torch.cuda.is_available() else []
++        ),
+     }
++    if scaler is not None:
++        checkpoint["scaler_state_dict"] = scaler.state_dict()
++    if ema_model is not None:
++        checkpoint["ema_model_state_dict"] = ema_model.state_dict()
+
+     # Save model weights
+     if args.train_lora_peft:
+@@ -877,6 +892,9 @@ def save_last_weights(
+         all_losses,
+         best_metric: float,
+         scheduler: Optional[torch.optim.lr_scheduler.ReduceLROnPlateau] = None,
++        scaler: Optional[Any] = None,
++        ema_model: Optional[nn.Module] = None,
++        global_step: Optional[int] = None,
+ ) -> None:
+     """
+     Save the latest training checkpoint for continuation or recovery.
+@@ -913,5 +931,20 @@ def save_last_weights(
+         all_losses=all_losses,
+         best_metric=best_metric,
+         args=args,
+-        scheduler=scheduler
++        scheduler=scheduler,
++        scaler=scaler,
++        ema_model=ema_model,
++        global_step=global_step,
+     )
++
++
++def restore_reproducibility_state(checkpoint: Dict[str, Any]) -> None:
++    """Restore random-number-generator states from a training checkpoint."""
++    if "python_rng_state" in checkpoint:
++        random.setstate(checkpoint["python_rng_state"])
++    if "numpy_rng_state" in checkpoint:
++        np.random.set_state(checkpoint["numpy_rng_state"])
++    if "torch_rng_state" in checkpoint:
++        torch.set_rng_state(checkpoint["torch_rng_state"])
++    if torch.cuda.is_available() and checkpoint.get("cuda_rng_state_all"):
++        torch.cuda.set_rng_state_all(checkpoint["cuda_rng_state_all"])
+diff --git a/utils/settings.py b/utils/settings.py
+index 409180d..5cd076a 100644
+--- a/utils/settings.py
++++ b/utils/settings.py
+@@ -481,7 +481,8 @@ def manual_seed(seed: int) -> None:
+     torch.manual_seed(seed)
+     torch.cuda.manual_seed(seed)
+     torch.cuda.manual_seed_all(seed)  # if multi-GPU
+-    torch.backends.cudnn.deterministic = False
++    torch.backends.cudnn.deterministic = True
++    torch.backends.cudnn.benchmark = False
+     os.environ["PYTHONHASHSEED"] = str(seed)
+
+
+@@ -502,7 +503,6 @@ def initialize_environment(seed: int, results_path: str) -> None:
+     """
+
+     manual_seed(seed)
+-    torch.backends.cudnn.deterministic = False
+     try:
+         torch.multiprocessing.set_start_method('spawn')
+     except Exception as e:
+@@ -528,9 +528,8 @@ def initialize_environment_ddp(rank: int, world_size: int, seed: int = 0, resuls
+     Returns:
+         None
+     """
+-    seed = (seed + int(time.time())) % 55535 + 10000
+     setup_ddp(rank, world_size, seed)
+-    manual_seed(seed)
++    manual_seed(seed + rank)
+
+     try:
+         torch.multiprocessing.set_start_method('spawn', force=True)  # force=True prevent errors

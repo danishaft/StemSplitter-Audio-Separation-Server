@@ -1,0 +1,32 @@
+{
+  "checkpoint_sha256": "c62820893bbf86d4e734f966bd142d9157cfc8bb8e79e9d8f9ea553f3ff3519f",
+  "device_memory_bytes": 85094825984,
+  "device_name": "NVIDIA A100 80GB PCIe",
+  "model_dtype": "torch.float16",
+  "model_id": "oulianov/mvsep_mega_53",
+  "model_parameter_count": 681662892,
+  "model_revision": "911881e9f5c306e3f4f021fc6c4f61890ef32955",
+  "output_count": 53,
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "status": "ready",
+  "target_stems": {
+    "acoustic_guitar": [
+      "acoustic-guitar"
+    ],
+    "electric_guitar": [
+      "electric-guitar"
+    ],
+    "piano": [
+      "piano"
+    ],
+    "strings": [
+      "strings"
+    ],
+    "synth": [
+      "synth"
+    ],
+    "wind": [
+      "saxophone"
+    ]
+  }
+}

@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
+import unicodedata
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -14,6 +16,14 @@ def now_iso() -> str:
 def ensure_dir(path: Path) -> Path:
     path.mkdir(parents=True, exist_ok=True)
     return path
+
+
+def sanitize_filename(value: str) -> str:
+    normalized = unicodedata.normalize("NFKD", value)
+    ascii_name = normalized.encode("ascii", "ignore").decode("ascii")
+    basename = ascii_name.replace("\\", "/").rsplit("/", 1)[-1].strip()
+    basename = re.sub(r"[^A-Za-z0-9_.-]+", "_", basename)
+    return basename.strip("._")[:255]
 
 
 def file_sha256(path: Path, chunk_size: int = 1024 * 1024) -> str:
@@ -40,4 +50,3 @@ def safe_relpath(path: Path, root: Path) -> str:
         return str(path.resolve().relative_to(root.resolve()))
     except ValueError:
         return str(path.resolve())
-

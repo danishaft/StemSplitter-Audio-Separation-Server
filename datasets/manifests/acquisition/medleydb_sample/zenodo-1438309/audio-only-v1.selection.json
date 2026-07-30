@@ -1,0 +1,26 @@
+{
+  "archive_count": 1,
+  "archives": [
+    {
+      "provider_checksum": "dbb5b4ff5122233915d04cab4486ead1",
+      "provider_checksum_algorithm": "md5",
+      "provider_path": "MedleyDB_Sample.tar.gz",
+      "provider_revision": null,
+      "sha256": "603fa6cc6fc8d6dd0f5ffcc5bd97b8b2c74820e2498b1e44a285308e772d7910",
+      "size_bytes": 415502011
+    }
+  ],
+  "entry_count": 42,
+  "local_path": "datasets/staging/medleydb_sample/zenodo-1438309/selections/audio-only-v1",
+  "local_retained": true,
+  "materialization_filter": "audio_only",
+  "provenance_sha256": "a1774934d6e1e6867ea6b4a9fd30b34fcc812c93c2524de3c819be7128f56813",
+  "provider_path": "bundle:audio-only-v1",
+  "release_use": "permission_required",
+  "rights_status": "noncommercial_research",
+  "schema_version": "1.0",
+  "selection_name": "audio-only-v1",
+  "size_bytes": 415502011,
+  "source_id": "medleydb_sample",
+  "source_version": "zenodo-1438309"
+}

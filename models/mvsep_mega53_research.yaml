@@ -1,0 +1,77 @@
+schema_version: 1
+status: research_only_license_unresolved
+profile: mvsep_mega53_qualification
+model:
+  model_id: oulianov/mvsep_mega_53
+  source_revision: 911881e9f5c306e3f4f021fc6c4f61890ef32955
+  checkpoint: mvsep_mega_model_bs_roformer_53_stems_v1.ckpt
+  checkpoint_sha256: c62820893bbf86d4e734f966bd142d9157cfc8bb8e79e9d8f9ea553f3ff3519f
+  architecture_config: mvsep_mega_model_bs_roformer_53_stems.yaml
+  architecture: bs_roformer
+  output_count: 53
+  checkpoint_license: unknown
+runtime:
+  source: https://github.com/ZFTurbo/Music-Source-Separation-Training
+  source_revision: 83d495dfc81b2ede9bc62f4209619f8bdfd14995
+  source_license: MIT
+  sample_rate: 44100
+  channels: 2
+target_stems:
+  piano:
+    - piano
+  acoustic_guitar:
+    - acoustic-guitar
+  electric_guitar:
+    - electric-guitar
+  synth:
+    - synth
+  strings:
+    - strings
+  wind:
+    - saxophone
+qualification:
+  status: single_segment_partial_pass
+  release_eligible: false
+  evidence:
+    preflight: benchmarks/model_preflight/mvsep-mega53-modal-preflight-20260725.json
+    qualification: benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-003/qualification.json
+    specialist_positive_qualification: benchmarks/mvsep_mega53/mvsep-mega53-track00018-137s-147s-001/qualification.json
+    dataset: BabySlakh Track00011
+    segment_seconds:
+      - 30
+      - 40
+  measured_results:
+    piano:
+      decision: candidate_requires_full_benchmark
+      si_sdr_db: 8.1752
+    acoustic_guitar:
+      decision: candidate_requires_full_benchmark
+      si_sdr_db: 11.4325
+    electric_guitar:
+      decision: rejected_on_smoke_quality
+      si_sdr_db: -17.4588
+    wind:
+      decision: rejected_on_smoke_quality
+      si_sdr_db: -0.7698
+      evaluated_model_output: saxophone
+    synth:
+      decision: rejected_on_positive_source_smoke_quality
+      positive_source_si_sdr_db: -11.3759
+      absent_source_rms_dbfs: -56.94
+    strings:
+      decision: rejected_on_positive_source_smoke_quality_and_absent_source_leakage
+      positive_source_si_sdr_db: -16.8305
+      absent_source_rms_dbfs: -19.18
+  measured_inference_seconds:
+    gpu_kernel_10_second_input: 2.3186
+    excludes_cold_start_and_transfer: true
+  release_blockers:
+    - checkpoint_license_unresolved
+    - multi_song_ground_truth_benchmark_missing
+    - blind_listening_missing
+    - electric_guitar_wind_synth_and_strings_failed_smoke_quality
+    - end_to_end_latency_and_cost_missing
+  release_rule: >
+    Keep this checkpoint outside the public router and distributable model
+    bundle until its license is explicit and every exposed stem passes quality,
+    listening, latency, and cost gates.

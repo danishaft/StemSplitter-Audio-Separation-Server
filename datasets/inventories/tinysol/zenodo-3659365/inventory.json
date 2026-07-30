@@ -1,0 +1,26 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "c1a8586d50ae4ccedbbf23d9a346a25f",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3659365/files/TinySOL.tar.gz/content",
+      "path": "TinySOL.tar.gz",
+      "size_bytes": 897847990
+    },
+    {
+      "checksum": "5cdfa8938d34b98534d6087c270f3ecf",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/3659365/files/TinySOL_metadata.csv/content",
+      "path": "TinySOL_metadata.csv",
+      "size_bytes": 250520
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "tinysol",
+  "source_url": "https://zenodo.org/records/3659365",
+  "source_version": "zenodo-3659365",
+  "total_size_bytes": 898098510
+}

@@ -1,0 +1,31 @@
+{
+  "metadata_commit": "537bb7bad0601fc58e4fff8404f71658b86ef60e",
+  "metadata_repository": "https://github.com/marl/medleydb",
+  "schema_version": "1.0",
+  "songs": {
+    "LizNelson_Rainfall": {
+      "metadata_file": "medleydb/data/Metadata/LizNelson_Rainfall_METADATA.yaml",
+      "stems": {
+        "05": {
+          "family": "electric_guitar",
+          "label": "clean electric guitar"
+        }
+      }
+    },
+    "Phoenix_ScotchMorris": {
+      "metadata_file": "medleydb/data/Metadata/Phoenix_ScotchMorris_METADATA.yaml",
+      "stems": {
+        "02": {
+          "family": "wind_brass",
+          "label": "flute"
+        },
+        "03": {
+          "family": "strings",
+          "label": "violin"
+        }
+      }
+    }
+  },
+  "source_id": "medleydb_sample",
+  "source_version": "zenodo-1438309"
+}

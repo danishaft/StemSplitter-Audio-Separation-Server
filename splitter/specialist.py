@@ -13,12 +13,13 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+import requests
 
 from .config import DEMUCS_BIN, DEMUCS_JOBS, LOCAL_SPECIALIST_CONFIG, MVSEP_CONFIG, VENV_BIN
 from .util import ensure_dir
 
 try:
-    from .mvsep_client import MVSEPClient, MVSEPModelChain
+    from .mvsep_client import MVSEPClient, MVSEPError, MVSEPModelChain
     MVSEP_AVAILABLE = True
 except ImportError:
     MVSEP_AVAILABLE = False
@@ -430,9 +431,12 @@ def _build_mvsep_client() -> MVSEPClient:
         raise RuntimeError(reason or "mvsep_unavailable")
     return MVSEPClient(
         api_key=MVSEP_CONFIG.get("api_key"),
+        base_url=MVSEP_CONFIG["base_url"],
         timeout=MVSEP_CONFIG["timeout"],
         max_retries=MVSEP_CONFIG["max_retries"],
         retry_delay=MVSEP_CONFIG["retry_delay"],
+        poll_interval=MVSEP_CONFIG["poll_interval"],
+        max_polls=MVSEP_CONFIG["max_polls"],
     )
 
 
@@ -474,7 +478,7 @@ def _extract_mvsep_outputs(
             output_dir=output_dir,
             output_format="wav",
         )
-    except Exception:
+    except (MVSEPError, OSError, requests.RequestException):
         errors.append(f"{model}_failed")
         return extracted, errors
 
@@ -600,9 +604,11 @@ def build_instrument_substems_mvsep(
 
     for model, mapping in (
         ("MVSep-Piano", {"piano": ("piano",)}),
-        ("MVSep-Lead-Guitar", {"guitar": ("guitar",)}),
-        ("MVSep-Keys", {"keys_synth": ("keys_synth", "keys")}),
-        ("MVSep-Plucked-Strings", {"strings": ("strings",)}),
+        ("MVSep-Acoustic-Guitar", {"acoustic_guitar": ("acoustic-guitar", "acoustic_guitar", "guitar")}),
+        ("MVSep-Electric-Guitar", {"electric_guitar": ("electric-guitar", "electric_guitar", "guitar")}),
+        ("MVSep-Synth", {"synth": ("synth", "synthesizer")}),
+        ("MVSep-Bowed-Strings", {"strings": ("strings", "bowed-strings")}),
+        ("MVSep-Wind", {"wind": ("wind", "wind-brass", "brass")}),
     ):
         outputs, branch_errors = _extract_mvsep_outputs(
             client,
