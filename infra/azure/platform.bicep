@@ -132,6 +132,8 @@ resource environment 'Microsoft.App/managedEnvironments@2024-03-01' = {
   }
 }
 
+var apiName = '${resourcePrefix}-api'
+var apiHost = '${apiName}.${environment.properties.defaultDomain}'
 var image = '${registry.properties.loginServer}/stemsplitter:${imageTag}'
 var workloadIdentity = {
   type: 'UserAssigned'
@@ -189,7 +191,7 @@ var secretValues = empty(sentryDsn)
 var requiredEnvironment = [
   { name: 'APP_ENV', value: 'production' }
   { name: 'PUBLIC_API_URL', value: '${publicWebOrigin}/api' }
-  { name: 'TRUSTED_HOSTS', value: '*.azurecontainerapps.io' }
+  { name: 'TRUSTED_HOSTS', value: apiHost }
   { name: 'CORS_ALLOWED_ORIGINS', value: publicWebOrigin }
   { name: 'EDGE_MODE', value: 'cloudflare' }
   { name: 'EDGE_VERIFY_SECRET', secretRef: 'edge-verify-secret' }
@@ -228,7 +230,7 @@ var commonEnvironment = empty(sentryDsn)
   : concat(requiredEnvironment, [{ name: 'SENTRY_DSN', secretRef: 'sentry-dsn' }])
 
 resource api 'Microsoft.App/containerApps@2024-03-01' = if (deployApps) {
-  name: '${resourcePrefix}-api'
+  name: apiName
   location: location
   tags: tags
   identity: workloadIdentity
@@ -259,13 +261,21 @@ resource api 'Microsoft.App/containerApps@2024-03-01' = if (deployApps) {
           probes: [
             {
               type: 'Liveness'
-              httpGet: { path: '/health/live', port: 5000 }
+              httpGet: {
+                path: '/health/live'
+                port: 5000
+                httpHeaders: [{ name: 'Host', value: apiHost }]
+              }
               initialDelaySeconds: 20
               periodSeconds: 30
             }
             {
               type: 'Readiness'
-              httpGet: { path: '/health/ready', port: 5000 }
+              httpGet: {
+                path: '/health/ready'
+                port: 5000
+                httpHeaders: [{ name: 'Host', value: apiHost }]
+              }
               initialDelaySeconds: 10
               periodSeconds: 15
             }

@@ -201,17 +201,38 @@ jobs:
           python - <<'PY'
           import json
           import os
+          import time
+          import urllib.error
           import urllib.request
 
-          request = urllib.request.Request(
-              os.environ["API_ORIGIN"] + "/health/dependencies",
-              headers={"X-StemSplitter-Origin-Verify": os.environ["EDGE_VERIFY_SECRET"]},
-          )
-          with urllib.request.urlopen(request, timeout=30) as response:
-              payload = json.load(response)
-          if payload.get("status") != "ready":
-              raise SystemExit(payload)
-          print(json.dumps(payload, sort_keys=True))
+          url = os.environ["API_ORIGIN"] + "/health/dependencies"
+          headers = {
+              "X-StemSplitter-Origin-Verify": os.environ["EDGE_VERIFY_SECRET"],
+          }
+          last_error = "not_attempted"
+          for attempt in range(1, 13):
+              request = urllib.request.Request(url, headers=headers)
+              try:
+                  with urllib.request.urlopen(request, timeout=20) as response:
+                      payload = json.load(response)
+                  if payload.get("status") == "ready":
+                      print(json.dumps(payload, sort_keys=True))
+                      break
+                  last_error = json.dumps(payload, sort_keys=True)
+              except urllib.error.HTTPError as exc:
+                  body = exc.read().decode("utf-8", errors="replace")
+                  last_error = f"HTTP {exc.code}: {body[:500]}"
+              except Exception as exc:
+                  last_error = f"{type(exc).__name__}: {exc}"
+
+              if attempt < 12:
+                  print(
+                      f"Preflight attempt {attempt}/12 not ready: {last_error}",
+                      flush=True,
+                  )
+                  time.sleep(10)
+          else:
+              raise SystemExit(f"Production preflight failed: {last_error}")
           PY
 
   cloudflare:
