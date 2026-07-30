@@ -352,7 +352,7 @@ resource queueWorker 'Microsoft.App/containerApps@2024-03-01' = if (deployApps) 
 }
 
 resource maintenance 'Microsoft.App/containerApps@2024-03-01' = if (deployApps) {
-  name: '${resourcePrefix}-maintenance'
+  name: '${resourcePrefix}-maint'
   location: location
   tags: tags
   identity: workloadIdentity
