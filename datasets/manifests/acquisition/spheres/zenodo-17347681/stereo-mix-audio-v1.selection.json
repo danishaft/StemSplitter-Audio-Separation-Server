@@ -1,0 +1,26 @@
+{
+  "archive_count": 1,
+  "archives": [
+    {
+      "provider_checksum": "43a5f317d33645ea1446bbefbc931482",
+      "provider_checksum_algorithm": "md5",
+      "provider_path": "TheSpheresDataset-StereoMix.zip",
+      "provider_revision": null,
+      "sha256": "e5854d7d8466b37a60221f789ec82f2c0139c0d8b0871ee2220dafd0c8da084f",
+      "size_bytes": 2796218501
+    }
+  ],
+  "entry_count": 47,
+  "local_path": "datasets/staging/spheres/zenodo-17347681/selections/stereo-mix-audio-v1",
+  "local_retained": true,
+  "materialization_filter": "audio_only",
+  "provenance_sha256": "5ad145fbfdcf6f65602bfc4ba1c36cbf95163f6ef7debfdf30f883067c4b9d7f",
+  "provider_path": "bundle:stereo-mix-audio-v1",
+  "release_use": "allowed_with_attribution",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "selection_name": "stereo-mix-audio-v1",
+  "size_bytes": 2796218501,
+  "source_id": "spheres",
+  "source_version": "zenodo-17347681"
+}

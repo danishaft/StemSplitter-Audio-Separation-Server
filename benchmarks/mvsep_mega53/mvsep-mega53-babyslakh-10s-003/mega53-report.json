@@ -1,0 +1,118 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-25T00:14:49.429255+00:00",
+  "inference_seconds": 2.3186,
+  "job_id": "mvsep-mega53-babyslakh-10s-003",
+  "model_id": "oulianov/mvsep_mega_53",
+  "model_output_count": 53,
+  "model_revision": "911881e9f5c306e3f4f021fc6c4f61890ef32955",
+  "outputs": {
+    "acoustic_guitar": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stems": [
+        "acoustic-guitar"
+      ],
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/mega53_specialists/acoustic_guitar.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "electric_guitar": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stems": [
+        "electric-guitar"
+      ],
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/mega53_specialists/electric_guitar.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "piano": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stems": [
+        "piano"
+      ],
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/mega53_specialists/piano.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "strings": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stems": [
+        "strings"
+      ],
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/mega53_specialists/strings.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "synth": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stems": [
+        "synth"
+      ],
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/mega53_specialists/synth.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "wind": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stems": [
+        "saxophone"
+      ],
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/mega53_specialists/wind.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-003/analysis/mega53-report.json",
+    "provider": "s3",
+    "size_bytes": 3109
+  },
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "started_at": "2026-07-25T00:14:40.742763+00:00",
+  "status": "completed"
+}

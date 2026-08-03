@@ -1,0 +1,17 @@
+{
+  "local_path": "datasets/staging/medleydb_sample/zenodo-1438309/MedleyDB_Sample.tar.gz",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "dbb5b4ff5122233915d04cab4486ead1",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "MedleyDB_Sample.tar.gz",
+  "provider_revision": null,
+  "release_use": "permission_required",
+  "remote_readback_verified": false,
+  "rights_status": "noncommercial_research",
+  "schema_version": "1.0",
+  "sha256": "603fa6cc6fc8d6dd0f5ffcc5bd97b8b2c74820e2498b1e44a285308e772d7910",
+  "size_bytes": 415502011,
+  "source_id": "medleydb_sample",
+  "source_version": "zenodo-1438309"
+}

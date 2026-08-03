@@ -1,0 +1,958 @@
+{
+  "calibration_id": "synth-cleaner-v1",
+  "candidate_count": 72,
+  "candidates": [
+    {
+      "id": "9a9de66158c30faf980b",
+      "metadata": {
+        "clip_offset_seconds": 0.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "The_Western_Den|Like_You_Do",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Western_Den|Like_You_Do/Synth/Keys-Active DI.flac",
+        "source_sha256": "6dde82cdb40035df09788be48066ad916b9c076de80f3fd23db2bf65fe961bdd",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/9a9de66158c30faf980b.flac"
+    },
+    {
+      "id": "d93d757f5106292ed51e",
+      "metadata": {
+        "clip_offset_seconds": 266.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Digital_Humans|Electrvm",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Digital_Humans|Electrvm/Synth/22_Synth05.flac",
+        "source_sha256": "e6466e0f501feb55667fa6e03778f38a5ca5d41279910784f72504cd82cccf2c",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/d93d757f5106292ed51e.flac"
+    },
+    {
+      "id": "a31d80d1171a39cb067b",
+      "metadata": {
+        "clip_offset_seconds": 18.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Pablo_Martin|Progresivo_1,_El_Vuelo",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Pablo_Martin|Progresivo_1,_El_Vuelo/Synth/59_Synth4.flac",
+        "source_sha256": "86686f3c40914e93289be4c6d8ba362a3202e35edd6ad3cef1a3da4b30eee2f2",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/a31d80d1171a39cb067b.flac"
+    },
+    {
+      "id": "426685faff5b13f82ae8",
+      "metadata": {
+        "clip_offset_seconds": 50.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Imp_Act|Another_Life",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Imp_Act|Another_Life/Synth/31_Synth.flac",
+        "source_sha256": "586a870b11c6116239120a9db6cd43e20c87a30a43be14520bd50f3af7dad689",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/426685faff5b13f82ae8.flac"
+    },
+    {
+      "id": "eddcb2659072bc6a5c10",
+      "metadata": {
+        "clip_offset_seconds": 100.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "JAKUB_BYZIA|SODA_ENVY",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/JAKUB_BYZIA|SODA_ENVY/Synth/51_Synth3.flac",
+        "source_sha256": "9d906e8df20551c6ee280f4b671a1e68196389d62a92d2ee240b602d10a79a2a",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/eddcb2659072bc6a5c10.flac"
+    },
+    {
+      "id": "498b60dce88b06b0c8a0",
+      "metadata": {
+        "clip_offset_seconds": 28.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Imp_Act|Dying_Light",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Imp_Act|Dying_Light/Synth/22_Synth1.flac",
+        "source_sha256": "51b238687b9e52b9520d7d36b3f7b71d5ea796f676a380081cccf4a688196c21",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/498b60dce88b06b0c8a0.flac"
+    },
+    {
+      "id": "a3b7fc567e198b8bcbca",
+      "metadata": {
+        "clip_offset_seconds": 192.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "ChrisB|Future_Soil",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/ChrisB|Future_Soil/Synth/10_Synth5.flac",
+        "source_sha256": "b311c75aa215cabb62173274cd624c748aaf4583447c3a6b6ac1e79761dc3a25",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/a3b7fc567e198b8bcbca.flac"
+    },
+    {
+      "id": "da12dbaa3d72dd255741",
+      "metadata": {
+        "clip_offset_seconds": 138.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Imp_Act|Back_In_Time",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Imp_Act|Back_In_Time/Synth/21_Synth2.flac",
+        "source_sha256": "6a1aebf49bb1d4a12cb9cf79a68ea862159f11df3c152ef283cd004497c1b650",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/da12dbaa3d72dd255741.flac"
+    },
+    {
+      "id": "29e489a9cabbab11947d",
+      "metadata": {
+        "clip_offset_seconds": 2.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Nahum_Strickland|Steampunk_Siege",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Nahum_Strickland|Steampunk_Siege/Synth/18_Synth1.flac",
+        "source_sha256": "bfebe81ddf37d515b2996e0d03c0bdf49f72d8279e59cc7572a505ab0d41c2c9",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/29e489a9cabbab11947d.flac"
+    },
+    {
+      "id": "7d1c81b78477ac2e13ca",
+      "metadata": {
+        "clip_offset_seconds": 82.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Arcadian_Alone|The_Deathless_One",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Arcadian_Alone|The_Deathless_One/Synth/30_Synth1.flac",
+        "source_sha256": "ec96ca097e677ebde8b7cd7643c8dabf48c5cf798799f5b9528f5bf62b848c88",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/7d1c81b78477ac2e13ca.flac"
+    },
+    {
+      "id": "9862e9424b127329fe70",
+      "metadata": {
+        "clip_offset_seconds": 72.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Keystone_Angel|Afterglow",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Keystone_Angel|Afterglow/Synth/15_Pad.flac",
+        "source_sha256": "1d706aa3f30884e933b809b8a7bd07a5db0740b08a07cce6b9bce572eff1d364",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/9862e9424b127329fe70.flac"
+    },
+    {
+      "id": "47ccab674253cbf806c7",
+      "metadata": {
+        "clip_offset_seconds": 58.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "The_Mountaineering_Club_Orchestra|Cruising_The_Ice",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Mountaineering_Club_Orchestra|Cruising_The_Ice/Synth/15_Synth.flac",
+        "source_sha256": "3aa088c26d64d3d6458a8446843284001af0deee94aa342c5523ea849e0f2f44",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/47ccab674253cbf806c7.flac"
+    },
+    {
+      "id": "a782ee331896ad58382e",
+      "metadata": {
+        "clip_offset_seconds": 256.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Catfolkin|Sant_Jordi_v2.0",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Catfolkin|Sant_Jordi_v2.0/Synth/16_Synth.flac",
+        "source_sha256": "616ffc4c59e386dbf8a6c62252ddea758d86697e7c1e363d0343857b1b17f24f",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/a782ee331896ad58382e.flac"
+    },
+    {
+      "id": "50c3426fb49bb85b4e0e",
+      "metadata": {
+        "clip_offset_seconds": 166.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Ben_Flowers|NEW!_'The_Calling",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ben_Flowers|NEW!_'The_Calling/Synth/03_Synth1.flac",
+        "source_sha256": "d732a66fb635746235a8463acd82581e3feb3c45e3cb2a284315258ab6af904b",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/50c3426fb49bb85b4e0e.flac"
+    },
+    {
+      "id": "40bd902625897be08c54",
+      "metadata": {
+        "clip_offset_seconds": 226.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Ripe|Little_Lighter",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ripe|Little_Lighter/Synth/Keys-Juno-Passive DI.flac",
+        "source_sha256": "1078c1d97b0b72947d4111843b6ca0af4c7f13f92776247ca225d2fff52e872b",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/40bd902625897be08c54.flac"
+    },
+    {
+      "id": "1b3a5039e1f74961297e",
+      "metadata": {
+        "clip_offset_seconds": 136.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Raft_Monk|Tiring",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Raft_Monk|Tiring/Synth/29_Synth.flac",
+        "source_sha256": "d85cfbc22167c8720caebe1298b9198e2cd1ada7cb6f01bd64f4bca19dd33ef8",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/1b3a5039e1f74961297e.flac"
+    },
+    {
+      "id": "089c66f751e29b24df37",
+      "metadata": {
+        "clip_offset_seconds": 22.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "M.E.R.C._Music|Knockout",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/M.E.R.C._Music|Knockout/Synth/21_SynthPad1.flac",
+        "source_sha256": "fdff9c48152a374580fd59b6f0aa1757b6d491bfc9fe80c8cf75f90bf4ec6c7c",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/089c66f751e29b24df37.flac"
+    },
+    {
+      "id": "029583f6008668dd0c5b",
+      "metadata": {
+        "clip_offset_seconds": 48.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Tim_Taler|Stalker",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Tim_Taler|Stalker/Synth/33_Keys01.flac",
+        "source_sha256": "7d67cce87b9ec7e8bdfec2e2b698c1cdd30a7bd8c2855e74a68f0c48c28db37f",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/029583f6008668dd0c5b.flac"
+    },
+    {
+      "id": "e906a5f22ec24a4e19ea",
+      "metadata": {
+        "clip_offset_seconds": 92.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Ben_Carrigan|We'll_Talk_About_It_All_Tonight",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ben_Carrigan|We'll_Talk_About_It_All_Tonight/Synth/24_Keyboard.flac",
+        "source_sha256": "341c0e9ab2885ecf9677388700db4f55bcd822febba7de1d71d5155a153f860b",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/e906a5f22ec24a4e19ea.flac"
+    },
+    {
+      "id": "138cf66913b1b5e1e193",
+      "metadata": {
+        "clip_offset_seconds": 258.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Unicorn_Rodeo|Maybe",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Unicorn_Rodeo|Maybe/Synth/48_Synth2.flac",
+        "source_sha256": "84c5c4fd2a6fafe3befa2121dccd643c07bb588e2a1ab734b23cb7c1fd932946",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/138cf66913b1b5e1e193.flac"
+    },
+    {
+      "id": "d212228d34b72df2ddab",
+      "metadata": {
+        "clip_offset_seconds": 88.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Marc_Ellason|Upside_Down",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Marc_Ellason|Upside_Down/Synth/20_Synth.flac",
+        "source_sha256": "09e46ad8d3ad8cd1b1f49a23ad19232b01be39340ff6add38986577cb7edfed9",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/d212228d34b72df2ddab.flac"
+    },
+    {
+      "id": "ba5aefaadd5758234c85",
+      "metadata": {
+        "clip_offset_seconds": 0.0,
+        "clip_seconds": 24.0,
+        "label": "positive",
+        "song_id": "Mike_Skalandunas|Sun_Drenched",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mike_Skalandunas|Sun_Drenched/Synth/11_Pad1.flac",
+        "source_sha256": "cc68a6ef0fcec375284f7c76fbd16fb8a2ae39de56e8c19652021bc42c4ff3c5",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/positive/ba5aefaadd5758234c85.flac"
+    },
+    {
+      "id": "f08f98bee63eba6d4adc",
+      "metadata": {
+        "clip_offset_seconds": 136.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Iron_Point|NEW!_'Expired",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Iron_Point|NEW!_'Expired/Gtr/EG/019 RHY GT Adam Room.flac",
+        "source_sha256": "9779ac117d60c99d8ea9437f56aa151dfb0faed3ba2c55c7f2cf32c753532c53",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/f08f98bee63eba6d4adc.flac"
+    },
+    {
+      "id": "64398c5df5b3f00f587d",
+      "metadata": {
+        "clip_offset_seconds": 164.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Dark_Ride|Deny_Control",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Dark_Ride|Deny_Control/Gtr/EG/21_ElecGtr2.flac",
+        "source_sha256": "c716cd782f791698a6b1b9680ef697f129faf8f3b9ae6b8a94d78ea7794cc2be",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/64398c5df5b3f00f587d.flac"
+    },
+    {
+      "id": "d78ca4cfa768fedef6c8",
+      "metadata": {
+        "clip_offset_seconds": 176.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Anna_Blanton|Rachel",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Anna_Blanton|Rachel/Orch/STR/07_Viola.flac",
+        "source_sha256": "fd466e44b6faa099f4380d6d137afd7163217cf5372bff19129560e30067ba35",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/d78ca4cfa768fedef6c8.flac"
+    },
+    {
+      "id": "fcbeb6df86e4863b1c2d",
+      "metadata": {
+        "clip_offset_seconds": 120.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Mikaela_Davis_&_Southern_Star|Home_In_The_Country",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mikaela_Davis_&_Southern_Star|Home_In_The_Country/Gtr/EG/GTR 2 TF29.flac",
+        "source_sha256": "4b38faf5e5738467218deb62462980dfb4842bdd319d03fdb1f361e4794994e0",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/fcbeb6df86e4863b1c2d.flac"
+    },
+    {
+      "id": "66a96affa63e53326aa8",
+      "metadata": {
+        "clip_offset_seconds": 194.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "MekaPhil|Timeless_(Part_2)",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/MekaPhil|Timeless_(Part_2)/Orch/BR/20_HornsDT.flac",
+        "source_sha256": "1d730c62a5778429fe1e9286a3321e3ffd09e9363557204bdfd41574bf976709",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/66a96affa63e53326aa8.flac"
+    },
+    {
+      "id": "5bed192afe59b83b5c8a",
+      "metadata": {
+        "clip_offset_seconds": 268.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Nerve_9|Pray_For_The_Rain",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Nerve_9|Pray_For_The_Rain/Gtr/EG/13_ElecGtr01.flac",
+        "source_sha256": "1b645927d3a9dc0211b3742f5cf9af3efa1fcd7df5a793850602980bd835b8d4",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/5bed192afe59b83b5c8a.flac"
+    },
+    {
+      "id": "40891af10f406176b359",
+      "metadata": {
+        "clip_offset_seconds": 54.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "The_Apprehended|Still_Flyin",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/The_Apprehended|Still_Flyin/Gtr/EG/11_ElecGtr01.flac",
+        "source_sha256": "979d002f47815494a42519959d39c6804544eb3b494cbf3b5d580cbcb744a2d0",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/40891af10f406176b359.flac"
+    },
+    {
+      "id": "525cbb2c5d6789934243",
+      "metadata": {
+        "clip_offset_seconds": 64.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Zwiepack|Air",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Zwiepack|Air/Orch/WW/05_SaxMic2_PeerArray.flac",
+        "source_sha256": "1483f3e189dc0db09a42543cbee851a7328100082cf76526d8f3b54ce0a3697b",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/525cbb2c5d6789934243.flac"
+    },
+    {
+      "id": "4d715b565261caaeca9f",
+      "metadata": {
+        "clip_offset_seconds": 54.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Death_Of_A_Romantic|The_Well",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Death_Of_A_Romantic|The_Well/Gtr/EG/11_ElecGtr01.flac",
+        "source_sha256": "979d002f47815494a42519959d39c6804544eb3b494cbf3b5d580cbcb744a2d0",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/4d715b565261caaeca9f.flac"
+    },
+    {
+      "id": "e25db9503d15ad3331da",
+      "metadata": {
+        "clip_offset_seconds": 208.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "In_This_Place|1125",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/In_This_Place|1125/Gtr/EG/32_ElecGtr2.flac",
+        "source_sha256": "6973c39ed0b340419591ae1ed810e5e6e9505d08372501c47a90c715065cfc55",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/e25db9503d15ad3331da.flac"
+    },
+    {
+      "id": "829e241ed66cca61d715",
+      "metadata": {
+        "clip_offset_seconds": 54.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Guarna|Roma",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Guarna|Roma/Gtr/EG/09_ElecGtr.flac",
+        "source_sha256": "cb99d4b9012d8e018661802e510a0dd0131b4d4cf731ebc5836bb1646d896141",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/829e241ed66cca61d715.flac"
+    },
+    {
+      "id": "3fcc059feaf04dba17dd",
+      "metadata": {
+        "clip_offset_seconds": 238.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Ghost_Note|Ja_Make_Ya_Dance",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ghost_Note|Ja_Make_Ya_Dance/Orch/WW/Horns-Sax_Flute-M81.flac",
+        "source_sha256": "fc67ecd27edd29ad67b1e0c37f2d62eba5936473158a7d2c151b9cd0b15ba811",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/3fcc059feaf04dba17dd.flac"
+    },
+    {
+      "id": "39ab6c231df7c1bf88b8",
+      "metadata": {
+        "clip_offset_seconds": 86.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Street_Noise|You_Are_The_One",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Street_Noise|You_Are_The_One/Gtr/EG/08_ElecGtr2.flac",
+        "source_sha256": "36862a748c51d8c2191342503ed4e6ae464e19c89e07c333bfa82f7dde90f16f",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/39ab6c231df7c1bf88b8.flac"
+    },
+    {
+      "id": "c472e1e37a19642e0a79",
+      "metadata": {
+        "clip_offset_seconds": 178.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Mistrusted|Trapped",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mistrusted|Trapped/Gtr/EG/11_ElecGtr1.flac",
+        "source_sha256": "b80a682c830a5c28b969b227281b1cc1e8c9c84f1ef0711c107594285c139774",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/c472e1e37a19642e0a79.flac"
+    },
+    {
+      "id": "4dfa257ef5744e1581ae",
+      "metadata": {
+        "clip_offset_seconds": 34.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Street_Noise|I'd_Rather_Be_Drinkin",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Street_Noise|I'd_Rather_Be_Drinkin/Gtr/EG/10_ElecGtr1.flac",
+        "source_sha256": "62a6f1b7ea1a9b5a17fe18b38b80ecd12880f38df3a29707a31b76e95cb2f319",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/4dfa257ef5744e1581ae.flac"
+    },
+    {
+      "id": "8b009e45b216ec15b5b7",
+      "metadata": {
+        "clip_offset_seconds": 134.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Triviul|Angelsaint",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Triviul|Angelsaint/Orch/STR/04_ViolinDI2.flac",
+        "source_sha256": "c8e9e1e033b88177157513a3aabd157b10806c1fdf525becf51ddc9683cad4ea",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/8b009e45b216ec15b5b7.flac"
+    },
+    {
+      "id": "f0aeb2ec1f72584a8b9d",
+      "metadata": {
+        "clip_offset_seconds": 60.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Hazael|A_Mi_Lado",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Hazael|A_Mi_Lado/Gtr/EG/17_ElecGtr2.flac",
+        "source_sha256": "959256b80bb88ed42d6cc18575e935f31bd6610a172bd64929572b2f70902e8b",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/f0aeb2ec1f72584a8b9d.flac"
+    },
+    {
+      "id": "5a71f5edf2522dfc9876",
+      "metadata": {
+        "clip_offset_seconds": 58.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Cotton_Drifting|Rainy_Day_II",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Cotton_Drifting|Rainy_Day_II/Gtr/EG/15_ElecGtr1.flac",
+        "source_sha256": "fe5e6ff10690a699d59bfeffb150c198dfb8cd8c815bed048718b5549a7271da",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/5a71f5edf2522dfc9876.flac"
+    },
+    {
+      "id": "585c67d1c08895585c66",
+      "metadata": {
+        "clip_offset_seconds": 178.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Random_Somebody|Crazy_For_Me",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Random_Somebody|Crazy_For_Me/Gtr/EG/11_ElecGtr1.flac",
+        "source_sha256": "b80a682c830a5c28b969b227281b1cc1e8c9c84f1ef0711c107594285c139774",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/585c67d1c08895585c66.flac"
+    },
+    {
+      "id": "0867d619854e867c8cc0",
+      "metadata": {
+        "clip_offset_seconds": 174.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Skyeez_&_The_Whiteflies|Banana_Split",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Skyeez_&_The_Whiteflies|Banana_Split/Gtr/EG/30_ElecGtr3.flac",
+        "source_sha256": "e565aa001d09db15e797b10f0cab3d53ba0065bf472624b2226f2ad714e06ed1",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/0867d619854e867c8cc0.flac"
+    },
+    {
+      "id": "4157c9c667c364a74993",
+      "metadata": {
+        "clip_offset_seconds": 50.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Ghostly_Beard|Fool",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ghostly_Beard|Fool/Gtr/EG/15_ElecGtr01.flac",
+        "source_sha256": "0b420a46adcf0a7a6eabde5f5fb4e2e357d8fe2fd4c2f2cdb4ddff06775d16eb",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/4157c9c667c364a74993.flac"
+    },
+    {
+      "id": "d08b9ab51268974d94cc",
+      "metadata": {
+        "clip_offset_seconds": 146.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Kangoro|Bitch_Is_Paranoid",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Kangoro|Bitch_Is_Paranoid/Gtr/EG/35_ElecGtr3.flac",
+        "source_sha256": "c6c2e85db751180ead8cdbc91f9b5da75279cb5af227154d1a77789bb5ae06bf",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/d08b9ab51268974d94cc.flac"
+    },
+    {
+      "id": "9b498efc342c6095c014",
+      "metadata": {
+        "clip_offset_seconds": 240.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Georgia_Wonder|Siren",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Georgia_Wonder|Siren/Gtr/EG/32_ElecGtr01.flac",
+        "source_sha256": "3d5e62bb299858bce31e621eb9a48340945493dcff5b1c7ac69680663477f329",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/9b498efc342c6095c014.flac"
+    },
+    {
+      "id": "faf9f9a88b5930641dd4",
+      "metadata": {
+        "clip_offset_seconds": 58.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Mustafa_Albazy|Shela_Ya_Marhaba",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Mustafa_Albazy|Shela_Ya_Marhaba/Gtr/EG/15_ElecGtr1.flac",
+        "source_sha256": "fe5e6ff10690a699d59bfeffb150c198dfb8cd8c815bed048718b5549a7271da",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/faf9f9a88b5930641dd4.flac"
+    },
+    {
+      "id": "755d18be88ff6a3041bf",
+      "metadata": {
+        "clip_offset_seconds": 140.0,
+        "clip_seconds": 24.0,
+        "label": "confuser",
+        "song_id": "Ricardo_Santiago|Dream_No._12",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ricardo_Santiago|Dream_No._12/Orch/STR/11_Strings.flac",
+        "source_sha256": "f7311464033ed95b2930293afbe799ef77cfe2d797837eb6400aa025821c90b2",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/confuser/755d18be88ff6a3041bf.flac"
+    },
+    {
+      "id": "ce9324d4c959b2bbfa81",
+      "metadata": {
+        "clip_offset_seconds": 174.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Ripe|4_Out_Of_10",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ripe|4_Out_Of_10/Rhy/DK/Drums-Overhead-Ar51.flac",
+        "source_sha256": "e243f8b6f43e30bc1095462a241b4364c3337b23eb762e69db8cdb271a1d7bac",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/ce9324d4c959b2bbfa81.flac"
+    },
+    {
+      "id": "7b2ede7789beb7dd3a79",
+      "metadata": {
+        "clip_offset_seconds": 144.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Angela_Thomas_Wade|Milk_Cow_Blues",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Angela_Thomas_Wade|Milk_Cow_Blues/Rhy/DK/04_Overheads.flac",
+        "source_sha256": "fca875114f0afd4686174173de65f2506b7f4f8fa8837731e55c583d1aed4236",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/7b2ede7789beb7dd3a79.flac"
+    },
+    {
+      "id": "33b0ea7cf8712c20f7da",
+      "metadata": {
+        "clip_offset_seconds": 4.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Marc_Ellason|Treadmills",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Marc_Ellason|Treadmills/Rhy/DK/02_Drums2.flac",
+        "source_sha256": "683d27b71a1443db03cace0feeec3df1dd41fd922525bef73113e74bbb5e8367",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/33b0ea7cf8712c20f7da.flac"
+    },
+    {
+      "id": "cc23e1692ba225a1edd7",
+      "metadata": {
+        "clip_offset_seconds": 784.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Ethan_Winer|Cello_Concerto_in_A_Minor",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Ethan_Winer|Cello_Concerto_in_A_Minor/Rhy/PERC/18_SnareDrum.flac",
+        "source_sha256": "9701b82f60b53a959a79360b436cad752561328aa319b789ba06c8faed76a2f6",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/cc23e1692ba225a1edd7.flac"
+    },
+    {
+      "id": "19fc2874ad474a43c2fe",
+      "metadata": {
+        "clip_offset_seconds": 144.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Remember_Jones|Don't_Put_Me_On_Hold",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Remember_Jones|Don't_Put_Me_On_Hold/Rhy/DK/Drums-Overhead-ELA M 260.flac",
+        "source_sha256": "bc38ce305dac92d79cefecb2a9f2f383b80e5ba93bf557202943ffa601fca9ba",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/19fc2874ad474a43c2fe.flac"
+    },
+    {
+      "id": "741a4e359b0c84b3194c",
+      "metadata": {
+        "clip_offset_seconds": 138.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Jeffrey_Hayat|Alex_The_Adventurer",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jeffrey_Hayat|Alex_The_Adventurer/Rhy/DK/06_Cymbals.flac",
+        "source_sha256": "f345d80c0b5df0324cd3061d6cace26c49948579f8c203d4466f4ded91b00ab1",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/741a4e359b0c84b3194c.flac"
+    },
+    {
+      "id": "825f4b9642a143ea9162",
+      "metadata": {
+        "clip_offset_seconds": 10.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Scott_Elliott|Aeternum_Vale",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Scott_Elliott|Aeternum_Vale/Voc/BV/46_Choir.flac",
+        "source_sha256": "efe9d314409405bead7889d28c1fa1643b9e40f6707345bcadaea8456c449a61",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/825f4b9642a143ea9162.flac"
+    },
+    {
+      "id": "0ab91731e5385a022a43",
+      "metadata": {
+        "clip_offset_seconds": 134.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Domestic_Research_Partners|NEW!_'Old_Empty_Nest",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Domestic_Research_Partners|NEW!_'Old_Empty_Nest/Rhy/DK/09_Overheads.flac",
+        "source_sha256": "ec1afbea65dac667bc50986d6a3b8ca42ef3d3b90bf404ae88b67146b34f4840",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/0ab91731e5385a022a43.flac"
+    },
+    {
+      "id": "7e233ac37926c5aca28c",
+      "metadata": {
+        "clip_offset_seconds": 198.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Tall_Heights|Spirit_Cold",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Tall_Heights|Spirit_Cold/Rhy/DK/Room-AR70.flac",
+        "source_sha256": "fb1a30378c7cba551e997fa3787fda0807bf8f21adb194e233b85a51a9cba0f8",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/7e233ac37926c5aca28c.flac"
+    },
+    {
+      "id": "956776247901735adc24",
+      "metadata": {
+        "clip_offset_seconds": 136.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Johnny_Swain|Freedom_(Lay_Down_My_Live_For_You)",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Johnny_Swain|Freedom_(Lay_Down_My_Live_For_You)/Rhy/DK/06_DrumsRoom.flac",
+        "source_sha256": "861253b468a77bc806ffb27e91258e001615b60950e313b7a99e632f1ef01cce",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/956776247901735adc24.flac"
+    },
+    {
+      "id": "45b4660749fe7d1118d4",
+      "metadata": {
+        "clip_offset_seconds": 98.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Wolf's_Head_&_Vixen_Morris_Band|Lament",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Wolf's_Head_&_Vixen_Morris_Band|Lament/Rhy/DK/01_Drum.flac",
+        "source_sha256": "3b6c7d9c2155f00643a8d3e8e15b2a653561402e475e18e89ac1415a981fe739",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/45b4660749fe7d1118d4.flac"
+    },
+    {
+      "id": "793972772ef10abe160d",
+      "metadata": {
+        "clip_offset_seconds": 108.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Lindy_Hip_Big_Band|Makin'_Whoopee",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Lindy_Hip_Big_Band|Makin'_Whoopee/Voc/LV/20_LeadVox.flac",
+        "source_sha256": "2053120ce5b4a1b5a85dc67b624486f91509b3c5dd504db1c138e7e0a48fac2a",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/793972772ef10abe160d.flac"
+    },
+    {
+      "id": "15c30683cf6c7f5be58d",
+      "metadata": {
+        "clip_offset_seconds": 118.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Pepelpovetru|Tochka",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Pepelpovetru|Tochka/Rhy/DK/11_Drumkit_Overheads.flac",
+        "source_sha256": "f715ae62c25571c79657258b6c5efda0c031b5703f2db4fcfa066f7609cd8fa9",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/15c30683cf6c7f5be58d.flac"
+    },
+    {
+      "id": "f273adc0ba0423657f31",
+      "metadata": {
+        "clip_offset_seconds": 254.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Turkuaz|Tip_Toe_Through_The_Crypto",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Turkuaz|Tip_Toe_Through_The_Crypto/Rhy/DK/Drums-Over-Ar51.flac",
+        "source_sha256": "1119d4301e9f603932b117df214e70b7639903d7383844f0842926fc83106672",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/f273adc0ba0423657f31.flac"
+    },
+    {
+      "id": "59a60796af731f15cb4c",
+      "metadata": {
+        "clip_offset_seconds": 158.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Chad_Hollister_Band|Eyes",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Chad_Hollister_Band|Eyes/Rhy/PERC/Percussion-Overhead-M60.flac",
+        "source_sha256": "a3343659f32a7b630f2f4d2b563371b797457fd5a9d4f69b2c510f5254f9fbe6",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/59a60796af731f15cb4c.flac"
+    },
+    {
+      "id": "9c6fefba8238b5a26363",
+      "metadata": {
+        "clip_offset_seconds": 182.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Whitten_And._Williams|How_To_Make_A_Mirror",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Whitten_And._Williams|How_To_Make_A_Mirror/Rhy/DK/01_Drums.flac",
+        "source_sha256": "88db65f74419e6e54da2fd3cf512ee936c9b6c8096f82a51b1db5ce83e843adc",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/9c6fefba8238b5a26363.flac"
+    },
+    {
+      "id": "1dbc02bede58f65d94b7",
+      "metadata": {
+        "clip_offset_seconds": 136.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Turbosauro|Magilla",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Turbosauro|Magilla/Rhy/DK/06_DrumsRoom.flac",
+        "source_sha256": "861253b468a77bc806ffb27e91258e001615b60950e313b7a99e632f1ef01cce",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/1dbc02bede58f65d94b7.flac"
+    },
+    {
+      "id": "da7f9568558cc9f69a87",
+      "metadata": {
+        "clip_offset_seconds": 176.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Swing_Bazar|Fleche_D'Or",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Swing_Bazar|Fleche_D'Or/Bass/01_BassMic1.flac",
+        "source_sha256": "1731eade0baf9dde20d987ea8d260c0d2b7e93c3f0dced045d0cd57f668e8faf",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/da7f9568558cc9f69a87.flac"
+    },
+    {
+      "id": "c2f0f8c9b33f8087b643",
+      "metadata": {
+        "clip_offset_seconds": 58.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Alejo_Granados|Rumba_Chonta",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Alejo_Granados|Rumba_Chonta/Rhy/PERC/12_Marimba.flac",
+        "source_sha256": "34c36a534e6fc6e01b8ee96335d709d565fa38f36bc43c2dc926ecb2a6b7eb52",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/c2f0f8c9b33f8087b643.flac"
+    },
+    {
+      "id": "0b33f5325df2507d59f1",
+      "metadata": {
+        "clip_offset_seconds": 388.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Six_Fox_Whiskey|Hope_And_The_Sea",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Six_Fox_Whiskey|Hope_And_The_Sea/Voc/BV/Vocals-BG Sax-M81.flac",
+        "source_sha256": "d1398261e226d4ec3edfa06f8f33596c8f92afd0640e6fc7424712b1b7f2b234",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/0b33f5325df2507d59f1.flac"
+    },
+    {
+      "id": "0829fe51b1a23b550ca0",
+      "metadata": {
+        "clip_offset_seconds": 104.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Lindy_Hip_Big_Band|The_Opener",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Lindy_Hip_Big_Band|The_Opener/Rhy/DK/03_Overhead.flac",
+        "source_sha256": "b79227eb77802d1a07c614cd106951e72c8684f825d0dc5927f302844a0b1bfd",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/0829fe51b1a23b550ca0.flac"
+    },
+    {
+      "id": "34b299baf85b27513c3e",
+      "metadata": {
+        "clip_offset_seconds": 202.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Imp_Act|The_Island_Of_Alsocanla",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Imp_Act|The_Island_Of_Alsocanla/Rhy/DK/08_Overheads.flac",
+        "source_sha256": "34c65dd9c61a16ea45726e6b0459a64f736f5dfaf843a51b2ad697bceb7439d2",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/34b299baf85b27513c3e.flac"
+    },
+    {
+      "id": "4671319ff0b0fbcccb27",
+      "metadata": {
+        "clip_offset_seconds": 24.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Jesse_Joy|Nearly_There",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Jesse_Joy|Nearly_There/Voc/LV/07_LeadVox.flac",
+        "source_sha256": "a261a618db21be2960449c0cdc2577ac5f8572b524c1bbff9bbb193e8d94af3c",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/4671319ff0b0fbcccb27.flac"
+    },
+    {
+      "id": "8a700c3f489d28e9dd8c",
+      "metadata": {
+        "clip_offset_seconds": 136.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Rovers_Ahead|It's_In_These_Times",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Rovers_Ahead|It's_In_These_Times/Rhy/DK/05_Overheads.flac",
+        "source_sha256": "978c235b03af1de0bb91865815b83cb5147e77c399828e4258a7862dd86cb0c2",
+        "split": "calibration"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/8a700c3f489d28e9dd8c.flac"
+    },
+    {
+      "id": "b923dfbb33656736e3ba",
+      "metadata": {
+        "clip_offset_seconds": 254.0,
+        "clip_seconds": 24.0,
+        "label": "target_absent",
+        "song_id": "Turkuaz|Lookin'_Tough,_Feelin'_Good",
+        "source_path": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1/Turkuaz|Lookin'_Tough,_Feelin'_Good/Rhy/DK/Drums-Over-Ar51.flac",
+        "source_sha256": "1119d4301e9f603932b117df214e70b7639903d7383844f0842926fc83106672",
+        "split": "validation"
+      },
+      "path": "./datasets/calibration/synth-cleaner-v1/target_absent/b923dfbb33656736e3ba.flac"
+    }
+  ],
+  "clip_seconds": 24.0,
+  "clip_selection": "highest_energy_fixed_duration",
+  "counts": {
+    "confuser:calibration": 18,
+    "confuser:validation": 7,
+    "positive:calibration": 16,
+    "positive:validation": 6,
+    "target_absent:calibration": 18,
+    "target_absent:validation": 7
+  },
+  "failures": [],
+  "schema_version": "1.0",
+  "seed": "synth-cleaner-v1",
+  "source_id": "rawstems",
+  "source_root": "./datasets/staging/rawstems/current-pinned-at-acquisition/selections/rawstems-curated-specialists-v1",
+  "split_policy": "song_disjoint_across_labels_and_splits"
+}

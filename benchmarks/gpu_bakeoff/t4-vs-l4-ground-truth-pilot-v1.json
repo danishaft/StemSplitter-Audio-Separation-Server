@@ -1,0 +1,38 @@
+{
+  "baseline_gpu": "T4",
+  "candidates": {
+    "L4": {
+      "actual_interval_cost_usd": 0.0741687,
+      "avg_gpu_seconds": 78.363,
+      "avg_ground_truth_si_sdr": 9.9624,
+      "completed_count": 1,
+      "dominated": false,
+      "estimated_base_gpu_cost_usd": 0.017397,
+      "max_gpu_seconds": 78.363,
+      "meets_latency_target": false,
+      "quality_delta_si_sdr": 0.0,
+      "quality_within_tolerance": true,
+      "song_count": 1
+    },
+    "T4": {
+      "actual_interval_cost_usd": 0.10091097,
+      "avg_gpu_seconds": 90.753,
+      "avg_ground_truth_si_sdr": 9.9624,
+      "completed_count": 1,
+      "dominated": true,
+      "dominated_by": "L4",
+      "estimated_base_gpu_cost_usd": 0.014883,
+      "max_gpu_seconds": 90.753,
+      "meets_latency_target": false,
+      "quality_delta_si_sdr": 0.0,
+      "quality_within_tolerance": true,
+      "song_count": 1
+    }
+  },
+  "corpus_id": "unit-economics-pilot-v1",
+  "latency_target_seconds": 60.0,
+  "quality_tolerance_si_sdr": 0.05,
+  "selected_song_ids": [
+    "babyslakh-track00011"
+  ]
+}

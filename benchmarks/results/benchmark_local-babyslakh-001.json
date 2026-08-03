@@ -1,0 +1,101 @@
+{
+  "avg_broad_quality": 0.9416666666666668,
+  "avg_derived_quality": 0.9075,
+  "avg_specialist_quality": 0.0,
+  "benchmark_id": "local-babyslakh-001",
+  "corpus_size": 1,
+  "created_at": "2026-03-24T18:37:43.953520Z",
+  "failure_reasons": {},
+  "previous_benchmark_id": null,
+  "publish_rate_broad": 1.0,
+  "publish_rate_derived": 0.5714285714285714,
+  "publish_rate_specialist": 0.0,
+  "quality_delta": null,
+  "results": [
+    {
+      "avg_broad_quality": 0.9416666666666668,
+      "avg_derived_quality": 0.9075,
+      "avg_specialist_quality": 0.0,
+      "difficulty": "easy",
+      "error_message": null,
+      "pipeline_mode": "local_specialist",
+      "published_broad_stems": [
+        "bass",
+        "drums",
+        "instrumental",
+        "other",
+        "piano",
+        "vocals"
+      ],
+      "published_derived_stems": [
+        "fx",
+        "hats_cymbals",
+        "percussion",
+        "snare_clap"
+      ],
+      "published_midi": [
+        "bass",
+        "chords_guide",
+        "melody"
+      ],
+      "published_specialist_substems": [],
+      "rejected_derived": [
+        "keys_synth",
+        "kick",
+        "pads_strings"
+      ],
+      "rejected_extended": [
+        "guitar"
+      ],
+      "rejected_specialist": [],
+      "remote_adapter_status": "not_requested",
+      "song_name": "mix",
+      "success": true,
+      "total_duration_seconds": 4493.779309988022
+    }
+  ],
+  "stem_family_metrics": {
+    "bass": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "drums": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "fx": {
+      "avg_quality": 0.952,
+      "count": 1
+    },
+    "hats_cymbals": {
+      "avg_quality": 0.967,
+      "count": 1
+    },
+    "instrumental": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "other": {
+      "avg_quality": 1.0,
+      "count": 1
+    },
+    "percussion": {
+      "avg_quality": 0.898,
+      "count": 1
+    },
+    "piano": {
+      "avg_quality": 0.65,
+      "count": 1
+    },
+    "snare_clap": {
+      "avg_quality": 0.813,
+      "count": 1
+    },
+    "vocals": {
+      "avg_quality": 1.0,
+      "count": 1
+    }
+  },
+  "success_rate": 1.0,
+  "total_duration_seconds": 4493.7797882556915
+}

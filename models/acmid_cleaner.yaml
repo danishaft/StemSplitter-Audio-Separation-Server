@@ -1,0 +1,55 @@
+schema_version: 1
+status: official_reproduction_under_validation
+source:
+  repository: https://github.com/scottishfold0621/ACMID
+  revision: ac7b55f86d5b53c85a7739acb9e47f64fdfb7b59
+  license: Apache-2.0
+runtime:
+  dasheng_version: 0.0.9
+  sample_rate: 16000
+  chunk_seconds: 3.0
+  batch_size: 32
+  threshold: 0.995
+  hidden_dimensions:
+    - 256
+    - 128
+    - 64
+encoder:
+  architecture:
+    source: https://zenodo.org/records/11511780/files/dasheng_base.pt
+    download_url: https://zenodo.org/records/11511780/files/dasheng_base.pt?download=1
+    loader: dasheng.pretrained.pretrained.Dasheng
+  weights:
+    path: acmid/models/dasheng_audioset_mAP497.pt
+    source: https://zenodo.org/records/13315686
+    filename: dasheng_audioset_mAP497.pt
+    sha256: 03d6b814933cc8cb13e8260e7e6ace58dceb361ec8ea33b3e41ee34c9788f7f4
+classifiers:
+  acoustic_guitar:
+    path: acmid/models/model/Instruments_cleaner_dasheng_acoustic_guitar.pth
+    sha256: b33f7d319a322736793c493e51f5443c4129bb5c2a180f08479a01d72319ba1c
+  bass:
+    path: acmid/models/model/Instruments_cleaner_dasheng_bass.pth
+    sha256: 5a59c22c9a6366230c82c767ab9da63c19422bcfbb7382cb2750318dc1306487
+  drums:
+    path: acmid/models/model/Instruments_cleaner_dasheng_drums.pth
+    sha256: 117cdee74400bff0c3d41a9de75b4bf229b8b1d3c0aa64ea3a51c5d78851a330
+  electric_guitar:
+    path: acmid/models/model/Instruments_cleaner_dasheng_electric_guitar.pth
+    sha256: 8a0c5edf91ed709ecd4f7395313617a015588df536c90f2d2a8972fe63073642
+  piano:
+    path: acmid/models/model/Instruments_cleaner_dasheng_piano.pth
+    sha256: faab11a642293a85c6a311b5c1da70dadc143a466a3b2f34d5871c71484dd374
+  strings:
+    path: acmid/models/model/Instruments_cleaner_dasheng_strings.pth
+    sha256: 24be893a7bf3f9718bc35dd738311373efecb6e273da8e251b7d369a67668aa3
+  wind:
+    path: acmid/models/model/Instruments_cleaner_dasheng_wind.pth
+    sha256: d951c35e6cf63e070c348da64996018603a87bd4ffe8948a310e30cd8abc997d
+qualification:
+  release_eligible: false
+  required_proofs:
+    - encoder_and_all_heads_load_with_exact_checksums
+    - known_instrument_smoke_inference_completes
+    - cleaned_hours_are_measured_for_all_seven_classes
+    - composition_disjoint_manifest_is_generated

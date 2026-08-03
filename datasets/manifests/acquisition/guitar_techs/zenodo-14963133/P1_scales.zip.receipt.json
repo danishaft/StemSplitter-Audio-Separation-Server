@@ -1,0 +1,16 @@
+{
+  "local_path": "datasets/staging/guitar_techs/zenodo-14963133/P1_scales.zip",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "9c0b98e8fb42a522df727ea8bf545e4f",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "P1_scales.zip",
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "79d7e9d148820867a9095697c9521e40a4b11c198384edfce1951de7219b3509",
+  "size_bytes": 453349723,
+  "source_id": "guitar_techs",
+  "source_version": "zenodo-14963133"
+}

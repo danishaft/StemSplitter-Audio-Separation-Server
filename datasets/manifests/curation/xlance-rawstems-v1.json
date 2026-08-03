@@ -1,0 +1,7823 @@
+{
+  "curation_source": "X-LANCE xlance-msr",
+  "family_counts": {
+    "acoustic_guitar": 167,
+    "electric_guitar": 414,
+    "strings": 109,
+    "synth": 254,
+    "wind_brass": 93
+  },
+  "inputs": {
+    "Gtr_AG_test.txt": {
+      "entry_count": 16,
+      "sha256": "77056596ec5566b53d63e4a4577ef42b2d63cf1c0e6e77f627934b62b6ff832f"
+    },
+    "Gtr_AG_train.txt": {
+      "entry_count": 151,
+      "sha256": "8fcfad8c5dbad962a3b48bd22435187d08317b5c5b945d7d97ad0e4137af00eb"
+    },
+    "Gtr_EG_test.txt": {
+      "entry_count": 41,
+      "sha256": "ac612ddbf22b88b03d5571b27cac3637b057db1c409be9fd0cddf238f3e8b14a"
+    },
+    "Gtr_EG_train.txt": {
+      "entry_count": 373,
+      "sha256": "d61b3d7b7552aa14cfe33a32e14507c1a59033361abb80dd325f76f8aa355fd1"
+    },
+    "Orch_BR_test.txt": {
+      "entry_count": 10,
+      "sha256": "f222d698640c3a3afe108e01e476615e93806ee04c1ac69d14cd16293ae53906"
+    },
+    "Orch_BR_train.txt": {
+      "entry_count": 52,
+      "sha256": "c9c0aa1a4536754ab5c988e3cbc7c577e66ac52adfc49867464fd1d77de17a06"
+    },
+    "Orch_STR_test.txt": {
+      "entry_count": 10,
+      "sha256": "75aaf3babdffe4a2ff91b3e6dc7e16f36f1ddfaf2cb693af69294e57adbe3711"
+    },
+    "Orch_STR_train.txt": {
+      "entry_count": 99,
+      "sha256": "3460964b7190f6ef27281e09fe1251417f485d7ba3cd67ca55c865f107f7f0d7"
+    },
+    "Orch_WW_test.txt": {
+      "entry_count": 10,
+      "sha256": "d4b7d844c855afe615e27b74e5195d091d11d5291a40757d2cb3360f8a0931a7"
+    },
+    "Orch_WW_train.txt": {
+      "entry_count": 45,
+      "sha256": "4f23b0a2aa129f5ae99e9d72ebf681823ec6718eae6c22fc459e2ef423352916"
+    },
+    "Synth_test.txt": {
+      "entry_count": 25,
+      "sha256": "d34129e345bce5ff7366740d5a26b8cb6f9a74b3224edba0e9455c85c87d50de"
+    },
+    "Synth_train.txt": {
+      "entry_count": 229,
+      "sha256": "8fb8fc7acb788db42739f33a7f44bb13d037ca97e65cfbdc4b6a417d135d31b7"
+    }
+  },
+  "schema_version": "1.0",
+  "songs": {
+    "AM_Contra|Heart_Peripheral": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "AM_Contra|Heart_Peripheral",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "APZX|Amalgamize": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "APZX|Amalgamize",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "APZX|Cyber_Mower": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "APZX|Cyber_Mower",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "APZX|From_Earth_To_Planet_Omega": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "APZX|From_Earth_To_Planet_Omega",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "APZX|Lacuna": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "APZX|Lacuna",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "APZX|Transcention": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "APZX|Transcention",
+      "source_lists": [
+        "Orch_STR_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Actions|Devil's_Words": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Actions|Devil's_Words",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Actions|One_Minute_Smile": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Actions|One_Minute_Smile",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Actions|South_Of_The_Water": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Actions|South_Of_The_Water",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Adam_Buckley|Drag_me_Down": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Adam_Buckley|Drag_me_Down",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Aina_Tramullas|Per_Poder-Te_Cantar": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Aina_Tramullas|Per_Poder-Te_Cantar",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ajay_Nagarkoti_&_Vibhu_Dixit|Ae_Mere_Humsafar": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Ajay_Nagarkoti_&_Vibhu_Dixit|Ae_Mere_Humsafar",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Al_James|Schoolboy_Fascination": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Al_James|Schoolboy_Fascination",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Alan_Evans_Trio|I'm_Coming_Home": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Alan_Evans_Trio|I'm_Coming_Home",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Alan_Mansfield_&_John_Pritchard|Boat_Ride": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Alan_Mansfield_&_John_Pritchard|Boat_Ride",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Albert_Kader|Ubiquitous": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Albert_Kader|Ubiquitous",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Albert_Kader|Whiptails": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Albert_Kader|Whiptails",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ale_Lak|Nosso_Mundo_Deixou_De_Existir": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Ale_Lak|Nosso_Mundo_Deixou_De_Existir",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Alejo_Granados|Rumba_Chonta": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Alejo_Granados|Rumba_Chonta",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "All_Hands_Lost|Ambitions": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "All_Hands_Lost|Ambitions",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Allen_Stone|Naturally": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Allen_Stone|Naturally",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Amy_Helm_&_The_Handsome_Strangers|Rescue_Me": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Amy_Helm_&_The_Handsome_Strangers|Rescue_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Andres_Guazzelli|Attention": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Andres_Guazzelli|Attention",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Andres_Guazzelli|Flores_De_Abril": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Andres_Guazzelli|Flores_De_Abril",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Andrew_Cole|Dead_Roses": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Andrew_Cole|Dead_Roses",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Angela_Thomas_Wade|Milk_Cow_Blues": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Angela_Thomas_Wade|Milk_Cow_Blues",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Angelo_Boltini|Fragments": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Angelo_Boltini|Fragments",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Angelo_Boltini|This_Town": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Angelo_Boltini|This_Town",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Angels_In_Amplifiers|I'm_Alright": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Angels_In_Amplifiers|I'm_Alright",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Anna_Blanton|Rachel": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Anna_Blanton|Rachel",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Anna_Blanton|Waves": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Anna_Blanton|Waves",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Araujo|The_Saga_Of_Harrison_Crabfeathers": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Araujo|The_Saga_Of_Harrison_Crabfeathers",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Arcadian_Alone|The_Deathless_One": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Arcadian_Alone|The_Deathless_One",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Arise|Run_Run_Run": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Arise|Run_Run_Run",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Aron_Jaeger|Fly_High": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Aron_Jaeger|Fly_High",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Atlantis_Bound|It_Was_My_Fault_For_Waiting": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Atlantis_Bound|It_Was_My_Fault_For_Waiting",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Avalon|All_I_Know": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Avalon|All_I_Know",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "BMorgan&FRIENDS|Nowhere": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "BMorgan&FRIENDS|Nowhere",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Babe_Grand|Aiguille_Rouge": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Babe_Grand|Aiguille_Rouge",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Babe_Grand|King_Of_The_Weekend": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Babe_Grand|King_Of_The_Weekend",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Balkun_Brothers|So_Hi._So_Lo.": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Balkun_Brothers|So_Hi._So_Lo.",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Banned_From_The_Zoo|Black_Out_Betty": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Banned_From_The_Zoo|Black_Out_Betty",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Banned_From_The_Zoo|Encore": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Banned_From_The_Zoo|Encore",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Banned_From_The_Zoo|Fish_Tacos": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Banned_From_The_Zoo|Fish_Tacos",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Banned_From_The_Zoo|Turn_On_Me": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Banned_From_The_Zoo|Turn_On_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Barnstar!|Believer": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Barnstar!|Believer",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Barnstar!|You_Don't_Know": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Barnstar!|You_Don't_Know",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "BaumXmedia|Dream_State_(feat._Flora_Lin)": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "BaumXmedia|Dream_State_(feat._Flora_Lin)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "BaumXmedia|Koishii_(feat._N.I.A.)": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "BaumXmedia|Koishii_(feat._N.I.A.)",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ben_Carrigan|Hey_Carrie_Anne": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Ben_Carrigan|Hey_Carrie_Anne",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ben_Carrigan|We'll_Talk_About_It_All_Tonight": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Ben_Carrigan|We'll_Talk_About_It_All_Tonight",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_test.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Ben_Flowers|Ecstasy": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Ben_Flowers|Ecstasy",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ben_Flowers|NEW!_'The_Calling": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Ben_Flowers|NEW!_'The_Calling",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ben_Flowers|Retry": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Ben_Flowers|Retry",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Benjamin_John|Better_Way": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Benjamin_John|Better_Way",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Big_Head_Todd_&_The_Monsters|Hey_Delilah": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Big_Head_Todd_&_The_Monsters|Hey_Delilah",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Big_Mean_Sound_Machine|Contraband": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Big_Mean_Sound_Machine|Contraband",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Big_Stone_Culture|Fragile_Thoughts": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Big_Stone_Culture|Fragile_Thoughts",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Bill_Chudziak|Children_Of_No-one": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Bill_Chudziak|Children_Of_No-one",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Black_Bloc|If_You_Want_Success": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Black_Bloc|If_You_Want_Success",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Blue_Lit_Moon|Dad's_Glad": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Blue_Lit_Moon|Dad's_Glad",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Blues_Bastards|Lights_Out!": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Blues_Bastards|Lights_Out!",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Blues_Bastards|Sugar": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Blues_Bastards|Sugar",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Bobby_Nobody|Stitch_Up": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Bobby_Nobody|Stitch_Up",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Bolz_&_Knecht|Summertime": {
+      "families": [
+        "acoustic_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Bolz_&_Knecht|Summertime",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Boogiesnakes|It's_My_Right": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Boogiesnakes|It's_My_Right",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Bosnian_Rainbows|Morning_Sickness": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Bosnian_Rainbows|Morning_Sickness",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Boss_Fight|Droid": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Boss_Fight|Droid",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Bravestar|Downtempo": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "Bravestar|Downtempo",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Brennon_Causey|Centauri_B": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Brennon_Causey|Centauri_B",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Brian_C_Cai_Fei_Hong|Hold_Me": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Brian_C_Cai_Fei_Hong|Hold_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Brian_C_Cai_Fei_Hong|Never_Let_You_Go": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Brian_C_Cai_Fei_Hong|Never_Let_You_Go",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Brian_C_Cai_Fei_Hong|Your_Star": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Brian_C_Cai_Fei_Hong|Your_Star",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Bronze_Radio_Return|Mister,_Mister": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Bronze_Radio_Return|Mister,_Mister",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Bruks|Kak_Tvoi_Dela,_Vova?": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Bruks|Kak_Tvoi_Dela,_Vova?",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Buitraker|Revo_X": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Buitraker|Revo_X",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "CEF_Mallorca_GSSII_2017-18_Sessions|Viviendo_Del_Reves": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "CEF_Mallorca_GSSII_2017-18_Sessions|Viviendo_Del_Reves",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Candlebox|Happy_Pills": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Candlebox|Happy_Pills",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Candlebox|Surrendering": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Candlebox|Surrendering",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Carol_Dant|I_Am_The_Desert": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Carol_Dant|I_Am_The_Desert",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Catfolkin|Odi_A_La_Barretina": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Catfolkin|Odi_A_La_Barretina",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Catfolkin|Sant_Jordi_v2.0": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Catfolkin|Sant_Jordi_v2.0",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Chad_Hollister_Band|Eyes": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Chad_Hollister_Band|Eyes",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "ChrisB|Future_Soil": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "ChrisB|Future_Soil",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Chris_Coltraine|Heather_Jane": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Chris_Coltraine|Heather_Jane",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Chris_Coltraine|That's_How_I_Got_To_Memphis": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Chris_Coltraine|That's_How_I_Got_To_Memphis",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Chris_Durban|Celebrate": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Chris_Durban|Celebrate",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Cnoc_An_Tursa|Bannockburn": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Cnoc_An_Tursa|Bannockburn",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Cotton_Drifting|Rainy_Day_II": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Cotton_Drifting|Rainy_Day_II",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Cunegonda|Guerra_Alla_Frontiera": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Cunegonda|Guerra_Alla_Frontiera",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Daimon_B|Another_Life": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|Another_Life",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Daimon_B|Broken_Again": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|Broken_Again",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Daimon_B|Cold": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|Cold",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Daimon_B|NEW!_'Prisoner": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|NEW!_'Prisoner",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Daimon_B|Pain_Remains": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|Pain_Remains",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Daimon_B|Toxic": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|Toxic",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Daimon_B|Truth_(Found_Me)": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Daimon_B|Truth_(Found_Me)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dark_Ride|Burning_Bridges": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Dark_Ride|Burning_Bridges",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dark_Ride|Dead_Enemies": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Dark_Ride|Dead_Enemies",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dark_Ride|Deny_Control": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Dark_Ride|Deny_Control",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dark_Ride|Hammer_Down": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Dark_Ride|Hammer_Down",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dark_Ride|Piece_Of_Me": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Dark_Ride|Piece_Of_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Tyo|It's_So_Easy_To_Love_You": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "David_Tyo|It's_So_Easy_To_Love_You",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Tyo|Long_Way_Home": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "David_Tyo|Long_Way_Home",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Tyo|Never_Ebb_But_Flow": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "David_Tyo|Never_Ebb_But_Flow",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Tyo|Oh,_Life": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "David_Tyo|Oh,_Life",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Youngs|Dust,_You_And_Me": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "David_Youngs|Dust,_You_And_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Youngs|Long_Overdue": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "David_Youngs|Long_Overdue",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "David_Youngs|Technomantra": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "David_Youngs|Technomantra",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Death_Of_A_Romantic|The_Well": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Death_Of_A_Romantic|The_Well",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Decypher|Unseen": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Decypher|Unseen",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Detsky_Sad|Walkie_Talkie": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Detsky_Sad|Walkie_Talkie",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Diesel13|Colour_Me_Red": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Diesel13|Colour_Me_Red",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Diesel13|Roar": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Diesel13|Roar",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Digital_Humans|Electrvm": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Digital_Humans|Electrvm",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Digital_Humans|Relentlessly": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Digital_Humans|Relentlessly",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dino_On_The_Loose|Queen's_Light": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Dino_On_The_Loose|Queen's_Light",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Domestic_Research_Partners|NEW!_'Old_Empty_Nest": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Domestic_Research_Partners|NEW!_'Old_Empty_Nest",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Dopapod|Plaese_Haalp": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Dopapod|Plaese_Haalp",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dorothea_Wessel|Muddy_Water": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Dorothea_Wessel|Muddy_Water",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Drumtracks|Ghost_Bitch": {
+      "families": [
+        "strings"
+      ],
+      "song_id": "Drumtracks|Ghost_Bitch",
+      "source_lists": [
+        "Orch_STR_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Dunning_Kruger|EnDance": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Dunning_Kruger|EnDance",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Dunning_Kruger|Japan_Song": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Dunning_Kruger|Japan_Song",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Dunning_Kruger|Sascha": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Dunning_Kruger|Sascha",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "E_J_Rios|Echo_(feat._Analise_Rios)": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "E_J_Rios|Echo_(feat._Analise_Rios)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eager_Sails|Hate_Songs": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Eager_Sails|Hate_Songs",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eager_Sails|Post_Rock_Is_Dumb": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Eager_Sails|Post_Rock_Is_Dumb",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eager_Sails|The_Last_Elm": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Eager_Sails|The_Last_Elm",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eat_The_Feeder|Today's_The_Day": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Eat_The_Feeder|Today's_The_Day",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eat_The_Feeder|Wickerman": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Eat_The_Feeder|Wickerman",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Eddie_Garrido|5th_Floor": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Eddie_Garrido|5th_Floor",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eddie_Garrido|A_Cry_For_Normalcy": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Eddie_Garrido|A_Cry_For_Normalcy",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eddie_Garrido|Africa": {
+      "families": [
+        "acoustic_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Eddie_Garrido|Africa",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Eddie_Garrido|Scarlett": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Eddie_Garrido|Scarlett",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eddie_Garrido|Una_Semana_Sin_Ti": {
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Eddie_Garrido|Una_Semana_Sin_Ti",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eduard_Semenov|Big_Man's_Death": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Eduard_Semenov|Big_Man's_Death",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Eduard_Semenov|River_Of_The_White_Gloom": {
+      "families": [
+        "acoustic_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Eduard_Semenov|River_Of_The_White_Gloom",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Egda_Carolyn|Saudade_Do_Teu_Beijo": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Egda_Carolyn|Saudade_Do_Teu_Beijo",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Enda_Reilly|An_Nasc_Nua": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Enda_Reilly|An_Nasc_Nua",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Enda_Reilly|Cur_An_Long_Ag_Seol": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Enda_Reilly|Cur_An_Long_Ag_Seol",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Enter_The_Haggis|Two_Bare_Hands": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Enter_The_Haggis|Two_Bare_Hands",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Erocy|Phantom": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Erocy|Phantom",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ethan_Winer|Cello_Concerto_in_A_Minor": {
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Ethan_Winer|Cello_Concerto_in_A_Minor",
+      "source_lists": [
+        "Orch_BR_test.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Evening_Darling|Passenger_Side": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Evening_Darling|Passenger_Side",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "FIN|Echoes": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "FIN|Echoes",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fergessen|Back_From_The_Start": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Fergessen|Back_From_The_Start",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Fergessen|Nos_Palpitants": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Fergessen|Nos_Palpitants",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fergessen|The_Wind": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Fergessen|The_Wind",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Finlay|Same_Kind_Of_Life": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Finlay|Same_Kind_Of_Life",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Flags|54": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Flags|54",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Forkupines|Semantics": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Forkupines|Semantics",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Forkupines|Sleep_By_The_Fire,_Bloom_In_Water": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Forkupines|Sleep_By_The_Fire,_Bloom_In_Water",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Forkupines|Sugar_-_Faith": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Forkupines|Sugar_-_Faith",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Francisco_Perez|Spaces": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Francisco_Perez|Spaces",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fruition|Santa_Fe": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Fruition|Santa_Fe",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Funky_Dawgs_Brass_Band|Place_2_Be": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Funky_Dawgs_Brass_Band|Place_2_Be",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fytakyte|Bitter": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Fytakyte|Bitter",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fytakyte|Disconnected": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Fytakyte|Disconnected",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fytakyte|Fade": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Fytakyte|Fade",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fytakyte|Life_Gets_In_The_Way": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Fytakyte|Life_Gets_In_The_Way",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fytakyte|Outa_Control": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Fytakyte|Outa_Control",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Fytakyte|Too_Much": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Fytakyte|Too_Much",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "G-Bass_Project|New_Day_Dawning": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "G-Bass_Project|New_Day_Dawning",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "G-Bass_Project|You_Make_Me_Smile": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "G-Bass_Project|You_Make_Me_Smile",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Galias|Horizon": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Galias|Horizon",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Georgia_Wonder|Siren": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Georgia_Wonder|Siren",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ghost_Note|Ja_Make_Ya_Dance": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Ghost_Note|Ja_Make_Ya_Dance",
+      "source_lists": [
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ghostly_Beard|A_Reason_To_Leave": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Ghostly_Beard|A_Reason_To_Leave",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ghostly_Beard|Blue": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Ghostly_Beard|Blue",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ghostly_Beard|Fool": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Ghostly_Beard|Fool",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ghostly_Beard|Set_Me_Free": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Ghostly_Beard|Set_Me_Free",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Ghostly_Beard|Upper_Hand": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Ghostly_Beard|Upper_Hand",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Girls_Under_Glass|We_Feel_Alright": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Girls_Under_Glass|We_Feel_Alright",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Glen_McPhee|A_Sailor_Once_More": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Glen_McPhee|A_Sailor_Once_More",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Guarna|Ancora_Qui": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Guarna|Ancora_Qui",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Hawaii_(feat._Kalv)": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Guarna|Hawaii_(feat._Kalv)",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Nuvole": {
+      "families": [
+        "acoustic_guitar",
+        "synth"
+      ],
+      "song_id": "Guarna|Nuvole",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Orson_Welles": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Guarna|Orson_Welles",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Paris": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Guarna|Paris",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Parole_Vuote": {
+      "families": [
+        "acoustic_guitar",
+        "synth"
+      ],
+      "song_id": "Guarna|Parole_Vuote",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Guarna|Puzzle_(feat._Malachia)": {
+      "families": [
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Guarna|Puzzle_(feat._Malachia)",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Roma": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Guarna|Roma",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|Una_Vita_Sola": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Guarna|Una_Vita_Sola",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Guarna|eyeliner": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Guarna|eyeliner",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hannes_Keseberg|You_Know_Better": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Hannes_Keseberg|You_Know_Better",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hazael|A_Mi_Lado": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Hazael|A_Mi_Lado",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hazael|Amor_Que_Lucha": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Hazael|Amor_Que_Lucha",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hazael|NEW!_'Esto_Se_Llama_Vivir": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Hazael|NEW!_'Esto_Se_Llama_Vivir",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hazael|Resistencia_Para_Un_Nuevo_Comenzar": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Hazael|Resistencia_Para_Un_Nuevo_Comenzar",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Headwound_Harry|XXXV": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Headwound_Harry|XXXV",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hollow_Ground|Ill_Fate": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Hollow_Ground|Ill_Fate",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Hollow_Ground|Left_Blind": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Hollow_Ground|Left_Blind",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hollowstate|Gravediggers": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Hollowstate|Gravediggers",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "House_Of_Bedlam|Eventide": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "House_Of_Bedlam|Eventide",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "How_To_Kill_A_Conversation|Heart_On_My_Thumb": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "How_To_Kill_A_Conversation|Heart_On_My_Thumb",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "How_To_Kill_A_Conversation|Location_Location": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "How_To_Kill_A_Conversation|Location_Location",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "How_To_Kill_A_Conversation|Mute": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "How_To_Kill_A_Conversation|Mute",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "How_To_Kill_A_Conversation|Oil": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "How_To_Kill_A_Conversation|Oil",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "How_To_Kill_A_Conversation|Showmonster": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "How_To_Kill_A_Conversation|Showmonster",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Human_Radio|You_&_Me_&_The_Radio": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Human_Radio|You_&_Me_&_The_Radio",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Hurray_For_The_Riff_Raff|Living_In_The_City": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Hurray_For_The_Riff_Raff|Living_In_The_City",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ian_Dearden_(with_Vicki_Swann_&_Jonny_Dyer)|Song_For_John": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Ian_Dearden_(with_Vicki_Swann_&_Jonny_Dyer)|Song_For_John",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ian_Dearden|Terania_Creek_Walking": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Ian_Dearden|Terania_Creek_Walking",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ian_Dearden|Thursday_Reverie": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Ian_Dearden|Thursday_Reverie",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ikebe_Shakedown|The_Last_Stand": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Ikebe_Shakedown|The_Last_Stand",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Ilmari_Kontia|Funkkihillo": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Ilmari_Kontia|Funkkihillo",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Imp_Act|Another_Life": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Imp_Act|Another_Life",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Imp_Act|Back_In_Time": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Imp_Act|Back_In_Time",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Imp_Act|Dying_Light": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Imp_Act|Dying_Light",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Imp_Act|The_Island_Of_Alsocanla": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Imp_Act|The_Island_Of_Alsocanla",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "In_This_Place|1125": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "In_This_Place|1125",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Inhumanity_Vortex|Cybermod": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Inhumanity_Vortex|Cybermod",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Iron_Point|NEW!_'Expired": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Iron_Point|NEW!_'Expired",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "J0K3R|September_Trance": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "J0K3R|September_Trance",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "JAKUB_BYZIA|SODA_ENVY": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "JAKUB_BYZIA|SODA_ENVY",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "J_P_Lantieri|Chardonnay": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "J_P_Lantieri|Chardonnay",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "J_P_Lantieri|Chardonnay_(Lektrix_Remix)": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "J_P_Lantieri|Chardonnay_(Lektrix_Remix)",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "J_P_Lantieri|Chardonnay_(Mystik_Vibe_Remix)": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "J_P_Lantieri|Chardonnay_(Mystik_Vibe_Remix)",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "J_P_Lantieri|Chardonnay_(Ornery_Remix)": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "J_P_Lantieri|Chardonnay_(Ornery_Remix)",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Jack_Hutcheson|The_Machiavellian": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Jack_Hutcheson|The_Machiavellian",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jack_Hutcheson|The_Narcissist": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Jack_Hutcheson|The_Narcissist",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Jack_Hutcheson|The_Psychopath": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Jack_Hutcheson|The_Psychopath",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jackie_Greene|Don't_Let_The_Devil_Take_Your_Mind": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Jackie_Greene|Don't_Let_The_Devil_Take_Your_Mind",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jade_Safirah|Paraisso": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Jade_Safirah|Paraisso",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_Elder_&_Mark_M_Thompson|The_English_Actor": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "James_Elder_&_Mark_M_Thompson|The_English_Actor",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_Fabio|Machines_On_Treadmills": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "James_Fabio|Machines_On_Treadmills",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_May|All_Souls_Moon": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "James_May|All_Souls_Moon",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_May|Don't_Let_Go": {
+      "families": [
+        "acoustic_guitar",
+        "wind_brass"
+      ],
+      "song_id": "James_May|Don't_Let_Go",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_May|Eliza_Jane": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "James_May|Eliza_Jane",
+      "source_lists": [
+        "Gtr_AG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "James_May|Hold_On_You": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "James_May|Hold_On_You",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "James_May|If_You_Say": {
+      "families": [
+        "acoustic_guitar",
+        "wind_brass"
+      ],
+      "song_id": "James_May|If_You_Say",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_May|On_The_Line": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "James_May|On_The_Line",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "James_Timms_x_Benjamin_Coosemans|Can_You_Say_The_Same": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "James_Timms_x_Benjamin_Coosemans|Can_You_Say_The_Same",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Jamie_Kent|All_American_Mutt": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Jamie_Kent|All_American_Mutt",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jay_Menon|Through_My_Eyes": {
+      "families": [
+        "acoustic_guitar",
+        "synth"
+      ],
+      "song_id": "Jay_Menon|Through_My_Eyes",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jeff_Hirata|Sunshine": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Jeff_Hirata|Sunshine",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jeffrey_Hayat|Alex_The_Adventurer": {
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Jeffrey_Hayat|Alex_The_Adventurer",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jesse_Joy|Nearly_There": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Jesse_Joy|Nearly_There",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Jesse_Joy|Release": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Jesse_Joy|Release",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jessica_Childress|Slow_Down": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Jessica_Childress|Slow_Down",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jet_B|Suit_You": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Jet_B|Suit_You",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jet_B|To_The_Wolves": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Jet_B|To_The_Wolves",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "John_McKay|Daisy_Daisy": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "John_McKay|Daisy_Daisy",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Johnny_Lokke|Promises_&_Lies": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Johnny_Lokke|Promises_&_Lies",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Johnny_Lokke|Whisper_To_A_Scream": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Johnny_Lokke|Whisper_To_A_Scream",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Johnny_Swain|Freedom_(Lay_Down_My_Live_For_You)": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Johnny_Swain|Freedom_(Lay_Down_My_Live_For_You)",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Jokers,_Jacks_&_Kings|Sea_Of_Leaves": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Jokers,_Jacks_&_Kings|Sea_Of_Leaves",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Juanita_Dientes_Verdes|Dios_Salve_El_R&R_-_Cielo_Sin_Santos": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Juanita_Dientes_Verdes|Dios_Salve_El_R&R_-_Cielo_Sin_Santos",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Juanita_Dientes_Verdes|Donde_No_Llega_La_Luz": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Juanita_Dientes_Verdes|Donde_No_Llega_La_Luz",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Juanita_Dientes_Verdes|Placido_Domingo": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Juanita_Dientes_Verdes|Placido_Domingo",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Jules_King|Never_Stop": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Jules_King|Never_Stop",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Juliet's_Rescue|Heartbeats": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Juliet's_Rescue|Heartbeats",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Justin_Myles|Alone_With_You": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Justin_Myles|Alone_With_You",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Kai_Roger_Willumsen|Dreamland": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Kai_Roger_Willumsen|Dreamland",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Kangoro|Animal": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Kangoro|Animal",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Kangoro|Bitch_Is_Paranoid": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Kangoro|Bitch_Is_Paranoid",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Kangoro|Clinic_A": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Kangoro|Clinic_A",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Kangoro|Easy_Tiger": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Kangoro|Easy_Tiger",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Kangoro|King_Rascal": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Kangoro|King_Rascal",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Kangoro|Rockshow": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Kangoro|Rockshow",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Karl_Hungus|Got_Your_Love": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Karl_Hungus|Got_Your_Love",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Kat_Wright|By_My_Side": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Kat_Wright|By_My_Side",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Kat_Wright|Contact": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Kat_Wright|Contact",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Keystone_Angel|Afterglow": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Keystone_Angel|Afterglow",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Killa-L|Window": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "Killa-L|Window",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Kung_Fu|Daddy_D": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Kung_Fu|Daddy_D",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Kung_Fu|Joy_Ride": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Kung_Fu|Joy_Ride",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Last_Legacy|Who's_Who_In_Hell": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Last_Legacy|Who's_Who_In_Hell",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Lead_Inc|The_Dice": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Lead_Inc|The_Dice",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Lead_Inc|The_Inner_Circle": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Lead_Inc|The_Inner_Circle",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Lead_Inc|Way_Of_Life": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Lead_Inc|Way_Of_Life",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Leaf|Come_Around": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Leaf|Come_Around",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Leaf|Summerghost": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Leaf|Summerghost",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Leaf|Wicked": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Leaf|Wicked",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Leftover_Salmon|River's_Risin": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Leftover_Salmon|River's_Risin",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Leslie_Mendelson|The_Hardest_Part": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Leslie_Mendelson|The_Hardest_Part",
+      "source_lists": [
+        "Gtr_AG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Lindy_Hip_Big_Band|Makin'_Whoopee": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Lindy_Hip_Big_Band|Makin'_Whoopee",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Lindy_Hip_Big_Band|The_Opener": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Lindy_Hip_Big_Band|The_Opener",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Lingua_Funqa|Do_It_Again": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Lingua_Funqa|Do_It_Again",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Lingua_Funqa|Just_One_Minute": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Lingua_Funqa|Just_One_Minute",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Little_Chicago's_Finest|My_Own": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Little_Chicago's_Finest|My_Own",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Lorenzo_Price|Changing_Things_(Dorian's_Song)": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Lorenzo_Price|Changing_Things_(Dorian's_Song)",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Louis_Cressy_Band|Good_Time": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Louis_Cressy_Band|Good_Time",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Lyndsey_Ollard|Catching_Up": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Lyndsey_Ollard|Catching_Up",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "M.E.R.C._Music|Knockout": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "M.E.R.C._Music|Knockout",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "MOPP|Ukraina": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "MOPP|Ukraina",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mady_&_Seus_Namorados|Pirarucumbia": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Mady_&_Seus_Namorados|Pirarucumbia",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Magician's_Nephew|Get_Out_Of_Bed": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Magician's_Nephew|Get_Out_Of_Bed",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Magician's_Nephew|Symphony_Of_Silence": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Magician's_Nephew|Symphony_Of_Silence",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Malenky_Slovos|Matterplay": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Malenky_Slovos|Matterplay",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Man_About_A_Dog|Maggie_May": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Man_About_A_Dog|Maggie_May",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Marc_Ellason|Treadmills": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Marc_Ellason|Treadmills",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Marc_Ellason|Upside_Down": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Marc_Ellason|Upside_Down",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Marcus_Boeltz|Shut_Up_And_Play": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Marcus_Boeltz|Shut_Up_And_Play",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Maurizio_Pagnutti_Sextet|All_The_Gin_Is_Gone": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Maurizio_Pagnutti_Sextet|All_The_Gin_Is_Gone",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Maurizio_Pagnutti_Sextet|Bess": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Maurizio_Pagnutti_Sextet|Bess",
+      "source_lists": [
+        "Orch_BR_test.txt",
+        "Orch_WW_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "McLovins|Buildin'_It_Up": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "McLovins|Buildin'_It_Up",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "MekaPhil|Alive_(Yet_Free)": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "MekaPhil|Alive_(Yet_Free)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "MekaPhil|Core_(Eternal_Waltz)": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "MekaPhil|Core_(Eternal_Waltz)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "MekaPhil|Timeless_(Part_1)": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "MekaPhil|Timeless_(Part_1)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "MekaPhil|Timeless_(Part_2)": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "MekaPhil|Timeless_(Part_2)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mikaela_Davis_&_Southern_Star|Cinderella": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Mikaela_Davis_&_Southern_Star|Cinderella",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mikaela_Davis_&_Southern_Star|Home_In_The_Country": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Mikaela_Davis_&_Southern_Star|Home_In_The_Country",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mike_Skalandunas|Sun_Drenched": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Mike_Skalandunas|Sun_Drenched",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mini_Simmons|Push_And_Pull": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Mini_Simmons|Push_And_Pull",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mipso|Wallpaper_Baby": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Mipso|Wallpaper_Baby",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mistrusted|Carnival_Charade": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Mistrusted|Carnival_Charade",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mistrusted|Cascade": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Mistrusted|Cascade",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mistrusted|Polemic": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Mistrusted|Polemic",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mistrusted|Trapped": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Mistrusted|Trapped",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Moosmusic|Big_Dummy_Shake": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Moosmusic|Big_Dummy_Shake",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Motor_Tapes|Shore": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Motor_Tapes|Shore",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mustafa_Albazy|Shela_Ya_Marhaba": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Mustafa_Albazy|Shela_Ya_Marhaba",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mustafa_Albazy|Tgheer": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Mustafa_Albazy|Tgheer",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mykey_Massacre|Don't_Please_Stay": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Mykey_Massacre|Don't_Please_Stay",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mykey_Massacre|Open_Fire": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Mykey_Massacre|Open_Fire",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Mykey_Massacre|Struggle_City": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Mykey_Massacre|Struggle_City",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Nahum_Strickland|Steampunk_Siege": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Nahum_Strickland|Steampunk_Siege",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Neon_Hornet|Take_It_Off": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Neon_Hornet|Take_It_Off",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nervbloc|Slapback": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Nervbloc|Slapback",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nerve_9|Living_Lie": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Nerve_9|Living_Lie",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nerve_9|Pray_For_The_Rain": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Nerve_9|Pray_For_The_Rain",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Neuromantic|The_Calm": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Neuromantic|The_Calm",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Neuromantic|Unfinished_Dreams": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Neuromantic|Unfinished_Dreams",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nicki_Bluhm_&_The_Gramblers|Go_Go_Go": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Nicki_Bluhm_&_The_Gramblers|Go_Go_Go",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nikola_Stajic_feat._Vlasis_Kostas|Nalim": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Nikola_Stajic_feat._Vlasis_Kostas|Nalim",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nominal6|Escape_Of_The_Hopping_Rhinos": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Nominal6|Escape_Of_The_Hopping_Rhinos",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "North_To_Alaska|All_The_Same": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "North_To_Alaska|All_The_Same",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Nova-One_Studio|Four_Graham": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Nova-One_Studio|Four_Graham",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "OctopusOnFire|Russian_Bot": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "OctopusOnFire|Russian_Bot",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "One_Time_Weekend|One_Time_Weekend": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "One_Time_Weekend|One_Time_Weekend",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Our_Good_Wolf|Tourism": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Our_Good_Wolf|Tourism",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Pablo_Martin|Progresivo_1,_El_Vuelo": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Pablo_Martin|Progresivo_1,_El_Vuelo",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_test.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Painted_Skies|Piers": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Painted_Skies|Piers",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Pandemia_eRock|Macaco_Regresso": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Pandemia_eRock|Macaco_Regresso",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Paul_Smith_&_8_Days_A_Week_Studio|NEW!_'The_Weight": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Paul_Smith_&_8_Days_A_Week_Studio|NEW!_'The_Weight",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Pawel_Maciwoda|1_Of_The_First": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Pawel_Maciwoda|1_Of_The_First",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Pepelpovetru|Tochka": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Pepelpovetru|Tochka",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Peppermark|Another_Feeling": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Peppermark|Another_Feeling",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Peppermark|Interlude": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Peppermark|Interlude",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Perdidos_Na_Zona_Sul|Meu_Bem": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Perdidos_Na_Zona_Sul|Meu_Bem",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Perpetual_Escape|Duty_&_Memories": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Perpetual_Escape|Duty_&_Memories",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Perpetual_Escape|Roots_Of_Mankind": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Perpetual_Escape|Roots_Of_Mankind",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Perpetual_Escape|Sin_Six": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Perpetual_Escape|Sin_Six",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Perpetual_Escape|Stop_And_Rise": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Perpetual_Escape|Stop_And_Rise",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Peter_White|Crazy_Girl": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Peter_White|Crazy_Girl",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Peter_White|The_Blues_Is_A_Lady": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Peter_White|The_Blues_Is_A_Lady",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Phre_The_Eon|Everybody's_Falling_Apart": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Phre_The_Eon|Everybody's_Falling_Apart",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Plan_Caliente|El_Marinero": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Plan_Caliente|El_Marinero",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Plywood_Cowboy|Last_Night's_Gig": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Plywood_Cowboy|Last_Night's_Gig",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Pretty_Saro|Carolina_In_The_Pines": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Pretty_Saro|Carolina_In_The_Pines",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Primakova|The_Glass": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Primakova|The_Glass",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Prusinski|In_The_Band": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Prusinski|In_The_Band",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Prusinski|Magdalena": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Prusinski|Magdalena",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Prusinski|Sorry_Girl": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Prusinski|Sorry_Girl",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Punkdisco|Oral_Hygiene": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Punkdisco|Oral_Hygiene",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Purple_Hat_Mob|Access_Denied": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Purple_Hat_Mob|Access_Denied",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Qupe|Ayni_Nehirde": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Qupe|Ayni_Nehirde",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Raft_Monk|Tiring": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Raft_Monk|Tiring",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Random_Somebody|Crazy_For_Me": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Random_Somebody|Crazy_For_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Rattletree|Just_Let_It_Go": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "Rattletree|Just_Let_It_Go",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Rebecca_Haviland_&_Whiskey_Heart|57_Chevy": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Rebecca_Haviland_&_Whiskey_Heart|57_Chevy",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Rebuild_The_Evil|Burial_Of_Silence": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Rebuild_The_Evil|Burial_Of_Silence",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Redwood|Smoker_And_The_Stoner": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Redwood|Smoker_And_The_Stoner",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Remember_December|C_U_Next_Time": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Remember_December|C_U_Next_Time",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Remember_Jones|Don't_Put_Me_On_Hold": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Remember_Jones|Don't_Put_Me_On_Hold",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ricardo_Santiago|Dream_No._12": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Ricardo_Santiago|Dream_No._12",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ricardo_Santiago|Let_The_Music_Fade_Away": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Ricardo_Santiago|Let_The_Music_Fade_Away",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ricky_Legend|Comet": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Ricky_Legend|Comet",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ricky_Legend|Going_To_The_Moon": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Ricky_Legend|Going_To_The_Moon",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ripe|4_Out_Of_10": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Ripe|4_Out_Of_10",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Ripe|Little_Lighter": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Ripe|Little_Lighter",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Robert_Hammon|The_Elephant": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Robert_Hammon|The_Elephant",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Rock_Me|Facing_The_Truth": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Rock_Me|Facing_The_Truth",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Rod_Alexander|Tears_In_The_Rain": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Rod_Alexander|Tears_In_The_Rain",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ronnie_Jones|Why_Don't_You_Stay": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Ronnie_Jones|Why_Don't_You_Stay",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Roswell_Pro_Audio_Session_Band|NEW!_'Little_Wing": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Roswell_Pro_Audio_Session_Band|NEW!_'Little_Wing",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Rovers_Ahead|It's_In_These_Times": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Rovers_Ahead|It's_In_These_Times",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Rubblebucket|Carousel_Ride": {
+      "families": [
+        "acoustic_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Rubblebucket|Carousel_Ride",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ruby_Roads|Rat_Race": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Ruby_Roads|Rat_Race",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ryan_Cali|Back_Down": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Ryan_Cali|Back_Down",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ryan_Cali|Crazy": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Ryan_Cali|Crazy",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Sambasevam_Shanmugam|Kaathaadi": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Sambasevam_Shanmugam|Kaathaadi",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Santi_Vega|Ying_Yang": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Santi_Vega|Ying_Yang",
+      "source_lists": [
+        "Gtr_AG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Saturn_Syndicate|Catch_The_Wave": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Saturn_Syndicate|Catch_The_Wave",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Saturn_Syndicate|Never_Leave_The_Night_Alone": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Saturn_Syndicate|Never_Leave_The_Night_Alone",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Scott_Elliott|Aeternum_Vale": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Scott_Elliott|Aeternum_Vale",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_test.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Secretariat|Borderline": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Secretariat|Borderline",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Secretariat|Over_The_Top": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Secretariat|Over_The_Top",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Sepulchral_Infestation|NEW!_'Goregasmic_Grotesqueries": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Sepulchral_Infestation|NEW!_'Goregasmic_Grotesqueries",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Serapis|Morbus_Animi": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Serapis|Morbus_Animi",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Serapis|The_Dark_Abyss": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Serapis|The_Dark_Abyss",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "ShortWave_RadioBand|Don't_Care": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "ShortWave_RadioBand|Don't_Care",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "ShortWave_RadioBand|SomeDay": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "ShortWave_RadioBand|SomeDay",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Side_Effects_Project|Sing_With_Me": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Side_Effects_Project|Sing_With_Me",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Signe_Jakobsen|What_Have_You_Done_To_Me": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Signe_Jakobsen|What_Have_You_Done_To_Me",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Silence_Is_Near|The_Forthcoming_Turn": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Silence_Is_Near|The_Forthcoming_Turn",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Silona|Learning_How_To_Fly": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Silona|Learning_How_To_Fly",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Simon_Lyn|Copper": {
+      "families": [
+        "strings"
+      ],
+      "song_id": "Simon_Lyn|Copper",
+      "source_lists": [
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Six_Fox_Whiskey|Hope_And_The_Sea": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Six_Fox_Whiskey|Hope_And_The_Sea",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "SkalyVan|A_Picture_Of_S**t": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "SkalyVan|A_Picture_Of_S**t",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "SkalyVan|Agony": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "SkalyVan|Agony",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "SkalyVan|All_To_End": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "SkalyVan|All_To_End",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "SkalyVan|NEW!_'Hard_To_Hide": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "SkalyVan|NEW!_'Hard_To_Hide",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Anomalous_Weeping": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Skelpolu|Anomalous_Weeping",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Cold_Strive": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Skelpolu|Cold_Strive",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Entwine": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Skelpolu|Entwine",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Human_Mistakes": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Skelpolu|Human_Mistakes",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Long_Road": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Skelpolu|Long_Road",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Resurrection_Resurrected": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Skelpolu|Resurrection_Resurrected",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skelpolu|Together_Alone": {
+      "families": [
+        "acoustic_guitar",
+        "synth"
+      ],
+      "song_id": "Skelpolu|Together_Alone",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Skyeez_&_The_Whiteflies|Banana_Split": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Skyeez_&_The_Whiteflies|Banana_Split",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Skyeez_&_The_Whiteflies|Jump_Across": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Skyeez_&_The_Whiteflies|Jump_Across",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Slimy_Soul_Suckers|Joe's_Bar": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Slimy_Soul_Suckers|Joe's_Bar",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Slimy_Soul_Suckers|The_Cross_Roads": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Slimy_Soul_Suckers|The_Cross_Roads",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Sonnet_&_Alcohol|Back_To_The_Nineties": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Sonnet_&_Alcohol|Back_To_The_Nineties",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Speak_Softly|Broken_Man": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Speak_Softly|Broken_Man",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Spektakulatius|Christmas_Blues": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Spektakulatius|Christmas_Blues",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Spektakulatius|Is_You_Is_Or_Is_You_Ain't": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Spektakulatius|Is_You_Is_Or_Is_You_Ain't",
+      "source_lists": [
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Spektakulatius|Jeden_Winter": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Spektakulatius|Jeden_Winter",
+      "source_lists": [
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Spektakulatius|Our_Love_Is_Here_To_Stay": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Spektakulatius|Our_Love_Is_Here_To_Stay",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Spektakulatius|Wayfaring_Stranger": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Spektakulatius|Wayfaring_Stranger",
+      "source_lists": [
+        "Orch_WW_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Spektakulatius|What_Child_Is_This": {
+      "families": [
+        "acoustic_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Spektakulatius|What_Child_Is_This",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Spike_Mullings|Mike's_Sulking": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Spike_Mullings|Mike's_Sulking",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "St_Vitus|Word_Gets_Around": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "St_Vitus|Word_Gets_Around",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Starnes_&_Shah|Prodigal": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Starnes_&_Shah|Prodigal",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Storm_Of_Particles|Of_Ice_And_Hopeless_Fate": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Storm_Of_Particles|Of_Ice_And_Hopeless_Fate",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Street_Noise|I'd_Rather_Be_Drinkin": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Street_Noise|I'd_Rather_Be_Drinkin",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Street_Noise|Revelations": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Street_Noise|Revelations",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Street_Noise|You_Are_The_One": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Street_Noise|You_Are_The_One",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Strobe|Gone": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Strobe|Gone",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Strobe|Maya": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Strobe|Maya",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Strobe|Nostalgic": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Strobe|Nostalgic",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Studio_ROM|Islets": {
+      "families": [
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Studio_ROM|Islets",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Studio_ROM|NEW!_'Pia_Mater": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Studio_ROM|NEW!_'Pia_Mater",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Swatkins_&_Moorea_Masa|Until_I_Get_Back": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Swatkins_&_Moorea_Masa|Until_I_Get_Back",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Swing_Bazar|Fleche_D'Or": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Swing_Bazar|Fleche_D'Or",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Swinging_Steaks|Lost_My_Way": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Swinging_Steaks|Lost_My_Way",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Szlachetka|Heart_Of_My_Home_Town": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Szlachetka|Heart_Of_My_Home_Town",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Szymon_Skiba|Death_Metal_Sucks": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Szymon_Skiba|Death_Metal_Sucks",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Szymon_Skiba|Let's_Dance": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Szymon_Skiba|Let's_Dance",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Szymon_Skiba|Some_Trashy_Thrash,_I_Guess": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Szymon_Skiba|Some_Trashy_Thrash,_I_Guess",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Tall_Heights|Spirit_Cold": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "Tall_Heights|Spirit_Cold",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Ted_Behrman|Convertible": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Ted_Behrman|Convertible",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Abletones_Big_Band|Corine,_Corine": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "The_Abletones_Big_Band|Corine,_Corine",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Abletones_Big_Band|Song_Of_India": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "The_Abletones_Big_Band|Song_Of_India",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Apprehended|Still_Flyin": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Apprehended|Still_Flyin",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Black_Crown|Cage": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Black_Crown|Cage",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Black_Crown|Flames": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Black_Crown|Flames",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "The_Brew|What_I_Want": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Brew|What_I_Want",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Bright_Star_Alliance|Error_404": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Bright_Star_Alliance|Error_404",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Butterfly_Effect|An_Ultra_Violet_Apology": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Butterfly_Effect|An_Ultra_Violet_Apology",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Butterfly_Effect|Fairytale": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Butterfly_Effect|Fairytale",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Butterfly_Effect|Preach_Right_Here": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Butterfly_Effect|Preach_Right_Here",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Complainiacs|Etc": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Complainiacs|Etc",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "The_Doppler_Shift|Atrophy": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Doppler_Shift|Atrophy",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Ferryboat_Men|The_Winds_Of_Gypsy_Moor": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Ferryboat_Men|The_Winds_Of_Gypsy_Moor",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Great_Enough|Die_Young": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Great_Enough|Die_Young",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Laminar_Flow|Headspace": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Laminar_Flow|Headspace",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Left_Backs|The_Feeling": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Left_Backs|The_Feeling",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Lonely_Wild|Scar": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "The_Lonely_Wild|Scar",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Long_Wait|Back_Home_To_Blue": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Long_Wait|Back_Home_To_Blue",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Long_Wait|Dark_Horses": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Long_Wait|Dark_Horses",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Long_Wait|Drag": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Long_Wait|Drag",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Long_Wait|Lookout_Mountain": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Long_Wait|Lookout_Mountain",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Long_Wait|Santa": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Long_Wait|Santa",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Maybe_Next_Years|One_Flip_Flop": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Maybe_Next_Years|One_Flip_Flop",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Mountaineering_Club_Orchestra|Cruising_The_Ice": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "The_Mountaineering_Club_Orchestra|Cruising_The_Ice",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Mountaineering_Club|Mallory": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Mountaineering_Club|Mallory",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_MudPuddles|Dark_Space": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_MudPuddles|Dark_Space",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Penniless_Wild|Seat_Back": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "The_Penniless_Wild|Seat_Back",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Sunshine_Garcia_Band|For_I_Am_The_Moon": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "The_Sunshine_Garcia_Band|For_I_Am_The_Moon",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Timezone|GOTGF": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "The_Timezone|GOTGF",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Travelling_Band|Passing_Ships": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "The_Travelling_Band|Passing_Ships",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "The_Travelling_Band|Quicksand": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "The_Travelling_Band|Quicksand",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Western_Den|Like_You_Do": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "The_Western_Den|Like_You_Do",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "The_Wrong'uns|Rothko": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "The_Wrong'uns|Rothko",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Tholas_P.|Such_Fine_People": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Tholas_P.|Such_Fine_People",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Tim_Taler|Stalker": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Tim_Taler|Stalker",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Timboz|Pony": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Timboz|Pony",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Timo_And_The_Timezone|Just_Don't_Talk": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Timo_And_The_Timezone|Just_Don't_Talk",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Timo_Carlier|The_Road_Ahead": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Timo_Carlier|The_Road_Ahead",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Titanium|Haunted_Age": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Titanium|Haunted_Age",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Tom_McKenzie|Directions": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Tom_McKenzie|Directions",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Tommy_Marcinek|Happy_Blues": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Tommy_Marcinek|Happy_Blues",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Tommy_Marcinek|My_Childhood_Sweetheart": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Tommy_Marcinek|My_Childhood_Sweetheart",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Traffic_Experiment|Once_More_(With_Feeling)": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Traffic_Experiment|Once_More_(With_Feeling)",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Traffic_Experiment|Sirens": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Traffic_Experiment|Sirens",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Trafficker|My_Father_Never_Loved_Me": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Trafficker|My_Father_Never_Loved_Me",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Trick_Bird|Window": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Trick_Bird|Window",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Triviul|Alright?": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Triviul|Alright?",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Triviul|Angelsaint": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "Triviul|Angelsaint",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Triviul|Better?": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "Triviul|Better?",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Triviul|Dorothy": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Triviul|Dorothy",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Triviul|Gimme": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Triviul|Gimme",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Triviul|Widow_(feat._The_Fiend)": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "Triviul|Widow_(feat._The_Fiend)",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Trybes|Running_Out": {
+      "families": [
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Trybes|Running_Out",
+      "source_lists": [
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Turbosauro|Magilla": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Turbosauro|Magilla",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Turkuaz|Lookin'_Tough,_Feelin'_Good": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Turkuaz|Lookin'_Tough,_Feelin'_Good",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Turkuaz|Tip_Toe_Through_The_Crypto": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "Turkuaz|Tip_Toe_Through_The_Crypto",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Turn_Back_To_Spring|Another_Day_Calling": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Turn_Back_To_Spring|Another_Day_Calling",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "U_T_Gandhi|Arto": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "U_T_Gandhi|Arto",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Umbriferous|Sandcastles_(Illusion)": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Umbriferous|Sandcastles_(Illusion)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Umphrey's_McGee|Crucial_Taunt": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Umphrey's_McGee|Crucial_Taunt",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "Uncle_Dad|Who_I_Am": {
+      "families": [
+        "acoustic_guitar",
+        "strings"
+      ],
+      "song_id": "Uncle_Dad|Who_I_Am",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Unicorn_Rodeo|Maybe": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "Unicorn_Rodeo|Maybe",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "V.M.GY|Aureus_Necrosis": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "V.M.GY|Aureus_Necrosis",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "V.M.GY|Bloodshed": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "V.M.GY|Bloodshed",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "V.M.GY|Equilibrium": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "V.M.GY|Equilibrium",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "V.M.GY|Fountain_Of_Eternal_Life": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "V.M.GY|Fountain_Of_Eternal_Life",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "V.M.GY|Omen": {
+      "families": [
+        "electric_guitar",
+        "strings",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "V.M.GY|Omen",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_test.txt",
+        "Orch_WW_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "V.M.GY|Purgatory": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "V.M.GY|Purgatory",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "V.M.GY|The_Crown": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "V.M.GY|The_Crown",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Violent_Bliss|Voiceless_Siren": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Violent_Bliss|Voiceless_Siren",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Voelund|Comfort_Lives_In_Belief": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Voelund|Comfort_Lives_In_Belief",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "W.I.N.D.|Funky_To_The_Bone": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "W.I.N.D.|Funky_To_The_Bone",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "W.I.N.D.|Temporary_Happiness": {
+      "families": [
+        "electric_guitar",
+        "wind_brass"
+      ],
+      "song_id": "W.I.N.D.|Temporary_Happiness",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Wall_Of_Death|Femme": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Wall_Of_Death|Femme",
+      "source_lists": [
+        "Gtr_EG_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "We_Fell_From_The_Sky|Not_You": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "We_Fell_From_The_Sky|Not_You",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Wesley_Morgan|Backroom_In_Tulsa": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Wesley_Morgan|Backroom_In_Tulsa",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Wesley_Morgan|Flesh_And_Bone": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Wesley_Morgan|Flesh_And_Bone",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Wess_Meets_West|64_Bristol": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Wess_Meets_West|64_Bristol",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Wess_Meets_West|Direct_Experience": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Wess_Meets_West|Direct_Experience",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "West_End_Blend|Kane_Guru": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "West_End_Blend|Kane_Guru",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "West_End_Blend|Must_Be_Voodoo": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "West_End_Blend|Must_Be_Voodoo",
+      "source_lists": [
+        "Gtr_EG_test.txt",
+        "Orch_BR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Whitten_And._Williams|How_To_Make_A_Mirror": {
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Whitten_And._Williams|How_To_Make_A_Mirror",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Whitten_And._Williams|Lie_To_Me": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Whitten_And._Williams|Lie_To_Me",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Will_Evans|Me_And_My_Crew": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Will_Evans|Me_And_My_Crew",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Wires|Red_On_You": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Wires|Red_On_You",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Wolf's_Head_&_Vixen_Morris_Band|Lament": {
+      "families": [
+        "acoustic_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "song_id": "Wolf's_Head_&_Vixen_Morris_Band|Lament",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Orch_STR_train.txt",
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Woodfire|Animals": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Woodfire|Animals",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Woodfire|Get_Fooled": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Woodfire|Get_Fooled",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Woodfire|Haunted_House": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Woodfire|Haunted_House",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Woodfire|Outer__": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Woodfire|Outer__",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Woodfire|Wealthy_In_Time": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Woodfire|Wealthy_In_Time",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Woven_Hollow|Tell_Me_Nice": {
+      "families": [
+        "acoustic_guitar"
+      ],
+      "song_id": "Woven_Hollow|Tell_Me_Nice",
+      "source_lists": [
+        "Gtr_AG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Xarxa|Cors_Desbocats": {
+      "families": [
+        "electric_guitar",
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "Xarxa|Cors_Desbocats",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_BR_train.txt",
+        "Orch_WW_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "Young_Griffo|Blood_To_Bone": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Young_Griffo|Blood_To_Bone",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Young_Griffo|Facade": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Young_Griffo|Facade",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Young_Griffo|Pennies": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "Young_Griffo|Pennies",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Zane_Carney_&_Friends|Talk_To_Me_Baby": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar"
+      ],
+      "song_id": "Zane_Carney_&_Friends|Talk_To_Me_Baby",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Zeno|Signs": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "Zeno|Signs",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Zwiepack|Air": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Zwiepack|Air",
+      "source_lists": [
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "Zwiepack|Summertime": {
+      "families": [
+        "wind_brass"
+      ],
+      "song_id": "Zwiepack|Summertime",
+      "source_lists": [
+        "Orch_WW_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "c:fx|Mathematician": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "c:fx|Mathematician",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "cryonicPAX|Another_Way": {
+      "families": [
+        "strings",
+        "synth"
+      ],
+      "song_id": "cryonicPAX|Another_Way",
+      "source_lists": [
+        "Orch_STR_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "cryonicPAX|Excessive": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "cryonicPAX|Excessive",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "cryonicPAX|Hold_Me": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "cryonicPAX|Hold_Me",
+      "source_lists": [
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test"
+      ]
+    },
+    "cryonicPAX|Melancholy": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "cryonicPAX|Melancholy",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_test.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "impossible_c_o_l_o_u_r_s|Dune_Rider": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "impossible_c_o_l_o_u_r_s|Dune_Rider",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "impossible_c_o_l_o_u_r_s|The_Truth": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "impossible_c_o_l_o_u_r_s|The_Truth",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "oxeye|Reflection": {
+      "families": [
+        "synth"
+      ],
+      "song_id": "oxeye|Reflection",
+      "source_lists": [
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "oxeye|Sorry": {
+      "families": [
+        "acoustic_guitar",
+        "synth"
+      ],
+      "song_id": "oxeye|Sorry",
+      "source_lists": [
+        "Gtr_AG_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "simplemachine|Ingloria": {
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "strings",
+        "synth"
+      ],
+      "song_id": "simplemachine|Ingloria",
+      "source_lists": [
+        "Gtr_AG_train.txt",
+        "Gtr_EG_test.txt",
+        "Orch_STR_test.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "test",
+        "train"
+      ]
+    },
+    "simplemachine|Ones_And_Zeros": {
+      "families": [
+        "synth",
+        "wind_brass"
+      ],
+      "song_id": "simplemachine|Ones_And_Zeros",
+      "source_lists": [
+        "Orch_BR_train.txt",
+        "Orch_WW_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "simplemachine|Unbroken_(I_Remember_Everything)": {
+      "families": [
+        "electric_guitar",
+        "strings"
+      ],
+      "song_id": "simplemachine|Unbroken_(I_Remember_Everything)",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Orch_STR_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "thelvnguage|Kings_And_Queens": {
+      "families": [
+        "electric_guitar",
+        "synth"
+      ],
+      "song_id": "thelvnguage|Kings_And_Queens",
+      "source_lists": [
+        "Gtr_EG_train.txt",
+        "Synth_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    },
+    "thelvnguage|Raspberry_Jam": {
+      "families": [
+        "electric_guitar"
+      ],
+      "song_id": "thelvnguage|Raspberry_Jam",
+      "source_lists": [
+        "Gtr_EG_train.txt"
+      ],
+      "xlance_declared_splits": [
+        "train"
+      ]
+    }
+  },
+  "source_id": "rawstems",
+  "split_policy": "Use the lists as label-curation evidence only. Assign one deterministic composition-level split in our corpus builder.",
+  "unique_song_count": 558,
+  "xlance_commit": "7f55df1f84b127aaa27f57f9436538529ad09643"
+}

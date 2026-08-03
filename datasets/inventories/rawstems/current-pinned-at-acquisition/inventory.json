@@ -1,0 +1,92 @@
+{
+  "file_count": 10,
+  "files": [
+    {
+      "checksum": null,
+      "checksum_algorithm": null,
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/.gitattributes",
+      "path": ".gitattributes",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 2516
+    },
+    {
+      "checksum": null,
+      "checksum_algorithm": null,
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/README.md",
+      "path": "README.md",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 112
+    },
+    {
+      "checksum": "a5a6bf397c262381132e25db4222f1c8a872e1c8bd79cef52b6db00220c54c75",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/RawStems_1.zip",
+      "path": "RawStems_1.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 31239912405
+    },
+    {
+      "checksum": "086ce35ba350d25ce53457c4eff67a972875a299671b9cacc376c7c86d68ceee",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/RawStems_2.zip",
+      "path": "RawStems_2.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 31236465995
+    },
+    {
+      "checksum": "f47245f5b4a8dd2c81704194e7fe090b1cec70b28b9e4c2150c950bf07c61dba",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/RawStems_3.zip",
+      "path": "RawStems_3.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 31262251283
+    },
+    {
+      "checksum": "17e940ae67237929520c1c4518f657ac56ec62331e7b91c37394684d99936e03",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/RawStems_4.zip",
+      "path": "RawStems_4.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 31213150683
+    },
+    {
+      "checksum": "8d1448e87926154316f7b1eb3b73937fa738c94afd52b194f03240fab529972f",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/RawStems_5.zip",
+      "path": "RawStems_5.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 31298172336
+    },
+    {
+      "checksum": "655660c548d803c9d394a58042b094e5bf8df03dd4fcf362cd8b58660750af8a",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/RawStems_6.zip",
+      "path": "RawStems_6.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 31252896446
+    },
+    {
+      "checksum": "f3cf5752636a68ae403a94d52bd94f634cbc0263e5bd4291776112c6d44d5084",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/msr_test_set.zip",
+      "path": "msr_test_set.zip",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 26253345139
+    },
+    {
+      "checksum": "38331b1a311982dda257fb458a0cb9e5b7693b6c2ca0fc757defd9bc30030927",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://huggingface.co/datasets/yongyizang/RawStems/resolve/df8b2289f38a82c37a7ca04944fc2deaf52fb62e/rms_analysis.jsonl",
+      "path": "rms_analysis.jsonl",
+      "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+      "size_bytes": 58570433
+    }
+  ],
+  "license": "Per-file original creator license",
+  "rights_status": "per_item_review",
+  "schema_version": "1.0",
+  "source_id": "rawstems",
+  "source_url": "https://huggingface.co/datasets/yongyizang/RawStems",
+  "source_version": "current-pinned-at-acquisition",
+  "total_size_bytes": 213814767348
+}

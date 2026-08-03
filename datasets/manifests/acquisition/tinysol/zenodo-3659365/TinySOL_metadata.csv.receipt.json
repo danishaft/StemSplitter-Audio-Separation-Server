@@ -1,0 +1,23 @@
+{
+  "local_path": "datasets/staging/tinysol/zenodo-3659365/TinySOL_metadata.csv",
+  "local_retained": true,
+  "object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "text/csv",
+    "key": "stemsplitter/training-data/raw/tinysol/zenodo-3659365/TinySOL_metadata.csv",
+    "provider": "s3",
+    "size_bytes": 250520
+  },
+  "provider_checksum": "5cdfa8938d34b98534d6087c270f3ecf",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "TinySOL_metadata.csv",
+  "provider_revision": null,
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "479cfc8ae4cabfc2a5351092ab748590c244b1c3f733166bb5c6f5181b700fae",
+  "size_bytes": 250520,
+  "source_id": "tinysol",
+  "source_version": "zenodo-3659365"
+}

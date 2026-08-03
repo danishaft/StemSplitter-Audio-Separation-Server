@@ -1,0 +1,96 @@
+{
+  "benchmark_id": "cocktail_fork_local_small_20s_001_babyslakh-Track00011",
+  "comparator_dirs": [],
+  "comparator_scores": {},
+  "created_at": "2026-07-11T21:41:07Z",
+  "evidence_level": "ground_truth_reference",
+  "input": {
+    "channels": 1,
+    "duration_seconds": 20.0,
+    "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/babyslakh-Track00011/input/babyslakh-Track00011-20s.wav",
+    "sample_rate": 16000,
+    "sha256": "94a229e6654f6581ce19989674c6f90012d1726b1dcd8afaf625afb7bc231d4b"
+  },
+  "missing_stems": [],
+  "pairwise_correlations": {
+    "music__sfx": 0.0822,
+    "music__speech_dialog": 0.0204,
+    "sfx__speech_dialog": 0.0227
+  },
+  "prediction_dir": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/babyslakh-Track00011/specialist_substems",
+  "quality_claim": "ground_truth_scored",
+  "reconstruction": {
+    "residual_rms_db_vs_input": -31.499,
+    "stem_sum_rms_db_vs_input": 0.013,
+    "stem_sum_sdr_to_input": 31.4989
+  },
+  "reference_dir": "./benchmarks/external_references/music_only/babyslakh-Track00011",
+  "reference_scores": {
+    "music": {
+      "correlation": 0.9996,
+      "error_loudness_db": -31.2283,
+      "reference_path": "./benchmarks/external_references/music_only/babyslakh-Track00011/music.wav",
+      "sdr": 31.2283,
+      "si_sdr": 31.235,
+      "silence_reference": false
+    },
+    "sfx": {
+      "leakage_rms_db_vs_input": -44.262,
+      "prediction_peak": 0.027941,
+      "reference_path": "./benchmarks/external_references/music_only/babyslakh-Track00011/sfx.wav",
+      "silence_pass": true,
+      "silence_reference": true
+    },
+    "speech_dialog": {
+      "leakage_rms_db_vs_input": -49.848,
+      "prediction_peak": 0.043358,
+      "reference_path": "./benchmarks/external_references/music_only/babyslakh-Track00011/speech_dialog.wav",
+      "silence_pass": true,
+      "silence_reference": true
+    }
+  },
+  "sanity_pass": true,
+  "stem_metrics": {
+    "music": {
+      "active_ratio": 0.8929,
+      "channels": 1,
+      "clipped_sample_ratio": 0.0,
+      "duration_seconds": 20.0,
+      "finite": true,
+      "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/babyslakh-Track00011/specialist_substems/music.wav",
+      "peak": 0.787122,
+      "rms": 0.14842612,
+      "rms_db_vs_mixture": 0.008,
+      "sample_rate": 16000,
+      "sha256": "243de126dc89de2c941829e28123ed7c7d26dc83f3ac7ab8cdebd96fd54a453d"
+    },
+    "sfx": {
+      "active_ratio": 0.0703,
+      "channels": 1,
+      "clipped_sample_ratio": 0.0,
+      "duration_seconds": 20.0,
+      "finite": true,
+      "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/babyslakh-Track00011/specialist_substems/sfx.wav",
+      "peak": 0.027941,
+      "rms": 0.00090787,
+      "rms_db_vs_mixture": -44.262,
+      "sample_rate": 16000,
+      "sha256": "b32d1f9b84f6ad3e14ac294f8311d80f2da22c2e8a444aef254f59894360aee3"
+    },
+    "speech_dialog": {
+      "active_ratio": 0.0096,
+      "channels": 1,
+      "clipped_sample_ratio": 0.0,
+      "duration_seconds": 20.0,
+      "finite": true,
+      "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/babyslakh-Track00011/specialist_substems/speech_dialog.wav",
+      "peak": 0.043358,
+      "rms": 0.00047721,
+      "rms_db_vs_mixture": -49.848,
+      "sample_rate": 16000,
+      "sha256": "c221da90b8630485c1db357cc025d6c27e2cab32c6b31e4dac337ff3d8c07676"
+    }
+  },
+  "system_name": "cocktail_fork_mrx",
+  "warnings": []
+}

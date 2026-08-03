@@ -1,0 +1,28 @@
+{
+  "dataset": "BabySlakh Track00018",
+  "fixture": "track00018-137s-147s",
+  "qualification_scope": "single_segment_positive_source_smoke_not_release_benchmark",
+  "schema_version": 1,
+  "scores": {
+    "synth_oulianov": {
+      "correlation": 0.47543435804409084,
+      "error_loudness_db": -1.084227113976479,
+      "sdr": 1.0842277868610573,
+      "si_sdr": -5.3453860720954305
+    },
+    "synth_xlance_v1": {
+      "correlation": 0.5139555503140973,
+      "error_loudness_db": 4.36072838550373,
+      "sdr": -4.360728072395197,
+      "si_sdr": -4.449379916947024
+    },
+    "synth_xlance_v2": {
+      "correlation": 0.6356695371381658,
+      "error_loudness_db": 1.4972485473990547,
+      "sdr": -1.4972480992947927,
+      "si_sdr": -1.6872825203762272
+    }
+  },
+  "winner": "synth_xlance_v2",
+  "winner_status": "research_candidate_not_product_qualified"
+}

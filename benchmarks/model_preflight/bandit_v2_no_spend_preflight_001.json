@@ -1,0 +1,154 @@
+{
+  "preflight_id": "bandit_v2_no_spend_preflight_001",
+  "checked_at": "2026-07-12T14:15:29+01:00",
+  "candidate": "BandIt v2 Cinematic Separation",
+  "repo": {
+    "url": "https://github.com/kwatcharasupat/bandit-v2",
+    "local_path": "external_repos/bandit-v2",
+    "commit": "d5563d9031e95fdaa3e5a73d5020b9a0df61adb6",
+    "default_branch": "main",
+    "is_private": false,
+    "license_info": "Apache-2.0",
+    "license_file_found": true
+  },
+  "target_fit": {
+    "required_stems": ["speech_or_dialog", "music", "sfx_or_effects"],
+    "repo_stems": ["speech", "music", "sfx"],
+    "normalized_stems": {
+      "speech": "speech_dialog",
+      "music": "music",
+      "sfx": "sfx"
+    },
+    "passes": true
+  },
+  "weights": {
+    "source": "https://zenodo.org/records/12701995",
+    "zenodo_record": "10.5281/zenodo.12701995",
+    "zenodo_license": "CC-BY-SA-4.0",
+    "primary_checkpoint_candidate": {
+      "name": "checkpoint-multi.ckpt",
+      "local_path": "external_repos/bandit-v2/checkpoints/checkpoint-multi.ckpt",
+      "size_bytes": 446680129,
+      "md5": "fea2868787551b0cff36cfcf7c3622a3"
+    },
+    "available_checkpoints": [
+      "checkpoint-cmn.ckpt",
+      "checkpoint-deu.ckpt",
+      "checkpoint-eng.ckpt",
+      "checkpoint-fao.ckpt",
+      "checkpoint-fra.ckpt",
+      "checkpoint-multi.ckpt",
+      "checkpoint-spa.ckpt"
+    ],
+    "downloaded": true,
+    "license_verified": true,
+    "license_review_status": "commercial_use_allowed_with_attribution_and_share_alike_obligations",
+    "checksums_verified": true,
+    "cpu_load_check": {
+      "passed": true,
+      "keys": ["callbacks", "epoch", "global_step", "loops", "lr_schedulers", "optimizer_states", "pytorch-lightning_version", "state_dict"],
+      "state_dict_entries": 2952,
+      "epoch": 199
+    },
+    "passes": true
+  },
+  "runner": {
+    "entrypoint": "inference.py",
+    "writes_outputs_as": "<stem>_estimate.wav",
+    "uses_cuda_unconditionally": false,
+    "help_command": "LOGS_ROOT=$PWD/../../tmp/bandit-logs ${LOCAL_HOME}/Desktop/marlon-music/venv/bin/python inference.py --help 'hydra.searchpath=[file://'$PWD'/configs]'",
+    "help_passed": true,
+    "help_failure": null,
+    "local_compatibility_patches": [
+      "external_repos/bandit-v2/src/system/inference_handler.py: make torchaudio.io.StreamReader optional for Torchaudio 2.10 CPU",
+      "external_repos/bandit-v2/expt/inference.yaml: use existing dnr-v3-com-smad-multi-v2b config",
+      "external_repos/bandit-v2/inference.py: select cuda only when available and load checkpoint with map_location",
+      "external_repos/bandit-v2/inference.py: use soundfile for WAV I/O to avoid torchaudio torchcodec dependency"
+    ],
+    "expected_publishable_outputs": [
+      "speech_dialog.wav",
+      "music.wav",
+      "sfx.wav"
+    ],
+    "passes": true
+  },
+  "dependencies": {
+    "local_import_check": {
+      "torch": "ok",
+      "torchaudio": "ok",
+      "omegaconf": "ok",
+      "librosa": "ok",
+      "soundfile": "ok",
+      "tqdm": "ok",
+      "hydra": "ok",
+      "pytorch_lightning": "ok",
+      "asteroid": "ok",
+      "torchmetrics": "ok",
+      "ray": "ok"
+    },
+    "requirements_risk": [
+      "requirements.txt uses a private Netflix package index",
+      "requirements.in includes nflx-manta, nflx_metaflow, and jasper",
+      "runner imports project training utilities instead of a small inference-only package",
+      "upstream pins ray==2.11.0, but Python 3.12 requires a newer Ray wheel",
+      "upstream inference.py moves the model to cuda unconditionally"
+    ],
+    "passes": true
+  },
+  "isolated_modal_smoke": {
+    "status": "completed",
+    "job_id": "bandit_booty2_2s_t4_003",
+    "gpu": "T4",
+    "input_seconds": 2,
+    "report": "jobs/bandit_worker_smoke/bandit_booty2_2s_t4_003/bandit_worker_smoke_report.json",
+    "passed_file_smoke": true,
+    "missing_features": [],
+    "outputs": [
+      "speech_dialog.wav",
+      "music.wav",
+      "sfx.wav"
+    ],
+    "quality_decision": "execution_only_quality_pending"
+  },
+  "targeted_quality_benchmark": {
+    "status": "completed",
+    "job_id": "bandit_booty2_20s_t4_001",
+    "gpu": "T4",
+    "input_seconds": 20,
+    "worker_report": "jobs/bandit_quality_benchmark/bandit_booty2_20s_t4_001/bandit_worker_smoke_report.json",
+    "benchmark_report": "benchmarks/external_stems/bandit_vs_mvsep_dnr_v3_booty2_20s_001.json",
+    "comparator": "benchmarks/comparators/mvsep_dnr_v3/booty2-master-v1-20s",
+    "sanity_pass": true,
+    "warnings": [],
+    "scores": {
+      "music": {
+        "correlation_to_comparator": 0.972,
+        "sdr_to_comparator": 12.5659,
+        "rms_db_vs_comparator": -0.342
+      },
+      "speech_dialog": {
+        "correlation_to_comparator": 0.9661,
+        "sdr_to_comparator": 7.2888,
+        "rms_db_vs_comparator": 2.327
+      },
+      "sfx": {
+        "correlation_to_comparator": 0.4518,
+        "sdr_to_comparator": -4.6504,
+        "rms_db_vs_comparator": 6.508
+      }
+    },
+    "quality_decision": "music_and_speech_promising_sfx_rejected"
+  },
+  "spend_gate": {
+    "modal_gpu_allowed": false,
+    "paid_api_allowed": false,
+    "long_external_queue_allowed": false,
+    "next_allowed_action": "do not spend more GPU on BandIt for production SFX; find a stronger SFX model or resolve CDX23 license status",
+    "passes": false
+  },
+  "decision": {
+    "technical_preflight": "comparator_benchmark_music_speech_promising_sfx_rejected",
+    "commercial_preflight": "conditional",
+    "reason": "BandIt v2 is useful evidence for speech/music/effects separation, but it is not approved for production SFX. One isolated short Modal T4 smoke produced speech_dialog, music, and sfx WAVs. The 20-second MVSep DnR v3 comparator benchmark scored music at 0.972 correlation and 12.5659 dB SDR, speech_dialog at 0.9661 correlation and 7.2888 dB SDR, and sfx at only 0.4518 correlation and -4.6504 dB SDR with a +6.508 dB loudness mismatch. Stop BandIt-specific production SFX spend and find a stronger SFX model or resolve CDX23 license status."
+  }
+}

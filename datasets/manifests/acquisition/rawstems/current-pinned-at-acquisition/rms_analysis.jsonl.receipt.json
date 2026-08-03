@@ -1,0 +1,23 @@
+{
+  "local_path": "datasets/staging/rawstems/current-pinned-at-acquisition/rms_analysis.jsonl",
+  "local_retained": true,
+  "object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/octet-stream",
+    "key": "stemsplitter/training-data/raw/rawstems/current-pinned-at-acquisition/rms_analysis.jsonl",
+    "provider": "s3",
+    "size_bytes": 58570433
+  },
+  "provider_checksum": "38331b1a311982dda257fb458a0cb9e5b7693b6c2ca0fc757defd9bc30030927",
+  "provider_checksum_algorithm": "sha256",
+  "provider_path": "rms_analysis.jsonl",
+  "provider_revision": "df8b2289f38a82c37a7ca04944fc2deaf52fb62e",
+  "release_use": "item_approval_required",
+  "remote_readback_verified": false,
+  "rights_status": "per_item_review",
+  "schema_version": "1.0",
+  "sha256": "38331b1a311982dda257fb458a0cb9e5b7693b6c2ca0fc757defd9bc30030927",
+  "size_bytes": 58570433,
+  "source_id": "rawstems",
+  "source_version": "current-pinned-at-acquisition"
+}

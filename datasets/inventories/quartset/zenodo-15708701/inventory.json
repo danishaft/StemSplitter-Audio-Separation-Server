@@ -1,0 +1,26 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "ba8e1b46c837dfa63d4c33db5cb3fe8a",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/15708701/files/QuartSet.zip/content",
+      "path": "QuartSet.zip",
+      "size_bytes": 795285369
+    },
+    {
+      "checksum": "9b6fb4d6181a969130f8cb6b6d8c7cd1",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/15708701/files/quartset-metadata.csv/content",
+      "path": "quartset-metadata.csv",
+      "size_bytes": 75572
+    }
+  ],
+  "license": "License snapshot required",
+  "rights_status": "permission_pending",
+  "schema_version": "1.0",
+  "source_id": "quartset",
+  "source_url": "https://zenodo.org/records/15708701",
+  "source_version": "zenodo-15708701",
+  "total_size_bytes": 795360941
+}

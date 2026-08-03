@@ -1,0 +1,65 @@
+{
+  "absent_stems": {
+    "strings": {
+      "evaluation": "not_evaluable_no_reference_source",
+      "rms": 0.14727620780467987,
+      "rms_dbfs": -16.63734813900872,
+      "sample_rate": 44100
+    },
+    "synth": {
+      "evaluation": "not_evaluable_no_reference_source",
+      "rms": 0.0014231210807338357,
+      "rms_dbfs": -56.93516296166605,
+      "sample_rate": 44100
+    }
+  },
+  "dataset": "BabySlakh Track00011",
+  "evaluated_stems": {
+    "acoustic_guitar": {
+      "correlation": 0.9658779292056997,
+      "error_loudness_db": -10.294540783668012,
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/acoustic_guitar.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/acoustic_guitar.wav",
+      "sdr": 10.294541220004005,
+      "si_sdr": 11.4325255808064,
+      "stem_name": "acoustic_guitar"
+    },
+    "electric_guitar": {
+      "correlation": 0.09606841355572064,
+      "error_loudness_db": 11.354890477680149,
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/electric_guitar.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/electric_guitar.wav",
+      "sdr": -11.354890221117575,
+      "si_sdr": -20.308119869277412,
+      "stem_name": "electric_guitar"
+    },
+    "piano": {
+      "correlation": 0.9053587624352832,
+      "error_loudness_db": -5.39672058124308,
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/piano.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/piano.wav",
+      "sdr": 5.396720661537168,
+      "si_sdr": 6.575842462266527,
+      "stem_name": "piano"
+    },
+    "wind": {
+      "correlation": 0.6484866308812416,
+      "error_loudness_db": -2.3588666893405206,
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/wind.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/wind.wav",
+      "sdr": 2.358867084759858,
+      "si_sdr": -1.39225222294902,
+      "stem_name": "wind"
+    }
+  },
+  "inference_seconds": 1.8358,
+  "model_id": "oulianov/mvsep_mega_53",
+  "model_revision": "911881e9f5c306e3f4f021fc6c4f61890ef32955",
+  "qualification_scope": "single_segment_smoke_qualification_not_release_benchmark",
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "segment_seconds": [
+    30,
+    40
+  ]
+}

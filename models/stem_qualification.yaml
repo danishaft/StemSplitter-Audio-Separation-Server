@@ -1,0 +1,111 @@
+schema_version: 1
+profile: quality_gpu_experimental
+release_decision: rejected
+production_release_eligible: false
+benchmark:
+  benchmark_id: release-30-l4-l4-v1
+  planned_song_count: 30
+  valid_ground_truth_song_count: 9
+  status: failed_early
+  scorecard: benchmarks/results/release-30-l4-l4-v1-scorecard.json
+external_benchmark:
+  source: MVSep Quality Checker
+  status: complete_model_coverage
+  caveat: External SDR values use MVSep's stem-specific datasets and are not directly comparable across stem families.
+stems:
+  vocals:
+    delivery_model: melband_kim_vocals
+    candidate_models: []
+    benchmark_status: passed_external_mvsep_multisong
+    quality_status: externally_verified
+    production_eligible: false
+    external_sdr: 11.01
+    next_action: complete_internal_release_corpus
+  instrumental:
+    delivery_model: melband_kim_vocals_complement
+    candidate_models: []
+    benchmark_status: passed_external_mvsep_multisong
+    quality_status: externally_verified
+    production_eligible: false
+    external_sdr: 17.32
+    next_action: complete_internal_release_corpus
+  drums:
+    delivery_model: bs_roformer_sw
+    candidate_models: []
+    benchmark_status: passed_internal_and_external
+    quality_status: externally_verified
+    production_eligible: false
+    median_si_sdr: 16.699
+    external_sdr: 14.11
+    next_action: complete_release_corpus_and_blind_listening
+  bass:
+    delivery_model: bs_roformer_sw
+    candidate_models: []
+    benchmark_status: passed_internal_and_external
+    quality_status: externally_verified
+    production_eligible: false
+    median_si_sdr: 10.682
+    external_sdr: 14.62
+    next_action: complete_release_corpus_and_test_fallback_trigger
+  acoustic_guitar:
+    delivery_model: bs_roformer_sw
+    candidate_models: []
+    benchmark_status: external_rank_1_internal_domain_mismatch
+    quality_status: externally_top_ranked
+    production_eligible: false
+    median_si_sdr: -0.753
+    external_sdr: 9.012
+    next_action: investigate_internal_corpus_domain_mismatch_and_blind_listen
+  piano:
+    delivery_model: bs_roformer_sw
+    candidate_models: []
+    benchmark_status: passed_external_internal_domain_mismatch
+    quality_status: externally_verified
+    production_eligible: false
+    median_si_sdr: 2.459
+    external_sdr: 7.83
+    next_action: investigate_internal_corpus_domain_mismatch_and_blind_listen
+  kick:
+    delivery_model: mdx23c_drumsep_jarredou_aufr33
+    candidate_models: []
+    benchmark_status: passed_external_mvsep_drumsep
+    quality_status: externally_verified
+    production_eligible: false
+    external_sdr: 14.54
+    next_action: complete_internal_release_corpus
+  snare:
+    delivery_model: mdx23c_drumsep_jarredou_aufr33
+    candidate_models: []
+    benchmark_status: passed_external_mvsep_drumsep
+    quality_status: externally_verified
+    production_eligible: false
+    external_sdr: 9.79
+    next_action: complete_internal_release_corpus
+  electric_guitar:
+    delivery_model: bs_roformer_sw_electric_guitar_head
+    candidate_models: []
+    benchmark_status: passed_initial_specialist_gate
+    quality_status: internal_evaluation_only
+    production_eligible: false
+    aggregate_sdr: 7.3866
+    evidence: benchmarks/specialist_training/recovery-v1/electric_guitar/export-receipt.json
+    next_action: complete external benchmark and blind listening
+  synth:
+    delivery_model: xlance_bs_roformer_synth_v2
+    candidate_models: []
+    benchmark_status: passed_initial_recovery_validation
+    quality_status: conflicting_gates_internal_evaluation_only
+    production_eligible: false
+    validation_sdr: 7.3652
+    caveat: failed the older immutable nine-track aggregate and tail-quality gate
+    evidence: benchmarks/specialist_training/recovery-v1/synth/training-receipt.json
+    next_action: reconcile validation domains and complete blind listening
+  strings:
+    delivery_model: oulianov_bs_roformer_bowed_strings
+    candidate_models: []
+    benchmark_status: passed_initial_specialist_gate
+    quality_status: internal_evaluation_only
+    production_eligible: false
+    aggregate_sdr: 8.2523
+    evidence: benchmarks/specialist_training/recovery-v1/strings/export-receipt.json
+    next_action: complete external benchmark and blind listening

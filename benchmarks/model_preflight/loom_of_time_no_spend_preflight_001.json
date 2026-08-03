@@ -1,0 +1,89 @@
+{
+  "preflight_id": "loom_of_time_no_spend_preflight_001",
+  "checked_at": "2026-07-12T14:15:29+01:00",
+  "candidate": "Loom of Time BSRoFormer Separator",
+  "model_repo": {
+    "url": "https://huggingface.co/Haoyu123123/loom-of-time-models",
+    "local_path": "external_repos/loom-of-time-models",
+    "commit": "2ba9ffb3b3d69c4bebb1be10642061087fd567ae",
+    "license_info": "MIT",
+    "is_lfs_pointer_only": false
+  },
+  "code_repo": {
+    "url": "https://github.com/HAoyu-baller/Loom-of-Time-Music-Viz",
+    "local_path": "external_repos/Loom-of-Time-Music-Viz",
+    "commit": "175473465bbd280d9d87575e593f186c64ca5fc2",
+    "license_info": null,
+    "license_file_found": false
+  },
+  "target_fit": {
+    "required_stems": ["strings", "wind_or_brass"],
+    "repo_stems": ["erhu", "wind", "plucked", "perc", "vocal"],
+    "normalized_stems": {
+      "plucked": "plucked_strings_candidate",
+      "wind": "wind_candidate",
+      "perc": "percussion_candidate",
+      "vocal": "vocal_candidate",
+      "erhu": "erhu_candidate"
+    },
+    "domain": "Chinese folk music",
+    "general_pop_fit": "weak_until_benchmarked",
+    "passes": false
+  },
+  "weights": {
+    "model_file": "models/separator/best.pt",
+    "local_path": "external_repos/loom-of-time-models/models/separator/best.pt",
+    "git_lfs_oid": "sha256:b41a02bff33c8ec077a5c52349a255e3f3128f1a34d30ffca448f10aad6a1b0e",
+    "declared_size_bytes": 1411600301,
+    "downloaded": true,
+    "checksum_verified": true,
+    "cpu_load_check": {
+      "passed": true,
+      "keys": ["epoch", "model", "model_cfg", "optimizer", "scheduler", "stems", "val_loss"],
+      "model_entries": 1943,
+      "model_cfg_entries": 6,
+      "epoch": 77,
+      "val_loss": 2.091419219970703
+    },
+    "passes": true
+  },
+  "runner": {
+    "entrypoint": "backend/training/separate.py",
+    "sample_rate_hz": 22050,
+    "chunk_samples": 132300,
+    "overlap_samples": 22050,
+    "writes_outputs_as": "<stem>.wav",
+    "help_command": "${LOCAL_HOME}/Desktop/marlon-music/venv/bin/python external_repos/Loom-of-Time-Music-Viz/backend/training/separate.py --help",
+    "help_passed": true,
+    "help_failure": null,
+    "expected_publishable_outputs": [
+      "plucked_strings_candidate.wav",
+      "wind_candidate.wav"
+    ],
+    "passes": true
+  },
+  "dependencies": {
+    "local_import_check": {
+      "torch": "ok",
+      "torchaudio": "ok",
+      "soundfile": "ok",
+      "librosa": "ok",
+      "soxr": "ok",
+      "numpy": "ok",
+      "bs_roformer": "ok"
+    },
+    "passes": true
+  },
+  "spend_gate": {
+    "modal_gpu_allowed": false,
+    "paid_api_allowed": false,
+    "long_external_queue_allowed": false,
+    "next_allowed_action": "verify code license or replace the runner with our own implementation, then run a free local CPU smoke on a short clip",
+    "passes": false
+  },
+  "decision": {
+    "technical_preflight": "downloaded_and_runner_load_passed",
+    "commercial_preflight": "blocked",
+    "reason": "The MIT model weights are downloaded, checksum-verified, loadable on CPU, and relevant to plucked strings and wind. The runner help gate now passes after installing bs_roformer. It remains commercially blocked because the GitHub runner repo has no detected license, and it remains quality-blocked until a short local smoke and benchmark prove useful general-pop strings or wind output."
+  }
+}

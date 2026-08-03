@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "corpus_id": "unit-economics-pilot-v1",
+  "frozen_at": "2026-07-18",
+  "purpose": "GPU cost and latency screening before full-song or release benchmarks",
+  "release_claim_eligible": false,
+  "songs": [
+    {
+      "id": "babyslakh-track00011",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00011/mix.wav",
+      "sha256": "adb9b52c1ecb28b047fd5de6f7eb886586c4bc6c7dc0bd21b4c99ee045daf111",
+      "duration_seconds": 197.926938,
+      "excerpt_start_seconds": 30.0,
+      "excerpt_duration_seconds": 60.0,
+      "difficulty": "easy",
+      "genres": ["synthetic_multitrack"],
+      "evidence_level": "ground_truth",
+      "reference_root": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00011",
+      "license_status": "research_dataset"
+    },
+    {
+      "id": "booty2-final-master",
+      "path": "${LOCAL_MEDIA_ROOT}/jobs/booty2/masters/booty2-final-master.wav",
+      "sha256": "88b56d1324e598114d4812b06a903e2bcce5bd1909e39df38c976b6bb02a5bd1",
+      "duration_seconds": 102.426122,
+      "excerpt_start_seconds": 25.0,
+      "excerpt_duration_seconds": 60.0,
+      "difficulty": "mixed",
+      "genres": ["afrobeats", "ai_generated"],
+      "evidence_level": "blind_listening_only",
+      "license_status": "user_owned"
+    },
+    {
+      "id": "money-constant-commercial-reference",
+      "path": "${LOCAL_MEDIA_ROOT}/Dj-Maphorisa-Ft-DJ-Tunez-Wizkid-And-Mavo-MONEY-CONSTANT-New-Song-(TrendyBeatz.com).mp3",
+      "sha256": "6cb657e79cd30012318d25766a0977941c90d9e22588754267066f6db3b88cce",
+      "duration_seconds": 376.163265,
+      "excerpt_start_seconds": 60.0,
+      "excerpt_duration_seconds": 60.0,
+      "difficulty": "hard",
+      "genres": ["afrobeats", "commercial_master"],
+      "evidence_level": "blind_listening_only",
+      "license_status": "reference_only_no_redistribution"
+    }
+  ]
+}

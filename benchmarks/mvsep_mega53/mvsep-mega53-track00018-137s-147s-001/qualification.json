@@ -1,0 +1,27 @@
+{
+  "dataset": "BabySlakh Track00018",
+  "inference_seconds": 1.8744,
+  "model_id": "oulianov/mvsep_mega_53",
+  "model_revision": "911881e9f5c306e3f4f021fc6c4f61890ef32955",
+  "qualification_scope": "single_segment_positive_source_smoke_not_release_benchmark",
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "scores": {
+    "strings": {
+      "correlation": 0.14256593787919805,
+      "error_loudness_db": 3.4442874340951732,
+      "sdr": -3.4442873565674375,
+      "si_sdr": -16.83050453979424
+    },
+    "synth": {
+      "correlation": 0.26057835888397163,
+      "error_loudness_db": -0.12373903742785157,
+      "sdr": 0.12373939095739271,
+      "si_sdr": -11.375853150866265
+    }
+  },
+  "segment_seconds": [
+    137,
+    147
+  ]
+}

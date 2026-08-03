@@ -1,0 +1,340 @@
+{
+  "blocked_source_ids": [
+    "gaps",
+    "guitarset",
+    "idmt_smt_guitar",
+    "acmid_web_crawl",
+    "cambridge_mixing_secrets_delta",
+    "goat",
+    "rawstems",
+    "moisesdb",
+    "medleydb",
+    "medleydb_sample",
+    "musdb",
+    "ensembleset",
+    "quartset",
+    "orchideasol",
+    "freesound_loop_dataset"
+  ],
+  "family_sources": {
+    "acoustic_guitar": [
+      "slakh2100",
+      "nsynth"
+    ],
+    "electric_guitar": [
+      "guitar_techs",
+      "eg_ipt",
+      "albumdb",
+      "slakh2100",
+      "nsynth"
+    ],
+    "strings": [
+      "albumdb",
+      "slakh2100",
+      "nsynth",
+      "synthsod",
+      "spheres",
+      "cocochorales",
+      "vsco_community",
+      "tinysol",
+      "urmp"
+    ],
+    "synth": [
+      "slakh2100",
+      "nsynth"
+    ],
+    "wind_brass": [
+      "onair_music",
+      "albumdb",
+      "slakh2100",
+      "nsynth",
+      "synthsod",
+      "spheres",
+      "chorale_bricks",
+      "cocochorales",
+      "vsco_community",
+      "tinysol",
+      "urmp"
+    ]
+  },
+  "profile": "release_eligible",
+  "registry_path": "datasets/registry/specialist_sources.yaml",
+  "registry_sha256": "6f03886f3193d923fba7579923718d1d1183d9a5ae066ca926d594fe06791bc1",
+  "release_eligible": true,
+  "schema_version": "1.0",
+  "selected_source_ids": [
+    "onair_music",
+    "guitar_techs",
+    "eg_ipt",
+    "albumdb",
+    "slakh2100",
+    "nsynth",
+    "synthsod",
+    "spheres",
+    "chorale_bricks",
+    "cocochorales",
+    "vsco_community",
+    "tinysol",
+    "urmp"
+  ],
+  "sources": {
+    "albumdb": {
+      "display_name": "AlbumDB",
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "hard_negative"
+      ],
+      "source_url": "https://doi.org/10.5281/zenodo.19683000",
+      "version": "zenodo-19683000"
+    },
+    "chorale_bricks": {
+      "display_name": "ChoraleBricks",
+      "families": [
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "ensemble",
+        "real_recording"
+      ],
+      "source_url": "https://doi.org/10.5281/zenodo.15081741",
+      "version": "zenodo-15081741"
+    },
+    "cocochorales": {
+      "caveat": "Only official main-dataset train shards 1 and 25 are selected. The multi-terabyte f0, note-expression, and synthesis-parameter payloads are intentionally excluded.",
+      "display_name": "CocoChorales",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "synthetic_scale"
+      ],
+      "source_url": "https://magenta.tensorflow.org/datasets/cocochorales",
+      "version": "full-v1-train-shards-1-25"
+    },
+    "eg_ipt": {
+      "caveat": "One performer; simultaneous microphone and DI perspectives are not independent performances.",
+      "display_name": "EG-IPT",
+      "families": [
+        "electric_guitar"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "articulation"
+      ],
+      "source_url": "https://zenodo.org/records/15205644",
+      "version": "zenodo-15205644"
+    },
+    "guitar_techs": {
+      "display_name": "Guitar-TECHS",
+      "families": [
+        "electric_guitar"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "hard_negative"
+      ],
+      "source_url": "https://zenodo.org/records/14963133",
+      "version": "zenodo-14963133"
+    },
+    "nsynth": {
+      "caveat": "Use isolated 16 kHz notes for augmentation, not full-song targets.",
+      "display_name": "NSynth",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "articulation",
+        "timbre"
+      ],
+      "source_url": "https://magenta.tensorflow.org/datasets/nsynth",
+      "version": "magenta-2017-04-10"
+    },
+    "onair_music": {
+      "caveat": "Use only stems whose archive labels map unambiguously to a target family; keep compositions grouped across train, validation, and test.",
+      "display_name": "OnAir Music Dataset",
+      "families": [
+        "wind_brass"
+      ],
+      "license": "CC BY-SA 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "real_recording"
+      ],
+      "source_url": "https://github.com/sevagh/OnAir-Music-Dataset",
+      "version": "v4-1cdaae8"
+    },
+    "slakh2100": {
+      "display_name": "Slakh2100",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "synthetic_scale"
+      ],
+      "source_url": "https://zenodo.org/records/4599666",
+      "version": "zenodo-4599666"
+    },
+    "spheres": {
+      "display_name": "The Spheres Dataset",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY-SA 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "real_orchestra"
+      ],
+      "source_url": "https://zenodo.org/records/17347681",
+      "version": "zenodo-17347681"
+    },
+    "synthsod": {
+      "display_name": "SynthSOD",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "synthetic_scale"
+      ],
+      "source_url": "https://doi.org/10.5281/zenodo.13759492",
+      "version": "zenodo-13759492"
+    },
+    "tinysol": {
+      "display_name": "TinySOL",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC BY 4.0",
+      "quality_status": "accepted",
+      "release_use": "allowed_with_attribution",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "articulation",
+        "timbre"
+      ],
+      "source_url": "https://zenodo.org/records/3659365",
+      "version": "zenodo-3659365"
+    },
+    "urmp": {
+      "display_name": "University of Rochester Multi-Modal Music Performance Dataset",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC0 1.0",
+      "quality_status": "accepted",
+      "release_use": "allowed",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "target",
+        "mixture",
+        "ensemble",
+        "real_recording"
+      ],
+      "source_url": "https://zenodo.org/records/5034983",
+      "version": "zenodo-5034983"
+    },
+    "vsco_community": {
+      "display_name": "VSCO Community",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "license": "CC0",
+      "quality_status": "accepted",
+      "release_use": "allowed",
+      "research_use": "allowed",
+      "rights_status": "permissive_recorded",
+      "roles": [
+        "rendering_source",
+        "articulation",
+        "timbre"
+      ],
+      "source_url": "https://versilian-studios.com/vsco-community/",
+      "version": "current-pinned-at-acquisition"
+    }
+  },
+  "target_families": [
+    "acoustic_guitar",
+    "electric_guitar",
+    "synth",
+    "strings",
+    "wind_brass"
+  ]
+}

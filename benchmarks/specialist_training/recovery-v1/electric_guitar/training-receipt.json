@@ -1,0 +1,23 @@
+{
+  "adaptation_mode": "head",
+  "base_id": "electric_guitar",
+  "checkpoint": "runs/electric-recovery-head1000-20260728/electric_guitar/last_bs_roformer.ckpt",
+  "checkpoint_sha256": "dd2bc41efced7d09e371ee11f970bb305ade0fae9f7958346d6f6b8206d6ab85",
+  "config_sha256": "77de62f040723c5ca77cebf899b03d0b5c5786dedae51a9d16815e6234d3243f",
+  "dataset_id": "specialist-recovery-v1",
+  "dataset_receipt_sha256": "fd525c434400d879c59454876e677458e7a76a447775095abada14fd74fdf98a",
+  "elapsed_seconds": 278.04,
+  "epochs": 1,
+  "gpu_memory_bytes": 85017624576,
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "indexed_audio_count": 5353,
+  "peak_gpu_memory_bytes": 0,
+  "run_id": "electric-recovery-head1000-20260728",
+  "schema_version": "1.0",
+  "seconds_per_step": 0.27804,
+  "start_checkpoint": "bases/electric_guitar_bsroformer_base.ckpt",
+  "start_checkpoint_sha256": "8e58c1c73e652b206ddaec3548b97de56608864dd3b35895231d65a4f776c922",
+  "steps_per_epoch": 1000,
+  "training_recipe": "recovery_v1",
+  "validation_set_id": "specialists-validation-30-v1"
+}

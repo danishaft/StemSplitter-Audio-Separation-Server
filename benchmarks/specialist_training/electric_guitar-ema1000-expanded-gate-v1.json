@@ -1,0 +1,595 @@
+{
+  "audio_files": [
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/07731717b950f19a83ef1a20f3bdc592a027b5c8027abeda2cc81295704cc6b7/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/08aab4d4100e03e70ce62e94794b93bc439a868961d82f799d8303bc9763324e/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/092f2c511a4d8d0338f5cb42cd4b861e7721817991215df679db1096399d47a8/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/0b0e8a7a1c1412b01aa59eb8fb48251e3601eabd05adbeb49b575b247a7b6c16/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/0cfe352d0eda184e803fa26d515618bba364ccc8c9716e2da96de6bff108c9fa/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/0ec5bb0b0f186b3abd281f6fce47a3694edc418b3d6390cf9dfbe679428d494b/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/0fa759ed72fe6afd6ed3b399f1a24735720881b4e512452151fe0ec3838bc424/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/106ba3b021e92f983d5711803563bb920e16df74785cc6a2cf366007f3921937/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/1193588fb3e10fc549c5599819251333783d993a61a66ceb7cd51d4283c726e7/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/140253f21fb987fb4323051db74199a370ca5522323fd8c1062736effdd4f07a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/1a0c24ad342f396c804cc6dd18792dd9c87679707eda86bf24d9a27d5001d59d/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/1e6a5fc0d9306eaa86242a2ed684ab9856a3f35ae07397d51d88eb519b61167a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/1fd23acaf4b7151134788bec434aefff9fa80f93579b9863c5e400f784514ca0/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/21c7fd5611fda6b50ad6b717b7cdada5f42eb59c9e16910c55d372da589ba06e/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/261ca46b13c5d7ead4e760161f4596b7f168787e36e1ab445c00528084ace0f0/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/2809c7fb20aca1edf70d17cd3ec370f9584d635e7a7158d2292cb38affc64155/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/3a6880fe944a21abebb5c8c9823e23540a86af88e5fe7b57439729a1701bd300/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/3b3c933d95cb654f9eb23e0de3e99e38eebfec5e37021de54ed7186c41ddbfcf/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/47eaaf837e6e4e7320597ff6a568eafbb5e547dd2223462bda770827f7672376/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/4b31f7e9007c8cdd8f78b8683ef359eaf0004c756367f61ee87addc1cc728b19/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/6bbb087e4fb53bd8ef4609692e21855516a9d7e1cd6bb21d85b2317ff0a912e8/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/7d6b799b0f2020f6e5dd3e4b03f0a7d61e333e236a52d8b71e0a970e7fb50fbf/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/7fa20bf34f237bafe28979488e170c87ca668b1373144254d0c74f16ff947dab/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/7fc54de21dfee17dcdbc74afb37463894b48cb9446d79f423f706d9e47bf54ce/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/base/cca958be3c24f0e11393f0d28c46abe36895dd1300870a6eedf1858525688b46/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/07731717b950f19a83ef1a20f3bdc592a027b5c8027abeda2cc81295704cc6b7/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/07731717b950f19a83ef1a20f3bdc592a027b5c8027abeda2cc81295704cc6b7/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/08aab4d4100e03e70ce62e94794b93bc439a868961d82f799d8303bc9763324e/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/08aab4d4100e03e70ce62e94794b93bc439a868961d82f799d8303bc9763324e/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/092f2c511a4d8d0338f5cb42cd4b861e7721817991215df679db1096399d47a8/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/092f2c511a4d8d0338f5cb42cd4b861e7721817991215df679db1096399d47a8/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0b0e8a7a1c1412b01aa59eb8fb48251e3601eabd05adbeb49b575b247a7b6c16/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0b0e8a7a1c1412b01aa59eb8fb48251e3601eabd05adbeb49b575b247a7b6c16/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0cfe352d0eda184e803fa26d515618bba364ccc8c9716e2da96de6bff108c9fa/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0cfe352d0eda184e803fa26d515618bba364ccc8c9716e2da96de6bff108c9fa/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0ec5bb0b0f186b3abd281f6fce47a3694edc418b3d6390cf9dfbe679428d494b/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0ec5bb0b0f186b3abd281f6fce47a3694edc418b3d6390cf9dfbe679428d494b/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0fa759ed72fe6afd6ed3b399f1a24735720881b4e512452151fe0ec3838bc424/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/0fa759ed72fe6afd6ed3b399f1a24735720881b4e512452151fe0ec3838bc424/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/106ba3b021e92f983d5711803563bb920e16df74785cc6a2cf366007f3921937/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/106ba3b021e92f983d5711803563bb920e16df74785cc6a2cf366007f3921937/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1193588fb3e10fc549c5599819251333783d993a61a66ceb7cd51d4283c726e7/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1193588fb3e10fc549c5599819251333783d993a61a66ceb7cd51d4283c726e7/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/140253f21fb987fb4323051db74199a370ca5522323fd8c1062736effdd4f07a/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/140253f21fb987fb4323051db74199a370ca5522323fd8c1062736effdd4f07a/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1a0c24ad342f396c804cc6dd18792dd9c87679707eda86bf24d9a27d5001d59d/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1a0c24ad342f396c804cc6dd18792dd9c87679707eda86bf24d9a27d5001d59d/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1e6a5fc0d9306eaa86242a2ed684ab9856a3f35ae07397d51d88eb519b61167a/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1e6a5fc0d9306eaa86242a2ed684ab9856a3f35ae07397d51d88eb519b61167a/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1fd23acaf4b7151134788bec434aefff9fa80f93579b9863c5e400f784514ca0/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/1fd23acaf4b7151134788bec434aefff9fa80f93579b9863c5e400f784514ca0/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/21c7fd5611fda6b50ad6b717b7cdada5f42eb59c9e16910c55d372da589ba06e/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/21c7fd5611fda6b50ad6b717b7cdada5f42eb59c9e16910c55d372da589ba06e/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/261ca46b13c5d7ead4e760161f4596b7f168787e36e1ab445c00528084ace0f0/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/261ca46b13c5d7ead4e760161f4596b7f168787e36e1ab445c00528084ace0f0/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/2809c7fb20aca1edf70d17cd3ec370f9584d635e7a7158d2292cb38affc64155/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/2809c7fb20aca1edf70d17cd3ec370f9584d635e7a7158d2292cb38affc64155/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/3a6880fe944a21abebb5c8c9823e23540a86af88e5fe7b57439729a1701bd300/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/3a6880fe944a21abebb5c8c9823e23540a86af88e5fe7b57439729a1701bd300/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/3b3c933d95cb654f9eb23e0de3e99e38eebfec5e37021de54ed7186c41ddbfcf/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/3b3c933d95cb654f9eb23e0de3e99e38eebfec5e37021de54ed7186c41ddbfcf/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/47eaaf837e6e4e7320597ff6a568eafbb5e547dd2223462bda770827f7672376/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/47eaaf837e6e4e7320597ff6a568eafbb5e547dd2223462bda770827f7672376/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/4b31f7e9007c8cdd8f78b8683ef359eaf0004c756367f61ee87addc1cc728b19/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/4b31f7e9007c8cdd8f78b8683ef359eaf0004c756367f61ee87addc1cc728b19/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/6bbb087e4fb53bd8ef4609692e21855516a9d7e1cd6bb21d85b2317ff0a912e8/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/6bbb087e4fb53bd8ef4609692e21855516a9d7e1cd6bb21d85b2317ff0a912e8/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/7d6b799b0f2020f6e5dd3e4b03f0a7d61e333e236a52d8b71e0a970e7fb50fbf/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/7d6b799b0f2020f6e5dd3e4b03f0a7d61e333e236a52d8b71e0a970e7fb50fbf/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/7fa20bf34f237bafe28979488e170c87ca668b1373144254d0c74f16ff947dab/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/7fa20bf34f237bafe28979488e170c87ca668b1373144254d0c74f16ff947dab/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/7fc54de21dfee17dcdbc74afb37463894b48cb9446d79f423f706d9e47bf54ce/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/7fc54de21dfee17dcdbc74afb37463894b48cb9446d79f423f706d9e47bf54ce/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/cca958be3c24f0e11393f0d28c46abe36895dd1300870a6eedf1858525688b46/reference_electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/references/cca958be3c24f0e11393f0d28c46abe36895dd1300870a6eedf1858525688b46/reference_mixture.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/07731717b950f19a83ef1a20f3bdc592a027b5c8027abeda2cc81295704cc6b7/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/08aab4d4100e03e70ce62e94794b93bc439a868961d82f799d8303bc9763324e/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/092f2c511a4d8d0338f5cb42cd4b861e7721817991215df679db1096399d47a8/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/0b0e8a7a1c1412b01aa59eb8fb48251e3601eabd05adbeb49b575b247a7b6c16/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/0cfe352d0eda184e803fa26d515618bba364ccc8c9716e2da96de6bff108c9fa/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/0ec5bb0b0f186b3abd281f6fce47a3694edc418b3d6390cf9dfbe679428d494b/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/0fa759ed72fe6afd6ed3b399f1a24735720881b4e512452151fe0ec3838bc424/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/106ba3b021e92f983d5711803563bb920e16df74785cc6a2cf366007f3921937/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/1193588fb3e10fc549c5599819251333783d993a61a66ceb7cd51d4283c726e7/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/140253f21fb987fb4323051db74199a370ca5522323fd8c1062736effdd4f07a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/1a0c24ad342f396c804cc6dd18792dd9c87679707eda86bf24d9a27d5001d59d/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/1e6a5fc0d9306eaa86242a2ed684ab9856a3f35ae07397d51d88eb519b61167a/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/1fd23acaf4b7151134788bec434aefff9fa80f93579b9863c5e400f784514ca0/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/21c7fd5611fda6b50ad6b717b7cdada5f42eb59c9e16910c55d372da589ba06e/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/261ca46b13c5d7ead4e760161f4596b7f168787e36e1ab445c00528084ace0f0/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/2809c7fb20aca1edf70d17cd3ec370f9584d635e7a7158d2292cb38affc64155/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/3a6880fe944a21abebb5c8c9823e23540a86af88e5fe7b57439729a1701bd300/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/3b3c933d95cb654f9eb23e0de3e99e38eebfec5e37021de54ed7186c41ddbfcf/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/47eaaf837e6e4e7320597ff6a568eafbb5e547dd2223462bda770827f7672376/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/4b31f7e9007c8cdd8f78b8683ef359eaf0004c756367f61ee87addc1cc728b19/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/6bbb087e4fb53bd8ef4609692e21855516a9d7e1cd6bb21d85b2317ff0a912e8/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/7d6b799b0f2020f6e5dd3e4b03f0a7d61e333e236a52d8b71e0a970e7fb50fbf/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/7fa20bf34f237bafe28979488e170c87ca668b1373144254d0c74f16ff947dab/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/7fc54de21dfee17dcdbc74afb37463894b48cb9446d79f423f706d9e47bf54ce/electric_guitar.flac",
+    "exports/electric_guitar-ema1000-expanded-gate-v1/electric_guitar/trained_ema_1000/cca958be3c24f0e11393f0d28c46abe36895dd1300870a6eedf1858525688b46/electric_guitar.flac"
+  ],
+  "base_checkpoint_sha256": "8e58c1c73e652b206ddaec3548b97de56608864dd3b35895231d65a4f776c922",
+  "base_id": "electric_guitar",
+  "comparison_checkpoint_sha256": "bc6116eaa82ebb0535228509079cdb680b6479f1fb52a9bb2f0e6194efe774ce",
+  "comparison_variant": "trained_ema_1000",
+  "comparison_weight_source": "ema_model_state_dict",
+  "dataset_id": "complete-source-pools",
+  "elapsed_seconds": 81.013,
+  "evaluation_id": "electric_guitar-ema1000-expanded-gate-v1",
+  "example_count": 30,
+  "run_id": "specialists-20260728",
+  "schema_version": "1.0",
+  "scores": {
+    "aggregate": {
+      "base": {
+        "bleedless": 35.73211634953817,
+        "fullness": 29.561490297317505,
+        "sdr": 7.3865940953294436
+      },
+      "trained_ema_1000": {
+        "bleedless": 36.3330306371053,
+        "fullness": 24.532994651794432,
+        "sdr": 6.6154583086570105
+      }
+    },
+    "delta_comparison_minus_base": {
+      "bleedless": 0.6009142875671358,
+      "fullness": -5.028495645523073,
+      "sdr": -0.7711357866724331
+    },
+    "delta_distribution": {
+      "bleedless": {
+        "example_count": 30,
+        "improved_examples": 10,
+        "median": -0.21052312850952148
+      },
+      "fullness": {
+        "example_count": 30,
+        "improved_examples": 5,
+        "median": -2.7641468048095703
+      },
+      "sdr": {
+        "example_count": 30,
+        "improved_examples": 7,
+        "median": -0.1045539379119873
+      }
+    },
+    "per_example": {
+      "008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56": {
+        "base": {
+          "bleedless": 20.657249450683594,
+          "fullness": 21.789461135864258,
+          "k_sdr": 100.0,
+          "sdr": 12.022538185119629
+        },
+        "trained_ema_1000": {
+          "bleedless": 45.27592468261719,
+          "fullness": 8.770506858825684,
+          "k_sdr": 100.0,
+          "sdr": 11.276083946228027
+        }
+      },
+      "01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa": {
+        "base": {
+          "bleedless": 11.108338356018066,
+          "fullness": 12.756937980651855,
+          "k_sdr": 38.50768976168038,
+          "sdr": -7.770345211029053
+        },
+        "trained_ema_1000": {
+          "bleedless": 10.901556015014648,
+          "fullness": 11.83057975769043,
+          "k_sdr": 38.485418268686686,
+          "sdr": -7.772534370422363
+        }
+      },
+      "03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a": {
+        "base": {
+          "bleedless": 8.300314903259277,
+          "fullness": 19.259071350097656,
+          "k_sdr": 80.27862071926002,
+          "sdr": 0.5201839208602905
+        },
+        "trained_ema_1000": {
+          "bleedless": 7.851159572601318,
+          "fullness": 17.64613151550293,
+          "k_sdr": 79.90723320898583,
+          "sdr": 0.3906591236591339
+        }
+      },
+      "040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f": {
+        "base": {
+          "bleedless": 74.38050079345703,
+          "fullness": 50.15869140625,
+          "k_sdr": 100.0,
+          "sdr": 19.293210983276367
+        },
+        "trained_ema_1000": {
+          "bleedless": 71.18356323242188,
+          "fullness": 36.88608932495117,
+          "k_sdr": 100.0,
+          "sdr": 17.69457244873047
+        }
+      },
+      "04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a": {
+        "base": {
+          "bleedless": 5.003368854522705,
+          "fullness": 16.243419647216797,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -17.692623138427734
+        },
+        "trained_ema_1000": {
+          "bleedless": 4.942117214202881,
+          "fullness": 18.796079635620117,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -17.744348526000977
+        }
+      },
+      "07731717b950f19a83ef1a20f3bdc592a027b5c8027abeda2cc81295704cc6b7": {
+        "base": {
+          "bleedless": 38.804046630859375,
+          "fullness": 15.320589065551758,
+          "k_sdr": 99.41489686144894,
+          "sdr": 9.629226684570312
+        },
+        "trained_ema_1000": {
+          "bleedless": 33.75608825683594,
+          "fullness": 13.06118392944336,
+          "k_sdr": 98.86500622401499,
+          "sdr": 9.286736488342285
+        }
+      },
+      "08aab4d4100e03e70ce62e94794b93bc439a868961d82f799d8303bc9763324e": {
+        "base": {
+          "bleedless": 55.332611083984375,
+          "fullness": 67.72209930419922,
+          "k_sdr": 100.0,
+          "sdr": 14.58832836151123
+        },
+        "trained_ema_1000": {
+          "bleedless": 63.324798583984375,
+          "fullness": 53.68729782104492,
+          "k_sdr": 100.0,
+          "sdr": 15.125347137451172
+        }
+      },
+      "092f2c511a4d8d0338f5cb42cd4b861e7721817991215df679db1096399d47a8": {
+        "base": {
+          "bleedless": 37.056060791015625,
+          "fullness": 22.525859832763672,
+          "k_sdr": 100.0,
+          "sdr": 12.788090705871582
+        },
+        "trained_ema_1000": {
+          "bleedless": 53.928680419921875,
+          "fullness": 13.301431655883789,
+          "k_sdr": 100.0,
+          "sdr": 11.677841186523438
+        }
+      },
+      "0b0e8a7a1c1412b01aa59eb8fb48251e3601eabd05adbeb49b575b247a7b6c16": {
+        "base": {
+          "bleedless": 12.962187767028809,
+          "fullness": 14.811776161193848,
+          "k_sdr": 67.30196752530698,
+          "sdr": -3.239680528640747
+        },
+        "trained_ema_1000": {
+          "bleedless": 12.747923851013184,
+          "fullness": 12.401748657226562,
+          "k_sdr": 67.52717123400978,
+          "sdr": -3.1862900257110596
+        }
+      },
+      "0cfe352d0eda184e803fa26d515618bba364ccc8c9716e2da96de6bff108c9fa": {
+        "base": {
+          "bleedless": 10.182938575744629,
+          "fullness": 19.211334228515625,
+          "k_sdr": 43.14394932491737,
+          "sdr": -7.280730724334717
+        },
+        "trained_ema_1000": {
+          "bleedless": 10.170433044433594,
+          "fullness": 16.248815536499023,
+          "k_sdr": 42.494458331159535,
+          "sdr": -7.35355281829834
+        }
+      },
+      "0ec5bb0b0f186b3abd281f6fce47a3694edc418b3d6390cf9dfbe679428d494b": {
+        "base": {
+          "bleedless": 16.31698226928711,
+          "fullness": 27.38814353942871,
+          "k_sdr": 78.24043533167146,
+          "sdr": -0.17295025289058685
+        },
+        "trained_ema_1000": {
+          "bleedless": 16.23468589782715,
+          "fullness": 27.137432098388672,
+          "k_sdr": 78.14213047473874,
+          "sdr": -0.20530623197555542
+        }
+      },
+      "0fa759ed72fe6afd6ed3b399f1a24735720881b4e512452151fe0ec3838bc424": {
+        "base": {
+          "bleedless": 19.906503677368164,
+          "fullness": 13.557476043701172,
+          "k_sdr": 69.81681390128655,
+          "sdr": -2.6221730709075928
+        },
+        "trained_ema_1000": {
+          "bleedless": 19.187786102294922,
+          "fullness": 11.348548889160156,
+          "k_sdr": 69.7673449596332,
+          "sdr": -2.6347813606262207
+        }
+      },
+      "106ba3b021e92f983d5711803563bb920e16df74785cc6a2cf366007f3921937": {
+        "base": {
+          "bleedless": 5.133905410766602,
+          "fullness": 22.367597579956055,
+          "k_sdr": 42.65158173508993,
+          "sdr": -7.3360676765441895
+        },
+        "trained_ema_1000": {
+          "bleedless": 5.1394171714782715,
+          "fullness": 19.58063507080078,
+          "k_sdr": 42.28464461422912,
+          "sdr": -7.376771450042725
+        }
+      },
+      "1193588fb3e10fc549c5599819251333783d993a61a66ceb7cd51d4283c726e7": {
+        "base": {
+          "bleedless": 45.76655578613281,
+          "fullness": 83.10054016113281,
+          "k_sdr": 100.0,
+          "sdr": 12.770003318786621
+        },
+        "trained_ema_1000": {
+          "bleedless": 45.00498962402344,
+          "fullness": 83.355224609375,
+          "k_sdr": 100.0,
+          "sdr": 12.07177734375
+        }
+      },
+      "140253f21fb987fb4323051db74199a370ca5522323fd8c1062736effdd4f07a": {
+        "base": {
+          "bleedless": 51.501007080078125,
+          "fullness": 8.38847541809082,
+          "k_sdr": 100.0,
+          "sdr": 10.00684642791748
+        },
+        "trained_ema_1000": {
+          "bleedless": 41.27586364746094,
+          "fullness": 7.2827324867248535,
+          "k_sdr": 98.27441534191794,
+          "sdr": 8.925227165222168
+        }
+      },
+      "1a0c24ad342f396c804cc6dd18792dd9c87679707eda86bf24d9a27d5001d59d": {
+        "base": {
+          "bleedless": 39.766597747802734,
+          "fullness": 15.033971786499023,
+          "k_sdr": 96.9082880446408,
+          "sdr": 8.113493919372559
+        },
+        "trained_ema_1000": {
+          "bleedless": 38.3563232421875,
+          "fullness": 12.292640686035156,
+          "k_sdr": 96.0389018205573,
+          "sdr": 7.614222049713135
+        }
+      },
+      "1e6a5fc0d9306eaa86242a2ed684ab9856a3f35ae07397d51d88eb519b61167a": {
+        "base": {
+          "bleedless": 8.927364349365234,
+          "fullness": 21.815351486206055,
+          "k_sdr": 85.66119184931604,
+          "sdr": 2.5715298652648926
+        },
+        "trained_ema_1000": {
+          "bleedless": 8.952592849731445,
+          "fullness": 19.71868133544922,
+          "k_sdr": 85.6122279749141,
+          "sdr": 2.551313638687134
+        }
+      },
+      "1fd23acaf4b7151134788bec434aefff9fa80f93579b9863c5e400f784514ca0": {
+        "base": {
+          "bleedless": 56.534149169921875,
+          "fullness": 17.67580223083496,
+          "k_sdr": 100.0,
+          "sdr": 19.290464401245117
+        },
+        "trained_ema_1000": {
+          "bleedless": 12.874393463134766,
+          "fullness": 18.722789764404297,
+          "k_sdr": 81.97257109920872,
+          "sdr": 1.1298980712890625
+        }
+      },
+      "21c7fd5611fda6b50ad6b717b7cdada5f42eb59c9e16910c55d372da589ba06e": {
+        "base": {
+          "bleedless": 10.1513671875,
+          "fullness": 4.869554042816162,
+          "k_sdr": 80.5125722382623,
+          "sdr": 0.6025317311286926
+        },
+        "trained_ema_1000": {
+          "bleedless": 29.298564910888672,
+          "fullness": 33.03181076049805,
+          "k_sdr": 95.32770938346141,
+          "sdr": 7.215511322021484
+        }
+      },
+      "261ca46b13c5d7ead4e760161f4596b7f168787e36e1ab445c00528084ace0f0": {
+        "base": {
+          "bleedless": 7.656142711639404,
+          "fullness": 45.12428283691406,
+          "k_sdr": 51.068938931938334,
+          "sdr": -6.265835285186768
+        },
+        "trained_ema_1000": {
+          "bleedless": 7.958737850189209,
+          "fullness": 38.76411056518555,
+          "k_sdr": 50.44378915545022,
+          "sdr": -6.355087757110596
+        }
+      },
+      "2809c7fb20aca1edf70d17cd3ec370f9584d635e7a7158d2292cb38affc64155": {
+        "base": {
+          "bleedless": 58.123600006103516,
+          "fullness": 43.73277282714844,
+          "k_sdr": 100.0,
+          "sdr": 17.70962905883789
+        },
+        "trained_ema_1000": {
+          "bleedless": 68.2327880859375,
+          "fullness": 25.801193237304688,
+          "k_sdr": 100.0,
+          "sdr": 17.25225257873535
+        }
+      },
+      "3a6880fe944a21abebb5c8c9823e23540a86af88e5fe7b57439729a1701bd300": {
+        "base": {
+          "bleedless": 99.72606658935547,
+          "fullness": 92.8287124633789,
+          "k_sdr": 100.0,
+          "sdr": 37.570953369140625
+        },
+        "trained_ema_1000": {
+          "bleedless": 98.04963684082031,
+          "fullness": 63.92167663574219,
+          "k_sdr": 100.0,
+          "sdr": 36.996883392333984
+        }
+      },
+      "3b3c933d95cb654f9eb23e0de3e99e38eebfec5e37021de54ed7186c41ddbfcf": {
+        "base": {
+          "bleedless": 38.56440353393555,
+          "fullness": 25.37720489501953,
+          "k_sdr": 100.0,
+          "sdr": 13.251484870910645
+        },
+        "trained_ema_1000": {
+          "bleedless": 58.27103805541992,
+          "fullness": 22.475744247436523,
+          "k_sdr": 100.0,
+          "sdr": 13.762015342712402
+        }
+      },
+      "47eaaf837e6e4e7320597ff6a568eafbb5e547dd2223462bda770827f7672376": {
+        "base": {
+          "bleedless": 58.02157974243164,
+          "fullness": 30.556062698364258,
+          "k_sdr": 100.0,
+          "sdr": 15.362831115722656
+        },
+        "trained_ema_1000": {
+          "bleedless": 53.7752571105957,
+          "fullness": 24.766271591186523,
+          "k_sdr": 100.0,
+          "sdr": 13.980341911315918
+        }
+      },
+      "4b31f7e9007c8cdd8f78b8683ef359eaf0004c756367f61ee87addc1cc728b19": {
+        "base": {
+          "bleedless": 21.246456146240234,
+          "fullness": 6.5878496170043945,
+          "k_sdr": 80.44120322387079,
+          "sdr": 0.5773485898971558
+        },
+        "trained_ema_1000": {
+          "bleedless": 21.46869468688965,
+          "fullness": 7.443556785583496,
+          "k_sdr": 81.54170205369128,
+          "sdr": 0.9718183279037476
+        }
+      },
+      "6bbb087e4fb53bd8ef4609692e21855516a9d7e1cd6bb21d85b2317ff0a912e8": {
+        "base": {
+          "bleedless": 68.49215698242188,
+          "fullness": 32.64842224121094,
+          "k_sdr": 100.0,
+          "sdr": 24.378677368164062
+        },
+        "trained_ema_1000": {
+          "bleedless": 68.10618591308594,
+          "fullness": 20.47657012939453,
+          "k_sdr": 100.0,
+          "sdr": 21.656476974487305
+        }
+      },
+      "7d6b799b0f2020f6e5dd3e4b03f0a7d61e333e236a52d8b71e0a970e7fb50fbf": {
+        "base": {
+          "bleedless": 20.00298309326172,
+          "fullness": 6.075858116149902,
+          "k_sdr": 80.73969859484623,
+          "sdr": 0.6830402612686157
+        },
+        "trained_ema_1000": {
+          "bleedless": 17.237749099731445,
+          "fullness": 5.997581958770752,
+          "k_sdr": 80.90992619399186,
+          "sdr": 0.7437461614608765
+        }
+      },
+      "7fa20bf34f237bafe28979488e170c87ca668b1373144254d0c74f16ff947dab": {
+        "base": {
+          "bleedless": 98.54684448242188,
+          "fullness": 89.20640563964844,
+          "k_sdr": 100.0,
+          "sdr": 27.519662857055664
+        },
+        "trained_ema_1000": {
+          "bleedless": 97.08098602294922,
+          "fullness": 58.94636535644531,
+          "k_sdr": 100.0,
+          "sdr": 27.662885665893555
+        }
+      },
+      "7fc54de21dfee17dcdbc74afb37463894b48cb9446d79f423f706d9e47bf54ce": {
+        "base": {
+          "bleedless": 67.14449310302734,
+          "fullness": 25.16874885559082,
+          "k_sdr": 100.0,
+          "sdr": 22.23493766784668
+        },
+        "trained_ema_1000": {
+          "bleedless": 62.840335845947266,
+          "fullness": 20.613313674926758,
+          "k_sdr": 100.0,
+          "sdr": 20.73345184326172
+        }
+      },
+      "cca958be3c24f0e11393f0d28c46abe36895dd1300870a6eedf1858525688b46": {
+        "base": {
+          "bleedless": 6.646714210510254,
+          "fullness": 15.542236328125,
+          "k_sdr": 41.08435937850783,
+          "sdr": -7.506784915924072
+        },
+        "trained_ema_1000": {
+          "bleedless": 6.562647819519043,
+          "fullness": 11.68309497833252,
+          "k_sdr": 39.93759975041302,
+          "sdr": -7.626640319824219
+        }
+      }
+    }
+  },
+  "validation_set_id": "specialists-validation-30-v1",
+  "wandb_url": "https://wandb.ai/daniel-ejeh-auralith/stemsplitter-specialists/runs/ckt9on82"
+}

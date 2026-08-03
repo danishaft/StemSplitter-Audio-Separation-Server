@@ -1,0 +1,23 @@
+{
+  "adaptation_mode": "head",
+  "base_id": "strings",
+  "checkpoint": "runs/strings-recovery-head1000-20260728/strings/last_bs_roformer.ckpt",
+  "checkpoint_sha256": "ce7bfdf8495386eb0dfd7082ffdf9a9a6205b21aa1f0ab827d33bf74e2782a7b",
+  "config_sha256": "687cd4a2bba6fc337c7cfb8b7604f318505096c2a39a3c3fffee53652f06e577",
+  "dataset_id": "specialist-recovery-v1",
+  "dataset_receipt_sha256": "fd525c434400d879c59454876e677458e7a76a447775095abada14fd74fdf98a",
+  "elapsed_seconds": 590.644,
+  "epochs": 1,
+  "gpu_memory_bytes": 85017624576,
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "indexed_audio_count": 7059,
+  "peak_gpu_memory_bytes": 0,
+  "run_id": "strings-recovery-head1000-20260728",
+  "schema_version": "1.0",
+  "seconds_per_step": 0.590644,
+  "start_checkpoint": "bases/strings_bsroformer_base.ckpt",
+  "start_checkpoint_sha256": "ec224f04fe24f0dd45336c6fe5956e14fb743504b7c0a9b827b659a624ca59db",
+  "steps_per_epoch": 1000,
+  "training_recipe": "recovery_v1",
+  "validation_set_id": "specialists-validation-30-v1"
+}

@@ -1,0 +1,45 @@
+{
+  "benchmark_id": "mvsep_remote_specialists_track00018_20260725",
+  "evidence_level": "ground_truth_reference",
+  "quality_claim": "single_track_candidate_screen",
+  "dataset": "BabySlakh Track00018, seconds 137-147",
+  "input": "benchmarks/specialist_open/track00018-137s-147s/inputs/mix.wav",
+  "models": {
+    "acoustic_guitar": {
+      "model": "MVSep Acoustic Guitar",
+      "sep_type": 66,
+      "elapsed_seconds": 33.99,
+      "scores": {"si_sdr": 12.9914, "sdr": 13.1913, "correlation": 0.9758},
+      "decision": "pass_candidate"
+    },
+    "electric_guitar": {
+      "model": "MVSep Electric Guitar",
+      "sep_type": 81,
+      "elapsed_seconds": 38.28,
+      "scores": {"si_sdr": -14.6257, "sdr": 0.0293, "correlation": 0.1825},
+      "decision": "reject"
+    },
+    "synth": {
+      "model": "MVSep Synth",
+      "sep_type": 88,
+      "elapsed_seconds": 27.87,
+      "scores": {"si_sdr": -12.2537, "sdr": -27.7029, "correlation": 0.237},
+      "decision": "reject"
+    },
+    "strings": {
+      "model": "MVSep Bowed Strings",
+      "sep_type": 52,
+      "elapsed_seconds": 19.17,
+      "scores": {"si_sdr": -13.7016, "sdr": -1.8628, "correlation": 0.2022},
+      "decision": "reject"
+    },
+    "wind": {
+      "model": "MVSep Wind",
+      "sep_type": 54,
+      "elapsed_seconds": 21.51,
+      "scores": {"si_sdr": -18.6143, "sdr": 0.0172, "correlation": 0.1165},
+      "decision": "reject"
+    }
+  },
+  "release_decision": "only_acoustic_guitar_remains_a_specialist_candidate; multi_track_validation_required"
+}

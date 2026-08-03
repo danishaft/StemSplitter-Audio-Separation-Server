@@ -1,0 +1,26 @@
+{
+  "benchmark_id": "mvsep_remote_piano_babyslakh_track00011_20260725",
+  "evidence_level": "ground_truth_reference",
+  "quality_claim": "single_track_candidate_only",
+  "model": "MVSep Piano",
+  "model_options": {
+    "sep_type": 29,
+    "add_opt1": 5,
+    "output_format": "wav"
+  },
+  "input": "benchmarks/gpu_bakeoff/parallel-l4-t4-ground-truth-pilot-v1/inputs/babyslakh-track00011.wav",
+  "prediction": "benchmarks/mvsep_remote/piano-positive-babyslakh-track00011-20260725/Piano.wav",
+  "reference": "benchmarks/gpu_bakeoff/parallel-l4-t4-ground-truth-pilot-v1/quality/L4+T4/babyslakh-track00011/references/piano.wav",
+  "elapsed_seconds": 64.51,
+  "credits_used": 0,
+  "scores": {
+    "si_sdr": 2.2694,
+    "sdr": 2.8077,
+    "correlation": 0.7923
+  },
+  "comparison": {
+    "existing_gpu_prediction_si_sdr": 1.8996,
+    "si_sdr_delta_vs_existing_gpu": 0.3698
+  },
+  "release_decision": "keep_as_remote_candidate; multi_track_validation_required"
+}

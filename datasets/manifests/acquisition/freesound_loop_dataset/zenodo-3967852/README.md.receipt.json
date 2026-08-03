@@ -1,0 +1,20 @@
+{
+  "local_path": "datasets/staging/freesound_loop_dataset/zenodo-3967852/README.md",
+  "object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "text/markdown",
+    "key": "stemsplitter/training-data/raw/freesound_loop_dataset/zenodo-3967852/README.md",
+    "provider": "s3",
+    "size_bytes": 2798
+  },
+  "provider_checksum": "4cb99bab3d1c7659edc02253b175f042",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "README.md",
+  "release_use": "item_approval_required",
+  "rights_status": "per_item_review",
+  "schema_version": "1.0",
+  "sha256": "89eea19810932f0a6a57e70c492d36e2e2fbc22b50ac8ae1f794fd105b9b7d9c",
+  "size_bytes": 2798,
+  "source_id": "freesound_loop_dataset",
+  "source_version": "zenodo-3967852"
+}

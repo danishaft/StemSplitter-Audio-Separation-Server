@@ -1,0 +1,21 @@
+[
+  {
+    "corsRuleName": "stemsplitter-browser-uploads",
+    "allowedOrigins": [
+      "https://stemsplitter-web.daniel-ejeh.workers.dev"
+    ],
+    "allowedOperations": [
+      "s3_get",
+      "s3_head",
+      "s3_put"
+    ],
+    "allowedHeaders": [
+      "content-type",
+      "x-amz-*"
+    ],
+    "exposeHeaders": [
+      "etag"
+    ],
+    "maxAgeSeconds": 3600
+  }
+]

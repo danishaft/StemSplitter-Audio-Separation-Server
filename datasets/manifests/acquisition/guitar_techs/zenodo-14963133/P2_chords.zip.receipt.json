@@ -1,0 +1,16 @@
+{
+  "local_path": "datasets/staging/guitar_techs/zenodo-14963133/P2_chords.zip",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "eb6f74dd19162237189281688ad7ad2e",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "P2_chords.zip",
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "9d4a46261cc840d6a66412ad0ebffcfba1fbce579bec0205127190b7bd7a4bce",
+  "size_bytes": 1150819056,
+  "source_id": "guitar_techs",
+  "source_version": "zenodo-14963133"
+}

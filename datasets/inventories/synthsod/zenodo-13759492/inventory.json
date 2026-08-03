@@ -1,0 +1,26 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "78bd2b2a243d24d5b59b05367953c785",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/13759492/files/SynthSOD-sample.zip/content",
+      "path": "SynthSOD-sample.zip",
+      "size_bytes": 2009641471
+    },
+    {
+      "checksum": "609b17fadaf6324e6979695252dcec24",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/13759492/files/SynthSOD.zip/content",
+      "path": "SynthSOD.zip",
+      "size_bytes": 45027927968
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "synthsod",
+  "source_url": "https://doi.org/10.5281/zenodo.13759492",
+  "source_version": "zenodo-13759492",
+  "total_size_bytes": 47037569439
+}

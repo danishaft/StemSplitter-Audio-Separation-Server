@@ -1,0 +1,1118 @@
+{
+  "registry_sha256": "e82e0cbd4bd6b97829cfc95d15faadc7c12ea49272e71f40faf17435e5450231",
+  "schema_version": "1.0",
+  "source_count": 26,
+  "sources": {
+    "acmid_web_crawl": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "ACMID-style multilingual web crawl",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Follow the pinned ACMID multilingual query and cleaning workflow, using provider-authorized acquisition paths and item-level provenance.\n",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "rolling-provenance-pinned"
+    },
+    "albumdb": {
+      "audit": {
+        "accepted_file_active_hours": 4.660939849458302,
+        "accepted_file_count": 271,
+        "accepted_file_exposure_hours": 15.4186080813807,
+        "accepted_hard_negative_active_hours": 3.4568153722600155,
+        "accepted_target_active_hours": 1.2041244771982869,
+        "accepted_target_exposure_hours": 4.148907804232804,
+        "archive_count": 1,
+        "audio_file_count": 272,
+        "family_counts": {
+          "electric_guitar": 70,
+          "strings": 4
+        },
+        "independent_group_count": 10,
+        "rejected_file_count": 1,
+        "rejection_counts": {
+          "insufficient_active_audio": 1
+        },
+        "split_counts": {
+          "test": 35,
+          "train": 211,
+          "validation": 25
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "AlbumDB",
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 15338467723,
+      "inventory_file_count": 6,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "example_usage_automatic_mixing.zip",
+        "masters_7.1.4.zip",
+        "masters_stereo.zip",
+        "stems_mixed.zip",
+        "stems_mixed_dry.zip",
+        "stems_raw.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 15338467723,
+      "remaining_file_count": 6,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 3647202705,
+      "selected_entry_count": 272,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 8068283366,
+      "status": "selected_subset_acquired",
+      "version": "zenodo-19683000"
+    },
+    "cambridge_mixing_secrets_delta": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "Cambridge Mixing Secrets post-RawStems delta",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Use the official instrument search and download pages. Build a metadata snapshot first, remove every RawStems overlap, and review off-site terms before downloading audio.\n",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "rolling-snapshot-pinned-at-acquisition"
+    },
+    "chorale_bricks": {
+      "audit": {
+        "accepted_file_active_hours": 1.9864023368606702,
+        "accepted_file_count": 199,
+        "accepted_file_exposure_hours": 2.2414947719828673,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 1.9864023368606702,
+        "accepted_target_exposure_hours": 2.2414947719828673,
+        "archive_count": 1,
+        "audio_file_count": 392,
+        "family_counts": {
+          "wind_brass": 199
+        },
+        "independent_group_count": 13,
+        "rejected_file_count": 193,
+        "rejection_counts": {
+          "derived_normalized_copy": 193
+        },
+        "split_counts": {
+          "test": 20,
+          "train": 158,
+          "validation": 21
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 1157900370,
+      "available_file_count": 1,
+      "display_name": "ChoraleBricks",
+      "families": [
+        "wind_brass"
+      ],
+      "inventory_bytes": 1284127931,
+      "inventory_file_count": 2,
+      "local_retained_bytes": 1157900370,
+      "local_retained_file_count": 1,
+      "missing_paths": [
+        "02_ConductingVideos.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 126227561,
+      "remaining_file_count": 1,
+      "remote_unverified_bytes": 1157900370,
+      "remote_unverified_file_count": 1,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "partially_acquired",
+      "version": "zenodo-15081741"
+    },
+    "cocochorales": {
+      "audit": {
+        "accepted_file_active_hours": 121.44915713541667,
+        "accepted_file_count": 20000,
+        "accepted_file_exposure_hours": 123.51869444444444,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 96.9065487326389,
+        "accepted_target_exposure_hours": 98.81495555555556,
+        "archive_count": 1,
+        "audio_file_count": 20000,
+        "family_counts": {
+          "strings": 10000,
+          "wind_brass": 10000
+        },
+        "independent_group_count": 4000,
+        "rejected_file_count": 0,
+        "rejection_counts": {},
+        "split_counts": {
+          "train": 20000
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "CocoChorales",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 10192530313,
+      "inventory_file_count": 2,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/1.tar.bz2",
+        "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/25.tar.bz2"
+      ],
+      "provider": "gcs_public",
+      "remaining_bytes": 10192530313,
+      "remaining_file_count": 2,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 44000,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 0,
+      "status": "selected_subset_acquired",
+      "version": "full-v1-train-shards-1-25"
+    },
+    "eg_ipt": {
+      "audit": {
+        "accepted_file_active_hours": 3.265435529513889,
+        "accepted_file_count": 8628,
+        "accepted_file_exposure_hours": 4.651460182291666,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 3.265435529513889,
+        "accepted_target_exposure_hours": 4.651460182291666,
+        "archive_count": 1,
+        "audio_file_count": 8717,
+        "family_counts": {
+          "electric_guitar": 8628
+        },
+        "independent_group_count": 8628,
+        "rejected_file_count": 89,
+        "rejection_counts": {
+          "audio_too_short": 1,
+          "insufficient_active_audio": 89
+        },
+        "split_counts": {
+          "train": 8628
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "EG-IPT",
+      "families": [
+        "electric_guitar"
+      ],
+      "inventory_bytes": 23757983313,
+      "inventory_file_count": 1,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "EG-IPT.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 23757983313,
+      "remaining_file_count": 1,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 3999925310,
+      "selected_entry_count": 8717,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 4940489958,
+      "status": "selected_subset_acquired",
+      "version": "zenodo-15205644"
+    },
+    "ensembleset": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "EnsembleSet",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 55357170952,
+      "inventory_file_count": 1,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "BBCSO_Ensembles.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 55357170952,
+      "remaining_file_count": 1,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "inventory_ready",
+      "version": "zenodo-6519024"
+    },
+    "freesound_loop_dataset": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "Freesound Loop Dataset",
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 8843370029,
+      "inventory_file_count": 3,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "FSL10K.zip",
+        "README.md",
+        "annotations.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 8843370029,
+      "remaining_file_count": 3,
+      "remote_unverified_bytes": 1567688,
+      "remote_unverified_file_count": 2,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "remote_read_blocked",
+      "version": "zenodo-3967852"
+    },
+    "gaps": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "GAPS",
+      "families": [
+        "acoustic_guitar"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [],
+      "provider": "huggingface",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "inventory_pending",
+      "version": "current-pinned-at-acquisition"
+    },
+    "goat": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "GOAT",
+      "families": [
+        "electric_guitar"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "The Zenodo dataset is available by request for research use.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "zenodo-15690894"
+    },
+    "guitar_techs": {
+      "audit": {
+        "accepted_file_active_hours": 7.492519963230662,
+        "accepted_file_count": 208,
+        "accepted_file_exposure_hours": 10.046713042406777,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 7.492519963230662,
+        "accepted_target_exposure_hours": 10.046713042406777,
+        "archive_count": 9,
+        "audio_file_count": 416,
+        "family_counts": {
+          "electric_guitar": 208
+        },
+        "group_duration_policy": "synchronized_views_mean",
+        "independent_group_active_hours": 3.746259981615331,
+        "independent_group_count": 104,
+        "independent_group_timeline_hours": 5.023356521203389,
+        "rejected_file_count": 208,
+        "rejection_counts": {
+          "reference_video_audio": 208
+        },
+        "split_counts": {
+          "train": 208
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 4133550356,
+      "available_file_count": 9,
+      "display_name": "Guitar-TECHS",
+      "families": [
+        "electric_guitar"
+      ],
+      "inventory_bytes": 4133550356,
+      "inventory_file_count": 9,
+      "local_retained_bytes": 4133550356,
+      "local_retained_file_count": 9,
+      "missing_paths": [],
+      "provider": "zenodo",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "acquired",
+      "version": "zenodo-14963133"
+    },
+    "guitarset": {
+      "audit": {
+        "accepted_file_active_hours": 2.834984171075838,
+        "accepted_file_count": 360,
+        "accepted_file_exposure_hours": 3.0467878306878307,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 2.834984171075838,
+        "accepted_target_exposure_hours": 3.0467878306878307,
+        "archive_count": 1,
+        "audio_file_count": 360,
+        "family_counts": {
+          "acoustic_guitar": 360
+        },
+        "group_duration_policy": "synchronized_views_mean",
+        "independent_group_active_hours": 2.834984171075838,
+        "independent_group_count": 360,
+        "independent_group_timeline_hours": 3.0467878306878307,
+        "rejected_file_count": 0,
+        "rejection_counts": {},
+        "split_counts": {
+          "train": 360
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 696060555,
+      "available_file_count": 2,
+      "display_name": "GuitarSet",
+      "families": [
+        "acoustic_guitar"
+      ],
+      "inventory_bytes": 8197291438,
+      "inventory_file_count": 5,
+      "local_retained_bytes": 696060555,
+      "local_retained_file_count": 2,
+      "missing_paths": [
+        "audio_hex-pickup_debleeded.zip",
+        "audio_hex-pickup_original.zip",
+        "audio_mono-pickup_mix.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 7501230883,
+      "remaining_file_count": 3,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "partially_acquired",
+      "version": "zenodo-3371780"
+    },
+    "medleydb": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "MedleyDB",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Use the official MedleyDB distribution and track-level metadata.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "current-pinned-at-acquisition"
+    },
+    "medleydb_sample": {
+      "audit": {
+        "accepted_file_active_hours": 0.2445022770219199,
+        "accepted_file_count": 5,
+        "accepted_file_exposure_hours": 0.30590034013605444,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 0.11890480284706477,
+        "accepted_target_exposure_hours": 0.17755311161501638,
+        "archive_count": 1,
+        "audio_file_count": 21,
+        "family_counts": {
+          "electric_guitar": 1,
+          "strings": 1,
+          "wind_brass": 1
+        },
+        "independent_group_count": 2,
+        "rejected_file_count": 16,
+        "rejection_counts": {
+          "duplicate_raw_view": 10,
+          "non_specialist_stem": 6,
+          "not_in_medleydb_specialist_curation": 16,
+          "target_family_unresolved": 16
+        },
+        "split_counts": {
+          "train": 3,
+          "validation": 2
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "MedleyDB Sample",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 415502011,
+      "inventory_file_count": 1,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "MedleyDB_Sample.tar.gz"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 415502011,
+      "remaining_file_count": 1,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 42,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 0,
+      "status": "inventory_ready",
+      "version": "zenodo-1438309"
+    },
+    "moisesdb": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "MoisesDB",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Audio is distributed through the Moises research access workflow.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "current-pinned-at-acquisition"
+    },
+    "musdb": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "MUSDB",
+      "families": [
+        "electric_guitar",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Use the official MUSDB distribution and preserve track-level terms.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "musdb18-hq"
+    },
+    "nsynth": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "NSynth",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Use the official Magenta archive and preserve its published checksums.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "current-pinned-at-acquisition"
+    },
+    "orchideasol": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "OrchideaSOL",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Authentication and an exact terms snapshot are required.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "current-pinned-at-acquisition"
+    },
+    "quartset": {
+      "audit": {
+        "accepted_file_active_hours": 2.181565589569161,
+        "accepted_file_count": 538,
+        "accepted_file_exposure_hours": 2.271182779037541,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 2.181565589569161,
+        "accepted_target_exposure_hours": 2.271182779037541,
+        "archive_count": 1,
+        "audio_file_count": 560,
+        "family_counts": {
+          "strings": 538
+        },
+        "independent_group_count": 56,
+        "rejected_file_count": 22,
+        "rejection_counts": {
+          "duplicate_audio": 22
+        },
+        "split_counts": {
+          "test": 58,
+          "train": 424,
+          "validation": 56
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 795360941,
+      "available_file_count": 2,
+      "display_name": "QuartSet",
+      "families": [
+        "strings"
+      ],
+      "inventory_bytes": 795360941,
+      "inventory_file_count": 2,
+      "local_retained_bytes": 795360941,
+      "local_retained_file_count": 2,
+      "missing_paths": [],
+      "provider": "zenodo",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 795360941,
+      "remote_unverified_file_count": 2,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "acquired",
+      "version": "zenodo-15708701"
+    },
+    "rawstems": {
+      "audit": {
+        "accepted_file_active_hours": 111.3156625144676,
+        "accepted_file_count": 4362,
+        "accepted_file_exposure_hours": 267.6731050462963,
+        "accepted_hard_negative_active_hours": 17.39776447627315,
+        "accepted_target_active_hours": 93.91789803819445,
+        "accepted_target_exposure_hours": 217.63259950231483,
+        "archive_count": 1,
+        "audio_file_count": 6253,
+        "family_counts": {
+          "acoustic_guitar": 361,
+          "electric_guitar": 1813,
+          "strings": 310,
+          "synth": 722,
+          "wind_brass": 272
+        },
+        "independent_group_count": 481,
+        "rejected_file_count": 1891,
+        "rejection_counts": {
+          "duplicate_audio": 1843,
+          "insufficient_active_audio": 56
+        },
+        "split_counts": {
+          "test": 841,
+          "train": 2826,
+          "validation": 695
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 58570433,
+      "available_file_count": 1,
+      "display_name": "RawStems",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 213814767348,
+      "inventory_file_count": 10,
+      "local_retained_bytes": 58570433,
+      "local_retained_file_count": 1,
+      "missing_paths": [
+        ".gitattributes",
+        "README.md",
+        "RawStems_1.zip",
+        "RawStems_2.zip",
+        "RawStems_3.zip",
+        "RawStems_4.zip",
+        "RawStems_5.zip",
+        "RawStems_6.zip",
+        "msr_test_set.zip"
+      ],
+      "provider": "huggingface",
+      "remaining_bytes": 213756196915,
+      "remaining_file_count": 9,
+      "remote_unverified_bytes": 58570433,
+      "remote_unverified_file_count": 1,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 46344583299,
+      "selected_entry_count": 4529,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 46641977199,
+      "status": "partially_acquired",
+      "version": "current-pinned-at-acquisition"
+    },
+    "slakh2100": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "Slakh2100",
+      "families": [
+        "acoustic_guitar",
+        "electric_guitar",
+        "synth",
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Official download requires source-specific selection and terms snapshot.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "current-pinned-at-acquisition"
+    },
+    "spheres": {
+      "audit": {
+        "accepted_file_active_hours": 9.831669771412036,
+        "accepted_file_count": 43,
+        "accepted_file_exposure_hours": 18.04266003472222,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 9.831669771412036,
+        "accepted_target_exposure_hours": 18.04266003472222,
+        "archive_count": 1,
+        "audio_file_count": 47,
+        "family_counts": {
+          "strings": 14,
+          "wind_brass": 29
+        },
+        "independent_group_count": 2,
+        "rejected_file_count": 4,
+        "rejection_counts": {
+          "target_family_unresolved": 4
+        },
+        "split_counts": {
+          "train": 29,
+          "validation": 14
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "The Spheres Dataset",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 46626780560,
+      "inventory_file_count": 4,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "TheSpheresDataset-ClapsAndSweeps.zip",
+        "TheSpheresDataset-Multichannel.zip",
+        "TheSpheresDataset-RIRs.zip",
+        "TheSpheresDataset-StereoMix.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 46626780560,
+      "remaining_file_count": 4,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 47,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 0,
+      "status": "inventory_ready",
+      "version": "zenodo-17347681"
+    },
+    "synthsod": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "SynthSOD",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 47037569439,
+      "inventory_file_count": 2,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "SynthSOD-sample.zip",
+        "SynthSOD.zip"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 47037569439,
+      "remaining_file_count": 2,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "inventory_ready",
+      "version": "zenodo-13759492"
+    },
+    "tinysol": {
+      "audit": {
+        "accepted_file_active_hours": 3.233789046359284,
+        "accepted_file_count": 2219,
+        "accepted_file_exposure_hours": 4.056812899974805,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 3.233789046359284,
+        "accepted_target_exposure_hours": 4.056812899974805,
+        "archive_count": 1,
+        "audio_file_count": 2478,
+        "family_counts": {
+          "strings": 1188,
+          "wind_brass": 1031
+        },
+        "independent_group_count": 13,
+        "rejected_file_count": 259,
+        "rejection_counts": {
+          "insufficient_active_audio": 15,
+          "target_family_unresolved": 254
+        },
+        "split_counts": {
+          "train": 2219
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 898098510,
+      "available_file_count": 2,
+      "display_name": "TinySOL",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 898098510,
+      "inventory_file_count": 2,
+      "local_retained_bytes": 898098510,
+      "local_retained_file_count": 2,
+      "missing_paths": [],
+      "provider": "zenodo",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 898098510,
+      "remote_unverified_file_count": 2,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "acquired",
+      "version": "zenodo-3659365"
+    },
+    "urmp": {
+      "audit": {
+        "accepted_file_active_hours": 4.652683321759259,
+        "accepted_file_count": 170,
+        "accepted_file_exposure_hours": 5.362727708333333,
+        "accepted_hard_negative_active_hours": 0.0,
+        "accepted_target_active_hours": 3.3885395196759256,
+        "accepted_target_exposure_hours": 4.025938559027778,
+        "archive_count": 1,
+        "audio_file_count": 193,
+        "family_counts": {
+          "strings": 71,
+          "wind_brass": 99
+        },
+        "independent_group_count": 44,
+        "rejected_file_count": 23,
+        "rejection_counts": {
+          "duplicate_audio": 23
+        },
+        "split_counts": {
+          "test": 19,
+          "train": 138,
+          "validation": 13
+        },
+        "split_leakage_group_count": 0
+      },
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "University of Rochester Multi-Modal Music Performance Dataset",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 12097841495,
+      "inventory_file_count": 2,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "missing_paths": [
+        "Dataset.tar.gz",
+        "README_for_Dataset.tar.pdf"
+      ],
+      "provider": "zenodo",
+      "remaining_bytes": 12097841495,
+      "remaining_file_count": 2,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 193,
+      "selected_subset_count": 1,
+      "selected_uncompressed_bytes": 0,
+      "status": "selected_subset_acquired",
+      "version": "zenodo-5034983"
+    },
+    "vsco_community": {
+      "audit": null,
+      "available_bytes": 0,
+      "available_file_count": 0,
+      "display_name": "VSCO Community",
+      "families": [
+        "strings",
+        "wind_brass"
+      ],
+      "inventory_bytes": 0,
+      "inventory_file_count": 0,
+      "local_retained_bytes": 0,
+      "local_retained_file_count": 0,
+      "manual_reason": "Snapshot the official library version and its terms before rendering.",
+      "missing_paths": [],
+      "provider": "manual",
+      "remaining_bytes": 0,
+      "remaining_file_count": 0,
+      "remote_unverified_bytes": 0,
+      "remote_unverified_file_count": 0,
+      "remote_verified_bytes": 0,
+      "remote_verified_file_count": 0,
+      "selected_compressed_bytes": 0,
+      "selected_entry_count": 0,
+      "selected_subset_count": 0,
+      "selected_uncompressed_bytes": 0,
+      "status": "manual_access_required",
+      "version": "current-pinned-at-acquisition"
+    }
+  },
+  "totals": {
+    "available_bytes": 7739541165,
+    "available_file_count": 17,
+    "inventory_bytes": 448790412359,
+    "inventory_file_count": 52,
+    "local_retained_bytes": 7739541165,
+    "local_retained_file_count": 17,
+    "remote_unverified_bytes": 2911497942,
+    "remote_unverified_file_count": 8,
+    "remote_verified_bytes": 0,
+    "remote_verified_file_count": 0,
+    "selected_compressed_bytes": 53991711314,
+    "selected_entry_count": 57800,
+    "selected_subset_count": 7,
+    "selected_uncompressed_bytes": 59650750523,
+    "status:acquired": 3,
+    "status:inventory_pending": 1,
+    "status:inventory_ready": 4,
+    "status:manual_access_required": 10,
+    "status:partially_acquired": 3,
+    "status:remote_read_blocked": 1,
+    "status:selected_subset_acquired": 4
+  }
+}

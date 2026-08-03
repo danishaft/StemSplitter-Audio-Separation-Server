@@ -1,0 +1,27 @@
+{
+  "dataset": "BabySlakh Track00018",
+  "inference_seconds": {
+    "strings": 4.7265,
+    "synth": 0.3752
+  },
+  "qualification_scope": "single_segment_positive_source_smoke_not_release_benchmark",
+  "schema_version": 1,
+  "scores": {
+    "strings": {
+      "correlation": 0.6301509586627688,
+      "error_loudness_db": -1.9975374217904098,
+      "sdr": 1.9975376881363294,
+      "si_sdr": -1.8136311845534292
+    },
+    "synth": {
+      "correlation": 0.47543435804409084,
+      "error_loudness_db": -1.084227113976479,
+      "sdr": 1.0842277868610573,
+      "si_sdr": -5.3453860720954305
+    }
+  },
+  "segment_seconds": [
+    137,
+    147
+  ]
+}

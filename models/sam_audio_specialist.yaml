@@ -1,0 +1,65 @@
+schema_version: 1
+status: qualification_failed
+profile: sam_audio_specialist_qualification
+model:
+  model_id: facebook/sam-audio-large
+  source: https://github.com/facebookresearch/sam-audio
+  source_revision: bb4c6999d2677c7402360e426afc01ddfad6dce0
+  license: sam-license
+  access: gated_huggingface
+  access_status: approved
+  huggingface_secret: stemsplitter-huggingface
+  published_instrument_pro_score: 4.49
+inference:
+  sample_rate: 48000
+  predict_spans: false
+  reranking_candidates: 8
+  seed: 20260724
+  stereo_strategy: independent_left_right_channels
+target_stems:
+  piano:
+    prompt: piano
+    qualification_status: rejected
+  acoustic_guitar:
+    prompt: acoustic guitar
+    qualification_status: not_tested
+  electric_guitar:
+    prompt: electric guitar
+    qualification_status: not_tested
+  synth:
+    prompt: synthesizer
+    qualification_status: not_tested
+  strings:
+    prompt: bowed string instruments
+    qualification_status: not_tested
+  wind:
+    prompt: wind instruments
+    qualification_status: not_tested
+qualification:
+  status: failed
+  technical_preflight:
+    checked_at: 2026-07-24T21:21:23+01:00
+    evidence: benchmarks/model_preflight/sam_audio_large_modal_preflight_001.json
+    device: NVIDIA A100-SXM4-80GB
+    device_memory_bytes: 85094825984
+    model_parameter_count: 8248143210
+    model_load_passed: true
+    quality_passed: false
+  quality_benchmark:
+    checked_at: 2026-07-24T21:43:12+01:00
+    evidence: benchmarks/sam_audio/sam-audio-piano-babyslakh-10s-qualification.json
+    measured_stem: piano
+    best_si_sdr_db: -5.3319
+    existing_pipeline_si_sdr_db: 2.9887
+    shared_six_stem_candidate_passed: false
+  required_evidence:
+    - ground_truth_signal_metrics
+    - blind_listening_review
+    - per_stem_latency_seconds
+    - per_song_gpu_cost
+    - stereo_phase_review
+  release_rule: >
+    This worker remains isolated from the product router. The shared six-stem
+    SAM Audio candidate failed the piano ground-truth gate, and the other five
+    stems remain untested. Model availability alone is not a production-quality
+    claim.

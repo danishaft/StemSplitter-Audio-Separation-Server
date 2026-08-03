@@ -1,0 +1,41 @@
+{
+  "drill_date": "2026-07-19",
+  "environment": {
+    "job_authority": "managed_postgresql",
+    "queue": "managed_redis_rq",
+    "gpu_dispatch": "modal"
+  },
+  "results": {
+    "expired_lease_worker_crash": {
+      "status": "passed",
+      "observed_attempt": 2,
+      "recovery_dispatch_id_shape": "stemsplitter-<job-id>-recovery-2",
+      "terminal_state": "cancelled",
+      "duplicate_modal_dispatch": false
+    },
+    "bounded_transient_retry": {
+      "status": "passed",
+      "observed_attempt": 2,
+      "terminal_state": "completed",
+      "rq_terminal_state": "finished"
+    },
+    "orphan_reconciliation": {
+      "status": "passed",
+      "trigger": "expired_database_lease_with_stale_rq_execution",
+      "action": "distinct_recovery_dispatch"
+    }
+  },
+  "configuration": {
+    "retry_intervals_seconds": [
+      10,
+      30
+    ],
+    "bounded_attempts": true,
+    "database_lease_required": true
+  },
+  "cleanup": "Probe PostgreSQL rows and Redis jobs were removed after verification.",
+  "limitations": [
+    "A destructive database restore drill remains separate work.",
+    "Cross-tenant cancellation races remain separate work."
+  ]
+}

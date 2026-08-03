@@ -1,0 +1,106 @@
+{
+  "preflight_id": "cdx23_no_spend_preflight_001",
+  "checked_at": "2026-07-12T04:07:59+01:00",
+  "candidate": "MVSEP-CDX23-Cinematic-Sound-Demixing",
+  "repo": {
+    "url": "https://github.com/ZFTurbo/MVSEP-CDX23-Cinematic-Sound-Demixing",
+    "local_path": "external_repos/MVSEP-CDX23-Cinematic-Sound-Demixing",
+    "commit": "e613a1e5b4677eb1d68ad77257fe5ad3c1d9f5fc",
+    "default_branch": "main",
+    "is_private": false,
+    "license_info": null
+  },
+  "target_fit": {
+    "required_stems": ["speech_or_dialog", "music", "sfx_or_effects"],
+    "repo_stems": ["dialog", "effect", "music"],
+    "normalized_stems": {
+      "dialog": "speech_dialog",
+      "effect": "sfx",
+      "music": "music"
+    },
+    "passes": true
+  },
+  "weights": {
+    "release_url": "https://github.com/ZFTurbo/MVSEP-CDX23-Cinematic-Sound-Demixing/releases/tag/v.1.0.0",
+    "release_tag": "v.1.0.0",
+    "release_name": "Model weights",
+    "published_at": "2023-06-08T11:17:59Z",
+    "assets": [
+      {
+        "name": "97d170e1-a778de4a.th",
+        "size_bytes": 53916935,
+        "used_for": "high_quality_ensemble"
+      },
+      {
+        "name": "97d170e1-dbb4db15.th",
+        "size_bytes": 53916935,
+        "used_for": "default_single_model_and_high_quality_ensemble"
+      },
+      {
+        "name": "97d170e1-e41a5468.th",
+        "size_bytes": 53916935,
+        "used_for": "high_quality_ensemble"
+      }
+    ],
+    "downloaded": false,
+    "passes": true
+  },
+  "runner": {
+    "entrypoint": "inference.py",
+    "help_command": "${LOCAL_HOME}/Desktop/marlon-music/venv/bin/python inference.py --help",
+    "help_passed": true,
+    "usage": "python inference.py --input_audio mixture1.wav --output_folder ./results/ --cpu",
+    "default_outputs": [
+      "<input>_dialog.wav",
+      "<input>_effect.wav",
+      "<input>_music.wav",
+      "<input>_instrum.wav",
+      "<input>_instrum2.wav"
+    ],
+    "expected_publishable_outputs": [
+      "speech_dialog.wav",
+      "sfx.wav",
+      "music.wav"
+    ],
+    "passes": true
+  },
+  "dependencies": {
+    "requirements": [
+      "numpy",
+      "soundfile",
+      "scipy",
+      "torch>=1.8.1",
+      "tqdm",
+      "librosa",
+      "demucs"
+    ],
+    "local_import_check": {
+      "numpy": "ok:2.4.2",
+      "soundfile": "ok:0.13.1",
+      "scipy": "ok:1.17.1",
+      "torch": "ok:2.10.0+cpu",
+      "tqdm": "ok:4.67.3",
+      "librosa": "ok:0.11.0",
+      "demucs": "ok:4.1.0a3"
+    },
+    "passes": true
+  },
+  "license_gate": {
+    "license_file_found": false,
+    "github_license_info": null,
+    "commercial_status": "blocked_until_license_verified",
+    "passes": false
+  },
+  "spend_gate": {
+    "modal_gpu_allowed": false,
+    "paid_api_allowed": false,
+    "long_external_queue_allowed": false,
+    "next_allowed_action": "license verification and optional weight checksum preflight only",
+    "passes": false
+  },
+  "decision": {
+    "technical_preflight": "passed",
+    "commercial_preflight": "blocked",
+    "reason": "CDX23 fits the exact SFX failure mode and has a runnable local path, but the repository exposes no license file and GitHub licenseInfo is null. Do not spend GPU or promote to runtime until license status is verified."
+  }
+}

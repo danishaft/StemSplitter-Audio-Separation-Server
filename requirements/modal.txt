@@ -1,0 +1,7 @@
+modal
+fastapi
+uvicorn[standard]
+python-multipart
+numpy
+soundfile
+boto3>=1.35.0

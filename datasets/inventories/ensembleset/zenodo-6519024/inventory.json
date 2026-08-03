@@ -1,0 +1,19 @@
+{
+  "file_count": 1,
+  "files": [
+    {
+      "checksum": "5dbec3de9459984e6aa88b182049fd1b",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/6519024/files/BBCSO_Ensembles.zip/content",
+      "path": "BBCSO_Ensembles.zip",
+      "size_bytes": 55357170952
+    }
+  ],
+  "license": "CC BY 4.0 with RWC exceptions",
+  "rights_status": "per_item_review",
+  "schema_version": "1.0",
+  "source_id": "ensembleset",
+  "source_url": "https://zenodo.org/records/6519024",
+  "source_version": "zenodo-6519024",
+  "total_size_bytes": 55357170952
+}

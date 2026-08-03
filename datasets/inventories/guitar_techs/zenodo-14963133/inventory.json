@@ -1,0 +1,75 @@
+{
+  "file_count": 9,
+  "files": [
+    {
+      "checksum": "be9ef8bbdceb1912d565254e607a6d94",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P1_chords.zip/content",
+      "path": "P1_chords.zip",
+      "size_bytes": 981741162
+    },
+    {
+      "checksum": "9c0b98e8fb42a522df727ea8bf545e4f",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P1_scales.zip/content",
+      "path": "P1_scales.zip",
+      "size_bytes": 453349723
+    },
+    {
+      "checksum": "ca0c4674dde3805574685a313f7c39eb",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P1_singlenotes.zip/content",
+      "path": "P1_singlenotes.zip",
+      "size_bytes": 108626613
+    },
+    {
+      "checksum": "18634a41a6db5a8de10d07eb3122a872",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P1_techniques.zip/content",
+      "path": "P1_techniques.zip",
+      "size_bytes": 326280863
+    },
+    {
+      "checksum": "eb6f74dd19162237189281688ad7ad2e",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P2_chords.zip/content",
+      "path": "P2_chords.zip",
+      "size_bytes": 1150819056
+    },
+    {
+      "checksum": "96664853872f51e5f8aa4447313b7cf5",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P2_scales.zip/content",
+      "path": "P2_scales.zip",
+      "size_bytes": 471254783
+    },
+    {
+      "checksum": "40fbf03d8b04bb2cf42df20f36dc2254",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P2_singlenotes.zip/content",
+      "path": "P2_singlenotes.zip",
+      "size_bytes": 116133457
+    },
+    {
+      "checksum": "f4189251ce50be25f06a173b2c2bba00",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P2_techniques.zip/content",
+      "path": "P2_techniques.zip",
+      "size_bytes": 395839610
+    },
+    {
+      "checksum": "071ba80aecf00f4a31fbd167b3f22198",
+      "checksum_algorithm": "md5",
+      "download_url": "https://zenodo.org/api/records/14963133/files/P3_music.zip/content",
+      "path": "P3_music.zip",
+      "size_bytes": 129505089
+    }
+  ],
+  "license": "CC BY 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "guitar_techs",
+  "source_url": "https://zenodo.org/records/14963133",
+  "source_version": "zenodo-14963133",
+  "total_size_bytes": 4133550356
+}

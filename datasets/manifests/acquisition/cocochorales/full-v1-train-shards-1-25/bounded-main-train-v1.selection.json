@@ -1,0 +1,34 @@
+{
+  "archive_count": 2,
+  "archives": [
+    {
+      "provider_checksum": "999ba8284b0646a6c7f3ef357e15fd59",
+      "provider_checksum_algorithm": "md5",
+      "provider_path": "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/1.tar.bz2",
+      "provider_revision": "1662148138537381",
+      "sha256": "3b14f8ac65dca794c12481f1c428a53556912bc7419a7a8c4063577c0f4e88dd",
+      "size_bytes": 5114972715
+    },
+    {
+      "provider_checksum": "e540dc37fcb47f75995544df3720af3f",
+      "provider_checksum_algorithm": "md5",
+      "provider_path": "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/25.tar.bz2",
+      "provider_revision": "1662149122716054",
+      "sha256": "aa63fbe3793a37d4097b3203066b8ca4ddff50e16a956445beee86b797f6fed2",
+      "size_bytes": 5077557598
+    }
+  ],
+  "entry_count": 44000,
+  "local_path": "datasets/staging/cocochorales/full-v1-train-shards-1-25/selections/bounded-main-train-v1",
+  "local_retained": true,
+  "materialization_filter": "all",
+  "provenance_sha256": "89b27639c7dea21e46f9689b338ce4aa00ba7be6a43c83cbec6715cfc26c2749",
+  "provider_path": "bundle:bounded-main-train-v1",
+  "release_use": "allowed_with_attribution",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "selection_name": "bounded-main-train-v1",
+  "size_bytes": 10192530313,
+  "source_id": "cocochorales",
+  "source_version": "full-v1-train-shards-1-25"
+}

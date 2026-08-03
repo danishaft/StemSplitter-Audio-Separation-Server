@@ -1,0 +1,582 @@
+schema_version: "1.0"
+status: active
+decision_date: "2026-07-26"
+policy:
+  research_profile: research_all
+  release_profile: release_eligible
+  target_families:
+    - acoustic_guitar
+    - electric_guitar
+    - synth
+    - strings
+    - wind_brass
+  acquisition_order:
+    shared_precision_anchors:
+      - rawstems
+      - moisesdb
+      - medleydb
+      - cambridge_mixing_secrets_delta
+    acoustic_guitar:
+      - gaps
+      - guitarset
+      - acmid_web_crawl
+    electric_guitar:
+      - guitar_techs
+      - eg_ipt
+      - goat
+      - albumdb
+      - acmid_web_crawl
+    synth:
+      - acmid_web_crawl
+    strings:
+      - urmp
+      - spheres
+      - quartset
+      - acmid_web_crawl
+    wind_brass:
+      - urmp
+      - spheres
+      - chorale_bricks
+      - acmid_web_crawl
+  quality_rule: >
+    Include every source that passes audio, label, and provenance validation in
+    research_all. Rights status does not lower the quality threshold.
+  release_rule: >
+    A release checkpoint may contain only sources whose release_use is
+    allowed or allowed_with_attribution. Removing source files after training
+    does not make an existing checkpoint release eligible.
+
+sources:
+  gaps:
+    display_name: GAPS
+    version: current-pinned-at-acquisition
+    source_url: https://arxiv.org/abs/2408.08653
+    license: Per-recording source terms
+    rights_status: per_item_review
+    research_use: allowed
+    release_use: item_approval_required
+    quality_status: accepted_after_label_review
+    families: [acoustic_guitar]
+    roles: [target, real_recording, performer_diversity]
+    caveat: >
+      Count each performance once. Preserve the source recording URL and terms,
+      and do not treat multiple aligned representations as independent audio.
+    acquisition:
+      provider: huggingface
+      repo_id: xavriley/GAPS
+      repo_type: dataset
+      default_family: acoustic_guitar
+      split_policy: train_only
+
+  guitarset:
+    display_name: GuitarSet
+    version: zenodo-3371780
+    source_url: https://zenodo.org/records/3371780
+    license: Academic research dataset terms
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [acoustic_guitar]
+    roles: [target, articulation, real_recording]
+    caveat: >
+      Count the musical performance once. Hexaphonic, microphone, and pickup
+      views are synchronized representations, not independent performances.
+    acquisition:
+      provider: zenodo
+      record_id: "3371780"
+      default_family: acoustic_guitar
+      split_policy: train_only
+      group_duration_policy: synchronized_views_mean
+
+  idmt_smt_guitar:
+    display_name: IDMT-SMT-Guitar
+    version: zenodo-7544110
+    source_url: https://zenodo.org/records/7544110
+    license: CC BY-NC-ND 4.0
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [acoustic_guitar, electric_guitar]
+    roles: [target, articulation, technique, real_recording]
+    caveat: >-
+      Use for noncommercial research training only unless Fraunhofer grants
+      separate release permission.
+    acquisition:
+      provider: zenodo
+      record_id: "7544110"
+      split_policy: train_only
+
+  onair_music:
+    display_name: OnAir Music Dataset
+    version: v4-1cdaae8
+    source_url: https://github.com/sevagh/OnAir-Music-Dataset
+    license: CC BY-SA 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [wind_brass]
+    roles: [target, mixture, real_recording]
+    caveat: >-
+      Use only stems whose archive labels map unambiguously to a target family;
+      keep compositions grouped across train, validation, and test.
+    acquisition:
+      provider: static_http
+      split_policy: grouped_by_composition
+      files:
+        - path: OnAir-Music-Dataset-v4-LoFi-Vol-3.zip
+          url: https://media.githubusercontent.com/media/sevagh/OnAir-Music-Dataset/1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2/OnAir-Music-Dataset-v4-LoFi-Vol-3.zip
+          size_bytes: 1446430697
+          sha256: 95b91cbe815e61903e2f5b51e97b9eb7889a9321dc53bea017efb861bddc14c2
+          provider_revision: 1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2
+        - path: OnAir-Music-Dataset-v4-misc.zip
+          url: https://media.githubusercontent.com/media/sevagh/OnAir-Music-Dataset/1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2/OnAir-Music-Dataset-v4-misc.zip
+          size_bytes: 1655864166
+          sha256: bf2d6b8e460e523134fd9228c9bf3314d0be055bd9f93f4c40cfe92238b64765
+          provider_revision: 1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2
+
+  acmid_web_crawl:
+    display_name: ACMID-style multilingual web crawl
+    version: rolling-provenance-pinned
+    source_url: https://arxiv.org/abs/2510.07840
+    license: Per-item source terms
+    rights_status: per_item_review
+    research_use: allowed
+    release_use: item_approval_required
+    quality_status: accepted_after_classifier_and_review
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, real_recording, scale]
+    caveat: >
+      Search results are candidates, not training data. Count audio only after
+      provenance capture, deduplication, classifier cleaning, and manual review
+      of uncertain and sampled automatic decisions.
+    acquisition:
+      provider: manual
+      reason: >
+        Follow the pinned ACMID multilingual query and cleaning workflow, using
+        provider-authorized acquisition paths and item-level provenance.
+      split_policy: group_disjoint
+
+  cambridge_mixing_secrets_delta:
+    display_name: Cambridge Mixing Secrets post-RawStems delta
+    version: rolling-snapshot-pinned-at-acquisition
+    source_url: https://multitracksearch.cambridge-mt.com/ms-mtk-search.htm
+    license: Educational use; per-project terms for off-site downloads
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted_after_deduplication_and_label_review
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, mixture, real_recording, production_context]
+    caveat: >
+      RawStems already annotates 578 songs from this library. Admit only
+      projects that are absent from the pinned RawStems song manifest, then
+      preserve project-level terms and group every alternate package together.
+    acquisition:
+      provider: manual
+      reason: >
+        Use the official instrument search and download pages. Build a metadata
+        snapshot first, remove every RawStems overlap, and review off-site terms
+        before downloading audio.
+      split_policy: group_disjoint
+      overlap_manifest: datasets/manifests/curation/xlance-rawstems-v1.json
+
+  guitar_techs:
+    display_name: Guitar-TECHS
+    version: zenodo-14963133
+    source_url: https://zenodo.org/records/14963133
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [electric_guitar]
+    roles: [target, hard_negative]
+    acquisition:
+      provider: zenodo
+      record_id: "14963133"
+      default_family: electric_guitar
+      split_policy: train_only
+      group_duration_policy: synchronized_views_mean
+      independent_project_count: 3
+
+  eg_ipt:
+    display_name: EG-IPT
+    version: zenodo-15205644
+    source_url: https://zenodo.org/records/15205644
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [electric_guitar]
+    roles: [target, articulation]
+    caveat: >-
+      One performer; simultaneous microphone and DI perspectives are not
+      independent performances.
+    acquisition:
+      provider: zenodo
+      record_id: "15205644"
+      default_family: electric_guitar
+      split_policy: train_only
+      independent_project_count: 1
+      selection:
+        archive: EG-IPT.zip
+        name: dyn-close-mic
+        include_components: [dyn]
+        rationale: >-
+          One close-mic amplifier view preserves all independent takes without
+          multiplying simultaneous perspectives.
+
+  goat:
+    display_name: GOAT
+    version: zenodo-15690894
+    source_url: https://zenodo.org/records/15690894
+    license: CC BY-NC
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [electric_guitar]
+    roles: [target, timbre, amplification]
+    acquisition:
+      provider: manual
+      reason: The Zenodo dataset is available by request for research use.
+      default_family: electric_guitar
+
+  albumdb:
+    display_name: AlbumDB
+    version: zenodo-19683000
+    source_url: https://doi.org/10.5281/zenodo.19683000
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [electric_guitar, strings, wind_brass]
+    roles: [target, mixture, hard_negative]
+    acquisition:
+      provider: zenodo
+      record_id: "19683000"
+      selection:
+        archive: stems_raw.zip
+        name: raw-stems
+        include_components: []
+        rationale: >-
+          Raw source tracks preserve exact targets and mixture context;
+          mixed-dry and mixed archives are derived duplicates.
+
+  slakh2100:
+    display_name: Slakh2100
+    version: zenodo-4599666
+    source_url: https://zenodo.org/records/4599666
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, mixture, synthetic_scale]
+    acquisition:
+      provider: zenodo
+      record_id: "4599666"
+      selection:
+        archive: slakh2100_flac_redux.tar.gz
+        name: redux-without-omitted
+        exclude_components: [omitted]
+        rationale: >-
+          Use the official checksummed Redux archive and exclude tracks whose
+          source MIDI is duplicated across dataset splits.
+
+  nsynth:
+    display_name: NSynth
+    version: magenta-2017-04-10
+    source_url: https://magenta.tensorflow.org/datasets/nsynth
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [articulation, timbre]
+    caveat: Use isolated 16 kHz notes for augmentation, not full-song targets.
+    acquisition:
+      provider: gcs_public
+      bucket: download.magenta.tensorflow.org
+      object_paths:
+        - datasets/nsynth/nsynth-train.jsonwav.tar.gz
+      split_policy: train_only
+
+  rawstems:
+    display_name: RawStems
+    version: current-pinned-at-acquisition
+    source_url: https://huggingface.co/datasets/yongyizang/RawStems
+    license: Per-file original creator license
+    rights_status: per_item_review
+    research_use: allowed
+    release_use: item_approval_required
+    quality_status: accepted_after_label_review
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, mixture, hard_negative]
+    caveat: Preserve and evaluate every original file license and remove mislabeled stems.
+    acquisition:
+      provider: huggingface
+      repo_id: yongyizang/RawStems
+      repo_type: dataset
+
+  moisesdb:
+    display_name: MoisesDB
+    version: current-pinned-at-acquisition
+    source_url: https://huggingface.co/datasets/wearemusicai/moisesdb
+    license: CC BY-NC-SA 4.0
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, mixture, hierarchical_labels]
+    acquisition:
+      provider: manual
+      reason: Audio is distributed through the Moises research access workflow.
+
+  medleydb:
+    display_name: MedleyDB
+    version: current-pinned-at-acquisition
+    source_url: https://medleydb.weebly.com/
+    license: CC BY-NC-SA 4.0
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, mixture, real_recording]
+    acquisition:
+      provider: manual
+      reason: Use the official MedleyDB distribution and track-level metadata.
+
+  medleydb_sample:
+    display_name: MedleyDB Sample
+    version: zenodo-1438309
+    source_url: https://zenodo.org/records/1438309
+    license: CC BY-NC-SA 4.0
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, mixture, real_recording]
+    caveat: >-
+      Keep separate from the gated full MedleyDB distribution and use only
+      record-provided sample multitracks.
+    acquisition:
+      provider: zenodo
+      record_id: "1438309"
+      curation_manifest: datasets/manifests/curation/medleydb-sample-zenodo-1438309.json
+
+  musdb:
+    display_name: MUSDB
+    version: musdb18-hq
+    source_url: https://sigsep.github.io/datasets/musdb.html
+    license: Research dataset terms
+    rights_status: noncommercial_research
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [electric_guitar, strings, wind_brass]
+    roles: [mixture, hard_negative, evaluation]
+    caveat: Use track-specific fine labels only where they are available and verified.
+    acquisition:
+      provider: manual
+      reason: Use the official MUSDB distribution and preserve track-level terms.
+
+  synthsod:
+    display_name: SynthSOD
+    version: zenodo-13759492
+    source_url: https://doi.org/10.5281/zenodo.13759492
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [target, mixture, synthetic_scale]
+    acquisition:
+      provider: zenodo
+      record_id: "13759492"
+      split_policy: train_only
+
+  ensembleset:
+    display_name: EnsembleSet
+    version: zenodo-6519024
+    source_url: https://zenodo.org/records/6519024
+    license: CC BY 4.0 with RWC exceptions
+    rights_status: per_item_review
+    research_use: allowed
+    release_use: item_approval_required
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [target, mixture, microphone_diversity]
+    caveat: Exclude the nine RWC-derived MIDI works from release corpora without permission.
+    acquisition:
+      provider: zenodo
+      record_id: "6519024"
+
+  spheres:
+    display_name: The Spheres Dataset
+    version: zenodo-17347681
+    source_url: https://zenodo.org/records/17347681
+    license: CC BY-SA 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [target, mixture, real_orchestra]
+    acquisition:
+      provider: zenodo
+      record_id: "17347681"
+
+  quartset:
+    display_name: QuartSet
+    version: zenodo-15708701
+    source_url: https://zenodo.org/records/15708701
+    license: License snapshot required
+    rights_status: permission_pending
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [strings]
+    roles: [target, ensemble, real_recording]
+    acquisition:
+      provider: zenodo
+      record_id: "15708701"
+      default_family: strings
+
+  chorale_bricks:
+    display_name: ChoraleBricks
+    version: zenodo-15081741
+    source_url: https://doi.org/10.5281/zenodo.15081741
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [wind_brass]
+    roles: [target, ensemble, real_recording]
+    acquisition:
+      provider: zenodo
+      record_id: "15081741"
+      default_family: wind_brass
+
+  cocochorales:
+    display_name: CocoChorales
+    version: full-v1-train-shards-1-25
+    source_url: https://magenta.tensorflow.org/datasets/cocochorales
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [target, mixture, synthetic_scale]
+    caveat: >-
+      Only official main-dataset train shards 1 and 25 are selected. The
+      multi-terabyte f0, note-expression, and synthesis-parameter payloads are
+      intentionally excluded.
+    acquisition:
+      provider: gcs_public
+      bucket: magentadata
+      object_paths:
+        - datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/1.tar.bz2
+        - datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/25.tar.bz2
+      split_policy: train_only
+      selection:
+        name: bounded-main-train-v1
+        rationale: >-
+          One string shard and one brass shard close the measured synthetic
+          scale gaps without downloading unrelated dataset payloads.
+
+  vsco_community:
+    display_name: VSCO Community
+    version: current-pinned-at-acquisition
+    source_url: https://versilian-studios.com/vsco-community/
+    license: CC0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [rendering_source, articulation, timbre]
+    acquisition:
+      provider: manual
+      reason: Snapshot the official library version and its terms before rendering.
+      split_policy: train_only
+
+  tinysol:
+    display_name: TinySOL
+    version: zenodo-3659365
+    source_url: https://zenodo.org/records/3659365
+    license: CC BY 4.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed_with_attribution
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [articulation, timbre]
+    acquisition:
+      provider: zenodo
+      record_id: "3659365"
+      split_policy: train_only
+
+  urmp:
+    display_name: University of Rochester Multi-Modal Music Performance Dataset
+    version: zenodo-5034983
+    source_url: https://zenodo.org/records/5034983
+    license: CC0 1.0
+    rights_status: permissive_recorded
+    research_use: allowed
+    release_use: allowed
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [target, mixture, ensemble, real_recording]
+    acquisition:
+      provider: zenodo
+      record_id: "5034983"
+      selection:
+        name: audio-only-v1
+        rationale: >-
+          Retain AuMix and AuSep WAV files while excluding videos, scores, and
+          annotations from the local training corpus.
+
+  orchideasol:
+    display_name: OrchideaSOL
+    version: current-pinned-at-acquisition
+    source_url: https://forum.ircam.fr/projects/detail/orchideasol/
+    license: Exact terms snapshot required
+    rights_status: permission_pending
+    research_use: allowed
+    release_use: permission_required
+    quality_status: accepted
+    families: [strings, wind_brass]
+    roles: [articulation, timbre]
+    acquisition:
+      provider: manual
+      reason: Authentication and an exact terms snapshot are required.
+
+  freesound_loop_dataset:
+    display_name: Freesound Loop Dataset
+    version: zenodo-3967852
+    source_url: https://zenodo.org/records/3967852
+    license: Per-file Creative Commons license
+    rights_status: per_item_review
+    research_use: allowed
+    release_use: item_approval_required
+    quality_status: accepted_after_label_review
+    families: [acoustic_guitar, electric_guitar, synth, strings, wind_brass]
+    roles: [target, hard_negative, texture, augmentation]
+    acquisition:
+      provider: zenodo
+      record_id: "3967852"
+      split_policy: train_only

@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-07-08T00:57:57.439007Z",
+  "dataset": "babyslakh",
+  "error_message": null,
+  "missing_predictions": [
+    "piano",
+    "guitar"
+  ],
+  "missing_references": [],
+  "scores": {
+    "bass": {
+      "correlation": 0.9718077211645497,
+      "error_loudness_db": -12.528545615571057,
+      "prediction_path": "./jobs/94161fa03f524043b8f72df3ea4e62a3/broad_stems/bass.wav",
+      "reference_path": "./benchmarks/ground_truth/babyslakh-track00011-bq-002/references/bass.wav",
+      "sdr": 12.528545680415617,
+      "si_sdr": 12.301659455356287
+    },
+    "drums": {
+      "correlation": 0.9357266276387142,
+      "error_loudness_db": -9.009465380069207,
+      "prediction_path": "./jobs/94161fa03f524043b8f72df3ea4e62a3/broad_stems/drums.wav",
+      "reference_path": "./benchmarks/ground_truth/babyslakh-track00011-bq-002/references/drums.wav",
+      "sdr": 9.009465473017414,
+      "si_sdr": 8.474228647081334
+    },
+    "other": {
+      "correlation": 0.9844025483765494,
+      "error_loudness_db": -15.090522089091621,
+      "prediction_path": "./jobs/94161fa03f524043b8f72df3ea4e62a3/broad_stems/other.wav",
+      "reference_path": "./benchmarks/ground_truth/babyslakh-track00011-bq-002/references/other.wav",
+      "sdr": 15.090522369500906,
+      "si_sdr": 14.956620352301947
+    }
+  },
+  "song_name": "Track00011",
+  "success": true
+}

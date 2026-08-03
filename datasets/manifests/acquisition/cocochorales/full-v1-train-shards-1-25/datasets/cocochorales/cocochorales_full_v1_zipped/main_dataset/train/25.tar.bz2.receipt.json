@@ -1,0 +1,17 @@
+{
+  "local_path": "datasets/staging/cocochorales/full-v1-train-shards-1-25/datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/25.tar.bz2",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "e540dc37fcb47f75995544df3720af3f",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "datasets/cocochorales/cocochorales_full_v1_zipped/main_dataset/train/25.tar.bz2",
+  "provider_revision": "1662149122716054",
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "aa63fbe3793a37d4097b3203066b8ca4ddff50e16a956445beee86b797f6fed2",
+  "size_bytes": 5077557598,
+  "source_id": "cocochorales",
+  "source_version": "full-v1-train-shards-1-25"
+}

@@ -1,0 +1,22 @@
+{
+  "local_path": "datasets/staging/chorale_bricks/zenodo-15081741/01_AudioAndAnnotations.zip",
+  "local_retained": true,
+  "object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/zip",
+    "key": "stemsplitter/training-data/raw/chorale_bricks/zenodo-15081741/01_AudioAndAnnotations.zip",
+    "provider": "s3",
+    "size_bytes": 1157900370
+  },
+  "provider_checksum": "76c791de833814dba192bedea2aba5b6",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "01_AudioAndAnnotations.zip",
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "b55974aa77ac89d761009e13b0cf0a10ac8bd6ffd2c7e6689e2690b979c8b3a1",
+  "size_bytes": 1157900370,
+  "source_id": "chorale_bricks",
+  "source_version": "zenodo-15081741"
+}

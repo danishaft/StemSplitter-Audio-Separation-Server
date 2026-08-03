@@ -1,0 +1,28 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "checksum": "95b91cbe815e61903e2f5b51e97b9eb7889a9321dc53bea017efb861bddc14c2",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://media.githubusercontent.com/media/sevagh/OnAir-Music-Dataset/1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2/OnAir-Music-Dataset-v4-LoFi-Vol-3.zip",
+      "path": "OnAir-Music-Dataset-v4-LoFi-Vol-3.zip",
+      "provider_revision": "1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2",
+      "size_bytes": 1446430697
+    },
+    {
+      "checksum": "bf2d6b8e460e523134fd9228c9bf3314d0be055bd9f93f4c40cfe92238b64765",
+      "checksum_algorithm": "sha256",
+      "download_url": "https://media.githubusercontent.com/media/sevagh/OnAir-Music-Dataset/1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2/OnAir-Music-Dataset-v4-misc.zip",
+      "path": "OnAir-Music-Dataset-v4-misc.zip",
+      "provider_revision": "1cdaae8a8ea1cb512d7d043268b8f8e5d08e3ee2",
+      "size_bytes": 1655864166
+    }
+  ],
+  "license": "CC BY-SA 4.0",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "source_id": "onair_music",
+  "source_url": "https://github.com/sevagh/OnAir-Music-Dataset",
+  "source_version": "v4-1cdaae8",
+  "total_size_bytes": 3102294863
+}

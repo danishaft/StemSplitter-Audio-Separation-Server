@@ -1,0 +1,105 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-25T00:56:36.612486+00:00",
+  "inference_seconds": 20.145,
+  "job_id": "audiosep-babyslakh-10s-001",
+  "model_id": "nielsr/audiosep-demo",
+  "model_revision": "9188caa202a0d31845367e4dad8bb5549eddb4ba",
+  "outputs": {
+    "acoustic_guitar": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/audiosep_specialists/acoustic_guitar.wav",
+        "provider": "s3",
+        "size_bytes": 960044
+      },
+      "prompt": "acoustic guitar",
+      "sample_rate": 32000
+    },
+    "electric_guitar": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/audiosep_specialists/electric_guitar.wav",
+        "provider": "s3",
+        "size_bytes": 960044
+      },
+      "prompt": "electric guitar",
+      "sample_rate": 32000
+    },
+    "piano": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/audiosep_specialists/piano.wav",
+        "provider": "s3",
+        "size_bytes": 960044
+      },
+      "prompt": "piano",
+      "sample_rate": 32000
+    },
+    "strings": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/audiosep_specialists/strings.wav",
+        "provider": "s3",
+        "size_bytes": 960044
+      },
+      "prompt": "string instruments",
+      "sample_rate": 32000
+    },
+    "synth": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/audiosep_specialists/synth.wav",
+        "provider": "s3",
+        "size_bytes": 960044
+      },
+      "prompt": "synthesizer",
+      "sample_rate": 32000
+    },
+    "wind": {
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/audiosep_specialists/wind.wav",
+        "provider": "s3",
+        "size_bytes": 960044
+      },
+      "prompt": "alto saxophone",
+      "sample_rate": 32000
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/audiosep-babyslakh-10s-001/analysis/audiosep-report.json",
+    "provider": "s3",
+    "size_bytes": 2941
+  },
+  "runtime_revision": "944583f18b84589dc965de3ad77525c945334252",
+  "schema_version": 1,
+  "started_at": "2026-07-25T00:56:14.863611+00:00",
+  "status": "completed"
+}

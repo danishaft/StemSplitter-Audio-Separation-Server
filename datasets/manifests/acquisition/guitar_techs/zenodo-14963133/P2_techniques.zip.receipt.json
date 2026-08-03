@@ -1,0 +1,16 @@
+{
+  "local_path": "datasets/staging/guitar_techs/zenodo-14963133/P2_techniques.zip",
+  "local_retained": true,
+  "object": null,
+  "provider_checksum": "f4189251ce50be25f06a173b2c2bba00",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "P2_techniques.zip",
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "05fc065c010add9e5348095d7198fdc45b967c657e3e12ef8afdb74808371816",
+  "size_bytes": 395839610,
+  "source_id": "guitar_techs",
+  "source_version": "zenodo-14963133"
+}

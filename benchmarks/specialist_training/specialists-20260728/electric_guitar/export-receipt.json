@@ -1,0 +1,143 @@
+{
+  "audio_files": [
+    "exports/specialists-20260728/electric_guitar/base/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/base/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/base/02ac29e1cb1c88d5b9f966ef37974688351da0bf5c425bd5f48abe1934e8eacd/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/base/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/base/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/base/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/reference_electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/reference_mixture.flac",
+    "exports/specialists-20260728/electric_guitar/references/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/reference_electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/reference_mixture.flac",
+    "exports/specialists-20260728/electric_guitar/references/02ac29e1cb1c88d5b9f966ef37974688351da0bf5c425bd5f48abe1934e8eacd/reference_electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/02ac29e1cb1c88d5b9f966ef37974688351da0bf5c425bd5f48abe1934e8eacd/reference_mixture.flac",
+    "exports/specialists-20260728/electric_guitar/references/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/reference_electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/reference_mixture.flac",
+    "exports/specialists-20260728/electric_guitar/references/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/reference_electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/reference_mixture.flac",
+    "exports/specialists-20260728/electric_guitar/references/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/reference_electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/references/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/reference_mixture.flac",
+    "exports/specialists-20260728/electric_guitar/trained_ema_1000/008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/trained_ema_1000/01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/trained_ema_1000/02ac29e1cb1c88d5b9f966ef37974688351da0bf5c425bd5f48abe1934e8eacd/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/trained_ema_1000/03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/trained_ema_1000/040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f/electric_guitar.flac",
+    "exports/specialists-20260728/electric_guitar/trained_ema_1000/04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a/electric_guitar.flac"
+  ],
+  "base_checkpoint_sha256": "8e58c1c73e652b206ddaec3548b97de56608864dd3b35895231d65a4f776c922",
+  "base_id": "electric_guitar",
+  "dataset_id": "complete-source-pools",
+  "elapsed_seconds": 33.095,
+  "example_count": 6,
+  "run_id": "specialists-20260728",
+  "schema_version": "1.0",
+  "scores": {
+    "aggregate": {
+      "base": {
+        "bleedless": 22.386572122573853,
+        "fullness": 23.83353630701701,
+        "sdr": 0.9561271468798319
+      },
+      "trained_ema_1000": {
+        "bleedless": 26.187442938486736,
+        "fullness": 18.20942719777425,
+        "sdr": 1.5769705424706142
+      }
+    },
+    "delta_trained_ema_minus_base": {
+      "bleedless": 3.8008708159128837,
+      "fullness": -5.6241091092427595,
+      "sdr": 0.6208433955907823
+    },
+    "per_example": {
+      "008e36cd5f14d62209e4740f50f3db65755dc71c412b4f32ff45148470253c56": {
+        "base": {
+          "bleedless": 20.657249450683594,
+          "fullness": 21.789461135864258,
+          "k_sdr": 100.0,
+          "sdr": 12.022538185119629
+        },
+        "trained_ema_1000": {
+          "bleedless": 45.27592468261719,
+          "fullness": 8.770506858825684,
+          "k_sdr": 100.0,
+          "sdr": 11.276083946228027
+        }
+      },
+      "01c09bd703ec3afc612a3ab3d348bf6630aa63da3eeadb4462ed0e13c89d69fa": {
+        "base": {
+          "bleedless": 11.108338356018066,
+          "fullness": 12.756937980651855,
+          "k_sdr": 38.50768976168038,
+          "sdr": -7.770345211029053
+        },
+        "trained_ema_1000": {
+          "bleedless": 10.901556015014648,
+          "fullness": 11.83057975769043,
+          "k_sdr": 38.485418268686686,
+          "sdr": -7.772534370422363
+        }
+      },
+      "02ac29e1cb1c88d5b9f966ef37974688351da0bf5c425bd5f48abe1934e8eacd": {
+        "base": {
+          "bleedless": 14.869660377502441,
+          "fullness": 22.793636322021484,
+          "k_sdr": 76.80412391263408,
+          "sdr": -0.6362018585205078
+        },
+        "trained_ema_1000": {
+          "bleedless": 16.9703369140625,
+          "fullness": 15.327176094055176,
+          "k_sdr": 92.31167885745498,
+          "sdr": 5.6173906326293945
+        }
+      },
+      "03859e32692f5718121ed9a2e2264d47d19fc3109cf0eb1d7b7c7451a5d0b60a": {
+        "base": {
+          "bleedless": 8.300314903259277,
+          "fullness": 19.259071350097656,
+          "k_sdr": 80.27862071926002,
+          "sdr": 0.5201839208602905
+        },
+        "trained_ema_1000": {
+          "bleedless": 7.851159572601318,
+          "fullness": 17.64613151550293,
+          "k_sdr": 79.90723320898583,
+          "sdr": 0.3906591236591339
+        }
+      },
+      "040236ba8ceddcc581238fca5c962b54165150485b043d33556153819e60e48f": {
+        "base": {
+          "bleedless": 74.38050079345703,
+          "fullness": 50.15869140625,
+          "k_sdr": 100.0,
+          "sdr": 19.293210983276367
+        },
+        "trained_ema_1000": {
+          "bleedless": 71.18356323242188,
+          "fullness": 36.88608932495117,
+          "k_sdr": 100.0,
+          "sdr": 17.69457244873047
+        }
+      },
+      "04edc7115ee581e854cce1a230c15962fb3018fbd40ab4dcb8ba07679c48148a": {
+        "base": {
+          "bleedless": 5.003368854522705,
+          "fullness": 16.243419647216797,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -17.692623138427734
+        },
+        "trained_ema_1000": {
+          "bleedless": 4.942117214202881,
+          "fullness": 18.796079635620117,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -17.744348526000977
+        }
+      }
+    }
+  },
+  "trained_checkpoint_sha256": "bc6116eaa82ebb0535228509079cdb680b6479f1fb52a9bb2f0e6194efe774ce",
+  "trained_weight_source": "ema_model_state_dict",
+  "wandb_url": "https://wandb.ai/daniel-ejeh-auralith/stemsplitter-specialists/runs/3oc9dyml"
+}

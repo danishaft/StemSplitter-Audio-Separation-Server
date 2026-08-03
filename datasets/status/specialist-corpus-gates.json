@@ -1,0 +1,717 @@
+{
+  "profiles": {
+    "release_eligible": {
+      "audited_but_unrecoverable_sources": [
+        "onair_music"
+      ],
+      "families": {
+        "electric_guitar": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 2,
+              "passed": false,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 8740,
+              "passed": true,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 7.705318262451979,
+              "passed": false,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 12,
+              "passed": false,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 7.705318262451979,
+              "passed": false,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 1,
+              "passed": false,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 1,
+              "passed": false,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "albumdb",
+            "eg_ipt",
+            "guitar_techs"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 1,
+              "file_count": 10,
+              "real_composition_count": 1,
+              "real_target_active_hours": 0.2135553099017385,
+              "target_active_hours": 0.2135553099017385,
+              "target_exposure_hours": 0.7824284454522551
+            },
+            "train": {
+              "composition_count": 8740,
+              "file_count": 8887,
+              "real_composition_count": 8740,
+              "real_target_active_hours": 7.705318262451979,
+              "target_active_hours": 7.705318262451979,
+              "target_exposure_hours": 17.256557080833492
+            },
+            "validation": {
+              "composition_count": 1,
+              "file_count": 9,
+              "real_composition_count": 1,
+              "real_target_active_hours": 0.14286387629125724,
+              "target_active_hours": 0.14286387629125724,
+              "target_exposure_hours": 0.5413055555555555
+            }
+          }
+        },
+        "strings": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 4,
+              "passed": false,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 2023,
+              "passed": true,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 3.6703421953538364,
+              "passed": false,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 19,
+              "passed": false,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 53.72127547735183,
+              "passed": true,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 2,
+              "passed": false,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 2,
+              "passed": false,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "albumdb",
+            "cocochorales",
+            "spheres",
+            "tinysol",
+            "urmp"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 2,
+              "file_count": 6,
+              "real_composition_count": 2,
+              "real_target_active_hours": 0.17881321180555554,
+              "target_active_hours": 0.17881321180555554,
+              "target_exposure_hours": 0.1943886400462963
+            },
+            "train": {
+              "composition_count": 2023,
+              "file_count": 9242,
+              "real_composition_count": 19,
+              "real_target_active_hours": 3.6703421953538364,
+              "target_active_hours": 53.72127547735183,
+              "target_exposure_hours": 56.487032895723104
+            },
+            "validation": {
+              "composition_count": 2,
+              "file_count": 7,
+              "real_composition_count": 2,
+              "real_target_active_hours": 2.212321846064815,
+              "target_active_hours": 2.212321846064815,
+              "target_exposure_hours": 2.549160150462963
+            }
+          }
+        },
+        "synth": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 0,
+              "passed": false,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 0,
+              "passed": false,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 0.0,
+              "passed": false,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 0,
+              "passed": false,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 0.0,
+              "passed": false,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 0,
+              "passed": false,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 0,
+              "passed": false,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [],
+          "splits": {
+            "test": {
+              "composition_count": 0,
+              "file_count": 0,
+              "real_composition_count": 0,
+              "real_target_active_hours": 0.0,
+              "target_active_hours": 0.0,
+              "target_exposure_hours": 0.0
+            },
+            "train": {
+              "composition_count": 0,
+              "file_count": 0,
+              "real_composition_count": 0,
+              "real_target_active_hours": 0.0,
+              "target_active_hours": 0.0,
+              "target_exposure_hours": 0.0
+            },
+            "validation": {
+              "composition_count": 0,
+              "file_count": 0,
+              "real_composition_count": 0,
+              "real_target_active_hours": 0.0,
+              "target_active_hours": 0.0,
+              "target_exposure_hours": 0.0
+            }
+          }
+        },
+        "wind_brass": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 9,
+              "passed": false,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 2048,
+              "passed": true,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 5.884111932083018,
+              "passed": false,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 39,
+              "passed": true,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 55.973516429083304,
+              "passed": true,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 4,
+              "passed": false,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 5,
+              "passed": false,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "chorale_bricks",
+            "cocochorales",
+            "spheres",
+            "tinysol",
+            "urmp"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 4,
+              "file_count": 29,
+              "real_composition_count": 4,
+              "real_target_active_hours": 0.34132051921926176,
+              "target_active_hours": 0.34132051921926176,
+              "target_exposure_hours": 0.39673438318846055
+            },
+            "train": {
+              "composition_count": 2048,
+              "file_count": 9270,
+              "real_composition_count": 39,
+              "real_target_active_hours": 5.884111932083018,
+              "target_active_hours": 55.973516429083304,
+              "target_exposure_hours": 62.845859981339764
+            },
+            "validation": {
+              "composition_count": 5,
+              "file_count": 37,
+              "real_composition_count": 5,
+              "real_target_active_hours": 3.073784463104686,
+              "target_active_hours": 3.073784463104686,
+              "target_exposure_hours": 4.975475717592593
+            }
+          }
+        }
+      },
+      "recoverable_sources": [
+        "albumdb",
+        "chorale_bricks",
+        "cocochorales",
+        "eg_ipt",
+        "guitar_techs",
+        "spheres",
+        "tinysol",
+        "urmp"
+      ],
+      "selected_sources": [
+        "albumdb",
+        "chorale_bricks",
+        "cocochorales",
+        "eg_ipt",
+        "guitar_techs",
+        "nsynth",
+        "onair_music",
+        "slakh2100",
+        "spheres",
+        "synthsod",
+        "tinysol",
+        "urmp",
+        "vsco_community"
+      ]
+    },
+    "research_all": {
+      "audited_but_unrecoverable_sources": [
+        "freesound_loop_dataset",
+        "idmt_smt_guitar",
+        "onair_music"
+      ],
+      "families": {
+        "electric_guitar": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 30,
+              "passed": true,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 9016,
+              "passed": true,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 54.707038823794534,
+              "passed": true,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 288,
+              "passed": true,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 54.707038823794534,
+              "passed": true,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 18,
+              "passed": true,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 12,
+              "passed": false,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "albumdb",
+            "eg_ipt",
+            "guitar_techs",
+            "medleydb_sample",
+            "rawstems"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 18,
+              "file_count": 117,
+              "real_composition_count": 18,
+              "real_target_active_hours": 3.6766528938137757,
+              "target_active_hours": 3.6766528938137757,
+              "target_exposure_hours": 7.706962693137441
+            },
+            "train": {
+              "composition_count": 9016,
+              "file_count": 10559,
+              "real_composition_count": 9016,
+              "real_target_active_hours": 54.707038823794534,
+              "target_active_hours": 54.707038823794534,
+              "target_exposure_hours": 120.8368684234261
+            },
+            "validation": {
+              "composition_count": 12,
+              "file_count": 44,
+              "real_composition_count": 12,
+              "real_target_active_hours": 0.9029219421217561,
+              "target_active_hours": 0.9029219421217561,
+              "target_exposure_hours": 2.2384223002881707
+            }
+          }
+        },
+        "strings": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 54,
+              "passed": true,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 2125,
+              "passed": true,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 9.185186752094356,
+              "passed": false,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 121,
+              "passed": true,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 59.23612003409238,
+              "passed": true,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 29,
+              "passed": true,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 25,
+              "passed": true,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "albumdb",
+            "cocochorales",
+            "medleydb_sample",
+            "quartset",
+            "rawstems",
+            "spheres",
+            "tinysol",
+            "urmp"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 29,
+              "file_count": 133,
+              "real_composition_count": 29,
+              "real_target_active_hours": 2.0219694051358967,
+              "target_active_hours": 2.0219694051358967,
+              "target_exposure_hours": 4.485321911336293
+            },
+            "train": {
+              "composition_count": 2125,
+              "file_count": 9829,
+              "real_composition_count": 121,
+              "real_target_active_hours": 9.185186752094356,
+              "target_active_hours": 59.23612003409238,
+              "target_exposure_hours": 67.92544798851253
+            },
+            "validation": {
+              "composition_count": 25,
+              "file_count": 142,
+              "real_composition_count": 25,
+              "real_target_active_hours": 4.994872917316232,
+              "target_active_hours": 4.994872917316232,
+              "target_exposure_hours": 9.806643168422461
+            }
+          }
+        },
+        "synth": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 26,
+              "passed": false,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 133,
+              "passed": false,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 11.452280627893513,
+              "passed": true,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 133,
+              "passed": true,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 11.452280627893513,
+              "passed": false,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 15,
+              "passed": true,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 11,
+              "passed": false,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "rawstems"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 15,
+              "file_count": 82,
+              "real_composition_count": 15,
+              "real_target_active_hours": 1.236086354166667,
+              "target_active_hours": 1.236086354166667,
+              "target_exposure_hours": 4.486681197916667
+            },
+            "train": {
+              "composition_count": 133,
+              "file_count": 580,
+              "real_composition_count": 133,
+              "real_target_active_hours": 11.452280627893513,
+              "target_active_hours": 11.452280627893513,
+              "target_exposure_hours": 37.38789620949074
+            },
+            "validation": {
+              "composition_count": 11,
+              "file_count": 60,
+              "real_composition_count": 11,
+              "real_target_active_hours": 1.1558853703703704,
+              "target_active_hours": 1.1558853703703704,
+              "target_exposure_hours": 3.160313454861111
+            }
+          }
+        },
+        "wind_brass": {
+          "gates": {
+            "heldout_real_songs": {
+              "actual": 43,
+              "passed": true,
+              "required": 30
+            },
+            "independent_training_compositions": {
+              "actual": 2099,
+              "passed": true,
+              "required": 200
+            },
+            "real_training_active_hours": {
+              "actual": 8.991138641050167,
+              "passed": false,
+              "required": 10.0
+            },
+            "real_training_projects": {
+              "actual": 90,
+              "passed": true,
+              "required": 30
+            },
+            "split_leakage_compositions": {
+              "actual": 0,
+              "passed": true,
+              "required": 0
+            },
+            "target_active_training_hours": {
+              "actual": 59.08054313805048,
+              "passed": true,
+              "required": 20.0
+            },
+            "test_real_songs": {
+              "actual": 21,
+              "passed": true,
+              "required": 15
+            },
+            "validation_real_songs": {
+              "actual": 22,
+              "passed": true,
+              "required": 15
+            }
+          },
+          "ready_for_scaling_pilots": false,
+          "sources": [
+            "chorale_bricks",
+            "cocochorales",
+            "medleydb_sample",
+            "rawstems",
+            "spheres",
+            "tinysol",
+            "urmp"
+          ],
+          "splits": {
+            "test": {
+              "composition_count": 21,
+              "file_count": 65,
+              "real_composition_count": 21,
+              "real_target_active_hours": 1.2979483866961141,
+              "target_active_hours": 1.2979483866961141,
+              "target_exposure_hours": 2.50561864244772
+            },
+            "train": {
+              "composition_count": 2099,
+              "file_count": 9406,
+              "real_composition_count": 90,
+              "real_target_active_hours": 8.991138641050167,
+              "target_active_hours": 59.08054313805048,
+              "target_exposure_hours": 71.7583327973041
+            },
+            "validation": {
+              "composition_count": 22,
+              "file_count": 138,
+              "real_composition_count": 22,
+              "real_target_active_hours": 5.704358919123204,
+              "target_active_hours": 5.704358919123204,
+              "target_exposure_hours": 11.66838951388889
+            }
+          }
+        }
+      },
+      "recoverable_sources": [
+        "albumdb",
+        "chorale_bricks",
+        "cocochorales",
+        "eg_ipt",
+        "guitar_techs",
+        "guitarset",
+        "medleydb_sample",
+        "quartset",
+        "rawstems",
+        "spheres",
+        "tinysol",
+        "urmp"
+      ],
+      "selected_sources": [
+        "acmid_web_crawl",
+        "albumdb",
+        "cambridge_mixing_secrets_delta",
+        "chorale_bricks",
+        "cocochorales",
+        "eg_ipt",
+        "ensembleset",
+        "freesound_loop_dataset",
+        "gaps",
+        "goat",
+        "guitar_techs",
+        "guitarset",
+        "idmt_smt_guitar",
+        "medleydb",
+        "medleydb_sample",
+        "moisesdb",
+        "musdb",
+        "nsynth",
+        "onair_music",
+        "orchideasol",
+        "quartset",
+        "rawstems",
+        "slakh2100",
+        "spheres",
+        "synthsod",
+        "tinysol",
+        "urmp",
+        "vsco_community"
+      ]
+    }
+  },
+  "schema_version": "1.0",
+  "thresholds": {
+    "heldout_real_songs": 30,
+    "independent_training_compositions": 200,
+    "real_training_active_hours": 10.0,
+    "real_training_projects": 30,
+    "split_leakage_compositions": 0,
+    "target_active_training_hours": 20.0,
+    "test_real_songs": 15,
+    "validation_real_songs": 15
+  }
+}

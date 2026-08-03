@@ -1,0 +1,106 @@
+{
+  "failures": {},
+  "finished_at": "2026-07-25T00:09:51.102106+00:00",
+  "inference_seconds": 1.9453,
+  "job_id": "mvsep-mega53-babyslakh-10s-001",
+  "model_id": "oulianov/mvsep_mega_53",
+  "model_output_count": 53,
+  "model_revision": "911881e9f5c306e3f4f021fc6c4f61890ef32955",
+  "outputs": {
+    "acoustic_guitar": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stem": "acoustic-guitar",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/mega53_specialists/acoustic_guitar.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "electric_guitar": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stem": "electric-guitar",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/mega53_specialists/electric_guitar.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "piano": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stem": "piano",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/mega53_specialists/piano.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "strings": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stem": "strings",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/mega53_specialists/strings.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "synth": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stem": "synth",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/mega53_specialists/synth.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    },
+    "wind": {
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "encoding": "PCM_24",
+      "model_stem": "wind",
+      "object": {
+        "bucket": "splitterxxxxx",
+        "content_type": "audio/wav",
+        "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/mega53_specialists/wind.wav",
+        "provider": "s3",
+        "size_bytes": 2646044
+      },
+      "sample_rate": 44100
+    }
+  },
+  "report_object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/json",
+    "key": "stemsplitter/jobs/mvsep-mega53-babyslakh-10s-001/analysis/mega53-report.json",
+    "provider": "s3",
+    "size_bytes": 2990
+  },
+  "runtime_revision": "83d495dfc81b2ede9bc62f4209619f8bdfd14995",
+  "schema_version": 1,
+  "started_at": "2026-07-25T00:09:40.730504+00:00",
+  "status": "completed"
+}

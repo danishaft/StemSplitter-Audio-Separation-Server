@@ -1,0 +1,23 @@
+{
+  "local_path": "datasets/staging/tinysol/zenodo-3659365/TinySOL.tar.gz",
+  "local_retained": true,
+  "object": {
+    "bucket": "splitterxxxxx",
+    "content_type": "application/x-tar",
+    "key": "stemsplitter/training-data/raw/tinysol/zenodo-3659365/TinySOL.tar.gz",
+    "provider": "s3",
+    "size_bytes": 897847990
+  },
+  "provider_checksum": "c1a8586d50ae4ccedbbf23d9a346a25f",
+  "provider_checksum_algorithm": "md5",
+  "provider_path": "TinySOL.tar.gz",
+  "provider_revision": null,
+  "release_use": "allowed_with_attribution",
+  "remote_readback_verified": false,
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "sha256": "9d3dcfc42a391860b19d935a9043227a0bbb2913c19d46206962ae65aa67b6f7",
+  "size_bytes": 897847990,
+  "source_id": "tinysol",
+  "source_version": "zenodo-3659365"
+}

@@ -1,0 +1,26 @@
+{
+  "archive_count": 1,
+  "archives": [
+    {
+      "provider_checksum": "8452b1a734fad6f3c10bd19940bc09b4",
+      "provider_checksum_algorithm": "md5",
+      "provider_path": "Dataset.tar.gz",
+      "provider_revision": null,
+      "sha256": "4ca765e84caf02b6203a988fbdf02939a935a3258fd46551640eac0beebbae16",
+      "size_bytes": 12097672571
+    }
+  ],
+  "entry_count": 193,
+  "local_path": "datasets/staging/urmp/zenodo-5034983/selections/audio-only-v1",
+  "local_retained": true,
+  "materialization_filter": "audio_only_flac_transcoded",
+  "provenance_sha256": "2ebcb6920e441ba90675e158dbde5da2e9820126eea37543f0adb5623362f9ba",
+  "provider_path": "bundle:audio-only-v1",
+  "release_use": "allowed",
+  "rights_status": "permissive_recorded",
+  "schema_version": "1.0",
+  "selection_name": "audio-only-v1",
+  "size_bytes": 12097672571,
+  "source_id": "urmp",
+  "source_version": "zenodo-5034983"
+}

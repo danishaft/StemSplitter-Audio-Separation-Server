@@ -1,0 +1,40 @@
+{
+  "avg_broad_quality": 0.0,
+  "avg_derived_quality": 0.0,
+  "avg_specialist_quality": 0.0,
+  "benchmark_id": "local-small-corpus-bq-001",
+  "corpus_size": 1,
+  "created_at": "2026-03-26T12:22:57.683216Z",
+  "failure_reasons": {
+    "other_error": 1
+  },
+  "previous_benchmark_id": null,
+  "publish_rate_broad": 0.0,
+  "publish_rate_derived": 0.0,
+  "publish_rate_specialist": 0.0,
+  "quality_delta": null,
+  "results": [
+    {
+      "avg_broad_quality": 0.0,
+      "avg_derived_quality": 0.0,
+      "avg_specialist_quality": 0.0,
+      "difficulty": "mixed",
+      "error_message": "[Errno 2] No such file or directory: '${LOCAL_MEDIA_ROOT}/jobs/booty2/masters/booty2-'",
+      "pipeline_mode": "unknown",
+      "published_broad_stems": [],
+      "published_derived_stems": [],
+      "published_midi": [],
+      "published_specialist_substems": [],
+      "rejected_derived": [],
+      "rejected_extended": [],
+      "rejected_specialist": [],
+      "remote_adapter_status": "not_requested",
+      "song_name": "booty2-",
+      "success": false,
+      "total_duration_seconds": 0.0
+    }
+  ],
+  "stem_family_metrics": {},
+  "success_rate": 0.0,
+  "total_duration_seconds": 4.76837158203125e-05
+}

@@ -1,0 +1,49 @@
+{
+  "benchmark_id": "release-30-l4-l4-v1",
+  "benchmark_status": "failed_early",
+  "candidate": "L4+L4",
+  "decision": "reject_current_eight_stem_release_candidate",
+  "decision_reasons": [
+    "The run produced nine valid ground-truth results before an object-storage failure.",
+    "Guitar separation has a negative median SI-SDR and severe negative outliers.",
+    "Piano separation remains weak and requires a stronger specialist path.",
+    "Objective coverage is unavailable for vocals, instrumental, kick, and snare.",
+    "Blind producer listening and matched commercial comparisons are incomplete."
+  ],
+  "planned_song_count": 30,
+  "valid_ground_truth_song_count": 9,
+  "failed_job_count": 1,
+  "unexecuted_song_count": 20,
+  "release_claim_eligible": false,
+  "source_report": "benchmarks/gpu_bakeoff/release-30-l4-l4-v1/report.json",
+  "stem_scores": {
+    "bass": {
+      "count": 9,
+      "mean_si_sdr": 11.702,
+      "median_si_sdr": 10.682,
+      "minimum_si_sdr": 5.875,
+      "signal": "strong_but_incomplete"
+    },
+    "drums": {
+      "count": 9,
+      "mean_si_sdr": 14.348,
+      "median_si_sdr": 16.699,
+      "minimum_si_sdr": 2.947,
+      "signal": "strong_but_incomplete"
+    },
+    "guitar": {
+      "count": 9,
+      "mean_si_sdr": -11.82,
+      "median_si_sdr": -0.753,
+      "minimum_si_sdr": -52.109,
+      "signal": "rejected"
+    },
+    "piano": {
+      "count": 9,
+      "mean_si_sdr": 3.254,
+      "median_si_sdr": 2.459,
+      "minimum_si_sdr": -0.335,
+      "signal": "weak"
+    }
+  }
+}

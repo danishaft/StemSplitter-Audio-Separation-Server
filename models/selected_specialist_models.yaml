@@ -1,0 +1,92 @@
+schema_version: 1.0
+status: locked_six_model_runtime
+created: "2026-07-23"
+note: >
+  The executable eleven-stem route contains only these six checkpoints.
+  Previously downloaded research checkpoints are intentionally excluded from
+  runtime selection.
+
+download_packs:
+  runtime_models:
+    priority: 1
+    models:
+      - melband_kim_vocals
+      - bs_roformer_sw
+      - mdx23c_drumsep_jarredou_aufr33
+      - bs_roformer_sw_electric_guitar_head
+      - oulianov_bs_roformer_bowed_strings
+      - xlance_bs_roformer_synth_v2
+
+models:
+  melband_kim_vocals:
+    display_name: "MelBand RoFormer Kim Vocals"
+    runner: audio_separator
+    source: "https://github.com/openmirlab/melband-roformer-infer"
+    model_filename: vocals_mel_band_roformer.ckpt
+    output_stems: [vocals, instrumental]
+    use_for: [vocals, instrumental]
+    license_status: unknown
+    download_policy: immediate
+    selection_status: locked_runtime
+    reason: "Owns the vocal/instrumental pair in the friend-test route."
+
+  bs_roformer_sw:
+    display_name: "BS-RoFormer SW"
+    runner: audio_separator
+    source: "https://github.com/openmirlab/bs-roformer-infer"
+    checkpoint_source: "https://huggingface.co/jarredou/BS-ROFO-SW-Fixed/tree/main"
+    model_filename: BS-Roformer-SW.ckpt
+    output_stems: [vocals, drums, bass, guitar, piano, other]
+    use_for: [drums, bass, guitar, piano, other]
+    license_status: unknown
+    download_policy: immediate
+    selection_status: locked_runtime
+    reason: "Owns the five broad instrument partitions; its vocal output is not published."
+
+  mdx23c_drumsep_jarredou_aufr33:
+    display_name: "MDX23C DrumSep by jarredou/aufr33"
+    runner: audio_separator
+    model_filename: MDX23C-DrumSep-aufr33-jarredou.ckpt
+    output_stems: [kick, snare, toms, hh, ride, crash]
+    normalized_output_stems: [kick, snare, toms, hi_hats, ride, crash, cymbals]
+    use_for: [kick, snare]
+    license_status: unknown
+    download_policy: immediate
+    selection_status: locked_runtime
+    reason: "Owns kick and snare in the friend-test route."
+
+  bs_roformer_sw_electric_guitar_head:
+    display_name: "BS-RoFormer SW Electric Guitar Head"
+    runner: bs_roformer_infer
+    source: "https://huggingface.co/jarredou/BS-ROFO-SW-Fixed"
+    model_filename: electric_guitar_bsroformer_base.ckpt
+    output_stems: [electric_guitar]
+    use_for: [electric_guitar]
+    license_status: unknown
+    download_policy: immediate
+    selection_status: locked_product_evaluation
+    reason: "The inherited guitar head beat the rejected specialist fine-tune on the held-out electric-guitar gate."
+
+  oulianov_bs_roformer_bowed_strings:
+    display_name: "BS-RoFormer Bowed Strings Duality"
+    runner: bs_roformer_infer
+    source: "https://huggingface.co/oulianov/BS-Roformer-BowedStrings-Duality"
+    model_filename: gilliaan_bowedstrings_bs_v1.ckpt
+    output_stems: [strings]
+    use_for: [strings]
+    license_status: unknown
+    download_policy: immediate
+    selection_status: locked_product_evaluation
+    reason: "Selected original checkpoint scored 8.2523 dB aggregate SDR on the current held-out specialist gate."
+
+  xlance_bs_roformer_synth_v2:
+    display_name: "X-LANCE BS-RoFormer Synth v2"
+    runner: bs_roformer_infer
+    source: "https://huggingface.co/noblebarkrr/mvsepless_resources"
+    model_filename: bs_syn2_xlancer.ckpt
+    output_stems: [synth]
+    use_for: [synth]
+    license_status: unknown
+    download_policy: immediate
+    selection_status: locked_product_evaluation
+    reason: "Selected base checkpoint for product evaluation; production qualification remains explicitly pending."

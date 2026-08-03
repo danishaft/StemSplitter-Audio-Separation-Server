@@ -1,0 +1,595 @@
+{
+  "audio_files": [
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/001b75c3600a775650db8fb2f519040a12bad495b793a0ceaa6d457717658600/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/002bd30618d1b011aace8ef7133ed72bdecc59205495637ce9fdc9fea19a359f/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/0042478b279d7ff70ea0b373bbd6b2900d7fba51e5f5d23fb00dfb3b90eb3475/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/01073e67f7d7f22c494e60479f09cab0c1d7bf0fa7c713d09c574a1df7b98831/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/01637816f7878af9e464af75ed5fb9819a77f48099c8f6a750caecc074ab4931/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/01d6462b9366fd884eae481304d1d6a37e9e7d4b290e0849314b326ebd037160/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/023d2fb71b806f6a6f69c4534cc77fc0ae9f39821dfd926da26925f5b88b5236/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/02b708527375ea3392bf3f23ded11f865e458ff3171b0f03a20b1b5c67f2d378/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/02d58475dafe42928ea0472b737c53454ec6475db97794dc8383e4e8f92db764/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/031e8266f6d09bb59f6da6765f7b778a6b33307537b23d6b51b9a2c1f793e1dc/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/03e919e74364285ac919789dc31ee3992cc2cecb9c437f04a4fc2d8105600372/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/04c3bcbf91b9f692b75151c745ed85caae7bb6bc3854ec94eea98b90200718f8/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/04edeedb4f2495e6cd26b03c4410be3550dc2caae2411b899d365b36d8594c3d/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/04fc3ff67686e89a4f7b6a8cc2091793b4da9767a1d67cddd14f7d35f295406b/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/06f2ffd9983f5aaf264baaf7694bd3f77285fc97b4b57fd1e5522ec85b608028/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/08b33dd437c727b64999df24be85e033a586dd405feb2e58b57134e097546fcd/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/09dee3a4633d3f2215f5d5a7a0e77d6eeeae8a367e0957859cf091baac68417f/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/0a1eb5855ecd47d3bb0514bc6a41617a6574f17d5a9c7f075885dd088719c4c2/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/0cd4acb514cfb7d36c951e5478fe5fa7f930035121fde051d4aa2a453d9638a8/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/0d638705a3ed918a6741cf0ceea8c7f657b52d05ac309ede0e068c6aae0b6b27/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/0df2700aefd72ed5d0549ea8aa4aa16ce2ee63a43c37eadcdd5afeb801e17b7d/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/0e591a557780498da91aea556627357e70acfd9c08a16a1b694aac4e901c7c4e/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/12227cecff6ac66817068ff651c3f273eb3a97d1d74f637bcc4daddd9ad5c35e/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/18d2b44f2f6234966f871406e01ef13f244ca91ffbbca06829cbbc5f6d1260e5/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/1bb054f2dc23ee70cef56b0f8af0d0aae81727dea4697aa2c50b1941e868fbf6/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/1c291303166c38a90bf0356c8996d540385c103e6877dcd0a73ae7351e890c3f/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/2731deb1a0ba2d7789f5c990a3f81759785bfa58e9c288d92c0fccbdbb33b5ed/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/3a4c40d87136941b2cebf336779dea68794bb4d7d1dcc26442e22691755e75cc/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/4fe5aa5ba85cce66eeac8328ea1dbc062f1a58857194f7c868ea4f34eafbcd7e/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/base/73207fcdc77a3bffbb1b8552fb35573b47834542c5ca8f5b15163a6f54ba0102/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/001b75c3600a775650db8fb2f519040a12bad495b793a0ceaa6d457717658600/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/001b75c3600a775650db8fb2f519040a12bad495b793a0ceaa6d457717658600/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/002bd30618d1b011aace8ef7133ed72bdecc59205495637ce9fdc9fea19a359f/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/002bd30618d1b011aace8ef7133ed72bdecc59205495637ce9fdc9fea19a359f/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0042478b279d7ff70ea0b373bbd6b2900d7fba51e5f5d23fb00dfb3b90eb3475/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0042478b279d7ff70ea0b373bbd6b2900d7fba51e5f5d23fb00dfb3b90eb3475/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/01073e67f7d7f22c494e60479f09cab0c1d7bf0fa7c713d09c574a1df7b98831/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/01073e67f7d7f22c494e60479f09cab0c1d7bf0fa7c713d09c574a1df7b98831/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/01637816f7878af9e464af75ed5fb9819a77f48099c8f6a750caecc074ab4931/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/01637816f7878af9e464af75ed5fb9819a77f48099c8f6a750caecc074ab4931/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/01d6462b9366fd884eae481304d1d6a37e9e7d4b290e0849314b326ebd037160/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/01d6462b9366fd884eae481304d1d6a37e9e7d4b290e0849314b326ebd037160/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/023d2fb71b806f6a6f69c4534cc77fc0ae9f39821dfd926da26925f5b88b5236/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/023d2fb71b806f6a6f69c4534cc77fc0ae9f39821dfd926da26925f5b88b5236/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/02b708527375ea3392bf3f23ded11f865e458ff3171b0f03a20b1b5c67f2d378/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/02b708527375ea3392bf3f23ded11f865e458ff3171b0f03a20b1b5c67f2d378/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/02d58475dafe42928ea0472b737c53454ec6475db97794dc8383e4e8f92db764/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/02d58475dafe42928ea0472b737c53454ec6475db97794dc8383e4e8f92db764/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/031e8266f6d09bb59f6da6765f7b778a6b33307537b23d6b51b9a2c1f793e1dc/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/031e8266f6d09bb59f6da6765f7b778a6b33307537b23d6b51b9a2c1f793e1dc/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/03e919e74364285ac919789dc31ee3992cc2cecb9c437f04a4fc2d8105600372/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/03e919e74364285ac919789dc31ee3992cc2cecb9c437f04a4fc2d8105600372/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/04c3bcbf91b9f692b75151c745ed85caae7bb6bc3854ec94eea98b90200718f8/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/04c3bcbf91b9f692b75151c745ed85caae7bb6bc3854ec94eea98b90200718f8/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/04edeedb4f2495e6cd26b03c4410be3550dc2caae2411b899d365b36d8594c3d/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/04edeedb4f2495e6cd26b03c4410be3550dc2caae2411b899d365b36d8594c3d/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/04fc3ff67686e89a4f7b6a8cc2091793b4da9767a1d67cddd14f7d35f295406b/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/04fc3ff67686e89a4f7b6a8cc2091793b4da9767a1d67cddd14f7d35f295406b/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/06f2ffd9983f5aaf264baaf7694bd3f77285fc97b4b57fd1e5522ec85b608028/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/06f2ffd9983f5aaf264baaf7694bd3f77285fc97b4b57fd1e5522ec85b608028/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/08b33dd437c727b64999df24be85e033a586dd405feb2e58b57134e097546fcd/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/08b33dd437c727b64999df24be85e033a586dd405feb2e58b57134e097546fcd/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/09dee3a4633d3f2215f5d5a7a0e77d6eeeae8a367e0957859cf091baac68417f/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/09dee3a4633d3f2215f5d5a7a0e77d6eeeae8a367e0957859cf091baac68417f/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0a1eb5855ecd47d3bb0514bc6a41617a6574f17d5a9c7f075885dd088719c4c2/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0a1eb5855ecd47d3bb0514bc6a41617a6574f17d5a9c7f075885dd088719c4c2/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0cd4acb514cfb7d36c951e5478fe5fa7f930035121fde051d4aa2a453d9638a8/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0cd4acb514cfb7d36c951e5478fe5fa7f930035121fde051d4aa2a453d9638a8/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0d638705a3ed918a6741cf0ceea8c7f657b52d05ac309ede0e068c6aae0b6b27/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0d638705a3ed918a6741cf0ceea8c7f657b52d05ac309ede0e068c6aae0b6b27/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0df2700aefd72ed5d0549ea8aa4aa16ce2ee63a43c37eadcdd5afeb801e17b7d/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0df2700aefd72ed5d0549ea8aa4aa16ce2ee63a43c37eadcdd5afeb801e17b7d/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0e591a557780498da91aea556627357e70acfd9c08a16a1b694aac4e901c7c4e/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/0e591a557780498da91aea556627357e70acfd9c08a16a1b694aac4e901c7c4e/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/12227cecff6ac66817068ff651c3f273eb3a97d1d74f637bcc4daddd9ad5c35e/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/12227cecff6ac66817068ff651c3f273eb3a97d1d74f637bcc4daddd9ad5c35e/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/18d2b44f2f6234966f871406e01ef13f244ca91ffbbca06829cbbc5f6d1260e5/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/18d2b44f2f6234966f871406e01ef13f244ca91ffbbca06829cbbc5f6d1260e5/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/1bb054f2dc23ee70cef56b0f8af0d0aae81727dea4697aa2c50b1941e868fbf6/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/1bb054f2dc23ee70cef56b0f8af0d0aae81727dea4697aa2c50b1941e868fbf6/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/1c291303166c38a90bf0356c8996d540385c103e6877dcd0a73ae7351e890c3f/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/1c291303166c38a90bf0356c8996d540385c103e6877dcd0a73ae7351e890c3f/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/2731deb1a0ba2d7789f5c990a3f81759785bfa58e9c288d92c0fccbdbb33b5ed/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/2731deb1a0ba2d7789f5c990a3f81759785bfa58e9c288d92c0fccbdbb33b5ed/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/3a4c40d87136941b2cebf336779dea68794bb4d7d1dcc26442e22691755e75cc/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/3a4c40d87136941b2cebf336779dea68794bb4d7d1dcc26442e22691755e75cc/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/4fe5aa5ba85cce66eeac8328ea1dbc062f1a58857194f7c868ea4f34eafbcd7e/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/4fe5aa5ba85cce66eeac8328ea1dbc062f1a58857194f7c868ea4f34eafbcd7e/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/73207fcdc77a3bffbb1b8552fb35573b47834542c5ca8f5b15163a6f54ba0102/reference_mixture.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/references/73207fcdc77a3bffbb1b8552fb35573b47834542c5ca8f5b15163a6f54ba0102/reference_strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/001b75c3600a775650db8fb2f519040a12bad495b793a0ceaa6d457717658600/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/002bd30618d1b011aace8ef7133ed72bdecc59205495637ce9fdc9fea19a359f/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/0042478b279d7ff70ea0b373bbd6b2900d7fba51e5f5d23fb00dfb3b90eb3475/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/01073e67f7d7f22c494e60479f09cab0c1d7bf0fa7c713d09c574a1df7b98831/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/01637816f7878af9e464af75ed5fb9819a77f48099c8f6a750caecc074ab4931/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/01d6462b9366fd884eae481304d1d6a37e9e7d4b290e0849314b326ebd037160/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/023d2fb71b806f6a6f69c4534cc77fc0ae9f39821dfd926da26925f5b88b5236/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/02b708527375ea3392bf3f23ded11f865e458ff3171b0f03a20b1b5c67f2d378/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/02d58475dafe42928ea0472b737c53454ec6475db97794dc8383e4e8f92db764/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/031e8266f6d09bb59f6da6765f7b778a6b33307537b23d6b51b9a2c1f793e1dc/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/03e919e74364285ac919789dc31ee3992cc2cecb9c437f04a4fc2d8105600372/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/04c3bcbf91b9f692b75151c745ed85caae7bb6bc3854ec94eea98b90200718f8/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/04edeedb4f2495e6cd26b03c4410be3550dc2caae2411b899d365b36d8594c3d/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/04fc3ff67686e89a4f7b6a8cc2091793b4da9767a1d67cddd14f7d35f295406b/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/06f2ffd9983f5aaf264baaf7694bd3f77285fc97b4b57fd1e5522ec85b608028/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/08b33dd437c727b64999df24be85e033a586dd405feb2e58b57134e097546fcd/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/09dee3a4633d3f2215f5d5a7a0e77d6eeeae8a367e0957859cf091baac68417f/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/0a1eb5855ecd47d3bb0514bc6a41617a6574f17d5a9c7f075885dd088719c4c2/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/0cd4acb514cfb7d36c951e5478fe5fa7f930035121fde051d4aa2a453d9638a8/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/0d638705a3ed918a6741cf0ceea8c7f657b52d05ac309ede0e068c6aae0b6b27/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/0df2700aefd72ed5d0549ea8aa4aa16ce2ee63a43c37eadcdd5afeb801e17b7d/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/0e591a557780498da91aea556627357e70acfd9c08a16a1b694aac4e901c7c4e/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/12227cecff6ac66817068ff651c3f273eb3a97d1d74f637bcc4daddd9ad5c35e/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/18d2b44f2f6234966f871406e01ef13f244ca91ffbbca06829cbbc5f6d1260e5/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/1bb054f2dc23ee70cef56b0f8af0d0aae81727dea4697aa2c50b1941e868fbf6/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/1c291303166c38a90bf0356c8996d540385c103e6877dcd0a73ae7351e890c3f/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/2731deb1a0ba2d7789f5c990a3f81759785bfa58e9c288d92c0fccbdbb33b5ed/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/3a4c40d87136941b2cebf336779dea68794bb4d7d1dcc26442e22691755e75cc/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/4fe5aa5ba85cce66eeac8328ea1dbc062f1a58857194f7c868ea4f34eafbcd7e/strings.flac",
+    "exports/strings-ema1000-expanded-gate-v1/strings/trained_ema_1000/73207fcdc77a3bffbb1b8552fb35573b47834542c5ca8f5b15163a6f54ba0102/strings.flac"
+  ],
+  "base_checkpoint_sha256": "ec224f04fe24f0dd45336c6fe5956e14fb743504b7c0a9b827b659a624ca59db",
+  "base_id": "strings",
+  "comparison_checkpoint_sha256": "e800ab2156b5759a333d699cb6f4d60b38419833bcc5c5601d0f75b0a3d6946e",
+  "comparison_variant": "trained_ema_1000",
+  "comparison_weight_source": "ema_model_state_dict",
+  "dataset_id": "complete-source-pools",
+  "elapsed_seconds": 103.563,
+  "evaluation_id": "strings-ema1000-expanded-gate-v1",
+  "example_count": 30,
+  "run_id": "specialists-20260728",
+  "schema_version": "1.0",
+  "scores": {
+    "aggregate": {
+      "base": {
+        "bleedless": 24.862703371047974,
+        "fullness": 29.63450225194295,
+        "sdr": 8.25232493976752
+      },
+      "trained_ema_1000": {
+        "bleedless": 25.652683210372924,
+        "fullness": 28.91365367571513,
+        "sdr": 8.556875359763701
+      }
+    },
+    "delta_comparison_minus_base": {
+      "bleedless": 0.7899798393249498,
+      "fullness": -0.720848576227823,
+      "sdr": 0.3045504199961808
+    },
+    "delta_distribution": {
+      "bleedless": {
+        "example_count": 30,
+        "improved_examples": 21,
+        "median": 0.745516300201416
+      },
+      "fullness": {
+        "example_count": 30,
+        "improved_examples": 4,
+        "median": -0.8254365921020508
+      },
+      "sdr": {
+        "example_count": 30,
+        "improved_examples": 19,
+        "median": 0.012245655059814453
+      }
+    },
+    "per_example": {
+      "001b75c3600a775650db8fb2f519040a12bad495b793a0ceaa6d457717658600": {
+        "base": {
+          "bleedless": 20.294559478759766,
+          "fullness": 22.25444984436035,
+          "k_sdr": 96.96586955658013,
+          "sdr": 8.1470308303833
+        },
+        "trained_ema_1000": {
+          "bleedless": 21.596118927001953,
+          "fullness": 20.985124588012695,
+          "k_sdr": 97.0588107939837,
+          "sdr": 8.201286315917969
+        }
+      },
+      "002bd30618d1b011aace8ef7133ed72bdecc59205495637ce9fdc9fea19a359f": {
+        "base": {
+          "bleedless": 29.561025619506836,
+          "fullness": 19.97079849243164,
+          "k_sdr": 100.0,
+          "sdr": 13.444428443908691
+        },
+        "trained_ema_1000": {
+          "bleedless": 32.94816970825195,
+          "fullness": 18.381025314331055,
+          "k_sdr": 100.0,
+          "sdr": 13.465473175048828
+        }
+      },
+      "0042478b279d7ff70ea0b373bbd6b2900d7fba51e5f5d23fb00dfb3b90eb3475": {
+        "base": {
+          "bleedless": 6.2980217933654785,
+          "fullness": 19.80390739440918,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -11.410857200622559
+        },
+        "trained_ema_1000": {
+          "bleedless": 6.351029872894287,
+          "fullness": 19.23624038696289,
+          "k_sdr": 3.2845857427797276e-05,
+          "sdr": -11.407151222229004
+        }
+      },
+      "01073e67f7d7f22c494e60479f09cab0c1d7bf0fa7c713d09c574a1df7b98831": {
+        "base": {
+          "bleedless": 30.762344360351562,
+          "fullness": 15.259281158447266,
+          "k_sdr": 100.0,
+          "sdr": 15.016229629516602
+        },
+        "trained_ema_1000": {
+          "bleedless": 31.476810455322266,
+          "fullness": 15.191699981689453,
+          "k_sdr": 100.0,
+          "sdr": 15.059741973876953
+        }
+      },
+      "01637816f7878af9e464af75ed5fb9819a77f48099c8f6a750caecc074ab4931": {
+        "base": {
+          "bleedless": 9.780658721923828,
+          "fullness": 27.493467330932617,
+          "k_sdr": 79.02600037739356,
+          "sdr": 0.08911851048469543
+        },
+        "trained_ema_1000": {
+          "bleedless": 9.791699409484863,
+          "fullness": 26.605419158935547,
+          "k_sdr": 79.03029752822691,
+          "sdr": 0.09056936949491501
+        }
+      },
+      "01d6462b9366fd884eae481304d1d6a37e9e7d4b290e0849314b326ebd037160": {
+        "base": {
+          "bleedless": 24.943832397460938,
+          "fullness": 28.05350685119629,
+          "k_sdr": 100.0,
+          "sdr": 15.849651336669922
+        },
+        "trained_ema_1000": {
+          "bleedless": 25.697925567626953,
+          "fullness": 27.027915954589844,
+          "k_sdr": 100.0,
+          "sdr": 15.852338790893555
+        }
+      },
+      "023d2fb71b806f6a6f69c4534cc77fc0ae9f39821dfd926da26925f5b88b5236": {
+        "base": {
+          "bleedless": 36.4915657043457,
+          "fullness": 19.813934326171875,
+          "k_sdr": 100.0,
+          "sdr": 21.578500747680664
+        },
+        "trained_ema_1000": {
+          "bleedless": 38.1103515625,
+          "fullness": 19.26137351989746,
+          "k_sdr": 100.0,
+          "sdr": 21.517202377319336
+        }
+      },
+      "02b708527375ea3392bf3f23ded11f865e458ff3171b0f03a20b1b5c67f2d378": {
+        "base": {
+          "bleedless": 8.785111427307129,
+          "fullness": 11.892875671386719,
+          "k_sdr": 66.33474146570082,
+          "sdr": -3.464869976043701
+        },
+        "trained_ema_1000": {
+          "bleedless": 9.775125503540039,
+          "fullness": 11.733175277709961,
+          "k_sdr": 66.45611617637569,
+          "sdr": -3.436974048614502
+        }
+      },
+      "02d58475dafe42928ea0472b737c53454ec6475db97794dc8383e4e8f92db764": {
+        "base": {
+          "bleedless": 15.934409141540527,
+          "fullness": 20.99653434753418,
+          "k_sdr": 100.0,
+          "sdr": 16.624370574951172
+        },
+        "trained_ema_1000": {
+          "bleedless": 17.663265228271484,
+          "fullness": 19.71039390563965,
+          "k_sdr": 100.0,
+          "sdr": 16.857215881347656
+        }
+      },
+      "031e8266f6d09bb59f6da6765f7b778a6b33307537b23d6b51b9a2c1f793e1dc": {
+        "base": {
+          "bleedless": 8.997305870056152,
+          "fullness": 28.123430252075195,
+          "k_sdr": 47.189015220496174,
+          "sdr": -6.793292999267578
+        },
+        "trained_ema_1000": {
+          "bleedless": 8.959393501281738,
+          "fullness": 27.148849487304688,
+          "k_sdr": 47.0614851850874,
+          "sdr": -6.809594631195068
+        }
+      },
+      "03e919e74364285ac919789dc31ee3992cc2cecb9c437f04a4fc2d8105600372": {
+        "base": {
+          "bleedless": 51.63889694213867,
+          "fullness": 15.302109718322754,
+          "k_sdr": 100.0,
+          "sdr": 25.563823699951172
+        },
+        "trained_ema_1000": {
+          "bleedless": 54.97650909423828,
+          "fullness": 15.281499862670898,
+          "k_sdr": 100.0,
+          "sdr": 25.738847732543945
+        }
+      },
+      "04c3bcbf91b9f692b75151c745ed85caae7bb6bc3854ec94eea98b90200718f8": {
+        "base": {
+          "bleedless": 15.6587495803833,
+          "fullness": 39.525489807128906,
+          "k_sdr": 92.35692890238326,
+          "sdr": 5.640299320220947
+        },
+        "trained_ema_1000": {
+          "bleedless": 15.50316333770752,
+          "fullness": 38.37635040283203,
+          "k_sdr": 92.3328022983179,
+          "sdr": 5.62808084487915
+        }
+      },
+      "04edeedb4f2495e6cd26b03c4410be3550dc2caae2411b899d365b36d8594c3d": {
+        "base": {
+          "bleedless": 95.17093658447266,
+          "fullness": 88.7940673828125,
+          "k_sdr": 100.0,
+          "sdr": 30.776458740234375
+        },
+        "trained_ema_1000": {
+          "bleedless": 96.45111846923828,
+          "fullness": 90.16841888427734,
+          "k_sdr": 100.0,
+          "sdr": 31.41704750061035
+        }
+      },
+      "04fc3ff67686e89a4f7b6a8cc2091793b4da9767a1d67cddd14f7d35f295406b": {
+        "base": {
+          "bleedless": 24.69617462158203,
+          "fullness": 20.69304084777832,
+          "k_sdr": 100.0,
+          "sdr": 14.226053237915039
+        },
+        "trained_ema_1000": {
+          "bleedless": 25.242216110229492,
+          "fullness": 19.57746696472168,
+          "k_sdr": 100.0,
+          "sdr": 14.180517196655273
+        }
+      },
+      "06f2ffd9983f5aaf264baaf7694bd3f77285fc97b4b57fd1e5522ec85b608028": {
+        "base": {
+          "bleedless": 8.570253372192383,
+          "fullness": 27.169015884399414,
+          "k_sdr": 73.4849567430113,
+          "sdr": -1.6323150396347046
+        },
+        "trained_ema_1000": {
+          "bleedless": 8.558503150939941,
+          "fullness": 26.211082458496094,
+          "k_sdr": 73.48006639557306,
+          "sdr": -1.6337096691131592
+        }
+      },
+      "08b33dd437c727b64999df24be85e033a586dd405feb2e58b57134e097546fcd": {
+        "base": {
+          "bleedless": 13.414071083068848,
+          "fullness": 18.741846084594727,
+          "k_sdr": 98.60898055414052,
+          "sdr": 9.129220962524414
+        },
+        "trained_ema_1000": {
+          "bleedless": 14.316633224487305,
+          "fullness": 18.469623565673828,
+          "k_sdr": 99.73771566544666,
+          "sdr": 9.832976341247559
+        }
+      },
+      "09dee3a4633d3f2215f5d5a7a0e77d6eeeae8a367e0957859cf091baac68417f": {
+        "base": {
+          "bleedless": 30.412874221801758,
+          "fullness": 47.532554626464844,
+          "k_sdr": 100.0,
+          "sdr": 17.31651496887207
+        },
+        "trained_ema_1000": {
+          "bleedless": 31.384601593017578,
+          "fullness": 46.84342575073242,
+          "k_sdr": 100.0,
+          "sdr": 17.364076614379883
+        }
+      },
+      "0a1eb5855ecd47d3bb0514bc6a41617a6574f17d5a9c7f075885dd088719c4c2": {
+        "base": {
+          "bleedless": 37.07606506347656,
+          "fullness": 17.541919708251953,
+          "k_sdr": 89.52543329221814,
+          "sdr": 4.265904903411865
+        },
+        "trained_ema_1000": {
+          "bleedless": 34.54875564575195,
+          "fullness": 17.613216400146484,
+          "k_sdr": 89.5587568456474,
+          "sdr": 4.281400680541992
+        }
+      },
+      "0cd4acb514cfb7d36c951e5478fe5fa7f930035121fde051d4aa2a453d9638a8": {
+        "base": {
+          "bleedless": 19.88692855834961,
+          "fullness": 16.458425521850586,
+          "k_sdr": 99.62217526421182,
+          "sdr": 9.759821891784668
+        },
+        "trained_ema_1000": {
+          "bleedless": 20.85100555419922,
+          "fullness": 15.744681358337402,
+          "k_sdr": 99.76594547200057,
+          "sdr": 9.850889205932617
+        }
+      },
+      "0d638705a3ed918a6741cf0ceea8c7f657b52d05ac309ede0e068c6aae0b6b27": {
+        "base": {
+          "bleedless": 8.405895233154297,
+          "fullness": 31.954750061035156,
+          "k_sdr": 94.03764880280934,
+          "sdr": 6.513943195343018
+        },
+        "trained_ema_1000": {
+          "bleedless": 8.178162574768066,
+          "fullness": 27.806365966796875,
+          "k_sdr": 93.8121284001185,
+          "sdr": 6.39410400390625
+        }
+      },
+      "0df2700aefd72ed5d0549ea8aa4aa16ce2ee63a43c37eadcdd5afeb801e17b7d": {
+        "base": {
+          "bleedless": 10.144819259643555,
+          "fullness": 46.25788879394531,
+          "k_sdr": 92.88372856515998,
+          "sdr": 5.909337043762207
+        },
+        "trained_ema_1000": {
+          "bleedless": 10.135427474975586,
+          "fullness": 45.43959045410156,
+          "k_sdr": 92.86644034598825,
+          "sdr": 5.900439262390137
+        }
+      },
+      "0e591a557780498da91aea556627357e70acfd9c08a16a1b694aac4e901c7c4e": {
+        "base": {
+          "bleedless": 11.554139137268066,
+          "fullness": 7.84846305847168,
+          "k_sdr": 84.99019272166403,
+          "sdr": 2.297093629837036
+        },
+        "trained_ema_1000": {
+          "bleedless": 11.23509693145752,
+          "fullness": 6.877888202667236,
+          "k_sdr": 84.25908699969908,
+          "sdr": 2.004387617111206
+        }
+      },
+      "12227cecff6ac66817068ff651c3f273eb3a97d1d74f637bcc4daddd9ad5c35e": {
+        "base": {
+          "bleedless": 16.1684513092041,
+          "fullness": 18.16503143310547,
+          "k_sdr": 72.87312751652655,
+          "sdr": -1.80519437789917
+        },
+        "trained_ema_1000": {
+          "bleedless": 17.123193740844727,
+          "fullness": 17.93532943725586,
+          "k_sdr": 72.86756980985409,
+          "sdr": -1.8067500591278076
+        }
+      },
+      "18d2b44f2f6234966f871406e01ef13f244ca91ffbbca06829cbbc5f6d1260e5": {
+        "base": {
+          "bleedless": 10.90188217163086,
+          "fullness": 28.55913543701172,
+          "k_sdr": 82.60552578488617,
+          "sdr": 1.3659133911132812
+        },
+        "trained_ema_1000": {
+          "bleedless": 11.65966796875,
+          "fullness": 27.249160766601562,
+          "k_sdr": 83.31904135824642,
+          "sdr": 1.6374788284301758
+        }
+      },
+      "1bb054f2dc23ee70cef56b0f8af0d0aae81727dea4697aa2c50b1941e868fbf6": {
+        "base": {
+          "bleedless": 9.595443725585938,
+          "fullness": 27.178314208984375,
+          "k_sdr": 68.46597574958932,
+          "sdr": -2.95973539352417
+        },
+        "trained_ema_1000": {
+          "bleedless": 9.65500545501709,
+          "fullness": 26.973299026489258,
+          "k_sdr": 68.50270351842846,
+          "sdr": -2.950739860534668
+        }
+      },
+      "1c291303166c38a90bf0356c8996d540385c103e6877dcd0a73ae7351e890c3f": {
+        "base": {
+          "bleedless": 95.3970718383789,
+          "fullness": 87.91117095947266,
+          "k_sdr": 100.0,
+          "sdr": 39.361900329589844
+        },
+        "trained_ema_1000": {
+          "bleedless": 96.15010070800781,
+          "fullness": 89.48634338378906,
+          "k_sdr": 100.0,
+          "sdr": 40.393428802490234
+        }
+      },
+      "2731deb1a0ba2d7789f5c990a3f81759785bfa58e9c288d92c0fccbdbb33b5ed": {
+        "base": {
+          "bleedless": 13.133742332458496,
+          "fullness": 21.57663345336914,
+          "k_sdr": 80.4219675152011,
+          "sdr": 0.5705704689025879
+        },
+        "trained_ema_1000": {
+          "bleedless": 8.530900955200195,
+          "fullness": 50.03262710571289,
+          "k_sdr": 80.37312177663811,
+          "sdr": 0.5533764362335205
+        }
+      },
+      "3a4c40d87136941b2cebf336779dea68794bb4d7d1dcc26442e22691755e75cc": {
+        "base": {
+          "bleedless": 9.14658260345459,
+          "fullness": 70.08950805664062,
+          "k_sdr": 73.78862030434352,
+          "sdr": -1.545308232307434
+        },
+        "trained_ema_1000": {
+          "bleedless": 19.099279403686523,
+          "fullness": 39.97893142700195,
+          "k_sdr": 90.6134326971205,
+          "sdr": 4.7800469398498535
+        }
+      },
+      "4fe5aa5ba85cce66eeac8328ea1dbc062f1a58857194f7c868ea4f34eafbcd7e": {
+        "base": {
+          "bleedless": 12.701359748840332,
+          "fullness": 18.7546443939209,
+          "k_sdr": 84.08096651361782,
+          "sdr": 1.9340567588806152
+        },
+        "trained_ema_1000": {
+          "bleedless": 13.439363479614258,
+          "fullness": 17.576793670654297,
+          "k_sdr": 84.03619547604075,
+          "sdr": 1.9164388179779053
+        }
+      },
+      "73207fcdc77a3bffbb1b8552fb35573b47834542c5ca8f5b15163a6f54ba0102": {
+        "base": {
+          "bleedless": 60.35792922973633,
+          "fullness": 25.318872451782227,
+          "k_sdr": 100.0,
+          "sdr": 11.801078796386719
+        },
+        "trained_ema_1000": {
+          "bleedless": 60.17190170288086,
+          "fullness": 24.486297607421875,
+          "k_sdr": 100.0,
+          "sdr": 11.833815574645996
+        }
+      }
+    }
+  },
+  "validation_set_id": "specialists-validation-30-v1",
+  "wandb_url": "https://wandb.ai/daniel-ejeh-auralith/stemsplitter-specialists/runs/9m7xc4ab"
+}

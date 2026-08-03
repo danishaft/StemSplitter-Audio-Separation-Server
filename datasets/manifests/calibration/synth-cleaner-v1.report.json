@@ -1,0 +1,51 @@
+{
+  "calibration": {
+    "acceptance": {
+      "accepted": 257,
+      "false_positive": 2,
+      "precision": 0.9922178988326849,
+      "recall": 0.6929347826086957,
+      "true_positive": 255
+    },
+    "rejection": {
+      "positive_false_reject_rate": 0.008152173913043478,
+      "rejected": 322,
+      "rejected_positive": 3
+    }
+  },
+  "calibration_id": "synth-cleaner-v1",
+  "proposed_thresholds": {
+    "automatic_accept_threshold": 0.42264842987060547,
+    "automatic_reject_threshold": 0.1358864605426788,
+    "minimum_margin": 0.21351858973503113
+  },
+  "schema_version": "1.0",
+  "status": "failed",
+  "targets": {
+    "accept_precision": 0.99,
+    "minimum_accept_recall": 0.5,
+    "positive_retention_after_rejection": 0.99
+  },
+  "validation": {
+    "acceptance": {
+      "accepted": 129,
+      "false_positive": 30,
+      "precision": 0.7674418604651163,
+      "recall": 0.717391304347826,
+      "true_positive": 99
+    },
+    "rejection": {
+      "positive_false_reject_rate": 0.0,
+      "rejected": 75,
+      "rejected_positive": 0
+    }
+  },
+  "window_counts": {
+    "calibration:confuser": 414,
+    "calibration:positive": 368,
+    "calibration:target_absent": 414,
+    "validation:confuser": 161,
+    "validation:positive": 138,
+    "validation:target_absent": 161
+  }
+}

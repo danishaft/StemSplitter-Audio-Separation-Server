@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-25T23:37:21.942735+00:00",
+  "hatchet_source": {
+    "commit": "41b056313b43",
+    "tag": "v0.98.7",
+    "python_sdk_version": "1.37.0"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "docker_available": false,
+    "hatchet_sdk_available": true
+  },
+  "executed_evidence": {
+    "contract_tests": {
+      "status": "passed",
+      "tests_run": 9,
+      "failures": 0,
+      "errors": 0,
+      "proves": [
+        "stable product job and attempt identifiers",
+        "idempotent product dispatch reservation",
+        "explicit priority and tenant-concurrency metadata",
+        "bounded retry accounting",
+        "cancellation winning over late completion",
+        "callback replay safety",
+        "one terminal effect per product job",
+        "one usage and artifact effect per successful attempt"
+      ]
+    }
+  },
+  "source_confirmed_not_executed": {
+    "hatchet_primitives": {
+      "status": "source_inspected",
+      "capabilities": [
+        "status-based idempotency",
+        "runtime priority",
+        "keyed concurrency",
+        "bounded retries and backoff",
+        "run cancellation",
+        "worker task retry metadata"
+      ]
+    }
+  },
+  "blocked_evidence": {
+    "real_hatchet_campaign": {
+      "status": "blocked",
+      "reasons": [
+        "docker_not_installed"
+      ],
+      "must_prove": [
+        "server-enforced idempotency collision behavior",
+        "priority scheduling order",
+        "tenant concurrency enforcement",
+        "in-flight cancellation propagation",
+        "worker-process crash reassignment",
+        "bounded server retry behavior",
+        "zero duplicate product effects with real callbacks"
+      ]
+    }
+  },
+  "recommendation": "continue_timeboxed_adoption_proof"
+}
