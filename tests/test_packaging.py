@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import zipfile
 
+import splitter.jobs as jobs
 from splitter.packaging import write_manifest, package_directories
 from splitter.jobs import get_manifest
 from splitter.util import dump_json
@@ -94,15 +95,19 @@ class TestWriteManifest:
 class TestGetManifest:
     """Tests for manifest reading."""
 
-    def test_returns_none_if_missing(self, tmp_path: Path) -> None:
+    def test_returns_none_if_missing(self, monkeypatch, tmp_path: Path) -> None:
         """Should return None when manifest doesn't exist."""
-        result = get_manifest(tmp_path)
+        monkeypatch.setattr(jobs, "JOBS_DIR", tmp_path)
+
+        result = get_manifest("missing-job")
         assert result is None
 
-    def test_returns_parsed_manifest(self, tmp_path: Path) -> None:
+    def test_returns_parsed_manifest(self, monkeypatch, tmp_path: Path) -> None:
         """Should return parsed manifest data."""
+        monkeypatch.setattr(jobs, "JOBS_DIR", tmp_path)
+        job_root = tmp_path / "read-test"
         write_manifest(
-            tmp_path,
+            job_root,
             {
                 "job_id": "read-test",
                 "published_broad_stems": {},
@@ -115,7 +120,7 @@ class TestGetManifest:
             },
         )
 
-        result = get_manifest(tmp_path)
+        result = get_manifest("read-test")
         assert result is not None
         assert result["job_id"] == "read-test"
 

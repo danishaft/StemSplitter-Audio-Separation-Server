@@ -8,8 +8,11 @@ from fastapi.testclient import TestClient
 
 import splitter.api.observability as observability
 from splitter.api.observability import EdgePolicyMiddleware
+from splitter.api.responses import error_response
 from splitter.gpu_worker_client import GPUWorkerClient, GPUWorkerError
+from splitter.infrastructure.job_store import JsonJobStore
 from splitter.infrastructure.rate_limit import RedisRateLimiter
+from splitter.path_safety import resolve_artifact_path, resolve_job_root, safe_job_id
 
 
 def test_cloudflare_origin_verification_fails_closed(monkeypatch) -> None:
@@ -76,3 +79,46 @@ def test_gpu_worker_artifact_download_rejects_cross_origin_credentials(
             "https://attacker.example/stolen.wav",
             tmp_path / "stolen.wav",
         )
+
+
+@pytest.mark.parametrize(
+    "value",
+    ["../job", "job/../../outside", "/tmp/job", r"..\job", "job.json"],
+)
+def test_job_ids_reject_path_syntax(value: str) -> None:
+    with pytest.raises(ValueError, match="invalid_job_id"):
+        safe_job_id(value)
+
+
+def test_job_root_stays_beneath_jobs_directory(tmp_path: Path) -> None:
+    jobs_dir = tmp_path / "jobs"
+
+    assert resolve_job_root(jobs_dir, "job_123") == jobs_dir / "job_123"
+    with pytest.raises(ValueError, match="invalid_job_id"):
+        resolve_job_root(jobs_dir, "../outside")
+
+
+def test_artifact_path_rejects_traversal_and_prefix_collisions(tmp_path: Path) -> None:
+    job_root = tmp_path / "job"
+
+    assert resolve_artifact_path(job_root, "stems/vocals.wav") == (
+        job_root / "stems" / "vocals.wav"
+    )
+    with pytest.raises(ValueError, match="invalid_artifact_path"):
+        resolve_artifact_path(job_root, "../job-private/secret.wav")
+
+
+def test_json_job_store_rejects_traversal_before_file_access(tmp_path: Path) -> None:
+    store = JsonJobStore(tmp_path / "jobs")
+
+    with pytest.raises(ValueError, match="invalid_job_id"):
+        store.get("../../outside")
+    assert not (tmp_path / "outside" / "status.json").exists()
+
+
+def test_error_responses_only_use_predefined_public_messages() -> None:
+    response = error_response(503, "object_storage_error")
+    guided_response = error_response(400, "invalid_filename")
+
+    assert response.body == b'{"error":"object_storage_error"}'
+    assert b"Use an allowed audio filename." in guided_response.body

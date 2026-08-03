@@ -12,7 +12,7 @@ from fastapi import FastAPI, File, Form, Header, HTTPException, UploadFile
 from fastapi.responses import FileResponse
 
 from external_runners.bandit_runner import run_bandit
-
+from splitter.path_safety import resolve_artifact_path, resolve_job_root
 
 WORKER_ROOT = Path(os.getenv("BANDIT_WORKER_ROOT", "/tmp/bandit-worker"))
 JOBS_DIR = Path(os.getenv("BANDIT_JOBS_DIR", str(WORKER_ROOT / "jobs")))
@@ -35,7 +35,10 @@ def _ensure_dir(path: Path) -> Path:
 
 
 def _job_root(job_id: str) -> Path:
-    return JOBS_DIR / job_id
+    try:
+        return resolve_job_root(JOBS_DIR, job_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="Invalid job id") from exc
 
 
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -137,8 +140,11 @@ def job_status(job_id: str, authorization: str | None = Header(default=None)) ->
 def artifact(job_id: str, artifact_path: str, authorization: str | None = Header(default=None)) -> FileResponse:
     _authorize(authorization)
     root = _job_root(job_id).resolve()
-    target = (root / artifact_path).resolve()
-    if not str(target).startswith(str(root)) or not target.exists():
+    try:
+        target = resolve_artifact_path(root, artifact_path)
+    except ValueError:
+        raise HTTPException(status_code=404, detail="Artifact not found") from None
+    if not target.is_file():
         raise HTTPException(status_code=404, detail="Artifact not found")
     return FileResponse(target)
 
@@ -170,6 +176,7 @@ else:
             "torchaudio",
         )
         .add_local_dir("external_runners", "/root/external_runners", copy=True)
+        .add_local_dir("splitter", "/root/splitter", copy=True)
         .add_local_dir("external_repos/bandit-v2", "/opt/bandit-v2", copy=True)
     )
 

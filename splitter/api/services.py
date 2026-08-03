@@ -25,6 +25,7 @@ from splitter.config import (
     SAM_SPECIALIST_STEMS,
 )
 from splitter.infrastructure.object_storage import object_store_from_config
+from splitter.path_safety import resolve_job_root
 from splitter.qualification import load_stem_qualification
 
 FRONTEND_DIST_DIR = Path(
@@ -44,11 +45,14 @@ def index_path() -> Path:
 
 
 def job_root(job_id: str) -> Path:
-    return (JOBS_DIR / job_id).resolve()
+    return resolve_job_root(JOBS_DIR, job_id)
 
 
 def owned_job(job_id: str, owner_id: str) -> dict[str, Any] | None:
-    status = jobs.get_job_status(job_id)
+    try:
+        status = jobs.get_job_status(job_id)
+    except ValueError:
+        return None
     recorded_owner = status.get("owner_id", "local-development") if status else None
     if status is None or recorded_owner != owner_id:
         return None

@@ -22,6 +22,7 @@ from fastapi import status as http_status
 from fastapi.responses import FileResponse
 
 from splitter.object_storage import ObjectStorageError, materialize_object, object_store_from_config
+from splitter.path_safety import resolve_artifact_path, resolve_job_root, safe_job_id
 from splitter.stem_contract import apply_product_11_contract
 
 WORKER_ROOT = Path(os.getenv("GPU_WORKER_ROOT", "/tmp/stemsplitter-gpu-worker"))
@@ -70,7 +71,6 @@ REPLAYABLE_JOB_STATES = {
 
 api_app = FastAPI(title="StemSplitter GPU Worker")
 
-JOB_ID_RE = re.compile(r"^[a-zA-Z0-9_-]+$")
 AUDIO_SUFFIXES = {".wav", ".flac", ".mp3", ".ogg", ".m4a"}
 ARTIFACT_GROUP_DIRS = ("broad_stems", "derived_stems", "specialist_substems", "analysis", "midi")
 LOCAL_MODEL_REGISTRY: dict[str, dict[str, Any]] = {
@@ -224,9 +224,10 @@ def _status_timings(status: dict[str, Any]) -> dict[str, Any]:
 
 
 def _job_root(job_id: str) -> Path:
-    if not JOB_ID_RE.match(job_id):
-        raise HTTPException(status_code=400, detail="Invalid job id")
-    return JOBS_DIR / job_id
+    try:
+        return resolve_job_root(JOBS_DIR, job_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="Invalid job id") from exc
 
 
 def _status_path(job_id: str) -> Path:
@@ -570,11 +571,10 @@ def _artifact_local_path(job_id: str, artifact_url: str) -> Path:
     prefix = f"/artifacts/{job_id}/"
     if not artifact_url.startswith(prefix):
         raise RuntimeError("invalid_worker_artifact_url")
-    target = (_job_root(job_id) / artifact_url[len(prefix) :]).resolve()
-    root = _job_root(job_id).resolve()
-    if not str(target).startswith(str(root)):
-        raise RuntimeError("worker_artifact_outside_job")
-    return target
+    try:
+        return resolve_artifact_path(_job_root(job_id), artifact_url[len(prefix) :])
+    except ValueError as exc:
+        raise RuntimeError("worker_artifact_outside_job") from exc
 
 
 def _finalize_quality_contract(job_id: str, status: dict[str, Any]) -> dict[str, Any]:
@@ -1026,9 +1026,11 @@ def _execute_parallel_branch_container(
     branch_started_epoch = time.time()
     job_id = str(request.get("job_id") or "")
     input_reference = request.get("input_object")
-    if not JOB_ID_RE.match(job_id) or (
-        not shared_volume and not isinstance(input_reference, dict)
-    ):
+    try:
+        job_id = safe_job_id(job_id)
+    except ValueError as exc:
+        raise RuntimeError("parallel_branch_requires_scoped_object_input") from exc
+    if not shared_volume and not isinstance(input_reference, dict):
         raise RuntimeError("parallel_branch_requires_scoped_object_input")
     input_name = Path(str(request.get("input_name") or "input.wav")).name
     branch_root = _job_root(job_id)
@@ -1681,7 +1683,10 @@ async def separate(
     request_started = time.perf_counter()
     request_received_at = _now_iso()
     _authorize(authorization)
-    job_id = local_job_id if local_job_id and JOB_ID_RE.match(local_job_id) else uuid.uuid4().hex
+    try:
+        job_id = safe_job_id(local_job_id) if local_job_id else uuid.uuid4().hex
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="Invalid job id") from exc
     job_root = _ensure_dir(_job_root(job_id))
     input_dir = _ensure_dir(job_root / "input")
     safe_name = Path(file.filename or "input.wav").name
@@ -1748,7 +1753,10 @@ async def separate_reference(
     request_started = time.perf_counter()
     _authorize(authorization)
     local_job_id = str(payload.get("local_job_id") or "")
-    job_id = local_job_id if local_job_id and JOB_ID_RE.match(local_job_id) else uuid.uuid4().hex
+    try:
+        job_id = safe_job_id(local_job_id) if local_job_id else uuid.uuid4().hex
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="Invalid job id") from exc
     object_reference = payload.get("object")
     if not isinstance(object_reference, dict):
         raise HTTPException(status_code=400, detail="A valid object reference is required")
@@ -1852,8 +1860,11 @@ def artifact(job_id: str, artifact_path: str, authorization: str | None = Header
     _authorize(authorization)
     _reload_jobs_volume()
     root = _job_root(job_id).resolve()
-    target = (root / artifact_path).resolve()
-    if not str(target).startswith(str(root)) or not target.exists():
+    try:
+        target = resolve_artifact_path(root, artifact_path)
+    except ValueError:
+        raise HTTPException(status_code=404, detail="Artifact not found") from None
+    if not target.is_file():
         raise HTTPException(status_code=404, detail="Artifact not found")
     return FileResponse(target)
 

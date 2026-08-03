@@ -7,6 +7,7 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import FileResponse
 
 from splitter.auth import Principal
+from splitter.path_safety import resolve_artifact_path
 
 from ..dependencies import current_principal
 from ..responses import error_response
@@ -24,9 +25,8 @@ def serve_artifact(
     if owned_job(job_id, principal.subject) is None:
         return error_response(404, "Artifact not found")
     root = job_root(job_id)
-    target = (root / artifact_path).resolve()
     try:
-        target.relative_to(root)
+        target = resolve_artifact_path(root, artifact_path)
     except ValueError:
         return error_response(404, "Artifact not found")
     if not target.is_file():

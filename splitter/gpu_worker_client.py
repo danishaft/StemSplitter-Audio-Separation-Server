@@ -498,8 +498,12 @@ def _safe_extract_zip(bundle_path: Path, target_root: Path) -> None:
             if member.is_dir():
                 continue
             target = (root / member.filename).resolve()
-            if not str(target).startswith(str(root)):
-                raise GPUWorkerError(f"gpu_worker_bundle_unsafe_path:{member.filename}")
+            try:
+                target.relative_to(root)
+            except ValueError:
+                raise GPUWorkerError(
+                    f"gpu_worker_bundle_unsafe_path:{member.filename}"
+                ) from None
             ensure_dir(target.parent)
             with archive.open(member) as source, target.open("wb") as dest:
                 dest.write(source.read())

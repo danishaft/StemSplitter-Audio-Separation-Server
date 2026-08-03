@@ -34,7 +34,7 @@ lint-python:
 		splitter/api splitter/application splitter/infrastructure \
 		splitter/observability splitter/auth.py splitter/bootstrap.py \
 		splitter/config.py splitter/gpu_worker_client.py splitter/jobs.py \
-		splitter/runtime.py splitter/util.py \
+		splitter/path_safety.py splitter/runtime.py splitter/util.py \
 		workers/audio_separator_gpu_worker.py \
 		scripts/apply_migrations.py scripts/backup_postgres.py \
 		scripts/production_preflight.py scripts/restore_postgres.py \

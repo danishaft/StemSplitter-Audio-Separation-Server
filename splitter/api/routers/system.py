@@ -62,10 +62,10 @@ def ready() -> dict[str, str]:
 def dependencies() -> Response | dict[str, object]:
     try:
         dependency_status = control_plane_health()
-    except Exception as exc:
+    except Exception:
         from ..responses import error_response
 
-        return error_response(503, "not_ready", str(exc))
+        return error_response(503, "not_ready")
     ready_state = all(dependency_status.values())
     payload = {
         "status": "ready" if ready_state else "not_ready",

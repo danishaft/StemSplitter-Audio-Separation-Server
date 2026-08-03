@@ -50,6 +50,7 @@ from .infrastructure.object_storage import (
     object_store_from_config,
 )
 from .packaging import package_directories, write_manifest
+from .path_safety import resolve_job_root
 from .scoring import score_audio_candidate, validate_midi_candidate
 from .separation import build_broad_stems, build_derived_stems
 from .specialist import (
@@ -106,7 +107,7 @@ def control_plane_health() -> dict[str, bool]:
 
 
 def _job_root(job_id: str) -> Path:
-    return JOBS_DIR / job_id
+    return resolve_job_root(JOBS_DIR, job_id)
 
 
 def _status_path(job_root: Path) -> Path:

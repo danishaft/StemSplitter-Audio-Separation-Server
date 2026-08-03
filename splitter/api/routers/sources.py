@@ -29,13 +29,9 @@ def search_audius(
             offset=parsed_offset,
         )
     except ValueError:
-        return error_response(
-            400,
-            "invalid_pagination",
-            "limit and offset must be integers.",
-        )
+        return error_response(400, "invalid_pagination")
     except AudiusError as exc:
-        return error_response(exc.status_code, exc.code, str(exc))
+        return error_response(exc.status_code, exc.code)
     return {
         "provider": "audius",
         "tracks": tracks,
@@ -49,5 +45,5 @@ def audius_track(track_id: str):
     try:
         track = AudiusClient().track_details(track_id)
     except AudiusError as exc:
-        return error_response(exc.status_code, exc.code, str(exc))
+        return error_response(exc.status_code, exc.code)
     return {"provider": "audius", "track": track}
