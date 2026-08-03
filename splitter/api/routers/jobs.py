@@ -88,11 +88,7 @@ async def create_job_route(
     if content_type.startswith("application/json"):
         payload = await _json_payload(request)
         if payload is None:
-            return error_response(
-                400,
-                "invalid_json",
-                "Request body must be a JSON object.",
-            )
+            return error_response(400, "invalid_json")
         if isinstance(payload.get("input"), dict):
             return _create_object_job(
                 payload,
@@ -107,11 +103,7 @@ async def create_job_route(
 
     form = await request.form()
     if not ALLOW_MULTIPART_UPLOADS:
-        return error_response(
-            415,
-            "direct_upload_required",
-            "Create a private upload grant before submitting a production job.",
-        )
+        return error_response(415, "direct_upload_required")
     audio_file = form.get("file")
     if not isinstance(audio_file, UploadFile):
         return error_response(400, "No audio file in request")
@@ -124,8 +116,8 @@ async def create_job_route(
         )
     try:
         profile = requested_profile(form.get("profile"))
-    except ValueError as exc:
-        return error_response(400, str(exc))
+    except ValueError:
+        return error_response(400, "unsupported_profile")
     try:
         upload_path = await stream_upload_to_temp(
             audio_file,
@@ -154,19 +146,11 @@ def _create_object_job(
     try:
         parsed = CreateObjectJobRequest.model_validate(payload)
     except ValidationError:
-        return error_response(
-            400,
-            "invalid_object_input",
-            "input.object and an allowed input.filename are required.",
-        )
+        return error_response(400, "invalid_object_input")
     filename = parsed.input.filename.strip()
     object_reference = parsed.input.object.model_dump()
     if not filename or not allowed_file(filename):
-        return error_response(
-            400,
-            "invalid_object_input",
-            "input.object and an allowed input.filename are required.",
-        )
+        return error_response(400, "invalid_object_input")
     try:
         profile = requested_profile(parsed.profile)
         if principal.subject != "local-development":
@@ -182,10 +166,10 @@ def _create_object_job(
             owner_id=principal.subject,
             idempotency_key=request_idempotency_key,
         )
-    except ObjectStorageError as exc:
-        return error_response(400, "invalid_object_input", str(exc))
-    except ValueError as exc:
-        return error_response(400, str(exc))
+    except ObjectStorageError:
+        return error_response(400, "invalid_object_input")
+    except ValueError:
+        return error_response(400, "unsupported_profile")
     return _accepted(status)
 
 
@@ -199,24 +183,16 @@ def _create_audius_job(
     except ValidationError:
         source = payload.get("source")
         if not isinstance(source, dict) or source.get("provider") != "audius":
-            return error_response(
-                400,
-                "invalid_source",
-                "JSON jobs currently require source.provider to be audius.",
-            )
-        return error_response(
-            400,
-            "invalid_track_id",
-            "source.track_id is required.",
-        )
+            return error_response(400, "invalid_source")
+        return error_response(400, "invalid_track_id")
     try:
         profile = requested_profile(parsed.profile)
-    except ValueError as exc:
-        return error_response(400, str(exc))
+    except ValueError:
+        return error_response(400, "unsupported_profile")
     try:
         imported = AudiusClient().download(parsed.source.track_id)
     except AudiusError as exc:
-        return error_response(exc.status_code, exc.code, str(exc))
+        return error_response(exc.status_code, exc.code)
     status = job_service.create_upload(
         imported.filename,
         imported.content,
@@ -290,11 +266,7 @@ def resume_job(
         return error_response(404, "Job not found")
     status = jobs.resume_remote_job(job_id)
     if status is None:
-        return error_response(
-            409,
-            "job_not_resumable",
-            "Only failed jobs with an existing remote worker can be resumed.",
-        )
+        return error_response(409, "job_not_resumable")
     return status
 
 

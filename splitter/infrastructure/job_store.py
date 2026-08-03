@@ -8,6 +8,7 @@ from pathlib import Path
 from threading import RLock
 from typing import Any, Protocol
 
+from ..path_safety import resolve_job_root
 from ..util import dump_json, load_json, now_iso
 
 TERMINAL_JOB_STATES = {"completed", "error", "failed", "cancelled"}
@@ -91,10 +92,10 @@ class JsonJobStore:
         self.idempotency_path = jobs_dir / ".idempotency.json"
 
     def _status_path(self, job_id: str) -> Path:
-        return self.jobs_dir / job_id / "status.json"
+        return resolve_job_root(self.jobs_dir, job_id) / "status.json"
 
     def _events_path(self, job_id: str) -> Path:
-        return self.jobs_dir / job_id / "events.json"
+        return resolve_job_root(self.jobs_dir, job_id) / "events.json"
 
     def _append_event(self, job_id: str, event_type: str, payload: Mapping[str, Any]) -> None:
         path = self._events_path(job_id)
@@ -281,7 +282,7 @@ class JsonJobStore:
         with _LOCAL_LOCK:
             if self.get(job_id) is None:
                 return False
-            shutil.rmtree(self.jobs_dir / job_id, ignore_errors=True)
+            shutil.rmtree(resolve_job_root(self.jobs_dir, job_id), ignore_errors=True)
             if self.idempotency_path.exists():
                 index = load_json(self.idempotency_path)
                 retained = {key: value for key, value in index.items() if value != job_id}

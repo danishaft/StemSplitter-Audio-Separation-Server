@@ -79,28 +79,20 @@ def create_app() -> FastAPI:
     @app.exception_handler(APIError)
     async def api_error_handler(request: Request, exc: APIError):
         del request
-        return error_response(exc.status_code, exc.error, exc.message)
+        return error_response(exc.status_code, exc.error)
 
     @app.exception_handler(JobStoreError)
     async def job_store_error_handler(request: Request, exc: JobStoreError):
         del request
         code = str(exc)
         if code in {"job_capacity_exceeded", "owner_job_capacity_exceeded"}:
-            return error_response(
-                503,
-                code,
-                "Job capacity is currently full.",
-            )
-        return error_response(503, "job_store_error", code)
+            return error_response(503, code)
+        return error_response(503, "job_store_error")
 
     @app.exception_handler(JobSubmissionError)
     async def job_submission_error_handler(request: Request, exc: JobSubmissionError):
         del request, exc
-        return error_response(
-            503,
-            "job_dispatch_failed",
-            "The job was persisted but could not be queued.",
-        )
+        return error_response(503, "job_dispatch_failed")
 
     @app.exception_handler(RequestValidationError)
     async def validation_error_handler(request: Request, exc: RequestValidationError):

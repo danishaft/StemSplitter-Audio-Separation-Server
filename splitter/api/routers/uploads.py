@@ -31,19 +31,11 @@ def create_direct_upload(
 ):
     filename = payload.filename.strip()
     if not filename or not allowed_file(filename):
-        return error_response(
-            400,
-            "invalid_filename",
-            "Use an allowed audio filename.",
-        )
+        return error_response(400, "invalid_filename")
     try:
         store = object_store_from_config()
         if store is None:
-            return error_response(
-                503,
-                "direct_upload_unavailable",
-                "Configure S3-compatible object storage to use direct uploads.",
-            )
+            return error_response(503, "direct_upload_unavailable")
         content_type = content_type_for(filename, payload.content_type)
         if principal.subject == "local-development":
             grant = store.create_upload(filename, content_type)
@@ -53,6 +45,6 @@ def create_direct_upload(
                 content_type,
                 owner_id=principal.subject,
             )
-    except ObjectStorageError as exc:
-        return error_response(503, "object_storage_error", str(exc))
+    except ObjectStorageError:
+        return error_response(503, "object_storage_error")
     return {**grant, "filename": Path(filename).name}

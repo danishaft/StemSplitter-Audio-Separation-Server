@@ -46,7 +46,4 @@ def load_json(path: Path) -> dict[str, Any]:
 
 
 def safe_relpath(path: Path, root: Path) -> str:
-    try:
-        return str(path.resolve().relative_to(root.resolve()))
-    except ValueError:
-        return str(path.resolve())
+    return str(path.resolve().relative_to(root.resolve()))
