@@ -11,8 +11,14 @@ uploads/
 separated/
 .cache/
 .venvs/
-.env.local
-.env.*.local
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
 external_repos/
 tmp/
 frontend/dist/
