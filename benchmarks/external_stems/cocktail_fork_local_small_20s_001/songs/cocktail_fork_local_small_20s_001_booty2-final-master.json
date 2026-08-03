@@ -7,7 +7,7 @@
   "input": {
     "channels": 2,
     "duration_seconds": 20.0,
-    "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/input/booty2-final-master-20s.wav",
+    "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/input/booty2-final-master-20s.wav",
     "sample_rate": 44100,
     "sha256": "6d4482f8c8e4fd04f5ae0f55acc4f92e93e8bc2a7e8c22d4a5e68c9c5e69a268"
   },
@@ -17,7 +17,7 @@
     "music__speech_dialog": 0.0725,
     "sfx__speech_dialog": 0.0072
   },
-  "prediction_dir": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems",
+  "prediction_dir": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems",
   "quality_claim": "not_quality_benchmark_without_ground_truth",
   "reconstruction": {
     "residual_rms_db_vs_input": -24.918,
@@ -34,7 +34,7 @@
       "clipped_sample_ratio": 0.0,
       "duration_seconds": 20.0,
       "finite": true,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems/music.wav",
+      "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems/music.wav",
       "peak": 0.966279,
       "rms": 0.18491921,
       "rms_db_vs_mixture": -0.261,
@@ -47,7 +47,7 @@
       "clipped_sample_ratio": 0.0,
       "duration_seconds": 20.0,
       "finite": true,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems/sfx.wav",
+      "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems/sfx.wav",
       "peak": 0.805023,
       "rms": 0.02374673,
       "rms_db_vs_mixture": -18.088,
@@ -60,7 +60,7 @@
       "clipped_sample_ratio": 0.0,
       "duration_seconds": 20.0,
       "finite": true,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems/speech_dialog.wav",
+      "path": "./jobs/external_stem_corpus/cocktail_fork_local_small_20s_001/booty2-final-master/specialist_substems/speech_dialog.wav",
       "peak": 0.131794,
       "rms": 0.00359821,
       "rms_db_vs_mixture": -34.479,

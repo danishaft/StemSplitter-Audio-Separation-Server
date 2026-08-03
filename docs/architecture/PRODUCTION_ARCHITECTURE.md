@@ -195,7 +195,7 @@ download generation. It does not replace a real provider and Modal benchmark.
 Run the suite with:
 
 ```bash
-/home/ayodele/Desktop/marlon-music/venv/bin/python -m pytest -q
+uv run pytest -q
 ```
 
 ## Next steps

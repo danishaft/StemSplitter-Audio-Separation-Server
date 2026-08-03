@@ -123,7 +123,7 @@ These projects contain engineering patterns this project can reuse.
   provides training, inference, validation, and ensemble patterns.
 - [ComfyUI](https://github.com/comfy-org/comfyui) provides the graph, node,
   plugin, and workflow orchestration reference pattern.
-- `/home/ayodele/Desktop/Yard` provides the research operating-system pattern:
+- The internal research workspace provides the operating-system pattern:
   selection rubrics, eval-plan templates, result notes, kill/continue logs,
   provenance discipline, score-card design, and drift monitoring.
 

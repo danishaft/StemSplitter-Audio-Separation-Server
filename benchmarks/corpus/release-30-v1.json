@@ -16,8 +16,8 @@
       ],
       "id": "babyslakh-track00001",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00001/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00001/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00001/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00001/references",
       "sha256": "e6590a50b9c4d6aa84d67e03368b42e0d79d56ba4b1244c26c5b9d6ecab89f34"
     },
     {
@@ -31,8 +31,8 @@
       ],
       "id": "babyslakh-track00002",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00002/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00002/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00002/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00002/references",
       "sha256": "06de7810c57fab9be8ace4e2fe05e24c267696993e0bddad5c1985df1ccde6a4"
     },
     {
@@ -46,8 +46,8 @@
       ],
       "id": "babyslakh-track00003",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00003/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00003/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00003/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00003/references",
       "sha256": "c628dbf30b818417c30941fccd2fa6ee8a5ad941a45fc8eb85f2d758a1922def"
     },
     {
@@ -61,8 +61,8 @@
       ],
       "id": "babyslakh-track00004",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00004/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00004/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00004/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00004/references",
       "sha256": "d4c1c15491a38a3e2831880a3bcdbedac0b61c1f5064901b6b246017fc32fabe"
     },
     {
@@ -76,8 +76,8 @@
       ],
       "id": "babyslakh-track00005",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00005/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00005/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00005/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00005/references",
       "sha256": "2ada57d35631b349283bde7e6fa8339091520c956d5cd5f9920651280d63919f"
     },
     {
@@ -91,8 +91,8 @@
       ],
       "id": "babyslakh-track00006",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00006/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00006/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00006/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00006/references",
       "sha256": "46c959fd4ff102aa0eac6b2b3f998a70dcfbe3c980de4eb3452e45b21de9440d"
     },
     {
@@ -106,8 +106,8 @@
       ],
       "id": "babyslakh-track00007",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00007/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00007/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00007/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00007/references",
       "sha256": "91c0142ad5373c2383499dd323feeb3bac86936c02455446cbaf23f685cf57e8"
     },
     {
@@ -121,8 +121,8 @@
       ],
       "id": "babyslakh-track00008",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00008/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00008/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00008/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00008/references",
       "sha256": "a771ddc3a0d2d92d3dfc0ed9b93838be253781279a1231b59244d8b1369abcde"
     },
     {
@@ -136,8 +136,8 @@
       ],
       "id": "babyslakh-track00009",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00009/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00009/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00009/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00009/references",
       "sha256": "0ca93ceaf8222984bd9391b9e6df80d29572b564c4ca174da4fab2aff1b4c3fd"
     },
     {
@@ -151,8 +151,8 @@
       ],
       "id": "babyslakh-track00010",
       "license_status": "research_dataset",
-      "path": "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/babyslakh/extracted/babyslakh_16k/Track00010/mix.wav",
-      "reference_root": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/ground_truth/release-30-v1/babyslakh-track00010/references",
+      "path": "${STEMSPLITTER_BABYSLAKH_ROOT}/Track00010/mix.wav",
+      "reference_root": "./benchmarks/ground_truth/release-30-v1/babyslakh-track00010/references",
       "sha256": "6cd939f61c3c44895ac6d00e945cb6d0ff07b23c2f77815e346d9c48ff0f28bb"
     },
     {
@@ -166,7 +166,7 @@
       ],
       "id": "listening-booty2-final-master",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Desktop/marlon-music/jobs/booty2/masters/booty2-final-master.wav",
+      "path": "${LOCAL_MEDIA_ROOT}/jobs/booty2/masters/booty2-final-master.wav",
       "sha256": "88b56d1324e598114d4812b06a903e2bcce5bd1909e39df38c976b6bb02a5bd1"
     },
     {
@@ -180,7 +180,7 @@
       ],
       "id": "listening-untitled-14-feb-2026-9-43-pm---new-recording-3",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Untitled 14 Feb 2026 9_43 PM - New Recording 3.wav",
+      "path": "${LOCAL_MEDIA_ROOT}/Untitled 14 Feb 2026 9_43 PM - New Recording 3.wav",
       "sha256": "d6b8125c13c8706b062ea37d89ee14ef93bc8aaf2563bfecaea7288663c17d42"
     },
     {
@@ -194,7 +194,7 @@
       ],
       "id": "listening-so-loud-beat-triiicky",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/SO LOUD BEAT Triiicky .wav",
+      "path": "${LOCAL_MEDIA_ROOT}/SO LOUD BEAT Triiicky .wav",
       "sha256": "716a9fc8bbb41442d830e95f0ea7d7c507211b47fb985bd0dc35539986c446dd"
     },
     {
@@ -208,7 +208,7 @@
       ],
       "id": "listening-angelina-beat",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Angelina beat.wav",
+      "path": "${LOCAL_MEDIA_ROOT}/Angelina beat.wav",
       "sha256": "90733d91641e49a4e0d1d9757ae880f0623cd389a5b32873f7ac18562a9bce19"
     },
     {
@@ -222,7 +222,7 @@
       ],
       "id": "listening-penguin-popstar---chill---apr-27--2026--4-40-pm---voice-audio--3",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Penguin Popstar - Chill - Apr 27, 2026, 4_40 PM - Voice_Audio (3).wav",
+      "path": "${LOCAL_MEDIA_ROOT}/Penguin Popstar - Chill - Apr 27, 2026, 4_40 PM - Voice_Audio (3).wav",
       "sha256": "78a30d4bf2e7e0ca8a42e55c8333a980ea62972985a5525c6797a0fd8adf2c95"
     },
     {
@@ -236,7 +236,7 @@
       ],
       "id": "listening-be-with-me-demo",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Be with me Demo.wav",
+      "path": "${LOCAL_MEDIA_ROOT}/Be with me Demo.wav",
       "sha256": "5470d9e1a1d9b2aa1635a16aefe5a8145ae638a62a43c2159bd8d20ce6805775"
     },
     {
@@ -250,7 +250,7 @@
       ],
       "id": "listening-new-project--2",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/New_Project (2).mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/New_Project (2).mp3",
       "sha256": "936f2197a5910479d725e7844e0bbee9e381b117c5ad211e2a55796ec68f5a76"
     },
     {
@@ -264,7 +264,7 @@
       ],
       "id": "listening-crash-out",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/crash_out.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/crash_out.mp3",
       "sha256": "31237729212e0e28c9daad7a35fd71249b9c48daf1623d567eeddc2fa79e00d3"
     },
     {
@@ -278,7 +278,7 @@
       ],
       "id": "listening-patio",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/patio.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/patio.mp3",
       "sha256": "bd4350df03520d3654446853e41b24aeef840eb89e98b7ddf4a736396fc14f87"
     },
     {
@@ -292,7 +292,7 @@
       ],
       "id": "listening-weekend",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Weekend.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Weekend.mp3",
       "sha256": "72802bd522637d0326490d861e3dfa48bc11be9d8a9d50ce2b1d11357a49adad"
     },
     {
@@ -306,7 +306,7 @@
       ],
       "id": "listening-shenk-am",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Shenk_am.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Shenk_am.mp3",
       "sha256": "06a37c2b625c39f89c88ba4545c6e7d426fab4c70433270bb43aa8ef100a7d0b"
     },
     {
@@ -320,7 +320,7 @@
       ],
       "id": "listening-kidd-carder-ft-mavo---big-bum-bum",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Kidd_Carder_Ft_Mavo_-_Big_Bum_Bum.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Kidd_Carder_Ft_Mavo_-_Big_Bum_Bum.mp3",
       "sha256": "7a8361cba997ca5c06543e2f8c49dc55098e45321e183a2b8b0f3d642e18aab1"
     },
     {
@@ -334,7 +334,7 @@
       ],
       "id": "listening-untitled-28-jan-2026-411-pm",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Untitled_28_Jan_2026_411_PM.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Untitled_28_Jan_2026_411_PM.mp3",
       "sha256": "450df67deb80564c9ba1cfa19a83d2d8b25e2fb54f64f323e8a7db7578f96d02"
     },
     {
@@ -348,7 +348,7 @@
       ],
       "id": "listening-untitled-28-jan-2026-502-pm",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Untitled_28_Jan_2026_502_PM.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Untitled_28_Jan_2026_502_PM.mp3",
       "sha256": "53a2e13e6673cbcd9edd43cb6a6ee73b9023ee3bda1f41ca5c77f824a5cc44d8"
     },
     {
@@ -362,7 +362,7 @@
       ],
       "id": "listening-laho",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Laho.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Laho.mp3",
       "sha256": "a3deecc7ef46d282a15d3c97b980368dc98ad2d2c98b29af96af304558c52cde"
     },
     {
@@ -376,7 +376,7 @@
       ],
       "id": "listening-sub-time-aj--triiicky-beat",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/SUB TIME AJ. Triiicky beat.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/SUB TIME AJ. Triiicky beat.mp3",
       "sha256": "72e2d3984ae31f0f4913093049d5910a4a59c73ba9ed8f66b96d33b6606383f8"
     },
     {
@@ -390,7 +390,7 @@
       ],
       "id": "listening-kizzy",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/Kizzy.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/Kizzy.mp3",
       "sha256": "790e787f4741c5f734044d3a320e37be0ec48abf9a7a0884055d1051cdde2769"
     },
     {
@@ -404,7 +404,7 @@
       ],
       "id": "listening-kill-me--1",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/kill me (1).mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/kill me (1).mp3",
       "sha256": "68267213345f9b41c004845003e3747d83c6d969f1097c06673a5047f99a4826"
     },
     {
@@ -418,7 +418,7 @@
       ],
       "id": "listening-emotional-guitar-afrobeat-type-beat-2025-early-omah-lay-x-llona-128-ytshorts-savetube-me",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/emotional-guitar-afrobeat-type-beat-2025-early-omah-lay-x-llona-128-ytshorts.savetube.me.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/emotional-guitar-afrobeat-type-beat-2025-early-omah-lay-x-llona-128-ytshorts.savetube.me.mp3",
       "sha256": "ebcc9f335cf432635dbfefa66ed9fe3407d9d726d7380ca76ee867bdd6386d78"
     },
     {
@@ -432,7 +432,7 @@
       ],
       "id": "listening-booty",
       "license_status": "reference_only_no_redistribution",
-      "path": "/home/ayodele/Downloads/booty.mp3",
+      "path": "${LOCAL_MEDIA_ROOT}/booty.mp3",
       "sha256": "d676f7b184e915b1eb2fb1cb6e04fd1e9e56c33d0c2a46251e0262eaf3e996e1"
     }
   ]

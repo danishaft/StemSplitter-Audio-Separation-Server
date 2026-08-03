@@ -7,7 +7,7 @@
       {
         "correlation": 0.8626583421950081,
         "error_loudness_db": -5.535486508579819,
-        "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/runs/htdemucs_6s/htdemucs_6s/mix/guitar.wav",
+        "path": "./jobs/58fbd843c2a54347b86f3bc052c70c9e/runs/htdemucs_6s/htdemucs_6s/mix/guitar.wav",
         "sdr": 5.5354868554595775,
         "si_sdr": 4.63742165774833,
         "source": "htdemucs_6s"
@@ -15,7 +15,7 @@
       {
         "correlation": 0.8617887662644043,
         "error_loudness_db": -5.708851143148883,
-        "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/sota_candidates/babyslakh-track00011-quality-002/sota_candidates/guitar.wav",
+        "path": "./benchmarks/sota_candidates/babyslakh-track00011-quality-002/sota_candidates/guitar.wav",
         "sdr": 5.708851352430232,
         "si_sdr": 4.6032790799011485,
         "source": "htdemucs_6s.yaml"
@@ -25,7 +25,7 @@
       {
         "correlation": 0.12097632769333659,
         "error_loudness_db": -0.043257820357904965,
-        "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/broad_stems/piano.wav",
+        "path": "./jobs/58fbd843c2a54347b86f3bc052c70c9e/broad_stems/piano.wav",
         "sdr": 0.043258409580974655,
         "si_sdr": -18.2819621810147,
         "source": "htdemucs_6s"
@@ -33,7 +33,7 @@
       {
         "correlation": 0.20223823036865995,
         "error_loudness_db": -0.12364714195815443,
-        "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/sota_candidates/babyslakh-track00011-quality-002/sota_candidates/piano.wav",
+        "path": "./benchmarks/sota_candidates/babyslakh-track00011-quality-002/sota_candidates/piano.wav",
         "sdr": 0.1236478898353499,
         "si_sdr": -13.701372414381401,
         "source": "htdemucs_6s.yaml"
@@ -45,7 +45,7 @@
     "guitar": {
       "correlation": 0.8626583421950081,
       "error_loudness_db": -5.535486508579819,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/58fbd843c2a54347b86f3bc052c70c9e/runs/htdemucs_6s/htdemucs_6s/mix/guitar.wav",
+      "path": "./jobs/58fbd843c2a54347b86f3bc052c70c9e/runs/htdemucs_6s/htdemucs_6s/mix/guitar.wav",
       "sdr": 5.5354868554595775,
       "si_sdr": 4.63742165774833,
       "source": "htdemucs_6s"
@@ -53,7 +53,7 @@
     "piano": {
       "correlation": 0.20223823036865995,
       "error_loudness_db": -0.12364714195815443,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/sota_candidates/babyslakh-track00011-quality-002/sota_candidates/piano.wav",
+      "path": "./benchmarks/sota_candidates/babyslakh-track00011-quality-002/sota_candidates/piano.wav",
       "sdr": 0.1236478898353499,
       "si_sdr": -13.701372414381401,
       "source": "htdemucs_6s.yaml"

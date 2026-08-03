@@ -47,7 +47,7 @@
   },
   "runner": {
     "entrypoint": "inference.py",
-    "help_command": "/home/ayodele/Desktop/marlon-music/venv/bin/python inference.py --help",
+    "help_command": "${LOCAL_HOME}/Desktop/marlon-music/venv/bin/python inference.py --help",
     "help_passed": true,
     "usage": "python inference.py --input_audio mixture1.wav --output_folder ./results/ --cpu",
     "default_outputs": [

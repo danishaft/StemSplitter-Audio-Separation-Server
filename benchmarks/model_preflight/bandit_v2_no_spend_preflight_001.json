@@ -56,7 +56,7 @@
     "entrypoint": "inference.py",
     "writes_outputs_as": "<stem>_estimate.wav",
     "uses_cuda_unconditionally": false,
-    "help_command": "LOGS_ROOT=$PWD/../../tmp/bandit-logs /home/ayodele/Desktop/marlon-music/venv/bin/python inference.py --help 'hydra.searchpath=[file://'$PWD'/configs]'",
+    "help_command": "LOGS_ROOT=$PWD/../../tmp/bandit-logs ${LOCAL_HOME}/Desktop/marlon-music/venv/bin/python inference.py --help 'hydra.searchpath=[file://'$PWD'/configs]'",
     "help_passed": true,
     "help_failure": null,
     "local_compatibility_patches": [

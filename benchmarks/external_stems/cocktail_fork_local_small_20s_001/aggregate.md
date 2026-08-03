@@ -5,7 +5,7 @@ across a small corpus. It is not a production quality claim unless
 ground-truth or comparator scores are present.
 
 - System: `cocktail_fork_mrx`
-- Corpus: `/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/corpus/local-small.json`
+- Corpus: `./benchmarks/corpus/local-small.json`
 - Songs: `2`
 - Successful workers: `2`
 - Sanity pass count: `2`

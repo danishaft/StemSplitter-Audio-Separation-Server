@@ -19,7 +19,7 @@
       "avg_derived_quality": 0.0,
       "avg_specialist_quality": 0.0,
       "difficulty": "mixed",
-      "error_message": "[Errno 2] No such file or directory: '/home/ayodele/Desktop/marlon-music/jobs/booty2/masters/booty2-'",
+      "error_message": "[Errno 2] No such file or directory: '${LOCAL_MEDIA_ROOT}/jobs/booty2/masters/booty2-'",
       "pipeline_mode": "unknown",
       "published_broad_stems": [],
       "published_derived_stems": [],

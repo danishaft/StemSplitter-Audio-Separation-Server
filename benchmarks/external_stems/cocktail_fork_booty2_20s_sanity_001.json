@@ -7,7 +7,7 @@
   "input": {
     "channels": 2,
     "duration_seconds": 20.0,
-    "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/tmp/bakeoff/booty2-master-v1-20s.wav",
+    "path": "./tmp/bakeoff/booty2-master-v1-20s.wav",
     "sample_rate": 44100,
     "sha256": "b0126a351e0871ec51ad3157355716a21afdbc730bcb46f436fa520deff9f1e0"
   },
@@ -17,7 +17,7 @@
     "music__speech_dialog": 0.1848,
     "sfx__speech_dialog": 0.0582
   },
-  "prediction_dir": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/cocktail_fork_booty2_20s/specialist_substems",
+  "prediction_dir": "./jobs/cocktail_fork_booty2_20s/specialist_substems",
   "quality_claim": "not_quality_benchmark_without_ground_truth",
   "reconstruction": {
     "residual_rms_db_vs_input": -19.507,
@@ -34,7 +34,7 @@
       "clipped_sample_ratio": 0.0,
       "duration_seconds": 20.0,
       "finite": true,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/cocktail_fork_booty2_20s/specialist_substems/music.wav",
+      "path": "./jobs/cocktail_fork_booty2_20s/specialist_substems/music.wav",
       "peak": 0.963962,
       "rms": 0.22983959,
       "rms_db_vs_mixture": -1.436,
@@ -47,7 +47,7 @@
       "clipped_sample_ratio": 0.0,
       "duration_seconds": 20.0,
       "finite": true,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/cocktail_fork_booty2_20s/specialist_substems/sfx.wav",
+      "path": "./jobs/cocktail_fork_booty2_20s/specialist_substems/sfx.wav",
       "peak": 0.080099,
       "rms": 0.00392566,
       "rms_db_vs_mixture": -36.786,
@@ -60,7 +60,7 @@
       "clipped_sample_ratio": 0.0,
       "duration_seconds": 20.0,
       "finite": true,
-      "path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/jobs/cocktail_fork_booty2_20s/specialist_substems/speech_dialog.wav",
+      "path": "./jobs/cocktail_fork_booty2_20s/specialist_substems/speech_dialog.wav",
       "peak": 0.844103,
       "rms": 0.09334293,
       "rms_db_vs_mixture": -9.263,
