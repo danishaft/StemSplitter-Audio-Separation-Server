@@ -108,6 +108,17 @@ def test_artifact_path_rejects_traversal_and_prefix_collisions(tmp_path: Path) -
         resolve_artifact_path(job_root, "../job-private/secret.wav")
 
 
+def test_artifact_path_rejects_symlink_escape(tmp_path: Path) -> None:
+    job_root = tmp_path / "jobs" / "job-public"
+    outside = tmp_path / "private"
+    job_root.mkdir(parents=True)
+    outside.mkdir()
+    (job_root / "escape").symlink_to(outside, target_is_directory=True)
+
+    with pytest.raises(ValueError, match="path_outside_root"):
+        resolve_artifact_path(job_root, "escape/secret.wav")
+
+
 def test_json_job_store_rejects_traversal_before_file_access(tmp_path: Path) -> None:
     store = JsonJobStore(tmp_path / "jobs")
 
