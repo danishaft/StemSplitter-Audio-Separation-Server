@@ -2,10 +2,11 @@
 from __future__ import annotations
 
 import argparse
-from datetime import UTC, datetime
 import json
-from pathlib import Path
+import os
 import sys
+from datetime import UTC, datetime
+from pathlib import Path
 
 import soundfile as sf
 
@@ -19,32 +20,7 @@ from splitter.ground_truth import build_babyslakh_references
 from splitter.util import ensure_dir, file_sha256
 
 
-DEFAULT_BABYSLAKH_ROOT = Path(
-    "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/"
-    "babyslakh/extracted/babyslakh_16k"
-)
-LISTENING_TRACKS = (
-    Path("/home/ayodele/Desktop/marlon-music/jobs/booty2/masters/booty2-final-master.wav"),
-    Path("/home/ayodele/Downloads/Untitled 14 Feb 2026 9_43 PM - New Recording 3.wav"),
-    Path("/home/ayodele/Downloads/SO LOUD BEAT Triiicky .wav"),
-    Path("/home/ayodele/Downloads/Angelina beat.wav"),
-    Path("/home/ayodele/Downloads/Penguin Popstar - Chill - Apr 27, 2026, 4_40 PM - Voice_Audio (3).wav"),
-    Path("/home/ayodele/Downloads/Be with me Demo.wav"),
-    Path("/home/ayodele/Downloads/New_Project (2).mp3"),
-    Path("/home/ayodele/Downloads/crash_out.mp3"),
-    Path("/home/ayodele/Downloads/patio.mp3"),
-    Path("/home/ayodele/Downloads/Weekend.mp3"),
-    Path("/home/ayodele/Downloads/Shenk_am.mp3"),
-    Path("/home/ayodele/Downloads/Kidd_Carder_Ft_Mavo_-_Big_Bum_Bum.mp3"),
-    Path("/home/ayodele/Downloads/Untitled_28_Jan_2026_411_PM.mp3"),
-    Path("/home/ayodele/Downloads/Untitled_28_Jan_2026_502_PM.mp3"),
-    Path("/home/ayodele/Downloads/Laho.mp3"),
-    Path("/home/ayodele/Downloads/SUB TIME AJ. Triiicky beat.mp3"),
-    Path("/home/ayodele/Downloads/Kizzy.mp3"),
-    Path("/home/ayodele/Downloads/kill me (1).mp3"),
-    Path("/home/ayodele/Downloads/emotional-guitar-afrobeat-type-beat-2025-early-omah-lay-x-llona-128-ytshorts.savetube.me.mp3"),
-    Path("/home/ayodele/Downloads/booty.mp3"),
-)
+DEFAULT_BABYSLAKH_ROOT = os.getenv("STEMSPLITTER_BABYSLAKH_ROOT")
 
 
 def _duration(path: Path) -> float:
@@ -66,13 +42,29 @@ def _song_id(prefix: str, path: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build the frozen 30-song release corpus.")
-    parser.add_argument("--babyslakh-root", type=Path, default=DEFAULT_BABYSLAKH_ROOT)
+    parser.add_argument(
+        "--babyslakh-root",
+        type=Path,
+        default=Path(DEFAULT_BABYSLAKH_ROOT) if DEFAULT_BABYSLAKH_ROOT else None,
+    )
+    parser.add_argument(
+        "--listening-track",
+        action="append",
+        default=[],
+        type=Path,
+        help="Listening-only track; repeat exactly 20 times.",
+    )
     parser.add_argument(
         "--output",
         type=Path,
         default=ROOT / "benchmarks" / "corpus" / "release-30-v1.json",
     )
     args = parser.parse_args()
+
+    if args.babyslakh_root is None:
+        parser.error("--babyslakh-root or STEMSPLITTER_BABYSLAKH_ROOT is required")
+    if len(args.listening_track) != 20:
+        parser.error("--listening-track must be provided exactly 20 times")
 
     babyslakh_root = args.babyslakh_root.expanduser().resolve()
     reference_root = ROOT / "benchmarks" / "ground_truth" / "release-30-v1"
@@ -100,7 +92,7 @@ def main() -> int:
             }
         )
 
-    for path in LISTENING_TRACKS:
+    for path in args.listening_track:
         resolved = path.expanduser().resolve()
         if not resolved.is_file():
             raise SystemExit(f"listening track is missing: {resolved}")

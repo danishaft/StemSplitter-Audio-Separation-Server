@@ -18,8 +18,8 @@
     "acoustic_guitar": {
       "correlation": 0.9658779292056997,
       "error_loudness_db": -10.294540783668012,
-      "prediction_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/acoustic_guitar.wav",
-      "reference_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/acoustic_guitar.wav",
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/acoustic_guitar.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/acoustic_guitar.wav",
       "sdr": 10.294541220004005,
       "si_sdr": 11.4325255808064,
       "stem_name": "acoustic_guitar"
@@ -27,8 +27,8 @@
     "electric_guitar": {
       "correlation": 0.09606841355572064,
       "error_loudness_db": 11.354890477680149,
-      "prediction_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/electric_guitar.wav",
-      "reference_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/electric_guitar.wav",
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/electric_guitar.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/electric_guitar.wav",
       "sdr": -11.354890221117575,
       "si_sdr": -20.308119869277412,
       "stem_name": "electric_guitar"
@@ -36,8 +36,8 @@
     "piano": {
       "correlation": 0.9053587624352832,
       "error_loudness_db": -5.39672058124308,
-      "prediction_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/piano.wav",
-      "reference_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/piano.wav",
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/piano.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/piano.wav",
       "sdr": 5.396720661537168,
       "si_sdr": 6.575842462266527,
       "stem_name": "piano"
@@ -45,8 +45,8 @@
     "wind": {
       "correlation": 0.6484866308812416,
       "error_loudness_db": -2.3588666893405206,
-      "prediction_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/wind.wav",
-      "reference_path": "/home/ayodele/Desktop/marlon-music/StemSplitter-Audio-Separation-Server/benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/wind.wav",
+      "prediction_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-002/wind.wav",
+      "reference_path": "./benchmarks/mvsep_mega53/mvsep-mega53-babyslakh-10s-001/references/wind.wav",
       "sdr": 2.358867084759858,
       "si_sdr": -1.39225222294902,
       "stem_name": "wind"

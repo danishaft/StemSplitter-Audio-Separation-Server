@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -13,6 +14,10 @@ LICENSE_STATUSES = {"research_dataset", "user_owned", "reference_only_no_redistr
 DIFFICULTIES = {"easy", "mixed", "hard", "failure_case"}
 
 
+def _expanded_path(value: object) -> Path:
+    return Path(os.path.expandvars(str(value or ""))).expanduser()
+
+
 @dataclass(frozen=True)
 class CorpusValidation:
     corpus_id: str
@@ -23,7 +28,9 @@ class CorpusValidation:
     release_claim_eligible: bool
 
 
-def load_and_validate_corpus(path: Path, *, verify_files: bool = True) -> tuple[dict[str, Any], CorpusValidation]:
+def load_and_validate_corpus(
+    path: Path, *, verify_files: bool = True
+) -> tuple[dict[str, Any], CorpusValidation]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict) or payload.get("schema_version") != 1:
         raise ValueError("corpus_schema_version_must_be_1")
@@ -52,11 +59,13 @@ def load_and_validate_corpus(path: Path, *, verify_files: bool = True) -> tuple[
             raise ValueError(f"{song_id}_invalid_license_status")
         if song.get("evidence_level") == "ground_truth":
             ground_truth_count += 1
-            reference_root = Path(str(song.get("reference_root") or "")).expanduser()
+            reference_root = _expanded_path(song.get("reference_root"))
+            song["reference_root"] = str(reference_root)
             if verify_files and not reference_root.exists():
                 raise ValueError(f"{song_id}_reference_root_missing")
 
-        input_path = Path(str(song.get("path") or "")).expanduser()
+        input_path = _expanded_path(song.get("path"))
+        song["path"] = str(input_path)
         expected_hash = str(song.get("sha256") or "")
         duration = float(song.get("duration_seconds") or 0.0)
         excerpt_start = float(song.get("excerpt_start_seconds") or 0.0)

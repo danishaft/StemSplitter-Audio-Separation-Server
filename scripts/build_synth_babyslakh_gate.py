@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -10,10 +11,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_DATASET_ROOT = Path(
-    "/home/ayodele/Desktop/marlon-music/marlon-model/data/external/"
-    "babyslakh/extracted/babyslakh_16k"
-)
+DEFAULT_DATASET_ROOT = os.getenv("STEMSPLITTER_BABYSLAKH_ROOT")
 SYNTH_CLASSES = {"Synth Lead", "Synth Pad"}
 
 
@@ -24,16 +22,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--dataset-root",
         type=Path,
-        default=DEFAULT_DATASET_ROOT,
+        default=Path(DEFAULT_DATASET_ROOT) if DEFAULT_DATASET_ROOT else None,
     )
     parser.add_argument(
         "--output-root",
         type=Path,
-        default=ROOT
-        / "benchmarks/specialist_open/synth-babyslakh-9-v1",
+        default=ROOT / "benchmarks/specialist_open/synth-babyslakh-9-v1",
     )
     parser.add_argument("--clip-seconds", type=float, default=10.0)
-    return parser.parse_args()
+    args = parser.parse_args()
+    if args.dataset_root is None:
+        parser.error("--dataset-root or STEMSPLITTER_BABYSLAKH_ROOT is required")
+    return args
 
 
 def read_audio(path: Path) -> tuple[np.ndarray, int]:
@@ -84,9 +84,7 @@ def main() -> int:
     sample_rate: int | None = None
 
     for track_dir in sorted(dataset_root.glob("Track*")):
-        metadata = yaml.safe_load(
-            (track_dir / "metadata.yaml").read_text(encoding="utf-8")
-        )
+        metadata = yaml.safe_load((track_dir / "metadata.yaml").read_text(encoding="utf-8"))
         source_ids = [
             stem_id
             for stem_id, stem in metadata.get("stems", {}).items()

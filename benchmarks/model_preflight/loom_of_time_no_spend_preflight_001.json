@@ -53,7 +53,7 @@
     "chunk_samples": 132300,
     "overlap_samples": 22050,
     "writes_outputs_as": "<stem>.wav",
-    "help_command": "/home/ayodele/Desktop/marlon-music/venv/bin/python external_repos/Loom-of-Time-Music-Viz/backend/training/separate.py --help",
+    "help_command": "${LOCAL_HOME}/Desktop/marlon-music/venv/bin/python external_repos/Loom-of-Time-Music-Viz/backend/training/separate.py --help",
     "help_passed": true,
     "help_failure": null,
     "expected_publishable_outputs": [
