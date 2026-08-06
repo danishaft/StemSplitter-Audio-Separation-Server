@@ -4,6 +4,31 @@ This directory separates the production platform design from model research and
 historical plans. Start with the production architecture, then use the
 operations documents when you deploy or operate the service.
 
+## Product
+
+The product documents define the user promise, scope, workflows, feature
+statuses, and release language.
+
+- [`product-blueprint.md`](product/product-blueprint.md) is the authority for
+  product positioning, capability pillars, current truth, and future scope.
+
+## Design
+
+The design documents translate the product strategy into reusable visual,
+interaction, content, and accessibility rules.
+
+- [`design-system.md`](design/design-system.md) defines the product's art
+  direction, tokens, layouts, components, audio interactions, and design gates.
+- [`competitive-ui-teardown.md`](design/competitive-ui-teardown.md) records the
+  Moises, Fadr, and BandLab interaction patterns behind the active waveform-first
+  direction.
+- [`moises-ui-ux-case-study.md`](design/moises-ui-ux-case-study.md) records the
+  measured Moises surface, typography, depth, media, navigation, product, and
+  responsive patterns that gate the V3 redesign.
+- [`public-platform-ui-case-studies.md`](design/public-platform-ui-case-studies.md)
+  records the public Suno, Fadr, BandLab, and LANDR evidence and defines the
+  cross-platform ownership model and acceptance gate for V3.
+
 ## Architecture
 
 The architecture documents define runtime boundaries and production contracts.
@@ -12,6 +37,10 @@ The architecture documents define runtime boundaries and production contracts.
   defines the control plane, queue, storage, and GPU worker topology.
 - [`PRODUCTION_PLATFORM.md`](architecture/PRODUCTION_PLATFORM.md) defines the
   Cloudflare, Azure, recovery, security, and observability implementation.
+- [`ML_PLATFORM_ARCHITECTURE.md`](architecture/ML_PLATFORM_ARCHITECTURE.md)
+  defines dataset and feature lineage, reproducible training and evaluation,
+  model releases, CPU and GPU scheduling, shadow and canary deployment, and ML
+  observability.
 - [`GPU_WORKER_CONTRACT.md`](architecture/GPU_WORKER_CONTRACT.md) defines the
   remote inference boundary.
 - [`PLATFORM_REFERENCE_IMPLEMENTATION_MAP.md`](architecture/PLATFORM_REFERENCE_IMPLEMENTATION_MAP.md)

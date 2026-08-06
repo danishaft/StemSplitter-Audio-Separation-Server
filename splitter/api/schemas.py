@@ -127,6 +127,7 @@ class JobResponse(FlexibleResponse):
     job_id: str
     status: str
     artifacts: JobArtifacts = Field(default_factory=JobArtifacts)
+    artifact_metadata: dict[str, dict[str, dict[str, Any]]] = Field(default_factory=dict)
     error: str | None = None
     missing_features: list[str] = Field(default_factory=list)
     remote_adapter_reason: str | None = None

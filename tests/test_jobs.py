@@ -259,7 +259,8 @@ def test_preview_job_skips_sections_derived_and_midi(
 
     manifest = jobs.get_manifest(job_id)
     assert manifest is not None
-    assert manifest["analysis_exports"] == {}
+    assert set(manifest["analysis_exports"]) == {"waveform_peaks"}
+    assert Path(manifest["analysis_exports"]["waveform_peaks"]).exists()
     assert manifest["published_derived_stems"] == {}
     assert manifest["published_specialist_substems"] == {}
     assert manifest["midi_exports"] == {}

@@ -37,6 +37,42 @@ def _accepted(status: dict[str, Any]) -> dict[str, Any]:
     return response
 
 
+def _public_artifact_metadata(
+    manifest: dict[str, object] | None,
+) -> dict[str, dict[str, dict[str, object]]]:
+    if not manifest:
+        return {}
+    result: dict[str, dict[str, dict[str, object]]] = {}
+    for manifest_key, response_key in (
+        ("published_main_stems", "main_stems"),
+        ("published_broad_stems", "broad_stems"),
+        ("published_derived_stems", "derived_stems"),
+        ("published_specialist_substems", "specialist_substems"),
+    ):
+        group = manifest.get(manifest_key)
+        if not isinstance(group, dict):
+            continue
+        public_group: dict[str, dict[str, object]] = {}
+        for name, payload in group.items():
+            if not isinstance(payload, dict):
+                continue
+            public_group[str(name)] = {
+                key: payload[key]
+                for key in (
+                    "artifact_group",
+                    "publish_reason",
+                    "publish_status",
+                    "quality_score",
+                    "source_model",
+                    "warnings",
+                )
+                if key in payload
+            }
+        if public_group:
+            result[response_key] = public_group
+    return result
+
+
 async def _json_payload(request: Request) -> dict[str, Any] | None:
     body = await request.body()
     if len(body) > MAX_CONTENT_LENGTH:
@@ -215,6 +251,7 @@ def job_status(
     response = dict(status)
     manifest = jobs.get_manifest(job_id)
     response["artifacts"] = artifact_payload(job_id, manifest)
+    response["artifact_metadata"] = _public_artifact_metadata(manifest)
     if manifest:
         response["rejected_candidates"] = manifest.get("rejected_candidates", {})
         response["missing_features"] = manifest.get("missing_features", [])

@@ -13,8 +13,8 @@ export function importReason(reason: string): string {
     download_requires_access: "Gated download",
     duration_limit_exceeded: "Track exceeds duration limit",
     duration_missing: "Duration unavailable",
-    license_missing: "Licence unavailable",
-    license_not_supported: "Unsupported licence"
+    license_missing: "License unavailable",
+    license_not_supported: "Unsupported license"
   };
   return labels[reason] || reason.replaceAll("_", " ");
 }

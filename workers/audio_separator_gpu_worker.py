@@ -24,6 +24,7 @@ from fastapi.responses import FileResponse
 from splitter.object_storage import ObjectStorageError, materialize_object, object_store_from_config
 from splitter.path_safety import resolve_artifact_path, resolve_job_root, safe_job_id
 from splitter.stem_contract import apply_product_11_contract
+from splitter.waveform import write_waveform_peaks
 
 WORKER_ROOT = Path(os.getenv("GPU_WORKER_ROOT", "/tmp/stemsplitter-gpu-worker"))
 JOBS_DIR = Path(os.getenv("GPU_WORKER_JOBS_DIR", str(WORKER_ROOT / "jobs")))
@@ -577,6 +578,38 @@ def _artifact_local_path(job_id: str, artifact_url: str) -> Path:
         raise RuntimeError("worker_artifact_outside_job") from exc
 
 
+def _attach_waveform_analysis(
+    job_id: str,
+    status: dict[str, Any],
+) -> dict[str, Any]:
+    artifacts = status.get("artifacts")
+    if not isinstance(artifacts, dict):
+        return status
+
+    stems: dict[str, Path] = {}
+    for group_name in ("broad_stems", "derived_stems", "specialist_substems"):
+        group = artifacts.get(group_name)
+        if not isinstance(group, dict):
+            continue
+        for artifact_name, artifact_url in group.items():
+            if isinstance(artifact_url, str):
+                stems[str(artifact_name)] = _artifact_local_path(job_id, artifact_url)
+    if not stems:
+        return status
+
+    output = write_waveform_peaks(
+        stems,
+        _job_root(job_id) / "analysis" / "waveform_peaks.json",
+    )
+    relative = output.resolve().relative_to(_job_root(job_id).resolve())
+    return _merge_artifacts(
+        status,
+        "analysis",
+        {"waveform_peaks": f"/artifacts/{job_id}/{relative.as_posix()}"},
+        source_model="worker_waveform_analysis",
+    )
+
+
 def _finalize_quality_contract(job_id: str, status: dict[str, Any]) -> dict[str, Any]:
     groups: dict[str, dict[str, dict[str, object]]] = {
         "broad_stems": {},
@@ -936,6 +969,9 @@ def _run_job(job_id: str) -> None:
         if profile == "quality_gpu_experimental":
             current_status = _finalize_quality_contract(job_id, current_status)
             missing_features = list(current_status.get("missing_features") or [])
+
+        current_status = _attach_waveform_analysis(job_id, current_status)
+        _write_status(job_id, current_status)
 
         object_publish_started = time.perf_counter()
         object_publish = _publish_worker_objects(job_id, current_status)
@@ -1395,6 +1431,8 @@ def _finalize_parallel_job(
         )
         return
 
+    status = _attach_waveform_analysis(job_id, status)
+    _write_status(job_id, status)
     object_publish_started = time.perf_counter()
     object_publish = _publish_worker_objects(job_id, status)
     cleanup_started = time.perf_counter()

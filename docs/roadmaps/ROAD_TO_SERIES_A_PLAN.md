@@ -129,7 +129,9 @@ in parallel against the same contracts.
   CUDA provider.
 - Data plane: direct uploads, object storage, artifacts, deletion, and content
   identity.
-- ML quality: model registry, benchmarks, listener evidence, and promotion.
+- ML platform: dataset and feature lineage, reproducible training and
+  evaluation, model registry, resource-aware scheduling, qualification,
+  promotion, shadowing, canaries, and rollback.
 - Product: authentication, upload, progress, auditioning, history, and support.
 - Platform: containers, infrastructure-as-code, CI/CD, observability, recovery,
   and security.
@@ -148,6 +150,12 @@ Do not add any item below merely to appear sophisticated.
 - Kubernetes or Helm before the container and Compose contracts pass.
 - Hundreds of checkpoints, custom training, or 12-stem marketing without
   per-stem evidence.
+- A general online feature store before a measured real-time endpoint requires
+  shared low-latency features.
+- Streaming separation before a streaming-safe model and latency target are
+  proven.
+- Fraud or risk inference, or a general agent runtime, inside the audio product
+  queue.
 - A plugin marketplace, native desktop applications, or broad CPU and ARM
   packaging without customer demand.
 
@@ -301,6 +309,9 @@ as an architecture decision before implementation.
 | Payments | Stripe Checkout, Billing, and webhooks |
 | Observability | OpenTelemetry-compatible signals and Sentry error reporting |
 | Product analytics | Privacy-conscious event analytics |
+| ML lifecycle | MLflow-compatible experiment catalog plus signed portable release manifests |
+| ML artifact authority | Private object storage with content-addressed, immutable artifacts |
+| ML scheduling | PostgreSQL admission, partitioned Redis/RQ queues, and Modal or local CUDA execution |
 | Deployment | Managed cloud, Docker Compose, and later Kubernetes or Helm |
 | Secrets | Deployment-platform secret manager |
 | Model distribution | Versioned manifests, checksums, licenses, and resumable downloads |
@@ -529,6 +540,25 @@ must qualify each stem independently before users spend money.
 - [ ] `P2-27` Start custom training or fine-tuning only after the candidate
   registry proves that no legally usable open checkpoint passes a required
   stem gate, then define dataset lineage and reproducible training evidence.
+- [ ] `P2-28` Establish one dataset-release authority containing provenance,
+  rights, checksums, duplicate groups, split assignments, cleaner decisions,
+  deterministic mixture recipes, and batch-feature versions.
+- [ ] `P2-29` Establish an MLflow-compatible experiment catalog for immutable
+  run specifications, metrics, logs, checkpoints, costs, and resume lineage.
+- [ ] `P2-30` Make evaluation reproducible from a benchmark release, candidate
+  cache, model hash, metric container, preprocessing version, and seed without
+  rerunning paid inference.
+- [ ] `P2-31` Replace mutable model aliases and duplicated registry decisions
+  with signed portable release manifests that bind lineage, qualification,
+  hardware requirements, licenses, and the previous safe release.
+- [ ] `P2-32` Record one product-job snapshot of the complete release manifest
+  identity so an admitted job cannot change models during execution.
+- [ ] `P2-33` Define model and data observability signals for dataset health,
+  training health, per-slice evaluation, production quality proxies, latency,
+  VRAM, failures, and cost.
+- [ ] `P2-34` Publish the online-feature-serving decision record: retain
+  job-scoped worker features for batch inference and require a new measured
+  real-time service-level objective before introducing a feature store.
 
 **Exit gate:** Each publicly claimed stem has objective evidence, blind
 listening evidence, known model provenance, a known license, and a pass
@@ -906,6 +936,24 @@ approved reliability, cost, latency, or capacity target.
   production approval, and rollback workflows.
 - [ ] `P7-33` Connect Sentry, Prometheus, Azure telemetry, and provider health
   signals to actionable alerts before external unsupervised access.
+- [ ] `P7-34` Partition interactive inference, batch inference, training,
+  evaluation, and maintenance queues with independent priorities, concurrency,
+  fairness, backpressure, cancellation, and cost ceilings.
+- [ ] `P7-35` Add resource profiles for CPU, RAM, GPU type, VRAM, scratch
+  storage, expected duration, and model cache, then reject incompatible work
+  before starting paid compute.
+- [ ] `P7-36` Implement sampled shadow execution whose artifacts remain
+  private, cannot affect the user response, and are compared against the
+  production release for quality proxies, reliability, latency, and cost.
+- [ ] `P7-37` Implement deterministic canary assignment, per-job release
+  pinning, kill thresholds, quarantine, and rollback to the previous signed
+  release.
+- [ ] `P7-38` Build correlated ML dashboards and alerts keyed by dataset,
+  training run, model release, job, and attempt without logging private audio,
+  filenames, credentials, or signed URLs.
+- [ ] `P7-39` Prove queue fairness, incompatible-resource rejection, sampled
+  shadow isolation, canary rollback, and cloud-to-self-hosted release parity in
+  staging before unsupervised access.
 
 **Exit gate:** The service passes capacity and failure tests, alerts reach an
 owner, every critical incident has a runbook, and rollback is demonstrated.
@@ -1304,11 +1352,15 @@ piano evidence.
 
 The founder-selected execution order is currently:
 
-1. Assemble rights-cleared corpora and train or qualify electric guitar,
-   strings, and wind/brass production candidates.
-2. Return to Phase 7 at `P7-24` and implement the locked Cloudflare and Azure
-   topology through `P7-33`.
-3. Continue the remaining user, billing, security, reliability, and rollout
+1. Finish the current V3 UI and UX design, review, and implementation gate
+   without weakening the working waveform or transport contracts.
+2. Assemble rights-cleared corpora and train or qualify electric guitar,
+   strings, and wind/brass production candidates while completing the ML
+   lifecycle authority in `P2-28` through `P2-34`.
+3. Return to Phase 7 at `P7-24` and implement the locked Cloudflare and Azure
+   topology through `P7-39`, including workload scheduling, shadow execution,
+   canaries, rollback, and ML observability.
+4. Continue the remaining user, billing, security, reliability, and rollout
    gates before external unsupervised access.
 
 The platform return checkpoint is satisfied only when all three specialist

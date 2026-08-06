@@ -397,6 +397,17 @@
       "JobResponse": {
         "additionalProperties": true,
         "properties": {
+          "artifact_metadata": {
+            "additionalProperties": {
+              "additionalProperties": {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              "type": "object"
+            },
+            "title": "Artifact Metadata",
+            "type": "object"
+          },
           "artifacts": {
             "$ref": "#/components/schemas/JobArtifacts"
           },
@@ -752,6 +763,25 @@
           }
         },
         "summary": "Capabilities",
+        "tags": [
+          "system"
+        ]
+      }
+    },
+    "/health/dependencies": {
+      "get": {
+        "operationId": "getDependencyHealth",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Dependencies",
         "tags": [
           "system"
         ]
