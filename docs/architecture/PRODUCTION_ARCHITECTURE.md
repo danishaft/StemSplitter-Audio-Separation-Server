@@ -16,6 +16,12 @@ The design combines the maintained `python-audio-separator` runtime, selected
 StemDeck lifecycle patterns, UVR model semantics, and standard durable cloud
 control-plane patterns.
 
+The [ML platform architecture](./ML_PLATFORM_ARCHITECTURE.md) separately
+defines dataset lineage, batch feature computation, reproducible training and
+evaluation, model promotion, CPU and GPU scheduling, shadow and canary
+releases, and model and data observability. The API and media architecture in
+this document remains the product-serving boundary.
+
 ## Component architecture
 
 The target system keeps media bytes outside the API and uses immutable object
@@ -120,6 +126,10 @@ returning during later implementation.
 - A model output is not called benchmark-qualified because a file exists.
 - Model release identifiers, timings, quality results, and object metadata are
   recorded for every production attempt.
+- Every production release resolves to an immutable signed model manifest with
+  dataset, training, evaluation, license, and rollback lineage.
+- Interactive inference, batch inference, training, evaluation, and
+  maintenance use separate queue and concurrency partitions.
 - Legacy local paths remain explicit fallbacks and never silently replace the
   production GPU contract.
 

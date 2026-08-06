@@ -64,6 +64,7 @@ from .specialist import (
 from .stem_contract import apply_quality_8_contract
 from .unit_economics import build_unit_economics
 from .util import dump_json, ensure_dir, file_sha256, load_json, now_iso, sanitize_filename
+from .waveform import write_waveform_peaks
 
 # These imports remain part of the historical monkeypatch surface used by the
 # isolation tests while specialist execution is being decomposed from this module.
@@ -1145,6 +1146,21 @@ def _run_job_pipeline(job_id: str) -> None:
         analysis: dict[str, Any] = {}
         tempo_locked: dict[str, str] = {}
         analysis_exports: dict[str, str] = {}
+        waveform_sources = {
+            stem_name: Path(str(payload["path"]))
+            for stem_name, payload in {
+                **broad_outputs,
+                **derived_outputs,
+                **specialist_outputs,
+            }.items()
+            if isinstance(payload, dict) and payload.get("path")
+        }
+        if waveform_sources:
+            waveform_path = write_waveform_peaks(
+                waveform_sources,
+                job_root / "analysis" / "waveform_peaks.json",
+            )
+            analysis_exports["waveform_peaks"] = str(waveform_path.resolve())
         if profile_cfg["tempo_lock"] and broad_outputs:
             analysis = detect_tempo_and_beats(Path(str(broad_outputs["instrumental"]["path"])))
             analysis.update(estimate_key(Path(str(broad_outputs["instrumental"]["path"]))))

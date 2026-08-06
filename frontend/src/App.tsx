@@ -6,15 +6,21 @@ import {
   submitAudiusJob,
   submitUploadJob
 } from "./features/separation/api";
-import { formatDuration, importReason } from "./features/separation/format";
+import { Icon } from "./features/separation/Icon";
 import { JobProgress } from "./features/separation/JobProgress";
+import { LandingStory, ProductProof } from "./features/separation/LandingStory";
+import { ProfilePicker } from "./features/separation/ProfilePicker";
 import { ResultsPanel } from "./features/separation/ResultsPanel";
+import { SourcePicker } from "./features/separation/SourcePicker";
+import { StudioHeader } from "./features/separation/StudioHeader";
 import type {
   AudiusTrack,
   Capabilities,
   JobPayload
 } from "./features/separation/types";
 
+const MAX_UPLOAD_BYTES = 500 * 1024 * 1024;
+const SUPPORTED_FILE = /\.(flac|m4a|mp3|ogg|wav)$/i;
 const TERMINAL_STATES = new Set(["completed", "error", "failed", "cancelled"]);
 
 function App() {
@@ -31,6 +37,7 @@ function App() {
   const [stage, setStage] = useState("Waiting for audio");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [connectionIssue, setConnectionIssue] = useState(false);
 
   const refreshJob = useEffectEvent(async (jobId: string) => {
     try {
@@ -44,10 +51,16 @@ function App() {
       if (requestError || !payload) throw apiError(requestError, response);
       setJob(payload);
       setStage(payload.stage || payload.status);
+      setConnectionIssue(false);
+      setError("");
       if (TERMINAL_STATES.has(payload.status)) setBusy(false);
     } catch (requestError) {
-      setError(requestError instanceof Error ? requestError.message : "Status lookup failed");
-      setBusy(false);
+      setError(
+        requestError instanceof Error
+          ? requestError.message
+          : "We could not refresh this job. Your uploaded work is still safe."
+      );
+      setConnectionIssue(true);
     }
   });
 
@@ -61,10 +74,14 @@ function App() {
       .then((payload) => {
         if (!active) return;
         setCapabilities(payload);
-        setProfile(payload.evaluation_profile || payload.default_profile);
+        setProfile(payload.recommended_profile || payload.evaluation_profile || payload.default_profile);
       })
       .catch((requestError: unknown) =>
-        setError(requestError instanceof Error ? requestError.message : "Capabilities unavailable")
+        setError(
+          requestError instanceof Error
+            ? requestError.message
+            : "Separation profiles are unavailable. Refresh to try again."
+        )
       );
     return () => {
       active = false;
@@ -75,6 +92,7 @@ function App() {
     const resumedJobId = new URLSearchParams(window.location.search).get("job");
     if (resumedJobId) {
       setBusy(true);
+      setStage("Reconnecting to your session");
       refreshJob(resumedJobId);
     }
   }, []);
@@ -86,28 +104,29 @@ function App() {
   }, [job?.job_id, job?.status]);
 
   const contract = capabilities?.product_contract;
-  const selectedContract = String(capabilities?.profiles?.[profile]?.contract || "");
+  const profileMetadata = capabilities?.profiles?.[profile];
+  const selectedContract = String(profileMetadata?.contract || "");
   const contractTargets = selectedContract
     ? capabilities?.stem_contracts?.[selectedContract]?.target_stems
     : undefined;
-  const profileTargets = capabilities?.profiles?.[profile]?.target_stems;
+  const metadataTargets = profileMetadata?.target_stems;
   const supported = (
     Array.isArray(contractTargets)
       ? contractTargets
-      : Array.isArray(profileTargets)
-        ? profileTargets
-        : []
+      : Array.isArray(metadataTargets)
+        ? metadataTargets
+        : contract?.model_supported_stems || []
   ).map(String);
   const pending = contract?.specialist_candidate_stems || [];
-  const profiles = Object.entries(capabilities?.profiles || {}).filter(
-    ([, metadata]) => metadata.public === true
-  );
   const hasInput = inputMode === "upload" ? Boolean(file) : Boolean(selectedTrack);
+  const sourceName = inputMode === "upload"
+    ? file?.name
+    : selectedTrack ? `${selectedTrack.title} · ${selectedTrack.artist}` : undefined;
 
   async function searchAudius(): Promise<void> {
     const query = audiusQuery.trim();
     if (query.length < 2) {
-      setError("Enter at least two characters to search Audius");
+      setError("Enter at least two characters to search Audius.");
       return;
     }
     setSearchingAudius(true);
@@ -116,9 +135,15 @@ function App() {
     try {
       const tracks = await searchAudiusTracks(query);
       setAudiusTracks(tracks);
-      if (!tracks.length) setError("No downloadable Audius tracks matched this search");
+      if (!tracks.length) {
+        setError("No downloadable Audius tracks matched this search. Try an artist or a shorter title.");
+      }
     } catch (requestError) {
-      setError(requestError instanceof Error ? requestError.message : "Audius search failed");
+      setError(
+        requestError instanceof Error
+          ? requestError.message
+          : "Audius search is unavailable. Your upload option still works."
+      );
     } finally {
       setSearchingAudius(false);
     }
@@ -127,23 +152,26 @@ function App() {
   async function start(): Promise<void> {
     if (!hasInput || !profile) return;
     setBusy(true);
+    setConnectionIssue(false);
     setError("");
     setJob(null);
+    setStage("Preparing your session");
+    window.requestAnimationFrame(() => {
+      document.getElementById("job-status")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
     try {
-      const payload =
-        inputMode === "audius" && selectedTrack
-          ? await submitAudiusJob(
-              selectedTrack.id,
-              profile,
-              crypto.randomUUID(),
-              setStage
-            )
-          : await submitUploadJob(file as File, profile, crypto.randomUUID(), setStage);
+      const payload = inputMode === "audius" && selectedTrack
+        ? await submitAudiusJob(selectedTrack.id, profile, crypto.randomUUID(), setStage)
+        : await submitUploadJob(file as File, profile, crypto.randomUUID(), setStage);
       setJob(payload);
       window.history.replaceState({}, "", `?job=${encodeURIComponent(payload.job_id)}`);
       await refreshJob(payload.job_id);
     } catch (requestError) {
-      setError(requestError instanceof Error ? requestError.message : "Job submission failed");
+      setError(
+        requestError instanceof Error
+          ? requestError.message
+          : "We could not start the split. Your local file has not been changed."
+      );
       setBusy(false);
     }
   }
@@ -162,205 +190,146 @@ function App() {
       if (requestError || !payload) throw apiError(requestError, response);
       setJob(payload);
     } catch (requestError) {
-      setError(requestError instanceof Error ? requestError.message : "Cancellation failed");
+      setError(
+        requestError instanceof Error
+          ? requestError.message
+          : "Cancellation did not reach the server. Check the job status before trying again."
+      );
     }
   }
 
   function acceptFile(candidate: File | undefined): void {
     if (!candidate) return;
+    if (!SUPPORTED_FILE.test(candidate.name)) {
+      setFile(null);
+      setError("Choose a WAV, FLAC, MP3, M4A, or OGG audio file.");
+      return;
+    }
+    if (candidate.size > MAX_UPLOAD_BYTES) {
+      setFile(null);
+      setError("This file is larger than 500 MB. Export a smaller audio file and try again.");
+      return;
+    }
     setFile(candidate);
     setError("");
   }
 
+  function changeInputMode(mode: "upload" | "audius"): void {
+    setInputMode(mode);
+    setError("");
+  }
+
   return (
-    <div className="app-shell">
-      <aside className="rail" aria-label="Primary">
-        <div className="brand">SS</div>
-        <nav>
-          <a className="active" href="#new">New</a>
-          <a href="#results">Jobs</a>
-          <a href="#contract">Models</a>
-        </nav>
-        <span>v0.9</span>
-      </aside>
+    <div className="app-shell" id="top">
+      <StudioHeader
+        hasSession={job?.status === "completed"}
+        supportedCount={supported.length}
+      />
 
-      <main>
-        <header className="hero">
-          <div>
-            <p className="eyebrow">Studio separation system</p>
-            <h1>Pull the record apart.<br />Keep the music intact.</h1>
-            <p className="lede">
-              A hierarchical stem workspace for producers. Model support and release
-              qualification are shown separately, so an output is never mistaken for proof.
-            </p>
-          </div>
-          <section className="system-card" aria-live="polite">
-            <small>System status</small>
-            <strong>{error ? "Needs attention" : capabilities ? "Evaluation ready" : "Checking"}</strong>
-            <p>{supported.length}-stem evaluation · status shown per job</p>
-            <i className={error ? "status-dot status-dot--error" : "status-dot"} />
-          </section>
-        </header>
+      {job?.status !== "completed" ? <ProductProof supportedCount={supported.length} /> : null}
 
-        <section className="work-grid" id="new">
-          <div className="upload-panel">
-            <p className="eyebrow eyebrow--lime">01 / Input</p>
-            <h2>{inputMode === "upload" ? "Drop a track here" : "Find a licensed track"}</h2>
-            <p>
-              {inputMode === "upload"
-                ? "WAV, FLAC, MP3, M4A or OGG · up to 500 MB"
-                : "Search Audius · only derivative-friendly downloads can be imported"}
-            </p>
-            <div className="input-tabs" role="tablist" aria-label="Audio input source">
-              <button
-                role="tab"
-                aria-selected={inputMode === "upload"}
-                className={inputMode === "upload" ? "active" : ""}
-                onClick={() => setInputMode("upload")}
-              >
-                Upload file
-              </button>
-              <button
-                role="tab"
-                aria-selected={inputMode === "audius"}
-                className={inputMode === "audius" ? "active" : ""}
-                onClick={() => setInputMode("audius")}
-              >
-                Audius catalog
-              </button>
-            </div>
+      <main className={job?.status === "completed" ? "main--workspace" : ""}>
+        {job?.status !== "completed" ? (
+        <>
+        <div className="studio-intro" id="studio">
+          <p className="eyebrow">The separation room</p>
+          <h2>Start with the source.<br />Stay with the song.</h2>
+          <p>Select a track and the depth of separation. The working session appears here as outputs become ready.</p>
+        </div>
+        <section className="studio" aria-label="New separation session">
+          <div className="studio__main">
+            <SourcePicker
+              audiusQuery={audiusQuery}
+              audiusTracks={audiusTracks}
+              dragging={dragging}
+              file={file}
+              inputMode={inputMode}
+              onAcceptFile={acceptFile}
+              onAudiusQueryChange={setAudiusQuery}
+              onDraggingChange={setDragging}
+              onInputModeChange={changeInputMode}
+              onSearchAudius={searchAudius}
+              onSelectTrack={(track) => {
+                setSelectedTrack(track);
+                setError("");
+              }}
+              searchingAudius={searchingAudius}
+              selectedTrack={selectedTrack}
+              notice={!job && !busy ? error : ""}
+            />
 
-            {inputMode === "upload" ? (
-              <label
-                className={`dropzone ${dragging ? "dropzone--active" : ""}`}
-                onDragEnter={(event) => {
-                  event.preventDefault();
-                  setDragging(true);
-                }}
-                onDragOver={(event) => event.preventDefault()}
-                onDragLeave={() => setDragging(false)}
-                onDrop={(event) => {
-                  event.preventDefault();
-                  setDragging(false);
-                  acceptFile(event.dataTransfer.files[0]);
-                }}
-              >
-                <span>
-                  <strong>{file?.name || "Choose audio or drag it into this panel"}</strong>
-                  <small>
-                    {file
-                      ? `${(file.size / 1024 / 1024).toFixed(1)} MB`
-                      : "No silent model fallback"}
-                  </small>
-                </span>
-                <b>Choose file</b>
-                <input
-                  type="file"
-                  accept=".flac,.m4a,.mp3,.ogg,.wav"
-                  onChange={(event) => acceptFile(event.target.files?.[0])}
-                />
-              </label>
-            ) : (
-              <div className="audius-picker">
-                <form
-                  className="catalog-search"
-                  onSubmit={(event) => {
-                    event.preventDefault();
-                    searchAudius();
-                  }}
-                >
-                  <label htmlFor="audius-query">Search artist or track</label>
-                  <div>
-                    <input
-                      id="audius-query"
-                      value={audiusQuery}
-                      maxLength={100}
-                      onChange={(event) => setAudiusQuery(event.target.value)}
-                      placeholder="Artist, song, or genre"
-                    />
-                    <button disabled={searchingAudius} type="submit">
-                      {searchingAudius ? "Searching…" : "Search"}
-                    </button>
-                  </div>
-                </form>
-                {audiusTracks.length ? (
-                  <div className="catalog-results" aria-label="Audius search results">
-                    {audiusTracks.map((track) => (
-                      <article
-                        key={track.id}
-                        className={`catalog-track ${
-                          selectedTrack?.id === track.id ? "catalog-track--selected" : ""
-                        }`}
-                      >
-                        {track.artwork_url ? (
-                          <img src={track.artwork_url} alt="" loading="lazy" />
-                        ) : (
-                          <div className="artwork-placeholder" aria-hidden="true">♪</div>
-                        )}
-                        <div className="track-copy">
-                          <strong>{track.title}</strong>
-                          <small>
-                            {track.artist} · {formatDuration(track.duration_seconds)}
-                          </small>
-                          <span>{track.license || "Licence unavailable"}</span>
-                        </div>
-                        <button
-                          type="button"
-                          disabled={!track.can_import}
-                          onClick={() => setSelectedTrack(track)}
-                        >
-                          {track.can_import
-                            ? selectedTrack?.id === track.id
-                              ? "Selected"
-                              : "Select"
-                            : importReason(track.import_reason)}
-                        </button>
-                      </article>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="catalog-empty">
-                    Search results will show licence and import eligibility before selection.
-                  </div>
-                )}
+            <div className="profile-section">
+              <div className="section-heading">
+                <span>02</span>
+                <div>
+                  <p className="eyebrow">Method</p>
+                  <h2>Choose how deep to listen</h2>
+                </div>
               </div>
-            )}
-            <div className="submit-row">
-              <label>
-                Separation mode
-                <select value={profile} onChange={(event) => setProfile(event.target.value)}>
-                  {profiles.map(([name, metadata]) => (
-                    <option key={name} value={name}>
-                      {metadata.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <button disabled={!hasInput || !profile || busy} onClick={start}>
-                {busy
-                  ? "Working…"
-                  : inputMode === "audius"
-                    ? "Import and split"
-                    : "Start separation"}
+              <ProfilePicker
+                capabilities={capabilities}
+                disabled={busy}
+                onChange={setProfile}
+                profile={profile}
+              />
+            </div>
+
+            <div className="session-submit">
+              <div>
+                <small>Session source</small>
+                <strong>{sourceName || "No track selected"}</strong>
+              </div>
+              <button disabled={!hasInput || !profile || busy} onClick={start} type="button">
+                {busy ? "Separation in progress" : inputMode === "audius" ? "Import and separate" : "Start separation"}
+                <Icon name="arrow" size={19} />
               </button>
             </div>
           </div>
 
-          <aside className="contract-card" id="contract">
-            <p className="eyebrow eyebrow--lime">Current product contract</p>
-            <h2>What this app can deliver</h2>
-            <small>{supported.length}-stem evaluation output</small>
-            <div className="stem-chips">
-              {supported.map((stem) => <span key={stem}>{stem.replaceAll("_", " ")}</span>)}
+          <aside className="contract-card" aria-labelledby="contract-title">
+            <p className="eyebrow">Release contract</p>
+            <h2 id="contract-title">Hear what is ready. See what is not.</h2>
+            <p className="contract-card__intro">
+              The selected profile targets these stem families. Every non-core candidate is scored before release.
+            </p>
+            <div className="stem-list">
+              {supported.map((stem, index) => (
+                <div key={stem}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <strong>{stem.replaceAll("_", " ")}</strong>
+                  <Icon name="check" size={17} />
+                </div>
+              ))}
             </div>
-            <small className="pending-label">Specialist families · not released</small>
-            <p>{pending.map((stem) => stem.replaceAll("_", " ")).join(" · ")}</p>
+            {pending.length ? (
+              <div className="contract-card__pending">
+                <small>Specialist candidates, not guaranteed</small>
+                <p>{pending.map((stem) => stem.replaceAll("_", " ")).join(" · ")}</p>
+              </div>
+            ) : null}
           </aside>
         </section>
+        </>
+        ) : null}
 
-        <JobProgress busy={busy} error={error} job={job} onCancel={cancel} stage={stage} />
+        {job?.status !== "completed" ? <JobProgress
+          busy={busy}
+          connectionIssue={connectionIssue}
+          error={job || busy ? error || job?.error || "" : ""}
+          job={job}
+          onCancel={cancel}
+          onRetry={() => job?.job_id && refreshJob(job.job_id)}
+          stage={stage}
+        /> : null}
         <ResultsPanel job={job} />
+        {job?.status !== "completed" && !job && !busy ? <LandingStory /> : null}
       </main>
+
+      <footer>
+        <span>STEM/SPLITTER</span>
+        <p>Built for working musicians and honest listening.</p>
+        <a href="#top">Back to top</a>
+      </footer>
     </div>
   );
 }

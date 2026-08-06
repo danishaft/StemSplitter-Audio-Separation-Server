@@ -99,9 +99,11 @@ def artifact_payload(
             if isinstance(meta, dict) and isinstance(meta.get("storage_ref"), dict):
                 store = object_store_from_config()
                 if store is not None:
+                    object_key = str(meta["storage_ref"].get("key") or "")
+                    download_name = Path(object_key).name or str(name)
                     urls[str(name)] = store.signed_download_url(
                         meta["storage_ref"],
-                        f"{name}.wav",
+                        download_name,
                     )
                 continue
             path = meta["path"] if isinstance(meta, dict) else meta

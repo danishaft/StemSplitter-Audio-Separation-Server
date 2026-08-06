@@ -3,11 +3,13 @@ import createClient from "openapi-fetch";
 import type { paths } from "./schema";
 
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
+const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const apiBaseUrl = (configuredBaseUrl || (import.meta.env.DEV ? "/api" : "")).replace(/\/$/, "");
 
 export const api = createClient<paths>({ baseUrl: apiBaseUrl });
 
 export function apiPath(path: string): string {
+  if (/^https?:\/\//i.test(path)) return path;
   return `${apiBaseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
