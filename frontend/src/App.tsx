@@ -8,7 +8,7 @@ import {
 } from "./features/separation/api";
 import { Icon } from "./features/separation/Icon";
 import { JobProgress } from "./features/separation/JobProgress";
-import { LandingStory, ProductProof } from "./features/separation/LandingStory";
+import { LandingStory } from "./features/separation/LandingStory";
 import { ProfilePicker } from "./features/separation/ProfilePicker";
 import { ResultsPanel } from "./features/separation/ResultsPanel";
 import { SourcePicker } from "./features/separation/SourcePicker";
@@ -25,6 +25,7 @@ const TERMINAL_STATES = new Set(["completed", "error", "failed", "cancelled"]);
 
 function App() {
   const [capabilities, setCapabilities] = useState<Capabilities | null>(null);
+  const [capabilitiesState, setCapabilitiesState] = useState<"loading" | "ready" | "error">("loading");
   const [profile, setProfile] = useState("");
   const [inputMode, setInputMode] = useState<"upload" | "audius">("upload");
   const [file, setFile] = useState<File | null>(null);
@@ -35,7 +36,9 @@ function App() {
   const [dragging, setDragging] = useState(false);
   const [job, setJob] = useState<JobPayload | null>(null);
   const [stage, setStage] = useState("Waiting for audio");
-  const [error, setError] = useState("");
+  const [sourceNotice, setSourceNotice] = useState("");
+  const [jobError, setJobError] = useState("");
+  const [systemError, setSystemError] = useState("");
   const [busy, setBusy] = useState(false);
   const [connectionIssue, setConnectionIssue] = useState(false);
 
@@ -52,10 +55,10 @@ function App() {
       setJob(payload);
       setStage(payload.stage || payload.status);
       setConnectionIssue(false);
-      setError("");
+      setJobError("");
       if (TERMINAL_STATES.has(payload.status)) setBusy(false);
     } catch (requestError) {
-      setError(
+      setJobError(
         requestError instanceof Error
           ? requestError.message
           : "We could not refresh this job. Your uploaded work is still safe."
@@ -64,28 +67,25 @@ function App() {
     }
   });
 
+  async function loadCapabilities(): Promise<void> {
+    setCapabilitiesState("loading");
+    setSystemError("");
+    try {
+      const { data, error: requestError, response } = await api.GET("/capabilities");
+      if (requestError || !data) throw apiError(requestError, response);
+      setCapabilities(data);
+      setProfile(data.recommended_profile || data.evaluation_profile || data.default_profile);
+      setCapabilitiesState("ready");
+    } catch {
+      setCapabilities(null);
+      setProfile("");
+      setCapabilitiesState("error");
+      setSystemError("The studio service is unavailable. Retry after the API reconnects.");
+    }
+  }
+
   useEffect(() => {
-    let active = true;
-    api.GET("/capabilities")
-      .then(({ data, error: requestError, response }) => {
-        if (requestError || !data) throw apiError(requestError, response);
-        return data;
-      })
-      .then((payload) => {
-        if (!active) return;
-        setCapabilities(payload);
-        setProfile(payload.recommended_profile || payload.evaluation_profile || payload.default_profile);
-      })
-      .catch((requestError: unknown) =>
-        setError(
-          requestError instanceof Error
-            ? requestError.message
-            : "Separation profiles are unavailable. Refresh to try again."
-        )
-      );
-    return () => {
-      active = false;
-    };
+    void loadCapabilities();
   }, []);
 
   useEffect(() => {
@@ -126,20 +126,20 @@ function App() {
   async function searchAudius(): Promise<void> {
     const query = audiusQuery.trim();
     if (query.length < 2) {
-      setError("Enter at least two characters to search Audius.");
+      setSourceNotice("Enter at least two characters to search Audius.");
       return;
     }
     setSearchingAudius(true);
-    setError("");
+    setSourceNotice("");
     setSelectedTrack(null);
     try {
       const tracks = await searchAudiusTracks(query);
       setAudiusTracks(tracks);
       if (!tracks.length) {
-        setError("No downloadable Audius tracks matched this search. Try an artist or a shorter title.");
+        setSourceNotice("No downloadable Audius tracks matched this search. Try an artist or a shorter title.");
       }
     } catch (requestError) {
-      setError(
+      setSourceNotice(
         requestError instanceof Error
           ? requestError.message
           : "Audius search is unavailable. Your upload option still works."
@@ -153,7 +153,8 @@ function App() {
     if (!hasInput || !profile) return;
     setBusy(true);
     setConnectionIssue(false);
-    setError("");
+    setSourceNotice("");
+    setJobError("");
     setJob(null);
     setStage("Preparing your session");
     window.requestAnimationFrame(() => {
@@ -167,7 +168,7 @@ function App() {
       window.history.replaceState({}, "", `?job=${encodeURIComponent(payload.job_id)}`);
       await refreshJob(payload.job_id);
     } catch (requestError) {
-      setError(
+      setJobError(
         requestError instanceof Error
           ? requestError.message
           : "We could not start the split. Your local file has not been changed."
@@ -190,7 +191,7 @@ function App() {
       if (requestError || !payload) throw apiError(requestError, response);
       setJob(payload);
     } catch (requestError) {
-      setError(
+      setJobError(
         requestError instanceof Error
           ? requestError.message
           : "Cancellation did not reach the server. Check the job status before trying again."
@@ -202,41 +203,46 @@ function App() {
     if (!candidate) return;
     if (!SUPPORTED_FILE.test(candidate.name)) {
       setFile(null);
-      setError("Choose a WAV, FLAC, MP3, M4A, or OGG audio file.");
+      setSourceNotice("Choose a WAV, FLAC, MP3, M4A, or OGG audio file.");
       return;
     }
     if (candidate.size > MAX_UPLOAD_BYTES) {
       setFile(null);
-      setError("This file is larger than 500 MB. Export a smaller audio file and try again.");
+      setSourceNotice("This file is larger than 500 MB. Export a smaller audio file and try again.");
       return;
     }
     setFile(candidate);
-    setError("");
+    setSourceNotice("");
   }
 
   function changeInputMode(mode: "upload" | "audius"): void {
     setInputMode(mode);
-    setError("");
+    setSourceNotice("");
   }
 
   return (
     <div className="app-shell" id="top">
       <StudioHeader
         hasSession={job?.status === "completed"}
-        supportedCount={supported.length}
       />
 
-      {job?.status !== "completed" ? <ProductProof supportedCount={supported.length} /> : null}
-
-      <main className={job?.status === "completed" ? "main--workspace" : ""}>
+      <main className={job?.status === "completed" ? "main--workspace" : "main--landing"}>
         {job?.status !== "completed" ? (
-        <>
-        <div className="studio-intro" id="studio">
-          <p className="eyebrow">The separation room</p>
-          <h2>Start with the source.<br />Stay with the song.</h2>
-          <p>Select a track and the depth of separation. The working session appears here as outputs become ready.</p>
-        </div>
-        <section className="studio" aria-label="New separation session">
+        <section className="studio-reveal" id="studio" aria-labelledby="studio-title">
+        <header className="studio-intro">
+          <div>
+            <p className="eyebrow">Inside the studio</p>
+            <h2 id="studio-title">The song stays whole while the parts open up.</h2>
+          </div>
+          <p>Bring in a track, choose the separation depth, and listen from the same place as each output becomes ready.</p>
+        </header>
+        {systemError ? (
+          <div className="system-notice" role="status">
+            <span>{systemError}</span>
+            <button onClick={loadCapabilities} type="button">Retry connection</button>
+          </div>
+        ) : null}
+        <div className="studio" aria-label="New separation session">
           <div className="studio__main">
             <SourcePicker
               audiusQuery={audiusQuery}
@@ -251,22 +257,22 @@ function App() {
               onSearchAudius={searchAudius}
               onSelectTrack={(track) => {
                 setSelectedTrack(track);
-                setError("");
+                setSourceNotice("");
               }}
               searchingAudius={searchingAudius}
               selectedTrack={selectedTrack}
-              notice={!job && !busy ? error : ""}
+              notice={!job && !busy ? sourceNotice : ""}
             />
 
             <div className="profile-section">
               <div className="section-heading">
-                <span>02</span>
                 <div>
                   <p className="eyebrow">Method</p>
-                  <h2>Choose how deep to listen</h2>
+                  <h2>Choose the separation depth</h2>
                 </div>
               </div>
               <ProfilePicker
+                availability={capabilitiesState}
                 capabilities={capabilities}
                 disabled={busy}
                 onChange={setProfile}
@@ -288,34 +294,52 @@ function App() {
 
           <aside className="contract-card" aria-labelledby="contract-title">
             <p className="eyebrow">Release contract</p>
-            <h2 id="contract-title">Hear what is ready. See what is not.</h2>
-            <p className="contract-card__intro">
-              The selected profile targets these stem families. Every non-core candidate is scored before release.
-            </p>
-            <div className="stem-list">
-              {supported.map((stem, index) => (
-                <div key={stem}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <strong>{stem.replaceAll("_", " ")}</strong>
-                  <Icon name="check" size={17} />
+            {capabilitiesState === "ready" ? (
+              <>
+                <h2 id="contract-title">Hear what is ready. See what is not.</h2>
+                <p className="contract-card__intro">
+                  Your chosen profile lists every intended stem. Only clear, usable results reach the session.
+                </p>
+                <div className="stem-list">
+                  {supported.map((stem, index) => (
+                    <div key={stem}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <strong>{stem.replaceAll("_", " ")}</strong>
+                      <Icon name="check" size={17} />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            {pending.length ? (
-              <div className="contract-card__pending">
-                <small>Specialist candidates, not guaranteed</small>
-                <p>{pending.map((stem) => stem.replaceAll("_", " ")).join(" · ")}</p>
-              </div>
-            ) : null}
+                {pending.length ? (
+                  <div className="contract-card__pending">
+                    <small>Optional stems, released only when clear</small>
+                    <p>{pending.map((stem) => stem.replaceAll("_", " ")).join(" · ")}</p>
+                  </div>
+                ) : null}
+              </>
+            ) : capabilitiesState === "loading" ? (
+              <>
+                <h2 id="contract-title">Checking the available outputs.</h2>
+                <p className="contract-card__intro">
+                  The studio is loading profiles and stem details for this session.
+                </p>
+              </>
+            ) : (
+              <>
+                <h2 id="contract-title">Output details are unavailable.</h2>
+                <p className="contract-card__intro">
+                  Reconnect to review available profiles and the stems each one can deliver.
+                </p>
+              </>
+            )}
           </aside>
+        </div>
         </section>
-        </>
         ) : null}
 
         {job?.status !== "completed" ? <JobProgress
           busy={busy}
           connectionIssue={connectionIssue}
-          error={job || busy ? error || job?.error || "" : ""}
+          error={jobError || job?.error || ""}
           job={job}
           onCancel={cancel}
           onRetry={() => job?.job_id && refreshJob(job.job_id)}

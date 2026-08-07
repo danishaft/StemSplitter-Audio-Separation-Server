@@ -2,6 +2,7 @@ import type { FormEvent } from "react";
 
 import { formatDuration, importReason } from "./format";
 import { Icon } from "./Icon";
+import { SourceAudition } from "./SourceAudition";
 import type { AudiusTrack } from "./types";
 
 interface SourcePickerProps {
@@ -52,10 +53,9 @@ export function SourcePicker({
   return (
     <section className="source-picker" aria-labelledby="source-title">
       <div className="section-heading">
-        <span>01</span>
         <div>
           <p className="eyebrow">Source</p>
-          <h2 id="source-title">Bring the record in</h2>
+          <h2 id="source-title">Choose the record</h2>
         </div>
       </div>
 
@@ -116,6 +116,7 @@ export function SourcePicker({
           >
             <input
               accept=".flac,.m4a,.mp3,.ogg,.wav"
+              aria-label="Upload a local audio file"
               onChange={(event) => onAcceptFile(event.target.files?.[0])}
               type="file"
             />
@@ -130,6 +131,7 @@ export function SourcePicker({
             </span>
             <b>{file ? "Replace file" : "Choose file"}</b>
           </label>
+          {file ? <SourceAudition file={file} /> : null}
         </div>
       ) : (
         <div aria-labelledby="audius-tab" className="audius-picker" id="audius-panel" role="tabpanel">

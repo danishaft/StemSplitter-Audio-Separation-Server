@@ -2,24 +2,21 @@ import { Icon } from "./Icon";
 
 interface StudioHeaderProps {
   hasSession: boolean;
-  supportedCount: number;
 }
 
 export function StudioHeader({
-  hasSession,
-  supportedCount
+  hasSession
 }: StudioHeaderProps) {
   return (
     <>
-      <header className="site-header glass-panel">
+      <header className="site-header">
         <a className="wordmark" href="#top" aria-label="StemSplitter home">
           <span className="wordmark__mark"><Icon name="wave" size={20} /></span>
           <span>STEM<span className="wordmark__slash">/</span>SPLITTER</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#product-proof">Product</a>
-          <a href="#studio">Split a track</a>
-          <a href="#standards">Standards</a>
+          <a href="#studio">Studio</a>
+          <a href="#standards">Output standards</a>
         </nav>
         <a className="header-cta" href={hasSession ? "#results" : "#studio"}>
           {hasSession ? "Open session" : "Split a track"}
@@ -41,23 +38,18 @@ export function StudioHeader({
           </video>
           <div className="hero__veil" />
           <div className="hero__content">
-            <p className="eyebrow">Separation for working musicians</p>
-            <h1 id="hero-title">Find every part.<br />Keep what sounds right.</h1>
+            <p className="hero__product">StemSplitter <span>Studio</span></p>
+            <h1 id="hero-title">Turn one song into a working session.</h1>
             <p className="hero__lede">
-              Turn one finished mix into synchronized, quality-gated stems you
-              can audition, compare, and take back into the studio.
+              Separate, audition, and export synchronized stems without losing
+              sight of the record they came from.
             </p>
             <div className="hero__actions">
               <a className="primary-action" href="#studio">
-                Split a track <Icon name="arrow" size={19} />
+                Open the studio <Icon name="arrow" size={19} />
               </a>
-              <a className="hero__secondary" href="#product-proof">See the workflow</a>
             </div>
-            <div className="hero__facts" aria-label="Current release facts">
-              <span><b>{supportedCount || "Multiple"}</b> target stems</span>
-              <span><b>Upload + Audius</b> source paths</span>
-              <span><b>Quality-gated</b> release</span>
-            </div>
+            <p className="hero__assurance">Local upload or Audius import · synchronized playback · quality-gated export</p>
           </div>
           <a
             className="hero__credit"
