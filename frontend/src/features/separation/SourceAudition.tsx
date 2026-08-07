@@ -36,14 +36,22 @@ export function SourceAudition({ file }: SourceAuditionProps) {
     return () => URL.revokeObjectURL(nextUrl);
   }, [file]);
 
-  useEffect(() => () => {
-    if (animationRef.current != null) cancelAnimationFrame(animationRef.current);
-    sourceRef.current?.disconnect();
-    analyserRef.current?.disconnect();
-    void audioContextRef.current?.close();
-    sourceRef.current = null;
-    analyserRef.current = null;
-    audioContextRef.current = null;
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio && sourceUrl) {
+      audio.src = sourceUrl;
+      audio.load();
+    }
+
+    return () => {
+      if (animationRef.current != null) cancelAnimationFrame(animationRef.current);
+      sourceRef.current?.disconnect();
+      analyserRef.current?.disconnect();
+      void audioContextRef.current?.close();
+      sourceRef.current = null;
+      analyserRef.current = null;
+      audioContextRef.current = null;
+    };
   }, [sourceUrl]);
 
   function stopSignal(): void {
@@ -132,7 +140,6 @@ export function SourceAudition({ file }: SourceAuditionProps) {
         onError={() => setPlaybackError("This source cannot be played in your browser.")}
         onTimeUpdate={(event) => setCurrentTime(event.currentTarget.currentTime)}
         ref={audioRef}
-        src={sourceUrl}
       />
       <button
         aria-label={playing ? "Pause source preview" : "Play source preview"}
