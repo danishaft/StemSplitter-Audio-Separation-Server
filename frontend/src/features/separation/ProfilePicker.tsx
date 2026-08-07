@@ -1,6 +1,7 @@
 import type { Capabilities } from "./types";
 
 interface ProfilePickerProps {
+  availability: "loading" | "ready" | "error";
   capabilities: Capabilities | null;
   disabled: boolean;
   profile: string;
@@ -8,16 +9,17 @@ interface ProfilePickerProps {
 }
 
 function profileDescription(name: string, tier: string, engine: unknown): string {
-  if (name.includes("mvsep")) return "Adds an optional remote specialist pass.";
+  if (name.includes("mvsep")) return "Adds optional specialist stems when remote analysis is available.";
   if (typeof engine === "string" && engine.includes("gpu")) {
-    return "GPU evaluation path with full artifact packaging.";
+    return "Highest-detail split for final listening and export.";
   }
-  if (name.includes("quality")) return "Local quality path with full artifact packaging.";
-  if (name.includes("preview")) return "Fast local broad-stem preview.";
-  return tier ? `${tier} separation profile.` : "Available separation profile.";
+  if (name.includes("quality")) return "Detailed local split for editing and export.";
+  if (name.includes("preview")) return "Quick broad-stem check before a full split.";
+  return tier ? `${tier} balance of speed and detail.` : "A balanced split for this session.";
 }
 
 export function ProfilePicker({
+  availability,
   capabilities,
   disabled,
   onChange,
@@ -30,14 +32,20 @@ export function ProfilePicker({
   return (
     <fieldset className="profile-picker" disabled={disabled || !profiles.length}>
       <legend>Choose a separation profile</legend>
-      <p>Quality claims apply to the selected profile, not every model in the registry.</p>
-      {!capabilities ? (
+      <p>Choose speed or detail for this session. Each option states what it can deliver.</p>
+      {availability === "loading" ? (
         <div className="profile-loading" aria-live="polite">
           <span />
           <div>
             <strong>Checking available profiles</strong>
-            <small>The start control stays locked until the server contract is ready.</small>
+            <small>Separation starts as soon as the studio reconnects.</small>
           </div>
+        </div>
+      ) : null}
+      {availability === "error" ? (
+        <div className="profile-unavailable" role="status">
+          <strong>Profiles are unavailable</strong>
+          <small>Retry the studio connection above to continue.</small>
         </div>
       ) : null}
       <div className="profile-options">
