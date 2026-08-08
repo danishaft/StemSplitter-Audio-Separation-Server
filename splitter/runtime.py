@@ -4,6 +4,7 @@ from .config import (
     APP_ENV,
     APPLICATIONINSIGHTS_CONNECTION_STRING,
     AUTH_AUDIENCE,
+    AUTH_AUTHORIZED_PARTIES,
     AUTH_ISSUER,
     AUTH_JWKS_URL,
     AUTH_MODE,
@@ -50,7 +51,11 @@ def validate_runtime_config() -> None:
         )
     ):
         failures.append("private_object_storage_required")
-    if AUTH_MODE != "jwt" or not all((AUTH_JWKS_URL, AUTH_ISSUER, AUTH_AUDIENCE)):
+    if (
+        AUTH_MODE != "jwt"
+        or not all((AUTH_JWKS_URL, AUTH_ISSUER))
+        or not (AUTH_AUDIENCE or AUTH_AUTHORIZED_PARTIES)
+    ):
         failures.append("jwt_authentication_required")
     if not CORS_ALLOWED_ORIGINS or "*" in CORS_ALLOWED_ORIGINS:
         failures.append("explicit_cors_origins_required")

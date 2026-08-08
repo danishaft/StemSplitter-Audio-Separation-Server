@@ -1,3 +1,4 @@
+import { ClerkProvider } from "@clerk/react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
@@ -13,9 +14,13 @@ import "./styles.css";
 
 const rootElement = document.getElementById("root");
 if (!rootElement) throw new Error("Application root element is missing");
+const clerkPublishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+if (!clerkPublishableKey) throw new Error("Clerk publishable key is missing");
 
 createRoot(rootElement).render(
   <StrictMode>
-    <App />
+    <ClerkProvider publishableKey={clerkPublishableKey} afterSignOutUrl="/">
+      <App />
+    </ClerkProvider>
   </StrictMode>
 );

@@ -204,6 +204,29 @@ a {
   transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-sign-in {
+  min-height: 44px;
+  padding: 0 8px;
+  border: 0;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-sign-in:hover {
+  color: var(--text);
+}
+
 .header-cta:hover {
   border-color: rgb(255 255 255 / 54%);
   color: var(--ink);
@@ -1918,6 +1941,14 @@ footer span {
     min-height: 44px;
     padding: 0 13px;
     font-size: 12px;
+  }
+
+  .header-actions {
+    gap: 4px;
+  }
+
+  .header-sign-in {
+    display: none;
   }
 
   .wordmark {

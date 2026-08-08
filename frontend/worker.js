@@ -12,9 +12,12 @@ function withSecurityHeaders(response, cacheControl) {
   );
   headers.set(
     "Content-Security-Policy",
-    "default-src 'self'; connect-src 'self' https:; img-src 'self' data:; " +
+    "default-src 'self'; connect-src 'self' https: wss:; img-src 'self' data: https:; " +
       "media-src 'self' blob: https:; style-src 'self' 'unsafe-inline'; " +
-      "font-src 'self'; script-src 'self'; frame-ancestors 'none'; base-uri 'self'"
+      "font-src 'self'; worker-src 'self' blob:; " +
+      "script-src 'self' https://*.clerk.accounts.dev https://challenges.cloudflare.com https://*.protect.clerk.com; " +
+      "frame-src 'self' https://challenges.cloudflare.com https://*.protect.clerk.com; " +
+      "frame-ancestors 'none'; form-action 'self'; base-uri 'self'"
   );
   return new Response(response.body, {
     status: response.status,

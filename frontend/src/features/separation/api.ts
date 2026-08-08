@@ -1,4 +1,10 @@
-import { api, apiError, apiPath, authHeaders } from "../../api/client";
+import {
+  api,
+  apiError,
+  apiPath,
+  authHeaders,
+  type GetAccessToken
+} from "../../api/client";
 
 import type { AudiusTrack, JobPayload } from "./types";
 
@@ -13,7 +19,8 @@ async function json<T>(response: Response): Promise<T> {
 async function submitMultipart(
   file: File,
   profile: string,
-  idempotencyKey: string
+  idempotencyKey: string,
+  getToken: GetAccessToken
 ): Promise<JobPayload> {
   const body = new FormData();
   body.append("file", file);
@@ -21,7 +28,7 @@ async function submitMultipart(
   return json<JobPayload>(
     await fetch(apiPath("/jobs"), {
       method: "POST",
-      headers: { ...authHeaders(), "Idempotency-Key": idempotencyKey },
+      headers: { ...await authHeaders(getToken), "Idempotency-Key": idempotencyKey },
       body
     })
   );
@@ -31,7 +38,8 @@ export async function submitUploadJob(
   file: File,
   profile: string,
   idempotencyKey: string,
-  setStage: (stage: string) => void
+  setStage: (stage: string) => void,
+  getToken: GetAccessToken
 ): Promise<JobPayload> {
   setStage("Requesting private upload");
   const {
@@ -39,7 +47,7 @@ export async function submitUploadJob(
     error: grantError,
     response: grantResponse
   } = await api.POST("/uploads", {
-    headers: authHeaders(),
+    headers: await authHeaders(getToken),
     body: {
       filename: file.name,
       content_type: file.type || "application/octet-stream"
@@ -50,7 +58,7 @@ export async function submitUploadJob(
     const errorPayload = grantError as { error?: string };
     if (grantResponse.status === 503 && errorPayload?.error === "direct_upload_unavailable") {
       setStage("Uploading through local development path");
-      return submitMultipart(file, profile, idempotencyKey);
+      return submitMultipart(file, profile, idempotencyKey, getToken);
     }
     throw apiError(grantError, grantResponse);
   }
@@ -69,7 +77,7 @@ export async function submitUploadJob(
   setStage("Queueing separation job");
   const { data, error, response } = await api.POST("/jobs", {
     headers: {
-      ...authHeaders(),
+      ...await authHeaders(getToken),
       "Idempotency-Key": idempotencyKey
     },
     body: {
@@ -88,12 +96,13 @@ export async function submitAudiusJob(
   trackId: string,
   profile: string,
   idempotencyKey: string,
-  setStage: (stage: string) => void
+  setStage: (stage: string) => void,
+  getToken: GetAccessToken
 ): Promise<JobPayload> {
   setStage("Validating licence and importing from Audius");
   const { data, error, response } = await api.POST("/jobs", {
     headers: {
-      ...authHeaders(),
+      ...await authHeaders(getToken),
       "Idempotency-Key": idempotencyKey
     },
     body: {

@@ -101,7 +101,17 @@ JOB_RETENTION_SECONDS = int(os.getenv("JOB_RETENTION_SECONDS", "604800"))
 AUTH_MODE = os.getenv("AUTH_MODE", "disabled").strip().lower()
 AUTH_JWKS_URL = os.getenv("AUTH_JWKS_URL")
 AUTH_ISSUER = os.getenv("AUTH_ISSUER")
-AUTH_AUDIENCE = os.getenv("AUTH_AUDIENCE")
+_AUTH_AUDIENCE = os.getenv("AUTH_AUDIENCE", "").strip()
+AUTH_AUDIENCE = (
+    _AUTH_AUDIENCE
+    if _AUTH_AUDIENCE and _AUTH_AUDIENCE.lower() not in {"none", "disabled"}
+    else None
+)
+AUTH_AUTHORIZED_PARTIES = tuple(
+    item.strip()
+    for item in os.getenv("AUTH_AUTHORIZED_PARTIES", "").split(",")
+    if item.strip()
+)
 AUTH_ALGORITHMS = tuple(
     item.strip()
     for item in os.getenv("AUTH_ALGORITHMS", "RS256").split(",")
