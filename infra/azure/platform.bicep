@@ -6,6 +6,7 @@ param name string = 'stemsplitter'
 
 param location string = 'eastus2'
 param imageTag string = 'latest'
+param deploymentVersion string = 'local'
 param deployApps bool = true
 param apiMinReplicas int = 1
 param apiMaxReplicas int = 10
@@ -190,6 +191,8 @@ var secretValues = empty(sentryDsn)
   : concat(requiredSecretValues, [{ name: 'sentry-dsn', value: sentryDsn }])
 var requiredEnvironment = [
   { name: 'APP_ENV', value: 'production' }
+  // A unique value forces fresh revisions when referenced secrets rotate.
+  { name: 'DEPLOYMENT_VERSION', value: deploymentVersion }
   { name: 'PUBLIC_API_URL', value: '${publicWebOrigin}/api' }
   { name: 'TRUSTED_HOSTS', value: apiHost }
   { name: 'CORS_ALLOWED_ORIGINS', value: publicWebOrigin }

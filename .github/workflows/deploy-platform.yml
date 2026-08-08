@@ -76,6 +76,7 @@ jobs:
               name="${{ vars.AZURE_APP_NAME }}" \
               location="${{ vars.AZURE_LOCATION }}" \
               imageTag="${{ github.sha }}" \
+              deploymentVersion="${{ github.run_id }}-${{ github.run_attempt }}" \
               deployApps=false \
               databaseUrl="${{ secrets.DATABASE_URL }}" \
               redisUrl="${{ secrets.REDIS_URL }}" \
@@ -128,6 +129,7 @@ jobs:
               name="${{ vars.AZURE_APP_NAME }}" \
               location="${{ vars.AZURE_LOCATION }}" \
               imageTag="${{ github.sha }}" \
+              deploymentVersion="${{ github.run_id }}-${{ github.run_attempt }}" \
               deployApps=true \
               databaseUrl="${{ secrets.DATABASE_URL }}" \
               redisUrl="${{ secrets.REDIS_URL }}" \

@@ -6,6 +6,7 @@ param name string = 'stemsplitter'
 
 param location string = 'eastus2'
 param imageTag string = 'latest'
+param deploymentVersion string = 'local'
 param deployApps bool = true
 param apiMinReplicas int = 1
 param apiMaxReplicas int = 10
@@ -75,6 +76,7 @@ module platform 'platform.bicep' = {
     name: name
     location: location
     imageTag: imageTag
+    deploymentVersion: deploymentVersion
     deployApps: deployApps
     apiMinReplicas: apiMinReplicas
     apiMaxReplicas: apiMaxReplicas
