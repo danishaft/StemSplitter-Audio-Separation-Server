@@ -280,6 +280,7 @@ jobs:
           import json
           import os
           import time
+          import urllib.error
           import urllib.request
 
           origin = os.environ["PUBLIC_WEB_ORIGIN"].rstrip("/")
@@ -287,9 +288,10 @@ jobs:
               "/api/health/live": "ok",
               "/api/health/ready": "ready",
           }
+          max_attempts = 24
           for path, expected_status in checks.items():
               last_error = "not_attempted"
-              for attempt in range(1, 7):
+              for attempt in range(1, max_attempts + 1):
                   try:
                       request = urllib.request.Request(
                           origin + path,
@@ -306,9 +308,22 @@ jobs:
                           raise RuntimeError(f"unexpected payload: {payload}")
                       print(f"{path}: {payload}")
                       break
+                  except urllib.error.HTTPError as exc:
+                      body = exc.read().decode("utf-8", errors="replace")
+                      last_error = f"HTTP {exc.code}: {body[:500]}"
+                      if attempt < max_attempts:
+                          print(
+                              f"Edge attempt {attempt}/{max_attempts} failed: {last_error}",
+                              flush=True,
+                          )
+                          time.sleep(5)
                   except Exception as exc:
                       last_error = f"{type(exc).__name__}: {exc}"
-                      if attempt < 6:
+                      if attempt < max_attempts:
+                          print(
+                              f"Edge attempt {attempt}/{max_attempts} failed: {last_error}",
+                              flush=True,
+                          )
                           time.sleep(5)
               else:
                   raise SystemExit(f"Public edge check failed for {path}: {last_error}")
