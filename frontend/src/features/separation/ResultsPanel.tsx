@@ -1,3 +1,4 @@
+import { useAuth } from "@clerk/react";
 import { useEffect, useState } from "react";
 
 import { apiPath, authHeaders } from "../../api/client";
@@ -96,6 +97,7 @@ function sortStems([left]: [string, string], [right]: [string, string]): number 
 }
 
 export function ResultsPanel({ job }: ResultsPanelProps) {
+  const { getToken } = useAuth();
   const [analysis, setAnalysis] = useState<WaveformAnalysis | null>(null);
   const [analysisError, setAnalysisError] = useState("");
   const [muted, setMuted] = useState<Set<string>>(new Set());
@@ -122,7 +124,8 @@ export function ResultsPanel({ job }: ResultsPanelProps) {
     }
     const controller = new AbortController();
     setAnalysisError("");
-    fetch(apiPath(waveformUrl), { headers: authHeaders(), signal: controller.signal })
+    void authHeaders(getToken)
+      .then((headers) => fetch(apiPath(waveformUrl), { headers, signal: controller.signal }))
       .then((response) => {
         if (!response.ok) throw new Error(`Waveform analysis failed (${response.status})`);
         return response.json() as Promise<WaveformAnalysis>;
@@ -133,7 +136,7 @@ export function ResultsPanel({ job }: ResultsPanelProps) {
         setAnalysisError("Waveform analysis is unavailable. Audio downloads remain intact.");
       });
     return () => controller.abort();
-  }, [waveformUrl]);
+  }, [getToken, waveformUrl]);
 
   useEffect(() => {
     if (!selectedStem && stems.length) setSelectedStem(stems[0][0]);

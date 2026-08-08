@@ -25,9 +25,12 @@ jobs:
         env:
           AZURE_APP_NAME: ${{ vars.AZURE_APP_NAME }}
           AZURE_LOCATION: ${{ vars.AZURE_LOCATION }}
+          AUTH_AUTHORIZED_PARTIES: ${{ vars.AUTH_AUTHORIZED_PARTIES }}
+          AUTH_ISSUER: ${{ vars.AUTH_ISSUER }}
+          AUTH_JWKS_URL: ${{ vars.AUTH_JWKS_URL }}
           PUBLIC_WEB_ORIGIN: ${{ vars.PUBLIC_WEB_ORIGIN }}
         run: |
-          for name in AZURE_APP_NAME AZURE_LOCATION PUBLIC_WEB_ORIGIN; do
+          for name in AZURE_APP_NAME AZURE_LOCATION AUTH_AUTHORIZED_PARTIES AUTH_ISSUER AUTH_JWKS_URL PUBLIC_WEB_ORIGIN; do
             if [ -z "${!name}" ]; then
               echo "::error::$name is not configured in the production environment"
               exit 1
@@ -93,6 +96,8 @@ jobs:
               authJwksUrl="${{ vars.AUTH_JWKS_URL }}" \
               authIssuer="${{ vars.AUTH_ISSUER }}" \
               authAudience="${{ vars.AUTH_AUDIENCE }}" \
+              authAuthorizedParties="${{ vars.AUTH_AUTHORIZED_PARTIES }}" \
+              authAlgorithms="${{ vars.AUTH_ALGORITHMS }}" \
               objectStorageBucket="${{ vars.OBJECT_STORAGE_BUCKET }}" \
               objectStorageEndpointUrl="${{ vars.OBJECT_STORAGE_ENDPOINT_URL }}" \
               objectStorageRegion="${{ vars.OBJECT_STORAGE_REGION }}" \
@@ -146,6 +151,8 @@ jobs:
               authJwksUrl="${{ vars.AUTH_JWKS_URL }}" \
               authIssuer="${{ vars.AUTH_ISSUER }}" \
               authAudience="${{ vars.AUTH_AUDIENCE }}" \
+              authAuthorizedParties="${{ vars.AUTH_AUTHORIZED_PARTIES }}" \
+              authAlgorithms="${{ vars.AUTH_ALGORITHMS }}" \
               objectStorageBucket="${{ vars.OBJECT_STORAGE_BUCKET }}" \
               objectStorageEndpointUrl="${{ vars.OBJECT_STORAGE_ENDPOINT_URL }}" \
               objectStorageRegion="${{ vars.OBJECT_STORAGE_REGION }}" \
@@ -254,6 +261,7 @@ jobs:
         working-directory: frontend
         env:
           VITE_API_BASE_URL: /api
+          VITE_CLERK_PUBLISHABLE_KEY: ${{ vars.CLERK_PUBLISHABLE_KEY }}
       - uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

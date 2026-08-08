@@ -8,13 +8,17 @@ const apiBaseUrl = (configuredBaseUrl || (import.meta.env.DEV ? "/api" : "")).re
 
 export const api = createClient<paths>({ baseUrl: apiBaseUrl });
 
+export type GetAccessToken = () => Promise<string | null>;
+
 export function apiPath(path: string): string {
   if (/^https?:\/\//i.test(path)) return path;
   return `${apiBaseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
-export function authHeaders(): Record<string, string> {
-  const token = window.localStorage.getItem("stemsplitter_access_token");
+export async function authHeaders(
+  getToken: GetAccessToken
+): Promise<Record<string, string>> {
+  const token = await getToken();
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 

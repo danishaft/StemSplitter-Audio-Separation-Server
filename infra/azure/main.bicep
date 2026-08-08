@@ -50,6 +50,8 @@ param sentryDsn string = ''
 param authJwksUrl string
 param authIssuer string
 param authAudience string
+param authAuthorizedParties string
+param authAlgorithms string = 'RS256'
 param objectStorageBucket string
 param objectStorageEndpointUrl string
 param objectStorageRegion string
@@ -97,6 +99,8 @@ module platform 'platform.bicep' = {
     authJwksUrl: authJwksUrl
     authIssuer: authIssuer
     authAudience: authAudience
+    authAuthorizedParties: authAuthorizedParties
+    authAlgorithms: authAlgorithms
     objectStorageBucket: objectStorageBucket
     objectStorageEndpointUrl: objectStorageEndpointUrl
     objectStorageRegion: objectStorageRegion

@@ -1,3 +1,10 @@
+import {
+  SignInButton,
+  SignUpButton,
+  Show,
+  UserButton
+} from "@clerk/react";
+
 import { Icon } from "./Icon";
 
 interface StudioHeaderProps {
@@ -18,9 +25,22 @@ export function StudioHeader({
           <a href="#studio">Studio</a>
           <a href="#standards">Output standards</a>
         </nav>
-        <a className="header-cta" href={hasSession ? "#results" : "#studio"}>
-          {hasSession ? "Open session" : "Split a track"}
-        </a>
+        <div className="header-actions">
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button className="header-sign-in" type="button">Sign in</button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button className="header-cta" type="button">Create account</button>
+            </SignUpButton>
+          </Show>
+          <Show when="signed-in">
+            <a className="header-cta" href={hasSession ? "#results" : "#studio"}>
+              {hasSession ? "Open session" : "Split a track"}
+            </a>
+            <UserButton />
+          </Show>
+        </div>
       </header>
 
       {!hasSession ? (

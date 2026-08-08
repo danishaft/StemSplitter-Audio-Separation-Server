@@ -6,6 +6,7 @@ from threading import Lock
 from .config import (
     AUTH_ALGORITHMS,
     AUTH_AUDIENCE,
+    AUTH_AUTHORIZED_PARTIES,
     AUTH_ISSUER,
     AUTH_JWKS_URL,
     AUTH_MODE,
@@ -36,7 +37,7 @@ def authenticate(authorization: str | None) -> Principal:
         raise AuthError("unsupported_auth_mode", 503)
     if not authorization or not authorization.startswith("Bearer "):
         raise AuthError("authentication_required")
-    if not AUTH_JWKS_URL or not AUTH_ISSUER or not AUTH_AUDIENCE:
+    if not AUTH_JWKS_URL or not AUTH_ISSUER:
         raise AuthError("authentication_not_configured", 503)
 
     token = authorization.removeprefix("Bearer ").strip()
@@ -46,13 +47,17 @@ def authenticate(authorization: str | None) -> Principal:
         import jwt
 
         signing_key = _jwk_client(jwt).get_signing_key_from_jwt(token)
+        decode_options = {
+            "require": ["exp", "iat", "sub"],
+            "verify_aud": bool(AUTH_AUDIENCE),
+        }
         claims = jwt.decode(
             token,
             signing_key.key,
             algorithms=list(AUTH_ALGORITHMS),
             audience=AUTH_AUDIENCE,
             issuer=AUTH_ISSUER,
-            options={"require": ["exp", "iat", "sub"]},
+            options=decode_options,
         )
     except AuthError:
         raise
@@ -61,6 +66,10 @@ def authenticate(authorization: str | None) -> Principal:
     subject = str(claims.get("sub") or "").strip()
     if not subject:
         raise AuthError("invalid_access_token")
+    if AUTH_AUTHORIZED_PARTIES:
+        authorized_party = str(claims.get("azp") or "").strip()
+        if authorized_party not in AUTH_AUTHORIZED_PARTIES:
+            raise AuthError("invalid_access_token")
     return Principal(subject=subject, claims=dict(claims))
 
 

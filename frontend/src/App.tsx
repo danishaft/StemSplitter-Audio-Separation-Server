@@ -1,3 +1,4 @@
+import { useAuth, useClerk } from "@clerk/react";
 import { useEffect, useEffectEvent, useState } from "react";
 
 import { api, apiError, authHeaders } from "./api/client";
@@ -24,6 +25,8 @@ const SUPPORTED_FILE = /\.(flac|m4a|mp3|ogg|wav)$/i;
 const TERMINAL_STATES = new Set(["completed", "error", "failed", "cancelled"]);
 
 function App() {
+  const { getToken, isLoaded: authLoaded, isSignedIn } = useAuth();
+  const { openSignIn } = useClerk();
   const [capabilities, setCapabilities] = useState<Capabilities | null>(null);
   const [capabilitiesState, setCapabilitiesState] = useState<"loading" | "ready" | "error">("loading");
   const [profile, setProfile] = useState("");
@@ -47,7 +50,7 @@ function App() {
       const { data: payload, error: requestError, response } = await api.GET(
         "/jobs/{job_id}",
         {
-          headers: authHeaders(),
+          headers: await authHeaders(getToken),
           params: { path: { job_id: jobId } }
         }
       );
@@ -151,6 +154,11 @@ function App() {
 
   async function start(): Promise<void> {
     if (!hasInput || !profile) return;
+    if (!authLoaded) return;
+    if (!isSignedIn) {
+      await openSignIn();
+      return;
+    }
     setBusy(true);
     setConnectionIssue(false);
     setSourceNotice("");
@@ -162,8 +170,20 @@ function App() {
     });
     try {
       const payload = inputMode === "audius" && selectedTrack
-        ? await submitAudiusJob(selectedTrack.id, profile, crypto.randomUUID(), setStage)
-        : await submitUploadJob(file as File, profile, crypto.randomUUID(), setStage);
+        ? await submitAudiusJob(
+            selectedTrack.id,
+            profile,
+            crypto.randomUUID(),
+            setStage,
+            getToken
+          )
+        : await submitUploadJob(
+            file as File,
+            profile,
+            crypto.randomUUID(),
+            setStage,
+            getToken
+          );
       setJob(payload);
       window.history.replaceState({}, "", `?job=${encodeURIComponent(payload.job_id)}`);
       await refreshJob(payload.job_id);
@@ -184,7 +204,7 @@ function App() {
       const { data: payload, error: requestError, response } = await api.POST(
         "/jobs/{job_id}/cancel",
         {
-          headers: authHeaders(),
+          headers: await authHeaders(getToken),
           params: { path: { job_id: job.job_id } }
         }
       );
@@ -285,8 +305,14 @@ function App() {
                 <small>Session source</small>
                 <strong>{sourceName || "No track selected"}</strong>
               </div>
-              <button disabled={!hasInput || !profile || busy} onClick={start} type="button">
-                {busy ? "Separation in progress" : inputMode === "audius" ? "Import and separate" : "Start separation"}
+              <button disabled={!hasInput || !profile || busy || !authLoaded} onClick={start} type="button">
+                {busy
+                  ? "Separation in progress"
+                  : !isSignedIn
+                    ? "Sign in to separate"
+                    : inputMode === "audius"
+                      ? "Import and separate"
+                      : "Start separation"}
                 <Icon name="arrow" size={19} />
               </button>
             </div>

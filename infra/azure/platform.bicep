@@ -50,6 +50,8 @@ param sentryDsn string = ''
 param authJwksUrl string
 param authIssuer string
 param authAudience string
+param authAuthorizedParties string
+param authAlgorithms string = 'RS256'
 param objectStorageBucket string
 param objectStorageEndpointUrl string
 param objectStorageRegion string
@@ -218,7 +220,8 @@ var requiredEnvironment = [
   { name: 'AUTH_JWKS_URL', value: authJwksUrl }
   { name: 'AUTH_ISSUER', value: authIssuer }
   { name: 'AUTH_AUDIENCE', value: authAudience }
-  { name: 'AUTH_ALGORITHMS', value: 'ES256' }
+  { name: 'AUTH_AUTHORIZED_PARTIES', value: authAuthorizedParties }
+  { name: 'AUTH_ALGORITHMS', value: authAlgorithms }
   { name: 'GPU_WORKER_URL', value: gpuWorkerUrl }
   { name: 'GPU_WORKER_API_KEY', secretRef: 'gpu-worker-api-key' }
   { name: 'GPU_WORKER_MAX_EXECUTION_SECONDS', value: '300' }
