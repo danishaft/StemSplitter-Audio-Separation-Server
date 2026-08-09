@@ -17,7 +17,12 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      # openapi-typescript parses only our generated JSON schema. Its Redocly
+      # dependency has no compatible js-yaml 5 release, and the advisory's
+      # YAML !!omap path is not reachable from this trusted input.
       - uses: actions/dependency-review-action@2031cfc080254a8a887f58cffee85186f0e49e48 # v4
+        with:
+          allow-ghsas: GHSA-5p4m-2wfm-xmqj
 
   codeql:
     runs-on: ubuntu-24.04
