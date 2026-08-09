@@ -5,7 +5,7 @@
     "incremental": true,
     "jsx": "react-jsx",
     "plugins": [{ "name": "next" }],
-    "types": ["node"]
+    "types": ["node", "@cloudflare/workers-types"]
   },
   "include": [
     "next-env.d.ts",

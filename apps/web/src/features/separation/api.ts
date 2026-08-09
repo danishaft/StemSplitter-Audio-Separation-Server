@@ -9,9 +9,14 @@ import {
 import type { AudiusTrack, JobPayload } from "./types";
 
 async function json<T>(response: Response): Promise<T> {
-  const payload = await response.json().catch(() => ({}));
+  const payload: unknown = await response.json().catch(() => ({}));
   if (!response.ok) {
-    throw new Error(payload.message || payload.error || `Request failed (${response.status})`);
+    const errorPayload = payload && typeof payload === "object"
+      ? payload as { error?: string; message?: string }
+      : {};
+    throw new Error(
+      errorPayload.message || errorPayload.error || `Request failed (${response.status})`
+    );
   }
   return payload as T;
 }

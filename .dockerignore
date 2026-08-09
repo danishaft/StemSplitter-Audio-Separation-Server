@@ -19,6 +19,7 @@ apps/**/.next
 apps/**/.open-next
 apps/**/.wrangler
 apps/**/node_modules
+apps/**/out
 packages/**/node_modules
 *.tsbuildinfo
 infra

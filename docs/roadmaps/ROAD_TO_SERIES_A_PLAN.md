@@ -582,10 +582,11 @@ actually experience on desktop and mobile.
 - [x] `P3-01B` Move `frontend/` to `apps/web/`, establish the `pnpm` and
   Turborepo workspace, and migrate the web runtime to Next.js App Router
   without changing approved product behavior or design.
-- [ ] `P3-01C` Deploy the Next.js artifact to a Cloudflare Workers preview
-  through OpenNext and pass visual, API, accessibility, and browser parity.
-- [ ] `P3-01D` Enforce the rendering boundary: public routes use static
-  generation or ISR, authenticated routes call FastAPI, and the audio studio
+- [x] `P3-01C` Deploy the Next.js artifact to a Cloudflare Workers preview
+  through Workers Assets and pass visual, API, accessibility, and browser
+  parity.
+- [x] `P3-01D` Enforce the rendering boundary: public routes use static
+  generation, authenticated requests call FastAPI, and the audio studio
   remains a client-component island.
 - [x] `P3-02` Consume `GET /capabilities` instead of hardcoding profiles,
   stems, limits, or source types.
@@ -867,8 +868,8 @@ and their first production candidates complete the initial qualification gate.
 This sequencing does not permit public access before the remaining product,
 security, billing, reliability, and release gates pass.
 
-- Cloudflare Workers serves the Next.js application through OpenNext and uses
-  Cloudflare's CDN for static and prerendered assets.
+- Cloudflare Workers Assets serves the static Next.js export, injects security
+  headers, and proxies API metadata while media bypasses the Worker.
 - Cloudflare manages DNS, TLS, CDN behavior, web application firewall rules,
   denial-of-service controls, and edge rate limits.
 - Azure Container Apps runs separate FastAPI API, RQ worker, and scheduled
@@ -952,9 +953,9 @@ service misses an approved reliability, cost, latency, or capacity target.
 - [ ] `P7-27` Build and deploy separate FastAPI API, RQ worker, and maintenance
   images to Azure Container Apps with immutable revisions, health checks,
   resource limits, controlled scaling, and rollback.
-- [ ] `P7-28` Deploy Next.js to Cloudflare Workers through OpenNext, verify its
-  production API origin, cache policy, ISR behavior, and runtime compatibility,
-  and embed no service credentials.
+- [ ] `P7-28` Deploy the Next.js static export to Cloudflare Workers Assets,
+  verify its production API origin, cache policy, runtime compatibility, and
+  free-tier bundle limit, and embed no service credentials.
 - [ ] `P7-29` Complete Clerk signup, login, token refresh, logout, account
   recovery, production-domain, and email-delivery flows for web and mobile.
 - [ ] `P7-30` Store production secrets in Azure Key Vault and synchronize only
@@ -1296,6 +1297,7 @@ or architecture. Include the reason and reversal condition.
 | August 8, 2026 | Use Resend for production SMTP, Turnstile for web abuse defense, and Expo Push Service for native completion notifications. | These close real communication, authentication-delivery, and paid-compute abuse gaps without introducing another product backend. | Replace a provider only after delivery, privacy, reliability, cost, or regional requirements fail an approved gate. |
 | August 8, 2026 | Use Weights & Biases for experiment tracking while private object storage and signed manifests remain the portable model and deployment authorities. This supersedes the planned MLflow catalog. | Existing training already emits W&B evidence, while production and self-hosted releases must not depend on a hosted experiment dashboard. | Reconsider the experiment UI if cost, export, access, or reproducibility requirements fail; never move deployment authority out of signed manifests. |
 | August 9, 2026 | Use Clerk as the managed web and mobile identity provider while Supabase remains PostgreSQL only. FastAPI remains the authorization boundary. | The implemented Next.js shell already uses Clerk, and running a second auth authority would create conflicting sessions, recovery, and email paths. | Reconsider only if Clerk fails approved cost, portability, privacy, or reliability gates; self-hosted deployments retain local identity and OIDC options. |
+| August 9, 2026 | Deploy the current Next.js application as a static export behind a typed Cloudflare Worker. Defer OpenNext until a measured route requires SSR or ISR. This supersedes the August 8 OpenNext default. | The OpenNext preview was 1.21 MiB compressed and exceeded Cloudflare Free's 1 MiB Worker limit; the static gateway is 1.31 KiB compressed and preserves the current product behavior, API streaming, CSP nonces, and SSG. | Adopt OpenNext when a production route requires server rendering and the paid runtime, bundle, latency, and security gates pass. |
 
 ## Discovery log
 

@@ -27,6 +27,7 @@ apps/web/.next/
 apps/web/.open-next/
 apps/web/.wrangler/
 apps/web/node_modules/
+apps/web/out/
 packages/*/node_modules/
 *.tsbuildinfo
 .terraform/

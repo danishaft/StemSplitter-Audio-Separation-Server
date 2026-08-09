@@ -13,7 +13,7 @@ The product uses a clear control-plane, data-plane, and execution-plane split.
 
 - Next.js App Router provides the browser workspace.
 - FastAPI and Uvicorn provide the API control plane.
-- OpenNext deploys the web application and API gateway to Cloudflare Workers.
+- Cloudflare Workers Assets deploys the static Next.js export and API gateway.
 - PostgreSQL stores authoritative job state when `JOB_STORE_BACKEND=postgres`.
 - Redis and RQ provide durable dispatch when `JOB_DISPATCH_BACKEND=rq`.
 - Modal provides GPU execution and model inference.

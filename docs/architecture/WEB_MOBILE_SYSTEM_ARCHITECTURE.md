@@ -89,7 +89,7 @@ deployment assumptions from leaking into the product.
 | [Backblaze S3-compatible API](https://www.backblaze.com/docs/en/cloud-storage-call-the-s3-compatible-api) | Presigned access, multipart creation, part upload, completion, abort, and private object storage | Permanent download URLs and client-held application keys |
 | [Clerk Expo SDK](https://clerk.com/docs/expo/getting-started/quickstart) | One managed identity, native token persistence, and deep-link completion | Direct client access to product tables or backend credentials |
 | [Next.js App Router](https://nextjs.org/docs/app) | Static and dynamic rendering, route layouts, metadata, error boundaries, and client-component isolation for the studio | A second product API, direct database access, or job orchestration in Server Actions |
-| [Cloudflare Next.js guide](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/) | OpenNext deployment, Workers runtime verification, static assets, SSR, SSG, ISR, and streaming | Assuming Vercel-specific behavior without a Cloudflare preview test |
+| [Cloudflare Next.js guide](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/) | Workers Assets, runtime verification, SSG, and a measured upgrade path to OpenNext | Shipping SSR or ISR machinery before a route requires it |
 | [Clerk email delivery](https://clerk.com/docs/guides/development/customization/email-sms-templates) | Managed authentication delivery and versioned templates | Mixing product-notification delivery into authentication flows |
 | [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/get-started/) | Server-verified bot defense on abuse-sensitive anonymous flows | Client-only verification or challenges on every authenticated request |
 | [Expo push notifications](https://docs.expo.dev/push-notifications/overview/) | Cross-platform completion notifications through Expo, FCM, and APNs | Treating push delivery as authoritative job state |
@@ -111,7 +111,7 @@ these choices unless an architecture decision record approves a replacement.
 | Package manager | `pnpm` 10 with isolated dependencies | Deterministic workspaces and explicit dependency ownership |
 | Task graph | Turborepo 2 | Cached, dependency-aware lint, type, test, and build tasks |
 | Web | Next.js App Router, React 19, and TypeScript 5.9 | One hybrid marketing and product client with explicit server and client boundaries |
-| Web rendering | Static generation or ISR for public discovery routes; client components for the authenticated studio | Search-visible HTML without forcing browser audio state through a server runtime |
+| Web rendering | Static generation for public routes; client components for the authenticated studio | Search-visible HTML without forcing browser audio state through a server runtime |
 | Mobile | Expo SDK 57 and its pinned React Native version | Current supported Expo baseline with first-class workspaces |
 | Mobile routing | Expo Router with typed and protected routes | Native deep links and filesystem route ownership |
 | Server state | TanStack Query 5 | Caching, cancellation, retry policy, and reconnect behavior |
@@ -138,7 +138,7 @@ these choices unless an architecture decision record approves a replacement.
 | Web abuse defense | Cloudflare Turnstile with mandatory FastAPI verification | Protects signup, recovery, imports, and anonymous job admission before paid work |
 | Mobile notifications | Expo Push Service over FCM and APNs | One native delivery path for non-authoritative completion hints |
 | Search discovery | Next.js metadata, JSON-LD, sitemap, robots, Google Search Console, and Bing Webmaster Tools | Indexable public pages and measurable search health without an SEO SaaS dependency |
-| Web hosting | Next.js on Cloudflare Workers through OpenNext | Keeps CDN, edge security, hybrid rendering, and origin verification on Cloudflare |
+| Web hosting | Next.js static export with Cloudflare Workers Assets | Keeps CDN, edge security, and origin verification inside the free-tier limit |
 | Native delivery | EAS Build, Submit, Update, and fingerprint runtime versions | Reproducible store builds and safe staged over-the-air updates |
 | Dependency updates | Renovate with grouped Expo and workspace updates | Prevents incompatible piecemeal native updates |
 
@@ -192,7 +192,7 @@ StemSplitter-Audio-Separation-Server/
 │   │   │   ├── lib/
 │   │   │   └── styles/
 │   │   ├── next.config.ts
-│   │   ├── open-next.config.ts
+│   │   ├── worker.ts
 │   │   └── wrangler.jsonc
 │   └── mobile/
 │       ├── app/
@@ -655,11 +655,12 @@ Glass effects remain decorative and must preserve contrast without them.
 ## Web delivery, discovery, and security headers
 
 Next.js owns both the public product site and authenticated web application.
-Public discovery routes use static generation by default and ISR only when
-content must change without a full deployment. Authenticated routes and every
+Public discovery routes use static generation. Authenticated routes and every
 user-specific project URL are excluded from indexing. The studio remains a
 client-component island so Web Audio, waveform state, and signed media access
-never depend on React Server Component execution.
+never depend on React Server Component execution. OpenNext becomes eligible
+only after a measured route requires SSR or ISR and its runtime cost is
+approved.
 
 The first public route set includes the landing page, feature explanations,
 pricing when billing is approved, competitor comparisons, legal pages, and a
@@ -729,8 +730,9 @@ Clerk is the managed identity provider, while FastAPI remains the resource
 authorization boundary. A client-side protected route improves navigation but
 never grants access to a job or artifact.
 
-Web uses the official Clerk Next.js integration. Mobile uses the official
-Clerk Expo SDK with deep-link completion and a SecureStore-backed token cache.
+Web uses Clerk's React client SDK inside the client-only studio boundary.
+Mobile uses the official Clerk Expo SDK with deep-link completion and a
+SecureStore-backed token cache.
 Access tokens remain in protected provider-managed storage. Signing out clears
 query caches, upload recovery records associated with the account, playback
 caches, and device push registration.
@@ -960,10 +962,10 @@ Expo-compatible monorepo without changing product behavior.
 - Replace the Vite entry point with Next.js App Router and preserve the
   approved landing page, API behavior, accessibility, and visual regression
   baseline.
-- Add OpenNext and a Cloudflare Workers preview that runs before deployment.
+- Add a Cloudflare Workers Assets preview that runs before deployment.
 - Keep preview deployment isolated in `deploy-web-preview.yml`; it may read the
   live API but cannot overwrite the production Worker.
-- Establish the rendering boundary: public routes are static or ISR,
+- Establish the rendering boundary: public routes are statically generated,
   authenticated routes use the FastAPI client, and the studio is client-only.
 - Update Docker, Cloudflare, Makefile, CI, and deployment paths atomically.
 - Create `packages/api-client`, move OpenAPI generation into it, and update web
@@ -1110,9 +1112,9 @@ media without terminal access or staff intervention.
 
 The architecture is implemented only when every statement below is true.
 
-- [ ] One `pnpm` lockfile and one Turbo task graph govern all TypeScript code.
-- [ ] Web uses Next.js App Router and deploys to Cloudflare Workers through a
-  tested OpenNext artifact.
+- [x] One `pnpm` lockfile and one Turbo task graph govern all TypeScript code.
+- [x] Web uses Next.js App Router and deploys through a tested static-export
+  Cloudflare Worker artifact.
 - [ ] Public routes render indexable HTML, while authenticated and user-media
   routes remain excluded from search indexes.
 - [ ] FastAPI remains the only product backend; Next.js owns no durable product

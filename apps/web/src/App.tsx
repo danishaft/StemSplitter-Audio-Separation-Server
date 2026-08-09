@@ -1,6 +1,6 @@
 "use client";
 
-import { useAuth, useClerk } from "@clerk/nextjs";
+import { useAuth, useClerk } from "@clerk/react";
 import { useEffect, useEffectEvent, useState } from "react";
 
 import { api, apiError, authHeaders } from "@stemsplitter/api-client";

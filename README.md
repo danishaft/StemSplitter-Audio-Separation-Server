@@ -36,7 +36,7 @@ The production-shaped path keeps control-plane work off the GPU and audio bytes
 out of PostgreSQL and Redis.
 
 ```text
-Next.js 16 + OpenNext on Cloudflare Workers/WAF
+Next.js 16 static export + Cloudflare Workers Assets/WAF
   -> private presigned upload
   -> Azure Container Apps FastAPI API
   -> PostgreSQL job authority

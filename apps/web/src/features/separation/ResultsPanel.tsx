@@ -1,4 +1,4 @@
-import { useAuth } from "@clerk/nextjs";
+import { useAuth } from "@clerk/react";
 import { useEffect, useState } from "react";
 
 import { apiPath, authHeaders } from "@stemsplitter/api-client";

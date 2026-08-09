@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "build:worker": "opennextjs-cloudflare build",
+    "build:worker": "next build",
     "check": "pnpm run typecheck",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "deploy": "next build && wrangler deploy",
     "dev": "next dev",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "preview": "next build && wrangler dev",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@clerk/nextjs": "7.7.1",
+    "@clerk/react": "6.13.1",
     "@fontsource/ibm-plex-mono": "5.3.0",
     "@fontsource/instrument-sans": "5.3.0",
     "@fontsource/sora": "5.3.0",
@@ -22,7 +22,7 @@
     "react-dom": "catalog:react19"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "1.20.2",
+    "@cloudflare/workers-types": "5.20260809.1",
     "@types/node": "24.13.3",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",

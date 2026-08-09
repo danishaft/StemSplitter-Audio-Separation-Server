@@ -3,7 +3,7 @@ import {
   SignUpButton,
   Show,
   UserButton
-} from "@clerk/nextjs";
+} from "@clerk/react";
 
 import { Icon } from "./Icon";
 
