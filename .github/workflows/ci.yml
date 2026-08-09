@@ -32,15 +32,20 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        with:
+          version: 10.28.2
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: "22"
-          cache: npm
-          cache-dependency-path: frontend/package-lock.json
-      - run: npm ci
-        working-directory: frontend
-      - run: npm run build
-        working-directory: frontend
+          node-version: "24"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm --filter @stemsplitter/web build:worker
+        env:
+          NEXT_PUBLIC_API_BASE_URL: /api
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_cmVsYXhlZC1saW9uZmlzaC00NC5jbGVyay5hY2NvdW50cy5kZXYk
 
   container:
     runs-on: ubuntu-24.04
@@ -71,15 +76,19 @@ jobs:
           terraform fmt -check
           terraform init -backend=false
           terraform validate
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        with:
+          version: 10.28.2
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: "22"
-          cache: npm
-          cache-dependency-path: frontend/package-lock.json
-      - run: npm ci
-        working-directory: frontend
-      - run: npm run build
-        working-directory: frontend
+          node-version: "24"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @stemsplitter/web build:worker
+        env:
+          NEXT_PUBLIC_API_BASE_URL: /api
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_cmVsYXhlZC1saW9uZmlzaC00NC5jbGVyay5hY2NvdW50cy5kZXYk
       - name: Validate Cloudflare Worker bundle
-        working-directory: frontend
-        run: npx wrangler deploy --dry-run
+        working-directory: apps/web
+        run: pnpm exec wrangler deploy --dry-run

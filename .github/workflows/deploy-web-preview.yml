@@ -1,0 +1,104 @@
+name: deploy web preview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: stemsplitter-web-next-preview
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    environment: production
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: azure/login@a457da9ea143d694b1b9c7c869ebb04ebe844ef5 # v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Resolve the live API origin
+        id: api
+        env:
+          AZURE_APP_NAME: ${{ vars.AZURE_APP_NAME }}
+        run: |
+          fqdn="$(
+            az containerapp list \
+              --query "[?tags.application=='$AZURE_APP_NAME' && ends_with(name, '-api')].properties.configuration.ingress.fqdn | [0]" \
+              --output tsv
+          )"
+          if [ -z "$fqdn" ]; then
+            echo "::error::Could not resolve the deployed API Container App"
+            exit 1
+          fi
+          echo "origin=https://$fqdn" >> "$GITHUB_OUTPUT"
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        with:
+          version: 10.28.2
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @stemsplitter/web build:worker
+        env:
+          NEXT_PUBLIC_API_BASE_URL: /api
+          NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: ${{ vars.CLERK_PUBLISHABLE_KEY }}
+      - uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: apps/web
+          command: deploy --name stemsplitter-web-next-preview --var API_ORIGIN:${{ steps.api.outputs.origin }}
+          secrets: |
+            ORIGIN_VERIFY_SECRET
+        env:
+          ORIGIN_VERIFY_SECRET: ${{ secrets.EDGE_VERIFY_SECRET }}
+      - name: Verify preview web and API routes
+        env:
+          PUBLIC_WEB_ORIGIN: ${{ vars.PUBLIC_WEB_ORIGIN }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import time
+          import urllib.request
+          from urllib.parse import urlsplit
+
+          production = urlsplit(os.environ["PUBLIC_WEB_ORIGIN"])
+          account_domain = production.netloc.split(".", 1)[1]
+          origin = f"{production.scheme}://stemsplitter-web-next-preview.{account_domain}"
+
+          checks = (("/", "text/html", None), ("/api/health/live", "application/json", "ok"))
+          for path, expected_type, expected_status in checks:
+              last_error = "not_attempted"
+              for attempt in range(1, 13):
+                  try:
+                      request = urllib.request.Request(
+                          origin + path,
+                          headers={"Cache-Control": "no-cache"},
+                      )
+                      with urllib.request.urlopen(request, timeout=20) as response:
+                          content_type = response.headers.get_content_type()
+                          body = response.read()
+                      if content_type != expected_type:
+                          raise RuntimeError(f"expected {expected_type}, got {content_type}")
+                      if expected_status is not None:
+                          payload = json.loads(body)
+                          if payload.get("status") != expected_status:
+                              raise RuntimeError(f"unexpected payload: {payload}")
+                      print(f"{origin + path}: ok")
+                      break
+                  except Exception as exc:
+                      last_error = f"{type(exc).__name__}: {exc}"
+                      if attempt < 12:
+                          time.sleep(5)
+              else:
+                  raise SystemExit(f"Preview check failed for {path}: {last_error}")
+          PY

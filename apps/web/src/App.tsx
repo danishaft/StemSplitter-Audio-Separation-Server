@@ -1,7 +1,9 @@
+"use client";
+
 import { useAuth, useClerk } from "@clerk/react";
 import { useEffect, useEffectEvent, useState } from "react";
 
-import { api, apiError, authHeaders } from "./api/client";
+import { api, apiError, authHeaders } from "@stemsplitter/api-client";
 import {
   searchAudiusTracks,
   submitAudiusJob,

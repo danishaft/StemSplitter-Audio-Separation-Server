@@ -18,7 +18,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("frontend/src/api/openapi.json"),
+        default=Path("packages/api-client/src/openapi.json"),
     )
     args = parser.parse_args()
     args.output.parent.mkdir(parents=True, exist_ok=True)

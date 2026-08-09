@@ -2,9 +2,7 @@ import createClient from "openapi-fetch";
 
 import type { paths } from "./schema";
 
-
-const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL;
-const apiBaseUrl = (configuredBaseUrl || (import.meta.env.DEV ? "/api" : "")).replace(/\/$/, "");
+const apiBaseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL || "/api").replace(/\/$/, "");
 
 export const api = createClient<paths>({ baseUrl: apiBaseUrl });
 
@@ -31,3 +29,5 @@ export function apiError(error: unknown, response: Response): Error {
   }
   return new Error(`Request failed (${response.status})`);
 }
+
+export type { components, paths } from "./schema";

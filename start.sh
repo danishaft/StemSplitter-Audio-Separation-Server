@@ -16,17 +16,13 @@ if [[ -f "$SCRIPT_DIR/.env.local" ]]; then
   set +a
 fi
 
-if command -v npm >/dev/null 2>&1 && [[ -d "$SCRIPT_DIR/frontend/node_modules" ]]; then
-  npm --prefix "$SCRIPT_DIR/frontend" run build
-fi
-
-echo "Starting Stem Separator server at http://localhost:5000 ..."
+echo "Starting StemSplitter API at http://localhost:5000 ..."
 "$VENV_DIR/bin/python" audio_api.py &
 SERVER_PID=$!
 trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT INT TERM
 
 sleep 2
-xdg-open http://localhost:5000 2>/dev/null || true
+xdg-open http://localhost:5000/docs 2>/dev/null || true
 
-echo "Server running (PID $SERVER_PID). Press Ctrl+C to stop."
+echo "API running (PID $SERVER_PID). Press Ctrl+C to stop."
 wait "$SERVER_PID"

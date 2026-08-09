@@ -1,0 +1,22 @@
+{
+  "name": "@stemsplitter/api-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/client.ts"
+  },
+  "scripts": {
+    "api:generate": "openapi-typescript src/openapi.json -o src/schema.d.ts",
+    "check": "pnpm run typecheck",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "openapi-fetch": "0.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "openapi-typescript": "7.13.0",
+    "typescript": "catalog:"
+  }
+}

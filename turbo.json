@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "api:generate": {
+      "cache": false,
+      "outputs": ["src/schema.d.ts"]
+    },
+    "build": {
+      "dependsOn": ["^build", "^typecheck"],
+      "env": ["NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY", "NEXT_PUBLIC_API_BASE_URL"],
+      "outputs": [".next/**", "!.next/cache/**", "out/**"]
+    },
+    "check": {
+      "dependsOn": ["^check"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
+      "outputs": []
+    }
+  }
+}

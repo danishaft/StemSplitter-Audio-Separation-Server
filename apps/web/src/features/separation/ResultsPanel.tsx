@@ -1,7 +1,7 @@
 import { useAuth } from "@clerk/react";
 import { useEffect, useState } from "react";
 
-import { apiPath, authHeaders } from "../../api/client";
+import { apiPath, authHeaders } from "@stemsplitter/api-client";
 import { formatDuration } from "./format";
 import { Icon } from "./Icon";
 import type { JobPayload } from "./types";

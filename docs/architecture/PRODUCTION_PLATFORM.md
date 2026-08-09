@@ -55,7 +55,7 @@ application wholesale.
 | Media lifecycle | `immich-app/immich` | Private media, separate background workers, explicit maintenance, health checks, and scheduled backup jobs |
 | Queue operations | `paperless-ngx/paperless-ngx` | Separate broker, database, web, consumer, and scheduled maintenance responsibilities |
 | Azure hosting | `Azure-Samples/rag-postgres-openai-python` | Bicep modules, Container Apps, managed identity, ACR, Log Analytics, and Application Insights |
-| Edge frontend | `cloudflare/templates` | Vite assets behind a Worker, SPA fallback, Worker observability, and source-map upload |
+| Edge frontend | `cloudflare/workers-sdk` | Static Next.js assets, a typed edge gateway, observability, and source maps |
 | Audio execution | Existing project boundary | Modal remains the isolated GPU execution provider |
 
 Reference code is not a runtime dependency.
@@ -96,7 +96,8 @@ Provider activation still requires account credentials.
 
 | Capability | Repository state |
 | --- | --- |
-| Cloudflare Worker gateway | Implemented in `frontend/worker.js` |
+| Cloudflare Worker gateway | Implemented in `apps/web/worker.ts` |
+| Next.js static asset bundle | Implemented by `apps/web/next.config.ts` and `apps/web/wrangler.jsonc` |
 | Cloudflare WAF and rate limits | Implemented in `infra/cloudflare/` |
 | Azure Container Apps | Implemented in `infra/azure/main.bicep` |
 | Immutable ACR image deployment | Implemented in the production workflow |

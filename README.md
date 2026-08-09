@@ -2,8 +2,8 @@
 
 StemSplitter is an asynchronous music source-separation platform. A FastAPI
 control plane owns jobs, authentication, queueing, and artifacts; remote GPU
-workers run model inference; and a React client handles uploads, progress, audio
-playback, and downloads.
+workers run model inference; and a Next.js client handles uploads, progress,
+audio playback, and downloads.
 
 The current eleven-stem route is an **evaluation profile**, not a
 production-quality claim. The platform architecture is usable, but individual
@@ -36,7 +36,7 @@ The production-shaped path keeps control-plane work off the GPU and audio bytes
 out of PostgreSQL and Redis.
 
 ```text
-React + Cloudflare Worker/WAF
+Next.js 16 static export + Cloudflare Workers Assets/WAF
   -> private presigned upload
   -> Azure Container Apps FastAPI API
   -> PostgreSQL job authority
@@ -67,7 +67,8 @@ The main directories have explicit ownership:
 | `splitter/infrastructure/` | PostgreSQL, Redis/RQ, and object storage |
 | `splitter/observability/` | Structured logs and request correlation |
 | `workers/` | Modal and specialist GPU worker applications |
-| `frontend/` | React and TypeScript web client |
+| `apps/web/` | Next.js App Router web client and edge API gateway |
+| `packages/api-client/` | Generated OpenAPI schema and typed browser client |
 | `models/` | Model registry and qualification configuration |
 | `benchmarks/` | Quality, latency, cost, and reliability evidence |
 | `training/` | Training recipes and manifests |
@@ -79,19 +80,24 @@ machine-readable contracts from `models/`.
 
 ## Local development
 
-Install Python 3.12, Node.js 22, FFmpeg, and libsndfile. Then install the API and
-web dependencies:
+Install Python 3.12, Node.js 24, pnpm 10, FFmpeg, and libsndfile. Then install
+the API and web dependencies:
 
 ```bash
 python -m venv .venvs/api
 .venvs/api/bin/python -m pip install -e '.[dev]'
-npm --prefix frontend ci
+pnpm install --frozen-lockfile
 ```
 
-Start the single-machine development server:
+Create `apps/web/.env.local` from `apps/web/.env.production.example`, then set
+a real Clerk development publishable key. Copy `apps/web/.dev.vars.example` to
+`apps/web/.dev.vars` for local edge-proxy bindings.
+
+Start the single-machine API and web development servers in separate shells:
 
 ```bash
 VENV_DIR="$PWD/.venvs/api" ./start.sh
+pnpm --filter @stemsplitter/web dev
 ```
 
 This path uses one API process because an in-memory dispatcher cannot safely
@@ -146,7 +152,8 @@ The primary routes are:
 | `GET /health/ready` | Check PostgreSQL, Redis, and object storage |
 | `GET /metrics` | Export Prometheus metrics |
 
-The OpenAPI document generates the TypeScript client in `frontend/src/api/`.
+The OpenAPI document generates the TypeScript client in
+`packages/api-client/src/`.
 
 ## Verification
 
@@ -165,6 +172,9 @@ make openapi
 
 CI runs the backend suite, frontend build, API container build, Bicep and
 Terraform validation, Worker dry-run, CodeQL, dependency review, and Trivy.
+
+The Expo mobile client remains planned work. It is not part of the current
+release artifact.
 
 ## Known limits
 

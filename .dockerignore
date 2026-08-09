@@ -14,8 +14,14 @@ benchmarks
 datasets
 docs
 external_repos
-frontend/dist
-frontend/node_modules
+node_modules
+apps/**/.next
+apps/**/.open-next
+apps/**/.wrangler
+apps/**/node_modules
+apps/**/out
+packages/**/node_modules
+*.tsbuildinfo
 infra
 jobs
 notebooks

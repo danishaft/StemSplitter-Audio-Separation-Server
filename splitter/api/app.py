@@ -6,7 +6,6 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
-from fastapi.staticfiles import StaticFiles
 from pydantic.json_schema import models_json_schema
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
@@ -39,7 +38,6 @@ from .observability import (
 from .responses import APIError, error_response
 from .routers import artifacts, jobs, sources, system, uploads
 from .schemas import CreateAudiusJobRequest, CreateObjectJobRequest
-from .services import FRONTEND_DIST_DIR
 
 
 def create_app() -> FastAPI:
@@ -105,12 +103,6 @@ def create_app() -> FastAPI:
     app.include_router(jobs.router)
     app.include_router(artifacts.router)
     app.include_router(system.router)
-    app.mount(
-        "/assets",
-        StaticFiles(directory=FRONTEND_DIST_DIR / "assets", check_dir=False),
-        name="assets",
-    )
-
     def custom_openapi():
         if app.openapi_schema is not None:
             return app.openapi_schema
