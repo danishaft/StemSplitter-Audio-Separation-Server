@@ -288,14 +288,22 @@ jobs:
               "/api/health/live": "ok",
               "/api/health/ready": "ready",
           }
-          max_attempts = 24
+          max_attempts = 6
+          request_headers = {
+              "Accept": "application/json",
+              "Cache-Control": "no-cache",
+              "User-Agent": (
+                  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+              ),
+          }
           for path, expected_status in checks.items():
               last_error = "not_attempted"
               for attempt in range(1, max_attempts + 1):
                   try:
                       request = urllib.request.Request(
                           origin + path,
-                          headers={"Accept": "application/json"},
+                          headers=request_headers,
                       )
                       with urllib.request.urlopen(request, timeout=20) as response:
                           content_type = response.headers.get_content_type()
