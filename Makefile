@@ -3,7 +3,7 @@ SHELL := /usr/bin/env bash
 
 PYTHON ?= .venvs/api/bin/python
 PYTEST ?= .venvs/api/bin/pytest
-NPM ?= npm
+PNPM ?= pnpm
 
 .PHONY: help install test test-fast lint lint-python frontend openapi compose-up compose-down preflight
 
@@ -13,7 +13,7 @@ help:
 		"test          Run the complete local backend suite" \
 		"test-fast     Run tests excluding slow and integration cases" \
 		"lint          Run backend static checks and the frontend type checker" \
-		"frontend      Build the production React application" \
+		"frontend      Build the production Next.js application" \
 		"openapi       Regenerate the OpenAPI schema and TypeScript client" \
 		"compose-up    Start PostgreSQL, Redis, API, queue, and maintenance" \
 		"compose-down  Stop the local production-shaped stack" \
@@ -21,7 +21,7 @@ help:
 
 install:
 	$(PYTHON) -m pip install -e '.[dev]'
-	$(NPM) --prefix frontend ci
+	$(PNPM) install --frozen-lockfile
 
 test:
 	$(PYTEST) -q
@@ -43,14 +43,14 @@ lint-python:
 		tests/test_gpu_worker_api.py tests/test_platform_security.py
 
 lint: lint-python
-	$(NPM) --prefix frontend run build
+	$(PNPM) typecheck
 
 frontend:
-	$(NPM) --prefix frontend run build
+	$(PNPM) build
 
 openapi:
 	$(PYTHON) -m scripts.export_openapi
-	$(NPM) --prefix frontend run api:generate
+	$(PNPM) api:generate
 
 compose-up:
 	docker compose up --build

@@ -21,8 +21,14 @@ separated/
 !**/.env.*.example
 external_repos/
 tmp/
-frontend/dist/
-frontend/node_modules/
+node_modules/
+.turbo/
+apps/web/.next/
+apps/web/.open-next/
+apps/web/.wrangler/
+apps/web/node_modules/
+packages/*/node_modules/
+*.tsbuildinfo
 .terraform/
 datasets/raw/
 datasets/staging/

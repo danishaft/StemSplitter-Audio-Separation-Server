@@ -1,8 +1,8 @@
 # Repository structure
 
-StemSplitter uses a service-oriented Python repository with a React web client
-and separately deployed GPU workers. The control plane owns jobs and artifacts;
-model processes only implement the worker contract.
+StemSplitter uses a service-oriented Python repository with a Next.js web
+client and separately deployed GPU workers. The control plane owns jobs and
+artifacts; model processes only implement the worker contract.
 
 ## Runtime code
 
@@ -32,7 +32,8 @@ The API and web client have different build and deployment lifecycles.
 | Path | Responsibility |
 | --- | --- |
 | `audio_api.py` | ASGI compatibility entrypoint |
-| `frontend/` | React and TypeScript web application |
+| `apps/web/` | Next.js App Router application and Cloudflare edge gateway |
+| `packages/api-client/` | Generated OpenAPI schema and typed client package |
 | `workers/` | Modal and remote GPU worker applications |
 | `scripts/run_api.py` | API process entrypoint |
 | `scripts/run_rq_worker.py` | Durable queue-worker entrypoint |
@@ -70,6 +71,8 @@ system.
 | `compose.yaml` | Local production-shaped service topology |
 | `Dockerfile` | API, queue, maintenance, and migration images |
 | `Makefile` | Canonical developer commands |
+| `package.json` | pnpm workspace and Turborepo command surface |
+| `pnpm-workspace.yaml` | Workspace membership and dependency catalog |
 | `migrations/` | Ordered PostgreSQL schema changes |
 | `.github/workflows/ci.yml` | Backend, frontend, and image verification |
 | `requirements/` | Task-specific Modal, data, and research dependencies |

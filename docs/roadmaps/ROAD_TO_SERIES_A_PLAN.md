@@ -299,17 +299,22 @@ as an architecture decision before implementation.
 
 | Concern | Standard choice |
 | --- | --- |
-| Web client | React, TypeScript, and Vite |
+| Web client | Next.js App Router, React, and TypeScript |
+| Mobile client | Expo and React Native with EAS delivery |
 | API | FastAPI, Pydantic, generated OpenAPI client, and Uvicorn |
 | GPU inference | Provider interface with Modal and local CUDA implementations |
 | Durable authority | PostgreSQL jobs, attempts, releases, usage, and audit events |
 | Dispatch | Transactional outbox; Redis and RQ only as the initial transport |
 | Artifact storage | Provider interface for B2, S3-compatible storage, and local files |
-| Authentication | Provider interface for managed JWT, local identity, and OIDC |
-| Payments | Stripe Checkout, Billing, and webhooks |
+| Authentication | Clerk managed identity with FastAPI JWT verification; OIDC or local identity for self-hosting |
+| Payments | Deferred; Stripe Checkout, Billing, and webhooks when approved |
 | Observability | OpenTelemetry-compatible signals and Sentry error reporting |
-| Product analytics | Privacy-conscious event analytics |
-| ML lifecycle | MLflow-compatible experiment catalog plus signed portable release manifests |
+| Product analytics | PostHog Cloud EU with consent, redaction, flags, and experiments |
+| Search discovery | Next.js metadata and prerendering, JSON-LD, sitemaps, Search Console, and Bing Webmaster Tools |
+| Transactional email | Clerk authentication delivery and Resend product messages |
+| Abuse defense | Cloudflare Turnstile plus edge and FastAPI admission controls |
+| Native notifications | Expo Push Service over FCM and APNs |
+| ML lifecycle | Weights & Biases experiments plus signed portable release manifests |
 | ML artifact authority | Private object storage with content-addressed, immutable artifacts |
 | ML scheduling | PostgreSQL admission, partitioned Redis/RQ queues, and Modal or local CUDA execution |
 | Deployment | Managed cloud, Docker Compose, and later Kubernetes or Helm |
@@ -543,8 +548,9 @@ must qualify each stem independently before users spend money.
 - [ ] `P2-28` Establish one dataset-release authority containing provenance,
   rights, checksums, duplicate groups, split assignments, cleaner decisions,
   deterministic mixture recipes, and batch-feature versions.
-- [ ] `P2-29` Establish an MLflow-compatible experiment catalog for immutable
-  run specifications, metrics, logs, checkpoints, costs, and resume lineage.
+- [ ] `P2-29` Establish Weights & Biases as the experiment catalog for
+  immutable run specifications, metrics, logs, checkpoint references, costs,
+  and resume lineage. Keep checkpoint bytes and production releases portable.
 - [ ] `P2-30` Make evaluation reproducible from a benchmark release, candidate
   cache, model hash, metric container, preprocessing version, and seed without
   rerunning paid inference.
@@ -570,7 +576,17 @@ This phase replaces the current static page with the product users will
 actually experience on desktop and mobile.
 
 - [x] `P3-01` Create the React, TypeScript, and Vite application shell with
-  strict type checking.
+  strict type checking. Retain it only as the migration baseline.
+- [x] `P3-01A` Freeze the current Vite build, screenshots, browser behavior,
+  OpenAPI fixtures, bundle size, and Cloudflare deployment contract.
+- [x] `P3-01B` Move `frontend/` to `apps/web/`, establish the `pnpm` and
+  Turborepo workspace, and migrate the web runtime to Next.js App Router
+  without changing approved product behavior or design.
+- [ ] `P3-01C` Deploy the Next.js artifact to a Cloudflare Workers preview
+  through OpenNext and pass visual, API, accessibility, and browser parity.
+- [ ] `P3-01D` Enforce the rendering boundary: public routes use static
+  generation or ISR, authenticated routes call FastAPI, and the audio studio
+  remains a client-component island.
 - [x] `P3-02` Consume `GET /capabilities` instead of hardcoding profiles,
   stems, limits, or source types.
 - [ ] `P3-03` Build signup, login, logout, session expiry, and account recovery.
@@ -609,6 +625,17 @@ actually experience on desktop and mobile.
   handoff, and future share links without storing permanent duplicate ZIPs.
 - [ ] `P3-24` Automate the fresh-account browser golden path from signup and
   upload through progress, synchronized playback, download, and deletion.
+- [ ] `P3-25` Build indexable landing, feature, comparison, legal, and MDX
+  article routes with canonical metadata, Open Graph images, JSON-LD,
+  `sitemap.xml`, and `robots.txt`.
+- [ ] `P3-26` Integrate PostHog events, consent, flags, experiments, and
+  privacy-masked replay without sending filenames, signed URLs, or media data.
+- [ ] `P3-27` Configure Clerk production email and domain delivery, then add
+  versioned Resend templates for product and job notifications.
+- [ ] `P3-28` Add Turnstile to signup, account recovery, anonymous imports, and
+  abuse-sensitive admission with mandatory one-time FastAPI verification.
+- [ ] `P3-29` Add Expo job-completion notifications with token lifecycle,
+  delivery receipts, deep links, and an authoritative job refetch.
 
 ### Deferred frontend and product research
 
@@ -840,7 +867,8 @@ and their first production candidates complete the initial qualification gate.
 This sequencing does not permit public access before the remaining product,
 security, billing, reliability, and release gates pass.
 
-- Cloudflare Pages serves the React and Vite application.
+- Cloudflare Workers serves the Next.js application through OpenNext and uses
+  Cloudflare's CDN for static and prerendered assets.
 - Cloudflare manages DNS, TLS, CDN behavior, web application firewall rules,
   denial-of-service controls, and edge rate limits.
 - Azure Container Apps runs separate FastAPI API, RQ worker, and scheduled
@@ -848,19 +876,23 @@ security, billing, reliability, and release gates pass.
 - Azure Container Registry stores immutable application images.
 - Azure Key Vault stores deployment secrets. GitHub Actions uses workload
   identity federation instead of long-lived Azure credentials.
-- Supabase remains the PostgreSQL authority and JWT identity provider.
+- Supabase remains the PostgreSQL authority. Clerk is the JWT identity
+  provider for the managed product.
 - Upstash remains the TLS Redis and RQ transport.
 - Backblaze B2 remains the private input and artifact object store.
 - Modal remains the GPU execution provider.
 - Sentry captures redacted application errors. Existing Prometheus metrics and
   Azure operational telemetry provide service and infrastructure signals.
+- PostHog owns privacy-controlled product analytics, flags, and experiments.
+- Resend supplies production SMTP, and Turnstile protects abuse-sensitive web
+  entry points. Expo supplies native completion notifications.
 - OpenTofu or Terraform declares Cloudflare, Azure, DNS, deployment, and alert
   configuration. Provider data is imported rather than recreated when a
   managed service already exists.
 
-Azure does not replace Supabase, Upstash, B2, or Modal in this phase. A provider
-migration requires measured evidence that the existing service misses an
-approved reliability, cost, latency, or capacity target.
+Azure does not replace Clerk, Supabase PostgreSQL, Upstash, B2, or Modal in
+this phase. A provider migration requires measured evidence that the existing
+service misses an approved reliability, cost, latency, or capacity target.
 
 - [x] `P7-01` Run FastAPI through the production ASGI entry point with health,
   readiness, metrics, and version endpoints.
@@ -909,8 +941,8 @@ approved reliability, cost, latency, or capacity target.
   reliability, latency, cost, and incident history before the public claim.
 - [ ] `P7-24` Declare Cloudflare, Azure Container Apps, Azure Container
   Registry, Azure Key Vault, DNS, service configuration, and alerts through
-  reviewed OpenTofu or Terraform. Import existing Supabase, Upstash, B2, and
-  Modal identifiers as configuration without recreating those services.
+  reviewed OpenTofu or Terraform. Import existing Clerk, Supabase, Upstash, B2,
+  and Modal identifiers as configuration without recreating those services.
 - [ ] `P7-25` Put `app.<domain>` and `api.<domain>` behind Cloudflare-managed
   DNS and TLS. Configure WAF rules, upload-aware rate limits, denial-of-service
   controls, safe caching, and explicit origin protection.
@@ -920,11 +952,11 @@ approved reliability, cost, latency, or capacity target.
 - [ ] `P7-27` Build and deploy separate FastAPI API, RQ worker, and maintenance
   images to Azure Container Apps with immutable revisions, health checks,
   resource limits, controlled scaling, and rollback.
-- [ ] `P7-28` Deploy the React and Vite client to Cloudflare Pages and configure
-  its production API origin without embedding service credentials.
-- [ ] `P7-29` Add the Supabase signup, login, token refresh, logout, and account
-  recovery flow to the web client. Remove the manual `localStorage` token
-  requirement from the user journey.
+- [ ] `P7-28` Deploy Next.js to Cloudflare Workers through OpenNext, verify its
+  production API origin, cache policy, ISR behavior, and runtime compatibility,
+  and embed no service credentials.
+- [ ] `P7-29` Complete Clerk signup, login, token refresh, logout, account
+  recovery, production-domain, and email-delivery flows for web and mobile.
 - [ ] `P7-30` Store production secrets in Azure Key Vault and synchronize only
   the minimum required values into each Container App. Keep Cloudflare and
   GitHub credentials outside application containers.
@@ -967,9 +999,9 @@ controlled beta.
   playback or download.
 - [ ] `P8-02` Instrument signup, source choice, upload start, submission,
   completion, first playback, download, repeat job, upgrade, cancellation, and
-  quality feedback.
-- [ ] `P8-03` Build dashboards for acquisition, activation, job completion,
-  retention, paid conversion, support rate, and gross margin.
+  quality feedback in PostHog using the approved privacy schema.
+- [ ] `P8-03` Build PostHog dashboards for acquisition, activation, job
+  completion, retention, paid conversion, support rate, and gross margin.
 - [ ] `P8-04` Create a support inbox, response templates, severity policy, and
   escalation path.
 - [ ] `P8-05` Create an admin console that resolves common failures without
@@ -982,7 +1014,8 @@ controlled beta.
   target.
 - [ ] `P8-09` Create a weekly quality-review process that connects user reports
   to model release and regression evidence.
-- [ ] `P8-10` Create a public status page and incident communication template.
+- [ ] `P8-10` Create an independently hosted public status page and incident
+  communication template that remain reachable during a product outage.
 - [ ] `P8-11` Define beta terms, support hours, and expected response times.
 - [ ] `P8-12` Freeze the launch candidate and complete the launch-readiness
   review.
@@ -1010,7 +1043,7 @@ manifest, or migration history.
 - [ ] `SH-06` Build a resumable model manager that verifies source, license,
   acceptance, version, size, checksum, disk capacity, and installed state.
 - [ ] `SH-07` Support secure single-user mode, local team accounts, and external
-  OIDC without cloud-only Supabase assumptions.
+  OIDC without cloud-only Clerk assumptions.
 - [ ] `SH-08` Provide versioned configuration schemas, automatic database
   migrations, pre-upgrade backups, compatibility checks, and tested rollback.
 - [ ] `SH-09` Provide backup, restore, export, retention, and complete deletion
@@ -1197,7 +1230,7 @@ Add evidence as phases complete. A task without evidence remains incomplete.
 | Legacy eight-stem evaluation contract | Available | `splitter/stem_contract.py` |
 | GPU worker contract | Available | `../architecture/GPU_WORKER_CONTRACT.md` |
 | Production architecture | Available | `../architecture/PRODUCTION_ARCHITECTURE.md` |
-| Production web application | Implemented, not release-complete | `frontend/` |
+| Production web application | Next.js migration implemented; preview gate remains | `apps/web/` |
 | Frontend design source | Available | `https://www.figma.com/design/QsLAJ4yc2UB3HvUQdXsVyw` |
 | Production process images | Defined, build not verified locally | `Dockerfile` |
 | Lifecycle implementation | Live recovery and retry drills passed | `benchmarks/reliability/managed-recovery-drills-2026-07-19.json` |
@@ -1219,7 +1252,7 @@ Add evidence as phases complete. A task without evidence remains incomplete.
 | July 25 multi-role architecture audit | Findings captured, remediation open | This plan |
 | Platform reference implementation map | Available | `../architecture/PLATFORM_REFERENCE_IMPLEMENTATION_MAP.md` |
 | Mature FastAPI source audit | Available | `../architecture/PLATFORM_REFERENCE_IMPLEMENTATION_MAP.md` |
-| FastAPI and generated-client contract | Implemented; browser E2E still open | `splitter/api/`, `frontend/src/api/` |
+| FastAPI and generated-client contract | Implemented; browser E2E still open | `splitter/api/`, `packages/api-client/` |
 | Hatchet deterministic adoption proof | Passed; real server campaign blocked by missing Docker | `benchmarks/hatchet/` |
 | Canonical model-release registry | Missing | Database and release artifacts |
 | Cloud 100-job failure campaign | Missing | `benchmarks/reliability/` |
@@ -1258,6 +1291,11 @@ or architecture. Include the reason and reversal condition.
 | July 25, 2026 | Replace Flask with FastAPI while preserving Python domain services. | The current API manually duplicates validation and frontend types and lacks an ASGI, OpenAPI-first transport boundary. | Reverse only if the contract migration fails measured correctness, operability, or performance gates. |
 | July 26, 2026 | Use Cloudflare Pages and edge controls for the web client, Azure Container Apps for FastAPI, RQ, and maintenance, and retain Supabase, Upstash, B2, and Modal for their existing responsibilities. This supersedes the July 24 single-image web decision. | Static web delivery and edge protection scale independently from persistent Python services, while retaining the already integrated database, queue, object-store, identity, and GPU providers avoids an unnecessary migration. | Reconsider only when measured cost, reliability, latency, capacity, or operational complexity misses an approved target. |
 | July 26, 2026 | Defer implementation of the locked cloud topology until electric-guitar, strings, and wind/brass production candidates complete their first qualification gate. | The current execution focus is closing the three remaining specialist model and dataset gaps without losing the exact return path for the user-facing product. | Resume platform work immediately if model work becomes blocked or if a supervised user test requires a secure cloud environment. |
+| August 8, 2026 | Migrate the web client to Next.js App Router on Cloudflare Workers through OpenNext before adding new frontend features. This supersedes the Vite and Cloudflare Pages target but preserves FastAPI as the sole product backend. | The approved scope now includes indexable marketing, comparison, legal, and content pages beside an authenticated audio studio. The existing frontend is still small enough for a bounded migration. | Reverse only if the Cloudflare preview fails parity, runtime compatibility, security, or performance gates and React Router framework mode proves the same requirements with less risk. |
+| August 8, 2026 | Use PostHog Cloud EU for product analytics, flags, experiments, and privacy-controlled replay; keep Sentry and Azure OpenTelemetry signals for application and operational evidence. | Product behavior and infrastructure health are different evidence layers. Adding Datadog now would duplicate the existing operational stack. | Replace the operational tools with Datadog only after measured incident-response or telemetry limits justify a migration; do not add it as a duplicate. |
+| August 8, 2026 | Use Resend for production SMTP, Turnstile for web abuse defense, and Expo Push Service for native completion notifications. | These close real communication, authentication-delivery, and paid-compute abuse gaps without introducing another product backend. | Replace a provider only after delivery, privacy, reliability, cost, or regional requirements fail an approved gate. |
+| August 8, 2026 | Use Weights & Biases for experiment tracking while private object storage and signed manifests remain the portable model and deployment authorities. This supersedes the planned MLflow catalog. | Existing training already emits W&B evidence, while production and self-hosted releases must not depend on a hosted experiment dashboard. | Reconsider the experiment UI if cost, export, access, or reproducibility requirements fail; never move deployment authority out of signed manifests. |
+| August 9, 2026 | Use Clerk as the managed web and mobile identity provider while Supabase remains PostgreSQL only. FastAPI remains the authorization boundary. | The implemented Next.js shell already uses Clerk, and running a second auth authority would create conflicting sessions, recovery, and email paths. | Reconsider only if Clerk fails approved cost, portability, privacy, or reliability gates; self-hosted deployments retain local identity and OIDC options. |
 
 ## Discovery log
 

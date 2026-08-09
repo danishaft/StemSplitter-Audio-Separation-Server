@@ -1,0 +1,2 @@
+API_ORIGIN=http://127.0.0.1:5000
+ORIGIN_VERIFY_SECRET=replace-with-local-origin-secret

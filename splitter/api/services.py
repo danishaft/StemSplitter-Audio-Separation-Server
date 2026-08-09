@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import mimetypes
-import os
 from pathlib import Path
 from typing import Any
 
@@ -28,20 +27,9 @@ from splitter.infrastructure.object_storage import object_store_from_config
 from splitter.path_safety import resolve_job_root
 from splitter.qualification import load_stem_qualification
 
-FRONTEND_DIST_DIR = Path(
-    os.getenv(
-        "FRONTEND_DIST_DIR",
-        Path(__file__).resolve().parents[2] / "frontend" / "dist",
-    )
-)
-
 
 def allowed_file(filename: str) -> bool:
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
-
-
-def index_path() -> Path:
-    return FRONTEND_DIST_DIR / "index.html"
 
 
 def job_root(job_id: str) -> Path:
