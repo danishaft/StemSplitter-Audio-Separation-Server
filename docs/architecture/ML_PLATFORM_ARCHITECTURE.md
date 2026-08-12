@@ -17,10 +17,15 @@ StemSplitter uses three separate authorities.
 
 - PostgreSQL owns product jobs, attempts, active environment releases, tenant
   policy, usage, and audit events.
-- An MLflow-compatible experiment and model catalog owns training runs,
-  parameters, evaluation records, checkpoint lineage, and candidate lifecycle.
+- Weights & Biases owns experiment tracking for training runs, parameters,
+  metrics, validation records, checkpoint lineage, and cost evidence.
 - Private object storage owns immutable datasets, feature caches, checkpoints,
   evaluation outputs, model cards, and signed release manifests.
+
+Weights & Biases is an evidence and collaboration system, not the production
+deployment authority. PostgreSQL and signed release manifests decide which
+model serves a job. Losing access to Weights & Biases must not prevent model
+rollback, self-hosted inference, or reconstruction from immutable artifacts.
 
 A signed model-release manifest is the portable deployment truth for cloud and
 self-hosted editions. A production job snapshots its release identifier and
@@ -55,7 +60,7 @@ flowchart LR
     Dataset[(Immutable dataset release)]
     TrainQueue[Training queue]
     Trainer[CPU and GPU training workers]
-    Experiments[(Experiment catalog)]
+    Experiments[(Weights & Biases experiments)]
     Evaluator[Reproducible evaluator]
     Registry[(Candidate model registry)]
     Controller[Release and deployment controller]
@@ -127,8 +132,9 @@ Every training attempt receives an immutable run specification containing:
 - requested CPU, RAM, GPU type, VRAM, storage, and budget;
 - resume parent and previous-attempt identifier.
 
-The experiment catalog records metrics, logs, checkpoints, validation outputs,
-cost receipts, and terminal status. Checkpoints are written atomically and are
+Weights & Biases records metrics, logs, checkpoint references, validation
+outputs, cost receipts, and terminal status. Private object storage retains the
+authoritative checkpoint bytes. Checkpoints are written atomically and are
 never overwritten. Exact resume restores optimizer, scheduler, scaler, random
 generators, sampler cursor, global step, and best-checkpoint state.
 
@@ -249,6 +255,7 @@ ML platform contract.
 | Dataset provenance and release gates | Research master roadmap and dataset manifests | Specified, incomplete |
 | Deterministic mixtures and batch transforms | Research master roadmap | Specified, incomplete |
 | Reproducible training receipts | Research master roadmap | Specified, incomplete |
+| Experiment tracking | Existing W&B runs and local backup files | Implemented foundation; portable export and release binding remain incomplete |
 | Candidate model registry | `models/registry.yaml` and registry tooling | Bootstrap only |
 | Immutable production release authority | Release-manifest tasks | Not implemented end to end |
 | CPU and GPU inference execution | Modal and local provider boundaries | Implemented foundation |

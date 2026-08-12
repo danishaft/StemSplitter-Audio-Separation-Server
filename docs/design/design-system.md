@@ -17,21 +17,34 @@ dark canvas, lacked human media and surface contrast, and made its shadows and
 glass visually ineffective. Its waveform, transport, metadata, and responsive
 behavior remain valid functional scaffolding.
 
-The final V3 direction is **emerald signal studio**: a cinematic musician entry,
-warm editorial explanation, and a focused green-black audio workspace. Read the
+The final V3 direction is **emerald studio continuum**: a cinematic musician
+entry, a continuous green-black product environment, and one restrained ivory
+editorial inset. Read the
 [Moises UI and UX case study](./moises-ui-ux-case-study.md) and the
 [public platform case studies](./public-platform-ui-case-studies.md) before
-changing tokens, Figma screens, or frontend presentation. Moises owns workspace
-structure, Suno owns entry atmosphere, BandLab owns public product proof and
-mobile recomposition, Fadr contributes direct waveform manipulation, and LANDR
-contributes professional trust and handoff. V3 translates those responsibilities
-into one StemSplitter system rather than reproducing any competitor palette.
+changing tokens, Figma screens, or frontend presentation. LANDR contributes the
+full-bleed, media-led entry and restrained overlay navigation. Moises contributes
+the continuous product canvas and product-as-proof hierarchy. AudioPod
+contributes independently playable output evidence and complete mobile demos.
+Fadr contributes direct waveform manipulation, while BandLab informs mobile
+workspace recomposition. V3 translates those responsibilities into one
+StemSplitter system rather than reproducing any competitor palette or layout.
 
-The V3 web implementation is the current rendered reference. It demonstrates
-full-bleed musician media, ivory and sage reading surfaces, forest-black studio
-surfaces, mineral-green actions, perceptible depth, and selective glass. Figma
-must reproduce these rules on new V3 pages before it is treated as the visual
-source of truth.
+The root [`DESIGN.md`](../../DESIGN.md) file is the normative token and
+art-direction contract. The V3 web implementation is its current verified
+rendering, and Figma mirrors the same contract. Neither implementation can
+silently override the contract. A presentation change must update `DESIGN.md`
+and keep React and Figma aligned.
+
+The current implementation demonstrates full-bleed musician media, plain
+overlay navigation, a forest-black product canvas, one inset ivory reading
+surface, mineral-green actions, perceptible depth, and selective glass.
+
+The first V3 composition is rejected even though its tokens remain useful. It
+used a numbered workflow, a three-card proof grid, a decorative waveform, broad
+alternating light and dark sections, and a bright full-width conversion band.
+Those devices made the page read as a generated landing-page template rather
+than a musician's product. They must not return.
 
 The canonical design file remains
 [StemSplitter in Figma](https://www.figma.com/design/QsLAJ4yc2UB3HvUQdXsVyw).
@@ -42,11 +55,15 @@ The remaining sections are the V3 implementation contract.
 
 ### Rendered V3 evidence
 
+These captures were generated on August 7, 2026, from the production bundle
+using Vite preview. The desktop browser viewport was `1440x1000` with a
+`1425x1000` content capture after the scrollbar. The mobile viewport and capture
+were `390x844`. The reviewed working tree is based on commit `37bea1a0c700`;
+update this revision after the design changes are committed.
+
 ![StemSplitter V3 desktop landing hero](./assets/stemsplitter-v3/landing-desktop.png)
 
 ![StemSplitter V3 mobile landing hero](./assets/stemsplitter-v3/landing-mobile.png)
-
-![StemSplitter V3 complete landing sequence](./assets/stemsplitter-v3/landing-full-page.png)
 
 ## Product boundary
 
@@ -72,7 +89,7 @@ organizing object. Controls float above the content only when they need to stay
 available.
 
 The product borrows the category grammar users already understand from Moises,
-Fadr, BandLab, and DAWs:
+AudioPod, Fadr, BandLab, and DAWs:
 
 - one project context;
 - one timeline;
@@ -109,14 +126,15 @@ long page of unrelated sections.
 ### Import room
 
 The first viewport uses full-bleed recording-studio video beneath a deep emerald
-grade. It contains compact glass navigation, one concise product promise, one
-primary action, one secondary action, and three verified product facts. The
-video has a static poster fallback and disappears under reduced motion.
+grade. It contains plain overlay navigation, one centered product promise, one
+primary action, and one quiet assurance line. The video has a static poster
+fallback and disappears under reduced motion.
 
-A light proof band resets attention before the import room. The dock then
-contains upload and Audius tabs, file or track identity, separation profile,
-output expectation, and the primary action. Product qualification is visible
-but does not compete with the action.
+A short white editorial statement resets attention once. The page then returns
+to one continuous forest-black product canvas where the live upload and Audius
+dock is the visual proof. It contains file or track identity, separation
+profile, output expectation, and the primary action without marketing counters,
+numbered steps, or decorative product simulations.
 
 ### Processing workspace
 

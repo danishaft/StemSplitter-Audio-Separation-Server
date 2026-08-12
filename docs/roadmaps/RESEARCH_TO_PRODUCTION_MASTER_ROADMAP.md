@@ -1,11 +1,14 @@
 # Research-to-production master roadmap
 
-This document is the single execution authority for taking StemSplitter from
-its current research state through dataset completion, specialist training,
-model qualification, inference integration, cloud and self-hosted delivery,
-and release. It replaces contradictory execution guidance in older plans.
-Older documents remain evidence and history, but they don't override this
-roadmap.
+> **Superseded:** Use [`FINAL_STEMSPLITTER_RELEASE_PLAN.md`](FINAL_STEMSPLITTER_RELEASE_PLAN.md)
+> as the single active implementation authority. This file remains preserved
+> as research and execution history.
+
+This document preserves the detailed research-to-production execution history
+for dataset completion, specialist training, model qualification, inference
+integration, cloud delivery, self-hosted delivery, and release. The final
+release plan supersedes it as the active execution authority. Older documents
+remain evidence and history.
 
 Status: **Approved for Phase 0 execution**
 
