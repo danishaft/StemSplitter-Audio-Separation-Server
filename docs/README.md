@@ -52,12 +52,17 @@ The architecture documents define runtime boundaries and production contracts.
 
 ## Roadmaps
 
-The roadmap directory contains delivery plans. The research-to-production
-roadmap is the current planning authority; older plans remain available as
-historical context.
+The roadmap directory contains delivery plans. The final release plan below is
+the single implementation authority. Older plans remain available as evidence
+and history, but they do not override it.
+
+- [`FINAL_STEMSPLITTER_RELEASE_PLAN.md`](roadmaps/FINAL_STEMSPLITTER_RELEASE_PLAN.md)
+  is the locked implementation dossier for architecture, research, product,
+  and production release.
 
 - [`RESEARCH_TO_PRODUCTION_MASTER_ROADMAP.md`](roadmaps/RESEARCH_TO_PRODUCTION_MASTER_ROADMAP.md)
-  is the current end-to-end roadmap.
+  is retained as historical execution detail and is superseded by the final
+  release plan.
 - [`ROAD_TO_SERIES_A_PLAN.md`](roadmaps/ROAD_TO_SERIES_A_PLAN.md) covers product
   and platform scale.
 
