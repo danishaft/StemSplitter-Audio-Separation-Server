@@ -2,9 +2,9 @@
 
 This document records direct inspection of public, unauthenticated product and
 marketing surfaces in August 2026. It extends the measured
-[Moises case study](./moises-ui-ux-case-study.md) with Suno, Fadr, BandLab, and
-LANDR. It is evidence for the V3 direction, not permission to combine every
-competitor pattern into one interface.
+[Moises case study](./moises-ui-ux-case-study.md) with Suno, Fadr, BandLab,
+LANDR, and AudioPod. It is evidence for the V3 direction, not permission to
+combine every competitor pattern into one interface.
 
 ## Research boundary
 
@@ -25,6 +25,7 @@ StemSplitter V3 will use one contributor for each design responsibility:
 | Product proof and responsive mixer behavior | BandLab | The public page demonstrates a real splitter and deliberately recomposes it on mobile |
 | Direct waveform manipulation | Fadr | The strongest lesson is audio-first manipulation, not its marketing composition |
 | Professional trust and conversion | LANDR | Credibility, ecosystem context, and the next professional action stay visible |
+| Playable product evidence | AudioPod | Real output demos make capability legible before signup or upload |
 
 The final result is an **emerald signal studio**. The entry experience is human,
 musical, media-rich, and graded through StemSplitter green. Processing and
@@ -174,27 +175,68 @@ Reviewed surfaces: [LANDR home](https://www.landr.com/),
 - A broad ecosystem navigation before StemSplitter has that ecosystem.
 - Decorative product mockups presented as if they were live controls.
 
+## AudioPod
+
+Reviewed surface: [AudioPod home](https://audiopod.ai/)
+
+![AudioPod desktop home with a restrained dark gradient, editorial type, and compact navigation](./assets/audiopod/home-desktop.png)
+
+![AudioPod desktop stem demo with four playable stem lanes inside a restrained product panel](./assets/audiopod/stem-demo-desktop.png)
+
+![AudioPod mobile stem demo with recomposed controls, large touch targets, and four synchronized lanes](./assets/audiopod/stem-demo-mobile.png)
+
+### Observed system
+
+- AudioPod uses strong serif and sans-serif contrast to make a mostly dark,
+  low-effect page feel authored rather than empty.
+- Capability sections lead with playable product output. The stem splitter
+  presents one song, one transport, and four synchronized lanes instead of a
+  screenshot or a feature-card grid.
+- Each demo explains what produced the sample and follows it with one relevant
+  action.
+- Mobile preserves the complete demonstration. It enlarges controls and stacks
+  the copy without hiding the stem lanes.
+- Long product breadth is manageable because each section repeats a clear
+  proof pattern: outcome, real sample, interaction, and next action.
+
+### What V3 should borrow
+
+- Let visitors hear successful output before requiring an upload or a live API
+  connection.
+- Use one synchronized session as proof instead of several small feature cards.
+- Keep demo provenance explicit so generated, separated, and reference audio
+  cannot be confused.
+- Preserve the complete listening model on mobile with touch-sized controls.
+
+### What V3 should reject
+
+- Product breadth that StemSplitter does not currently deliver.
+- Unverified counters or performance claims.
+- A second accent palette that would weaken the emerald signal system.
+- Decorative waveform bars that are presented as playable audio.
+
 ## Cross-platform synthesis
 
 ### V3 experience sequence
 
-1. **Arrive.** A warm, media-backed entry surface makes upload or eligible
-   Audius import the unmistakable action.
-2. **Qualify.** A compact trust row states supported input, privacy, expected
-   outputs, and honest capability status without technical vanity metrics.
-3. **Process.** The entry transforms into the project workspace; source identity
-   and waveform remain visible while queue and inference progress advances.
-4. **Listen.** Published stems appear in one synchronized multitrack timeline
-   with stable channel identity, mute, solo, level, quality, and download.
-5. **Export.** One professional handoff area provides selected stems, bundles,
-   and provenance without leaving the project context.
+1. **Arrive.** LANDR-like full-bleed musician media, quiet navigation, and one
+   action establish the product before any explanation.
+2. **Work.** The hero flows directly into a continuous Moises-like studio
+   canvas. The real
+   upload and Audius dock is the product proof, not a decorative mockup.
+3. **Prove.** An AudioPod-like sample session must demonstrate successful,
+   synchronized output when the production backend is unavailable.
+4. **Understand.** One inset ivory editorial stage explains synchronized
+   listening, visible uncertainty, and clean export without numbered steps.
+5. **Continue.** An inset studio-media close returns to the musician and offers
+   one final action without turning the whole page into a bright CTA band.
 
 ### Visual foundation
 
 - Entry canvas: musician media graded through forest and mineral green while
   preserving warm skin and studio-light highlights.
-- Reading surfaces: chalk, warm white, and soft gray sections with visible
-  shadows and enough contrast to make elevation legible.
+- Reading surfaces: one inset ivory editorial stage. Do not alternate
+  full-width light and dark marketing sections.
 - Studio canvas: forest-black `#07110D` reserved for waveform work.
 - Action color: mineral green `#67E58B` with forest ink `#06210F`, not a
   different competitor color per section.
@@ -229,6 +271,10 @@ The V3 review fails immediately if any of these conditions is present:
 - Desktop columns are merely hidden on mobile instead of recomposed.
 - More than one primary action competes within a state.
 - Human or musical context is absent from the complete public journey.
+- Repeated section numbers turn the narrative into a generic process template.
+- Decorative waveforms or proof cards imitate product evidence that already
+  exists in the live studio.
+- A full-width bright conversion band breaks the studio atmosphere.
 
 ## V3 acceptance gate
 
@@ -238,10 +284,10 @@ Figma implementation may begin only after a low-fidelity flow proves:
   export, failure, reconnect, and mobile states;
 - a truthful interactive or audio-backed product demonstration;
 - one synchronized waveform authority and one transport authority;
-- distinct warm entry, light reading, and dark studio environments;
+- a warm media entry, one brief light reset, and a continuous dark studio;
 - perceptible shadows and selective glass at desktop and mobile sizes;
 - no roadmap-only capability represented as a working feature.
 
-The high-fidelity direction must then pass accessibility contrast, keyboard,
-touch-target, reduced-motion, reduced-transparency, content-truth, and responsive
-reviews before React presentation work resumes.
+Every high-fidelity change must update the root `DESIGN.md` contract and then
+pass accessibility contrast, keyboard, touch-target, reduced-motion,
+reduced-transparency, content-truth, and responsive reviews in React and Figma.
