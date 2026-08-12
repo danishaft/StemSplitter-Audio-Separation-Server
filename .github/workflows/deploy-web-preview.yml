@@ -82,7 +82,13 @@ jobs:
                   try:
                       request = urllib.request.Request(
                           origin + path,
-                          headers={"Cache-Control": "no-cache"},
+                          headers={
+                              "Cache-Control": "no-cache",
+                              "User-Agent": (
+                                  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                                  "(KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+                              ),
+                          },
                       )
                       with urllib.request.urlopen(request, timeout=20) as response:
                           content_type = response.headers.get_content_type()
